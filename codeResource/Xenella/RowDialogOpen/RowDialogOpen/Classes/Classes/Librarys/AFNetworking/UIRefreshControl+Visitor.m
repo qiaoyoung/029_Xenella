@@ -1,6 +1,6 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIRefreshControl+Occluded.m
+// UIRefreshControl+Visitor.m
 //
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -24,7 +24,7 @@
 
 // __M_A_C_R_O__
 //: #import "UIRefreshControl+AFNetworking.h"
-#import "UIRefreshControl+Occluded.h"
+#import "UIRefreshControl+Visitor.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "AFURLSessionManager.h"
@@ -44,7 +44,7 @@
 @end
 
 //: @implementation UIRefreshControl (AFNetworking)
-@implementation UIRefreshControl (Occluded)
+@implementation UIRefreshControl (Visitor)
 
 //: - (AFRefreshControlNotificationObserver *)af_notificationObserver {
 - (ResumeObserver *)acceptableDeal {

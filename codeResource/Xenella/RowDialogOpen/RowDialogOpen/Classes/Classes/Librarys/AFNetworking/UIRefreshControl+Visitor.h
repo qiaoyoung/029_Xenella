@@ -1,6 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIProgressView+Occluded.h
+// UIRefreshControl+Visitor.m
+//
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -32,38 +33,23 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ This category adds methods to the UIKit framework's `UIRefreshControl` class. The methods in this category provide support for automatically beginning and ending refreshing depending on the loading state of a session task.
+ */
+//: @interface UIRefreshControl (AFNetworking)
+@interface UIRefreshControl (Visitor)
+
+///-----------------------------------
+/// @name Refreshing for Session Tasks
+///-----------------------------------
 
 /**
- This category adds methods to the UIKit framework's `UIProgressView` class. The methods in this category provide support for binding the progress to the upload and download progress of a session task.
+ Binds the refreshing state to the state of the specified task.
+ 
+ @param task The task. If `nil`, automatic updating from any previously specified operation will be disabled.
  */
-//: @interface UIProgressView (AFNetworking)
-@interface UIProgressView (Occluded)
-
-///------------------------------------
-/// @name Setting Session Task Progress
-///------------------------------------
-
-/**
- Binds the progress to the upload progress of the specified session task.
-
- @param task The session task.
- @param animated `YES` if the change should be animated, `NO` if the change should happen immediately.
- */
-/**
- Binds the progress to the download progress of the specified session task.
-
- @param task The session task.
- @param animated `YES` if the change should be animated, `NO` if the change should happen immediately.
- */
-//: - (void)setProgressWithDownloadProgressOfTask:(NSURLSessionDownloadTask *)task
-- (void)maximal:(NSURLSessionDownloadTask *)task
-                                     //: animated:(BOOL)animated;
-                                     execute:(BOOL)animated;
-
-//: - (void)setProgressWithUploadProgressOfTask:(NSURLSessionUploadTask *)task
-- (void)old:(NSURLSessionUploadTask *)task
-                                   //: animated:(BOOL)animated;
-                                   policyProgress:(BOOL)animated;
+//: - (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task;
+- (void)setSideTask:(NSURLSessionTask *)task;
 
 //: @end
 @end

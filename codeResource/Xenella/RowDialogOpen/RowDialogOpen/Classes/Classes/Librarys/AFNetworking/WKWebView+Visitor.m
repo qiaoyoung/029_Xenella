@@ -23,7 +23,7 @@
 
 // __M_A_C_R_O__
 //: #import "WKWebView+AFNetworking.h"
-#import "WKWebView+Occluded.h"
+#import "WKWebView+Visitor.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "AFHTTPSessionManager.h"
@@ -62,7 +62,7 @@
 #pragma mark -
 
 //: @implementation WKWebView (AFNetworking)
-@implementation WKWebView (Occluded)
+@implementation WKWebView (Visitor)
 
 //: - (AFHTTPResponseSerializer <AFURLResponseSerialization> *)responseSerializer {
 - (Incident <ResponseEvaluateHeck> *)foraging {

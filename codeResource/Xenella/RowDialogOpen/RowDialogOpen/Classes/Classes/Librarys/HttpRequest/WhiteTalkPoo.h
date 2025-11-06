@@ -11,7 +11,7 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 //: #import "AFNetworking.h"
-#import "Occluded.h"
+#import "Visitor.h"
 //: #import <SDWebImage/SDWebImage.h>
 #import <SDWebImage/SDWebImage.h>
 

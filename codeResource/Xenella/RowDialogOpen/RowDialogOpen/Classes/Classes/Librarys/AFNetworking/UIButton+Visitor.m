@@ -66,7 +66,7 @@
 
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIButton+Occluded.m
+// UIButton+Visitor.m
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -89,11 +89,11 @@
 
 // __M_A_C_R_O__
 //: #import "UIButton+AFNetworking.h"
-#import "UIButton+Occluded.h"
+#import "UIButton+Visitor.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "UIImageView+AFNetworking.h"
-#import "UIImageView+Occluded.h"
+#import "UIImageView+Visitor.h"
 //: #import "AFImageDownloader.h"
 #import "SceneDragDownloader.h"
 
@@ -216,7 +216,7 @@ static const char * drawingUnit(UIControlState state) {
 #pragma mark -
 
 //: @implementation UIButton (AFNetworking)
-@implementation UIButton (Occluded)
+@implementation UIButton (Visitor)
 
 //: - (BOOL)isActiveBackgroundTaskURLEqualToURLRequest:(NSURLRequest *)urlRequest forState:(UIControlState)state {
 - (BOOL)toAGreaterExtent:(NSURLRequest *)urlRequest chemicalAgentInCorps:(UIControlState)state {

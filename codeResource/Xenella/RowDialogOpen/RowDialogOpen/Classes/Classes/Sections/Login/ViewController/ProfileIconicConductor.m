@@ -145,7 +145,7 @@ Byte colorFriendlyKey[] = {9, 2, 31, 13, 147, 141, 50, 140, 105, 76, 178, 222, 1
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AlignRuggedizedLedgeProjector.m
+//  ProfileIconicConductor.m
 //  Riverla
 //
 //  Created by mac on 2025/4/9.
@@ -154,7 +154,7 @@ Byte colorFriendlyKey[] = {9, 2, 31, 13, 147, 141, 50, 140, 105, 76, 178, 222, 1
 
 // __M_A_C_R_O__
 //: #import "RegisterInfoViewController.h"
-#import "AlignRuggedizedLedgeProjector.h"
+#import "ProfileIconicConductor.h"
 //: #import "TZImagePickerController.h"
 #import "TZImagePickerController.h"
 //: #import "USERRegistConfigManager.h"
@@ -163,7 +163,7 @@ Byte colorFriendlyKey[] = {9, 2, 31, 13, 147, 141, 50, 140, 105, 76, 178, 222, 1
 #import "MessageMil.h"
 
 //: @interface RegisterInfoViewController ()
-@interface AlignRuggedizedLedgeProjector ()
+@interface ProfileIconicConductor ()
 
 //: @property (strong, nonatomic) UIButton *registerButton;
 @property (strong, nonatomic) UIButton *regular;
@@ -191,7 +191,7 @@ Byte colorFriendlyKey[] = {9, 2, 31, 13, 147, 141, 50, 140, 105, 76, 178, 222, 1
 @end
 
 //: @implementation RegisterInfoViewController
-@implementation AlignRuggedizedLedgeProjector
+@implementation ProfileIconicConductor
 
 //: @end
 

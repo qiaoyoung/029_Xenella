@@ -439,7 +439,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param authenticationChallengeHandler A block object to be executed when a session task has received a request specific authentication challenge.
  
- When implementing an authentication challenge handler, you should check the authentication method first (`challenge.protectionSpace.authenticationMethod `) to decide if you want to handle the authentication challenge yourself or if you want Occluded to handle it. If you want Occluded to handle the authentication challenge, just return `@(NSURLSessionAuthChallengePerformDefaultHandling)`. For example, you certainly want Occluded to handle certificate validation (i.e. authentication method == `NSURLAuthenticationMethodServerTrust`) as defined by the security policy. If you want to handle the challenge yourself, you have four options:
+ When implementing an authentication challenge handler, you should check the authentication method first (`challenge.protectionSpace.authenticationMethod `) to decide if you want to handle the authentication challenge yourself or if you want Visitor to handle it. If you want Visitor to handle the authentication challenge, just return `@(NSURLSessionAuthChallengePerformDefaultHandling)`. For example, you certainly want Visitor to handle certificate validation (i.e. authentication method == `NSURLAuthenticationMethodServerTrust`) as defined by the security policy. If you want to handle the challenge yourself, you have four options:
  
  1. Return `nil` from the authentication challenge handler. You **MUST** call the completion handler with a disposition and credentials yourself. Use this if you need to present a user interface to let the user enter their credentials.
  2. Return an `NSError` object from the authentication challenge handler. You **MUST NOT** call the completion handler when returning an `NSError `. The returned error will be reported in the completion handler of the task. Use this if you need to abort an authentication challenge with a specific error.
@@ -469,7 +469,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param block A block object to be executed when a connection level authentication challenge has occurred. The block returns the disposition of the authentication challenge, and takes three arguments: the session, the authentication challenge, and a pointer to the credential that should be used to resolve the challenge.
 
- @warning Implementing a session authentication challenge handler yourself totally bypasses Occluded's security policy defined in `WhiteSilver`. Make sure you fully understand the implications before implementing a custom session authentication challenge handler. If you do not want to bypass Occluded's security policy, use `setTaskDidReceiveAuthenticationChallengeBlock:` instead.
+ @warning Implementing a session authentication challenge handler yourself totally bypasses Visitor's security policy defined in `WhiteSilver`. Make sure you fully understand the implications before implementing a custom session authentication challenge handler. If you do not want to bypass Visitor's security policy, use `setTaskDidReceiveAuthenticationChallengeBlock:` instead.
 
  @see -securityPolicy
  @see -setTaskDidReceiveAuthenticationChallengeBlock:

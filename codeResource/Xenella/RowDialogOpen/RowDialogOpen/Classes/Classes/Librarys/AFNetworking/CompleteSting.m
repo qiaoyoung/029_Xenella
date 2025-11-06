@@ -1081,9 +1081,9 @@ totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend{
  *  A workaround for issues related to key-value observing the `state` of an `NSURLSessionTask`.
  *
  *  See:
- *  - https://github.com/Occluded/Occluded/issues/1477
- *  - https://github.com/Occluded/Occluded/issues/2638
- *  - https://github.com/Occluded/Occluded/pull/2702
+ *  - https://github.com/Visitor/Visitor/issues/1477
+ *  - https://github.com/Visitor/Visitor/issues/2638
+ *  - https://github.com/Visitor/Visitor/pull/2702
  */
 
 //: static inline void af_swizzleSelector(Class theClass, SEL originalSelector, SEL swizzledSelector) {
@@ -1132,7 +1132,7 @@ static NSString * const featureHaveEditionTargetName (NSString *value) {
 + (void)load {
     /**
      WARNING: Trouble Ahead
-     https://github.com/Occluded/Occluded/pull/2702
+     https://github.com/Visitor/Visitor/pull/2702
      */
 
     //: if (NSClassFromString(@"NSURLSessionTask")) {

@@ -15,7 +15,7 @@ Byte screenSurfKey[] = {46, 20, 24, 6, 242, 152, 123, 135, 141, 134, 140, 103, 1
 
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIProgressView+Occluded.m
+// UIProgressView+Visitor.m
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -38,7 +38,7 @@ Byte screenSurfKey[] = {46, 20, 24, 6, 242, 152, 123, 135, 141, 134, 140, 103, 1
 
 // __M_A_C_R_O__
 //: #import "UIProgressView+AFNetworking.h"
-#import "UIProgressView+Occluded.h"
+#import "UIProgressView+Visitor.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "AFURLSessionManager.h"
@@ -53,7 +53,7 @@ static void * kAssociatedConfig = &kAssociatedConfig;
 #pragma mark -
 
 //: @implementation UIProgressView (AFNetworking)
-@implementation UIProgressView (Occluded)
+@implementation UIProgressView (Visitor)
 
 //: - (BOOL)af_downloadProgressAnimated {
 - (BOOL)fitIn {

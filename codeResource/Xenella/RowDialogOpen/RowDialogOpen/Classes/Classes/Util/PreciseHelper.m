@@ -302,7 +302,7 @@
 //: #import "YLNetworkHelper.h"
 #import "PreciseHelper.h"
 //: #import "AFNetworking.h"
-#import "Occluded.h"
+#import "Visitor.h"
 //: #import "AFNetworkActivityIndicatorManager.h"
 #import "LabelEvaluate.h"
 

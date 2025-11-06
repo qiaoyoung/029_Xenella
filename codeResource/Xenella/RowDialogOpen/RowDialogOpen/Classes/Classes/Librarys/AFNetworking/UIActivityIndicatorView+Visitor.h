@@ -1,6 +1,6 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIActivityIndicatorView+Occluded.h
+// UIActivityIndicatorView+Visitor.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,7 +33,7 @@
  This category adds methods to the UIKit framework's `UIActivityIndicatorView` class. The methods in this category provide support for automatically starting and stopping animation depending on the loading state of a session task.
  */
 //: @interface UIActivityIndicatorView (AFNetworking)
-@interface UIActivityIndicatorView (Occluded)
+@interface UIActivityIndicatorView (Visitor)
 
 ///----------------------------------
 /// @name Animating for Session Tasks

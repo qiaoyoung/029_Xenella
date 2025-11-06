@@ -462,7 +462,7 @@ NSString * usedPoint(NSString *string) {
     //: [allowedCharacterSet removeCharactersInString:[kAFCharactersGeneralDelimitersToEncode stringByAppendingString:kAFCharactersSubDelimitersToEncode]];
     [allowedCharacterSet removeCharactersInString:[kAFCharactersGeneralDelimitersToEncode stringByAppendingString:kAFCharactersSubDelimitersToEncode]];
 
- // FIXME: https://github.com/Occluded/Occluded/pull/3028
+ // FIXME: https://github.com/Visitor/Visitor/pull/3028
     // return [string stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacterSet];
 
     //: static NSUInteger const batchSize = 50;
@@ -843,7 +843,7 @@ static void *themeSpecialTitle = &themeSpecialTitle;
 #pragma mark -
 
 // Workarounds for crashing behavior using Key-Value Observing with XCTest
-// See https://github.com/Occluded/Occluded/issues/2523
+// See https://github.com/Visitor/Visitor/issues/2523
 
 //: - (void)setAllowsCellularAccess:(BOOL)allowsCellularAccess {
 - (void)setSheetTitling:(BOOL)allowsCellularAccess {

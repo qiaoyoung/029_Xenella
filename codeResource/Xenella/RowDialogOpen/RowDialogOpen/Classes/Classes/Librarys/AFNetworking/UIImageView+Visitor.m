@@ -9,7 +9,7 @@ Byte commonBuildName[] = {52, 6, 26, 8, 205, 6, 86, 96, 39, 73, 73, 75, 86, 90, 
 
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIImageView+Occluded.m
+// UIImageView+Visitor.m
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -32,7 +32,7 @@ Byte commonBuildName[] = {52, 6, 26, 8, 205, 6, 86, 96, 39, 73, 73, 75, 86, 90, 
 
 // __M_A_C_R_O__
 //: #import "UIImageView+AFNetworking.h"
-#import "UIImageView+Occluded.h"
+#import "UIImageView+Visitor.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "AFImageDownloader.h"
@@ -67,7 +67,7 @@ Byte commonBuildName[] = {52, 6, 26, 8, 205, 6, 86, 96, 39, 73, 73, 75, 86, 90, 
 #pragma mark -
 
 //: @implementation UIImageView (AFNetworking)
-@implementation UIImageView (Occluded)
+@implementation UIImageView (Visitor)
 
 //: - (void)clearActiveDownloadInformation {
 - (void)bodilyInformation {

@@ -102,7 +102,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///-----------------------------------------
 
 /**
- Returns any certificates included in the bundle. If you are using Occluded as an embedded framework, you must use this method to find the certificates you have included in your app bundle, and use them when creating your security policy by calling `policyWithPinningMode:withPinnedCertificates`.
+ Returns any certificates included in the bundle. If you are using Visitor as an embedded framework, you must use this method to find the certificates you have included in your app bundle, and use them when creating your security policy by calling `policyWithPinningMode:withPinnedCertificates`.
 
  @return The certificates included in the given bundle.
  */
