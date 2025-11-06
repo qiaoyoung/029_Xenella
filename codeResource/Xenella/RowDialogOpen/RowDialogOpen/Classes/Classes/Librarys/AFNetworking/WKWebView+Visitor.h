@@ -1,6 +1,6 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// WkWebView+Occluded.h
+// WkWebView+Visitor.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class WithSkullSession;
 
 //: @interface WKWebView (AFNetworking)
-@interface WKWebView (Occluded)
+@interface WKWebView (Visitor)
 
 /**
  The session manager used to download all request

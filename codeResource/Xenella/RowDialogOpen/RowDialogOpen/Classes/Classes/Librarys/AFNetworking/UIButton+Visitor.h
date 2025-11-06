@@ -1,6 +1,6 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIButton+Occluded.h
+// UIButton+Visitor.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -41,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
  @warning Compound values for control `state` (such as `UIControlStateHighlighted | UIControlStateDisabled`) are unsupported.
  */
 //: @interface UIButton (AFNetworking)
-@interface UIButton (Occluded)
+@interface UIButton (Visitor)
 
 ///------------------------------------
 /// @name Accessing the Image Downloader

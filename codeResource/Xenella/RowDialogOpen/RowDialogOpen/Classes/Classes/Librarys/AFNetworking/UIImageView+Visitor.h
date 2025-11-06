@@ -1,6 +1,6 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIImageView+Occluded.h
+// UIImageView+Visitor.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
  This category adds methods to the UIKit framework's `UIImageView` class. The methods in this category provide support for loading remote images asynchronously from a URL.
  */
 //: @interface UIImageView (AFNetworking)
-@interface UIImageView (Occluded)
+@interface UIImageView (Visitor)
 
 ///------------------------------------
 /// @name Accessing the Image Downloader
