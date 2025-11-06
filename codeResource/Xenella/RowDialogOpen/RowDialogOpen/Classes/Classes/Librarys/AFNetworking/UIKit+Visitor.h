@@ -1,6 +1,6 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIKit+Occluded.h
+// UIKit+Visitor.h
 //
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //

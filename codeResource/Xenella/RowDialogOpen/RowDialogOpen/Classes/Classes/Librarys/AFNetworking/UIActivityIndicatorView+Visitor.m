@@ -1,6 +1,6 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// UIActivityIndicatorView+Occluded.m
+// UIActivityIndicatorView+Visitor.m
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,7 +23,7 @@
 
 // __M_A_C_R_O__
 //: #import "UIActivityIndicatorView+AFNetworking.h"
-#import "UIActivityIndicatorView+Occluded.h"
+#import "UIActivityIndicatorView+Visitor.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "AFURLSessionManager.h"
@@ -44,7 +44,7 @@
 @end
 
 //: @implementation UIActivityIndicatorView (AFNetworking)
-@implementation UIActivityIndicatorView (Occluded)
+@implementation UIActivityIndicatorView (Visitor)
 
 //: - (AFActivityIndicatorViewNotificationObserver *)af_notificationObserver {
 - (HeadReach *)acceptableDeal {
