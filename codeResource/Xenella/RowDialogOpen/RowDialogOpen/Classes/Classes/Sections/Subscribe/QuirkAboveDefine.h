@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  USERSubscribeDefine.h
+//  QuirkAboveDefine.h
 //  NIM
 //
 //  Created by chris on 2017/4/5.

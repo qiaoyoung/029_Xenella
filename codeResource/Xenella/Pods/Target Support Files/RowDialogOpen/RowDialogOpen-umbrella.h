@@ -417,7 +417,7 @@
 #import "StingView.h"
 #import "SmartHelper.h"
 #import "GerminateRev.h"
-#import "USERSubscribeDefine.h"
+#import "QuirkAboveDefine.h"
 #import "BlankUtil.h"
 #import "CapVoiceUniversal.h"
 #import "DiamondPassingDelegate.h"

@@ -75,8 +75,8 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "USERSubscribeManager.h"
 #import "GerminateRev.h"
-//: #import "USERSubscribeDefine.h"
-#import "USERSubscribeDefine.h"
+//: #import "QuirkAboveDefine.h"
+#import "QuirkAboveDefine.h"
 //: #import "USERDevice.h"
 #import "DigClientDevice.h"
 //: #import "ExtensionUserHelper.h"
