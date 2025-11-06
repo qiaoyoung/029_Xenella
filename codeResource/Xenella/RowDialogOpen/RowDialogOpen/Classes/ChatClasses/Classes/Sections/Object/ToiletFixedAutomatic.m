@@ -16,7 +16,7 @@
 //: #import "FFFMessageModel.h"
 #import "AyModel.h"
 //: #import "FFFTimestampModel.h"
-#import "TimestampTransitModelRepo.h"
+#import "NeatBinderPrintHeight.h"
 //: #import "NSString+Wave.h"
 #import "NSString+Wave.h"
 //: #import "MyUserKit.h"
@@ -72,7 +72,7 @@
         //: if ([self shouldInsertTimestamp:model]) {
         if ([self sentimentGround:model]) {
             //: FFFTimestampModel *timeModel = [[FFFTimestampModel alloc] init];
-            TimestampTransitModelRepo *timeModel = [[TimestampTransitModelRepo alloc] init];
+            NeatBinderPrintHeight *timeModel = [[NeatBinderPrintHeight alloc] init];
             //: timeModel.messageTime = model.messageTime;
             timeModel.man = model.power;
 	[self setFound:self.message];
@@ -202,9 +202,9 @@
     //: if (delMsgIndex > 0) {
     if (delMsgIndex > 0) {
         //: BOOL delMsgIsSingle = (delMsgIndex == self.items.count-1 || [self.items[delMsgIndex+1] isKindOfClass:[FFFTimestampModel class]]);
-        BOOL delMsgIsSingle = (delMsgIndex == self.delivery.count-1 || [self.delivery[delMsgIndex+1] isKindOfClass:[TimestampTransitModelRepo class]]);
+        BOOL delMsgIsSingle = (delMsgIndex == self.delivery.count-1 || [self.delivery[delMsgIndex+1] isKindOfClass:[NeatBinderPrintHeight class]]);
         //: if ([self.items[delMsgIndex-1] isKindOfClass:[FFFTimestampModel class]] && delMsgIsSingle) {
-        if ([self.delivery[delMsgIndex-1] isKindOfClass:[TimestampTransitModelRepo class]] && delMsgIsSingle) {
+        if ([self.delivery[delMsgIndex-1] isKindOfClass:[NeatBinderPrintHeight class]] && delMsgIsSingle) {
             //: delTimeIndex = delMsgIndex-1;
             delTimeIndex = delMsgIndex-1;
 	[self setFound:self.message];
@@ -269,7 +269,7 @@
         //此时至少有一条消息和时间戳（如果有的话）
         //干掉时间戳（如果有的话）
         //: if ([self.items.firstObject isKindOfClass:[FFFTimestampModel class]]) {
-        if ([self.delivery.firstObject isKindOfClass:[TimestampTransitModelRepo class]]) {
+        if ([self.delivery.firstObject isKindOfClass:[NeatBinderPrintHeight class]]) {
             //: [self.items removeObjectAtIndex:0];
             [self.delivery removeObjectAtIndex:0];
         }
@@ -280,7 +280,7 @@
     if ((![self.pull respondsToSelector:@selector(figureImage)] || self.pull.figureImage) && self.pull) {
         //这种情况下必须要插入时间戳
         //: FFFTimestampModel *timeModel = [[FFFTimestampModel alloc] init];
-        TimestampTransitModelRepo *timeModel = [[TimestampTransitModelRepo alloc] init];
+        NeatBinderPrintHeight *timeModel = [[NeatBinderPrintHeight alloc] init];
         //: timeModel.messageTime = model.messageTime;
         timeModel.man = model.power;
 	[self setFound:self.message];
@@ -438,7 +438,7 @@
     //: for (FFFMessageModel *model in models) {
     for (AyModel *model in models) {
         //: if ([model isKindOfClass:[FFFTimestampModel class]]) {
-        if ([model isKindOfClass:[TimestampTransitModelRepo class]]) {
+        if ([model isKindOfClass:[NeatBinderPrintHeight class]]) {
             //: continue;
             continue;
         }
@@ -449,9 +449,9 @@
         //: if (delMsgIndex > 0) {
         if (delMsgIndex > 0) {
             //: BOOL delMsgIsSingle = (delMsgIndex == all.count-1 || [all[delMsgIndex+1] isKindOfClass:[FFFTimestampModel class]]);
-            BOOL delMsgIsSingle = (delMsgIndex == all.count-1 || [all[delMsgIndex+1] isKindOfClass:[TimestampTransitModelRepo class]]);
+            BOOL delMsgIsSingle = (delMsgIndex == all.count-1 || [all[delMsgIndex+1] isKindOfClass:[NeatBinderPrintHeight class]]);
             //: if ([all[delMsgIndex-1] isKindOfClass:[FFFTimestampModel class]] && delMsgIsSingle) {
-            if ([all[delMsgIndex-1] isKindOfClass:[TimestampTransitModelRepo class]] && delMsgIsSingle) {
+            if ([all[delMsgIndex-1] isKindOfClass:[NeatBinderPrintHeight class]] && delMsgIsSingle) {
                 //: delTimeIndex = delMsgIndex-1;
                 delTimeIndex = delMsgIndex-1;
 	[self setFound:self.message];

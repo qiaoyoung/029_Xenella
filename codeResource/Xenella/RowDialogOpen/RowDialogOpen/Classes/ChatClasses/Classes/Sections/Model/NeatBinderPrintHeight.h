@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TimestampTransitModelRepo.h
+//  NeatBinderPrintHeight.h
 // Wave
 //
 //  Created by chris.
@@ -15,7 +15,7 @@
 #import "DiagramSelectThemeNeat.h"
 
 //: @interface FFFTimestampModel : NSObject
-@interface TimestampTransitModelRepo : NSObject
+@interface NeatBinderPrintHeight : NSObject
 
 /**
  *  时间戳

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TimestampTransitModelRepo.m
+//  NeatBinderPrintHeight.m
 // Wave
 //
 //  Created by chris.
@@ -10,14 +10,14 @@
 
 // __M_A_C_R_O__
 //: #import "FFFTimestampModel.h"
-#import "TimestampTransitModelRepo.h"
+#import "NeatBinderPrintHeight.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "OceanScrollView+Wave.h"
 //: #import "FFFKitUtil.h"
 #import "TransitDoseUtil.h"
 
 //: @implementation FFFTimestampModel
-@implementation TimestampTransitModelRepo
+@implementation NeatBinderPrintHeight
 
 - (CGFloat)simultaneously:(CGFloat)me {
     //: OC_CUSTOM_PROPERTY_INJECT

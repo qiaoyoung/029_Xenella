@@ -873,7 +873,7 @@
     _adjust.wholeDrawses = self;
 	[self setRandom:_randomPhoto];
     //: [_toolBar.emoticonBtn addTarget:self action:@selector(onTouchEmoticonBtn:) forControlEvents:UIControlEventTouchUpInside];
-    [_adjust.searched addTarget:self action:@selector(billing:) forControlEvents:UIControlEventTouchUpInside];
+    [_adjust.searched addTarget:self action:@selector(onTouchEmoticonBtn:) forControlEvents:UIControlEventTouchUpInside];
 //    [_toolBar.emoticonBtn2 addTarget:self action:@selector(onTouchEmoticonBtn:) forControlEvents:UIControlEventTouchUpInside];
     //: [_toolBar.albunBtn addTarget:self action:@selector(requestAuthorizationForPhotoLibrary) forControlEvents:UIControlEventTouchUpInside];
     [_adjust.ovalPic addTarget:self action:@selector(calendarPass) forControlEvents:UIControlEventTouchUpInside];
@@ -1141,7 +1141,7 @@
 
 
 //: - (void)onTouchEmoticonBtn:(id)sender
-- (void)billing:(id)sender
+- (void)onTouchEmoticonBtn:(id)sender
 {
     //: if (self.status != NIMInputStatusEmoticon) {
     if (self.pathTiming != NIMInputStatusEmoticon) {

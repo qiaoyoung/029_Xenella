@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  OperativeSumroLabel.h
+//  SurfacePaginateLabel.h
 //  sohunews
 //
 //  Created by tianyulong on 2019/8/14.
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger, SNContactType)
 };
 
 //: @interface CCCContactPerson : NSObject
-@interface OperativeSumroLabel : NSObject
+@interface SurfacePaginateLabel : NSObject
 
 /**
  联系人类型
@@ -163,12 +163,12 @@ typedef NS_ENUM(NSUInteger, SNContactType)
 //: @interface LJSectionPerson : NSObject
 @interface MarchPerson : NSObject
 
-@property (nonatomic, copy) NSArray <OperativeSumroLabel *> *circle;
+@property (nonatomic, copy) NSArray <SurfacePaginateLabel *> *circle;
 
 //: @property (nonatomic, copy) NSString *key;
 @property (nonatomic, copy) NSString *specialSucceed;
 //: @property (nonatomic, copy) NSArray <CCCContactPerson *> *persons;
-@property (nonatomic, copy) NSArray <OperativeSumroLabel *> *incomeLikely;
+@property (nonatomic, copy) NSArray <SurfacePaginateLabel *> *incomeLikely;
 
 //: @end
 @end

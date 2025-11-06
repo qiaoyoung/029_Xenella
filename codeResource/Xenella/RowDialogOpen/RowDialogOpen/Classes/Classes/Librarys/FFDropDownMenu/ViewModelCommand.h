@@ -21,7 +21,7 @@
 #import "CapView.h"
 
 //: @class FFDropDownMenuView;
-@class GroundspeedView;
+@class ViewModelCommand;
 
 //model
 
@@ -96,7 +96,7 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
 /** 若是自定义cell样式的，可以在这个代理方法中稍微小修改cell的样式，比如是否需要下划线、字体的颜色等等*/
 /** you can modify menu cell style, Such as if should show underline */
 //: - (void)ffDropDownMenuView:(FFDropDownMenuView *)menuView WillAppearMenuCell:(FFDropDownMenuBasedCell *)menuCell index:(NSInteger)index;
-- (void)bottomMovie:(GroundspeedView *)menuView primaryLight:(EcumenicalView *)menuCell excess:(NSInteger)index;
+- (void)bottomMovie:(ViewModelCommand *)menuView primaryLight:(EcumenicalView *)menuCell excess:(NSInteger)index;
 
 //: - (void)ffDropDownMenuViewWillAppear;
 - (void)keyBelow;
@@ -120,7 +120,7 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
  *  下拉菜单
  */
 //: @interface FFDropDownMenuView : UIView
-@interface GroundspeedView : UIView
+@interface ViewModelCommand : UIView
 
 
 
@@ -294,7 +294,7 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
 ///                    创建下拉菜单方式2
 ///   适用于自定义下拉菜单样式，单个属性进行赋值
 ///   >>步骤:
-///   1、 [GroundspeedView alloc] init]
+///   1、 [ViewModelCommand alloc] init]
 ///   2、 对需要赋值的属性进行赋值
 ///       >>>>>若要使用默认值，可以不对属性进行赋值，或者赋值 FFDefault....
 ///
@@ -306,7 +306,7 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
 ///               create a drop-down menu method two
 ///   Applicable to the use of the custom drop-down menu style
 ///   >>step:
-///   1、 [GroundspeedView alloc] init]
+///   1、 [ViewModelCommand alloc] init]
 ///   2、 Assign to the properties that need to be assigned.
 ///       >>>>>if want to use the default value，not assign or assign FFDefault....
 ///

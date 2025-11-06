@@ -282,10 +282,10 @@
 
     }
     //: else if ([modelInArray isKindOfClass:[FFFTimestampModel class]])
-    else if ([modelInArray isKindOfClass:[TimestampTransitModelRepo class]])
+    else if ([modelInArray isKindOfClass:[NeatBinderPrintHeight class]])
     {
         //: cellHeight = [(FFFTimestampModel *)modelInArray height];
-        cellHeight = [(TimestampTransitModelRepo *)modelInArray accessValid];
+        cellHeight = [(NeatBinderPrintHeight *)modelInArray accessValid];
     }
     //: else
     else
@@ -318,7 +318,7 @@
         [(CompartmentPacketView *)cell toyAnti:model];
     }
     //: else if ([model isKindOfClass:[FFFTimestampModel class]])
-    else if ([model isKindOfClass:[TimestampTransitModelRepo class]])
+    else if ([model isKindOfClass:[NeatBinderPrintHeight class]])
     {
         //: cell = [self.cellFactory cellInTable:tableView
         cell = [self.thumb loop:tableView

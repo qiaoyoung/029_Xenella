@@ -15,7 +15,7 @@
 #import "AnimatorMaskExportSeamless.h"
 
 //: @interface FFFSessionLayoutImpl : NSObject<NIMSessionLayout>
-@interface MagnituderoImpl : NSObject<DiamondLayout>
+@interface GetNeuralReferenceTheory : NSObject<DiamondLayout>
 
 //: @property (nonatomic,strong) FFFInputView *inputView;
 @property (nonatomic,strong) UniversalView *max;

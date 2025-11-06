@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  OperativeSumroLabel.m
+//  SurfacePaginateLabel.m
 //  sohunews
 //
 //  Created by tianyulong on 2019/8/14.
@@ -10,12 +10,12 @@
 
 // __M_A_C_R_O__
 //: #import "CCCContactPerson.h"
-#import "OperativeSumroLabel.h"
+#import "SurfacePaginateLabel.h"
 //: #import "NSString+LJExtension.h"
 #import "NSString+Ay.h"
 
 //: @implementation CCCContactPerson
-@implementation OperativeSumroLabel
+@implementation SurfacePaginateLabel
 
 //: @end
 
@@ -173,12 +173,12 @@
 
 //: @end
 
-- (void)setIncomeLikely:(NSArray<OperativeSumroLabel *> *)incomeLikely {
+- (void)setIncomeLikely:(NSArray<SurfacePaginateLabel *> *)incomeLikely {
     //: OC_CUSTOM_PROPERTY_INJECT
     _incomeLikely = incomeLikely;
 }
 
-- (NSArray<OperativeSumroLabel *> *)request:(NSArray<OperativeSumroLabel *> *)incomeLikely {
+- (NSArray<SurfacePaginateLabel *> *)request:(NSArray<SurfacePaginateLabel *> *)incomeLikely {
     //: OC_CUSTOM_PROPERTY_INJECT
     _incomeLikely = incomeLikely;
     return incomeLikely;

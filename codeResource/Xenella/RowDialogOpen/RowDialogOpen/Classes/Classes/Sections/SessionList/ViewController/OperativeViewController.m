@@ -781,7 +781,7 @@
 //: #import "FFDropDownMenu.h"
 #import "FFDropDownMenu.h"
 //: #import "FFDropDownMenuView.h"
-#import "GroundspeedView.h"
+#import "ViewModelCommand.h"
 //: #import "USERContactAddFriendViewController.h"
 #import "BelowViewController.h"
 //: #import "CCCContactScanViewController.h"
@@ -840,7 +840,7 @@
 @property (nonatomic, strong) DragView *factoryView;
 //: @property (nonatomic, strong) UIButton *mesBtn;
 @property (nonatomic, strong) UIButton *growing;
-@property (nonatomic, strong) GroundspeedView *maximumReplacement;
+@property (nonatomic, strong) ViewModelCommand *maximumReplacement;
 @property (nonatomic,assign) BOOL document;
 
 /** 下拉菜单 */
@@ -2441,7 +2441,7 @@
 
 
     //: self.dropdownMenu = [FFDropDownMenuView new];
-    self.maximumReplacement = [GroundspeedView new];
+    self.maximumReplacement = [ViewModelCommand new];
 	[self setName:_prep];
 
      //进行属性的赋值

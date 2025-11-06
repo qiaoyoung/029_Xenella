@@ -14,7 +14,7 @@
 //: #import "ManifestBrokerVigorous.h"
 #import "ManifestBrokerVigorous.h"
 //: #import "FFFTimestampModel.h"
-#import "TimestampTransitModelRepo.h"
+#import "NeatBinderPrintHeight.h"
 
 //: @class FFFSessionMessageContentView;
 @class SkullSessionControl;

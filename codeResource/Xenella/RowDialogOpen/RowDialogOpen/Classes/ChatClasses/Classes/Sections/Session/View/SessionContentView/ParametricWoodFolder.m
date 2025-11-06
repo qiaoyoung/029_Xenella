@@ -231,7 +231,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFSessionAudioContentView.h"
-#import "WeltanschauungNameView.h"
+#import "ParametricWoodFolder.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFMessageModel.h"
@@ -246,7 +246,7 @@
 #import "UIColor+Wave.h"
 
 //: @interface FFFSessionAudioContentView()<NIMMediaManagerDelegate>
-@interface WeltanschauungNameView()<NIMMediaManagerDelegate>
+@interface ParametricWoodFolder()<NIMMediaManagerDelegate>
 
 @property (nonatomic,strong) UIImageView *valid;
 //: @property (nonatomic,strong) UIImageView *voicePlayViewleft;
@@ -267,7 +267,7 @@
 @end
 
 //: @implementation FFFSessionAudioContentView
-@implementation WeltanschauungNameView
+@implementation ParametricWoodFolder
 
 //: - (void)refresh:(FFFMessageModel *)data {
 - (void)placementParent:(AyModel *)data {

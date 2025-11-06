@@ -76,9 +76,9 @@
 //: #import "FFFMessageModel.h"
 #import "AyModel.h"
 //: #import "FFFTimestampModel.h"
-#import "TimestampTransitModelRepo.h"
+#import "NeatBinderPrintHeight.h"
 //: #import "FFFSessionAudioContentView.h"
-#import "WeltanschauungNameView.h"
+#import "ParametricWoodFolder.h"
 //: #import "MyUserKit.h"
 #import "Wave.h"
 //: #import "FFFKitAudioCenter.h"
@@ -116,7 +116,7 @@
 //: - (FFFSessionTimestampCell *)cellInTable:(UITableView *)tableView
 - (VasViewCell *)loop:(UITableView *)tableView
                             //: forTimeModel:(FFFTimestampModel *)model
-                            challengeModel:(TimestampTransitModelRepo *)model
+                            challengeModel:(NeatBinderPrintHeight *)model
 {
     //: NSString *identity = @"time";
     NSString *identity = [ChiData colorSourceCycleAlert];

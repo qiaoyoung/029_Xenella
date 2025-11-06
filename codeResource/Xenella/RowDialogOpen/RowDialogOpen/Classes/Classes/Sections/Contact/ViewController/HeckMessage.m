@@ -254,7 +254,7 @@ void numberOne(void (^completion)(BOOL authorizationA), BOOL authorizationB) {
 
 
 //: - (void)accessContactsComplection:(void (^)(BOOL, NSArray<CCCContactPerson *> *))completcion {
-- (void)contactsScreen:(void (^)(BOOL, NSArray<OperativeSumroLabel *> *))completcion {
+- (void)contactsScreen:(void (^)(BOOL, NSArray<SurfacePaginateLabel *> *))completcion {
     //: [self requestAddressBookAuthorization:^(BOOL authorization) {
     [self conclusionDocketProceed:^(BOOL authorization) {
 
@@ -297,7 +297,7 @@ void numberOne(void (^completion)(BOOL authorizationA), BOOL authorizationB) {
 //: - (void)accessContactsWithMobileComplection:(void (^)(BOOL succeed, NSArray <NSDictionary *> *mobileContacts))completcion {
 - (void)flow:(void (^)(BOOL succeed, NSArray <NSDictionary *> *mobileContacts))completcion {
     //: [self accessContactsComplection:^(BOOL succeed, NSArray<CCCContactPerson *> *contacts) {
-    [self contactsScreen:^(BOOL succeed, NSArray<OperativeSumroLabel *> *contacts) {
+    [self contactsScreen:^(BOOL succeed, NSArray<SurfacePaginateLabel *> *contacts) {
 
         /// 用户禁止授权访问通讯录权限
         //: if (!succeed) {
@@ -314,7 +314,7 @@ void numberOne(void (^completion)(BOOL authorizationA), BOOL authorizationB) {
         //: if (contacts.count > 0) {
         if (contacts.count > 0) {
             //: for (CCCContactPerson *person in contacts) {
-            for (OperativeSumroLabel *person in contacts) {
+            for (SurfacePaginateLabel *person in contacts) {
                 //: for (NIMContactPhone *model in person.phones) {
                 for (UniversalPhone *model in person.being) {
                     //: NSDictionary *personResult = @{
@@ -415,7 +415,7 @@ void numberOne(void (^completion)(BOOL authorizationA), BOOL authorizationB) {
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 
     //: for (CCCContactPerson *person in datas)
-    for (OperativeSumroLabel *person in datas)
+    for (SurfacePaginateLabel *person in datas)
     {
         // 拼音首字母
         //: NSString *firstLetter = nil;
@@ -487,7 +487,7 @@ void numberOne(void (^completion)(BOOL authorizationA), BOOL authorizationB) {
 
         // 组内按照拼音排序
         //: NSArray *personsArr = [dict[key] sortedArrayUsingComparator:^NSComparisonResult(CCCContactPerson *person1, CCCContactPerson *person2) {
-        NSArray *personsArr = [dict[key] sortedArrayUsingComparator:^NSComparisonResult(OperativeSumroLabel *person1, OperativeSumroLabel *person2) {
+        NSArray *personsArr = [dict[key] sortedArrayUsingComparator:^NSComparisonResult(SurfacePaginateLabel *person1, SurfacePaginateLabel *person2) {
 
             //: NSComparisonResult result = [person1.pinyin compare:person2.pinyin];
             NSComparisonResult result = [person1.size compare:person2.size];
@@ -528,7 +528,7 @@ void numberOne(void (^completion)(BOOL authorizationA), BOOL authorizationB) {
         [weakSelf.pauseCapture enumerateContactsWithFetchRequest:request error:nil usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
 
             //: CCCContactPerson *person = [[CCCContactPerson alloc] initWithCNContact:contact];
-            OperativeSumroLabel *person = [[OperativeSumroLabel alloc] initWithTable:contact];
+            SurfacePaginateLabel *person = [[SurfacePaginateLabel alloc] initWithTable:contact];
             //: [datas addObject:person];
             [datas addObject:person];
 

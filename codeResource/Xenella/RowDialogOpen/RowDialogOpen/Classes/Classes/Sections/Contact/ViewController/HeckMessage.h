@@ -12,7 +12,7 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 //: #import "CCCContactPerson.h"
-#import "OperativeSumroLabel.h"
+#import "SurfacePaginateLabel.h"
 
 //: @interface CCCAddressBookManager : NSObject
 @interface HeckMessage : NSObject
@@ -23,7 +23,7 @@
  @param completcion 回调
  */
 //: - (void)accessContactsComplection:(void (^)(BOOL succeed, NSArray <CCCContactPerson *> *contacts))completcion;
-- (void)contactsScreen:(void (^)(BOOL succeed, NSArray <OperativeSumroLabel *> *contacts))completcion;
+- (void)contactsScreen:(void (^)(BOOL succeed, NSArray <SurfacePaginateLabel *> *contacts))completcion;
 ;
 
 

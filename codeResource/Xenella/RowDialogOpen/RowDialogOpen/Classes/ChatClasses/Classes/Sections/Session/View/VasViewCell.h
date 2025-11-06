@@ -15,7 +15,7 @@
 #import "ManifestBrokerVigorous.h"
 
 //: @class FFFTimestampModel;
-@class TimestampTransitModelRepo;
+@class NeatBinderPrintHeight;
 
 //: @interface FFFSessionTimestampCell : UITableViewCell
 @interface VasViewCell : UITableViewCell
@@ -28,7 +28,7 @@
 @property (strong, nonatomic) UILabel *mark;
 
 //: - (void)refreshData:(FFFTimestampModel *)data;
-- (void)pageData:(TimestampTransitModelRepo *)data;
+- (void)pageData:(NeatBinderPrintHeight *)data;
 
 //: @end
 @end

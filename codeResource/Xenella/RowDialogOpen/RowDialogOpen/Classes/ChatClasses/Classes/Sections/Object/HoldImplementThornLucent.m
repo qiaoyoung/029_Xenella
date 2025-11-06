@@ -26,7 +26,7 @@
 //: #import "FFFSessionDataSourceImpl.h"
 #import "SubPoUniversal.h"
 //: #import "FFFSessionLayoutImpl.h"
-#import "MagnituderoImpl.h"
+#import "GetNeuralReferenceTheory.h"
 //: #import "FFFSessionTableAdapter.h"
 #import "PreciousPerform.h"
 
@@ -87,7 +87,7 @@
     //: FFFSessionDataSourceImpl *datasource = [[FFFSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
     SubPoUniversal *datasource = [[SubPoUniversal alloc] initWithMulti:session operationClub:sessionConfig];
     //: FFFSessionLayoutImpl *layout = [[FFFSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
-    MagnituderoImpl *layout = [[MagnituderoImpl alloc] initWithPad:session with:sessionConfig];
+    GetNeuralReferenceTheory *layout = [[GetNeuralReferenceTheory alloc] initWithPad:session with:sessionConfig];
     //: layout.tableView = tableView;
     layout.fast = tableView;
     //: layout.inputView = inputView;

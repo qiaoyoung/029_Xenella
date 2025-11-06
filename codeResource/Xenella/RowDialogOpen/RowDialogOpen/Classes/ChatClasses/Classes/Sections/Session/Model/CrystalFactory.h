@@ -31,7 +31,7 @@
 //: - (FFFSessionTimestampCell *)cellInTable:(UITableView *)tableView
 - (VasViewCell *)loop:(UITableView *)tableView
                             //: forTimeModel:(FFFTimestampModel *)model;
-                            challengeModel:(TimestampTransitModelRepo *)model;
+                            challengeModel:(NeatBinderPrintHeight *)model;
 
 //: @end
 @end

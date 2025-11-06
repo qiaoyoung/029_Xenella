@@ -266,7 +266,7 @@
 //: #import "FFFKitUtil.h"
 #import "TransitDoseUtil.h"
 //: #import "FFFSessionAudioContentView.h"
-#import "WeltanschauungNameView.h"
+#import "ParametricWoodFolder.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "OceanScrollView.h"
@@ -515,7 +515,7 @@
         //: if (messageType == NIMMessageTypeAudio) {
         if (messageType == NIMMessageTypeAudio) {
             //: ((FFFSessionAudioContentView *)_bubbleView).audioUIDelegate = self;
-            ((WeltanschauungNameView *)_deliveryNameView).actualAudioUidelegate = self;
+            ((ParametricWoodFolder *)_deliveryNameView).actualAudioUidelegate = self;
 	[self setMedia:_man];
         }
         //: [self.contentView insertSubview:_bubbleView belowSubview:_selectButtonMask];

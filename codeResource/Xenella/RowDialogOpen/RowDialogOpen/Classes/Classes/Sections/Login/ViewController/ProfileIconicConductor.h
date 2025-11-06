@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  SumroViewController.h
+//  ProfileIconicConductor.h
 //  Riverla
 //
 //  Created by mac on 2025/4/9.
@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface RegisterInfoViewController : UIViewController
-@interface SumroViewController : UIViewController
+@interface ProfileIconicConductor : UIViewController
 
 //: @property (nonatomic,strong) NSString *accountName;
 @property (nonatomic,strong) NSString *pickName;

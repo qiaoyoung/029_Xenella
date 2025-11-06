@@ -75,7 +75,7 @@ typedef struct {
 - (NSString *)pastCell:(NIMMessage *)message
 {
     //: return @"FFFSessionAudioContentView";
-    return @"WeltanschauungNameView";
+    return @"ParametricWoodFolder";
 }
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message

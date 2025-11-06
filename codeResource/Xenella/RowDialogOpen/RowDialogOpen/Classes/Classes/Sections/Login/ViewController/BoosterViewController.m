@@ -161,7 +161,7 @@ TimeTestedData themeSilentId = (TimeTestedData){175, (Byte []){240, 240, 252, 23
 //: #import "SNDevice.h"
 #import "BlockDevice.h"
 //: #import "RegisterInfoViewController.h"
-#import "SumroViewController.h"
+#import "ProfileIconicConductor.h"
 //: #import "ZMONPolicyPrivacyViewController.h"
 #import "PrivacyViewController.h"
 
@@ -295,7 +295,7 @@ TimeTestedData themeSilentId = (TimeTestedData){175, (Byte []){240, 240, 252, 23
         //: if (sucess) {
         if (sucess) {
             //: RegisterInfoViewController *vc = [[RegisterInfoViewController alloc]init];
-            SumroViewController *vc = [[SumroViewController alloc]init];
+            ProfileIconicConductor *vc = [[ProfileIconicConductor alloc]init];
             //: vc.accountName = _usernameTextField.text;
             vc.pickName = _run.text;
             //: [self.navigationController pushViewController:vc animated:YES];

@@ -71,7 +71,7 @@ typedef struct {
 
 // __M_A_C_R_O__
 //: #import "FFFSessionLayoutImpl.h"
-#import "MagnituderoImpl.h"
+#import "GetNeuralReferenceTheory.h"
 //: #import "UITableView+ScrollToBottom.h"
 #import "UITableView+ScrollToBottom.h"
 //: #import "FFFMessageCell.h"
@@ -88,7 +88,7 @@ typedef struct {
 #import "ExitRidgeView.h"
 
 //: @interface FFFSessionLayoutImpl()
-@interface MagnituderoImpl()
+@interface GetNeuralReferenceTheory()
 {
     //: CGFloat _inputViewHeight;
     CGFloat _row;
@@ -112,7 +112,7 @@ typedef struct {
 @end
 
 //: @implementation FFFSessionLayoutImpl
-@implementation MagnituderoImpl
+@implementation GetNeuralReferenceTheory
 
 //: - (void)dealloc
 - (void)dealloc

@@ -80,7 +80,7 @@
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFTimestampModel.h"
-#import "TimestampTransitModelRepo.h"
+#import "NeatBinderPrintHeight.h"
 //: #import "FFFKitUtil.h"
 #import "TransitDoseUtil.h"
 //: #import "UIImage+MyUserKit.h"
@@ -92,8 +92,8 @@
 @interface VasViewCell()
 
 //: @property (nonatomic,strong) FFFTimestampModel *model;
-@property (nonatomic,strong) TimestampTransitModelRepo *leaf;
-@property (nonatomic,strong) TimestampTransitModelRepo *shadowVisible;
+@property (nonatomic,strong) NeatBinderPrintHeight *leaf;
+@property (nonatomic,strong) NeatBinderPrintHeight *shadowVisible;
 
 //: @end
 @end
@@ -102,7 +102,7 @@
 @implementation VasViewCell
 
 //: - (void)refreshData:(FFFTimestampModel *)data{
-- (void)pageData:(TimestampTransitModelRepo *)data{
+- (void)pageData:(NeatBinderPrintHeight *)data{
     //: if (self.model == data) {
     if ([self transaction:self.shadowVisible] == data) {
         //: return;
@@ -113,7 +113,7 @@
     //: if([self checkData]){
     if([self rateAggregation]){
         //: FFFTimestampModel *model = (FFFTimestampModel *)data;
-        TimestampTransitModelRepo *model = (TimestampTransitModelRepo *)data;
+        NeatBinderPrintHeight *model = (NeatBinderPrintHeight *)data;
         //: [_timeLabel setText:[FFFKitUtil showTime:model.messageTime showDetail:YES]];
         [[self runningSpecial:_mark] setText:[TransitDoseUtil districtDetail:model.man homeRange:YES]];
     }
@@ -172,7 +172,7 @@
 //: - (BOOL)checkData{
 - (BOOL)rateAggregation{
     //: return [self.model isKindOfClass:[FFFTimestampModel class]];
-    return [[self transaction:self.shadowVisible] isKindOfClass:[TimestampTransitModelRepo class]];
+    return [[self transaction:self.shadowVisible] isKindOfClass:[NeatBinderPrintHeight class]];
 }
 
 //: @end
@@ -182,7 +182,7 @@
     _extra = extra;
 }
 
-- (TimestampTransitModelRepo *)transaction:(TimestampTransitModelRepo *)leaf {
+- (NeatBinderPrintHeight *)transaction:(NeatBinderPrintHeight *)leaf {
     //: OC_CUSTOM_PROPERTY_INJECT
     _leaf = leaf;
     return leaf;
@@ -195,7 +195,7 @@
     return extra;
 }
 
-- (void)setLeaf:(TimestampTransitModelRepo *)leaf {
+- (void)setLeaf:(NeatBinderPrintHeight *)leaf {
     //: OC_CUSTOM_PROPERTY_INJECT
     _leaf = leaf;
 }

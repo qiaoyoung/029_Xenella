@@ -24,7 +24,7 @@
 @end
 
 //: @interface FFFSessionAudioContentView : FFFSessionMessageContentView
-@interface WeltanschauungNameView : SkullSessionControl
+@interface ParametricWoodFolder : SkullSessionControl
 
 //: @property (nonatomic, strong) UILabel *audioDurationLable; 
 @property (nonatomic, strong) UILabel *notice;//语音时长

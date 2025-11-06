@@ -148,14 +148,14 @@ typedef struct {
 
 // __M_A_C_R_O__
 //: #import "FFDropDownMenuView.h"
-#import "GroundspeedView.h"
+#import "ViewModelCommand.h"
 //: #import "FFDropDownMenuTriangleView.h"
 #import "WaveView.h"
 //: #import "FFDropDownMenu.h"
 #import "FFDropDownMenu.h"
 
 //: @interface FFDropDownMenuView ()<UITableViewDataSource, UITableViewDelegate>
-@interface GroundspeedView ()<UITableViewDataSource, UITableViewDelegate>
+@interface ViewModelCommand ()<UITableViewDataSource, UITableViewDelegate>
 
 /**tableView*/
 /** tableView的frame */
@@ -191,7 +191,7 @@ typedef struct {
 @end
 
 //: @implementation FFDropDownMenuView
-@implementation GroundspeedView
+@implementation ViewModelCommand
 
 
 //=================================================================
@@ -937,7 +937,7 @@ static NSString *const k_lockAlert (NSString *value) {
 + (instancetype)basic:(NSArray *)menuModelsArray undertake:(CGFloat)menuWidth tableDHoteFloat:(CGFloat)eachItemHeight mustToEvent:(CGFloat)menuRightMargin back:(CGFloat)triangleRightMargin {
 
     //: FFDropDownMenuView *menuView = [FFDropDownMenuView new];
-    GroundspeedView *menuView = [GroundspeedView new];
+    ViewModelCommand *menuView = [ViewModelCommand new];
 
     //: menuView.menuModelsArray = menuModelsArray;
     menuView.assetArray = menuModelsArray;
