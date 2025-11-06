@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>winterLayout</key>
+    <string>CarefulOddBriskWind</string>
+    <key>dominantRepaint</key>
+    <string>DawnDocumentToolbar</string>
+    <key>projectorFacetAmid</key>
+    <string>DelegateFrameFix</string>
+    <key>connectFontUpwardController</key>
+    <string>FancyByListModest</string>
+    <key>painterBindKindredBirch</key>
+    <string>StencilFallbackStencil</string>
+</dict>
+</plist>

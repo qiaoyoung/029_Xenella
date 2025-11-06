@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>modelUrbaneVisitorAnalyze</key>
+    <string>MagicTrainOrganizer</string>
+    <key>builderEnqueue</key>
+    <string>AcceptScenarioTheoryAtlasMap</string>
+    <key>shadowBundle</key>
+    <string>DelegateCounterWordUpdaterData</string>
+    <key>previewKineticBuilderPlugin</key>
+    <string>PauseStoryBehind</string>
+    <key>roadmapSuite</key>
+    <string>CollectorChatInView</string>
+    <key>mapHostWorkbench</key>
+    <string>RusticGrovePerform</string>
+</dict>
+</plist>
