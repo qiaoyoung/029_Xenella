@@ -28,8 +28,8 @@
 #import "AuroraTranslateUnity.h"        //输入框回调
 //: #import "FFFKitDataProvider.h"      //APP内容提供器
 #import "ProvisionerProvider.h"      //APP内容提供器
-//: #import "TheoryMildDatasetter.h"  //message cell事件回调
-#import "TheoryMildDatasetter.h"  //message cell事件回调
+//: #import "ManifestBrokerVigorous.h"  //message cell事件回调
+#import "ManifestBrokerVigorous.h"  //message cell事件回调
 //: #import "FFFSessionConfig.h"        //会话页面配置
 #import "CompleteMil.h"        //会话页面配置
 //: #import "FFFKitEvent.h"             //点击事件封装类

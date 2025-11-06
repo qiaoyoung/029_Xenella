@@ -17,8 +17,8 @@
 #import "VasViewCell.h"
 //: #import "DiagramSelectThemeNeat.h"
 #import "DiagramSelectThemeNeat.h"
-//: #import "TheoryMildDatasetter.h"
-#import "TheoryMildDatasetter.h"
+//: #import "ManifestBrokerVigorous.h"
+#import "ManifestBrokerVigorous.h"
 
 //: @interface FFFMessageCellFactory : NSObject
 @interface CrystalFactory : NSObject

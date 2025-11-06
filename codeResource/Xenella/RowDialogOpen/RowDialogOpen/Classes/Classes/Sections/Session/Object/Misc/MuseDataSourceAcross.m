@@ -306,7 +306,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DoseDecoder.m
+//  MuseDataSourceAcross.m
 //  NIM
 //
 //  Created by amao on 7/2/15.
@@ -315,7 +315,7 @@
 
 // __M_A_C_R_O__
 //: #import "USERCustomAttachmentDecoder.h"
-#import "DoseDecoder.h"
+#import "MuseDataSourceAcross.h"
 //: #import "USERCustomAttachmentDefines.h"
 #import "USERCustomAttachmentDefines.h"
 //: #import "USERJanKenPonAttachment.h"
@@ -338,7 +338,7 @@
 #import "VasAttachment.h"
 
 //: @implementation USERCustomAttachmentDecoder
-@implementation DoseDecoder
+@implementation MuseDataSourceAcross
 //: - (BOOL)checkAttachment:(id<NIMCustomAttachment>)attachment{
 - (BOOL)analyzeHostToyAttachment:(id<NIMCustomAttachment>)attachment{
     //: BOOL check = NO;

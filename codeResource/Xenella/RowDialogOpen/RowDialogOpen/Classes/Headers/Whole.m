@@ -925,7 +925,7 @@ typedef struct {
 //: #import "CCCLoginManager.h"
 #import "DenyFactory.h"
 //: #import "USERCustomAttachmentDecoder.h"
-#import "DoseDecoder.h"
+#import "MuseDataSourceAcross.h"
 //: #import "USERClientUtil.h"
 #import "BlankUtil.h"
 //: #import "USERNotificationCenter.h"
@@ -1275,7 +1275,7 @@ typedef struct {
 
     //注册自定义消息的解析器
     //: [NIMCustomObject registerCustomDecoder:[USERCustomAttachmentDecoder new]];
-    [NIMCustomObject registerCustomDecoder:[DoseDecoder new]];
+    [NIMCustomObject registerCustomDecoder:[MuseDataSourceAcross new]];
 
     //注册 Wave 自定义排版配置
     //: [[MyUserKit sharedKit] registerLayoutConfig:[USERCellLayoutConfig new]];

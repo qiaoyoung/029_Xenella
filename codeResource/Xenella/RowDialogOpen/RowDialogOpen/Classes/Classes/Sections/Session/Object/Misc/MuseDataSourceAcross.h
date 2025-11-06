@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DoseDecoder.h
+//  MuseDataSourceAcross.h
 //  NIM
 //
 //  Created by amao on 7/2/15.
@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 
 //: @interface USERCustomAttachmentDecoder : NSObject<NIMCustomAttachmentCoding>
-@interface DoseDecoder : NSObject<NIMCustomAttachmentCoding>
+@interface MuseDataSourceAcross : NSObject<NIMCustomAttachmentCoding>
 
 //: @end
 @end

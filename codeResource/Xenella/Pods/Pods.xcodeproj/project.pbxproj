@@ -66,7 +66,7 @@
 		0693B61A670CDDEB9EA65F61F5F52DAD /* DriveDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = D48F071B36CB57D70F198B9DF12B2621 /* DriveDotView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06B5C824C79581EB115C6025695CF2A3 /* PooRefer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ECABBDFE4521A6F58965C4FD832BF /* PooRefer.m */; };
 		06BCDDE08C148024F75AC922D6EF1A58 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25115850B74CC1A4A9A9897B7D28CD0D /* FMDatabaseAdditions.m */; };
-		071CB0B73C4E27D86C3EFB507CBFC824 /* DoseDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B021818C6AA6CAD232C927BF0A30BF /* DoseDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071CB0B73C4E27D86C3EFB507CBFC824 /* MuseDataSourceAcross.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B021818C6AA6CAD232C927BF0A30BF /* MuseDataSourceAcross.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0743A201611272BBA979F32C2ECC045F /* HeckTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6C2955E982C3F24928207B94D96BF /* HeckTransit.m */; };
 		0762EE71F4914C9BDCBD7EA0DB2D0D9F /* UINavigationBar+MakingKnownBlank.m in Sources */ = {isa = PBXBuildFile; fileRef = 55555581AA276E4DB273BDEECC448D88 /* UINavigationBar+MakingKnownBlank.m */; };
 		078EBB281644556161FA53C582DBAB1F /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A70B5714052370640645AA98BF80803 /* SDWebImageTransition.m */; };
@@ -179,7 +179,7 @@
 		1D41738211C97B022DE37B5805CFC748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4052EF82E61B46C5B7B1F4E1A58EC86A /* Foundation.framework */; };
 		1D483E4C9A903E6CF192F1D7BC106DFD /* SDAssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D969AC76BADCA8F9270158B7EBA56C4 /* SDAssociatedObject.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1D4C888019DE98AD624D93F110760C10 /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D57BF3BBEBFBFD9F736C44C2669A16 /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D5472C8A819B202600C95D089889459 /* DoseDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E15811EB687FCB21B86CFACEA1F6D /* DoseDecoder.m */; };
+		1D5472C8A819B202600C95D089889459 /* MuseDataSourceAcross.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E15811EB687FCB21B86CFACEA1F6D /* MuseDataSourceAcross.m */; };
 		1DA8A369AABBBE0E96153EC030759BE1 /* MessageDrive.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD252BFA1F757B7A4DA5107C5801F8D /* MessageDrive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DC49C15BA366929D695D593F2AAFEEC /* WeltanschauungNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77588110A3669A893E1B3531D9CB3B09 /* WeltanschauungNameView.m */; };
 		1EB0F9BC9841E472E1B6E1B0ADD3007C /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C85618C7EDCFE1172FD49EDEC7FB0 /* FMDB-dummy.m */; };
@@ -1300,7 +1300,7 @@
 		F600BB873FD4764BAA9E02826F804486 /* FLAnimatedImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E97413297CE18CFE69DD5E380FB40C88 /* FLAnimatedImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F60F90EAF35CFF40DF1C33557965787D /* MJRefreshStateTrailer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27622B7EEDF522A7BCFA488F4B889AB0 /* MJRefreshStateTrailer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F612A40AAFDA7EA06F57B889041508E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31ACD28496FA12F561B709E9A6FE3B41 /* SystemConfiguration.framework */; };
-		F61BC09F8C7FBEB45D943B57FD3399DA /* TheoryMildDatasetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F02CC2B024B226051BA7C3F7300CF1 /* TheoryMildDatasetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F61BC09F8C7FBEB45D943B57FD3399DA /* ManifestBrokerVigorous.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F02CC2B024B226051BA7C3F7300CF1 /* ManifestBrokerVigorous.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F61D0824CEDF6B1C3D3B350F27C0F69E /* AgentTrustWhite.h in Headers */ = {isa = PBXBuildFile; fileRef = 7624D9E5CA9235D58B5BF3642A79FE43 /* AgentTrustWhite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F64C3A8B49F64EE5A3EEA5CBB8E3A050 /* TrustTotalBackHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B2D9486446967DE0BCAAFB28AAACBC6 /* TrustTotalBackHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F66FDF1D3168AE8E5DED25FA00977BDC /* ShaderMajorSplitStencil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A93924ECDCEECA12942E85B80AEAC20 /* ShaderMajorSplitStencil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1685,7 +1685,7 @@
 		0A9AF1AE030746E951DBF9B5AA03CAC7 /* SmartSpeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SmartSpeak.h; sourceTree = "<group>"; };
 		0AA13DE69C4C1879712646CB60A6C356 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/Core/SDWebImageDownloader.h; sourceTree = "<group>"; };
 		0AF0B2C1CD4F4E30457ECFAE7736D253 /* mz_strm_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_os_posix.c; path = SSZipArchive/minizip/mz_strm_os_posix.c; sourceTree = "<group>"; };
-		0B0E15811EB687FCB21B86CFACEA1F6D /* DoseDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DoseDecoder.m; sourceTree = "<group>"; };
+		0B0E15811EB687FCB21B86CFACEA1F6D /* MuseDataSourceAcross.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MuseDataSourceAcross.m; sourceTree = "<group>"; };
 		0B2D9486446967DE0BCAAFB28AAACBC6 /* TrustTotalBackHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TrustTotalBackHandler.h; sourceTree = "<group>"; };
 		0B3AEA6E8C093E151DAF82AB5D66AAB0 /* AyMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AyMessage.h; sourceTree = "<group>"; };
 		0B52DA0796A61F002561467122B6390E /* Wave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
@@ -1913,7 +1913,7 @@
 		386B4E84F9865F3F80ED787834A70C48 /* FabricValidBeginAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FabricValidBeginAnchor.m; sourceTree = "<group>"; };
 		388AD253DAE29D2806E00DF8082A2259 /* MessageCleanAgentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MessageCleanAgentUtil.h; sourceTree = "<group>"; };
 		388B2BF452CE2294D114A0967231FAAD /* SubPoUniversal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SubPoUniversal.h; sourceTree = "<group>"; };
-		38B021818C6AA6CAD232C927BF0A30BF /* DoseDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DoseDecoder.h; sourceTree = "<group>"; };
+		38B021818C6AA6CAD232C927BF0A30BF /* MuseDataSourceAcross.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MuseDataSourceAcross.h; sourceTree = "<group>"; };
 		38EE5CACC8AAE5412843D5FC29936F72 /* SDAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImage.h; path = SDWebImage/Core/SDAnimatedImage.h; sourceTree = "<group>"; };
 		392D8CEFB5C0777E37161BFBF45804D2 /* ProCombinedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ProCombinedViewController.m; sourceTree = "<group>"; };
 		39B19C79C3273A3AD650EE0C59907D36 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
@@ -1984,7 +1984,7 @@
 		43458868654C829C3FD1F230E1E0F960 /* SingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SingView.m; sourceTree = "<group>"; };
 		438F708C0C6C998D547D546C23A3F87E /* VasAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VasAttachment.h; sourceTree = "<group>"; };
 		43EF49B5C806090F724D7834AF9BC284 /* Pods-Riverla-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Riverla-frameworks.sh"; sourceTree = "<group>"; };
-		43F02CC2B024B226051BA7C3F7300CF1 /* TheoryMildDatasetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TheoryMildDatasetter.h; sourceTree = "<group>"; };
+		43F02CC2B024B226051BA7C3F7300CF1 /* ManifestBrokerVigorous.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ManifestBrokerVigorous.h; sourceTree = "<group>"; };
 		443FE85CAB4732A0D4A0D81C35614B74 /* SDMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDMemoryCache.m; path = SDWebImage/Core/SDMemoryCache.m; sourceTree = "<group>"; };
 		448C0639FB6407612EA6382A27158F88 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		449A71B3B67E28E7EC15AB5162D69875 /* TagView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TagView.m; sourceTree = "<group>"; };
@@ -4908,7 +4908,7 @@
 				8AA709A8FBAACC7E36240F8B46A9F127 /* DiagramSelectThemeNeat.h */,
 				BAC6AD160A3D510AF080552D27F5C461 /* JourneyFluentWithout.h */,
 				B27E9C2B39EA90EB7F34043B878A8D3C /* AuroraTranslateUnity.h */,
-				43F02CC2B024B226051BA7C3F7300CF1 /* TheoryMildDatasetter.h */,
+				43F02CC2B024B226051BA7C3F7300CF1 /* ManifestBrokerVigorous.h */,
 				A5BF6CA569F588A9B7DFE27F5AFB8D03 /* ProvisionerProvider.h */,
 			);
 			path = Protocols;
@@ -5300,8 +5300,8 @@
 			children = (
 				7624D9E5CA9235D58B5BF3642A79FE43 /* AgentTrustWhite.h */,
 				3EE4202CF8CFBFAF0CA8ED7F4F19BF0E /* AgentTrustWhite.m */,
-				38B021818C6AA6CAD232C927BF0A30BF /* DoseDecoder.h */,
-				0B0E15811EB687FCB21B86CFACEA1F6D /* DoseDecoder.m */,
+				38B021818C6AA6CAD232C927BF0A30BF /* MuseDataSourceAcross.h */,
+				0B0E15811EB687FCB21B86CFACEA1F6D /* MuseDataSourceAcross.m */,
 				2D32E699E42FE839B728A348493AF0D6 /* OmissionWavePrecise.h */,
 				5CA0DCF9B579A723CB7BA5E354F62C23 /* OmissionWavePrecise.m */,
 				664ADCCC3FD50B4B6CBB4552E7B6EE38 /* CreatorDeliverEarnestMode.h */,
@@ -6277,7 +6277,7 @@
 				CA411BBBE2AB9371C4BCE44D96DC0815 /* DisabledContainer.h in Headers */,
 				B357779767D3377A54ACF1006878CAD0 /* DisabledPortion.h in Headers */,
 				ED9B3D5051F016DAAE273DBDFCBB9CF9 /* DisavowView.h in Headers */,
-				071CB0B73C4E27D86C3EFB507CBFC824 /* DoseDecoder.h in Headers */,
+				071CB0B73C4E27D86C3EFB507CBFC824 /* MuseDataSourceAcross.h in Headers */,
 				8768FFF693FD1E6C7B7EF13F094EE62D /* WindowTransformerEnd.h in Headers */,
 				40D77D3505A17E617B1747B7B3F71B6C /* DoseView.h in Headers */,
 				43B667871AEAC15636174077EB8DF42A /* DragDb.h in Headers */,
@@ -6315,7 +6315,7 @@
 				CF230D5E4AE07C96C7D8F22F1692A1C7 /* TemplateBehindSternUtility.h in Headers */,
 				33172C837FFB54A79C3C39466A11614E /* EnumInputBarItemType.h in Headers */,
 				12155DEED5999062C9D150D3728A4780 /* AuroraTranslateUnity.h in Headers */,
-				F61BC09F8C7FBEB45D943B57FD3399DA /* TheoryMildDatasetter.h in Headers */,
+				F61BC09F8C7FBEB45D943B57FD3399DA /* ManifestBrokerVigorous.h in Headers */,
 				F66FDF1D3168AE8E5DED25FA00977BDC /* ShaderMajorSplitStencil.h in Headers */,
 				5DFF5779F4CFF3D7BEB96D51308733EF /* AnimatorMaskExportSeamless.h in Headers */,
 				278ADC4D3CAF5173A5EC201C6922BB65 /* ForefrontView.h in Headers */,
@@ -7713,7 +7713,7 @@
 				1CB952A826CD3F9189C7F02F1521D205 /* DisabledContainer.m in Sources */,
 				4E5EA81D9E374E3E8696121ACAFCE996 /* DisabledPortion.m in Sources */,
 				CDE7065FCE5A1BD574AB125282398037 /* DisavowView.m in Sources */,
-				1D5472C8A819B202600C95D089889459 /* DoseDecoder.m in Sources */,
+				1D5472C8A819B202600C95D089889459 /* MuseDataSourceAcross.m in Sources */,
 				48C06CF253DEE9FDFF2B2ED1BBA9131F /* WindowTransformerEnd.m in Sources */,
 				503D5B5B156F6D753B3B4BBF89F61145 /* DoseView.m in Sources */,
 				8D0E7F12CCC310D55DEFE255F96E3014 /* DragDb.m in Sources */,

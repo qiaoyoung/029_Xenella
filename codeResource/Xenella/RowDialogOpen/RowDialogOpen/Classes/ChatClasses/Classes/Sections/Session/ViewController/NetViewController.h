@@ -15,8 +15,8 @@
 #import <NIMSDK/NIMSDK.h>
 //: #import "FFFSessionConfig.h"
 #import "CompleteMil.h"
-//: #import "TheoryMildDatasetter.h"
-#import "TheoryMildDatasetter.h"
+//: #import "ManifestBrokerVigorous.h"
+#import "ManifestBrokerVigorous.h"
 //: #import "ShaderMajorSplitStencil.h"
 #import "ShaderMajorSplitStencil.h"
 //: #import "FFFInputView.h"

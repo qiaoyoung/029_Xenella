@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TheoryMildDatasetter.h
+//  ManifestBrokerVigorous.h
 // Wave
 //
 //  Created by NetEase.
