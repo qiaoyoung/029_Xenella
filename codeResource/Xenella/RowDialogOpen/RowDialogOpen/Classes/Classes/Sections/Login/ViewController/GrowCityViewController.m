@@ -925,8 +925,8 @@
 #import "OozeOut.h"
 //: #import <CoreTelephony/CTCellularData.h>
 #import <CoreTelephony/CTCellularData.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 //: #import "AppDelegateManager.h"
 #import "Whole.h"
 //: #import "CCCAutoLoginManager.h"

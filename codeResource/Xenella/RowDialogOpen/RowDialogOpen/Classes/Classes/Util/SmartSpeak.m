@@ -49,8 +49,7 @@ Byte screenColorUtility[] = {9, 7, 99, 7, 138, 239, 58, 198, 210, 209, 215, 200,
 #import "UIView+Here.h"
 //: #import "USERCustomSysNotificationSender.h"
 #import "ReferPooSender.h"
-//: #import "USERGlobalMacro.h"
-#import "USERGlobalMacro.h"
+ 
 //: #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVFoundation.h>
 //: #import "USERSessionMsgConverter.h"

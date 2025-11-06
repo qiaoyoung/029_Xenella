@@ -203,8 +203,8 @@
 #import "MessageCleanAgentUtil.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 //: #import "FFFKitUtil.h"
 #import "TransitDoseUtil.h"
 //: #import "MyUserKit.h"

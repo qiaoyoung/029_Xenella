@@ -79,8 +79,8 @@
 #import "CaveCell.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 
 //: @interface FFFCommonTableDelegate()
 @interface ClientCity()

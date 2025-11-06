@@ -21,8 +21,8 @@
 #import "Wave.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Wave.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 
 //: @interface FFFSessionUnknowContentView()
 @interface EveryView()

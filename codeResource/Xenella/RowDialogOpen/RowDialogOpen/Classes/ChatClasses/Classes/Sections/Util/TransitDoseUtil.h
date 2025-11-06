@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 
 //: @interface FFFKitUtil : NSObject
 @interface TransitDoseUtil : NSObject

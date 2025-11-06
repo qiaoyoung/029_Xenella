@@ -359,8 +359,8 @@
 // __M_A_C_R_O__
 //: #import "FFFKitConfig.h"
 #import "TodayCaseConsider.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 //: #import "FFFMediaItem.h"
 #import "YapAwayAgent.h"
 //: #import "UIImage+MyUserKit.h"

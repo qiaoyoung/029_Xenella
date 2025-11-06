@@ -240,8 +240,8 @@
 // __M_A_C_R_O__
 //: #import "FFFTeamListDataManager.h"
 #import "PortionEvolve.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 //: #import "MyUserKit.h"
 #import "Wave.h"
 

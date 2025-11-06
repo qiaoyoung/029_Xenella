@@ -13,8 +13,7 @@
 #import "BraveUnity.h"
 //: #import "SNLeadCompleteInfo.h"
 #import "ProClientView.h"
-//: #import "SNWeakStrongMacro.h"
-#import "SNWeakStrongMacro.h"
+ 
 
 //: @interface SNLeadCompleteManager ()
 @interface BraveUnity ()

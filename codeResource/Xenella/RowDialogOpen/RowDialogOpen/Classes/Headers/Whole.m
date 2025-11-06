@@ -980,8 +980,7 @@ typedef struct {
 #import "NSDictionary+Crystal.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Wave.h"
-//: #import "USERGlobalMacro.h"
-#import "USERGlobalMacro.h"
+ 
 //: #import "NSString+USER.h"
 #import "NSString+LozengeConsider.h"
 

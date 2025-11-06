@@ -77,8 +77,8 @@
 #import "PainterPerform.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "OceanScrollView+Wave.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 
 //: @interface USERChatroomTextContentConfig()
 @interface PainterPerform()

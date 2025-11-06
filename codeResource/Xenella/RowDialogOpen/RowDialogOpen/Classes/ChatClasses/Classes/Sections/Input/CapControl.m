@@ -94,8 +94,8 @@
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Wave.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 
 //: const NSInteger FFFInputEmoticonTabViewHeight = 44;
 

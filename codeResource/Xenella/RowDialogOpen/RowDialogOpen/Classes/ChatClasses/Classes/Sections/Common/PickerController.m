@@ -151,8 +151,8 @@
 #import "MagView.h"
 //: #import "OceanScrollView.h"
 #import "OceanScrollView.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 //: #import "FFFKitFileLocationHelper.h"
 #import "NetHelper.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>

@@ -104,8 +104,8 @@ typedef struct {
 #import "ClientPassing.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Wave.h"
+#import "NSString+Wave.h"
 //: #import "UserGroupedData.h"
 #import "TodayData.h"
 //: #import "MyUserKit.h"

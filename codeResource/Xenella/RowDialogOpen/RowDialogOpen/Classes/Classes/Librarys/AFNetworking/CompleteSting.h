@@ -30,8 +30,6 @@
 #import "CarefulWaitReek.h"
 //: #import "AFSecurityPolicy.h"
 #import "WhiteSilver.h"
-//: #import "AFCompatibilityMacros.h"
-#import "AFCompatibilityMacros.h"
 //: #import "AFNetworkReachabilityManager.h"
 #import "DigEvery.h"
 
