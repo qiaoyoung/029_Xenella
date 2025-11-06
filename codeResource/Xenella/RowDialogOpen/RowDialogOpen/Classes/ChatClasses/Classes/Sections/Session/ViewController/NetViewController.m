@@ -2958,7 +2958,7 @@
 
 
 //: - (void)onTapMenuItemCopy:(FFFMediaItem *)item
-- (void)itemmed:(YapAwayAgent *)item
+- (void)onTapMenuItemCopy:(YapAwayAgent *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self disabled];

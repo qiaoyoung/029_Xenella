@@ -457,7 +457,7 @@
     //: if (self.link == nil) {
     if (self.creationOpinion == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[SGWeakProxy weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.creationOpinion = [CADisplayLink displayLinkWithTarget:[ReachProxy proxy:self] selector:@selector(updateUI)];
+        self.creationOpinion = [CADisplayLink displayLinkWithTarget:[ReachProxy proxy:self] selector:@selector(label)];
 	[self setMultiBe:_adminMulti];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [self.creationOpinion addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];

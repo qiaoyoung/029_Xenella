@@ -2369,7 +2369,7 @@ DenyDelegate>
 }
 
 //: - (void)onTapMenuItemDelete:(FFFMediaItem *)item
-- (void)constraint:(YapAwayAgent *)item
+- (void)onTapMenuItemDelete:(YapAwayAgent *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self disabled];
@@ -2456,7 +2456,7 @@ DenyDelegate>
 }
 
 //: - (void)onTapMenuItemUnpin:(FFFMediaItem *)item
-- (void)capital:(YapAwayAgent *)item
+- (void)onTapMenuItemUnpin:(YapAwayAgent *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self disabled];
@@ -2690,7 +2690,7 @@ DenyDelegate>
 
 
 //: - (void)onTapMenuItemReport:(FFFMediaItem *)item
-- (void)menu:(YapAwayAgent *)item
+- (void)onTapMenuItemReport:(YapAwayAgent *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.channel];
@@ -2704,7 +2704,7 @@ DenyDelegate>
 }
 
 //: - (void)onTapMenuItemMutiSelect:(FFFMediaItem *)item
-- (void)priority:(YapAwayAgent *)item
+- (void)onTapMenuItemMutiSelect:(YapAwayAgent *)item
 {
     //: [self switchUIWithSessionState:UserSessionStateSelect];
     [self skullSession:UserSessionStateSelect];
@@ -3061,7 +3061,7 @@ DenyDelegate>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)agoShowInform:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 
@@ -3253,7 +3253,7 @@ DenyDelegate>
 }
 
 //: - (void)onTapMenuItemTranslation:(FFFMediaItem *)item
-- (void)peregrine:(YapAwayAgent *)item
+- (void)onTapMenuItemTranslation:(YapAwayAgent *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self disabled];
@@ -3366,7 +3366,7 @@ DenyDelegate>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(FFFMediaItem *)item
-- (void)style:(YapAwayAgent *)item
+- (void)onTapMenuItemReply:(YapAwayAgent *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self disabled];
@@ -3427,7 +3427,7 @@ DenyDelegate>
 
 
 //: - (void)onTapMenuItemMark:(FFFMediaItem *)item
-- (void)alongBar:(YapAwayAgent *)item
+- (void)onTapMenuItemMark:(YapAwayAgent *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self disabled];
@@ -3494,7 +3494,7 @@ DenyDelegate>
 }
 
 //: - (void)onTapMenuItemAudio2Text:(FFFMediaItem *)item
-- (void)video:(YapAwayAgent *)item
+- (void)onTapMenuItemAudio2Text:(YapAwayAgent *)item
 {
 
 }
@@ -3527,7 +3527,7 @@ DenyDelegate>
 }
 
 //: - (void)onTapMenuItemForword:(FFFMediaItem *)item
-- (void)found:(YapAwayAgent *)item
+- (void)onTapMenuItemForword:(YapAwayAgent *)item
 {
     //: ZOMNForwardViewController *vc = [[ZOMNForwardViewController alloc]init];
     LaunchViewController *vc = [[LaunchViewController alloc]init];
@@ -3658,7 +3658,7 @@ DenyDelegate>
 }
 
 //: - (void)onTapMenuItemPin:(FFFMediaItem *)item
-- (void)reason:(YapAwayAgent *)item
+- (void)onTapMenuItemPin:(YapAwayAgent *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self disabled];
@@ -3820,7 +3820,7 @@ DenyDelegate>
 }
 
 //: - (void)onTapMenuItemRevoke:(FFFMediaItem *)item
-- (void)enableRing:(YapAwayAgent *)item
+- (void)onTapMenuItemRevoke:(YapAwayAgent *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self disabled];
@@ -4044,7 +4044,7 @@ DenyDelegate>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)seekConstant:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -4671,7 +4671,7 @@ DenyDelegate>
 
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)shadow:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
