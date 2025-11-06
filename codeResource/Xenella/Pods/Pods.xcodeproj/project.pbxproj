@@ -156,7 +156,7 @@
 		18AEA590D8A8885C46434BDBF6FA05B6 /* HydrosphereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419D5ABA4B354ECEBC31FDB90E5DE38D /* HydrosphereViewController.m */; };
 		18F9337A6B38329EBA017172B1090786 /* BraveUnity.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B928D2E98D6438D12C9F467229D31C /* BraveUnity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		197DAA5F0051551AAE482C3DA0234B9E /* WhiteTalkPoo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8047D5F66C8A52419491E1494ACDEBCC /* WhiteTalkPoo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1993034FA5556801407B04A94BE59D44 /* CountroDiamond.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E95CA4C970F654A3A546DB49C1CCBE9 /* CountroDiamond.m */; };
+		1993034FA5556801407B04A94BE59D44 /* BlueprintMainEnable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E95CA4C970F654A3A546DB49C1CCBE9 /* BlueprintMainEnable.m */; };
 		1994B9F3AB23E54A1ABC2B33B53D6449 /* SDImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 75064E6804D831AF1D4C59048C2DE5D1 /* SDImageIOCoder.m */; };
 		19A30C0C0E6CCE571A5F1F8AB8A09728 /* YYAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEE41B6E1230E9730CE0D9117F91E4C /* YYAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19A4CCAB2B8705BDC4F9E6A90FCED029 /* PositionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 839093F85DA40EB5A3536424D9A37E0E /* PositionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -353,7 +353,7 @@
 		442F468E261A1106C291BF52BDBF9DB7 /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4FA1B9B6F09D64C390674C70FC066C /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		444924D8E1A43D22248A2D09F39EF4CB /* SingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43458868654C829C3FD1F230E1E0F960 /* SingView.m */; };
 		448222696ACA618A202A116F8479D411 /* BraveCaveViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2596FDAF984E9B070B4133E39FD99EF7 /* BraveCaveViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		448F685450E467223E7AF00132EC27F2 /* CountroDig.m in Sources */ = {isa = PBXBuildFile; fileRef = 386B4E84F9865F3F80ED787834A70C48 /* CountroDig.m */; };
+		448F685450E467223E7AF00132EC27F2 /* FabricValidBeginAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 386B4E84F9865F3F80ED787834A70C48 /* FabricValidBeginAnchor.m */; };
 		44B56F027F639408C7C51AA86D82CC0A /* TZImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 679114940E63DC24358B917E73B77A92 /* TZImageRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44EAD91110932B6BDAC0F4D5CB47C121 /* PreciseHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FAE22669EDFD5A178A9D4902944AB0 /* PreciseHolder.m */; };
 		4501513F35376678ED048432660D88B8 /* UINavigationBar+Pro.m in Sources */ = {isa = PBXBuildFile; fileRef = B90E37315710B39251634105FA33D6BD /* UINavigationBar+Pro.m */; };
@@ -636,7 +636,7 @@
 		7AB5BB6052E3CD570C8DEBB5BCB40A2A /* CapTagControl.h in Headers */ = {isa = PBXBuildFile; fileRef = D48B621E52AF48B04ECF69E4FED0B595 /* CapTagControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AB624BCA7C0311102CE1A014515B970 /* IQUIScrollView+PerformAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5EF9FA367E76E5E952E87117DFADD /* IQUIScrollView+PerformAdditions.m */; };
 		7AE38DCD07F4F53FFC54FE32918D2097 /* NSDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A0865E35852C044DA2D535D9212F4 /* NSDictionaryAdditions.m */; };
-		7B29B8840D083CAC45F61E798AFFD8EC /* CountroDig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D86E8D19DBF0EB9A94D894EB41404F4 /* CountroDig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B29B8840D083CAC45F61E798AFFD8EC /* FabricValidBeginAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D86E8D19DBF0EB9A94D894EB41404F4 /* FabricValidBeginAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B57C1AC1D18EC3DBFC8769AFA457988 /* TitleVoiceTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A0AE810B63971222F9BD6845D1FD82 /* TitleVoiceTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BB3DF3B1AE33570B876F378B5D6DDE7 /* ChangeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 073E0074A0966ED7B24465164859C132 /* ChangeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C39292DF144A7BDD11122DDA899705B /* PreciseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AF0810B4612C1382966A99B2C6F46A7D /* PreciseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -711,7 +711,7 @@
 		895A90E335CCF2242A3CBF14340BEE85 /* SteeragewayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8C195360189364BB1E42589FBA65BD /* SteeragewayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8967B480A049A100266317734C8F9B5A /* SDWebImageTransitionInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 690186F756FDC4005B27782F2216E0E9 /* SDWebImageTransitionInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		896E1A79054EB36FB9188C50946B024B /* LaunchView.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE0B12C4D90F761FD7860044D84520E /* LaunchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89AFCDA9A8D61633AEFC6F9362F6972E /* CountroDiamond.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F37BBB305CAA9343C108893FF33A32 /* CountroDiamond.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89AFCDA9A8D61633AEFC6F9362F6972E /* BlueprintMainEnable.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F37BBB305CAA9343C108893FF33A32 /* BlueprintMainEnable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89B8F4D9442785E968F2129FB6D2FCFB /* AuthorizationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A13F493D7ED3E5766C4EFCEAD8A4067 /* AuthorizationTool.m */; };
 		89FEB97B9B1E0A766B82A1B4E35D9797 /* StingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 467505DC2ACBD220B65DD9919DCE2B53 /* StingControl.m */; };
 		8A02B384556424DB792B1241E372AD08 /* mz_crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 272A452AD48F90C0D6FB241906961067 /* mz_crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1857,7 +1857,7 @@
 		2D0E576E2555779C1CAB49DB50E19420 /* InsertTransit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = InsertTransit.m; sourceTree = "<group>"; };
 		2D1F6A71F7DE615C8FCD9FE5207023C8 /* HoldImplementThornLucent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HoldImplementThornLucent.m; sourceTree = "<group>"; };
 		2D32E699E42FE839B728A348493AF0D6 /* OmissionWavePrecise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OmissionWavePrecise.h; sourceTree = "<group>"; };
-		2D86E8D19DBF0EB9A94D894EB41404F4 /* CountroDig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CountroDig.h; sourceTree = "<group>"; };
+		2D86E8D19DBF0EB9A94D894EB41404F4 /* FabricValidBeginAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FabricValidBeginAnchor.h; sourceTree = "<group>"; };
 		2D942D3C9346D6A2502AAF457DE27A6F /* SDImageGraphics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGraphics.m; path = SDWebImage/Core/SDImageGraphics.m; sourceTree = "<group>"; };
 		2D969AC76BADCA8F9270158B7EBA56C4 /* SDAssociatedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAssociatedObject.h; path = SDWebImage/Private/SDAssociatedObject.h; sourceTree = "<group>"; };
 		2DA871C7F7969067866167CCB8B52CCA /* YYText-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYText-umbrella.h"; sourceTree = "<group>"; };
@@ -1885,7 +1885,7 @@
 		32C614DA9475379F92EC4BFF7E6B9498 /* MerryLeafFabric.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MerryLeafFabric.m; sourceTree = "<group>"; };
 		32C6D5B62DC156C93CA5F003C8AE10A7 /* YYTextLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLine.m; path = YYText/Component/YYTextLine.m; sourceTree = "<group>"; };
 		32CF96CFE0B407C4781A3E59AF60B758 /* TZImagePickerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TZImagePickerController.modulemap; sourceTree = "<group>"; };
-		32F37BBB305CAA9343C108893FF33A32 /* CountroDiamond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CountroDiamond.h; sourceTree = "<group>"; };
+		32F37BBB305CAA9343C108893FF33A32 /* BlueprintMainEnable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BlueprintMainEnable.h; sourceTree = "<group>"; };
 		32FDC5640A6ECFA64054BD01CBB6A11C /* YYModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.debug.xcconfig; sourceTree = "<group>"; };
 		330433D0D53420629FBF6D127D556C0A /* mz_strm.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm.c; path = SSZipArchive/minizip/mz_strm.c; sourceTree = "<group>"; };
 		331617E1118A85B250A6C32E382D5DBC /* TabViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
@@ -1910,7 +1910,7 @@
 		36ED4AF6CF362D54FD7626A53271FB9F /* UIScrollView+ToALowerPlace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ToALowerPlace.h"; sourceTree = "<group>"; };
 		372B0F6B9C3C9D3A49FD7459EE34CDDE /* ProClientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ProClientView.h; sourceTree = "<group>"; };
 		37E0988F281A8FDBFD30CAA6437F263C /* BraveFinishData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BraveFinishData.m; sourceTree = "<group>"; };
-		386B4E84F9865F3F80ED787834A70C48 /* CountroDig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CountroDig.m; sourceTree = "<group>"; };
+		386B4E84F9865F3F80ED787834A70C48 /* FabricValidBeginAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FabricValidBeginAnchor.m; sourceTree = "<group>"; };
 		388AD253DAE29D2806E00DF8082A2259 /* MessageCleanAgentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MessageCleanAgentUtil.h; sourceTree = "<group>"; };
 		388B2BF452CE2294D114A0967231FAAD /* SubPoUniversal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SubPoUniversal.h; sourceTree = "<group>"; };
 		38B021818C6AA6CAD232C927BF0A30BF /* DoseDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DoseDecoder.h; sourceTree = "<group>"; };
@@ -2414,7 +2414,7 @@
 		8E1D5C0FCA0D872C3F21E87F25420681 /* TZImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TZImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E7980AB41DF1E8580C26FED08081B /* GroupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
 		8E510FD2CF26D4B4D2F20A6FF6B88D84 /* SpeakViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SpeakViewController.m; sourceTree = "<group>"; };
-		8E95CA4C970F654A3A546DB49C1CCBE9 /* CountroDiamond.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CountroDiamond.m; sourceTree = "<group>"; };
+		8E95CA4C970F654A3A546DB49C1CCBE9 /* BlueprintMainEnable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BlueprintMainEnable.m; sourceTree = "<group>"; };
 		8EA80E20B4C0E1B57E5EA86E037EE15B /* NovelMag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NovelMag.m; sourceTree = "<group>"; };
 		8F9B509E9269597A148294F314EE929B /* ClientPassing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ClientPassing.m; sourceTree = "<group>"; };
 		8FB3B6C6A10301F795672D3A280FCD6F /* YeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YeReader.m; sourceTree = "<group>"; };
@@ -3347,8 +3347,8 @@
 				32C614DA9475379F92EC4BFF7E6B9498 /* MerryLeafFabric.m */,
 				CE15F9AD6F006B406B7EE0341B87C101 /* BlankPrecious.h */,
 				F015C589E4B91E7660B5C5A724888176 /* BlankPrecious.m */,
-				32F37BBB305CAA9343C108893FF33A32 /* CountroDiamond.h */,
-				8E95CA4C970F654A3A546DB49C1CCBE9 /* CountroDiamond.m */,
+				32F37BBB305CAA9343C108893FF33A32 /* BlueprintMainEnable.h */,
+				8E95CA4C970F654A3A546DB49C1CCBE9 /* BlueprintMainEnable.m */,
 				7FD252BFA1F757B7A4DA5107C5801F8D /* MessageDrive.h */,
 				5BFA8A4D085EC1635743A851FBFC4A2F /* MessageDrive.m */,
 				9C8B85B1D12236FA295C3449D18BB1C7 /* OperativeWan.h */,
@@ -5058,8 +5058,8 @@
 		A7747D16FA00E7781C2061474678CE43 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2D86E8D19DBF0EB9A94D894EB41404F4 /* CountroDig.h */,
-				386B4E84F9865F3F80ED787834A70C48 /* CountroDig.m */,
+				2D86E8D19DBF0EB9A94D894EB41404F4 /* FabricValidBeginAnchor.h */,
+				386B4E84F9865F3F80ED787834A70C48 /* FabricValidBeginAnchor.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -6260,8 +6260,8 @@
 				DEE4FB432DE30DB70BC1D1EB4D7EFC51 /* ConsiderTitleView.h in Headers */,
 				DC2F2151E090043801D37BA1F520E37B /* ConsiderWaitView.h in Headers */,
 				6C765383D78ED4E686243A967A75DB56 /* Control.h in Headers */,
-				89AFCDA9A8D61633AEFC6F9362F6972E /* CountroDiamond.h in Headers */,
-				7B29B8840D083CAC45F61E798AFFD8EC /* CountroDig.h in Headers */,
+				89AFCDA9A8D61633AEFC6F9362F6972E /* BlueprintMainEnable.h in Headers */,
+				7B29B8840D083CAC45F61E798AFFD8EC /* FabricValidBeginAnchor.h in Headers */,
 				C129B6B5FFFFEB1B82972AEE2EA8129A /* CrystalCompleteButtonItem.h in Headers */,
 				D7CD1770B7046652E0DF9726219F4906 /* CrystalFactory.h in Headers */,
 				B29DDA53FCAB0947E068611F01B15735 /* CrystalViewCell.h in Headers */,
@@ -7696,8 +7696,8 @@
 				A57BA2FACBD8CC4986549D4B52B01BAA /* ConsiderTitleView.m in Sources */,
 				743D1A788A91CC89B4954263A6A2185F /* ConsiderWaitView.m in Sources */,
 				FE9D506E3A3D8868A83875AA868D0096 /* Control.m in Sources */,
-				1993034FA5556801407B04A94BE59D44 /* CountroDiamond.m in Sources */,
-				448F685450E467223E7AF00132EC27F2 /* CountroDig.m in Sources */,
+				1993034FA5556801407B04A94BE59D44 /* BlueprintMainEnable.m in Sources */,
+				448F685450E467223E7AF00132EC27F2 /* FabricValidBeginAnchor.m in Sources */,
 				C1B67716AC80CA10080D5714C91E4A0E /* CrystalCompleteButtonItem.m in Sources */,
 				6F775ECF73D57A2D31F92D74D227FD53 /* CrystalFactory.m in Sources */,
 				F77C988331C90D6CA339AAF999A2F35E /* CrystalViewCell.m in Sources */,

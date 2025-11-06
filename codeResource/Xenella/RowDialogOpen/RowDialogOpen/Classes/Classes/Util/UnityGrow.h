@@ -16,7 +16,7 @@
 //: #import "USERJanKenPonAttachment.h"
 #import "BlankPrecious.h"
 //: #import "USERWhiteboardAttachment.h"
-#import "CountroDiamond.h"
+#import "BlueprintMainEnable.h"
 //: #import "USERRedPacketAttachment.h"
 #import "MessageDrive.h"
 //: #import "USERRedPacketTipAttachment.h"

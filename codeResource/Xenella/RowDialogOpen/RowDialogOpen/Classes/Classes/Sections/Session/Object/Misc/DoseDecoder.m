@@ -323,7 +323,7 @@
 //: #import "USERSnapchatAttachment.h"
 #import "OperativeWan.h"
 //: #import "USERWhiteboardAttachment.h"
-#import "CountroDiamond.h"
+#import "BlueprintMainEnable.h"
 //: #import "USERRedPacketAttachment.h"
 #import "MessageDrive.h"
 //: #import "USERRedPacketTipAttachment.h"
@@ -364,10 +364,10 @@
         check = YES;
     }
     //: else if ([attachment isKindOfClass:[USERWhiteboardAttachment class]])
-    else if ([attachment isKindOfClass:[CountroDiamond class]])
+    else if ([attachment isKindOfClass:[BlueprintMainEnable class]])
     {
         //: NSInteger flag = [((USERWhiteboardAttachment *)attachment) flag];
-        NSInteger flag = [((CountroDiamond *)attachment) headVideoFlag];
+        NSInteger flag = [((BlueprintMainEnable *)attachment) headVideoFlag];
         //: check = ((flag >= CustomWhiteboardFlagInvite) && (flag <= CustomWhiteboardFlagClose)) ? YES : NO;
         check = ((flag >= CustomWhiteboardFlagInvite) && (flag <= CustomWhiteboardFlagClose)) ? YES : NO;
     }
@@ -454,9 +454,9 @@
                 case CustomMessageTypeWhiteboard:
                 {
                     //: attachment = [[USERWhiteboardAttachment alloc] init];
-                    attachment = [[CountroDiamond alloc] init];
+                    attachment = [[BlueprintMainEnable alloc] init];
                     //: ((USERWhiteboardAttachment *)attachment).flag = [data jsonInteger:@"flag"];
-                    ((CountroDiamond *)attachment).headVideoFlag = [data aboutSelect:[CaveLifestyleData sharedInstance].styleReamError];
+                    ((BlueprintMainEnable *)attachment).headVideoFlag = [data aboutSelect:[CaveLifestyleData sharedInstance].styleReamError];
                 }
                     //: break;
                     break;

@@ -70,7 +70,7 @@ HeadTwentyData screenSurfEvent = (HeadTwentyData){72, (Byte []){173, 199, 217, 1
 //: #import "USERSnapchatAttachment.h"
 #import "OperativeWan.h"
 //: #import "USERWhiteboardAttachment.h"
-#import "CountroDiamond.h"
+#import "BlueprintMainEnable.h"
 //: #import "USERRedPacketAttachment.h"
 #import "MessageDrive.h"
 //: #import "USERRedPacketTipAttachment.h"
@@ -289,7 +289,7 @@ HeadTwentyData screenSurfEvent = (HeadTwentyData){72, (Byte []){173, 199, 217, 1
 
 
 //: + (NIMMessage*)msgWithWhiteboardAttachment:(USERWhiteboardAttachment *)attachment
-+ (NIMMessage*)independentAttachment:(CountroDiamond *)attachment
++ (NIMMessage*)independentAttachment:(BlueprintMainEnable *)attachment
 {
     //: NIMMessage *message = [[NIMMessage alloc] init];
     NIMMessage *message = [[NIMMessage alloc] init];

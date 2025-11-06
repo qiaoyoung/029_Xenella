@@ -1532,7 +1532,7 @@
 //: #import "UIView+FFFToast.h"
 #import "UIView+Blank.h"
 //: #import "USERWhiteboardAttachment.h"
-#import "CountroDiamond.h"
+#import "BlueprintMainEnable.h"
 //: #import "ZOMNForwardViewController.h"
 #import "LaunchViewController.h"
 //: #import "ZMONGalleryImgViewController.h"
@@ -2721,7 +2721,7 @@ DenyDelegate>
         //: id<NIMCustomAttachment> attachment = custom.attachment;
         id<NIMCustomAttachment> attachment = custom.attachment;
         //: if ([attachment isKindOfClass:[USERWhiteboardAttachment class]])
-        if ([attachment isKindOfClass:[CountroDiamond class]])
+        if ([attachment isKindOfClass:[BlueprintMainEnable class]])
         {
             //: return YES;
             return YES;

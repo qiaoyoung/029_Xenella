@@ -42,7 +42,7 @@ HolographicData viewBuildVirtuConfig = (HolographicData){144, (Byte []){243, 248
 //: #import "USERChatroomTextContentConfig.h"
 #import "PainterPerform.h"
 //: #import "USERWhiteboardAttachment.h"
-#import "CountroDiamond.h"
+#import "BlueprintMainEnable.h"
 //: #import "USERRedPacketTipAttachment.h"
 #import "WanPoo.h"
 
@@ -68,9 +68,9 @@ HolographicData viewBuildVirtuConfig = (HolographicData){144, (Byte []){243, 248
         //: NIMCustomObject *object = message.messageObject;
         NIMCustomObject *object = message.messageObject;
         //: if ([object.attachment isKindOfClass:[USERWhiteboardAttachment class]]) {
-        if ([object.attachment isKindOfClass:[CountroDiamond class]]) {
+        if ([object.attachment isKindOfClass:[BlueprintMainEnable class]]) {
             //: return [(USERWhiteboardAttachment *)object.attachment flag] == CustomWhiteboardFlagClose;
-            return [(CountroDiamond *)object.attachment headVideoFlag] == CustomWhiteboardFlagClose;
+            return [(BlueprintMainEnable *)object.attachment headVideoFlag] == CustomWhiteboardFlagClose;
         }
     }
     //: return NO;
@@ -113,7 +113,7 @@ HolographicData viewBuildVirtuConfig = (HolographicData){144, (Byte []){243, 248
                    //: @"USERSnapchatAttachment",
                    @"OperativeWan",
                    //: @"USERWhiteboardAttachment",
-                   @"CountroDiamond",
+                   @"BlueprintMainEnable",
                    //: @"USERRedPacketAttachment",
                    @"MessageDrive",
                    //: @"USERRedPacketTipAttachment",

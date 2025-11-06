@@ -37,7 +37,7 @@ SouData viewMiniTimer = (SouData){209, (Byte []){184, 178, 190, 191, 142, 166, 1
 //: #import "FFFKitUtil.h"
 #import "TransitDoseUtil.h"
 //: #import "USERWhiteboardAttachment.h"
-#import "CountroDiamond.h"
+#import "BlueprintMainEnable.h"
 
 //: @interface USERSessionWhiteBoardContentView()
 @interface StingControl()
@@ -80,7 +80,7 @@ SouData viewMiniTimer = (SouData){209, (Byte []){184, 178, 190, 191, 142, 166, 1
     //: NIMCustomObject *object = (NIMCustomObject *)data.message.messageObject;
     NIMCustomObject *object = (NIMCustomObject *)data.jump.messageObject;
     //: USERWhiteboardAttachment *attach = (USERWhiteboardAttachment *)object.attachment;
-    CountroDiamond *attach = (CountroDiamond *)object.attachment;
+    BlueprintMainEnable *attach = (BlueprintMainEnable *)object.attachment;
     //: NSString *text = attach.formatedMessage;
     NSString *text = attach.absoluteByMessage;
 

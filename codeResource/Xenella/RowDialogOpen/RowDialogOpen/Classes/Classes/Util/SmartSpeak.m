@@ -44,7 +44,7 @@ Byte screenColorUtility[] = {9, 7, 99, 7, 138, 239, 58, 198, 210, 209, 215, 200,
 //: #import "USERCustomNotificationDB.h"
 #import "DragDb.h"
 //: #import "USERCustomNotificationObject.h"
-#import "CountroDig.h"
+#import "FabricValidBeginAnchor.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Here.h"
 //: #import "USERCustomSysNotificationSender.h"
@@ -534,7 +534,7 @@ Byte screenColorUtility[] = {9, 7, 99, 7, 138, 239, 58, 198, 210, 209, 215, 200,
                 case (2):{
                     //SDK并不会存储自定义的系统通知，需要上层结合业务逻辑考虑是否做存储。这里给出一个存储的例子。
                     //: USERCustomNotificationObject *object = [[USERCustomNotificationObject alloc] initWithNotification:notification];
-                    CountroDig *object = [[CountroDig alloc] initWithTable:notification];
+                    FabricValidBeginAnchor *object = [[FabricValidBeginAnchor alloc] initWithTable:notification];
                     //这里只负责存储可离线的自定义通知，推荐上层应用也这么处理，需要持久化的通知都走可离线通知
                     //: if (!notification.sendToOnlineUsersOnly) {
                     if (!notification.sendToOnlineUsersOnly) {

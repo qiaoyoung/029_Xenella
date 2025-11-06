@@ -142,7 +142,7 @@ typedef struct {
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  CountroDiamond.m
+//  BlueprintMainEnable.m
 //  NIM
 //
 //  Created by 高峰 on 15/7/28.
@@ -151,14 +151,14 @@ typedef struct {
 
 // __M_A_C_R_O__
 //: #import "USERWhiteboardAttachment.h"
-#import "CountroDiamond.h"
+#import "BlueprintMainEnable.h"
 //: #import "StringAttributedLabel.h"
 #import "OceanScrollView.h"
 //: #import "USERSessionUtil.h"
 #import "CapVoiceUniversal.h"
 
 //: @implementation USERWhiteboardAttachment
-@implementation CountroDiamond
+@implementation BlueprintMainEnable
 
 //: - (NSString *)cellContent:(NIMMessage *)message{
 - (NSString *)visual:(NIMMessage *)message{

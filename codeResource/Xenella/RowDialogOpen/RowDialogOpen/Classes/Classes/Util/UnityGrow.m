@@ -200,7 +200,7 @@ typedef struct {
         text = [SlanguageDeny fall:[WeekData sharedInstance].commonShotPath];//@"[猜拳]";
     }
     //: else if ([object.attachment isKindOfClass:[USERWhiteboardAttachment class]])
-    else if ([object.attachment isKindOfClass:[CountroDiamond class]])
+    else if ([object.attachment isKindOfClass:[BlueprintMainEnable class]])
     {
         //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_bai"];
         text = [SlanguageDeny fall:[WeekData sharedInstance].appMaintainPlatform];//@"[白板]";

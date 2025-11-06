@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  CountroDiamond.h
+//  BlueprintMainEnable.h
 //  NIM
 //
 //  Created by 高峰 on 15/7/28.
@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, CustomWhiteboardFlag) {
 };
 
 //: @interface USERWhiteboardAttachment : NSObject<NIMCustomAttachment,USERCustomAttachmentInfo>
-@interface CountroDiamond : NSObject<NIMCustomAttachment,RidgeInfo>
+@interface BlueprintMainEnable : NSObject<NIMCustomAttachment,RidgeInfo>
 
 //: @property (nonatomic,assign) CustomWhiteboardFlag flag;
 @property (nonatomic,assign) CustomWhiteboardFlag headVideoFlag;

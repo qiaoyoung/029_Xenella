@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  CountroDig.m
+//  FabricValidBeginAnchor.m
 //  NIM
 //
 //  Created by chris on 15/5/28.
@@ -10,10 +10,10 @@
 
 // __M_A_C_R_O__
 //: #import "USERCustomNotificationObject.h"
-#import "CountroDig.h"
+#import "FabricValidBeginAnchor.h"
 
 //: @implementation USERCustomNotificationObject
-@implementation CountroDig
+@implementation FabricValidBeginAnchor
 
 - (NSString *)rebuild:(NSString *)identify {
     //: OC_CUSTOM_PROPERTY_INJECT

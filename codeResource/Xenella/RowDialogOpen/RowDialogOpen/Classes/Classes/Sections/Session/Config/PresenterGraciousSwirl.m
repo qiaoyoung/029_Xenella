@@ -268,7 +268,7 @@
 //: #import "USERSnapchatAttachment.h"
 #import "OperativeWan.h"
 //: #import "USERWhiteboardAttachment.h"
-#import "CountroDiamond.h"
+#import "BlueprintMainEnable.h"
 //: #import "USERBundleSetting.h"
 #import "ReferSting.h"
 //: #import "NSString+USER.h"
@@ -622,7 +622,7 @@
         id attachment = object.attachment;
 
         //: if ([attachment isKindOfClass:[USERWhiteboardAttachment class]]) {
-        if ([attachment isKindOfClass:[CountroDiamond class]]) {
+        if ([attachment isKindOfClass:[BlueprintMainEnable class]]) {
             //: return NO;
             return NO;
         }

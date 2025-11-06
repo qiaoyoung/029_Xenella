@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 
 //: @class USERCustomNotificationObject;
-@class CountroDig;
+@class FabricValidBeginAnchor;
 //: @interface USERCustomNotificationDB : NSObject
 @interface DragDb : NSObject
 
@@ -25,17 +25,17 @@
 @property (nonatomic,assign) NSInteger rateBegin;
 
 //: - (BOOL)saveNotification:(USERCustomNotificationObject *)notification;
-- (BOOL)pastError:(CountroDig *)notification;
+- (BOOL)pastError:(FabricValidBeginAnchor *)notification;
 
 
 //: - (void)deleteNotification:(USERCustomNotificationObject *)notification;
-- (void)equal:(CountroDig *)notification;
+- (void)equal:(FabricValidBeginAnchor *)notification;
 
 //: - (void)markAllNotificationsAsRead;
 - (void)constraintProvider;
 
 //: - (NSArray *)fetchNotifications:(USERCustomNotificationObject *)notification
-- (NSArray *)line:(CountroDig *)notification
+- (NSArray *)line:(FabricValidBeginAnchor *)notification
                           //: limit:(NSInteger)limit;
                           nutLanguage:(NSInteger)limit;
 //: + (instancetype)sharedInstance;;

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  CountroDig.h
+//  FabricValidBeginAnchor.h
 //  NIM
 //
 //  Created by chris on 15/5/28.
@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 
 //: @interface USERCustomNotificationObject : NSObject
-@interface CountroDig : NSObject
+@interface FabricValidBeginAnchor : NSObject
 
 
 /**

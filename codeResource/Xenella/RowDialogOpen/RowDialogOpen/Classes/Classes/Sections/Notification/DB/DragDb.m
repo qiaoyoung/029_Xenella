@@ -249,7 +249,7 @@
 //: #import "USERFileLocationHelper.h"
 #import "MessageMil.h"
 //: #import "USERCustomNotificationObject.h"
-#import "CountroDig.h"
+#import "FabricValidBeginAnchor.h"
 
 //: typedef NS_ENUM(NSInteger, CustomNotificationStatus){
 typedef NS_ENUM(NSInteger, CustomNotificationStatus){
@@ -338,7 +338,7 @@ typedef NS_ENUM(NSInteger, CustomNotificationStatus){
 
 
 //: - (NSArray *)fetchNotifications:(USERCustomNotificationObject *)notification
-- (NSArray *)line:(CountroDig *)notification
+- (NSArray *)line:(FabricValidBeginAnchor *)notification
                           //: limit:(NSInteger)limit{
                           nutLanguage:(NSInteger)limit{
     //: __block NSArray *result = nil;
@@ -370,7 +370,7 @@ typedef NS_ENUM(NSInteger, CustomNotificationStatus){
         while ([rs next])
         {
             //: USERCustomNotificationObject *notification = [[USERCustomNotificationObject alloc] init];
-            CountroDig *notification = [[CountroDig alloc] init];
+            FabricValidBeginAnchor *notification = [[FabricValidBeginAnchor alloc] init];
             //: notification.serial = (NSInteger)[rs intForColumn:@"serial"];
             notification.thread = (NSInteger)[rs intForColumn:[SurfData componentDistanceValue]];
             //: notification.timestamp = [rs doubleForColumn:@"timetag"];
@@ -397,7 +397,7 @@ typedef NS_ENUM(NSInteger, CustomNotificationStatus){
 }
 
 //: - (void)deleteNotification:(USERCustomNotificationObject *)notification{
-- (void)equal:(CountroDig *)notification{
+- (void)equal:(FabricValidBeginAnchor *)notification{
     //: NSString *sql = @"update notifications set status  = ? where serial = ?";
     NSString *sql = [SurfData componentSilentValue];
     //: io_async(^{
@@ -413,7 +413,7 @@ typedef NS_ENUM(NSInteger, CustomNotificationStatus){
 }
 
 //: - (BOOL)saveNotification:(USERCustomNotificationObject *)notification{
-- (BOOL)pastError:(CountroDig *)notification{
+- (BOOL)pastError:(FabricValidBeginAnchor *)notification{
     //: __block BOOL result = NO;
     __block BOOL result = NO;
     //: io_sync_safe(^{

@@ -19,7 +19,7 @@
 //: @class USERSnapchatAttachment;
 @class OperativeWan;
 //: @class USERWhiteboardAttachment;
-@class CountroDiamond;
+@class BlueprintMainEnable;
 //: @class USERRedPacketAttachment;
 @class MessageDrive;
 //: @class USERRedPacketTipAttachment;
@@ -51,7 +51,7 @@
          //: revokeCallbackExt:(NSString *)revokeCallbackExt;
          failureTo:(NSString *)revokeCallbackExt;
 //: + (NIMMessage *)msgWithWhiteboardAttachment:(USERWhiteboardAttachment *)attachment;
-+ (NIMMessage *)independentAttachment:(CountroDiamond *)attachment;
++ (NIMMessage *)independentAttachment:(BlueprintMainEnable *)attachment;
 
 //: + (NIMMessage *)msgWithRevocationMessage:(NIMMessage *)revocationMessage;
 + (NIMMessage *)version:(NIMMessage *)revocationMessage;
