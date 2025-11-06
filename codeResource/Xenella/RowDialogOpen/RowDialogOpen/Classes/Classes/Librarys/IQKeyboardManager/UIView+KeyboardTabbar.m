@@ -13,7 +13,7 @@ Byte commonPlanetGooError[] = {8, 2888, 96, 11, 172, 163, 69, 93, 183, 11, 21, 2
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  UIView+IQKeyboardToolbar.m
+//  UIView+KeyboardTabbar.m
 //  https://github.com/hackiftekhar/TransitPo
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -42,8 +42,8 @@ Byte commonPlanetGooError[] = {8, 2888, 96, 11, 172, 163, 69, 93, 183, 11, 21, 2
 #import <UIKit/UIKit.h>
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "UIView+IQKeyboardToolbar.h"
-#import "UIView+IQKeyboardToolbar.h"
+//: #import "UIView+KeyboardTabbar.h"
+#import "UIView+KeyboardTabbar.h"
 //: #import "IQKeyboardManagerConstantsInternal.h"
 #import "IQKeyboardManagerConstantsInternal.h"
 //: #import "IQKeyboardManager.h"

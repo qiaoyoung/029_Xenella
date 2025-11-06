@@ -32,8 +32,8 @@
 #import <UIKit/UIKit.h>
 //: #import "IQKeyboardManagerConstants.h"
 #import "IQKeyboardManagerConstants.h"
-//: #import "UIView+IQKeyboardToolbar.h"
-#import "UIView+IQKeyboardToolbar.h"
+//: #import "UIView+KeyboardTabbar.h"
+#import "UIView+KeyboardTabbar.h"
 //: #import "IQPreviousNextView.h"
 #import "ResumeView.h"
 //: #import "IQUIViewController+Additions.h"

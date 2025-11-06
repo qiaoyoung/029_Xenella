@@ -250,7 +250,7 @@
 #import "UIScrollView+PerformAdditions.h"
 #import "UITextFieldView+PerformAdditions.h"
 #import "UIView+Hierarchy.h"
-#import "UIView+IQKeyboardToolbar.h"
+#import "UIView+KeyboardTabbar.h"
 #import "UIViewController+PerformAdditions.h"
 #import "DisabledContainer.h"
 #import "KMSwizzle.h"
