@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "DiagramSelectThemeNeat.h"
+#import "DiagramSelectThemeNeat.h"
 
 //: @interface FFFCellLayoutConfig : NSObject<FFFCellLayoutConfig>
 @interface DriveLaw : NSObject<DriveLaw>

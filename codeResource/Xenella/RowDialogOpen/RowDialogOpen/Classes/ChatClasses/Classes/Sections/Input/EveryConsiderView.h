@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "FFFSessionConfig.h"
 #import "CompleteMil.h"
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "AuroraTranslateUnity.h"
+#import "AuroraTranslateUnity.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN

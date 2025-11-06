@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
+//: #import "ShaderMajorSplitStencil.h"
+#import "ShaderMajorSplitStencil.h"
+//: #import "AnimatorMaskExportSeamless.h"
+#import "AnimatorMaskExportSeamless.h"
 //: #import "FFFSessionConfig.h"
 #import "CompleteMil.h"
 

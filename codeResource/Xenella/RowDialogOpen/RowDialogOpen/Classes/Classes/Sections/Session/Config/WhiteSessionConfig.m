@@ -84,7 +84,7 @@
 }
 
 //: - (id<FFFKitMessageProvider>)messageDataProvider
-- (id<AppropriateDeny>)thumbProvider
+- (id<PainterGenericTranslateLoyal>)thumbProvider
 {
     //: return self.provider;
     return self.document;

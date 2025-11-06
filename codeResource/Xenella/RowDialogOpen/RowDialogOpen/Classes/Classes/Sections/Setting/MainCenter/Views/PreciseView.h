@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "USERContactDataMember.h"
 #import "TvMember.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "DriverCoordinateTrusted.h"
+#import "DriverCoordinateTrusted.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN

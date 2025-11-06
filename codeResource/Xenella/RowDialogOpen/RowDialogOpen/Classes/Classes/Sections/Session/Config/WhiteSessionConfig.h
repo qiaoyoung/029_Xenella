@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 //: @interface USERThreadDataSourceProvider : NSObject <FFFKitMessageProvider>
-@interface PileRepo : NSObject <AppropriateDeny>
+@interface PileRepo : NSObject <PainterGenericTranslateLoyal>
 
 @property (nonatomic,strong) NIMMessage *skipHeadded;
 //: @property (nonatomic,strong) NIMMessage *threadMessage;

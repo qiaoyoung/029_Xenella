@@ -390,12 +390,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "ShaderMajorSplitStencil.h"
+#import "ShaderMajorSplitStencil.h"
 //: #import "MyUserKit.h"
 #import "Wave.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "TheoryMildDatasetter.h"
+#import "TheoryMildDatasetter.h"
 //: #import "FFFMessageModel.h"
 #import "AyModel.h"
 //: #import "FFFKitUtil.h"

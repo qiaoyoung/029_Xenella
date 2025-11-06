@@ -15,10 +15,10 @@
 #import "CompartmentPacketView.h"
 //: #import "FFFSessionTimestampCell.h"
 #import "VasViewCell.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "DiagramSelectThemeNeat.h"
+#import "DiagramSelectThemeNeat.h"
+//: #import "TheoryMildDatasetter.h"
+#import "TheoryMildDatasetter.h"
 
 //: @interface FFFMessageCellFactory : NSObject
 @interface CrystalFactory : NSObject

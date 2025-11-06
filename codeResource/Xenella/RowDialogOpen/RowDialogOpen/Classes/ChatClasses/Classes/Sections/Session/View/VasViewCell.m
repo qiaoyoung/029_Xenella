@@ -75,8 +75,8 @@
 // __M_A_C_R_O__
 //: #import "FFFSessionTimestampCell.h"
 #import "VasViewCell.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "DiagramSelectThemeNeat.h"
+#import "DiagramSelectThemeNeat.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFTimestampModel.h"

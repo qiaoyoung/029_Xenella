@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "Wave.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "DriverCoordinateTrusted.h"
+#import "DriverCoordinateTrusted.h"
 
 //: @class FFFAvatarImageView;
 @class CapTagControl;

@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "ShaderMajorSplitStencil.h"
+#import "ShaderMajorSplitStencil.h"
+//: #import "TheoryMildDatasetter.h"
+#import "TheoryMildDatasetter.h"
 
 //: @interface FFFSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 @interface PreciousPerform : NSObject<UITableViewDelegate,UITableViewDataSource>

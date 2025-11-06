@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellProtocol.h
+//  TheoryMildDatasetter.h
 // Wave
 //
 //  Created by NetEase.
@@ -9,8 +9,8 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "DiagramSelectThemeNeat.h"
+#import "DiagramSelectThemeNeat.h"
 
 // __M_A_C_R_O__
 

@@ -13,8 +13,8 @@
 #import "UINavigationBar+Pro.h"
 //: #import "UIView+USER.h"
 #import "UIView+LozengeConsider.h"
-//: #import "SwizzlingDefine.h"
-#import "SwizzlingDefine.h"
+//: #import "GrowingFillShaderPostbox.h"
+#import "GrowingFillShaderPostbox.h"
 
 //: @implementation UINavigationBar (Swizzling)
 @implementation UINavigationBar (Pro)

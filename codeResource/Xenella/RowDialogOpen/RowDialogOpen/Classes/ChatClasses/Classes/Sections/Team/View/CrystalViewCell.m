@@ -134,8 +134,8 @@ typedef struct {
 #import "UIImage+Wave.h"
 //: #import "FFFTeamHelper.h"
 #import "CompleteHelper.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "DriverCoordinateTrusted.h"
+#import "DriverCoordinateTrusted.h"
 
 //: @interface NIMTeamMemberView : UIView{
 @interface PresentView : UIView{

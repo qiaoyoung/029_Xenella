@@ -12,7 +12,7 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 //: #import "FFFKitMessageProvider.h"
-#import "AppropriateDeny.h"
+#import "PainterGenericTranslateLoyal.h"
 //: #import "FFFSessionConfig.h"
 #import "CompleteMil.h"
 

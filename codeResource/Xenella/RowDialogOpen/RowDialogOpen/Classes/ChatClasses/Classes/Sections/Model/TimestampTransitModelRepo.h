@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "DiagramSelectThemeNeat.h"
+#import "DiagramSelectThemeNeat.h"
 
 //: @interface FFFTimestampModel : NSObject
 @interface TimestampTransitModelRepo : NSObject

@@ -810,7 +810,7 @@
         //: item.img = dic[[FFFTeamHelper getTeamHelperImg]];
         item.img = dic[[CompleteHelper appForDisabled]];
         //: item.selected = (selectValue == [dic[[FFFTeamHelper getTeamHelperValue]] integerValue]);
-        item.selectedei = (selectValue == [dic[[CompleteHelper full]] integerValue]);
+        item.selected = (selectValue == [dic[[CompleteHelper full]] integerValue]);
         //: [items addObject:item];
         [items addObject:item];
     }

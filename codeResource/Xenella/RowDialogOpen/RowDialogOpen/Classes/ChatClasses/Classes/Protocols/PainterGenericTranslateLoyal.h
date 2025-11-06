@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AppropriateDeny.h
+//  PainterGenericTranslateLoyal.h
 // Wave
 //
 //  Created by chris.
@@ -26,7 +26,7 @@
 typedef void (^NIMKitDataProvideHandler)(NSError *error, NSArray<NIMMessage *> *messages);
 
 //: @protocol FFFKitMessageProvider <NSObject>
-@protocol AppropriateDeny <NSObject>
+@protocol PainterGenericTranslateLoyal <NSObject>
 
 //: @optional
 @optional

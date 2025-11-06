@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "AuroraTranslateUnity.h"
+#import "AuroraTranslateUnity.h"
 //: #import "FFFSessionConfig.h"
 #import "CompleteMil.h"
 //: #import "FFFInputToolBar.h"

@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "FFFSessionConfigurator.h"
 #import "HereTalkConfigurator.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
+//: #import "AnimatorMaskExportSeamless.h"
+#import "AnimatorMaskExportSeamless.h"
 
 //: @interface FFFSessionLayoutImpl : NSObject<NIMSessionLayout>
 @interface MagnituderoImpl : NSObject<DiamondLayout>

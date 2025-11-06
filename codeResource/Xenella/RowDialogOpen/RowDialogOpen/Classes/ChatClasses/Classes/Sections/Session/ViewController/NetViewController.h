@@ -15,10 +15,10 @@
 #import <NIMSDK/NIMSDK.h>
 //: #import "FFFSessionConfig.h"
 #import "CompleteMil.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "TheoryMildDatasetter.h"
+#import "TheoryMildDatasetter.h"
+//: #import "ShaderMajorSplitStencil.h"
+#import "ShaderMajorSplitStencil.h"
 //: #import "FFFInputView.h"
 #import "UniversalView.h"
 

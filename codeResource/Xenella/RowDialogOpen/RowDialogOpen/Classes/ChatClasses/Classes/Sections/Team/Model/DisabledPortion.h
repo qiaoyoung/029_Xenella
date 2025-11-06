@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "DriverCoordinateTrusted.h"
+#import "DriverCoordinateTrusted.h"
 
 //: @interface FFFTeamCardMemberItem : NSObject<FFFKitCardHeaderData>
 @interface DisabledPortion : NSObject<VasUniversal>

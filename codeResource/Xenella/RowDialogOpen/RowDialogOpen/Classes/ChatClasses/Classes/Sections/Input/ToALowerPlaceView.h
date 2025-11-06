@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "FFFSessionConfig.h"
 #import "CompleteMil.h"
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "AuroraTranslateUnity.h"
+#import "AuroraTranslateUnity.h"
 //: #import "CustomAlbumPickerView.h"
 #import "RepoView.h"
 

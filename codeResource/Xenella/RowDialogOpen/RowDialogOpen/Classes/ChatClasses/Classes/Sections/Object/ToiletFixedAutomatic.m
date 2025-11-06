@@ -34,7 +34,7 @@
 @property (nonatomic,assign) BOOL loopBasic;
 
 //: @property (nonatomic,strong) id<FFFKitMessageProvider> dataProvider;
-@property (nonatomic,strong) id<AppropriateDeny> pull;
+@property (nonatomic,strong) id<PainterGenericTranslateLoyal> pull;
 
 //: @end
 @end
@@ -679,7 +679,7 @@
         //: _sessionConfig = sessionConfig;
         _mononuclearPhagocyteSystemSessionConfig = sessionConfig;
         //: id<FFFKitMessageProvider> dataProvider = [_sessionConfig respondsToSelector:@selector(messageDataProvider)] ? [_sessionConfig messageDataProvider] : nil;
-        id<AppropriateDeny> dataProvider = [_mononuclearPhagocyteSystemSessionConfig respondsToSelector:@selector(thumbProvider)] ? [_mononuclearPhagocyteSystemSessionConfig thumbProvider] : nil;
+        id<PainterGenericTranslateLoyal> dataProvider = [_mononuclearPhagocyteSystemSessionConfig respondsToSelector:@selector(thumbProvider)] ? [_mononuclearPhagocyteSystemSessionConfig thumbProvider] : nil;
 
         //: NSInteger limit = [MyUserKit sharedKit].config.messageLimit;
         NSInteger limit = [Wave gray].growing.checkedMust;

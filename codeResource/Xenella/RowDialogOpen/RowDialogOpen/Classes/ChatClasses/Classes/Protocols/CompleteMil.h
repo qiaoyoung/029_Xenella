@@ -11,10 +11,10 @@
 #import <Foundation/Foundation.h>
 //: #import "FFFMediaItem.h"
 #import "YapAwayAgent.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "DiagramSelectThemeNeat.h"
+#import "DiagramSelectThemeNeat.h"
 //: #import "FFFKitMessageProvider.h"
-#import "AppropriateDeny.h"
+#import "PainterGenericTranslateLoyal.h"
 //: #import "FFFInputBarItemType.h"
 #import "FFFInputBarItemType.h"
 //: #import "FFFInputEmoticonManager.h"
@@ -160,7 +160,7 @@
  *  @return 消息数据提供者，如果不实现则读取本地聊天记录
  */
 //: - (id<FFFKitMessageProvider>)messageDataProvider;
-- (id<AppropriateDeny>)thumbProvider;
+- (id<PainterGenericTranslateLoyal>)thumbProvider;
 
 /**
  *  会话聊天背景更换接口
