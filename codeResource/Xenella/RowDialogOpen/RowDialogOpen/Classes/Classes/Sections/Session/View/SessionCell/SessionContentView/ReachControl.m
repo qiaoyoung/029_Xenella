@@ -103,7 +103,7 @@
 //: #import "USERSessionMultiRetweetContentView.h"
 #import "ReachControl.h"
 //: #import "USERMultiRetweetAttachment.h"
-#import "AmoAwful.h"
+#import "MerryLeafFabric.h"
 //: #import "UIView+USER.h"
 #import "UIView+LozengeConsider.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
@@ -228,7 +228,7 @@
     //: NIMCustomObject *object = data.message.messageObject;
     NIMCustomObject *object = data.jump.messageObject;
     //: USERMultiRetweetAttachment *attachment = (USERMultiRetweetAttachment *)object.attachment;
-    AmoAwful *attachment = (AmoAwful *)object.attachment;
+    MerryLeafFabric *attachment = (MerryLeafFabric *)object.attachment;
 
     //: [_messageLabs makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [_extra makeObjectsPerformSelector:@selector(removeFromSuperview)];

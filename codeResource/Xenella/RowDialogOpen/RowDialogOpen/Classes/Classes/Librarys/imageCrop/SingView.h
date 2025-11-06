@@ -118,7 +118,7 @@ typedef struct {
     EveryIntervalerceptView* nextCaptureInput;
 
     //: UIView* dragViewTwo;
-    UIView* tweakAccept;
+    UIView* dragViewTwo;
     //: UIView* cropAreaView;
     UIView* circumpolarView;
 }

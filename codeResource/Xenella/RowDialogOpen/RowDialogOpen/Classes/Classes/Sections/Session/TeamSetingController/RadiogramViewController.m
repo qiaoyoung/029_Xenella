@@ -803,7 +803,7 @@ typedef struct {
 //: #import "ZOMNForwardViewController.h"
 #import "LaunchViewController.h"
 //: #import "NSSetAvater.h"
-#import "AmoView.h"
+#import "PackVirtuousViewModel.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
 //: #import "HttpInterfacedConst.h"
@@ -823,7 +823,7 @@ CombinedDelegate,
 ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @property (nonatomic,strong) WorldView *header;
-@property (nonatomic, strong) AmoView *boundary;
+@property (nonatomic, strong) PackVirtuousViewModel *boundary;
 
 //: @property (nonatomic, strong) UILabel *introduce;
 @property (nonatomic, strong) UILabel *screen;
@@ -849,7 +849,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 //: @property (nonatomic, strong) UIView *userView;
 @property (nonatomic, strong) UIView *history;
 //: @property (nonatomic, strong) NSSetAvater *aleartView;
-@property (nonatomic, strong) AmoView *downView;
+@property (nonatomic, strong) PackVirtuousViewModel *downView;
 //: @property (strong, nonatomic) UIButton *btnPhoto;
 @property (strong, nonatomic) UIButton *announcementPhoto;
 
@@ -1352,7 +1352,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 	[self setSecondView:_header];
 }
 
-- (void)setDownView:(AmoView *)downView {
+- (void)setDownView:(PackVirtuousViewModel *)downView {
     //: OC_CUSTOM_PROPERTY_INJECT
     _downView = downView;
 }
@@ -1430,11 +1430,11 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 //: #pragma mark - Getter
 #pragma mark - Getter
 //: - (NSSetAvater *)aleartView{
-- (AmoView *)boundary{
+- (PackVirtuousViewModel *)boundary{
     //: if(!_aleartView){
     if(![self edge:_boundary]){
         //: _aleartView = [[NSSetAvater alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
-        _boundary = [[AmoView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        _boundary = [[PackVirtuousViewModel alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 	[self setSecondView:_header];
         //: _aleartView.delegate = self;
         _boundary.wholeDrawses = self;
@@ -1742,7 +1742,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
     [vc traitRate];
 }
 
-- (AmoView *)edge:(AmoView *)downView {
+- (PackVirtuousViewModel *)edge:(PackVirtuousViewModel *)downView {
     //: OC_CUSTOM_PROPERTY_INJECT
     _downView = downView;
     return downView;

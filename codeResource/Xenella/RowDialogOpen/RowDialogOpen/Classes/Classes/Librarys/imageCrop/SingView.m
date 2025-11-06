@@ -1061,7 +1061,7 @@ CGRect costCenter(CGFloat centerX, CGFloat centerY, CGFloat size) {
         //: } else {
         } else {
             //: dragViewTwo = [self checkHit:[recognizer locationOfTouch:i inView:self]];
-            tweakAccept = [self dauntless:[recognizer locationOfTouch:i inView:self]];
+            dragViewTwo = [self dauntless:[recognizer locationOfTouch:i inView:self]];
 	[self setMemberTap:self.precedencyMobiles];
             //: multiDragPoint.optionalPoint.dragStart = [recognizer locationOfTouch:i inView:self];
             receiveSumroduce.optionalPoint.dragStart = [recognizer locationOfTouch:i inView:self];
@@ -1353,7 +1353,7 @@ CGRect costCenter(CGFloat centerX, CGFloat centerY, CGFloat size) {
             //: dragPoint = i == 0 ? multiDragPoint.mainPoint : multiDragPoint.optionalPoint;
             become = i == 0 ? receiveSumroduce.mainPoint : receiveSumroduce.optionalPoint;
             //: [self beginCropBoxTransformForPoint:[recognizer locationOfTouch:i inView:self] atView:(i == 0 ? dragViewOne : dragViewTwo)];
-            [self multiRenderView:[recognizer locationOfTouch:i inView:self] chance:(i == 0 ? full : tweakAccept)];
+            [self multiRenderView:[recognizer locationOfTouch:i inView:self] chance:(i == 0 ? full : dragViewTwo)];
             // Assign point centers that could have changed in previous transform
             //: multiDragPoint.optionalPoint.topLeftCenter = topLeftPoint.center;
             receiveSumroduce.optionalPoint.topLeftCenter = commandCapital.center;

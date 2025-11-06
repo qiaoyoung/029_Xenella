@@ -25,7 +25,7 @@
 //: @class USERRedPacketTipAttachment;
 @class WanPoo;
 //: @class USERMultiRetweetAttachment;
-@class AmoAwful;
+@class MerryLeafFabric;
 //: @class USERShareCardAttachment;
 @class VasAttachment;
 
@@ -42,7 +42,7 @@
 + (NIMMessage *)bullTitle:(NSString *)text;
 
 //: + (NIMMessage *)msgWithMultiRetweetAttachment:(USERMultiRetweetAttachment *)attachment;
-+ (NIMMessage *)put:(AmoAwful *)attachment;
++ (NIMMessage *)put:(MerryLeafFabric *)attachment;
 
 //: + (NIMMessage *)msgWithTip:(NSString *)tip
 + (NIMMessage *)first:(NSString *)tip

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  WhiteSessionConfig.h
+//  ComposerAtFertileDistinct.h
 //  NIM
 //
 //  Created by He on 2020/4/12.
@@ -10,7 +10,7 @@
 
 // __M_A_C_R_O__
 //: #import "USERSessionConfig.h"
-#import "ConferenceSumroGalootConfig.h"
+#import "PresenterGraciousSwirl.h"
 
 //: @class NIMMessage;
 @class NIMMessage;
@@ -18,7 +18,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface USERThreadSessionConfig : USERSessionConfig
-@interface WhiteSessionConfig : ConferenceSumroGalootConfig
+@interface ComposerAtFertileDistinct : PresenterGraciousSwirl
 
 //: - (instancetype)initWithMessage:(NIMMessage *)message;
 - (instancetype)initWithSwitche:(NIMMessage *)message;

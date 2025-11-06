@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DosePooConfig.m
+//  WindowTransformerEnd.m
 // Wave
 //
 //  Created by He on 2020/3/25.
@@ -10,14 +10,14 @@
 
 // __M_A_C_R_O__
 //: #import "FFFReplyedTextContentConfig.h"
-#import "DosePooConfig.h"
+#import "WindowTransformerEnd.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "OceanScrollView+Wave.h"
 //: #import "MyUserKit.h"
 #import "Wave.h"
 
 //: @interface FFFReplyedTextContentConfig ()
-@interface DosePooConfig ()
+@interface WindowTransformerEnd ()
 
 //: @property (nonatomic,strong) StringAttributedLabel *label;
 @property (nonatomic,strong) OceanScrollView *recognize;
@@ -26,7 +26,7 @@
 @end
 
 //: @implementation FFFReplyedTextContentConfig
-@implementation DosePooConfig
+@implementation WindowTransformerEnd
 
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message

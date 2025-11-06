@@ -935,7 +935,7 @@ typedef struct {
 //: #import "USERSDKConfigDelegate.h"
 #import "DiamondPassingDelegate.h"
 //: #import "USERCellLayoutConfig.h"
-#import "GarrisonCapLayoutConfig.h"
+#import "StylerTreatOuterTransform.h"
 //: #import "USERSubscribeManager.h"
 #import "GerminateRev.h"
 //: #import "USERBundleSetting.h"
@@ -1279,7 +1279,7 @@ typedef struct {
 
     //注册 Wave 自定义排版配置
     //: [[MyUserKit sharedKit] registerLayoutConfig:[USERCellLayoutConfig new]];
-    [[Wave gray] phaseOfCellDivisionWhy:[GarrisonCapLayoutConfig new]];
+    [[Wave gray] phaseOfCellDivisionWhy:[StylerTreatOuterTransform new]];
 
     //: [[NIMSDKConfig sharedConfig] setTeamReceiptEnabled:YES];
     [[NIMSDKConfig sharedConfig] setTeamReceiptEnabled:YES];

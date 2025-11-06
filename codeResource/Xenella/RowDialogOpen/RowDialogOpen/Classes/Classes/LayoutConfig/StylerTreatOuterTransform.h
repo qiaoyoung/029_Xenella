@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  GarrisonCapLayoutConfig.h
+//  StylerTreatOuterTransform.h
 //  NIM
 //
 //  Created by amao on 2016/11/22.
@@ -15,7 +15,7 @@
 #import "Wave.h"
 
 //: @interface USERCellLayoutConfig : FFFCellLayoutConfig<FFFCellLayoutConfig>
-@interface GarrisonCapLayoutConfig : DriveLaw<DriveLaw>
+@interface StylerTreatOuterTransform : DriveLaw<DriveLaw>
 
 //: @end
 @end

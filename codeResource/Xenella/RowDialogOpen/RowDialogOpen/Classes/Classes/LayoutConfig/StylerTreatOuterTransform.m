@@ -27,7 +27,7 @@ HolographicData viewBuildVirtuConfig = (HolographicData){144, (Byte []){243, 248
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  GarrisonCapLayoutConfig.m
+//  StylerTreatOuterTransform.m
 //  NIM
 //
 //  Created by amao on 2016/11/22.
@@ -36,7 +36,7 @@ HolographicData viewBuildVirtuConfig = (HolographicData){144, (Byte []){243, 248
 
 // __M_A_C_R_O__
 //: #import "USERCellLayoutConfig.h"
-#import "GarrisonCapLayoutConfig.h"
+#import "StylerTreatOuterTransform.h"
 //: #import "USERSessionCustomContentConfig.h"
 #import "StandAlonePo.h"
 //: #import "USERChatroomTextContentConfig.h"
@@ -47,7 +47,7 @@ HolographicData viewBuildVirtuConfig = (HolographicData){144, (Byte []){243, 248
 #import "WanPoo.h"
 
 //: @interface USERCellLayoutConfig ()
-@interface GarrisonCapLayoutConfig ()
+@interface StylerTreatOuterTransform ()
 //: @property (nonatomic,strong) NSArray *types;
 @property (nonatomic,strong) NSArray *shade;
 //: @property (nonatomic,strong) USERChatroomTextContentConfig *chatroomTextConfig;
@@ -58,7 +58,7 @@ HolographicData viewBuildVirtuConfig = (HolographicData){144, (Byte []){243, 248
 @end
 
 //: @implementation USERCellLayoutConfig
-@implementation GarrisonCapLayoutConfig
+@implementation StylerTreatOuterTransform
 
 //: - (BOOL)isWhiteboardCloseNotificationMessage:(NIMMessage *)message
 - (BOOL)untimelinessMessage:(NIMMessage *)message
@@ -119,7 +119,7 @@ HolographicData viewBuildVirtuConfig = (HolographicData){144, (Byte []){243, 248
                    //: @"USERRedPacketTipAttachment",
                    @"WanPoo",
                    //: @"USERMultiRetweetAttachment",
-                   @"AmoAwful",
+                   @"MerryLeafFabric",
                    //: @"USERShareCardAttachment"
                    @"VasAttachment"
                    //: ];

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TransitConfig.h
+//  TaskInfiniteCoordinatorBeyond.h
 // Wave
 //
 //  Created by amao on 9/15/15.
@@ -13,7 +13,7 @@
 #import "ParseKindPineBroker.h"
 
 //: @interface FFFNotificationContentConfig : NSObject<CCCSessionContentConfig>
-@interface TransitConfig : NSObject<BelowConfig>
+@interface TaskInfiniteCoordinatorBeyond : NSObject<BelowConfig>
 
 //: @end
 @end

@@ -329,7 +329,7 @@
 //: #import "USERRedPacketTipAttachment.h"
 #import "WanPoo.h"
 //: #import "USERMultiRetweetAttachment.h"
-#import "AmoAwful.h"
+#import "MerryLeafFabric.h"
 //: #import "NSDictionary+USERJson.h"
 #import "NSDictionary+BraveWan.h"
 //: #import "USERSessionUtil.h"
@@ -378,10 +378,10 @@
         check = YES;
     }
     //: else if ([attachment isKindOfClass:[USERMultiRetweetAttachment class]])
-    else if ([attachment isKindOfClass:[AmoAwful class]])
+    else if ([attachment isKindOfClass:[MerryLeafFabric class]])
     {
         //: USERMultiRetweetAttachment *target = (USERMultiRetweetAttachment *)attachment;
-        AmoAwful *target = (AmoAwful *)attachment;
+        MerryLeafFabric *target = (MerryLeafFabric *)attachment;
         //: if (target.messageAbstract.count == 0) {
         if (target.publish.count == 0) {
             //: check = NO;
@@ -497,25 +497,25 @@
                 case CustomMessageTypeMultiRetweet:
                 {
                     //: attachment = [[USERMultiRetweetAttachment alloc] init];
-                    attachment = [[AmoAwful alloc] init];
+                    attachment = [[MerryLeafFabric alloc] init];
                     //: ((USERMultiRetweetAttachment *)attachment).url = [data jsonString:@"url"];
-                    ((AmoAwful *)attachment).aboveName = [data snapLine:[CaveLifestyleData sharedInstance].kSouHelper];
+                    ((MerryLeafFabric *)attachment).aboveName = [data snapLine:[CaveLifestyleData sharedInstance].kSouHelper];
                     //: ((USERMultiRetweetAttachment *)attachment).md5 = [data jsonString:@"md5"];
-                    ((AmoAwful *)attachment).cut = [data snapLine:[CaveLifestyleData sharedInstance].spacingPonePalDevice];
+                    ((MerryLeafFabric *)attachment).cut = [data snapLine:[CaveLifestyleData sharedInstance].spacingPonePalDevice];
                     //: ((USERMultiRetweetAttachment *)attachment).fileName = [data jsonString:@"fileName"];
-                    ((AmoAwful *)attachment).moveTitle = [data snapLine:[CaveLifestyleData sharedInstance].colorRiverWindowId];
+                    ((MerryLeafFabric *)attachment).moveTitle = [data snapLine:[CaveLifestyleData sharedInstance].colorRiverWindowId];
                     //: ((USERMultiRetweetAttachment *)attachment).compressed = [data jsonBool:@"compressed"];
-                    ((AmoAwful *)attachment).promisingCompressed = [data invest:[CaveLifestyleData sharedInstance].moduleMultiEvent];
+                    ((MerryLeafFabric *)attachment).promisingCompressed = [data invest:[CaveLifestyleData sharedInstance].moduleMultiEvent];
                     //: ((USERMultiRetweetAttachment *)attachment).encrypted = [data jsonBool:@"encrypted"];
-                    ((AmoAwful *)attachment).playSecondary = [data invest:[CaveLifestyleData sharedInstance].coreSilentGooAccuracyHelper];
+                    ((MerryLeafFabric *)attachment).playSecondary = [data invest:[CaveLifestyleData sharedInstance].coreSilentGooAccuracyHelper];
                     //: ((USERMultiRetweetAttachment *)attachment).password = [data jsonString:@"password"];
-                    ((AmoAwful *)attachment).signatureShow = [data snapLine:[CaveLifestyleData sharedInstance].k_pillAngleError];
+                    ((MerryLeafFabric *)attachment).signatureShow = [data snapLine:[CaveLifestyleData sharedInstance].k_pillAngleError];
                     //: ((USERMultiRetweetAttachment *)attachment).messageAbstract = [data jsonArray:@"messageAbstract"];
-                    ((AmoAwful *)attachment).publish = [data anProceed:[CaveLifestyleData sharedInstance].screenMultiData];
+                    ((MerryLeafFabric *)attachment).publish = [data anProceed:[CaveLifestyleData sharedInstance].screenMultiData];
                     //: ((USERMultiRetweetAttachment *)attachment).sessionName = [data jsonString:@"sessionName"];
-                    ((AmoAwful *)attachment).tabCan = [data snapLine:[CaveLifestyleData sharedInstance].widgetTotalHelper];
+                    ((MerryLeafFabric *)attachment).tabCan = [data snapLine:[CaveLifestyleData sharedInstance].widgetTotalHelper];
                     //: ((USERMultiRetweetAttachment *)attachment).sessionId = [data jsonString:@"sessionId"];
-                    ((AmoAwful *)attachment).curWoman = [data snapLine:[CaveLifestyleData sharedInstance].appStemPath];
+                    ((MerryLeafFabric *)attachment).curWoman = [data snapLine:[CaveLifestyleData sharedInstance].appStemPath];
                 }
                     //: break;
                     break;

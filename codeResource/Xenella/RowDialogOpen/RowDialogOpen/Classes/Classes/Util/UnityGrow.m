@@ -220,7 +220,7 @@ typedef struct {
         text = attach.absoluteByMessage;
     }
     //: else if ([object.attachment isKindOfClass:[USERMultiRetweetAttachment class]])
-    else if ([object.attachment isKindOfClass:[AmoAwful class]])
+    else if ([object.attachment isKindOfClass:[MerryLeafFabric class]])
     {
         //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_liao"];
         text = [SlanguageDeny fall:[WeekData sharedInstance].widgetPoneAlert];//@"[聊天记录]";

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AmoView.h
+//  PackVirtuousViewModel.h
 //  NIM
 //
 //  Created by Yan Wang on 2024/11/23.
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 //: @interface NSSetAvater : UIView
-@interface AmoView : UIView
+@interface PackVirtuousViewModel : UIView
 
 //: @property (nonatomic,weak) id<USERCustomUIAlertDelegate> delegate;
 @property (nonatomic,weak) id<ClientEvery> wholeDrawses;

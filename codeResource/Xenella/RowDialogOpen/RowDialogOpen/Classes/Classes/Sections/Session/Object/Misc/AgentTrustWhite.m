@@ -76,7 +76,7 @@ HeadTwentyData screenSurfEvent = (HeadTwentyData){72, (Byte []){173, 199, 217, 1
 //: #import "USERRedPacketTipAttachment.h"
 #import "WanPoo.h"
 //: #import "USERMultiRetweetAttachment.h"
-#import "AmoAwful.h"
+#import "MerryLeafFabric.h"
 //: #import "USERShareCardAttachment.h"
 #import "VasAttachment.h"
 //: #import "USERBundleSetting.h"
@@ -508,7 +508,7 @@ HeadTwentyData screenSurfEvent = (HeadTwentyData){72, (Byte []){173, 199, 217, 1
 }
 
 //: + (NIMMessage *)msgWithMultiRetweetAttachment:(USERMultiRetweetAttachment *)attachment {
-+ (NIMMessage *)put:(AmoAwful *)attachment {
++ (NIMMessage *)put:(MerryLeafFabric *)attachment {
     //: NIMMessage *message = [[NIMMessage alloc] init];
     NIMMessage *message = [[NIMMessage alloc] init];
     //: NIMCustomObject *customObject = [[NIMCustomObject alloc] init];

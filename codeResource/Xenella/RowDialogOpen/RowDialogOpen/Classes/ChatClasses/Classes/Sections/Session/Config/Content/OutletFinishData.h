@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface FFFRtcCallRecordContentConfig : NSObject<CCCSessionContentConfig>
-@interface OutletConfig : NSObject<BelowConfig>
+@interface OutletFinishData : NSObject<BelowConfig>
 
 //: @end
 @end

@@ -107,7 +107,7 @@
             //: [self isKindOfClass:NSClassFromString(@"CCCContactsViewController")] ||
             [self isKindOfClass:NSClassFromString(@"SawmillViewController")] ||
             //: [self isKindOfClass:NSClassFromString(@"USERMainCenterViewController")] ){
-            [self isKindOfClass:NSClassFromString(@"AmoViewController")] ){
+            [self isKindOfClass:NSClassFromString(@"MerryLeafViewController")] ){
 //            UITabBar *tabbar = [UITabBar appearance];
 //            tabbar.hidden = NO;
 //            tabbar.top = SCREEN_HEIGHT - tabbar.height;

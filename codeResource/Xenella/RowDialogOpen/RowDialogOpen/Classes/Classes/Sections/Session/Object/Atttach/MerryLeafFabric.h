@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AmoAwful.h
+//  MerryLeafFabric.h
 //  NIM
 //
 //  Created by Netease on 2019/10/16.
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class RegardAbstract;
 
 //: @interface USERMultiRetweetAttachment : NSObject<NIMCustomAttachment,USERCustomAttachmentInfo>
-@interface AmoAwful : NSObject<NIMCustomAttachment,RidgeInfo>
+@interface MerryLeafFabric : NSObject<NIMCustomAttachment,RidgeInfo>
 
 @property (nonatomic,strong) NSMutableArray <RegardAbstract *> *member;
 

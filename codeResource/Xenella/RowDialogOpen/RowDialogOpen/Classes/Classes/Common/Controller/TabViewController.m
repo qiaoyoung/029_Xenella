@@ -345,7 +345,7 @@
 //: #import "CCCContactsViewController.h"
 #import "SawmillViewController.h"
 //: #import "USERMainCenterViewController.h"
-#import "AmoViewController.h"
+#import "MerryLeafViewController.h"
 //: #import "DisCorveyViewController.h"
 #import "GrowViewController.h"
 //: #import "Reachability.h"
@@ -876,7 +876,7 @@ typedef NS_ENUM(NSInteger,USERMainTabType) {
                      //: @(USERMainTabTypeSetting) : @{
                      @(USERMainTabTypeSetting) : @{
                              //: @"vc" : @"USERMainCenterViewController",
-                             [TravelGladData viewHydrateAlert] : @"AmoViewController",
+                             [TravelGladData viewHydrateAlert] : @"MerryLeafViewController",
                              //: @"title" : [FFFLanguageManager getTextWithKey:@"main_tab_my"],
                              [TravelGladData viewLiteraryError] : [SlanguageDeny fall:[TravelGladData themeGrocerValue]],
                              //: @"image" : @"icon_setting_normal",

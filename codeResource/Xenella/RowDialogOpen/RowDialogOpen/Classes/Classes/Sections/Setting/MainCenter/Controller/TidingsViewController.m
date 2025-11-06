@@ -189,7 +189,7 @@ SafetyData widgetGalleryMessage = (SafetyData){11, (Byte []){126, 120, 110, 121,
 //: #import "NSSetSexView.h"
 #import "CapAppropriateView.h"
 //: #import "NSSetAvater.h"
-#import "AmoView.h"
+#import "PackVirtuousViewModel.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
 //: #import "HttpInterfacedConst.h"
@@ -221,7 +221,7 @@ SafetyData widgetGalleryMessage = (SafetyData){11, (Byte []){126, 120, 110, 121,
 @property (strong, nonatomic) UIButton *filterButton;
 @property (nonatomic, strong) EvolveView *random;
 //: @property (nonatomic, strong) NSSetAvater *aleartView;
-@property (nonatomic, strong) AmoView *gallery;
+@property (nonatomic, strong) PackVirtuousViewModel *gallery;
 //: @property (strong, nonatomic) UILabel *labAccount;
 @property (strong, nonatomic) UILabel *scheme;
 //: @property (nonatomic, strong) UIImageView *imageView;
@@ -843,11 +843,11 @@ SafetyData widgetGalleryMessage = (SafetyData){11, (Byte []){126, 120, 110, 121,
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 //: - (NSSetAvater *)aleartView{
-- (AmoView *)gallery{
+- (PackVirtuousViewModel *)gallery{
     //: if(!_aleartView){
     if(!_gallery){
         //: _aleartView = [[NSSetAvater alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
-        _gallery = [[AmoView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        _gallery = [[PackVirtuousViewModel alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 	[self setTemporary:_filterButton];
         //: _aleartView.delegate = self;
         _gallery.wholeDrawses = self;

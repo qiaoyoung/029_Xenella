@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  ConferenceSumroGalootConfig.h
+//  PresenterGraciousSwirl.h
 //  NIM
 //
 //  Created by amao on 8/11/15.
@@ -15,7 +15,7 @@
 //: @class FFFSessionConfig;
 @class CompleteMil;
 //: @interface USERSessionConfig : NSObject<FFFSessionConfig>
-@interface ConferenceSumroGalootConfig : NSObject<CompleteMil>
+@interface PresenterGraciousSwirl : NSObject<CompleteMil>
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *menu;
 

@@ -202,7 +202,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AmoView.m
+//  PackVirtuousViewModel.m
 //  NIM
 //
 //  Created by Yan Wang on 2024/11/23.
@@ -211,10 +211,10 @@
 
 // __M_A_C_R_O__
 //: #import "NSSetAvater.h"
-#import "AmoView.h"
+#import "PackVirtuousViewModel.h"
 
 //: @interface NSSetAvater ()
-@interface AmoView ()
+@interface PackVirtuousViewModel ()
 
 //: @property (nonatomic, strong) UIView *viewBg;
 @property (nonatomic, strong) UIView *operation;
@@ -230,7 +230,7 @@
 @end
 
 //: @implementation NSSetAvater
-@implementation AmoView
+@implementation PackVirtuousViewModel
 
 - (UIButton *)escape:(UIButton *)sign {
     //: OC_CUSTOM_PROPERTY_INJECT

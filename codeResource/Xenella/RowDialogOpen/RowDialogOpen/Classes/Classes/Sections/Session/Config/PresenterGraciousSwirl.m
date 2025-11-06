@@ -251,7 +251,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  ConferenceSumroGalootConfig.m
+//  PresenterGraciousSwirl.m
 //  NIM
 //
 //  Created by amao on 8/11/15.
@@ -260,7 +260,7 @@
 
 // __M_A_C_R_O__
 //: #import "USERSessionConfig.h"
-#import "ConferenceSumroGalootConfig.h"
+#import "PresenterGraciousSwirl.h"
 //: #import "FFFMediaItem.h"
 #import "YapAwayAgent.h"
 //: #import "USERBundleSetting.h"
@@ -283,14 +283,14 @@
 #import "TransitDoseUtil.h"
 
 //: @interface USERSessionConfig()
-@interface ConferenceSumroGalootConfig()
+@interface PresenterGraciousSwirl()
 //: @property (nonatomic,strong) NIMMessage *threadMessage;
 @property (nonatomic,strong) NIMMessage *skipHeadded;
 //: @end
 @end
 
 //: @implementation USERSessionConfig
-@implementation ConferenceSumroGalootConfig
+@implementation PresenterGraciousSwirl
 
 //: - (void)cleanThreadMessage
 - (void)launch

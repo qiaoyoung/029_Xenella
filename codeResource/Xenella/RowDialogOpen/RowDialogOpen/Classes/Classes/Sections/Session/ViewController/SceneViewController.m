@@ -90,13 +90,13 @@ typedef struct {
 //: #import "USERThreadTalkSessionViewController.h"
 #import "SceneViewController.h"
 //: #import "USERThreadSessionConfig.h"
-#import "WhiteSessionConfig.h"
+#import "ComposerAtFertileDistinct.h"
 
 //: @interface USERThreadTalkSessionViewController ()
 @interface SceneViewController ()
-@property (nonatomic,strong) WhiteSessionConfig *pending;
+@property (nonatomic,strong) ComposerAtFertileDistinct *pending;
 //: @property (nonatomic,strong) USERThreadSessionConfig *sessionConfig;
-@property (nonatomic,strong) WhiteSessionConfig *limitedEditionPending;
+@property (nonatomic,strong) ComposerAtFertileDistinct *limitedEditionPending;
 //: @property (nonatomic,strong) NIMMessage *threadMesssage;
 @property (nonatomic,strong) NIMMessage *cordExecute;
 //: @end
@@ -152,7 +152,7 @@ typedef struct {
     //: if (_sessionConfig == nil) {
     if ([self limitedEdition:_pending] == nil) {
         //: _sessionConfig = [[USERThreadSessionConfig alloc] initWithMessage:self.threadMesssage];
-        _pending = [[WhiteSessionConfig alloc] initWithSwitche:self.cordExecute];
+        _pending = [[ComposerAtFertileDistinct alloc] initWithSwitche:self.cordExecute];
         //: _sessionConfig.session = self.session;
         _pending.menu = self.declaration;
     }
@@ -226,7 +226,7 @@ typedef struct {
     return self;
 }
 
-- (WhiteSessionConfig *)limitedEdition:(WhiteSessionConfig *)limitedEditionPending {
+- (ComposerAtFertileDistinct *)limitedEdition:(ComposerAtFertileDistinct *)limitedEditionPending {
     //: OC_CUSTOM_PROPERTY_INJECT
     _limitedEditionPending = limitedEditionPending;
     return limitedEditionPending;
@@ -249,7 +249,7 @@ typedef struct {
 
 //: @end
 
-- (void)setLimitedEditionPending:(WhiteSessionConfig *)limitedEditionPending {
+- (void)setLimitedEditionPending:(ComposerAtFertileDistinct *)limitedEditionPending {
     //: OC_CUSTOM_PROPERTY_INJECT
     _limitedEditionPending = limitedEditionPending;
 }

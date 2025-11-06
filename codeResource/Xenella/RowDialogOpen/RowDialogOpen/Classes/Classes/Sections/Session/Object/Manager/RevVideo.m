@@ -110,7 +110,7 @@ typedef struct {
 //: #import "USERMessageSerialization.h"
 #import "CapYe.h"
 //: #import "USERMultiRetweetAttachment.h"
-#import "AmoAwful.h"
+#import "MerryLeafFabric.h"
 //: #import "USERSessionMsgConverter.h"
 #import "AgentTrustWhite.h"
 //: #import "FFFKitInfoFetchOption.h"
@@ -264,7 +264,7 @@ typedef void(^USERMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnul
         //: } else {
         } else {
             //: USERMultiRetweetAttachment *attach = [[USERMultiRetweetAttachment alloc] init];
-            AmoAwful *attach = [[AmoAwful alloc] init];
+            MerryLeafFabric *attach = [[MerryLeafFabric alloc] init];
             //: attach.fileName = info.filePath.lastPathComponent;
             attach.moveTitle = info.succeed.lastPathComponent;
             //: attach.md5 = info.md5;

@@ -10,7 +10,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFRtcCallRecordContentConfig.h"
-#import "OutletConfig.h"
+#import "OutletFinishData.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "OceanScrollView+Wave.h"
 //: #import "MyUserKit.h"
@@ -19,7 +19,7 @@
 #import "TransitDoseUtil.h"
 
 //: @implementation FFFRtcCallRecordContentConfig
-@implementation OutletConfig
+@implementation OutletFinishData
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)perimeterFile:(CGFloat)cellWidth total:(NIMMessage *)message

@@ -242,7 +242,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AmoAwful.m
+//  MerryLeafFabric.m
 //  NIM
 //
 //  Created by Netease on 2019/10/16.
@@ -251,7 +251,7 @@
 
 // __M_A_C_R_O__
 //: #import "USERMultiRetweetAttachment.h"
-#import "AmoAwful.h"
+#import "MerryLeafFabric.h"
 //: #import "USERFileLocationHelper.h"
 #import "MessageMil.h"
 //: #import "FFFKitInfoFetchOption.h"
@@ -266,7 +266,7 @@
 #import "TransitBelowWave.h"
 
 //: @interface USERMultiRetweetAttachment ()
-@interface AmoAwful ()
+@interface MerryLeafFabric ()
 
 //: @property (nonatomic,weak) NIMMessage *message;
 @property (nonatomic,weak) NIMMessage *hide;
@@ -278,7 +278,7 @@
 @end
 
 //: @implementation USERMultiRetweetAttachment
-@implementation AmoAwful
+@implementation MerryLeafFabric
 
 //: - (void)setMessageAbstract:(NSArray *)messageAbstract {
 - (void)setPublish:(NSArray *)messageAbstract {

@@ -22,17 +22,17 @@
 //: #import "FFFFileContentConfig.h"
 #import "TrustSlice.h"
 //: #import "FFFNotificationContentConfig.h"
-#import "TransitConfig.h"
+#import "TaskInfiniteCoordinatorBeyond.h"
 //: #import "FFFLocationContentConfig.h"
 #import "LabelEvolve.h"
 //: #import "FFFUnsupportContentConfig.h"
 #import "ViewReach.h"
 //: #import "FFFTipContentConfig.h"
-#import "BraveConfig.h"
+#import "BraveFinishData.h"
 //: #import "FFFReplyedTextContentConfig.h"
-#import "DosePooConfig.h"
+#import "WindowTransformerEnd.h"
 //: #import "FFFRtcCallRecordContentConfig.h"
-#import "OutletConfig.h"
+#import "OutletFinishData.h"
 
 //: @interface FFFSessionContentConfigFactory ()
 @interface IntervalFactory ()
@@ -67,16 +67,16 @@
                   //: @(NIMMessageTypeLocation) : [FFFLocationContentConfig new],
                   @(NIMMessageTypeLocation) : [LabelEvolve new],
                   //: @(NIMMessageTypeNotification) : [FFFNotificationContentConfig new],
-                  @(NIMMessageTypeNotification) : [TransitConfig new],
+                  @(NIMMessageTypeNotification) : [TaskInfiniteCoordinatorBeyond new],
                   //: @(NIMMessageTypeTip) : [FFFTipContentConfig new],
-                  @(NIMMessageTypeTip) : [BraveConfig new],
+                  @(NIMMessageTypeTip) : [BraveFinishData new],
                   //: @(NIMMessageTypeRtcCallRecord): [FFFRtcCallRecordContentConfig new],
-                  @(NIMMessageTypeRtcCallRecord): [OutletConfig new],
+                  @(NIMMessageTypeRtcCallRecord): [OutletFinishData new],
         //: };
         };
 
         //: FFFReplyedTextContentConfig *replyedTextConfig = [FFFReplyedTextContentConfig new];
-        DosePooConfig *replyedTextConfig = [DosePooConfig new];
+        WindowTransformerEnd *replyedTextConfig = [WindowTransformerEnd new];
         //: _replyDict = @{
         _challenge = @{
             //: @(NIMMessageTypeText) : replyedTextConfig,

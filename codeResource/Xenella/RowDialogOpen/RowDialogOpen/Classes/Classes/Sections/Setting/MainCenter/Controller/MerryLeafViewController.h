@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AmoViewController.h
+//  MerryLeafViewController.h
 //  NIM
 //
 //  Created by 彭爽 on 2021/9/8.
@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface USERMainCenterViewController : UIViewController
-@interface AmoViewController : UIViewController
+@interface MerryLeafViewController : UIViewController
 
 
 //: @end

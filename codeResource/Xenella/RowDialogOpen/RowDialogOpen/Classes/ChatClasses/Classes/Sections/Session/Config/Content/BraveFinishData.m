@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  BraveConfig.m
+//  BraveFinishData.m
 // Wave
 //
 //  Created by chris on 16/1/21.
@@ -10,14 +10,14 @@
 
 // __M_A_C_R_O__
 //: #import "FFFTipContentConfig.h"
-#import "BraveConfig.h"
+#import "BraveFinishData.h"
 //: #import "FFFKitUtil.h"
 #import "TransitDoseUtil.h"
 //: #import "MyUserKit.h"
 #import "Wave.h"
 
 //: @implementation FFFTipContentConfig
-@implementation BraveConfig
+@implementation BraveFinishData
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)perimeterFile:(CGFloat)cellWidth total:(NIMMessage *)message

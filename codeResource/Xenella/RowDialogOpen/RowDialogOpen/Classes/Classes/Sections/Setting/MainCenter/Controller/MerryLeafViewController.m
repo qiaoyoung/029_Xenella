@@ -1509,7 +1509,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AmoViewController.m
+//  MerryLeafViewController.m
 //  NIM
 //
 //  Created by 彭爽 on 2021/9/8.
@@ -1518,7 +1518,7 @@
 
 // __M_A_C_R_O__
 //: #import "USERMainCenterViewController.h"
-#import "AmoViewController.h"
+#import "MerryLeafViewController.h"
 //: #import "OptimizeBalancerTextData.h"
 #import "OptimizeBalancerTextData.h"
 //: #import "FFFCommonTableDelegate.h"
@@ -1567,7 +1567,7 @@
 #import "ProCombinedViewController.h"
 
 //: @interface USERMainCenterViewController ()<NIMUserManagerDelegate>
-@interface AmoViewController ()<NIMUserManagerDelegate>
+@interface MerryLeafViewController ()<NIMUserManagerDelegate>
 
 
 //: @property (nonatomic ,strong) NSString *language;
@@ -1593,7 +1593,7 @@
 @end
 
 //: @implementation USERMainCenterViewController
-@implementation AmoViewController
+@implementation MerryLeafViewController
 
 //: - (void)viewWillDisappear:(BOOL)animated{
 - (void)viewWillDisappear:(BOOL)animated{

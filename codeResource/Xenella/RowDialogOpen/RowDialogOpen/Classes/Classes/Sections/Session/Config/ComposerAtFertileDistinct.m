@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  WhiteSessionConfig.m
+//  ComposerAtFertileDistinct.m
 //  NIM
 //
 //  Created by He on 2020/4/12.
@@ -10,12 +10,12 @@
 
 // __M_A_C_R_O__
 //: #import "USERThreadSessionConfig.h"
-#import "WhiteSessionConfig.h"
+#import "ComposerAtFertileDistinct.h"
 //: #import "USERBundleSetting.h"
 #import "ReferSting.h"
 
 //: @interface USERThreadSessionConfig ()
-@interface WhiteSessionConfig ()
+@interface ComposerAtFertileDistinct ()
 
 //: @property (nonatomic,strong) USERThreadDataSourceProvider *provider;
 @property (nonatomic,strong) PileRepo *document;
@@ -27,7 +27,7 @@
 @end
 
 //: @implementation USERThreadSessionConfig
-@implementation WhiteSessionConfig
+@implementation ComposerAtFertileDistinct
 
 //: - (void)cleanThreadMessage
 - (void)launch

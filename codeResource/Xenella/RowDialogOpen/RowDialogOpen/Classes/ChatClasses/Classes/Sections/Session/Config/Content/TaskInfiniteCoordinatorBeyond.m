@@ -66,7 +66,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TransitConfig.m
+//  TaskInfiniteCoordinatorBeyond.m
 // Wave
 //
 //  Created by amao on 9/15/15.
@@ -75,7 +75,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFNotificationContentConfig.h"
-#import "TransitConfig.h"
+#import "TaskInfiniteCoordinatorBeyond.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "OceanScrollView+Wave.h"
 //: #import "FFFKitUtil.h"
@@ -86,7 +86,7 @@
 #import "Wave.h"
 
 //: @implementation FFFNotificationContentConfig
-@implementation TransitConfig
+@implementation TaskInfiniteCoordinatorBeyond
 //: - (UIEdgeInsets)contentViewInsets:(NIMMessage *)message
 - (UIEdgeInsets)kindLeaf:(NIMMessage *)message
 {

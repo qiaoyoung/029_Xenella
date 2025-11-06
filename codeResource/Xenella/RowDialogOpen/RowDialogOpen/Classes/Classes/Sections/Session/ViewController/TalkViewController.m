@@ -1472,7 +1472,7 @@
 //: #import "USERCustomSysNotificationSender.h"
 #import "ReferPooSender.h"
 //: #import "USERSessionConfig.h"
-#import "ConferenceSumroGalootConfig.h"
+#import "PresenterGraciousSwirl.h"
 //: #import "FFFMediaItem.h"
 #import "YapAwayAgent.h"
 //: #import "USERSessionMsgConverter.h"
@@ -1516,7 +1516,7 @@
 //: #import "USERRedPacketTipAttachment.h"
 #import "WanPoo.h"
 //: #import "USERCellLayoutConfig.h"
-#import "GarrisonCapLayoutConfig.h"
+#import "StylerTreatOuterTransform.h"
 //: #import "USERMulSelectFunctionBar.h"
 #import "PainterView.h"
 //: #import "USERMergeForwardSession.h"
@@ -1668,7 +1668,7 @@ DenyDelegate>
 //: @property (nonatomic,strong) USERMergeForwardSession *mergeForwardSession;
 @property (nonatomic,strong) RevVideo *psychicEnergy;
 //: @property (nonatomic,strong) USERSessionConfig *sessionConfig;
-@property (nonatomic,strong) ConferenceSumroGalootConfig *pending;
+@property (nonatomic,strong) PresenterGraciousSwirl *pending;
 
 //: @end
 @end
@@ -3484,7 +3484,7 @@ DenyDelegate>
     //: if (_sessionConfig == nil) {
     if (_pending == nil) {
         //: _sessionConfig = [[USERSessionConfig alloc] init];
-        _pending = [[ConferenceSumroGalootConfig alloc] init];
+        _pending = [[PresenterGraciousSwirl alloc] init];
         //: _sessionConfig.session = self.session;
         _pending.menu = self.declaration;
 	[self setWoman:_fail];

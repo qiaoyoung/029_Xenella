@@ -501,7 +501,7 @@
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Wave.h"
 //: #import "NSSetAvater.h"
-#import "AmoView.h"
+#import "PackVirtuousViewModel.h"
 
 //: @interface FFFGroupAvatarViewController ()<USERCustomUIAlertDelegate>
 @interface GroupViewController ()<ClientEvery>
@@ -517,7 +517,7 @@
 //: @property (nonatomic, strong) UILabel *accountLabel;
 @property (nonatomic, strong) UILabel *lab;
 //: @property (nonatomic, strong) NSSetAvater *aleartView;
-@property (nonatomic, strong) AmoView *resolution;
+@property (nonatomic, strong) PackVirtuousViewModel *resolution;
 //: @property (nonatomic, strong) UIImageView *aratarImgView;
 @property (nonatomic, strong) UIImageView *even;
 
@@ -563,11 +563,11 @@
 //    [self presentViewController:alertVc animated:YES completion:nil];
 }
 //: - (NSSetAvater *)aleartView{
-- (AmoView *)resolution{
+- (PackVirtuousViewModel *)resolution{
     //: if(!_aleartView){
     if(!_resolution){
         //: _aleartView = [[NSSetAvater alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
-        _resolution = [[AmoView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        _resolution = [[PackVirtuousViewModel alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         //: _aleartView.delegate = self;
         _resolution.wholeDrawses = self;
 	[self setM:_chockText];

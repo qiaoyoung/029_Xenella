@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  BraveConfig.h
+//  BraveFinishData.h
 // Wave
 //
 //  Created by chris on 16/1/21.
@@ -13,7 +13,7 @@
 #import "ParseKindPineBroker.h"
 
 //: @interface FFFTipContentConfig : NSObject<CCCSessionContentConfig>
-@interface BraveConfig : NSObject<BelowConfig>
+@interface BraveFinishData : NSObject<BelowConfig>
 
 //: @end
 @end

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DosePooConfig.h
+//  WindowTransformerEnd.h
 // Wave
 //
 //  Created by He on 2020/3/25.
@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface FFFReplyedTextContentConfig : NSObject<CCCSessionContentConfig>
-@interface DosePooConfig : NSObject<BelowConfig>
+@interface WindowTransformerEnd : NSObject<BelowConfig>
 
 //: @end
 @end
