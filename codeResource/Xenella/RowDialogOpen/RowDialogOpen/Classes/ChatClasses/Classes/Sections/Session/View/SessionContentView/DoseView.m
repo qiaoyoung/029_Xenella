@@ -137,7 +137,7 @@
 //: #import "MyUserKit.h"
 #import "Wave.h"
 //: #import "FFFKitDataProviderImpl.h"
-#import "RepoImpl.h"
+#import "RepoByUser.h"
 //: #import "FFFKitInfoFetchOption.h"
 #import "UniversalOption.h"
 //: #import "UIImage+MyUserKit.h"

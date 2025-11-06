@@ -36,7 +36,7 @@ Byte commonBuildName[] = {52, 6, 26, 8, 205, 6, 86, 96, 39, 73, 73, 75, 86, 90, 
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "AFImageDownloader.h"
-#import "SceneDragDownloader.h"
+#import "SceneDragDelegate.h"
 
 //: @interface UIImageView (_AFNetworking)
 @interface UIImageView (StingComplete)
@@ -109,7 +109,7 @@ Byte commonBuildName[] = {52, 6, 26, 8, 205, 6, 86, 96, 39, 73, 73, 75, 86, 90, 
     [self path];
 
     //: AFImageDownloader *downloader = [[self class] sharedImageDownloader];
-    SceneDragDownloader *downloader = [[self class] independentEasy];
+    SceneDragDelegate *downloader = [[self class] independentEasy];
     //: id <AFImageRequestCache> imageCache = downloader.imageCache;
     id <ManMil> imageCache = downloader.server;
 
@@ -201,7 +201,7 @@ Byte commonBuildName[] = {52, 6, 26, 8, 205, 6, 86, 96, 39, 73, 73, 75, 86, 90, 
 }
 
 //: + (void)setSharedImageDownloader:(AFImageDownloader *)imageDownloader {
-+ (void)setIndependentEasy:(SceneDragDownloader *)imageDownloader {
++ (void)setIndependentEasy:(SceneDragDelegate *)imageDownloader {
     //: objc_setAssociatedObject([UIImageView class], @selector(sharedImageDownloader), imageDownloader, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject([UIImageView class], @selector(independentEasy), imageDownloader, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -218,9 +218,9 @@ Byte commonBuildName[] = {52, 6, 26, 8, 205, 6, 86, 96, 39, 73, 73, 75, 86, 90, 
 }
 
 //: + (AFImageDownloader *)sharedImageDownloader {
-+ (SceneDragDownloader *)independentEasy {
++ (SceneDragDelegate *)independentEasy {
     //: return objc_getAssociatedObject([UIImageView class], @selector(sharedImageDownloader)) ?: [AFImageDownloader defaultInstance];
-    return objc_getAssociatedObject([UIImageView class], @selector(independentEasy)) ?: [SceneDragDownloader appearanceEntry];
+    return objc_getAssociatedObject([UIImageView class], @selector(independentEasy)) ?: [SceneDragDelegate appearanceEntry];
 }
 
 //: - (BOOL)isActiveTaskURLEqualToURLRequest:(NSURLRequest *)urlRequest {

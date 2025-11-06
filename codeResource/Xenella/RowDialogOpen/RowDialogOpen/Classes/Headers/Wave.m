@@ -37,7 +37,7 @@ Byte themeRecentStuffUtility[] = {61, 14, 33, 13, 98, 74, 177, 164, 182, 101, 93
 //: #import "FFFKitNotificationFirer.h"
 #import "HeliogramFirer.h"
 //: #import "FFFKitDataProviderImpl.h"
-#import "RepoImpl.h"
+#import "RepoByUser.h"
 //: #import "FFFCellLayoutConfig.h"
 #import "DriveLaw.h"
 //: #import "FFFKitInfoFetchOption.h"
@@ -224,7 +224,7 @@ Byte themeRecentStuffUtility[] = {61, 14, 33, 13, 98, 74, 177, 164, 182, 101, 93
         //: _firer = [[FFFKitNotificationFirer alloc] init];
         _formation = [[HeliogramFirer alloc] init];
         //: _provider = [[FFFKitDataProviderImpl alloc] init]; 
-        _recalculate = [[RepoImpl alloc] init]; //默认使用 Wave 的实现
+        _recalculate = [[RepoByUser alloc] init]; //默认使用 Wave 的实现
         //: _layoutConfig = [[FFFCellLayoutConfig alloc] init];
         _equal = [[DriveLaw alloc] init];
         //: [self preloadNIMKitBundleResource];

@@ -17,7 +17,7 @@
 #import "ShaderMajorSplitStencil.h"
 
 //: @interface FFFSessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
-@interface DragImpl : NSObject<SessionNumbereractor,DigPassing>
+@interface DragByUser : NSObject<SessionNumbereractor,DigPassing>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithTemporary:(NIMSession *)session

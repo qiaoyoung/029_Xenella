@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  RepoImpl.h
+//  RepoByUser.h
 // Wave
 //
 //  Created by chris on 2016/10/31.
@@ -13,7 +13,7 @@
 #import "ProvisionerProvider.h"
 
 //: @interface FFFKitDataProviderImpl : NSObject<FFFKitDataProvider>
-@interface RepoImpl : NSObject<ProvisionerProvider>
+@interface RepoByUser : NSObject<ProvisionerProvider>
 
 //: @end
 @end

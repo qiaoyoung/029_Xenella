@@ -33,7 +33,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @class AFImageDownloader;
-@class SceneDragDownloader;
+@class SceneDragDelegate;
 
 /**
  This category adds methods to the UIKit framework's `UIButton` class. The methods in this category provide support for loading remote images and background images asynchronously from a URL.
@@ -76,7 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
                            //: failure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
                            say:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
 //: + (void)setSharedImageDownloader:(AFImageDownloader *)imageDownloader;
-+ (void)setIndependentEasy:(SceneDragDownloader *)imageDownloader;
++ (void)setIndependentEasy:(SceneDragDelegate *)imageDownloader;
 
 /**
  Asynchronously downloads an image from the specified URL, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
@@ -98,7 +98,7 @@ NS_ASSUME_NONNULL_BEGIN
  The shared image downloader used to download images.
  */
 //: + (AFImageDownloader *)sharedImageDownloader;
-+ (SceneDragDownloader *)independentEasy;
++ (SceneDragDelegate *)independentEasy;
 
 
 ///--------------------

@@ -221,7 +221,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  RepoImpl.m
+//  RepoByUser.m
 // Wave
 //
 //  Created by chris on 2016/10/31.
@@ -236,7 +236,7 @@
 //: #import "MyUserKit.h"
 #import "Wave.h"
 //: #import "FFFKitDataProviderImpl.h"
-#import "RepoImpl.h"
+#import "RepoByUser.h"
 //: #import "FFFKitInfoFetchOption.h"
 #import "UniversalOption.h"
 //: #import "UIImage+MyUserKit.h"
@@ -370,7 +370,7 @@
 #pragma mark - data provider impl
 
 //: @interface FFFKitDataProviderImpl()<NIMUserManagerDelegate,
-@interface RepoImpl()<NIMUserManagerDelegate,
+@interface RepoByUser()<NIMUserManagerDelegate,
                                     //: NIMTeamManagerDelegate,
                                     NIMTeamManagerDelegate,
                                     //: NIMLoginManagerDelegate,
@@ -393,7 +393,7 @@
 
 
 //: @implementation FFFKitDataProviderImpl
-@implementation RepoImpl
+@implementation RepoByUser
 
 //: #pragma mark - P2P 用户信息
 #pragma mark - P2P 用户信息

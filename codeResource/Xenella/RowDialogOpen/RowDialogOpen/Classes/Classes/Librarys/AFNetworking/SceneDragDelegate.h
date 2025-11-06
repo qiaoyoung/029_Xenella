@@ -1,6 +1,6 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// SceneDragDownloader.h
+// SceneDragDelegate.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -44,13 +44,13 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 };
 
 /**
- The `PortionImagePo` is an object vended by the `SceneDragDownloader` when starting a data task. It can be used to cancel active tasks running on the `SceneDragDownloader` session. As a general rule, image data tasks should be cancelled using the `PortionImagePo` instead of calling `cancel` directly on the `task` itself. The `SceneDragDownloader` is optimized to handle duplicate task scenarios as well as pending versus active downloads.
+ The `PortionImagePo` is an object vended by the `SceneDragDelegate` when starting a data task. It can be used to cancel active tasks running on the `SceneDragDelegate` session. As a general rule, image data tasks should be cancelled using the `PortionImagePo` instead of calling `cancel` directly on the `task` itself. The `SceneDragDelegate` is optimized to handle duplicate task scenarios as well as pending versus active downloads.
  */
 //: @interface AFImageDownloadReceipt : NSObject
 @interface PortionImagePo : NSObject
 
 /**
- The data task created by the `SceneDragDownloader`.
+ The data task created by the `SceneDragDelegate`.
 */
 /**
  The unique identifier for the success and failure blocks when duplicate requests are made.
@@ -63,10 +63,10 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 //: @end
 @end
 
-/** The `SceneDragDownloader` class is responsible for downloading images in parallel on a prioritized queue. Incoming downloads are added to the front or back of the queue depending on the download prioritization. Each downloaded image is cached in the underlying `NSURLCache` as well as the in-memory image cache. By default, any download request with a cached image equivalent in the image cache will automatically be served the cached image representation.
+/** The `SceneDragDelegate` class is responsible for downloading images in parallel on a prioritized queue. Incoming downloads are added to the front or back of the queue depending on the download prioritization. Each downloaded image is cached in the underlying `NSURLCache` as well as the in-memory image cache. By default, any download request with a cached image equivalent in the image cache will automatically be served the cached image representation.
  */
 //: @interface AFImageDownloader : NSObject
-@interface SceneDragDownloader : NSObject
+@interface SceneDragDelegate : NSObject
 
 /**
  The image cache used to store all downloaded images in. `EvaluatePo` by default.
@@ -112,7 +112,7 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 /**
  Default initializer
 
- @return An instance of `SceneDragDownloader` initialized with default values.
+ @return An instance of `SceneDragDelegate` initialized with default values.
  */
 //: - (instancetype)init;
 - (instancetype)init;
@@ -124,14 +124,14 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 + (NSURLSessionConfiguration *)totaling;
 
 /**
- Initializes the `SceneDragDownloader` instance with the given session manager, download prioritization, maximum active download count and image cache.
+ Initializes the `SceneDragDelegate` instance with the given session manager, download prioritization, maximum active download count and image cache.
 
  @param sessionManager The session manager to use to download images.
  @param downloadPrioritization The download prioritization of the download queue.
  @param maximumActiveDownloads  The maximum number of active downloads allowed at any given time. Recommend `4`.
  @param imageCache The image cache used to store all downloaded images in.
 
- @return The new `SceneDragDownloader` instance.
+ @return The new `SceneDragDelegate` instance.
  */
 //: - (instancetype)initWithSessionManager:(AFHTTPSessionManager *)sessionManager
 - (instancetype)initWithAboveBy:(WithSkullSession *)sessionManager
@@ -146,7 +146,7 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
  
  @param configuration The `NSURLSessionConfiguration` to be be used
  
- @return An instance of `SceneDragDownloader` initialized with default values and custom `NSURLSessionConfiguration`
+ @return An instance of `SceneDragDelegate` initialized with default values and custom `NSURLSessionConfiguration`
  */
 //: - (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)configuration;
 - (instancetype)initWithUnderConfiguration:(NSURLSessionConfiguration *)configuration;
@@ -182,7 +182,7 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 
 
 /**
- The shared default instance of `SceneDragDownloader` initialized with default values.
+ The shared default instance of `SceneDragDelegate` initialized with default values.
  */
 //: + (instancetype)defaultInstance;
 + (instancetype)appearanceEntry;

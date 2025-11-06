@@ -134,7 +134,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFSessionInteractorImpl.h"
-#import "DragImpl.h"
+#import "DragByUser.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 //: #import "FFFMessageModel.h"
@@ -183,7 +183,7 @@ dispatch_queue_t afterBlank()
 
 
 //: @interface FFFSessionInteractorImpl()<NIMMediaManagerDelegate>
-@interface DragImpl()<NIMMediaManagerDelegate>
+@interface DragByUser()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,strong) NSMutableArray *pendingAudioMessages;
 @property (nonatomic,strong) NSMutableArray *safety;
@@ -211,7 +211,7 @@ dispatch_queue_t afterBlank()
 @end
 
 //: @implementation FFFSessionInteractorImpl
-@implementation DragImpl
+@implementation DragByUser
 
 //: - (void)addPinForMessage:(NIMMessage *)message
 - (void)exceptException:(NIMMessage *)message

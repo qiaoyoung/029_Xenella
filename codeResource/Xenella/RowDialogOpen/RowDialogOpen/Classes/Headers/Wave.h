@@ -154,7 +154,7 @@ extern const unsigned char kSpecificSettings[];
 /**
  *  由于在独立聊天室模式下, IM 部分服务不可用，需要上层注入一些额外信息供组件显示使用。 默认为 nil，上层在独立聊天室模式下注入，注入时需要创建此对象并注入对象相关字段信息。
  *
- *  此字段需要配合默认的 ProvisionerProvider ( RepoImpl ) 使用，如果上层自己定义了 provider ， 则忽略此字段。
+ *  此字段需要配合默认的 ProvisionerProvider ( RepoByUser ) 使用，如果上层自己定义了 provider ， 则忽略此字段。
  */
 //: @property (nonatomic,strong) FFFKitIndependentModeExtraInfo *independentModeExtraInfo;
 @property (nonatomic,strong) LateralPassScene *cap;

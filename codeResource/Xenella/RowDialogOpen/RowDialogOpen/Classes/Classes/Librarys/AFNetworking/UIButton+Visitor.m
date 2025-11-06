@@ -95,7 +95,7 @@
 //: #import "UIImageView+AFNetworking.h"
 #import "UIImageView+Visitor.h"
 //: #import "AFImageDownloader.h"
-#import "SceneDragDownloader.h"
+#import "SceneDragDelegate.h"
 
 //: @interface UIButton (_AFNetworking)
 @interface UIButton (StingComplete)
@@ -227,7 +227,7 @@ static const char * drawingUnit(UIControlState state) {
 }
 
 //: + (void)setSharedImageDownloader:(AFImageDownloader *)imageDownloader {
-+ (void)setIndependentEasy:(SceneDragDownloader *)imageDownloader {
++ (void)setIndependentEasy:(SceneDragDelegate *)imageDownloader {
     //: objc_setAssociatedObject([UIButton class], @selector(sharedImageDownloader), imageDownloader, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject([UIButton class], @selector(independentEasy), imageDownloader, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -253,7 +253,7 @@ static const char * drawingUnit(UIControlState state) {
     [self everyReload:state];
 
     //: AFImageDownloader *downloader = [[self class] sharedImageDownloader];
-    SceneDragDownloader *downloader = [[self class] independentEasy];
+    SceneDragDelegate *downloader = [[self class] independentEasy];
     //: id <AFImageRequestCache> imageCache = downloader.imageCache;
     id <ManMil> imageCache = downloader.server;
 
@@ -365,10 +365,10 @@ static const char * drawingUnit(UIControlState state) {
 }
 
 //: + (AFImageDownloader *)sharedImageDownloader {
-+ (SceneDragDownloader *)independentEasy {
++ (SceneDragDelegate *)independentEasy {
 
     //: return objc_getAssociatedObject([UIButton class], @selector(sharedImageDownloader)) ?: [AFImageDownloader defaultInstance];
-    return objc_getAssociatedObject([UIButton class], @selector(independentEasy)) ?: [SceneDragDownloader appearanceEntry];
+    return objc_getAssociatedObject([UIButton class], @selector(independentEasy)) ?: [SceneDragDelegate appearanceEntry];
 }
 
 //: #pragma mark -
@@ -428,7 +428,7 @@ static const char * drawingUnit(UIControlState state) {
     [self delay:state];
 
     //: AFImageDownloader *downloader = [[self class] sharedImageDownloader];
-    SceneDragDownloader *downloader = [[self class] independentEasy];
+    SceneDragDelegate *downloader = [[self class] independentEasy];
     //: id <AFImageRequestCache> imageCache = downloader.imageCache;
     id <ManMil> imageCache = downloader.server;
 

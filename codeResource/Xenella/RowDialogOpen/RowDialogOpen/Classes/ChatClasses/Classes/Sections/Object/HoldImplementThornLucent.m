@@ -14,7 +14,7 @@
 //: #import "FFFSessionMsgDatasource.h"
 #import "ToiletFixedAutomatic.h"
 //: #import "FFFSessionInteractorImpl.h"
-#import "DragImpl.h"
+#import "DragByUser.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFMessageModel.h"
@@ -22,7 +22,7 @@
 //: #import "NSString+Wave.h"
 #import "NSString+Wave.h"
 //: #import "FFFSessionInteractorImpl.h"
-#import "DragImpl.h"
+#import "DragByUser.h"
 //: #import "FFFSessionDataSourceImpl.h"
 #import "SubPoUniversal.h"
 //: #import "FFFSessionLayoutImpl.h"
@@ -61,7 +61,7 @@
 @interface HoldImplementThornLucent()
 
 //: @property (nonatomic,strong) FFFSessionInteractorImpl *interactor;
-@property (nonatomic,strong) DragImpl *quit;
+@property (nonatomic,strong) DragByUser *quit;
 
 //: @property (nonatomic,strong) FFFSessionTableAdapter *tableAdapter;
 @property (nonatomic,strong) PreciousPerform *makeAdapter;
@@ -95,7 +95,7 @@
 
 
     //: _interactor = [[FFFSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
-    _quit = [[DragImpl alloc] initWithTemporary:session noneSheet:sessionConfig];
+    _quit = [[DragByUser alloc] initWithTemporary:session noneSheet:sessionConfig];
     //: _interactor.delegate = vc;
     _quit.wholeDrawses = vc;
     //: _interactor.dataSource = datasource;

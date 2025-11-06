@@ -21,7 +21,7 @@ Byte kExerciseFormat[] = {26, 42, 43, 11, 183, 68, 34, 164, 246, 179, 31, 103, 1
 
 // __DEBUG__
 // __CLOSE_PRINT__
-// SceneDragDownloader.m
+// SceneDragDelegate.m
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -46,7 +46,7 @@ Byte kExerciseFormat[] = {26, 42, 43, 11, 183, 68, 34, 164, 246, 179, 31, 103, 1
 //: #import <TargetConditionals.h>
 #import <TargetConditionals.h>
 //: #import "AFImageDownloader.h"
-#import "SceneDragDownloader.h"
+#import "SceneDragDelegate.h"
 //: #import "AFHTTPSessionManager.h"
 #import "WithSkullSession.h"
 
@@ -177,7 +177,7 @@ Byte kExerciseFormat[] = {26, 42, 43, 11, 183, 68, 34, 164, 246, 179, 31, 103, 1
 @end
 
 //: @interface AFImageDownloader ()
-@interface SceneDragDownloader ()
+@interface SceneDragDelegate ()
 
 //: @property (nonatomic, strong) dispatch_queue_t responseQueue;
 @property (nonatomic, strong) dispatch_queue_t disturbingQueueT;
@@ -198,7 +198,7 @@ Byte kExerciseFormat[] = {26, 42, 43, 11, 183, 68, 34, 164, 246, 179, 31, 103, 1
 @end
 
 //: @implementation AFImageDownloader
-@implementation SceneDragDownloader
+@implementation SceneDragDelegate
 
 //: + (NSURLCache *)defaultURLCache {
 + (NSURLCache *)course {
@@ -250,7 +250,7 @@ Byte kExerciseFormat[] = {26, 42, 43, 11, 183, 68, 34, 164, 246, 179, 31, 103, 1
 //: + (instancetype)defaultInstance {
 + (instancetype)appearanceEntry {
     //: static AFImageDownloader *sharedInstance = nil;
-    static SceneDragDownloader *sharedInstance = nil;
+    static SceneDragDelegate *sharedInstance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
@@ -708,7 +708,7 @@ Byte kExerciseFormat[] = {26, 42, 43, 11, 183, 68, 34, 164, 246, 179, 31, 103, 1
     //: configuration.timeoutIntervalForRequest = 60.0;
     configuration.timeoutIntervalForRequest = 60.0;
     //: configuration.URLCache = [AFImageDownloader defaultURLCache];
-    configuration.URLCache = [SceneDragDownloader course];
+    configuration.URLCache = [SceneDragDelegate course];
 
     //: return configuration;
     return configuration;
