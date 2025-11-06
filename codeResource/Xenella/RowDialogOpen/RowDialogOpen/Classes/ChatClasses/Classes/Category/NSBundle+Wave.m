@@ -185,8 +185,8 @@ typedef struct {
 #import "NSBundle+Wave.h"
 //: #import "MyUserKit.h"
 #import "Wave.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "SSZipArchiveManager.h"
 #import "Control.h"
 

@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 //: #import "FFFKitInfo.h"
 #import "CapInfo.h"
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
+//: #import "TemplateBehindSternUtility.h"
+#import "TemplateBehindSternUtility.h"
 
 /**
  *  联系人选择器数据回调

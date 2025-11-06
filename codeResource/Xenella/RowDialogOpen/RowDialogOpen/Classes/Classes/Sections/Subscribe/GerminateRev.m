@@ -79,8 +79,8 @@ typedef struct {
 #import "USERSubscribeDefine.h"
 //: #import "USERDevice.h"
 #import "DigClientDevice.h"
-//: #import "FFFExtensionHelper.h"
-#import "FFFExtensionHelper.h"
+//: #import "ExtensionUserHelper.h"
+#import "ExtensionUserHelper.h"
 
 //: @interface USERSubscribeManager()<NIMEventSubscribeManagerDelegate,NIMConversationManagerDelegate,NIMLoginManagerDelegate,NIMUserManagerDelegate>
 @interface GerminateRev()<NIMEventSubscribeManagerDelegate,NIMConversationManagerDelegate,NIMLoginManagerDelegate,NIMUserManagerDelegate>

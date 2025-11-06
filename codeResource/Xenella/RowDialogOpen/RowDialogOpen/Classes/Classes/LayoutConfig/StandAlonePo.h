@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface USERSessionCustomContentConfig : NSObject<CCCSessionContentConfig>
 @interface StandAlonePo : NSObject<BelowConfig>

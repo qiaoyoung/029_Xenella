@@ -102,8 +102,8 @@ typedef struct {
 #import "ProViewCell.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "OptimizeBalancerTextData.h"
+#import "OptimizeBalancerTextData.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Wave.h"
 

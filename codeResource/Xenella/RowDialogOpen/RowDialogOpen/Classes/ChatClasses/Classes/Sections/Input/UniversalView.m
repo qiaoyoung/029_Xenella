@@ -165,8 +165,8 @@
 #import "ConsiderWaitView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "FFFInputEmoticonManager.h"
 #import "ToiletPreciseEvery.h"
 //: #import "FFFInputToolBar.h"

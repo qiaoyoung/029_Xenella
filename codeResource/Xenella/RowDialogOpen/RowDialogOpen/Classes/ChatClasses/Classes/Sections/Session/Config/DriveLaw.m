@@ -23,8 +23,8 @@
 #import "UIImage+Wave.h"
 //: #import "FFFMessageModel.h"
 #import "AyModel.h"
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 //: #import "MyUserKit.h"
 #import "Wave.h"
 

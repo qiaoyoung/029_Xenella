@@ -129,8 +129,8 @@ typedef struct {
 #import "ToiletPreciseEvery.h"
 //: #import "FFFInputEmoticonTabView.h"
 #import "CapControl.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Wave.h"
 //: #import "FFFMessageMaker.h"

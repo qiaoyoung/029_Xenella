@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
+//: #import "TemplateBehindSternUtility.h"
+#import "TemplateBehindSternUtility.h"
 //: #import "FFFSpellingCenter.h"
 #import "HereRidge.h"
 //: #import "FFFKitInfoFetchOption.h"

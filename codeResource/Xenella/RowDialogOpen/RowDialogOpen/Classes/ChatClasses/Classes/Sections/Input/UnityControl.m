@@ -15,8 +15,8 @@
 #import "UIImage+Wave.h"
 //: #import "FFFInputEmoticonManager.h"
 #import "ToiletPreciseEvery.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "MyUserKit.h"
 #import "Wave.h"
 //: #import "FFFKitDevice.h"

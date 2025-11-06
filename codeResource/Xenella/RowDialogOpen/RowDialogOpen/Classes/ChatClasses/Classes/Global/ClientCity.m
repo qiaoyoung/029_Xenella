@@ -73,8 +73,8 @@
 // __M_A_C_R_O__
 //: #import "FFFCommonTableDelegate.h"
 #import "ClientCity.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "OptimizeBalancerTextData.h"
+#import "OptimizeBalancerTextData.h"
 //: #import "FFFCommonTableViewCell.h"
 #import "CaveCell.h"
 //: #import "UIViewDeviceKit.h"

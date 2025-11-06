@@ -36,8 +36,8 @@ Byte moduleStackPage[] = {24, 29, 42, 9, 151, 238, 89, 211, 167, 63, 57, 69, 68,
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Wave.h"
-//: #import "FFFInputBarItemType.h"
-#import "FFFInputBarItemType.h"
+//: #import "EnumInputBarItemType.h"
+#import "EnumInputBarItemType.h"
 //: #import "FFFInputEmoticonManager.h"
 #import "ToiletPreciseEvery.h"
 //: #import "YYText.h"
@@ -235,13 +235,13 @@ Byte moduleStackPage[] = {24, 29, 42, 9, 151, 238, 89, 211, 167, 63, 57, 69, 68,
 
         //: self.types = @[
         self.onMobile = @[
-//            @(FFFInputBarItemTypeMore),
-//            @(FFFInputBarItemTypeEmoticon),
-//                         @(FFFInputBarItemTypeVoice),
-                         //: @(FFFInputBarItemTypeTextAndRecord),
-                         @(FFFInputBarItemTypeTextAndRecord),
-                         //: @(FFFInputBarItemTypeSend),
-                         @(FFFInputBarItemTypeSend),
+//            @(EnumInputBarItemTypeMore),
+//            @(EnumInputBarItemTypeEmoticon),
+//                         @(EnumInputBarItemTypeVoice),
+                         //: @(EnumInputBarItemTypeTextAndRecord),
+                         @(EnumInputBarItemTypeTextAndRecord),
+                         //: @(EnumInputBarItemTypeSend),
+                         @(EnumInputBarItemTypeSend),
 
                        //: ];
                        ];
@@ -407,7 +407,7 @@ Byte moduleStackPage[] = {24, 29, 42, 9, 151, 238, 89, 211, 167, 63, 57, 69, 68,
 {
 //    CGFloat textViewWidth = 0;
 //    for (NSNumber *type in self.types) {
-//        if (type.integerValue == FFFInputBarItemTypeTextAndRecord) {
+//        if (type.integerValue == EnumInputBarItemTypeTextAndRecord) {
 //            continue;
 //        }
 //        UIView *view = [self subViewForType:type.integerValue];
@@ -556,8 +556,8 @@ Byte moduleStackPage[] = {24, 29, 42, 9, 151, 238, 89, 211, 167, 63, 57, 69, 68,
 //: - (void)adjustTextAndRecordView
 - (void)substanceArrow
 {
-    //: if ([self.types containsObject:@(FFFInputBarItemTypeTextAndRecord)])
-    if ([[self opinionPassing:self.onMobile] containsObject:@(FFFInputBarItemTypeTextAndRecord)])
+    //: if ([self.types containsObject:@(EnumInputBarItemTypeTextAndRecord)])
+    if ([[self opinionPassing:self.onMobile] containsObject:@(EnumInputBarItemTypeTextAndRecord)])
     {
 //        self.inputTextView.center  = self.inputTextBkgImage.center;
 
@@ -597,19 +597,19 @@ Byte moduleStackPage[] = {24, 29, 42, 9, 151, 238, 89, 211, 167, 63, 57, 69, 68,
 
 //: #pragma mark - Get
 #pragma mark - Get
-//: - (UIView *)subViewForType:(FFFInputBarItemType)type{
-- (UIView *)reaction:(FFFInputBarItemType)type{
+//: - (UIView *)subViewForType:(EnumInputBarItemType)type{
+- (UIView *)reaction:(EnumInputBarItemType)type{
     //: if (!_dict) {
     if (!_agree) {
         //: _dict = @{
         _agree = @{
-//                  @(FFFInputBarItemTypeVoice) : self.voiceButton,
-//                  @(FFFInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
-                  //: @(FFFInputBarItemTypeEmoticon) : self.emoticonBtn,
-                  @(FFFInputBarItemTypeEmoticon) : self.searched,
-//                  @(FFFInputBarItemTypeMore)     : self.moreMediaBtn,
-                  //: @(FFFInputBarItemTypeSend) : self.sendButton,
-                  @(FFFInputBarItemTypeSend) : self.map,
+//                  @(EnumInputBarItemTypeVoice) : self.voiceButton,
+//                  @(EnumInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
+                  //: @(EnumInputBarItemTypeEmoticon) : self.emoticonBtn,
+                  @(EnumInputBarItemTypeEmoticon) : self.searched,
+//                  @(EnumInputBarItemTypeMore)     : self.moreMediaBtn,
+                  //: @(EnumInputBarItemTypeSend) : self.sendButton,
+                  @(EnumInputBarItemTypeSend) : self.map,
                 //: };
                 };
 	[self setMobile:_onMobile];

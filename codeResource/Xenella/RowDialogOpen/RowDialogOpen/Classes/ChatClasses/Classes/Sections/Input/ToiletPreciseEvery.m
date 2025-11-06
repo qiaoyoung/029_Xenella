@@ -178,8 +178,8 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "FFFInputEmoticonManager.h"
 #import "ToiletPreciseEvery.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Wave.h"
 //: #import "MyUserKit.h"

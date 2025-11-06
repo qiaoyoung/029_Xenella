@@ -1519,8 +1519,8 @@
 // __M_A_C_R_O__
 //: #import "USERMainCenterViewController.h"
 #import "AmoViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "OptimizeBalancerTextData.h"
+#import "OptimizeBalancerTextData.h"
 //: #import "FFFCommonTableDelegate.h"
 #import "ClientCity.h"
 //: #import "SVProgressHUD.h"
