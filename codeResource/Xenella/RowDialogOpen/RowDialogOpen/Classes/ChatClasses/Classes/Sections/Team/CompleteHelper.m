@@ -804,13 +804,13 @@
         //: FFFTeamCardRowItem *item = [[FFFTeamCardRowItem alloc] init];
         WaitQuantityro *item = [[WaitQuantityro alloc] init];
         //: item.value = dic[[FFFTeamHelper getTeamHelperValue]];
-        item.roleTeam = dic[[CompleteHelper full]];
+        item.value = dic[[CompleteHelper full]];
         //: item.title = dic[[FFFTeamHelper getTeamHelperText]];
-        item.stick = dic[[CompleteHelper announcement]];
+        item.title = dic[[CompleteHelper announcement]];
         //: item.img = dic[[FFFTeamHelper getTeamHelperImg]];
-        item.cross = dic[[CompleteHelper appForDisabled]];
+        item.img = dic[[CompleteHelper appForDisabled]];
         //: item.selected = (selectValue == [dic[[FFFTeamHelper getTeamHelperValue]] integerValue]);
-        item.hour = (selectValue == [dic[[CompleteHelper full]] integerValue]);
+        item.selected = (selectValue == [dic[[CompleteHelper full]] integerValue]);
         //: [items addObject:item];
         [items addObject:item];
     }

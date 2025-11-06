@@ -263,7 +263,7 @@ Byte screenPopulationFillDeadlineContent[] = {54, 7, 17, 11, 70, 86, 168, 72, 30
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
-        [obj setOuterSpace:selected];
+        [obj setSelected:selected];
     //: }];
     }];
     //: [self.tableView reloadData];
@@ -378,12 +378,12 @@ Byte screenPopulationFillDeadlineContent[] = {54, 7, 17, 11, 70, 86, 168, 72, 30
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
-    cell.convergeView.image = [UIImage imageNamed:bodyData.transmissionAssistance];
+    cell.convergeView.image = [UIImage imageNamed:bodyData.img];
 	[self setSoap:_maintain];
     //: cell.titleLabel.text = bodyData.title;
-    cell.share.text = bodyData.sphere;
+    cell.share.text = bodyData.title;
     //: cell.arrowsImageView.hidden = ![bodyData selected];
-    cell.pauseImageView.hidden = ![bodyData outerSpace];
+    cell.pauseImageView.hidden = ![bodyData selected];
 	[self setSoap:_maintain];
 
     //: return cell;
@@ -438,7 +438,7 @@ Byte screenPopulationFillDeadlineContent[] = {54, 7, 17, 11, 70, 86, 168, 72, 30
         //: [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items enumerateObjectsUsingBlock:^(id<TakeRepoSlice> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
-            if (obj.outerSpace) {
+            if (obj.selected) {
                 //: weakSelf.selectedIndex = idx;
                 weakSelf.position = idx;
             }

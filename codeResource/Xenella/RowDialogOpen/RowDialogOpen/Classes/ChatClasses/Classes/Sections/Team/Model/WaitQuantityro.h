@@ -21,7 +21,7 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <TakeRepoSlice> item);
 @interface WaitQuantityro : NSObject
 
 //: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
-@property(nonatomic,strong) NIMTeamCardRowSelectedBlock totaleraction;
+@property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
 
 //@property(nonatomic,copy) UIImage *cross;
 //@property(nonatomic,assign) BOOL hour;

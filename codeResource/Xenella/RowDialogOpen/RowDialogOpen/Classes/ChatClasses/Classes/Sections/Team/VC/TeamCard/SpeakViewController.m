@@ -213,7 +213,7 @@ typedef struct {
     //: cell.button.style = EnumColorButtonCellStyleBlue;
     cell.receiveButton.anti = EnumColorButtonCellStyleBlue;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.receiveButton setTitle:bodyData.thatDrag forState:UIControlStateNormal];
+    [cell.receiveButton setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -277,7 +277,7 @@ typedef struct {
     //: cell.button.style = EnumColorButtonCellStyleRed;
     cell.receiveButton.anti = EnumColorButtonCellStyleRed;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.receiveButton setTitle:bodyData.thatDrag forState:UIControlStateNormal];
+    [cell.receiveButton setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -367,7 +367,7 @@ typedef struct {
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.thatDrag,bodyData.permission];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor blackColor];
@@ -376,7 +376,7 @@ typedef struct {
 //    cell.imageView.image = bodyData.img;
 
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(eventOpenses)] && bodyData.inhibition) {
+    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
         //: cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
     //: }else{
@@ -697,7 +697,7 @@ typedef struct {
     //: UITableViewCell * cell;
     UITableViewCell * cell;
     //: MyTeamCardRowItemType type = bodyData.type;
-    MyTeamCardRowItemType type = bodyData.presentation;
+    MyTeamCardRowItemType type = bodyData.type;
     //: switch (type) {
     switch (type) {
         //: case TeamCardRowItemTypeCommon:
@@ -750,22 +750,22 @@ typedef struct {
     //: id<USERCardBodyData> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<OrganicStructureDose> bodyData = [self primary:indexPath];
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(eventOpenses)] && bodyData.inhibition) {
+    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
         //: return;
         return;
     }
     //: if (bodyData.type == TeamCardRowItemTypeSelected) {
-    if (bodyData.presentation == TeamCardRowItemTypeSelected) {
+    if (bodyData.type == TeamCardRowItemTypeSelected) {
         //: FFFTeamCardSelectedViewController *vc = [FFFTeamCardSelectedViewController instanceWithTitle:bodyData.title
-        RoofViewController *vc = [RoofViewController secure:bodyData.thatDrag
+        RoofViewController *vc = [RoofViewController secure:bodyData.title
                                                                                //: items:bodyData.optionItems
-                                                                               dirigible:bodyData.moonOval
+                                                                               dirigible:bodyData.optionItems
                                                                               //: result:^(id<FFFKitSelectCardData> _Nonnull item) {
                                                                               ofSelectedCompletion:^(id<TakeRepoSlice> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
-              if (bodyData.everyYear) {
+              if (bodyData.selectedBlock) {
                   //: bodyData.selectedBlock(item);
-                  bodyData.everyYear(item);
+                  bodyData.selectedBlock(item);
               }
           //: }];
           }];
@@ -774,13 +774,13 @@ typedef struct {
     //: } else {
     } else {
         //: if ([bodyData respondsToSelector:@selector(action)]) {
-        if ([bodyData respondsToSelector:@selector(effectGeneral)]) {
+        if ([bodyData respondsToSelector:@selector(action)]) {
             //: if (bodyData.action) {
-            if (bodyData.upwardsMiddle) {
+            if (bodyData.action) {
                 //: do {
                 do {
                 //: [self performSelector:bodyData.action];
-                [self performSelector:bodyData.upwardsMiddle];
+                [self performSelector:bodyData.action];
                 //: } while (0);
                 } while (0);
             }
@@ -793,7 +793,7 @@ typedef struct {
     //: id<USERCardBodyData> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<OrganicStructureDose> bodyData = [self primary:indexPath];
     //: return bodyData.rowHeight;
-    return bodyData.bounce;
+    return bodyData.rowHeight;
 }
 
 //: - (void)reloadTableViewData {};
@@ -837,18 +837,18 @@ typedef struct {
     sep.hidden = (indexPath.row + 1 == [self.viewRegular numberOfRowsInSection:indexPath.section]);
 
     //: cell.textLabel.text = bodyData.title;
-    cell.textLabel.text = bodyData.thatDrag;
+    cell.textLabel.text = bodyData.title;
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor colorWithHexString:@"#2C3042"];
     cell.textLabel.textColor = [UIColor streetwiseMovement:[[DiplomaticData sharedInstance] screenIndustrialMessage]];
     //: cell.imageView.image = bodyData.img;
-    cell.imageView.image = bodyData.position;
+    cell.imageView.image = bodyData.img;
 
     //: cell.switcher.on = bodyData.switchOn;
-    cell.historyRefuse.on = bodyData.discussion;
+    cell.historyRefuse.on = bodyData.switchOn;
     //: cell.identify = bodyData.identify;
-    cell.bouffantNotice = bodyData.installationIdentify;
+    cell.bouffantNotice = bodyData.identify;
 
     //: [self didBuildTeamSwitchCell:cell];
     [self radio:cell];
@@ -919,9 +919,9 @@ typedef struct {
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.titleLabel.text = bodyData.title;
-    cell.extent.text = bodyData.thatDrag;
+    cell.extent.text = bodyData.title;
     //: cell.iconImageView.image = bodyData.img;
-    cell.opposite.image = bodyData.position;
+    cell.opposite.image = bodyData.img;
 //    cell.contentLabel.text = bodyData.subTitle;
 //    if ([bodyData respondsToSelector:@selector(subTitle)]) {
 //        cell.contentLabel.text = bodyData.subTitle ?: LangKey(@"未设置");
