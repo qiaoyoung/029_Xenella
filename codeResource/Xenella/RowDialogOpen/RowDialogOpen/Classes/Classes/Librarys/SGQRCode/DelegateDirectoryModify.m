@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  ReachProxy.m
+//  DelegateDirectoryModify.m
 //  SGQRCodeExample
 //
 //  Created by kingsic on 2022/7/2.
@@ -9,17 +9,17 @@
 
 // __M_A_C_R_O__
 //: #import "SGWeakProxy.h"
-#import "ReachProxy.h"
+#import "DelegateDirectoryModify.h"
 
 //: @interface SGWeakProxy ()
-@interface ReachProxy ()
+@interface DelegateDirectoryModify ()
 //: @property (nonatomic, weak) id target;
 @property (nonatomic, weak) id trust;
 //: @end
 @end
 
 //: @implementation SGWeakProxy
-@implementation ReachProxy
+@implementation DelegateDirectoryModify
 
 //: - (void)forwardInvocation:(NSInvocation *)invocation {
 - (void)forwardInvocation:(NSInvocation *)invocation {
@@ -39,7 +39,7 @@
 //: + (instancetype)weakProxyWithTarget:(id)aTarget {
 + (instancetype)proxy:(id)aTarget {
     //: SGWeakProxy *weakProxy = [SGWeakProxy alloc];
-    ReachProxy *weakProxy = [ReachProxy alloc];
+    DelegateDirectoryModify *weakProxy = [DelegateDirectoryModify alloc];
     //: weakProxy.target = aTarget;
     weakProxy.trust = aTarget;
     //: return weakProxy;

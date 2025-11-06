@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  ReachProxy.h
+//  DelegateDirectoryModify.h
 //  SGQRCodeExample
 //
 //  Created by kingsic on 2022/7/2.
@@ -15,8 +15,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface SGWeakProxy : NSProxy
-@interface ReachProxy : NSProxy
-/// 类方法创建 ReachProxy
+@interface DelegateDirectoryModify : NSProxy
+/// 类方法创建 DelegateDirectoryModify
 //: + (instancetype)weakProxyWithTarget:(id)aTarget;
 + (instancetype)proxy:(id)aTarget;
 
