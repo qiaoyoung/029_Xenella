@@ -30,8 +30,8 @@
 #import "AyView.h"
 //: #import "IQKeyboardManagerConstantsInternal.h"
 #import "IQKeyboardManagerConstantsInternal.h"
-//: #import "IQUIView+Hierarchy.h"
-#import "IQUIView+Hierarchy.h"
+//: #import "UIView+Hierarchy.h"
+#import "UIView+Hierarchy.h"
 
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")

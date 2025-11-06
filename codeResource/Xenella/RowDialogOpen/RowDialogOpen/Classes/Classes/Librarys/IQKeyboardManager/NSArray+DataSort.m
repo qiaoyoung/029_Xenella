@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQNSArray+Sort.m
+//  NSArray+DataSort.m
 //  https://github.com/hackiftekhar/TransitPo
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -26,10 +26,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "IQNSArray+Sort.h"
-#import "IQNSArray+Sort.h"
-//: #import "IQUIView+Hierarchy.h"
-#import "IQUIView+Hierarchy.h"
+//: #import "NSArray+DataSort.h"
+#import "NSArray+DataSort.h"
+//: #import "UIView+Hierarchy.h"
+#import "UIView+Hierarchy.h"
 
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")

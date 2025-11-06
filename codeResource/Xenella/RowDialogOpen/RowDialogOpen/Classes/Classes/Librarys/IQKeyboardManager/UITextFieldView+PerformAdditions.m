@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQUITextFieldView+PerformAdditions.m
+//  UITextFieldView+PerformAdditions.m
 //  https://github.com/hackiftekhar/TransitPo
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -27,7 +27,7 @@
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "IQUITextFieldView+Additions.h"
-#import "IQUITextFieldView+PerformAdditions.h"
+#import "UITextFieldView+PerformAdditions.h"
 
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")

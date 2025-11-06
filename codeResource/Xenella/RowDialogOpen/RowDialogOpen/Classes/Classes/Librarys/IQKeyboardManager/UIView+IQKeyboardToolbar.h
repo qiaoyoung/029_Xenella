@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQUIView+IQKeyboardToolbar.h
+//  UIView+IQKeyboardToolbar.h
 //  https://github.com/hackiftekhar/TransitPo
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //

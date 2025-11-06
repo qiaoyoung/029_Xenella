@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQNSArray+Sort.h
+//  UIViewController+PerformAdditions.m
 //  https://github.com/hackiftekhar/TransitPo
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -24,36 +24,25 @@
 // THE SOFTWARE.
 
 // __M_A_C_R_O__
-//: #import <Foundation/Foundation.h>
-#import <Foundation/Foundation.h>
+//: #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
+//: #import <objc/runtime.h>
+#import <objc/runtime.h>
+//: #import "IQUIViewController+Additions.h"
+#import "UIViewController+PerformAdditions.h"
 
-//: @class UIView;
-@class UIView;
-
-/**
- UIView.subviews sorting category.
- */
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
-//: @interface NSArray (IQ_NSArray_Sort)
-@interface NSArray (Anti)
+//: @implementation UIViewController (Additions)
+ 
+@implementation UIViewController (PerformAdditions)
 
-///--------------
-/// @name Sorting
-///--------------
-
-/**
- Returns the array by sorting the UIView's by their tag property.
- */
-//: @property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * sortedArrayByTag;
-@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * mixtureEnd;
-/**
- Returns the array by sorting the UIView's by their tag property.
- */
-//: @property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * sortedArrayByPosition;
-@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * resolutionImageGround;
-
-@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * circleEnd;
+//: -(nullable UIViewController*)parentIQContainerViewController
+-(nullable UIViewController*)signal
+{
+    //: return self;
+    return self;
+}
 
 //: @end
 @end

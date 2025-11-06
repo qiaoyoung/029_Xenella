@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQUIView+Hierarchy.m
+//  UIView+Hierarchy.m
 //  https://github.com/hackiftekhar/TransitPo
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -28,14 +28,14 @@
 #import <UIKit/UIKit.h>
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "IQUIView+Hierarchy.h"
-#import "IQUIView+Hierarchy.h"
+//: #import "UIView+Hierarchy.h"
+#import "UIView+Hierarchy.h"
 //: #import "IQUITextFieldView+Additions.h"
-#import "IQUITextFieldView+PerformAdditions.h"
+#import "UITextFieldView+PerformAdditions.h"
 //: #import "IQUIViewController+Additions.h"
-#import "IQUIViewController+PerformAdditions.h"
-//: #import "IQNSArray+Sort.h"
-#import "IQNSArray+Sort.h"
+#import "UIViewController+PerformAdditions.h"
+//: #import "NSArray+DataSort.h"
+#import "NSArray+DataSort.h"
 
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
