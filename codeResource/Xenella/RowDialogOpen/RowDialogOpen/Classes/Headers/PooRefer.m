@@ -28,8 +28,8 @@ Byte viewLatelyTimer[] = {88, 4, 69, 13, 2, 148, 52, 126, 81, 227, 106, 42, 130,
 #import "PooRefer.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface USERGlobalConfigManager ()
 @interface PooRefer ()

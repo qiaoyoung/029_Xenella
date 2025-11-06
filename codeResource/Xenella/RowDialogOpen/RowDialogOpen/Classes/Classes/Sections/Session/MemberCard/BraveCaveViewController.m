@@ -362,8 +362,8 @@
 #import "InOperationViewController.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
 typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);

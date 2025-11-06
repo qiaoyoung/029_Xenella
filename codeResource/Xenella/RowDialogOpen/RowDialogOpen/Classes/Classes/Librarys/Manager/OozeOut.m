@@ -88,8 +88,8 @@ Byte viewWeekPreference[] = {98, 11, 40, 5, 66, 125, 155, 141, 154, 105, 139, 13
 #import "OozeOut.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface USERRegistConfigManager ()
 @interface OozeOut ()

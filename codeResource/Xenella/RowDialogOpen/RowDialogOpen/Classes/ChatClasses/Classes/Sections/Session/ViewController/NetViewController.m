@@ -409,7 +409,7 @@
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFSessionConfigurator.h"
-#import "HereTalkConfigurator.h"
+#import "HoldImplementThornLucent.h"
 //: #import "FFFKitInfoFetchOption.h"
 #import "UniversalOption.h"
 //: #import "FFFKitTitleView.h"
@@ -476,7 +476,7 @@
 
 @property (nonatomic,readwrite) NIMMessage *disabled;
 
-@property (nonatomic,strong) HereTalkConfigurator *rhythm;
+@property (nonatomic,strong) HoldImplementThornLucent *rhythm;
 //: @property (nonatomic, strong) UIButton *btnAudio;
 @property (nonatomic, strong) UIButton *bubble;
 //: @property (nonatomic,strong) UILabel *subTitleLabel;
@@ -487,7 +487,7 @@
 @property (nonatomic,strong) SliceView *streamRange;
 @property (nonatomic,strong) UILabel *deviceCollection;
 //: @property (nonatomic,strong) FFFSessionConfigurator *configurator;
-@property (nonatomic,strong) HereTalkConfigurator *from;
+@property (nonatomic,strong) HoldImplementThornLucent *from;
 @property (nonatomic,strong) UIImageView *unique;
 
 //: @property (nonatomic,strong) NSIndexPath *lastVisibleIndexPathBeforeRotation;
@@ -1233,7 +1233,7 @@
     }];
 }
 
-- (void)setFrom:(HereTalkConfigurator *)from {
+- (void)setFrom:(HoldImplementThornLucent *)from {
     //: OC_CUSTOM_PROPERTY_INJECT
     _from = from;
 }
@@ -1636,7 +1636,7 @@
 - (void)mixture
 {
     //: _configurator = [[FFFSessionConfigurator alloc] init];
-    _rhythm = [[HereTalkConfigurator alloc] init];
+    _rhythm = [[HoldImplementThornLucent alloc] init];
 	[self setBubble:_produceButton];
     //: [_configurator setup:self];
     [[self finishFrom:_rhythm] aboveShirt:self];
@@ -3494,7 +3494,7 @@
 }
 
 
-- (HereTalkConfigurator *)finishFrom:(HereTalkConfigurator *)from {
+- (HoldImplementThornLucent *)finishFrom:(HoldImplementThornLucent *)from {
     //: OC_CUSTOM_PROPERTY_INJECT
     _from = from;
     return from;

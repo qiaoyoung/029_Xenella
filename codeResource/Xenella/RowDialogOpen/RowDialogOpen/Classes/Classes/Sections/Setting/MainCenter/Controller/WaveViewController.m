@@ -67,8 +67,8 @@ Byte layoutGalleryUtility[] = {87, 7, 20, 4, 15, 31, 31, 31, 31, 31, 31, 52};
 #import "WaveViewController.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface USERChangePasswordController ()<UITextFieldDelegate>
 @interface WaveViewController ()<UITextFieldDelegate>

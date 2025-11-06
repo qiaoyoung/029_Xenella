@@ -102,8 +102,8 @@ Byte styleWrittenName[] = {21, 7, 83, 12, 148, 47, 214, 148, 126, 40, 123, 113, 
 #import "FLAnimatedImage.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 //: #import "SNGradientHelper.h"
 #import "SmartHelper.h"
 

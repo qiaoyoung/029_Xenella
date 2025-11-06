@@ -219,8 +219,8 @@
 #import "CombinedViewController.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface CCCContactScanViewController ()<SGScanCodeDelegate, SGScanCodeSampleBufferDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @interface PortionViewController ()<PortionDelegate, CompoundedCap, UINavigationControllerDelegate, UIImagePickerControllerDelegate>

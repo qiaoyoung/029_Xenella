@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 //: #import "FFFTeamCardRowItem.h"
-#import "WaitQuantityro.h"
+#import "LucentSpectrumDuring.h"
 //: #import "FFFTeamMemberListCell.h"
 #import "CrystalViewCell.h"
 //: #import "FFFTeamSwitchTableViewCell.h"
@@ -58,7 +58,7 @@ typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 
 //数据源
 //: @property (nonatomic,strong) NSArray <NSArray <FFFTeamCardRowItem *> *> *datas;
-@property (nonatomic,strong) NSArray <NSArray <WaitQuantityro *> *> *calculate;
+@property (nonatomic,strong) NSArray <NSArray <LucentSpectrumDuring *> *> *calculate;
 
 //: @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UITableView *viewRegular;

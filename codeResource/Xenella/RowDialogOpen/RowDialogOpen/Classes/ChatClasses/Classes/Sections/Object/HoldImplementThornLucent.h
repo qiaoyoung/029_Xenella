@@ -18,7 +18,7 @@
 @class NetViewController;
 
 //: @interface FFFSessionConfigurator : NSObject
-@interface HereTalkConfigurator : NSObject
+@interface HoldImplementThornLucent : NSObject
 
 //: - (void)setup:(FFFSessionViewController *)vc;
 - (void)aboveShirt:(NetViewController *)vc;

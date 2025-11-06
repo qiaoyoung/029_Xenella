@@ -104,8 +104,8 @@ Byte coreWrittenAlert[] = {68, 9, 9, 166, 212, 225, 128, 126, 194, 108, 109, 116
 #import<CommonCrypto/CommonDigest.h>
 //: #import "FFFConfig.h"
 #import "IcePro.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface HttpManager ()
 @interface WhiteTalkPoo ()

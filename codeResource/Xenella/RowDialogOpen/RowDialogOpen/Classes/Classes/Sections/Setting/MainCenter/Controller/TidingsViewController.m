@@ -192,8 +192,8 @@ SafetyData widgetGalleryMessage = (SafetyData){11, (Byte []){126, 120, 110, 121,
 #import "PackVirtuousViewModel.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface FFFUserInfoViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,USERCustomUIAlertDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface TidingsViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDelegate>

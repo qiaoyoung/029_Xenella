@@ -10,7 +10,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFSessionConfigurator.h"
-#import "HereTalkConfigurator.h"
+#import "HoldImplementThornLucent.h"
 //: #import "AnimatorMaskExportSeamless.h"
 #import "AnimatorMaskExportSeamless.h"
 

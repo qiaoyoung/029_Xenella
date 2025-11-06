@@ -10,10 +10,10 @@
 
 // __M_A_C_R_O__
 //: #import "FFFTeamCardRowItem.h"
-#import "WaitQuantityro.h"
+#import "LucentSpectrumDuring.h"
 
 //: @implementation FFFTeamCardRowItem
-@implementation WaitQuantityro
+@implementation LucentSpectrumDuring
  
 
 

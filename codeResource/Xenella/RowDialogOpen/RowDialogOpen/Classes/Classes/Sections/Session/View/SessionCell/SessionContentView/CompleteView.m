@@ -220,8 +220,8 @@ typedef struct {
 #import "MessageDrive.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface USERSessionRedPacketContentView()
 @interface CompleteView()

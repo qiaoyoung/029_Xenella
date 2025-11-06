@@ -941,8 +941,8 @@
 #import "ConsiderHeader.h"
 //: #import "HttpManager+Addtionals.h"
 #import "WhiteTalkPoo+PositionRidge.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 //: #import "FFFLanguageManager.h"
 #import "SlanguageDeny.h"
 

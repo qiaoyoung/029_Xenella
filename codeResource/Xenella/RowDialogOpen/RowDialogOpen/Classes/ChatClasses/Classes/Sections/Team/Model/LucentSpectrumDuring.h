@@ -18,7 +18,7 @@
 typedef void(^NIMTeamCardRowSelectedBlock)(id <TakeRepoSlice> item);
 
 //: @interface FFFTeamCardRowItem : NSObject
-@interface WaitQuantityro : NSObject
+@interface LucentSpectrumDuring : NSObject
 
 //: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
 @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;

@@ -193,7 +193,7 @@ typedef struct {
 //: #pragma mark - Setter
 #pragma mark - Setter
 //: - (void)setDatas:(NSArray<NSArray<FFFTeamCardRowItem *> *> *)datas {
-- (void)setCalculate:(NSArray<NSArray<WaitQuantityro *> *> *)datas {
+- (void)setCalculate:(NSArray<NSArray<LucentSpectrumDuring *> *> *)datas {
     //: _datas = datas;
     _calculate = datas;
     //: [_tableView reloadData];

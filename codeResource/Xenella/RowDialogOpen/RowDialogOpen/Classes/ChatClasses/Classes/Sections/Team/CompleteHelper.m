@@ -322,7 +322,7 @@
 //: #import "FFFTeamHelper.h"
 #import "CompleteHelper.h"
 //: #import "FFFTeamCardRowItem.h"
-#import "WaitQuantityro.h"
+#import "LucentSpectrumDuring.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Wave.h"
 //: #import "NSString+MyUserKit.h"
@@ -802,7 +802,7 @@
     //: for (NSDictionary *dic in listDic) {
     for (NSDictionary *dic in listDic) {
         //: FFFTeamCardRowItem *item = [[FFFTeamCardRowItem alloc] init];
-        WaitQuantityro *item = [[WaitQuantityro alloc] init];
+        LucentSpectrumDuring *item = [[LucentSpectrumDuring alloc] init];
         //: item.value = dic[[FFFTeamHelper getTeamHelperValue]];
         item.value = dic[[CompleteHelper full]];
         //: item.title = dic[[FFFTeamHelper getTeamHelperText]];

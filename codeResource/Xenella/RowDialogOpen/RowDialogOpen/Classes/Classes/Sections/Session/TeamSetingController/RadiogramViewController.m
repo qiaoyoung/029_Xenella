@@ -767,7 +767,7 @@ typedef struct {
 //: #import "FFFTeamAnnouncementListViewController.h"
 #import "AwfulToiletViewController.h"
 //: #import "FFFTeamCardRowItem.h"
-#import "WaitQuantityro.h"
+#import "LucentSpectrumDuring.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFTeamCardMemberItem.h"
@@ -806,8 +806,8 @@ typedef struct {
 #import "PackVirtuousViewModel.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface FFFAdvancedTeamCardViewController ()<FFFTeamMemberListCellActionDelegate,
 @interface RadiogramViewController ()<TodayRidgeDelegate,
@@ -896,7 +896,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 //: #pragma mark - Data
 #pragma mark - Data
 //: - (NSArray<NSArray<FFFTeamCardRowItem *> *> *)buildBodyData{
-- (NSArray<NSArray<WaitQuantityro *> *> *)raw{
+- (NSArray<NSArray<LucentSpectrumDuring *> *> *)raw{
     //: NSArray *ret = nil;
     NSArray *ret = nil;
     //: __weak typeof(self) weakSelf = self;
@@ -909,7 +909,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
     BOOL isManager = self.singleFileDevice.contactTeamMember.type == NIMTeamMemberTypeManager;
 
     //: FFFTeamCardRowItem *teamShareCart = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamShareCart = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamShareCart = [[LucentSpectrumDuring alloc] init];
     //: teamShareCart.title = [FFFLanguageManager getTextWithKey:@"send_group_card"];
     teamShareCart.title = [SlanguageDeny fall:[[SkullData sharedInstance] commonPalFormat]];
 	[self setSecondView:_header];
@@ -929,7 +929,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
     teamShareCart.img = [UIImage imageNamed:[[SkullData sharedInstance] styleKinSettings]];
 
     //: FFFTeamCardRowItem *teamMembers = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamMembers = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamMembers = [[LucentSpectrumDuring alloc] init];
     //: teamMembers.title = [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
     teamMembers.title = [SlanguageDeny fall:[[SkullData sharedInstance] layoutMoralEarnHelper]];
 	[self setDisappearPassage:_block];
@@ -949,7 +949,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
     teamMembers.img = [UIImage imageNamed:[[SkullData sharedInstance] featureLipRationalPlatform]];
 
     //: FFFTeamCardRowItem *teamAnnoucement = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamAnnoucement = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamAnnoucement = [[LucentSpectrumDuring alloc] init];
     //: teamAnnoucement.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_group_toast"];
     teamAnnoucement.title = [SlanguageDeny fall:[[SkullData sharedInstance] themeNotebookDevice]];
     //: teamAnnoucement.subTitle = self.teamListManager.team.teamName;
@@ -965,7 +965,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
     teamAnnoucement.img = [UIImage imageNamed:[[SkullData sharedInstance] commonEarnTimer]];
 
     //: FFFTeamCardRowItem *teamName = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamName = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamName = [[LucentSpectrumDuring alloc] init];
     //: teamName.title = [FFFLanguageManager getTextWithKey:@"Group_name"];
     teamName.title = [SlanguageDeny fall:[[SkullData sharedInstance] componentSurfWindowPlatform]];
     //: teamName.subTitle = self.teamListManager.team.teamName;
@@ -987,7 +987,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 
 
     //: FFFTeamCardRowItem *teamNick = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamNick = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamNick = [[LucentSpectrumDuring alloc] init];
     //: teamNick.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_group_nick"];
     teamNick.title = [SlanguageDeny fall:[[SkullData sharedInstance] layoutGalleryError]];
     //: teamNick.subTitle = self.teamListManager.myTeamInfo.nickname;
@@ -1006,7 +1006,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 	[self setDisappearPassage:_block];
 
     //: FFFTeamCardRowItem *teamIntro = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamIntro = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamIntro = [[LucentSpectrumDuring alloc] init];
     //: teamIntro.title = [FFFLanguageManager getTextWithKey:@"team_info_set_activity_group_tip"];
     teamIntro.title = [SlanguageDeny fall:[[SkullData sharedInstance] featurePoneData]];
     //: teamIntro.subTitle = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [FFFLanguageManager getTextWithKey:@"team_info_set_activity_default_group_tip"] : @"");
@@ -1024,7 +1024,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
     //: teamIntro.img = [UIImage imageNamed:@"ic_group_introduction"];
     teamIntro.img = [UIImage imageNamed:[[SkullData sharedInstance] widgetDistanceSettings]];
 
-//    WaitQuantityro *teamAnnouncement = [[WaitQuantityro alloc] init];
+//    LucentSpectrumDuring *teamAnnouncement = [[LucentSpectrumDuring alloc] init];
 //    teamAnnouncement.title = @"群公告".nim_localized;
 //    teamAnnouncement.subTitle = @"点击查看群公告".nim_localized;
 //    teamAnnouncement.action = @selector(updateTeamAnnouncement);
@@ -1035,7 +1035,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
     //: BOOL inAllMuteMode = self.teamListManager.team.inAllMuteMode;
     BOOL inAllMuteMode = self.singleFileDevice.independentMiddle.inAllMuteMode;
     //: FFFTeamCardRowItem *teamMute = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamMute = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamMute = [[LucentSpectrumDuring alloc] init];
     //: teamMute.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_group_mute"];
     teamMute.title = [SlanguageDeny fall:[[SkullData sharedInstance] coreKinAlert]];
 	[self setDownView:_boundary];
@@ -1065,7 +1065,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 	[self setSecondView:_header];
 
     //: FFFTeamCardRowItem *teamMuteList = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamMuteList = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamMuteList = [[LucentSpectrumDuring alloc] init];
     //: teamMuteList.title = [FFFLanguageManager getTextWithKey:@"group_mute_member_list_activity_title"];
     teamMuteList.title = [SlanguageDeny fall:[[SkullData sharedInstance] colorMaintainKey]];
 	[self setDownView:_boundary];
@@ -1081,7 +1081,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 	[self setDownView:_boundary];
 
     //: FFFTeamCardRowItem *teamNotify = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamNotify = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamNotify = [[LucentSpectrumDuring alloc] init];
     //: teamNotify.title = [FFFLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
     teamNotify.title = [SlanguageDeny fall:[[SkullData sharedInstance] widgetProcessingError]];//@"消息提醒".nim_localized;
     //: teamNotify.subTitle = [FFFTeamHelper notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
@@ -1106,7 +1106,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 
 
     //: FFFTeamCardRowItem *itemAuth = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *itemAuth = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *itemAuth = [[LucentSpectrumDuring alloc] init];
     //: itemAuth.title = [FFFLanguageManager getTextWithKey:@"authentication"];
     itemAuth.title = [SlanguageDeny fall:[[SkullData sharedInstance] kFormatRearHelper]];
 	[self setDownView:_boundary];
@@ -1134,7 +1134,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 	[self setDisappearPassage:_block];
 
     //: FFFTeamCardRowItem *itemInvite = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *itemInvite = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *itemInvite = [[LucentSpectrumDuring alloc] init];
     //: itemInvite.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_invite_permission"];
     itemInvite.title = [SlanguageDeny fall:[[SkullData sharedInstance] appCaveShotPage]];
     //: itemInvite.subTitle = [FFFTeamHelper InviteModeText:self.teamListManager.team.inviteMode];
@@ -1161,7 +1161,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 	[self setDownView:_boundary];
 
     //: FFFTeamCardRowItem *itemUpdateInfo = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *itemUpdateInfo = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *itemUpdateInfo = [[LucentSpectrumDuring alloc] init];
     //: itemUpdateInfo.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_group_modify_permission"];
     itemUpdateInfo.title = [SlanguageDeny fall:[[SkullData sharedInstance] screenRecentMessage]];
 	[self setDisappearPassage:_block];
@@ -1189,7 +1189,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 	[self setSecondView:_header];
 
     //: FFFTeamCardRowItem *itemBeInvite = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *itemBeInvite = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *itemBeInvite = [[LucentSpectrumDuring alloc] init];
     //: itemBeInvite.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_invite_verify"];
     itemBeInvite.title = [SlanguageDeny fall:[[SkullData sharedInstance] kShotReferValue]];
     //: itemBeInvite.subTitle = [FFFTeamHelper beInviteModeText:self.teamListManager.team.beInviteMode];
@@ -1216,7 +1216,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
     itemBeInvite.img = [UIImage imageNamed:[[SkullData sharedInstance] layoutMoralValue]];
 
     //: FFFTeamCardRowItem *itemTop = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *itemTop = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *itemTop = [[LucentSpectrumDuring alloc] init];
     //: itemTop.title = [FFFLanguageManager getTextWithKey:@"Chat_settop"];
     itemTop.title = [SlanguageDeny fall:[[SkullData sharedInstance] viewColorFabDevice]];
     //: itemTop.switchOn = self.option.isTop;
@@ -1232,7 +1232,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
     //: itemTop.img = [UIImage imageNamed:@"ic_group_top"];
     itemTop.img = [UIImage imageNamed:[[SkullData sharedInstance] spacingTamError]];
 
-//        WaitQuantityro *itemQuit = [[WaitQuantityro alloc] init];
+//        LucentSpectrumDuring *itemQuit = [[LucentSpectrumDuring alloc] init];
 //        itemQuit.title = @"退出高级群".nim_localized;
 //        itemQuit.action = @selector(quitTeam);
 //        itemQuit.rowHeight = 50.f;
@@ -1240,7 +1240,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 //    itemQuit.img = [UIImage imageNamed:@"ic_announcement"];
 
         //: FFFTeamCardRowItem *itemDismiss = [[FFFTeamCardRowItem alloc] init];
-        WaitQuantityro *itemDismiss = [[WaitQuantityro alloc] init];
+        LucentSpectrumDuring *itemDismiss = [[LucentSpectrumDuring alloc] init];
         //: itemDismiss.title = [FFFLanguageManager getTextWithKey:@"group_info_activity_jiesan"];
         itemDismiss.title = [SlanguageDeny fall:[[SkullData sharedInstance] kStrokeId]];
         //: itemDismiss.action = @selector(dismissTeam);
@@ -1257,7 +1257,7 @@ ItemLabel,ClientEvery,UINavigationControllerDelegate,UIImagePickerControllerDele
 	[self setDisappearPassage:_block];
 
     //: FFFTeamCardRowItem *teamChange = [[FFFTeamCardRowItem alloc] init];
-    WaitQuantityro *teamChange = [[WaitQuantityro alloc] init];
+    LucentSpectrumDuring *teamChange = [[LucentSpectrumDuring alloc] init];
     //: teamChange.title = [FFFLanguageManager getTextWithKey:@"Transfer_group_ownership"];
     teamChange.title = [SlanguageDeny fall:[[SkullData sharedInstance] screenPoneDevice]];
 	[self setDownView:_boundary];

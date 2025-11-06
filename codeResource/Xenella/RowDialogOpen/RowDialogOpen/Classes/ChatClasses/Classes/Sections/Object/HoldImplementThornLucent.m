@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  HereTalkConfigurator.m
+//  HoldImplementThornLucent.m
 // Wave
 //
 //  Created by chris on 2016/11/7.
@@ -10,7 +10,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFSessionConfigurator.h"
-#import "HereTalkConfigurator.h"
+#import "HoldImplementThornLucent.h"
 //: #import "FFFSessionMsgDatasource.h"
 #import "ToiletFixedAutomatic.h"
 //: #import "FFFSessionInteractorImpl.h"
@@ -44,7 +44,7 @@
              .                                                                                          | ---> [DiamondLayout]
              .
              ↓
-  [NetViewController]-------> [HereTalkConfigurator] -----> |
+  [NetViewController]-------> [HoldImplementThornLucent] -----> |
              |
              |
              |
@@ -58,7 +58,7 @@
  */
 
 //: @interface FFFSessionConfigurator()
-@interface HereTalkConfigurator()
+@interface HoldImplementThornLucent()
 
 //: @property (nonatomic,strong) FFFSessionInteractorImpl *interactor;
 @property (nonatomic,strong) DragImpl *quit;
@@ -70,7 +70,7 @@
 @end
 
 //: @implementation FFFSessionConfigurator
-@implementation HereTalkConfigurator
+@implementation HoldImplementThornLucent
 
 //: - (void)setup:(FFFSessionViewController *)vc
 - (void)aboveShirt:(NetViewController *)vc

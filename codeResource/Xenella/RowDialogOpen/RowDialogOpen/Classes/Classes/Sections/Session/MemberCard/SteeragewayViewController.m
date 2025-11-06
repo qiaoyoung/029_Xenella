@@ -480,8 +480,8 @@
 #import "CompleteHelper.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface FFFTeamMemberCardViewController ()<NIMUserManagerDelegate>
 @interface SteeragewayViewController ()<NIMUserManagerDelegate>

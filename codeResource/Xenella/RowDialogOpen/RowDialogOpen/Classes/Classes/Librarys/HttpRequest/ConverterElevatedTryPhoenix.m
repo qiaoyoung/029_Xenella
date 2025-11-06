@@ -67,7 +67,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  HttpInterfacedConst.m
+//  ConverterElevatedTryPhoenix.m
 //  NIM
 //
 //  Created by 田玉龙 on 2022/7/30.
@@ -75,8 +75,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: NSString * RestApi(NSString *api) {
 NSString * flatPattern(NSString *api) {

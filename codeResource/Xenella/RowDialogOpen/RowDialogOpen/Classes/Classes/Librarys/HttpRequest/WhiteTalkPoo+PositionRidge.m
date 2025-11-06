@@ -523,8 +523,8 @@
 #import "WhiteTalkPoo+PositionRidge.h"
 //: #import "CCCAutoLoginManager.h"
 #import "ExitWave.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @implementation HttpManager (Addtionals)
 @implementation WhiteTalkPoo (PositionRidge)

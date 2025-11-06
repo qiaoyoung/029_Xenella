@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "SnapshotterPreloadWildCard.h"
-#import "SnapshotterPreloadWildCard.h"
+//: #import "JourneyFluentWithout.h"
+#import "JourneyFluentWithout.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN

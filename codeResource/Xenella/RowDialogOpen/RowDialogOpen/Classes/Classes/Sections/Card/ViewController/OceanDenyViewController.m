@@ -1111,8 +1111,8 @@ typedef struct {
 #import "NetHelper.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface USERPersonalCardViewController ()<NIMUserManagerDelegate,HMDataPickerDelegate,USERReportDelegate,USERReportNextDelegate>
 @interface OceanDenyViewController ()<NIMUserManagerDelegate,RootEvaluate,TalkDelegate,ClientWan>

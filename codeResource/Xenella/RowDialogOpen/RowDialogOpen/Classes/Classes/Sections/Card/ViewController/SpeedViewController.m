@@ -303,8 +303,8 @@
 #import "AgentView.h"
 //: #import "HttpManager.h"
 #import "WhiteTalkPoo.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ConverterElevatedTryPhoenix.h"
+#import "ConverterElevatedTryPhoenix.h"
 
 //: @interface ZMONFriendCardViewController ()<NIMUserManagerDelegate>
 @interface SpeedViewController ()<NIMUserManagerDelegate>
