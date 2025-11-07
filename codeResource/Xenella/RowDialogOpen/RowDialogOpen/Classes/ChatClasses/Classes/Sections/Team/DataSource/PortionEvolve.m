@@ -261,7 +261,7 @@
 @property (nonatomic, strong) NIMTeam *independentMiddle;
 
 //: @property (nonatomic, strong) NIMSession *session;
-@property (nonatomic, strong) NIMSession *prostrationSession;
+@property (nonatomic, strong) NIMSession *nimSession;
 
 //: @end
 @end
@@ -1006,7 +1006,7 @@
         //: _team = team;
         _independentMiddle = team;
         //: _session = session;
-        _prostrationSession = session;
+        _nimSession = session;
 	[self setEmbalm:self.year];
         //: if (team.type == NIMTeamTypeSuper) {
         if (team.type == NIMTeamTypeSuper) {

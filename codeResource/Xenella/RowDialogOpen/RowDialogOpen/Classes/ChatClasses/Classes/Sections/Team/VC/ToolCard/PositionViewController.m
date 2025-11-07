@@ -170,7 +170,7 @@ Byte k_formatMessage[] = {52, 7, 24, 13, 225, 208, 18, 93, 89, 72, 102, 253, 134
     //: self.contentTextView.delegate = self;
     self.rejectManage.delegate = self;
     //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
-    self.rejectManage.observerCoordinator = [SlanguageDeny fall:StringFromStalactiteData(commonQuarterbackEvent)];
+    self.rejectManage.placeholder = [SlanguageDeny fall:StringFromStalactiteData(commonQuarterbackEvent)];
     //: self.contentTextView.text = self.defaultContent;
     self.rejectManage.text = self.previous;
 	[self setConvent:_forradLabel];

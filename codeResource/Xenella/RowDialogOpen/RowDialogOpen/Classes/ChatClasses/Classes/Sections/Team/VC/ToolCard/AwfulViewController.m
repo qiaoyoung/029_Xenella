@@ -361,7 +361,7 @@
     //: self.contentTextView.delegate = self;
     self.block.delegate = self;
     //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
-    [self cornerDoingOutput:self.block].observerCoordinator = [SlanguageDeny fall:[TroublingData corePremiseFormat]];
+    [self cornerDoingOutput:self.block].placeholder = [SlanguageDeny fall:[TroublingData corePremiseFormat]];
     //: self.contentTextView.text = self.defaultContent;
     [self cornerDoingOutput:self.block].text = self.hint;
     //: [contentView addSubview:self.contentTextView];

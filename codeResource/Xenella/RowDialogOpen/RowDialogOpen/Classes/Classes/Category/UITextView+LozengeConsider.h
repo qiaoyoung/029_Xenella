@@ -20,7 +20,7 @@
 //: @property (nonatomic, strong) UILabel * placeholderLabel;
 @property (nonatomic, strong) UILabel * turn;
 //: @property (nonatomic, strong) NSString* placeholder;
-@property (nonatomic, strong) NSString* observerCoordinator;
+@property (nonatomic, strong) NSString* placeholder;
 
 //: @end
 @end

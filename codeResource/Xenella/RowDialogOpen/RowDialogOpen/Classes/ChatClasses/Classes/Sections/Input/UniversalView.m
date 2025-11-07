@@ -1036,7 +1036,7 @@
     self.adjust.object.remoteSearchion = nil;
 
     //: NSString *placeholder = [MyUserKit sharedKit].config.placeholder;
-    NSString *placeholder = [Wave gray].growing.observerCoordinator;
+    NSString *placeholder = [Wave gray].growing.placeholder;
     //: [_toolBar setPlaceHolder:placeholder];
     [_adjust setAtHolder:placeholder];
 

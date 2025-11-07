@@ -62,7 +62,7 @@ typedef NS_ENUM(NSInteger,MyUserAvatarType) {
  *  输入框的占位符
  */
 //: @property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, copy) NSString *observerCoordinator;
+@property (nonatomic, copy) NSString *placeholder;
 
 
 /**

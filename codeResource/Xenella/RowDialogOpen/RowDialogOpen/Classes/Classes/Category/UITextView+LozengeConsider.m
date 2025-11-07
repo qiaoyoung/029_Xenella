@@ -23,7 +23,7 @@
 
 
 //: @dynamic placeholder;
-@dynamic observerCoordinator;
+@dynamic placeholder;
 //: @dynamic placeholderLabel;
 @dynamic turn;
 //: @dynamic textValue;
@@ -67,8 +67,8 @@ NSString const *layoutLoseAlert = @"kKeyLabel";
 
 //: NSString const *kKeyPlaceHolder = @"kKeyPlaceHolder";
 NSString const *featureAllSettings = @"kKeyPlaceHolder";
-//: -(void)setPlaceholder:(NSString *)_placeholder
--(void)setObserverCoordinator:(NSString *)_placeholder
+-(void)setPlaceholder:(NSString *)_placeholder
+//-(void)setObserverCoordinator:(NSString *)_placeholder
 {
     //  Sets our "placeholder" text string, creates a new UILabel to contain it, and modifies our UITextView to cope with
     //  showing/hiding the UILabel when needed.
@@ -137,8 +137,8 @@ NSString const *featureAllSettings = @"kKeyPlaceHolder";
     [self proceed];
 }
 
-//: -(NSString*)placeholder
--(NSString*)observerCoordinator
+-(NSString*)placeholder
+//-(NSString*)observerCoordinator
 {
     //  Returns our "placeholder" text string
     //: return objc_getAssociatedObject(self, &kKeyPlaceHolder);

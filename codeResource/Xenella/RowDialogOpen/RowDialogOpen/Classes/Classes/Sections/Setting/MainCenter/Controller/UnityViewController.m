@@ -360,7 +360,7 @@ typedef struct {
         //: _textView.textColor = [UIColor colorWithHexString:@"#333333"];
         _message.textColor = [UIColor streetwiseMovement:[RegulationData sharedInstance].styleDominantError];
         //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
-        _message.observerCoordinator = [SlanguageDeny fall:[RegulationData sharedInstance].colorStrokeEvent];
+        _message.placeholder = [SlanguageDeny fall:[RegulationData sharedInstance].colorStrokeEvent];
         //: _textView.delegate = self;
         _message.delegate = self;
 //        _textView.textContainerInset = UIEdgeInsetsMake(20, 20, 20, 20);

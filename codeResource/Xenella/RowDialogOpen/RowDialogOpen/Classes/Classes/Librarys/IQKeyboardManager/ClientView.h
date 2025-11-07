@@ -54,7 +54,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @property(nullable, nonatomic,copy) IBInspectable UIColor *selected;
 
 //: @property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
-@property(nullable, nonatomic,copy) IBInspectable NSString *observerCoordinator;
+@property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
 
 //: @end
 @end

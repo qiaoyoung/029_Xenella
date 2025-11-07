@@ -513,7 +513,7 @@
     //: _recordMaxDuration = 60.f;
     _box = 60.f;
     //: _placeholder = [FFFLanguageManager getTextWithKey:@"message_please_enter_content"];
-    _observerCoordinator = [SlanguageDeny fall:[[ExceptData sharedInstance] colorUnlikeLunchPreference]];
+    _placeholder = [SlanguageDeny fall:[[ExceptData sharedInstance] colorUnlikeLunchPreference]];
 	[self setAgreePace:_content];//@"请输入消息".;
     //: _inputMaxLength = 1000;
     _erase = 1000;

@@ -46,7 +46,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @implementation ClientView
 
 //: @synthesize placeholder = _placeholder;
-@synthesize observerCoordinator = _since;
+@synthesize placeholder = _placeholder;
 //: @synthesize placeholderLabel = _placeholderLabel;
 @synthesize turn = _ringEditUnder;
 //: @synthesize placeholderTextColor = _placeholderTextColor;
@@ -68,11 +68,11 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     [self dismiss];
 }
 
-//: -(void)setPlaceholder:(NSString *)placeholder
--(void)setObserverCoordinator:(NSString *)placeholder
+-(void)setPlaceholder:(NSString *)placeholder
+//-(void)setObserverCoordinator:(NSString *)placeholder
 {
     //: _placeholder = placeholder;
-    _since = placeholder;
+    _placeholder = placeholder;
 
     //: self.placeholderLabel.text = placeholder;
     self.turn.text = placeholder;
