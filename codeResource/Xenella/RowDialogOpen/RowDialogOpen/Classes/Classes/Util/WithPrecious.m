@@ -260,7 +260,7 @@ Byte styleWagFormat[] = {61, 3, 14, 4, 89, 91, 88, 56};
     //: AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     WithSkullSession *sessionManager = [WithSkullSession compareSizeFlag];
     //: sessionManager.requestSerializer.timeoutInterval = 5.f;
-    sessionManager.requestFloatted.expandPending = 5.f;
+    sessionManager.requestFloatted.timeoutInterval = 5.f;
     //: sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     sessionManager.parentContainerred.ovalPrepares = [NSSet setWithObjects:StringFromTravelData(viewChampionPlatform), StringFromTravelData(colorFuneralUtility), StringFromTravelData(k_earLuteTitle), StringFromTravelData(layoutStructureSettings), StringFromTravelData(coreToryAlert), StringFromTravelData(kLipPreference), @"image/*", nil];
     //: [sessionManager setResponseSerializer:[AFHTTPResponseSerializer serializer]];

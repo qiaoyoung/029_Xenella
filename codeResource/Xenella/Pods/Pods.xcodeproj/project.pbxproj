@@ -2191,7 +2191,7 @@
 		61DC99AAC7ECE679BC9C1EFF9434B9BF /* UIProgressView+Visitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+Visitor.m"; sourceTree = "<group>"; };
 		61F1ECA7B08E4CAE2638A795F55668D6 /* CapAppropriateView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CapAppropriateView.h; sourceTree = "<group>"; };
 		62434E91E9F0D9C49E9C6AA3B33C7A60 /* SpeedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SpeedViewController.h; sourceTree = "<group>"; };
-		62B893605621949656F4317CA985540C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		62B893605621949656F4317CA985540C /* RidgeView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = RidgeView.bundle; sourceTree = "<group>"; };
 		62BA3BF57D0749D49529E293E5DFC873 /* NSBundle+Wave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Wave.h"; sourceTree = "<group>"; };
 		62C20A3DA9429A8E0EE4981F385F6393 /* YYTextMagnifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextMagnifier.m; path = YYText/Component/YYTextMagnifier.m; sourceTree = "<group>"; };
 		62C5F44AD744AF9E6C5F8A63439A710C /* CombinedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CombinedViewController.m; sourceTree = "<group>"; };
@@ -3347,7 +3347,7 @@
 		0CA0F26CB9BDEAE8D0798EA519CB1DE3 /* Librarys */ = {
 			isa = PBXGroup;
 			children = (
-				2B4954EAFDD295D827D24B972AA991D3 /* SVProgressHUD */,
+				2B4954EAFDD295D827D24B972AA991D3 /* RidgeView */,
 			);
 			path = Librarys;
 			sourceTree = "<group>";
@@ -3735,12 +3735,12 @@
 			name = Location;
 			sourceTree = "<group>";
 		};
-		2B4954EAFDD295D827D24B972AA991D3 /* SVProgressHUD */ = {
+		2B4954EAFDD295D827D24B972AA991D3 /* RidgeView */ = {
 			isa = PBXGroup;
 			children = (
-				62B893605621949656F4317CA985540C /* SVProgressHUD.bundle */,
+				62B893605621949656F4317CA985540C /* RidgeView.bundle */,
 			);
-			path = SVProgressHUD;
+			path = RidgeView;
 			sourceTree = "<group>";
 		};
 		2D3FA4D27764C155C49320AA9A8E2567 /* View */ = {

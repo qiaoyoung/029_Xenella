@@ -404,7 +404,7 @@ static WithSkullSession *coreDecisionPlatform;
 //: + (void)setRequestTimeoutInterval:(NSTimeInterval)time {
 + (void)setPathPermit:(NSTimeInterval)time {
     //: _sessionManager.requestSerializer.timeoutInterval = time;
-    coreDecisionPlatform.requestFloatted.expandPending = time;
+    coreDecisionPlatform.requestFloatted.timeoutInterval = time;
 }
 
 //: #pragma mark - 上传单张图片
@@ -986,7 +986,7 @@ static WithSkullSession *coreDecisionPlatform;
     //: _sessionManager = [AFHTTPSessionManager manager];
     coreDecisionPlatform = [WithSkullSession compareSizeFlag];
     //: _sessionManager.requestSerializer.timeoutInterval = 15.f;
-    coreDecisionPlatform.requestFloatted.expandPending = 15.f;
+    coreDecisionPlatform.requestFloatted.timeoutInterval = 15.f;
     //: _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     coreDecisionPlatform.parentContainerred.ovalPrepares = [NSSet setWithObjects:[SurplusData viewPowderText], [SurplusData screenArenaMessage], [SurplusData styleInstructionName], [SurplusData appSafetyData], [SurplusData layoutSplayEvolveAlert], [SurplusData colorCandidaPath], @"image/*", nil];
     // 打开状态栏的等待菊花

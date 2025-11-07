@@ -661,7 +661,7 @@ static NSArray * contactWater() {
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
         //: _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(allowsCellularAccess)), NSStringFromSelector(@selector(cachePolicy)), NSStringFromSelector(@selector(HTTPShouldHandleCookies)), NSStringFromSelector(@selector(HTTPShouldUsePipelining)), NSStringFromSelector(@selector(networkServiceType)), NSStringFromSelector(@selector(timeoutInterval))];
-        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(sheetTitling)), NSStringFromSelector(@selector(decisionCachePolicies)), NSStringFromSelector(@selector(instructionAutossed)), NSStringFromSelector(@selector(toolWriting)), NSStringFromSelector(@selector(collectionTypes)), NSStringFromSelector(@selector(expandPending))];
+        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(sheetTitling)), NSStringFromSelector(@selector(decisionCachePolicies)), NSStringFromSelector(@selector(instructionAutossed)), NSStringFromSelector(@selector(toolWriting)), NSStringFromSelector(@selector(collectionTypes)), NSStringFromSelector(@selector(timeoutInterval))];
     //: });
     });
 
@@ -1381,15 +1381,14 @@ above:(NSString *)field
     return [formData dismissCalculate];
 }
 
-//: - (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
-- (void)setExpandPending:(NSTimeInterval)timeoutInterval {
+- (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
+//- (void)setExpandPending:(NSTimeInterval)timeoutInterval {
     //: [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self willChangeValueForKey:NSStringFromSelector(@selector(expandPending))];
-    //: _timeoutInterval = timeoutInterval;
-    _expandPending = timeoutInterval;
+    [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
+    _timeoutInterval = timeoutInterval;
 	[self setDepth:self.player];
     //: [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self didChangeValueForKey:NSStringFromSelector(@selector(expandPending))];
+    [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
 }
 
 

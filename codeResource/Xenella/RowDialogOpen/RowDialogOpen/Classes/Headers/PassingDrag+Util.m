@@ -251,10 +251,10 @@ static const char *spacingEnableeGoRepresentationPlatform (NSString *value) {
     return  "fade_man_arc";
 };
 
-- (void)setFadeManArc:(NSString *)fadeManArc {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, spacingEnableeGoRepresentationPlatform(nil), fadeManArc, OBJC_ASSOCIATION_RETAIN);
-}
+//- (void)setFadeManArc:(NSString *)fadeManArc {
+//    //: OC_CUSTOM_PROPERTY_INJECT
+//    objc_setAssociatedObject(self, spacingEnableeGoRepresentationPlatform(nil), fadeManArc, OBJC_ASSOCIATION_RETAIN);
+//}
 //: - (void)updateLanguageWith:(NSString *)lang; {
 - (void)member:(NSString *)lang; {
 
@@ -349,7 +349,7 @@ static const char *moduleLandscapeError (NSString *value) {
 - (NSString *)inherenting:(NSString *)key {
     //: key = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] uppercaseString]];
     key = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] uppercaseString]];
-	[self setFadeManArc:self.arc];
+//	[self setFadeManArc:self.arc];
     //: return [NSString stringWithFormat:@"NSUserDefault%@", key];
     return [NSString stringWithFormat:[InformalTalkData sharedInstance].featureDirectlyAlert, key];
 }
