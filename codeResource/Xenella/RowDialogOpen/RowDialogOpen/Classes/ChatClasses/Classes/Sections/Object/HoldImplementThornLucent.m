@@ -104,7 +104,7 @@
     _quit.entity = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setSet:_quit];
+    [layout setDelegate:_quit];
 
     //: _tableAdapter = [[FFFSessionTableAdapter alloc] init];
     _makeAdapter = [[PreciousPerform alloc] init];

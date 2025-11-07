@@ -137,7 +137,7 @@
 - (void)club:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<NIMSessionLayoutDelegate>)delegate;
-- (void)setSet:(id<DigPassing>)delegate;
+- (void)setDelegate:(id<DigPassing>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)targetMiddle;

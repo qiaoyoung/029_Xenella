@@ -97,7 +97,7 @@ typedef struct {
 }
 
 //: @property (nonatomic,weak) id<NIMSessionLayoutDelegate> delegate;
-@property (nonatomic,weak) id<DigPassing> wholeDrawses;
+@property (nonatomic,weak) id<DigPassing> delegate;
 
 //: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
 @property (nonatomic,strong) id<CompleteMil> makeOdd;
@@ -225,10 +225,10 @@ typedef struct {
 - (void)objected:(id)sender
 {
     //: if ([self.delegate respondsToSelector:@selector(onRefresh)])
-    if ([self.wholeDrawses respondsToSelector:@selector(phaseOff)])
+    if ([self.delegate respondsToSelector:@selector(phaseOff)])
     {
         //: [self.delegate onRefresh];
-        [self.wholeDrawses phaseOff];
+        [self.delegate phaseOff];
     }
 }
 

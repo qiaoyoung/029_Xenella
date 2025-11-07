@@ -74,7 +74,7 @@
             //: FFFTimestampModel *timeModel = [[FFFTimestampModel alloc] init];
             NeatBinderPrintHeight *timeModel = [[NeatBinderPrintHeight alloc] init];
             //: timeModel.messageTime = model.messageTime;
-            timeModel.man = model.power;
+            timeModel.power = model.power;
 	[self setFound:self.message];
             //: [self.items insertObject:timeModel atIndex:index];
             [self.delivery insertObject:timeModel atIndex:index];
@@ -282,7 +282,7 @@
         //: FFFTimestampModel *timeModel = [[FFFTimestampModel alloc] init];
         NeatBinderPrintHeight *timeModel = [[NeatBinderPrintHeight alloc] init];
         //: timeModel.messageTime = model.messageTime;
-        timeModel.man = model.power;
+        timeModel.power = model.power;
 	[self setFound:self.message];
         //: [self.items insertObject:timeModel atIndex:0];
         [self.delivery insertObject:timeModel atIndex:0];

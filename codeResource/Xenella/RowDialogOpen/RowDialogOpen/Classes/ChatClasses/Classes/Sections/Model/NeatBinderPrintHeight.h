@@ -28,7 +28,7 @@
 //: @property (nonatomic, assign) CGFloat height;
 @property (nonatomic, assign) CGFloat me;
 //: @property (nonatomic, assign) NSTimeInterval messageTime;
-@property (nonatomic, assign) NSTimeInterval man;
+@property (nonatomic, assign) NSTimeInterval power;
 
 //: @end
 @end

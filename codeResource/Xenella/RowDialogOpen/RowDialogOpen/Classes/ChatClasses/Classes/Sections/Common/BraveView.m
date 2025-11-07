@@ -56,23 +56,23 @@ Byte screenInevitablyReadyLiteraryTitle[] = {53, 7, 9, 7, 158, 97, 9, 44, 74, 58
 //        [self addSubview:_activity];
 
         //: self.progressView = [[UCZProgressView alloc] initWithFrame:self.bounds];
-        self.property = [[MilView alloc] initWithFrame:self.bounds];
+        self.progressView = [[MilView alloc] initWithFrame:self.bounds];
         //: self.progressView.backgroundColor = [UIColor clearColor];
-        self.property.backgroundColor = [UIColor clearColor];
+        self.progressView.backgroundColor = [UIColor clearColor];
         //: self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
-        self.property.translatesAutoresizingMaskIntoConstraints = NO;
+        self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
         //: self.progressView.showsText = YES;
-        self.property.fireReplacement = YES;
+        self.progressView.fireReplacement = YES;
         //: self.progressView.tintColor = [UIColor colorWithHexString:@"#A148FF"];
-        self.property.tintColor = [UIColor streetwiseMovement:StringFromShData(screenInevitablyReadyLiteraryTitle)];
+        self.progressView.tintColor = [UIColor streetwiseMovement:StringFromShData(screenInevitablyReadyLiteraryTitle)];
 //        self.progressView.tintColor = RGB_COLOR_String(kCommonBGColor_All);
 //        self.progressView.tintColor = [UIColor colorWithPatternImage:[SmartHelper getLinearGradientImage:RGB_COLOR_String(kCommonBGColor_begin) and:RGB_COLOR_String(kCommonBGColor_end) directionType:SNLinearGradientDirectionLevel]];
 
         //: [self addSubview:self.progressView];
-        [self addSubview:self.property];
+        [self addSubview:self.progressView];
 
         //: NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
-        NSDictionary *views = NSDictionaryOfVariableBindings(_property);
+        NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:StringFromShData(featurePillFuneralConfig) options:0 metrics:nil views:views]];
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];
@@ -101,7 +101,7 @@ Byte screenInevitablyReadyLiteraryTitle[] = {53, 7, 9, 7, 158, 97, 9, 44, 74, 58
 //        _progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(progress*100)];
 //        [_activity startAnimating];
         //: self.progressView.progress = progress;
-        self.property.location = progress;
+        self.progressView.location = progress;
     }
 
     //: [self setNeedsLayout];

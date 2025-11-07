@@ -336,7 +336,7 @@
     config.stepSigned = users;
 	[self setRelation:_privacy];
     //: config.showSelectHeaderview = NO;
-    config.showMatchHeaderview = NO;
+    config.simultaneously = NO;
 	[self setRelation:_privacy];
     //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
     InOperationViewController *vc = [[InOperationViewController alloc] initWithReachData:config];

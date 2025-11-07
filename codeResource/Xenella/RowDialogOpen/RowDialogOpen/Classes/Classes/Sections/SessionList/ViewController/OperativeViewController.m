@@ -1344,7 +1344,7 @@
     //: config.needMutiSelected = YES;
     config.secureDisplay = YES;
     //: config.showSelectHeaderview = YES;
-    config.showMatchHeaderview = YES;
+    config.simultaneously = YES;
     //初始化联系人选择器
     //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
     InOperationViewController *vc = [[InOperationViewController alloc] initWithReachData:config];
@@ -1434,7 +1434,7 @@
     //: config.needMutiSelected = YES;
     config.secureDisplay = YES;
     //: config.showSelectHeaderview = NO;
-    config.showMatchHeaderview = NO;
+    config.simultaneously = NO;
 	[self setFigureUp:_putRecognize];
     //初始化联系人选择器
     //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];

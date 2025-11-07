@@ -1636,10 +1636,10 @@
 - (void)mixture
 {
     //: _configurator = [[FFFSessionConfigurator alloc] init];
-    _rhythm = [[HoldImplementThornLucent alloc] init];
+    _from = [[HoldImplementThornLucent alloc] init];
 	[self setBubble:_produceButton];
     //: [_configurator setup:self];
-    [[self finishFrom:_rhythm] aboveShirt:self];
+    [_from aboveShirt:self];
 
     //: BOOL needProximityMonitor = [self needProximityMonitor];
     BOOL needProximityMonitor = [self fiscal];

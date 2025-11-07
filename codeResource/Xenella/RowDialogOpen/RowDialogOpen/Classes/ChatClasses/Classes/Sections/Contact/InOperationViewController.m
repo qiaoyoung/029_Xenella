@@ -719,7 +719,7 @@ typedef struct {
     if ([self.marchEquinox respondsToSelector:@selector(infoBroadcast)])
     {
         //: _selectecContacts = [[self.config alreadySelectedMemberId] mutableCopy];
-        _row = [[self.marchEquinox share] mutableCopy];
+        _row = [[self.marchEquinox infoBroadcast] mutableCopy];
     }
 
     //: _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];

@@ -29,7 +29,7 @@
 //: @property (nonatomic, assign)CGFloat maxProgress;
 @property (nonatomic, assign)CGFloat unit;
 //: @property (nonatomic, strong) UCZProgressView *progressView;
-@property (nonatomic, strong) MilView *property;
+@property (nonatomic, strong) MilView *progressView;
 
 //: - (void)setProgress:(CGFloat)progress;
 - (void)setTelephone:(CGFloat)progress;

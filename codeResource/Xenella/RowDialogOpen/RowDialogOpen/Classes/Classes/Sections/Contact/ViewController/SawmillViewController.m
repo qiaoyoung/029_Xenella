@@ -832,8 +832,7 @@ ConsiderUnity> {
     //: config.needMutiSelected = YES;
     config.secureDisplay = YES;
     //: config.showSelectHeaderview = YES;
-    config.showMatchHeaderview = YES;
-	[self setFactorRefuse:_most];
+    config.simultaneously = YES;
     //初始化联系人选择器
     //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
     InOperationViewController *vc = [[InOperationViewController alloc] initWithReachData:config];

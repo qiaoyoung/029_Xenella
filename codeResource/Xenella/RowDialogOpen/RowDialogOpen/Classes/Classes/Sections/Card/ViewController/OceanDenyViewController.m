@@ -1502,7 +1502,7 @@ typedef struct {
     config.secureDisplay = YES;
 	[self setObserverSound:_complete];
     //: config.showSelectHeaderview = YES;
-    config.showMatchHeaderview = YES;
+    config.simultaneously = YES;
 	[self setObserverSound:_complete];
     //初始化联系人选择器
     //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];

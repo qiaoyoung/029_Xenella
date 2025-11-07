@@ -115,7 +115,7 @@
         //: FFFTimestampModel *model = (FFFTimestampModel *)data;
         NeatBinderPrintHeight *model = (NeatBinderPrintHeight *)data;
         //: [_timeLabel setText:[FFFKitUtil showTime:model.messageTime showDetail:YES]];
-        [[self runningSpecial:_mark] setText:[TransitDoseUtil districtDetail:model.man homeRange:YES]];
+        [[self runningSpecial:_mark] setText:[TransitDoseUtil districtDetail:model.power homeRange:YES]];
     }
 }
 

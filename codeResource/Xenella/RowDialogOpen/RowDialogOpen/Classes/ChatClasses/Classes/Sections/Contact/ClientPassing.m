@@ -220,7 +220,7 @@ typedef struct {
 
 - (void)setShowHeaderview:(BOOL)showHeaderview {
     //: OC_CUSTOM_PROPERTY_INJECT
-    _showHeaderview = showHeaderview;
+    showHeaderview = showHeaderview;
 }
 
 - (NSInteger)icon:(NSInteger)unsupportive {
@@ -244,7 +244,6 @@ typedef struct {
 
 - (BOOL)ofHeaderview:(BOOL)showHeaderview {
     //: OC_CUSTOM_PROPERTY_INJECT
-    _showHeaderview = showHeaderview;
     return showHeaderview;
 }
 
@@ -563,13 +562,13 @@ typedef struct {
 
 - (BOOL)takeDorsalVertebra:(BOOL)mergeBackSearch {
     //: OC_CUSTOM_PROPERTY_INJECT
-    _mergeBackSearch = mergeBackSearch;
+    mergeBackSearch = mergeBackSearch;
     return mergeBackSearch;
 }
 
 - (void)setMergeBackSearch:(BOOL)mergeBackSearch {
     //: OC_CUSTOM_PROPERTY_INJECT
-    _mergeBackSearch = mergeBackSearch;
+    mergeBackSearch = mergeBackSearch;
 }
 
 //: - (NSInteger)maxSelectedNum{

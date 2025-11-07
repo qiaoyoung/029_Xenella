@@ -50,7 +50,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
  *  默认已经勾选的人或群组
  */
 //: - (NSArray *)alreadySelectedMemberId;
-- (NSArray *)share;
+- (NSArray *)infoBroadcast;
 
 /**
  *  需要过滤的人或群组id
@@ -116,7 +116,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 
 @property (nonatomic,assign) BOOL showMatchHeaderview;
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL showHeaderview;
+@property (nonatomic,assign) BOOL simultaneously;
 
 //: @end
 @end
@@ -153,7 +153,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,assign) MyUserTeamType jumpTeamType;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL showAvailable;
+@property (nonatomic,assign) BOOL simultaneously;
 
 //: @end
 @end
@@ -185,7 +185,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,copy) NSArray *stepSigned;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL mergeBackSearch;
+@property (nonatomic,assign) BOOL simultaneously;
 @property (nonatomic,assign) BOOL row;
 
 //: @end
