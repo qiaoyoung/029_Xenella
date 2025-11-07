@@ -97,11 +97,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/Classes/Librarys/RidgeView/RidgeView.bundle"
+  install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/Classes/Librarys/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Resources/RowDialogOpen.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/Classes/Librarys/RidgeView/RidgeView.bundle"
+  install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/Classes/Librarys/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Resources/RowDialogOpen.bundle"
 fi
 

@@ -1,8 +1,6 @@
-// __DEBUG__
-// __CLOSE_PRINT__
 //
 //  IQKeyboardManagerConstantsInternal.h
-//  https://github.com/hackiftekhar/TransitPo
+//  https://github.com/hackiftekhar/IQKeyboardManager
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,4 +21,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-// __M_A_C_R_O__
+#ifndef IQKeyboardManagerConstantsInternal_h
+#define IQKeyboardManagerConstantsInternal_h
+
+
+#endif

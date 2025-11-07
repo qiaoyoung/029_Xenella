@@ -1,5 +1,3 @@
-// __DEBUG__
-// __CLOSE_PRINT__
 //
 //  USERContactDefines.h
 //  NIM
@@ -8,107 +6,81 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
-// __M_A_C_R_O__
+#ifndef NIM_USERContactDefines_h
+#define NIM_USERContactDefines_h
 
-//: @protocol USERContactItemCollection <NSObject>
-@protocol AgentCave <NSObject>
-//: @required
+@protocol USERContactItemCollection <NSObject>
 @required
 //显示的title名
-//: - (NSString *)title;
-- (NSString *)score;
+- (NSString *)title;
 
 //返回集合里的成员
-//: - (NSArray *)members;
-- (NSArray *)transferMembers;
+- (NSArray *)members;
 
 //重用id
-//: - (NSString *)reuseId;
-- (NSString *)assetWith;
+- (NSString *)reuseId;
 
 //需要构造的cell类名
-//: - (NSString *)cellName;
-- (NSString *)gestureName;
+- (NSString *)cellName;
 
-//: @end
 @end
 
-//: @protocol USERContactItem<NSObject>
-@protocol MilItem<NSObject>
-//: @required
+@protocol USERContactItem<NSObject>
 @required
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
-//: - (NSString *)vcName;
 - (NSString *)vcName;
 
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
-//: - (NSString *)userId;
 - (NSString *)userId;
 
 //返回行高
-//: - (CGFloat)uiHeight;
-- (CGFloat)beyondWoman;
+- (CGFloat)uiHeight;
 
 //重用id
-//: - (NSString *)reuseId;
-- (NSString *)active;
+- (NSString *)reuseId;
 
 //需要构造的cell类名
-//: - (NSString *)cellName;
-- (NSString *)way;
+- (NSString *)cellName;
 
 //badge
-//: - (NSString *)badge;
-- (NSString *)detect;
+- (NSString *)badge;
 
 //显示名
-//: - (NSString *)nick;
-- (NSString *)reaction;
+- (NSString *)nick;
 
 //占位图
-//: - (UIImage *)icon;
-- (UIImage *)marginInform;
+- (UIImage *)icon;
 
 //头像url
-//: - (NSString *)avatarUrl;
-- (NSString *)searched;
+- (NSString *)avatarUrl;
 
 //accessoryView
-//: - (BOOL)showAccessoryView;
-- (BOOL)quantityeractByView;
+- (BOOL)showAccessoryView;
 
-//: @optional
 @optional
-//: - (NSString *)selName;
-- (NSString *)unseeablePending;
+- (NSString *)selName;
 
 
-//: @end
 @end
 
-//: @protocol USERContactCell <NSObject>
-@protocol CellDrag <NSObject>
+@protocol USERContactCell <NSObject>
 
-//: - (void)refreshWithContactItem:(id<USERContactItem>)item;
-- (void)under:(id<MilItem>)item;
+- (void)refreshWithContactItem:(id<USERContactItem>)item;
 
-//: - (void)addDelegate:(id)delegate;
-- (void)existenceGravity:(id)delegate;
+- (void)addDelegate:(id)delegate;
 
-//: @end
 @end
 
+#endif
 
 
+#ifndef NIM_USERContactCellLayoutConstant_h
+#define NIM_USERContactCellLayoutConstant_h
 
+static const CGFloat   USERContactUtilRowHeight             = 57;//util类Cell行高
+static const CGFloat   USERContactDataRowHeight             = 50;//data类Cell行高
+static const NSInteger USERContactAvatarLeft                = 10;//没有选择框的时候，头像到左边的距离
+static const NSInteger USERContactAvatarAndAccessorySpacing = 10;//头像和选择框之间的距离
 
+#endif
 
-
-//: static const CGFloat USERContactUtilRowHeight = 57;
-static const CGFloat styleBoldName = 57;//util类Cell行高
-//: static const CGFloat USERContactDataRowHeight = 50;
-static const CGFloat componentCityValue = 50;//data类Cell行高
-//: static const NSInteger USERContactAvatarLeft = 10;
-static const NSInteger spacingPopPage = 10;//没有选择框的时候，头像到左边的距离
-//: static const NSInteger USERContactAvatarAndAccessorySpacing = 10;
-static const NSInteger viewMobileValue = 10;//头像和选择框之间的距离
