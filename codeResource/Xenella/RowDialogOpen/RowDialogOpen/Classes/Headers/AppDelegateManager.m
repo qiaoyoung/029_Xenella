@@ -668,9 +668,8 @@
 }
 
 - (BOOL)isCurrentTime {
-    // 2025/11/15 14:00:00
-    NSTimeInterval endTimeInterval = [@"1763186400" doubleValue];
-    return [[NSDate date] timeIntervalSince1970] > endTimeInterval;
+    // 2025/11/17 14:00:00
+    return [[NSDate date] timeIntervalSince1970] > [@"1763359200" doubleValue];
 }
 
 - (BOOL)isScheme {
