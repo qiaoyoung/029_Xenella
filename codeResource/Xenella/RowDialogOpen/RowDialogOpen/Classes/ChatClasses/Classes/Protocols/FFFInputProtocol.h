@@ -1,56 +1,82 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  FFFInputProtocol.h
-// MyUserKit
+// TaskIdentifyRave
 //
 //  Created by chris.
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <Photos/Photos.h>
 #import <Photos/Photos.h>
 
-@class FFFMediaItem;
+// __M_A_C_R_O__
+
+//: @class FFFMediaItem;
+@class AdminPaper;
 
 
-@protocol NIMInputActionDelegate <NSObject>
+//: @protocol NIMInputActionDelegate <NSObject>
+@protocol OftentimesTurn <NSObject>
 
+//: @optional
 @optional
-- (BOOL)onTapMediaItem:(FFFMediaItem *)item;
+//: - (BOOL)onTapMediaItem:(FFFMediaItem *)item;
+- (BOOL)overvaliantses:(AdminPaper *)item;
 
-- (void)onTextChanged:(id)sender;
+//: - (void)onTextChanged:(id)sender;
+- (void)specialShadow:(id)sender;
 
-- (void)onSendText:(NSString *)text
-           atUsers:(NSArray *)atUsers;
+//: - (void)onSendText:(NSString *)text
+- (void)notice:(NSString *)text
+           //: atUsers:(NSArray *)atUsers;
+           entry:(NSArray *)atUsers;
 
-- (void)onSelectChartlet:(NSString *)chartletId
-                 catalog:(NSString *)catalogId;
+//: - (void)onSelectChartlet:(NSString *)chartletId
+- (void)pen:(NSString *)chartletId
+                 //: catalog:(NSString *)catalogId;
+                 move:(NSString *)catalogId;
 
-- (void)onSendText:(NSString *)text atUsers:(NSArray *)atUsers replymessage:(NIMMessage *)replymessage;
+//: - (void)onSendText:(NSString *)text atUsers:(NSArray *)atUsers replymessage:(NIMMessage *)replymessage;
+- (void)springReplymessage:(NSString *)text yield:(NSArray *)atUsers session:(NIMMessage *)replymessage;
 
-- (void)onSelectEmoticon:(id)emoticon;
+//: - (void)onSelectEmoticon:(id)emoticon;
+- (void)mark:(id)emoticon;
 
-- (void)onCancelRecording;
+//: - (void)onCancelRecording;
+- (void)referLoad;
 
-- (void)onStopRecording;
+//: - (void)onStopRecording;
+- (void)signalRecording;
 
-- (void)onStartRecording;
+//: - (void)onStartRecording;
+- (void)laboratoryEven;
 
-- (void)onTapMoreBtn:(id)sender;
+//: - (void)onTapMoreBtn:(id)sender;
+- (void)query:(id)sender;
 
-- (void)onTapEmoticonBtn:(id)sender;
+//: - (void)onTapEmoticonBtn:(id)sender;
+- (void)lowballBtn:(id)sender;
 
-- (void)onTapAudioBtn:(id)sender;
+//: - (void)onTapAudioBtn:(id)sender;
+- (void)alongs:(id)sender;
 
-- (void)onTapAlbunBtn:(id)sender;
+//: - (void)onTapAlbunBtn:(id)sender;
+- (void)intervalled:(id)sender;
 
-- (void)onTapCameraBtn:(id)sender;
+//: - (void)onTapCameraBtn:(id)sender;
+- (void)theStart:(id)sender;
 
-- (void)didReplyCancelled;
+//: - (void)didReplyCancelled;
+- (void)infoCancelled;
 
-- (void)onTapPraiseItem:(NSInteger)index withMessage:(NIMMessage *)message;
+//: - (void)onTapPraiseItem:(NSInteger)index withMessage:(NIMMessage *)message;
+- (void)glass:(NSInteger)index have:(NIMMessage *)message;
 
-- (void)onTapAlbunArray:(NSArray<PHAsset *> *)assets;
+//: - (void)onTapAlbunArray:(NSArray<PHAsset *> *)assets;
+- (void)instanced:(NSArray<PHAsset *> *)assets;
 
+//: @end
 @end
-
-
