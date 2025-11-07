@@ -1,6 +1,0 @@
-framework module RowDialogOpen {
-  umbrella header "RowDialogOpen-umbrella.h"
-
-  export *
-  module * { export * }
-}
