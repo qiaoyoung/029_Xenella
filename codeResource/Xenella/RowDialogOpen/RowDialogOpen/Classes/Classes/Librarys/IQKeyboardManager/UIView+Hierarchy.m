@@ -51,7 +51,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     {
         //: toView = self.window;
         toView = self.window;
-	[self setCaesalpiniaCoriariaDrag:self.dot];
+//	[self setCaesalpiniaCoriariaDrag:self.dot];
     }
 
     //: CGAffineTransform myTransform = CGAffineTransformIdentity;
@@ -93,10 +93,10 @@ static const char *screenTempId (NSString *value) {
     return  "caesalpinia_coriaria_drag";
 };
 
-- (void)setCaesalpiniaCoriariaDrag:(NSArray<__kindof UIView *> *)caesalpiniaCoriariaDrag {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, screenTempId(nil), caesalpiniaCoriariaDrag, OBJC_ASSOCIATION_RETAIN);
-}
+//- (void)setCaesalpiniaCoriariaDrag:(NSArray<__kindof UIView *> *)caesalpiniaCoriariaDrag {
+//    //: OC_CUSTOM_PROPERTY_INJECT
+//    objc_setAssociatedObject(self, screenTempId(nil), caesalpiniaCoriariaDrag, OBJC_ASSOCIATION_RETAIN);
+//}
 
 - (NSArray<__kindof UIView *> *)caesalpiniaCoriariaDrag {
     //: OC_CUSTOM_PROPERTY_INJECT
@@ -114,10 +114,10 @@ static const char *widgetNimEvent (NSString *value) {
     return  "address_can";
 };
 
-- (void)setAddressCan:(UIViewController *)addressCan {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, widgetNimEvent(nil), addressCan, OBJC_ASSOCIATION_RETAIN);
-}
+//- (void)setAddressCan:(UIViewController *)addressCan {
+//    //: OC_CUSTOM_PROPERTY_INJECT
+//    objc_setAssociatedObject(self, widgetNimEvent(nil), addressCan, OBJC_ASSOCIATION_RETAIN);
+//}
 
 //: -(UIViewController*)viewContainingController
 -(UIViewController*)responseViewController
@@ -130,7 +130,7 @@ static const char *widgetNimEvent (NSString *value) {
     {
         //: nextResponder = [nextResponder nextResponder];
         nextResponder = [nextResponder nextResponder];
-	[self setAddressCan:self.toTheHighestDegree];
+//	[self setAddressCan:self.toTheHighestDegree];
 
         //: if ([nextResponder isKindOfClass:[UIViewController class]])
         if ([nextResponder isKindOfClass:[UIViewController class]])
@@ -284,7 +284,7 @@ static const char *widgetNimEvent (NSString *value) {
         {
             //: parentContainerViewController = matchController.tabBarController.selectedViewController;
             parentContainerViewController = matchController.tabBarController.selectedViewController;
-	[self setCaesalpiniaCoriariaDrag:self.dot];
+//	[self setCaesalpiniaCoriariaDrag:self.dot];
         }
     }
     //: else
@@ -306,7 +306,7 @@ static const char *widgetNimEvent (NSString *value) {
             matchController = matchParentController;
             //: matchParentController = matchController.parentViewController;
             matchParentController = matchController.parentViewController;
-	[self setAddressCan:self.toTheHighestDegree];
+//	[self setAddressCan:self.toTheHighestDegree];
         }
 
         //: parentContainerViewController = matchController;
@@ -339,11 +339,11 @@ static const char *widgetNimEvent (NSString *value) {
     return depth;
 }
 
-- (UIViewController *)statuteText:(UIViewController *)addressCan {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    self.addressCan = addressCan;
-    return addressCan;
-}
+//- (UIViewController *)statuteText:(UIViewController *)addressCan {
+//    //: OC_CUSTOM_PROPERTY_INJECT
+//    self.addressCan = addressCan;
+//    return addressCan;
+//}
 
 //: -(nullable __kindof UIView*)superviewOfClassType:(nonnull Class)classType belowView:(nullable UIView*)belowView
 -(nullable __kindof UIView*)totalByView:(nonnull Class)classType pause:(nullable UIView*)belowView
@@ -394,7 +394,7 @@ static const char *widgetNimEvent (NSString *value) {
 
         //: superview = superview.superview;
         superview = superview.superview;
-	[self setCaesalpiniaCoriariaDrag:self.dot];
+//	[self setCaesalpiniaCoriariaDrag:self.dot];
     }
 
     //: return nil;
@@ -518,7 +518,7 @@ static const char *widgetNimEvent (NSString *value) {
 
         //: searchBar = [searchBar nextResponder];
         searchBar = [searchBar nextResponder];
-	[self setAddressCan:self.toTheHighestDegree];
+//	[self setAddressCan:self.toTheHighestDegree];
     }
 
     //: return nil;
@@ -600,7 +600,7 @@ static const char *widgetNimEvent (NSString *value) {
         {
             //: matchController = (UIViewController*)[matchController nextResponder];
             matchController = (UIViewController*)[matchController nextResponder];
-	[self setCaesalpiniaCoriariaDrag:self.dot];
+//	[self setCaesalpiniaCoriariaDrag:self.dot];
 
         }
         //: while (matchController && [matchController isKindOfClass:[UIViewController class]] == NO);
@@ -613,7 +613,7 @@ static const char *widgetNimEvent (NSString *value) {
 
 - (NSArray<__kindof UIView *> *)plotElement:(NSArray<__kindof UIView *> *)caesalpiniaCoriariaDrag {
     //: OC_CUSTOM_PROPERTY_INJECT
-    self.caesalpiniaCoriariaDrag = caesalpiniaCoriariaDrag;
+//    self.caesalpiniaCoriariaDrag = caesalpiniaCoriariaDrag;
     return caesalpiniaCoriariaDrag;
 }
 
@@ -659,7 +659,7 @@ static const char *themeHiddenKey (NSString *value) {
 
         //: alertViewController = [alertViewController nextResponder];
         alertViewController = [alertViewController nextResponder];
-	[self setAddressCan:self.toTheHighestDegree];
+//	[self setAddressCan:self.toTheHighestDegree];
     }
 
     //: return isAlertViewTextField;
@@ -686,7 +686,7 @@ static const char *themeHiddenKey (NSString *value) {
         {
             //: _IQCanBecomeFirstResponder = [(UITextField*)self isEnabled];
             _IQCanBecomeFirstResponder = [(UITextField*)self isEnabled];
-	[self setCaesalpiniaCoriariaDrag:self.dot];
+//	[self setCaesalpiniaCoriariaDrag:self.dot];
         }
     }
 
@@ -695,7 +695,7 @@ static const char *themeHiddenKey (NSString *value) {
     {
         //: _IQCanBecomeFirstResponder = ([self isUserInteractionEnabled] && ![self isHidden] && [self alpha]!=0.0 && ![self isAlertViewTextField] && !self.textFieldSearchBar);
         _IQCanBecomeFirstResponder = ([self isUserInteractionEnabled] && ![self isHidden] && [self alpha]!=0.0 && ![self isAlertViewTextField] && !self.streamBar);
-	[self setAddressCan:self.toTheHighestDegree];
+//	[self setAddressCan:self.toTheHighestDegree];
     }
 
     //: return _IQCanBecomeFirstResponder;
