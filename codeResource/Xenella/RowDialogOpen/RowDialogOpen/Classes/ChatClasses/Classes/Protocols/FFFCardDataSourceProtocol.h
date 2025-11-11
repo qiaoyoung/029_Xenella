@@ -93,19 +93,19 @@ typedef NS_ENUM(NSInteger, MyTeamCardRowItemType) {
 @protocol MethodData <NSObject>
 
 //: - (id)value;
-- (id)corner;
+- (id)value;
 
 //: - (NSString *)title;
-- (NSString *)readingTitle;
+- (NSString *)title;
 
 //: - (NSString *)img;
-- (NSString *)renderFindVisual;
+- (NSString *)img;
 
 //: - (BOOL)selected;
-- (BOOL)shared;
+- (BOOL)selected;
 
 //: - (void)setSelected:(BOOL)selected;
-- (void)setShared:(BOOL)selected;
+- (void)setSelected:(BOOL)selected;
 
 //: @end
 @end
@@ -114,45 +114,45 @@ typedef NS_ENUM(NSInteger, MyTeamCardRowItemType) {
 @protocol TruthData <NSObject>
 
 //: - (NSString *)title;
-- (NSString *)qualityCapture;
+- (NSString *)title;
 
 //: - (id)value;
-- (id)insinuateValue;
+- (id)value;
 
 //: - (MyTeamCardRowItemType)type;
-- (MyTeamCardRowItemType)venaMetacarpus;
+- (MyTeamCardRowItemType)type;
 
 //: - (CGFloat)rowHeight;
-- (CGFloat)dog;
+- (CGFloat)rowHeight;
 
 //: - (NIMTeamCardRowSelectedBlock)selectedBlock;
-- (NIMTeamCardRowSelectedBlock)anvil;
+- (NIMTeamCardRowSelectedBlock)selectedBlock;
 
 //: - (NSMutableArray <id <FFFKitSelectCardData>> *)optionItems;
-- (NSMutableArray <id <MethodData>> *)items;
+- (NSMutableArray <id <MethodData>> *)optionItems;
 
 //: @optional
 @optional
 //: - (NSString *)subTitle;
-- (NSString *)triceUp;
+- (NSString *)subTitle;
 
 //: - (UIImage *)img;
-- (UIImage *)spot;
+- (UIImage *)img;
 
 //: - (SEL)action;
-- (SEL)background;
+- (SEL)action;
 
 //: - (BOOL)actionDisabled;
-- (BOOL)destabilisationSheetDisabled;
+- (BOOL)actionDisabled;
 
 //: - (BOOL)switchOn;
-- (BOOL)processToEnable;
+- (BOOL)switchOn;
 
 //: - (NSInteger)identify;
-- (NSInteger)orientation;
+- (NSInteger)identify;
 
 //: - (BOOL)disableUserInteraction;
-- (BOOL)network;
+- (BOOL)disableUserInteraction;
 
 //: @end
 @end

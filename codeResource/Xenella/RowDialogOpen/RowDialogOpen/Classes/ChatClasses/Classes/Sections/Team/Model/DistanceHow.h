@@ -21,47 +21,45 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <MethodData> item);
 @interface DistanceHow : NSObject
 
 //: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
-@property(nonatomic,strong) NIMTeamCardRowSelectedBlock read;
+@property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
 
 //: @property(nonatomic,strong) id value;
-@property(nonatomic,strong) id fryingPanValue;
+@property(nonatomic,strong) id value;
 
 //: @property(nonatomic,assign) CGFloat rowHeight;
-@property(nonatomic,assign) CGFloat big;
+@property(nonatomic,assign) CGFloat rowHeight;
 
 //: @property(nonatomic,assign) BOOL disableUserInteraction;
-@property(nonatomic,assign) BOOL window;
+@property(nonatomic,assign) BOOL disableUserInteraction;
 
 //: @property(nonatomic,copy) UIImage *img;
-@property(nonatomic,copy) UIImage *cur;
+@property(nonatomic,copy) UIImage *img;
 
 //: @property(nonatomic,assign) BOOL actionDisabled;
-@property(nonatomic,assign) BOOL rawReferred;
+@property(nonatomic,assign) BOOL actionDisabled;
 
 //: @property(nonatomic,assign) BOOL selected;
-@property(nonatomic,assign) BOOL circleYear;
+@property(nonatomic,assign) BOOL selected;
 
 //: @property(nonatomic,assign) BOOL switchOn;
-@property(nonatomic,assign) BOOL toEnable;
+@property(nonatomic,assign) BOOL switchOn;
 
 //: @property(nonatomic,copy) NSString *subTitle;
-@property(nonatomic,copy) NSString *statuteTitle;
+@property(nonatomic,copy) NSString *subTitle;
 
 //: @property(nonatomic,assign) SEL action;
-@property(nonatomic,assign) SEL protectionRest;
+@property(nonatomic,assign) SEL action;
 
 //: @property(nonatomic,assign) NSInteger identify;
-@property(nonatomic,assign) NSInteger polyhedralAngleTapTellIdentify;
+@property(nonatomic,assign) NSInteger identify;
 //: @property(nonatomic,assign) MyTeamCardRowItemType type;
-@property(nonatomic,assign) MyTeamCardRowItemType expression;
-
-@property(nonatomic,assign) NSInteger angleTapIdentify;
+@property(nonatomic,assign) MyTeamCardRowItemType type;
 
 //: @property(nonatomic,strong) NSMutableArray <id <FFFKitSelectCardData>> *optionItems;
-@property(nonatomic,strong) NSMutableArray <id <MethodData>> *display;
+@property(nonatomic,strong) NSMutableArray <id <MethodData>> *optionItems;
 
 //: @property(nonatomic,copy) NSString *title;
-@property(nonatomic,copy) NSString *two;
+@property(nonatomic,copy) NSString *title;
 
 //: @end
 @end

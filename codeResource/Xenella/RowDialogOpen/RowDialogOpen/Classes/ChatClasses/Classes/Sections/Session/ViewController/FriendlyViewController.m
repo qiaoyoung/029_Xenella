@@ -1106,7 +1106,7 @@ typedef struct {
 }
 
 //: - (void)onTapMenuItemCopy:(FFFMediaItem *)item
-- (void)argumenting:(AdminPaper *)item
+- (void)onTapMenuItemCopy:(AdminPaper *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self speed];

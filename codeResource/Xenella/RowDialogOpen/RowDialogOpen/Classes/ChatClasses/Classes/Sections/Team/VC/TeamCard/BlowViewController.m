@@ -243,7 +243,7 @@
     //: cell.button.style = EnumColorButtonCellStyleBlue;
     cell.flagColorButton.albumCellStyle = EnumColorButtonCellStyleBlue;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.flagColorButton setTitle:bodyData.qualityCapture forState:UIControlStateNormal];
+    [cell.flagColorButton setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -479,9 +479,9 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.titleLabel.text = bodyData.title;
-    cell.titleLabel.text = bodyData.qualityCapture;
+    cell.titleLabel.text = bodyData.title;
     //: cell.iconImageView.image = bodyData.img;
-    cell.iconImageView.image = bodyData.spot;
+    cell.iconImageView.image = bodyData.img;
 //    cell.contentLabel.text = bodyData.subTitle;
 //    if ([bodyData respondsToSelector:@selector(subTitle)]) {
 //        cell.contentLabel.text = bodyData.subTitle ?: LangKey(@"未设置");
@@ -641,18 +641,18 @@
     sep.hidden = (indexPath.row + 1 == [self.time numberOfRowsInSection:indexPath.section]);
 
     //: cell.textLabel.text = bodyData.title;
-    cell.textLabel.text = bodyData.qualityCapture;
+    cell.textLabel.text = bodyData.title;
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor colorWithHexString:@"#2C3042"];
     cell.textLabel.textColor = [UIColor deal:[SuggestData kFeatureRetainHelper]];
     //: cell.imageView.image = bodyData.img;
-    cell.imageView.image = bodyData.spot;
+    cell.imageView.image = bodyData.img;
 
     //: cell.switcher.on = bodyData.switchOn;
-    cell.sumryWindow.on = bodyData.processToEnable;
+    cell.sumryWindow.on = bodyData.switchOn;
     //: cell.identify = bodyData.identify;
-    cell.exclude = bodyData.orientation;
+    cell.exclude = bodyData.identify;
 
     //: [self didBuildTeamSwitchCell:cell];
     [self estimated:cell];
@@ -667,7 +667,7 @@
     //: id<USERCardBodyData> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<TruthData> bodyData = [self at:indexPath];
     //: return bodyData.rowHeight;
-    return bodyData.dog;
+    return bodyData.rowHeight;
 }
 
 //: - (UIAlertAction *)makeCancelAction {
@@ -689,22 +689,22 @@
     //: id<USERCardBodyData> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<TruthData> bodyData = [self at:indexPath];
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(rawReferred)] && bodyData.destabilisationSheetDisabled) {
+    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
         //: return;
         return;
     }
     //: if (bodyData.type == TeamCardRowItemTypeSelected) {
-    if (bodyData.venaMetacarpus == TeamCardRowItemTypeSelected) {
+    if (bodyData.type == TeamCardRowItemTypeSelected) {
         //: FFFTeamCardSelectedViewController *vc = [FFFTeamCardSelectedViewController instanceWithTitle:bodyData.title
-        StickToViewController *vc = [StickToViewController mixtureEnable:bodyData.qualityCapture
+        StickToViewController *vc = [StickToViewController mixtureEnable:bodyData.title
                                                                                //: items:bodyData.optionItems
-                                                                               militaryAction:bodyData.items
+                                                                               militaryAction:bodyData.optionItems
                                                                               //: result:^(id<FFFKitSelectCardData> _Nonnull item) {
                                                                               manage:^(id<MethodData> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
-              if (bodyData.anvil) {
+              if (bodyData.selectedBlock) {
                   //: bodyData.selectedBlock(item);
-                  bodyData.anvil(item);
+                  bodyData.selectedBlock(item);
               }
           //: }];
           }];
@@ -713,13 +713,13 @@
     //: } else {
     } else {
         //: if ([bodyData respondsToSelector:@selector(action)]) {
-        if ([bodyData respondsToSelector:@selector(protectionRest)]) {
+        if ([bodyData respondsToSelector:@selector(action)]) {
             //: if (bodyData.action) {
-            if (bodyData.background) {
+            if (bodyData.action) {
                 //: do {
                 do {
                 //: [self performSelector:bodyData.action];
-                [self performSelector:bodyData.background];
+                [self performSelector:bodyData.action];
                 //: } while (0);
                 } while (0);
             }
@@ -786,7 +786,7 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.qualityCapture,bodyData.triceUp];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor blackColor];
@@ -795,7 +795,7 @@
 //    cell.imageView.image = bodyData.img;
 
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(rawReferred)] && bodyData.destabilisationSheetDisabled) {
+    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
         //: cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
     //: }else{
@@ -836,7 +836,7 @@
     //: UITableViewCell * cell;
     UITableViewCell * cell;
     //: MyTeamCardRowItemType type = bodyData.type;
-    MyTeamCardRowItemType type = bodyData.venaMetacarpus;
+    MyTeamCardRowItemType type = bodyData.type;
     //: switch (type) {
     switch (type) {
         //: case TeamCardRowItemTypeCommon:
@@ -986,7 +986,7 @@
     //: cell.button.style = EnumColorButtonCellStyleRed;
     cell.flagColorButton.albumCellStyle = EnumColorButtonCellStyleRed;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.flagColorButton setTitle:bodyData.qualityCapture forState:UIControlStateNormal];
+    [cell.flagColorButton setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }

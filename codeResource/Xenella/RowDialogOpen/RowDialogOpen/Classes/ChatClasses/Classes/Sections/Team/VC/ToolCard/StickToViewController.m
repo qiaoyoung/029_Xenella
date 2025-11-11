@@ -122,7 +122,7 @@ ElectronCaveData coreSternPreference = (ElectronCaveData){54, (Byte []){85, 89, 
         //: [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items enumerateObjectsUsingBlock:^(id<MethodData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
-            if (obj.shared) {
+            if (obj.selected) {
                 //: weakSelf.selectedIndex = idx;
                 weakSelf.selectedIndex = idx;
             }
@@ -181,7 +181,7 @@ ElectronCaveData coreSternPreference = (ElectronCaveData){54, (Byte []){85, 89, 
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
-        [obj setShared:selected];
+        [obj setSelected:selected];
     //: }];
     }];
     //: [self.tableView reloadData];
@@ -307,13 +307,13 @@ ElectronCaveData coreSternPreference = (ElectronCaveData){54, (Byte []){85, 89, 
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
-    cell.iconImageView.image = [UIImage imageNamed:bodyData.renderFindVisual];
+    cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
 	[self setDisk:_oriSelectedIndex];
     //: cell.titleLabel.text = bodyData.title;
-    cell.titleLabel.text = bodyData.readingTitle;
+    cell.titleLabel.text = bodyData.title;
 	[self setDisk:_oriSelectedIndex];
     //: cell.arrowsImageView.hidden = ![bodyData selected];
-    cell.arrowsImageView.hidden = ![bodyData shared];
+    cell.arrowsImageView.hidden = ![bodyData selected];
 	[self setTaskIndicator:_tableView];
 
     //: return cell;

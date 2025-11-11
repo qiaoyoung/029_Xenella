@@ -2516,7 +2516,7 @@ HisDelegate>
 }
 
 //: - (void)onTapMenuItemReport:(FFFMediaItem *)item
-- (void)intervalyTap:(AdminPaper *)item
+- (void)onTapMenuItemReport:(AdminPaper *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.behavior];
@@ -2685,7 +2685,7 @@ HisDelegate>
 
 
 //: - (void)onTapMenuItemUnpin:(FFFMediaItem *)item
-- (void)itemPriority:(AdminPaper *)item
+- (void)onTapMenuItemUnpin:(AdminPaper *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self speed];
@@ -2771,7 +2771,7 @@ HisDelegate>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)delivery:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -3225,14 +3225,14 @@ HisDelegate>
 
 
 //: - (void)onTapMenuItemMutiSelect:(FFFMediaItem *)item
-- (void)birthplace:(AdminPaper *)item
+- (void)onTapMenuItemMutiSelect:(AdminPaper *)item
 {
     //: [self switchUIWithSessionState:UserSessionStateSelect];
     [self small:UserSessionStateSelect];
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)remainPerform:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 
@@ -3312,7 +3312,7 @@ HisDelegate>
 }
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)independentGround:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
@@ -3697,7 +3697,7 @@ HisDelegate>
 
 
 //: - (void)onTapMenuItemPin:(FFFMediaItem *)item
-- (void)putPin:(AdminPaper *)item
+- (void)onTapMenuItemPin:(AdminPaper *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self speed];
@@ -4138,7 +4138,7 @@ HisDelegate>
 }
 
 //: - (void)onTapMenuItemMark:(FFFMediaItem *)item
-- (void)colors:(AdminPaper *)item
+- (void)onTapMenuItemMark:(AdminPaper *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self speed];
@@ -4197,7 +4197,7 @@ HisDelegate>
 }
 
 //: - (void)onTapMenuItemTranslation:(FFFMediaItem *)item
-- (void)cell:(AdminPaper *)item
+- (void)onTapMenuItemTranslation:(AdminPaper *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self speed];
@@ -4447,7 +4447,7 @@ HisDelegate>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(FFFMediaItem *)item
-- (void)beforeSound:(AdminPaper *)item
+- (void)onTapMenuItemReply:(AdminPaper *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self speed];
@@ -4477,7 +4477,7 @@ HisDelegate>
 }
 
 //: - (void)onTapMenuItemForword:(FFFMediaItem *)item
-- (void)beyondShadow:(AdminPaper *)item
+- (void)onTapMenuItemForword:(AdminPaper *)item
 {
     //: ZOMNForwardViewController *vc = [[ZOMNForwardViewController alloc]init];
     PaperViewController *vc = [[PaperViewController alloc]init];
@@ -4587,7 +4587,7 @@ HisDelegate>
 }
 
 //: - (void)onTapMenuItemDelete:(FFFMediaItem *)item
-- (void)buttonInNim:(AdminPaper *)item
+- (void)onTapMenuItemDelete:(AdminPaper *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self speed];
@@ -4721,7 +4721,7 @@ HisDelegate>
 }
 
 //: - (void)onTapMenuItemRevoke:(FFFMediaItem *)item
-- (void)standardRevoke:(AdminPaper *)item
+- (void)onTapMenuItemRevoke:(AdminPaper *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self speed];
@@ -4898,7 +4898,7 @@ HisDelegate>
 
 
 //: - (void)onTapMenuItemAudio2Text:(FFFMediaItem *)item
-- (void)argumentReceive:(AdminPaper *)item
+- (void)onTapMenuItemAudio2Text:(AdminPaper *)item
 {
 
 }

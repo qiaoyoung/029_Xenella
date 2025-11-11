@@ -500,13 +500,13 @@
         //: FFFTeamCardRowItem *item = [[FFFTeamCardRowItem alloc] init];
         DistanceHow *item = [[DistanceHow alloc] init];
         //: item.value = dic[[FFFTeamHelper getTeamHelperValue]];
-        item.fryingPanValue = dic[[NorHelper moreHem]];
+        item.value = dic[[NorHelper moreHem]];
         //: item.title = dic[[FFFTeamHelper getTeamHelperText]];
-        item.two = dic[[NorHelper blackPraise]];
+        item.title = dic[[NorHelper blackPraise]];
         //: item.img = dic[[FFFTeamHelper getTeamHelperImg]];
-        item.cur = dic[[NorHelper table]];
+        item.img = dic[[NorHelper table]];
         //: item.selected = (selectValue == [dic[[FFFTeamHelper getTeamHelperValue]] integerValue]);
-        item.circleYear = (selectValue == [dic[[NorHelper moreHem]] integerValue]);
+        item.selected = (selectValue == [dic[[NorHelper moreHem]] integerValue]);
         //: [items addObject:item];
         [items addObject:item];
     }

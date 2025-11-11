@@ -470,7 +470,7 @@
     //: if (self.link == nil) {
     if (self.themeDisplayLink == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[SGWeakProxy weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.themeDisplayLink = [CADisplayLink displayLinkWithTarget:[OkProxy outOfDoors:self] selector:@selector(updateUI)];
+        self.themeDisplayLink = [CADisplayLink displayLinkWithTarget:[OkProxy outOfDoors:self] selector:@selector(sign)];
 	[self setMemory:_chock];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [[self processorVideoShould:self.themeDisplayLink] addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];

@@ -14,19 +14,7 @@
 
 //: @implementation FFFTeamCardRowItem
 @implementation DistanceHow
-
-//: @end
-
-- (NSInteger)transmission:(NSInteger)polyhedralAngleTapTellIdentify {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    _polyhedralAngleTapTellIdentify = polyhedralAngleTapTellIdentify;
-    return polyhedralAngleTapTellIdentify;
-}
-
-- (void)setPolyhedralAngleTapTellIdentify:(NSInteger)polyhedralAngleTapTellIdentify {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    _polyhedralAngleTapTellIdentify = polyhedralAngleTapTellIdentify;
-}
+ 
 
 
 @end
