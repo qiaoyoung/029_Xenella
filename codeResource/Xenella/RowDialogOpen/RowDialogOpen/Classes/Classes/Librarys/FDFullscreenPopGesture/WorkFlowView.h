@@ -21,7 +21,7 @@ IB_DESIGNABLE
 //: @property (nonatomic) IBInspectable CGFloat radius; 
 @property (nonatomic) IBInspectable CGFloat of;// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) UIBlurEffect *blurEffect NS_AVAILABLE_IOS(8_0); 
-@property (nonatomic) UIBlurEffect *media//: @property (nonatomic) IBInspectable CGFloat progress;
+@property (nonatomic) UIBlurEffect *media;//: @property (nonatomic) IBInspectable CGFloat progress;
 @property (nonatomic) IBInspectable CGFloat restObserve;
 
 //: @property (nonatomic) UIView *backgroundView; 

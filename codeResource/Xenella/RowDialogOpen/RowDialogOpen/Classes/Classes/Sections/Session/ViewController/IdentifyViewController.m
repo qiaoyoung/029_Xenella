@@ -3538,7 +3538,7 @@ HisDelegate>
             //: if (selector && [self respondsToSelector:selector]) {
             if (selector && [self respondsToSelector:selector]) {
                 //: SuppressPerformSelectorLeakWarning([self performSelector:selector withObject:message]);
-                SuppressPerformSelectorLeakWarning([self performSelector:selector withObject:message]);
+                [self performSelector:selector withObject:message];
                 //: handled = YES;
                 handled = YES;
             }

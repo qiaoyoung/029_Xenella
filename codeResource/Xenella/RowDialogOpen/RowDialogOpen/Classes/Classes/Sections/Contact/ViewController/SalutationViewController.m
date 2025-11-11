@@ -980,7 +980,7 @@ ClassicDelegate> {
             //: SEL sel = NSSelectorFromString([contactItem selName]);
             SEL sel = NSSelectorFromString([contactItem twoDimensionalFigure]);
             //: SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
-            SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
+            [self performSelector:sel withObject:nil];
         }
         //: else if (contactItem.vcName.length) {
         else if (contactItem.common.length) {

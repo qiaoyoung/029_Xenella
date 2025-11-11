@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ThyScrollView.h"
+#import "ThyScrollView.h"
 
 //: @interface StringAttributedLabel (MyUserKit)
 @interface ThyScrollView (TaskIdentifyRave)

@@ -818,7 +818,7 @@
 
 //: @property (nonatomic, strong) ZMONCustomLoadingView *loadingView;
 @property (nonatomic, strong) SinCustomView *joinTotal;
-@property (nonatomic, strong) ShlepView *version//: @property (nonatomic, strong) HealBindView *policyView;
+@property (nonatomic, strong) ShlepView *version;//: @property (nonatomic, strong) HealBindView *policyView;
 @property (nonatomic, strong) HealBindView *policy;
 
 //: @property (nonatomic, strong) USERNotificationView *noticeView;

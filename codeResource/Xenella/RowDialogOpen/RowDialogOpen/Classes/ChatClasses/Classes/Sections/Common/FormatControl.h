@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ThyScrollView.h"
+#import "ThyScrollView.h"
 
 //: @interface FFFAvatarImageView : UIControl
 @interface FormatControl : UIControl

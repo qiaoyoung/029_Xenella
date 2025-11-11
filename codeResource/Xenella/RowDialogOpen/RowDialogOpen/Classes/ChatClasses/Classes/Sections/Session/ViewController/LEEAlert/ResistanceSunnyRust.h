@@ -234,7 +234,7 @@ API_AVAILABLE(ios(13.0), tvos(13.0));
 
 /** 设置 系统界面样式 -> 格式: .LeeUserInterfaceStyle(UIUserInterfaceStyleUnspecified) */
 //: @property (nonatomic, copy, readonly) LEEConfigToUserInterfaceStyle LeeUserInterfaceStyle API_AVAILABLE(ios(13.0), tvos(13.0));
-@property (nonatomic, copy, readonly) LEEConfigToUserInterfaceStyle group/** 设置 取消动作 -> 格式: .LeeDestructiveAction(@"name", ^{ //code.. }) */
+@property (nonatomic, copy, readonly) LEEConfigToUserInterfaceStyle group;/** 设置 取消动作 -> 格式: .LeeDestructiveAction(@"name", ^{ //code.. }) */
 //: @property (nonatomic, copy, readonly) LEEConfigToStringAndBlock LeeDestructiveAction;
 @property (nonatomic, copy, readonly) LEEConfigToStringAndBlock thumb;
 

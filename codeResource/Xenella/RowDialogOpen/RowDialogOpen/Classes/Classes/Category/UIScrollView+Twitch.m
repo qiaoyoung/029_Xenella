@@ -498,7 +498,7 @@ static char featureMonthConfig;
 //: - (void)setScrollViewContentInsetForLoading {
 - (void)fumble {
     //: CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
-    CGFloat offset = ((self.build.contentOffset.corroborateKey * -1) > (0) ? (self.build.contentOffset.corroborateKey * -1) : (0));
+    CGFloat offset = ((self.build.contentOffset.y * -1) > (0) ? (self.build.contentOffset.y * -1) : (0));
     //: UIEdgeInsets currentInsets = self.scrollView.contentInset;
     UIEdgeInsets currentInsets = self.build.contentInset;
     //: switch (self.position) {
@@ -543,7 +543,7 @@ static char featureMonthConfig;
         case USERPullToRefreshPositionTop:
 
             //: if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
-            if((fabs(self.build.contentOffset.corroborateKey) < 1.19209290e-7F)) {
+            if((fabs(self.build.contentOffset.y) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
                 [self.build setContentOffset:CGPointMake(self.build.contentOffset.x, -self.frame.size.height) animated:YES];
                 //: self.wasTriggeredByUser = NO;
@@ -561,11 +561,11 @@ static char featureMonthConfig;
         case USERPullToRefreshPositionBottom:
 
             //: if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
-            if(((fabs(self.build.contentOffset.corroborateKey) < 1.19209290e-7F) && self.build.contentSize.height < self.build.bounds.size.height)
+            if(((fabs(self.build.contentOffset.y) < 1.19209290e-7F) && self.build.contentSize.height < self.build.bounds.size.height)
                //: || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
-               || (fabs((self.build.contentOffset.corroborateKey) - (self.build.contentSize.height - self.build.bounds.size.height)) < 1.19209290e-7F)) {
+               || (fabs((self.build.contentOffset.y) - (self.build.contentSize.height - self.build.bounds.size.height)) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
-                [self.scrollView setContentOffset:(CGPoint){.corroborateKey = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
+                [self.build setContentOffset:(CGPoint){.y = ((self.build.contentSize.height - self.build.bounds.size.height) > (0.0f) ? (self.build.contentSize.height - self.build.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
                 //: self.wasTriggeredByUser = NO;
                 self.goOn = NO;
 	[self setGen:_twoLess];
@@ -801,7 +801,7 @@ static char featureMonthConfig;
         //: CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         //: [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
-        [customView setFrame:CGRectMake(origin.x, origin.corroborateKey, viewBounds.size.width, viewBounds.size.height)];
+        [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
     }
     //: else {
     else {
@@ -1019,7 +1019,7 @@ static char featureMonthConfig;
             //: case USERPullToRefreshPositionTop:
             case USERPullToRefreshPositionTop:
                 //: scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
-                scrollOffsetThreshold = self.frame.origin.corroborateKey - self.listen;
+                scrollOffsetThreshold = self.frame.origin.y - self.listen;
                 //: break;
                 break;
             //: case USERPullToRefreshPositionBottom:
@@ -1035,19 +1035,19 @@ static char featureMonthConfig;
             //: self.state = USERPullToRefreshStateLoading;
             self.vacuousTurnses = USERPullToRefreshStateLoading;
         //: else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == USERPullToRefreshStateStopped && self.position == USERPullToRefreshPositionTop)
-        else if(contentOffset.corroborateKey < scrollOffsetThreshold && self.build.isDragging && self.vacuousTurnses == USERPullToRefreshStateStopped && self.operate == USERPullToRefreshPositionTop)
+        else if(contentOffset.y < scrollOffsetThreshold && self.build.isDragging && self.vacuousTurnses == USERPullToRefreshStateStopped && self.operate == USERPullToRefreshPositionTop)
             //: self.state = USERPullToRefreshStateTriggered;
             self.vacuousTurnses = USERPullToRefreshStateTriggered;
         //: else if(contentOffset.y >= scrollOffsetThreshold && self.state != USERPullToRefreshStateStopped && self.position == USERPullToRefreshPositionTop)
-        else if(contentOffset.corroborateKey >= scrollOffsetThreshold && self.vacuousTurnses != USERPullToRefreshStateStopped && self.operate == USERPullToRefreshPositionTop)
+        else if(contentOffset.y >= scrollOffsetThreshold && self.vacuousTurnses != USERPullToRefreshStateStopped && self.operate == USERPullToRefreshPositionTop)
             //: self.state = USERPullToRefreshStateStopped;
             self.vacuousTurnses = USERPullToRefreshStateStopped;
         //: else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == USERPullToRefreshStateStopped && self.position == USERPullToRefreshPositionBottom)
-        else if(contentOffset.corroborateKey > scrollOffsetThreshold && self.build.isDragging && self.vacuousTurnses == USERPullToRefreshStateStopped && self.operate == USERPullToRefreshPositionBottom)
+        else if(contentOffset.y > scrollOffsetThreshold && self.build.isDragging && self.vacuousTurnses == USERPullToRefreshStateStopped && self.operate == USERPullToRefreshPositionBottom)
             //: self.state = USERPullToRefreshStateTriggered;
             self.vacuousTurnses = USERPullToRefreshStateTriggered;
         //: else if(contentOffset.y <= scrollOffsetThreshold && self.state != USERPullToRefreshStateStopped && self.position == USERPullToRefreshPositionBottom)
-        else if(contentOffset.corroborateKey <= scrollOffsetThreshold && self.vacuousTurnses != USERPullToRefreshStateStopped && self.operate == USERPullToRefreshPositionBottom)
+        else if(contentOffset.y <= scrollOffsetThreshold && self.vacuousTurnses != USERPullToRefreshStateStopped && self.operate == USERPullToRefreshPositionBottom)
             //: self.state = USERPullToRefreshStateStopped;
             self.vacuousTurnses = USERPullToRefreshStateStopped;
     //: } else {
@@ -1061,7 +1061,7 @@ static char featureMonthConfig;
             //: case USERPullToRefreshPositionTop:
             case USERPullToRefreshPositionTop:
                 //: offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
-                offset = ((self.build.contentOffset.corroborateKey * -1) > (0.0f) ? (self.build.contentOffset.corroborateKey * -1) : (0.0f));
+                offset = ((self.build.contentOffset.y * -1) > (0.0f) ? (self.build.contentOffset.y * -1) : (0.0f));
                 //: offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
                 offset = ((offset) < (self.listen + self.bounds.size.height) ? (offset) : (self.listen + self.bounds.size.height));
                 //: contentInset = self.scrollView.contentInset;

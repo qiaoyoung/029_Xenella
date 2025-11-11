@@ -236,7 +236,7 @@ typedef NS_ENUM(NSInteger, LEEBackgroundStyle) {
 //: @property (nonatomic, copy) void (^modelFinishConfig)(void);
 @property (nonatomic, copy) void (^shade)(void);
 //: @property (nonatomic, assign) UIUserInterfaceStyle modelUserInterfaceStyle API_AVAILABLE(ios(13.0), tvos(13.0));
-@property (nonatomic, assign) UIUserInterfaceStyle stack//: @property (nonatomic, assign) LEEBackgroundStyle modelBackgroundStyle;
+@property (nonatomic, assign) UIUserInterfaceStyle stack;//: @property (nonatomic, assign) LEEBackgroundStyle modelBackgroundStyle;
 @property (nonatomic, assign) LEEBackgroundStyle heritage;
 
 //: @property (nonatomic, strong) NSMutableArray *modelActionArray;
@@ -608,7 +608,7 @@ API_AVAILABLE(ios(13.0), tvos(13.0));
     _signWriting = nil;
     //: _modelItemInsetsInfo = nil;
     _componentColor = nil;
-	[self setToday:self.related];
+//	[self setToday:self.related];
 }
 
 //: - (LEEConfigToFloat)LeeCloseAnimationDuration{

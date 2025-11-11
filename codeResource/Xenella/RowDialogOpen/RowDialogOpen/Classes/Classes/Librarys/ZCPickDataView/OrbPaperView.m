@@ -343,7 +343,7 @@ Byte featureAttorneySparkPreference[] = {13, 6, 3, 11, 119, 146, 73, 143, 143, 1
 //: - (void)leftButtonClicked:(id)sender{
 - (void)screenned:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = loseNote(self.perThreading);
+    Class currentClass = object_getClass(self.perThreading);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == tempAlbum) && [self.perThreading respondsToSelector:@selector(dragMe)]) {
         //: [self.delegate dismissDataPickerView];
@@ -441,7 +441,7 @@ Byte featureAttorneySparkPreference[] = {13, 6, 3, 11, 119, 146, 73, 143, 143, 1
     self.perThreading = delegate;
 	[self setDetail:_being];
     //: delegateClass = object_getClass(delegate);
-    tempAlbum = loseNote(delegate);
+    tempAlbum = object_getClass(delegate);
 }
 
 //: - (void)reloadYearLabel:(NSDate*)date{
@@ -499,7 +499,7 @@ Byte featureAttorneySparkPreference[] = {13, 6, 3, 11, 119, 146, 73, 143, 143, 1
 //: - (void)rightButtonClicked:(id)sender{
 - (void)thought:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = loseNote(self.perThreading);
+    Class currentClass = object_getClass(self.perThreading);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == tempAlbum) && [self.perThreading respondsToSelector:@selector(dragMe)]) {
         //: [self.delegate dismissDataPickerView];

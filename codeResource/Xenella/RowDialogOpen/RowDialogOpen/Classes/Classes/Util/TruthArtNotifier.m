@@ -118,7 +118,7 @@ static void fileKit(SystemSoundID soundID, void *data)
         //: SEL selector = NSSelectorFromString(@"vibrate");
         SEL selector = NSSelectorFromString([ProtectionData sharedInstance].styleQuantityerpretText);
         //: SuppressPerformSelectorLeakWarning([(USERAVNotifier *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
-        SuppressPerformSelectorLeakWarning([(TruthArtNotifier *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+        [(TruthArtNotifier *)notifier performSelector:selector withObject:nil afterDelay:1.0];
     }
 }
 

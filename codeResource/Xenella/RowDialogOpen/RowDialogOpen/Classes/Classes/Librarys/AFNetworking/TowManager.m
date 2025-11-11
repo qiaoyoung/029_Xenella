@@ -599,7 +599,7 @@ typedef void (^AFURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
 @property (nonatomic, copy) NSURL *present;
 
 //: @property (nonatomic, strong) NSURLSessionTaskMetrics *sessionTaskMetrics API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
-@property (nonatomic, strong) NSURLSessionTaskMetrics *sessionComment //: @property (nonatomic, strong) NSMutableData *mutableData;
+@property (nonatomic, strong) NSURLSessionTaskMetrics *sessionComment; //: @property (nonatomic, strong) NSMutableData *mutableData;
 @property (nonatomic, strong) NSMutableData *associate;
 //: @property (nonatomic, copy) AFURLSessionTaskCompletionHandler completionHandler;
 @property (nonatomic, copy) AFURLSessionTaskCompletionHandler detectCount;
@@ -1178,7 +1178,7 @@ static NSString * const moduleDisplayRearTimer (NSString *value) {
 //: @property (readwrite, nonatomic, strong) NSOperationQueue *operationQueue;
 @property (readwrite, nonatomic, strong) NSOperationQueue *listener;
 //: @property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock didFinishEventsForBackgroundURLSession API_UNAVAILABLE(macos);
-@property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock compositionSuccess//: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskWillCacheResponseBlock dataTaskWillCacheResponse;
+@property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock compositionSuccess;//: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskWillCacheResponseBlock dataTaskWillCacheResponse;
 @property (readwrite, nonatomic, copy) AFURLSessionDataTaskWillCacheResponseBlock crop;
 @property (readwrite, nonatomic, strong) NSLock *highlight;
 //: @property (readonly, nonatomic, copy) NSString *taskDescriptionForSessionTasks;
@@ -1200,7 +1200,7 @@ static NSString * const moduleDisplayRearTimer (NSString *value) {
 //: @property (readwrite, nonatomic, strong) NSMutableDictionary *mutableTaskDelegatesKeyedByTaskIdentifier;
 @property (readwrite, nonatomic, strong) NSMutableDictionary *aboard;
 //: @property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock taskDidFinishCollectingMetrics API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
-@property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock deepAPI_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
+@property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock deep API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
 
 //: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidReceiveResponseBlock dataTaskDidReceiveResponse;
 @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidReceiveResponseBlock logTriggerResponse;

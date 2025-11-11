@@ -26,8 +26,8 @@ Byte screenInspectorPlatform[] = {61, 25, 12, 4, 58, 58, 58, 63, 93, 104, 57, 10
 #import "UIViewDeviceKit.h"
 //: #import "FFFLoadProgressView.h"
 #import "LopeView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ThyScrollView.h"
+#import "ThyScrollView.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "UCZProgressView.h"

@@ -149,8 +149,8 @@ typedef struct {
 #import "UIViewDeviceKit.h"
 //: #import "FFFLoadProgressView.h"
 #import "LopeView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ThyScrollView.h"
+#import "ThyScrollView.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "MyUserKit.h"

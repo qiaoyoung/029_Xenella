@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "FFFSessionMessageContentView.h"
 #import "FirstMessageView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ThyScrollView.h"
+#import "ThyScrollView.h"
 
 //: @interface FFFSessionNetChatNotifyContentView : FFFSessionMessageContentView
 @interface TheView : FirstMessageView

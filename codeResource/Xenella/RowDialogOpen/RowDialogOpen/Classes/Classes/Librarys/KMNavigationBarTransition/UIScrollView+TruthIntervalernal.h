@@ -31,8 +31,8 @@
 @interface UIScrollView (TruthIntervalernal)
 
 
-
-
+@property (nonatomic, assign) UIScrollViewContentInsetAdjustmentBehavior colorAddition NS_AVAILABLE_IOS(11_0);
+@property (nonatomic, assign) BOOL pendingEye NS_AVAILABLE_IOS(11_0);
 
 
 //: @end

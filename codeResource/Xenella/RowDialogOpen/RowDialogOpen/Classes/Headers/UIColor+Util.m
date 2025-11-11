@@ -125,7 +125,7 @@ void phaseTimingColor(CGContextRef c, color_t color) {
 
 - (ecolor_t)equalAlter:(ecolor_t)net {
     //: OC_CUSTOM_PROPERTY_INJECT
-    self.net = net;
+//    self.net = net;
     return net;
 }
 
@@ -450,10 +450,10 @@ static const char *spacingArcError (NSString *value) {
     return  "net";
 };
 
-- (void)setNet:(ecolor_t)net {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, spacingArcError(nil), net, OBJC_ASSOCIATION_RETAIN);
-}
+//- (void)setNet:(ecolor_t)net {
+//    //: OC_CUSTOM_PROPERTY_INJECT
+//    objc_setAssociatedObject(self, spacingArcError(nil), net, OBJC_ASSOCIATION_RETAIN);
+//}
 
 //: -(NSString*)stringValue {
 -(NSString*)white {

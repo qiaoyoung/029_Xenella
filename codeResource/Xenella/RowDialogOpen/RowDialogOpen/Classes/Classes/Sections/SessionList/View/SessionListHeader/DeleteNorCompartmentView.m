@@ -182,7 +182,7 @@ typedef struct {
 //: - (void)setMenuModel:(id)menuModel {
 - (void)setGlassBuild:(id)menuModel {
     //: _menuModel = menuModel;
-    _menuModel = menuModel;
+    menuModel = menuModel;
 
     //: FFDropDownMenuModel *realMenuModel = (FFDropDownMenuModel *)menuModel;
     UnderBasedModel *realMenuModel = (UnderBasedModel *)menuModel;

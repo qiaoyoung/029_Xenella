@@ -14,9 +14,9 @@
 
 //: @interface ControlPointView : UIView {
 @interface PersonNorView : UIView {
-    , alpha;
-, green, blue//: CGFloat red, green, blue, alpha;
-    CGFloat red}
+    
+//: CGFloat red, green, blue, alpha;
+    CGFloat red, green, blue, alpha;}
 
 //: @property (nonatomic, strong) UIColor* color;
 @property (nonatomic, strong) UIColor* color;
@@ -29,8 +29,8 @@
 
 //: @interface ShadeView : UIView {
 @interface ExclusiveView : UIView {
-    , cropBorderBlue//: CGFloat cropBorderRed, cropBorderGreen, cropBorderBlue, cropBorderAlpha;
-    CGFloat cropBorderRed, cropBorderGreen, cropBorderAlpha;
+    //: CGFloat cropBorderRed, cropBorderGreen, cropBorderBlue, cropBorderAlpha;
+    CGFloat cropBorderRed, cropBorderGreen, cropBorderAlpha, cropBorderBlue;
     //: CGRect cropArea;
     CGRect cropArea;
     //: CGFloat shadeAlpha;

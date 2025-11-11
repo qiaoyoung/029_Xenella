@@ -25,7 +25,7 @@
 #import "CoerceView.h"
 #import "FFFCommonTableData.h"
 #import "FFFGlobalMacro.h"
-#import "FFFKitDependency.h"
+#import "ThyScrollView.h"
 #import "GreatInfo.h"
 #import "NorDelegate.h"
 #import "OralNever.h"

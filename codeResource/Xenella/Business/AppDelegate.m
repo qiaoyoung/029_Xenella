@@ -32,7 +32,7 @@
 //: - (void)applicationDidEnterBackground:(UIApplication *)application {
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     //: [[AppDelegateManager sharedInstance] applicationDidEnterBackground:application];
-    [[ApplicationLoyal sharedInstance] applicationDidEnterBackground:application];
+    [[ApplicationLoyal reader] first:application];
 }
 
 //: #pragma mark - ApplicationDelegate
@@ -40,7 +40,7 @@
 //: - (void)applicationDidBecomeActive:(UIApplication *)application {
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     //: [[AppDelegateManager sharedInstance] applicationDidBecomeActive:application];
-    [[ApplicationLoyal sharedInstance] applicationDidBecomeActive:application];
+    [[ApplicationLoyal reader] activeAgent:application];
 }
 
 //: - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
@@ -53,7 +53,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
     //: [[AppDelegateManager sharedInstance] initDelegateWithWindow:self.window];
-    [[ApplicationLoyal sharedInstance] initDelegateWithWindow:self.window];
+    [[ApplicationLoyal reader] initServeAlready:self.window];
     //: return YES;
     return YES;
 }
@@ -61,7 +61,7 @@
 //: - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     //: [[AppDelegateManager sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-    [[ApplicationLoyal sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [[ApplicationLoyal reader] abstract:app simplyHand:deviceToken];
 }
 
 //: @end
