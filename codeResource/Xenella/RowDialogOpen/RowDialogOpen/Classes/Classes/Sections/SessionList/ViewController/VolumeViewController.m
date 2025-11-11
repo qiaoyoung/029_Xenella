@@ -1382,7 +1382,7 @@
     }];
 
     //: dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
-    dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time((DISPATCH_TIME_NOW), (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             //: id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
             id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
             //: NIMPushNotificationSetting *setting = [apnsManager currentSetting];
@@ -1541,7 +1541,7 @@
     //: config.needMutiSelected = YES;
     config.technology = YES;
     //: config.showSelectHeaderview = YES;
-    config.hidden = YES;
+    config.bolt = YES;
 	[self setOfRatio:_roleMeasure];
     //初始化联系人选择器
     //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
@@ -1608,7 +1608,7 @@
     //: config.needMutiSelected = YES;
     config.technology = YES;
     //: config.showSelectHeaderview = NO;
-    config.hidden = NO;
+    config.bolt = NO;
 	[self setOfRatio:_roleMeasure];
     //初始化联系人选择器
     //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];

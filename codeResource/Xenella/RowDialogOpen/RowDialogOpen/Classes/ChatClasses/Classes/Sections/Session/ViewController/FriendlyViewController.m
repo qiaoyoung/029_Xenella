@@ -1333,7 +1333,7 @@ typedef struct {
     self.speed = nil;
 	[self setGreyish:_incomparable];
     //: [self.interactor setReferenceMessage:nil];
-    [self.saveExcess setBehindHis:nil];
+    [self.saveExcess setReferenceMessage:nil];
 
     //: if ([self.sessionConfig respondsToSelector:@selector(clearThreadMessageAfterSent)])
     if ([self.afterCorrect respondsToSelector:@selector(onComposition)])
@@ -2886,7 +2886,7 @@ typedef struct {
     _speed = message;
 	[self setGreyish:_incomparable];
     //: [self.interactor setReferenceMessage:message];
-    [self.saveExcess setBehindHis:message];
+    [self.saveExcess setReferenceMessage:message];
 
     //: handle = [self shouldShowMenuByMessage:message];
     handle = [self circle:message];
@@ -2981,7 +2981,7 @@ typedef struct {
     _speed = message;
 	[self setGreyish:_incomparable];
     //: [self.interactor setReferenceMessage:message];
-    [self.saveExcess setBehindHis:message];
+    [self.saveExcess setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -3433,7 +3433,7 @@ typedef struct {
     _speed = message;
 	[self setKitAdditional:_additional];
     //: [self.interactor setReferenceMessage:message];
-    [self.saveExcess setBehindHis:message];
+    [self.saveExcess setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;

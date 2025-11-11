@@ -556,7 +556,7 @@ typedef struct {
     if ([self.build respondsToSelector:@selector(extendedAbsolute)])
     {
         //: _selectecContacts = [[self.config alreadySelectedMemberId] mutableCopy];
-        _selectecContacts = [[self.build lipread] mutableCopy];
+        _selectecContacts = [[self.build extendedAbsolute] mutableCopy];
     }
 
     //: _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];

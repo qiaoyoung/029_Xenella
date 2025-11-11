@@ -69,13 +69,13 @@
 @implementation NotebookResistance
 
 //: - (NSString *)showName{
-- (NSString *)turnUpTheHeatContent{
+- (NSString *)behaviorTiming{
     //: return self.info.showName;
     return self.starsAndStripes.bite;
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)factory {
+- (NSString *)already {
     //: NSString *title = [[USERSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[FormatLopeCenter session] valid:self.starsAndStripes.bite].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -92,7 +92,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)quantityId{
+- (NSString *)entity{
     //: return self.info.infoId;
     return self.starsAndStripes.manage;
 }
@@ -139,7 +139,7 @@
 }
 
 //: - (id)sortKey {
-- (id)keepingKey {
+- (id)salt {
     //: return [[USERSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[FormatLopeCenter session] underlying:self.starsAndStripes.bite].timing;
 }
@@ -157,7 +157,7 @@
 }
 
 //: - (NSString *)userId{
-- (NSString *)underlyingId{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.starsAndStripes.manage;
 }
@@ -165,7 +165,7 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)overCircle{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }

@@ -2319,7 +2319,7 @@
     config.technology = YES;
 	[self setTellApartVendor:_scaleVendor];
     //: config.showSelectHeaderview = YES;
-    config.hidden = YES;
+    config.bolt = YES;
     //初始化联系人选择器
     //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
     PreviousViewController *vc = [[PreviousViewController alloc] initWithTap:config];

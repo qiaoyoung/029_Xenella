@@ -182,7 +182,7 @@ typedef NS_ENUM(NSUInteger, UserSessionState) {
 - (void)setRadiocommunication:(UserSessionState)sessionState;
 
 //: - (void)setReferenceMessage:(NIMMessage *)message;
-- (void)setBehindHis:(NIMMessage *)message;
+- (void)setReferenceMessage:(NIMMessage *)message;
 
 //: @end
 @end

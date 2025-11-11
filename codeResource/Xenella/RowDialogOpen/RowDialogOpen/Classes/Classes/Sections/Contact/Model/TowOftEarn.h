@@ -16,11 +16,11 @@
 @protocol DisplacementUnitProtocol <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)headingElectronShell;
+- (NSString *)already;
 //: - (NSString *)memberId;
-- (NSString *)prepareOrScreen;
+- (NSString *)entity;
 //: - (id)sortKey;
-- (id)atTeam;
+- (id)salt;
 
 //: @end
 @end

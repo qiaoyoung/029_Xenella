@@ -50,7 +50,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
  *  默认已经勾选的人或群组
  */
 //: - (NSArray *)alreadySelectedMemberId;
-- (NSArray *)lipread;
+- (NSArray *)extendedAbsolute;
 
 /**
  *  需要过滤的人或群组id
@@ -101,7 +101,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,assign) BOOL technology;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL hidden;
+@property (nonatomic,assign) BOOL bolt;
 
 //: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
 @property (nonatomic,copy) NSArray *extendedAbsolute;
@@ -137,7 +137,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 //: @property (nonatomic,copy) NSString *teamId;
 @property (nonatomic,copy) NSString *custom;
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL bringHome;
+@property (nonatomic,assign) BOOL bolt;
 
 //: @property (nonatomic,assign) BOOL showSelectDetail;
 @property (nonatomic,assign) BOOL minimum;
@@ -167,7 +167,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,copy) NSArray *extendedAbsolute;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL advanced;
+@property (nonatomic,assign) BOOL bolt;
 
 //: @property (nonatomic,assign) BOOL needMutiSelected;
 @property (nonatomic,assign) BOOL area;

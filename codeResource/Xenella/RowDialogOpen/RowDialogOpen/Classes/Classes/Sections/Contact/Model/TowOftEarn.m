@@ -113,7 +113,7 @@
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<USERGroupMemberProtocol> member1, id<USERGroupMemberProtocol> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<DisplacementUnitProtocol> member1, id<DisplacementUnitProtocol> member2) {
             //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _selectRequest([member1 atTeam], [member2 atTeam]);
+            return _selectRequest([member1 salt], [member2 salt]);
         //: }];
         }];
     //: }];
@@ -230,7 +230,7 @@
 - (void)history:(id<DisplacementUnitProtocol>)member
 {
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member headingElectronShell];
+    NSString *groupTitle = [member already];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_roleCamera indexOfObject:groupTitle];
     //: Pair *pair = [_groups objectAtIndex:groupIndex];
@@ -258,7 +258,7 @@
 //: - (void)removeGroupMember:(id<USERGroupMemberProtocol>)member{
 - (void)restriction:(id<DisplacementUnitProtocol>)member{
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member headingElectronShell];
+    NSString *groupTitle = [member already];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_roleCamera indexOfObject:groupTitle];
     //: Pair *pair = [_groups objectAtIndex:groupIndex];
@@ -283,7 +283,7 @@
         //: for (id<USERGroupMemberProtocol> member in members) {
         for (id<DisplacementUnitProtocol> member in members) {
             //: if ([[member memberId] isEqualToString:uid]) {
-            if ([[member prepareOrScreen] isEqualToString:uid]) {
+            if ([[member entity] isEqualToString:uid]) {
                 //: return member;
                 return member;
             }
@@ -306,12 +306,12 @@
     //: for (id<USERGroupMemberProtocol>member in members) {
     for (id<DisplacementUnitProtocol>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member prepareOrScreen] isEqualToString:me]) {
+        if ([[member entity] isEqualToString:me]) {
             //: continue;
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member headingElectronShell];
+        NSString *groupTitle = [member already];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {

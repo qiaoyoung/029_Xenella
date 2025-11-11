@@ -107,7 +107,7 @@ typedef struct {
 @property (nonatomic,strong) UIRefreshControl *refreshControl;
 
 //: @property (nonatomic,weak) id<NIMSessionLayoutDelegate> delegate;
-@property (nonatomic,weak) id<Delegate> delegate;
+@property (nonatomic,weak) id<Delegate> eyeDelegate;
 
 //: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
 @property (nonatomic,strong) id<DistantForceConfig> sessionConfig;
@@ -494,10 +494,10 @@ typedef struct {
 - (void)suspends:(id)sender
 {
     //: if ([self.delegate respondsToSelector:@selector(onRefresh)])
-    if ([self.delegate respondsToSelector:@selector(cookingFlag)])
+    if ([self.eyeDelegate respondsToSelector:@selector(cookingFlag)])
     {
         //: [self.delegate onRefresh];
-        [self.delegate cookingFlag];
+        [self.eyeDelegate cookingFlag];
     }
 }
 

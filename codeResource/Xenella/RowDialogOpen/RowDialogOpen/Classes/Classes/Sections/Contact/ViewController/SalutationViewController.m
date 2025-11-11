@@ -983,17 +983,17 @@ ClassicDelegate> {
             [self performSelector:sel withObject:nil];
         }
         //: else if (contactItem.vcName.length) {
-        else if (contactItem.common.length) {
+        else if (contactItem.vcName.length) {
             //: Class clazz = NSClassFromString(contactItem.vcName);
-            Class clazz = NSClassFromString(contactItem.common);
+            Class clazz = NSClassFromString(contactItem.vcName);
             //: UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
         //: }else if([contactItem respondsToSelector:@selector(userId)]){
-        }else if([contactItem respondsToSelector:@selector(hourFriending)]){
+        }else if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.individualizedId;
+            NSString * friendId = contactItem.userId;
             //: [self enterPersonalCard:friendId];
             [self pass:friendId];
         }
@@ -1895,7 +1895,7 @@ ClassicDelegate> {
     //: config.needMutiSelected = YES;
     config.technology = YES;
     //: config.showSelectHeaderview = YES;
-    config.hidden = YES;
+    config.bolt = YES;
     //初始化联系人选择器
     //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
     PreviousViewController *vc = [[PreviousViewController alloc] initWithTap:config];
@@ -1931,9 +1931,9 @@ ClassicDelegate> {
         //: id<USERContactItem> contactItem = (id<USERContactItem>)[_contacts memberOfIndex:indexPath];
         id<MemberCrop> contactItem = (id<MemberCrop>)[_detail gooseStep:indexPath];
         //: if([contactItem respondsToSelector:@selector(userId)]){
-        if([contactItem respondsToSelector:@selector(hourFriending)]){
+        if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.individualizedId;
+            NSString * friendId = contactItem.userId;
             //: if ([ids containsObject:friendId]) {
             if ([ids containsObject:friendId]) {
                 //: [indexPaths addObject:indexPath];
