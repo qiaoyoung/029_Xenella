@@ -720,13 +720,13 @@ typedef struct {
 - (NSArray<NSNumber *> *)form{
     //: return @[
     return @[
-//        @(FFFInputBarItemTypeMore),
-//        @(FFFInputBarItemTypeEmoticon),
-//             @(FFFInputBarItemTypeVoice),
-             //: @(FFFInputBarItemTypeTextAndRecord),
-             @(FFFInputBarItemTypeTextAndRecord),
-        //: @(FFFInputBarItemTypeSend),
-        @(FFFInputBarItemTypeSend),
+//        @(EnumInputBarItemTypeMore),
+//        @(EnumInputBarItemTypeEmoticon),
+//             @(EnumInputBarItemTypeVoice),
+             //: @(EnumInputBarItemTypeTextAndRecord),
+             @(EnumInputBarItemTypeTextAndRecord),
+        //: @(EnumInputBarItemTypeSend),
+        @(EnumInputBarItemTypeSend),
             //: ];
             ];
 }

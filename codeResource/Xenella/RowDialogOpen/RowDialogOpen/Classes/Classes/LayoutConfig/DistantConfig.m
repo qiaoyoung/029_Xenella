@@ -77,8 +77,8 @@
 #import "DistantConfig.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "ThyScrollView+TaskIdentifyRave.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 
 //: @interface USERChatroomTextContentConfig()
 @interface DistantConfig()

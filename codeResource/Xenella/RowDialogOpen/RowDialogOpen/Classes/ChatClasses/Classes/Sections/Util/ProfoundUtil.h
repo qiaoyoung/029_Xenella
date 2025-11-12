@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 
 //: @interface FFFKitUtil : NSObject
 @interface ProfoundUtil : NSObject

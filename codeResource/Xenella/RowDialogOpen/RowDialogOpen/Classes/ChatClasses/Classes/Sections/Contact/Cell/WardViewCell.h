@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "UniversalVisualize.h"
+#import "UniversalVisualize.h"
 //: #import "FFFKitInfo.h"
 #import "UpInfo.h"
 

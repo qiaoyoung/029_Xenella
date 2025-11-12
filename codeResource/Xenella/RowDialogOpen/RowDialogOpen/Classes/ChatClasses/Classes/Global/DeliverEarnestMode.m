@@ -245,7 +245,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFCommonTableData.m
+//  DeliverEarnestMode.m
 //  NIM
 //
 //  Created by chris on 15/6/26.
@@ -253,8 +253,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DeliverEarnestMode.h"
+#import "DeliverEarnestMode.h"
 
 //: @implementation NIMCommonTableSection
 @implementation CommonMethod

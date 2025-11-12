@@ -21,8 +21,8 @@
 #import "TaskIdentifyRave.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+TaskIdentifyRave.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 
 //: @interface FFFSessionUnknowContentView()
 @interface BindControl()

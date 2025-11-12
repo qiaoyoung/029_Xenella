@@ -361,8 +361,8 @@
 // __M_A_C_R_O__
 //: #import "FFFTeamMemberCardViewController.h"
 #import "OftentimesViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DeliverEarnestMode.h"
+#import "DeliverEarnestMode.h"
 //: #import "FFFCommonTableDelegate.h"
 #import "NorDelegate.h"
 //: #import "FFFAvatarImageView.h"

@@ -266,8 +266,8 @@
 #import "OrbUtil.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 //: #import "FFFKitUtil.h"
 #import "ProfoundUtil.h"
 //: #import "MyUserKit.h"

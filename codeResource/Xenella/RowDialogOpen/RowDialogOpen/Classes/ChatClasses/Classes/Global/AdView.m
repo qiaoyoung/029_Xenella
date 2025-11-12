@@ -116,8 +116,8 @@
 #import "AdView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DeliverEarnestMode.h"
+#import "DeliverEarnestMode.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+TaskIdentifyRave.h"
 

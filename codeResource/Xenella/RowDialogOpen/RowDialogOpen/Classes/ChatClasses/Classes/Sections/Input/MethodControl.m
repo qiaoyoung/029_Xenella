@@ -32,8 +32,8 @@ Byte commonGradName[] = {21, 12, 24, 11, 198, 192, 225, 76, 136, 10, 213, 77, 85
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+TaskIdentifyRave.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 
 //: const NSInteger FFFInputEmoticonTabViewHeight = 44;
 

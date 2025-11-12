@@ -118,8 +118,8 @@
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+TaskIdentifyRave.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
 

@@ -80,8 +80,8 @@
 #import "USERSubscribeDefine.h"
 //: #import "USERDevice.h"
 #import "ThyDevice.h"
-//: #import "FFFExtensionHelper.h"
-#import "FFFExtensionHelper.h"
+//: #import "DeviceBarePreload.h"
+#import "DeviceBarePreload.h"
 
 //: @interface USERSubscribeManager()<NIMEventSubscribeManagerDelegate,NIMConversationManagerDelegate,NIMLoginManagerDelegate,NIMUserManagerDelegate>
 @interface PullProperty()<NIMEventSubscribeManagerDelegate,NIMConversationManagerDelegate,NIMLoginManagerDelegate,NIMUserManagerDelegate>

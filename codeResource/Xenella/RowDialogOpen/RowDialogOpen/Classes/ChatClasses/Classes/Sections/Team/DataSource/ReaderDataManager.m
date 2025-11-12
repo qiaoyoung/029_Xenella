@@ -267,8 +267,8 @@
 // __M_A_C_R_O__
 //: #import "FFFTeamListDataManager.h"
 #import "ReaderDataManager.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
 

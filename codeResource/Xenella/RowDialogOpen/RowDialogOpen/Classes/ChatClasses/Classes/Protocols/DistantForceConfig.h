@@ -15,8 +15,8 @@
 #import "ZonalClearViewport.h"
 //: #import "FFFKitMessageProvider.h"
 #import "ArtisticNational.h"
-//: #import "FFFInputBarItemType.h"
-#import "FFFInputBarItemType.h"
+//: #import "EnumInputBarItemType.h"
+#import "EnumInputBarItemType.h"
 //: #import "FFFInputEmoticonManager.h"
 #import "SignalManager.h"
 
@@ -28,7 +28,7 @@
 @optional
 
 /**
- *  输入按钮类型，请填入 FFFInputBarItemType 枚举，按顺序排列。不实现则按默认排列。
+ *  输入按钮类型，请填入 EnumInputBarItemType 枚举，按顺序排列。不实现则按默认排列。
  */
 //: - (NSArray<NSNumber *> *)inputBarItemTypes;
 - (NSArray<NSNumber *> *)form;

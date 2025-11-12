@@ -329,8 +329,8 @@ Byte themeOptionExamineionLogger[] = {21, 6, 36, 8, 183, 70, 102, 231, 34, 78, 6
 // __M_A_C_R_O__
 //: #import "USERMainCenterViewController.h"
 #import "PullViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DeliverEarnestMode.h"
+#import "DeliverEarnestMode.h"
 //: #import "FFFCommonTableDelegate.h"
 #import "NorDelegate.h"
 //: #import "SVProgressHUD.h"

@@ -229,8 +229,8 @@ InitiatoryData k_ladPlatform = (InitiatoryData){98, (Byte []){11, 17, 17, 23, 18
 #import "TruthRegistManager.h"
 //: #import <CoreTelephony/CTCellularData.h>
 #import <CoreTelephony/CTCellularData.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 //: #import "AppDelegateManager.h"
 #import "ApplicationLoyal.h"
 //: #import "CCCAutoLoginManager.h"

@@ -63,14 +63,14 @@
 // __M_A_C_R_O__
 //: #import "FFFCommonTableDelegate.h"
 #import "NorDelegate.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DeliverEarnestMode.h"
+#import "DeliverEarnestMode.h"
 //: #import "FFFCommonTableViewCell.h"
 #import "UnderCon.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 
 //: @interface FFFCommonTableDelegate()
 @interface NorDelegate()

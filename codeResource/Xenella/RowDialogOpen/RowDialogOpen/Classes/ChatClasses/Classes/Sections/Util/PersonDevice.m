@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "FFFKitDevice.h"
 #import "PersonDevice.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 
 //: @interface FFFKitDevice ()
 @interface PersonDevice ()

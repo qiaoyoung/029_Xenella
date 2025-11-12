@@ -152,8 +152,8 @@
 #import "CoerceView.h"
 //: #import "ThyScrollView.h"
 #import "ThyScrollView.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 //: #import "FFFKitFileLocationHelper.h"
 #import "TowTerrain.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>

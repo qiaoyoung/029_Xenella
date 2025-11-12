@@ -356,8 +356,8 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "FFFKitConfig.h"
 #import "OralNever.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 //: #import "FFFMediaItem.h"
 #import "AdminPaper.h"
 //: #import "UIImage+MyUserKit.h"

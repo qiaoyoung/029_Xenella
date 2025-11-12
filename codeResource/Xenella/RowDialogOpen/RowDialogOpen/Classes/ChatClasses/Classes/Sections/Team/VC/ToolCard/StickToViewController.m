@@ -40,8 +40,8 @@ ElectronCaveData coreSternPreference = (ElectronCaveData){54, (Byte []){85, 89, 
 // __M_A_C_R_O__
 //: #import "FFFTeamCardSelectedViewController.h"
 #import "StickToViewController.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "RobustDecoratorTransformer.h"
+#import "RobustDecoratorTransformer.h"
 //: #import "FFFTeamCartSetTableViewCell.h"
 #import "GroundView.h"
 
