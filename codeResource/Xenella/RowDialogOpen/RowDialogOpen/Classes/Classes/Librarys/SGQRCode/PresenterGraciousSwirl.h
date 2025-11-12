@@ -30,7 +30,7 @@ typedef enum : NSUInteger {
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface SGScanViewConfigure : NSObject
-@interface SearchionConfigure : NSObject
+@interface PresenterGraciousSwirl : NSObject
 /// 类方法创建
 //: + (instancetype)configure;
 + (instancetype)historyConfigure;

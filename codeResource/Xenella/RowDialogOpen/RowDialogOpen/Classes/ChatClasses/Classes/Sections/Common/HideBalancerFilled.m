@@ -86,7 +86,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  SumroduceFirer.m
+//  HideBalancerFilled.m
 // TaskIdentifyRave
 //
 //  Created by chris on 16/6/13.
@@ -95,10 +95,10 @@
 
 // __M_A_C_R_O__
 //: #import "FFFKitNotificationFirer.h"
-#import "SumroduceFirer.h"
+#import "HideBalancerFilled.h"
 
 //: @implementation FFFKitNotificationFirer
-@implementation SumroduceFirer
+@implementation HideBalancerFilled
 
 - (NSTimeInterval)resolve:(NSTimeInterval)exampleCompare {
     //: OC_CUSTOM_PROPERTY_INJECT

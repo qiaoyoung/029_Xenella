@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  SumroduceFirer.h
+//  HideBalancerFilled.h
 // TaskIdentifyRave
 //
 //  Created by chris on 16/6/13.
@@ -20,7 +20,7 @@
 @class RiantCon;
 
 //: @interface FFFKitNotificationFirer : NSObject<FFFKitTimerHolderDelegate>
-@interface SumroduceFirer : NSObject<VolumeDelegate>
+@interface HideBalancerFilled : NSObject<VolumeDelegate>
 
 @property (nonatomic,strong) ArtTowThy *timer;
 

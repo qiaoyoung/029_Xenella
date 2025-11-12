@@ -197,7 +197,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  ThyUimanager.m
+//  LayoutKnownManager.m
 // TaskIdentifyRave
 //
 //  Created by 丁文超 on 2020/3/19.
@@ -206,7 +206,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFChatUIManager.h"
-#import "ThyUimanager.h"
+#import "LayoutKnownManager.h"
 //: #import "FFFContactSelectConfig.h"
 #import "TurnConfig.h"
 //: #import "FFFContactSelectViewController.h"
@@ -217,7 +217,7 @@
 #import "UIView+Ye.h"
 
 //: @implementation FFFChatUIManager
-@implementation ThyUimanager
+@implementation LayoutKnownManager
 
 //: + (instancetype)sharedManager
 + (instancetype)extendBarrier
@@ -225,7 +225,7 @@
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: static FFFChatUIManager *instance;
-    static ThyUimanager *instance;
+    static LayoutKnownManager *instance;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
         //: instance = [self.alloc init];

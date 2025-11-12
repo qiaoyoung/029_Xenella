@@ -19,7 +19,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @protocol FFFChatUIManager <NSObject>
-@protocol ThyUimanager <NSObject>
+@protocol LayoutKnownManager <NSObject>
 
 //: - (void)forwardMessage:(NIMMessage *)message fromViewController:(UIViewController *)fromVC;
 - (void)view:(NIMMessage *)message attach:(UIViewController *)fromVC;

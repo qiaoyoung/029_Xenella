@@ -135,7 +135,7 @@
 //: #import "FFFKitTimerHolder.h"
 #import "ArtTowThy.h"
 //: #import "FFFKitNotificationFirer.h"
-#import "SumroduceFirer.h"
+#import "HideBalancerFilled.h"
 //: #import "FFFKitDataProviderImpl.h"
 #import "SlateYeLoo.h"
 //: #import "FFFCellLayoutConfig.h"
@@ -147,7 +147,7 @@
 //: #import "NSString+MyUserKit.h"
 #import "NSString+TaskIdentifyRave.h"
 //: #import "FFFChatUIManager.h"
-#import "ThyUimanager.h"
+#import "LayoutKnownManager.h"
 
 //: @interface MyUserKit(){
 @interface TaskIdentifyRave(){
@@ -155,7 +155,7 @@
     NSRegularExpression *_urlRegex;
 }
 //: @property (nonatomic,strong) FFFKitNotificationFirer *firer;
-@property (nonatomic,strong) SumroduceFirer *duringLow;
+@property (nonatomic,strong) HideBalancerFilled *duringLow;
 //: @property (nonatomic,strong) id<FFFCellLayoutConfig> layoutConfig;
 @property (nonatomic,strong) id<DenyConfig> factor;
 //: @end
@@ -315,7 +315,7 @@
     //: if (self = [super init]) {
     if (self = [super init]) {
         //: _firer = [[FFFKitNotificationFirer alloc] init];
-        _duringLow = [[SumroduceFirer alloc] init];
+        _duringLow = [[HideBalancerFilled alloc] init];
         //: _provider = [[FFFKitDataProviderImpl alloc] init]; 
         _size = [[SlateYeLoo alloc] init]; //默认使用 TaskIdentifyRave 的实现
         //: _layoutConfig = [[FFFCellLayoutConfig alloc] init];
@@ -357,10 +357,10 @@
 }
 
 //: - (id<FFFChatUIManager>)chatUIManager
-- (id<ThyUimanager>)opera
+- (id<LayoutKnownManager>)opera
 {
     //: return FFFChatUIManager.sharedManager;
-    return ThyUimanager.extendBarrier;
+    return LayoutKnownManager.extendBarrier;
 }
 
 //: - (NSBundle *)emoticonBundle {

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  ThyUimanager.h
+//  LayoutKnownManager.h
 // TaskIdentifyRave
 //
 //  Created by 丁文超 on 2020/3/19.
@@ -18,7 +18,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface FFFChatUIManager : NSObject<FFFChatUIManager>
-@interface ThyUimanager : NSObject<ThyUimanager>
+@interface LayoutKnownManager : NSObject<LayoutKnownManager>
 
 //: + (instancetype)sharedManager;
 + (instancetype)extendBarrier;

@@ -136,14 +136,14 @@
 
 // __M_A_C_R_O__
 //: #import "FFDropDownMenuView.h"
-#import "ShlepView.h"
+#import "ForAlcoveProjector.h"
 //: #import "FFDropDownMenuTriangleView.h"
 #import "RustView.h"
 //: #import "FFDropDownMenu.h"
 #import "FFDropDownMenu.h"
 
 //: @interface FFDropDownMenuView ()<UITableViewDataSource, UITableViewDelegate>
-@interface ShlepView ()<UITableViewDataSource, UITableViewDelegate>
+@interface ForAlcoveProjector ()<UITableViewDataSource, UITableViewDelegate>
 
 /**tableView*/
 /** cell是否是正确格式的cell */
@@ -177,7 +177,7 @@
 @end
 
 //: @implementation FFDropDownMenuView
-@implementation ShlepView
+@implementation ForAlcoveProjector
 
 
 //=================================================================
@@ -1327,7 +1327,7 @@ static NSString *const k_overName (NSString *value) {
 + (instancetype)style:(NSArray *)menuModelsArray model:(CGFloat)menuWidth empty:(CGFloat)eachItemHeight raw:(CGFloat)menuRightMargin margin:(CGFloat)triangleRightMargin {
 
     //: FFDropDownMenuView *menuView = [FFDropDownMenuView new];
-    ShlepView *menuView = [ShlepView new];
+    ForAlcoveProjector *menuView = [ForAlcoveProjector new];
 
     //: menuView.menuModelsArray = menuModelsArray;
     menuView.succeedArray = menuModelsArray;

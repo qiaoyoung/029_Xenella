@@ -13,7 +13,7 @@
 #import <UIKit/UIKit.h>
 
 //: @class SGScanViewConfigure;
-@class SearchionConfigure;
+@class PresenterGraciousSwirl;
 
 //: typedef void(^SGScanViewDoubleTapBlock)(BOOL selected);
 typedef void(^SGScanViewDoubleTapBlock)(BOOL selected);
@@ -23,9 +23,9 @@ typedef void(^SGScanViewDoubleTapBlock)(BOOL selected);
 /// 对象方法创建 CropConView
 ///
 /// @param frame           CropConView 的 frame
-/// @param configure       CropConView 的配置类 SearchionConfigure
+/// @param configure       CropConView 的配置类 PresenterGraciousSwirl
 //: - (instancetype)initWithFrame:(CGRect)frame configure:(SGScanViewConfigure *)configure;
-- (instancetype)initWithFound:(CGRect)frame line:(SearchionConfigure *)configure;
+- (instancetype)initWithFound:(CGRect)frame line:(PresenterGraciousSwirl *)configure;
 
 /// 停止扫描
 //: - (void)stopScanning;
@@ -57,9 +57,9 @@ typedef void(^SGScanViewDoubleTapBlock)(BOOL selected);
 /// 类方法创建 CropConView
 ///
 /// @param frame           CropConView 的 frame
-/// @param configure       CropConView 的配置类 SearchionConfigure
+/// @param configure       CropConView 的配置类 PresenterGraciousSwirl
 //: + (instancetype)scanViewWithFrame:(CGRect)frame configure:(SGScanViewConfigure *)configure;
-+ (instancetype)pull:(CGRect)frame with:(SearchionConfigure *)configure;
++ (instancetype)pull:(CGRect)frame with:(PresenterGraciousSwirl *)configure;
 
 //: @end
 @end

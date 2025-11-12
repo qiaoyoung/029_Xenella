@@ -643,7 +643,7 @@
 //: #import "FFDropDownMenu.h"
 #import "FFDropDownMenu.h"
 //: #import "FFDropDownMenuView.h"
-#import "ShlepView.h"
+#import "ForAlcoveProjector.h"
 //: #import "USERFriendListTableViewCell.h"
 #import "RecordViewCell.h"
 //: #import "FFFKitFileLocationHelper.h"

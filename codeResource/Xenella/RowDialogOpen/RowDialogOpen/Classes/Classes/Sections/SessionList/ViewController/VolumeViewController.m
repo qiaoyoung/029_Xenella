@@ -767,7 +767,7 @@
 //: #import "FFDropDownMenu.h"
 #import "FFDropDownMenu.h"
 //: #import "FFDropDownMenuView.h"
-#import "ShlepView.h"
+#import "ForAlcoveProjector.h"
 //: #import "USERContactAddFriendViewController.h"
 #import "DragViewController.h"
 //: #import "CCCContactScanViewController.h"
@@ -818,7 +818,7 @@
 
 //: @property (nonatomic, strong) ZMONCustomLoadingView *loadingView;
 @property (nonatomic, strong) SinCustomView *joinTotal;
-@property (nonatomic, strong) ShlepView *version;//: @property (nonatomic, strong) HealBindView *policyView;
+@property (nonatomic, strong) ForAlcoveProjector *version;//: @property (nonatomic, strong) HealBindView *policyView;
 @property (nonatomic, strong) HealBindView *policy;
 
 //: @property (nonatomic, strong) USERNotificationView *noticeView;
@@ -1099,7 +1099,7 @@
 
 
     //: self.dropdownMenu = [FFDropDownMenuView new];
-    self.version = [ShlepView new];
+    self.version = [ForAlcoveProjector new];
 
      //进行属性的赋值
 

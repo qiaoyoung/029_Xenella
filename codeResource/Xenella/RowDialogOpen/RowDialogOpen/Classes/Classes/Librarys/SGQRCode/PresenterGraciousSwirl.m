@@ -75,10 +75,10 @@
 
 // __M_A_C_R_O__
 //: #import "SGScanViewConfigure.h"
-#import "SearchionConfigure.h"
+#import "PresenterGraciousSwirl.h"
 
 //: @implementation SGScanViewConfigure
-@implementation SearchionConfigure
+@implementation PresenterGraciousSwirl
 
 //: - (UIColor *)cornerColor {
 - (UIColor *)edit {

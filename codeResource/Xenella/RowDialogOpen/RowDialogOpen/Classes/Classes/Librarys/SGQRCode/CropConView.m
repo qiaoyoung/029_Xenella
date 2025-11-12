@@ -12,7 +12,7 @@
 //: #import "SGScanView.h"
 #import "CropConView.h"
 //: #import "SGScanViewConfigure.h"
-#import "SearchionConfigure.h"
+#import "PresenterGraciousSwirl.h"
 //: #import "SGWeakProxy.h"
 #import "OkProxy.h"
 //: #import "SGQRCodeLog.h"
@@ -23,7 +23,7 @@
 //: @property (nonatomic, assign) BOOL isTop;
 @property (nonatomic, assign) BOOL distance;
 //: @property (nonatomic, strong) SGScanViewConfigure *configure;
-@property (nonatomic, strong) SearchionConfigure *priorityConvert;
+@property (nonatomic, strong) PresenterGraciousSwirl *priorityConvert;
 //: @property (nonatomic, assign) BOOL isSelected;
 @property (nonatomic, assign) BOOL adjust;
 @property (nonatomic, assign) BOOL information;
@@ -239,7 +239,7 @@
 }
 
 //: - (instancetype)initWithFrame:(CGRect)frame configure:(SGScanViewConfigure *)configure {
-- (instancetype)initWithFound:(CGRect)frame line:(SearchionConfigure *)configure {
+- (instancetype)initWithFound:(CGRect)frame line:(PresenterGraciousSwirl *)configure {
     //: if (self = [super initWithFrame:frame]) {
     if (self = [super initWithFrame:frame]) {
         //: self.configure = configure;
@@ -489,7 +489,7 @@
 }
 
 //: + (instancetype)scanViewWithFrame:(CGRect)frame configure:(SGScanViewConfigure *)configure {
-+ (instancetype)pull:(CGRect)frame with:(SearchionConfigure *)configure {
++ (instancetype)pull:(CGRect)frame with:(PresenterGraciousSwirl *)configure {
     //: return [[SGScanView alloc] initWithFrame:frame configure:configure];
     return [[CropConView alloc] initWithFound:frame line:configure];
 }

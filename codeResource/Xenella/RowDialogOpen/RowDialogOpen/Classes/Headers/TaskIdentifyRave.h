@@ -168,7 +168,7 @@ extern const unsigned char kSwitchingPath[];
  * 聊天模块常用UI方法
  */
 //: @property (nonatomic, readonly) id<FFFChatUIManager> chatUIManager;
-@property (nonatomic, readonly) id<ThyUimanager> opera;
+@property (nonatomic, readonly) id<LayoutKnownManager> opera;
 
 /**
  *  NIMKit语言所在Table，默认 获取系统语言

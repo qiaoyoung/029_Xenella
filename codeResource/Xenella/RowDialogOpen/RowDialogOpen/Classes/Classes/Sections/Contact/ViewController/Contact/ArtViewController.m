@@ -359,7 +359,7 @@
     //: if (!_scanView) {
     if (!_activeView) {
         //: SGScanViewConfigure *configure = [[SGScanViewConfigure alloc] init];
-        SearchionConfigure *configure = [[SearchionConfigure alloc] init];
+        PresenterGraciousSwirl *configure = [[PresenterGraciousSwirl alloc] init];
 
         //: CGFloat x = 0;
         CGFloat x = 0;
