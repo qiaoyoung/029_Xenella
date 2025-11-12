@@ -1654,7 +1654,7 @@
     self.deepness.disputation.viaText = nil;
 
     //: NSString *placeholder = [MyUserKit sharedKit].config.placeholder;
-    NSString *placeholder = [TaskIdentifyRave collect].identify.addressFollow;
+    NSString *placeholder = [TaskIdentifyRave collect].identify.placeholder;
     //: [_toolBar setPlaceHolder:placeholder];
     [_deepness setValidHolder:placeholder];
 

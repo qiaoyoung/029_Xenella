@@ -471,8 +471,7 @@ static const void *spacingWindowPath = &spacingWindowPath;
     return textViewHeightDidChanged;
 }
 
-//: - (void)setPlaceholder:(NSString *)placeholder
-- (void)setAddressFollow:(NSString *)placeholder
+- (void)setPlaceholder:(NSString *)placeholder
 {
     // 为placeholder赋值
     //: [self placeholderView].text = placeholder;
@@ -597,8 +596,7 @@ static const char *widgetBlowKey (NSString *value) {
     objc_setAssociatedObject(self, widgetBlowKey(nil), sightFamily, OBJC_ASSOCIATION_RETAIN);
 }
 
-//: - (NSString *)placeholder
-- (NSString *)addressFollow
+- (NSString *)placeholder
 {
     // 如果有placeholder值才去调用，这步很重要
     //: if (self.placeholderExist) {

@@ -1172,7 +1172,7 @@
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     _passageForbidWorldView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"report_info"];
-    _passageForbidWorldView.addressFollow = [RaveFirst extent:[PlusData k_inspectorDevice]];
+    _passageForbidWorldView.placeholder = [RaveFirst extent:[PlusData k_inspectorDevice]];
 	[self setConstraint:_greenFlowLayout];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _passageForbidWorldView.backgroundColor = [UIColor whiteColor];

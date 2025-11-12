@@ -23,7 +23,7 @@ typedef void(^textViewHeightDidChangedBlock)(CGFloat currentTextViewHeight);
 //: @property (nonatomic, assign) CGFloat minHeight;
 @property (nonatomic, assign) CGFloat successSavingFloat;
 //: @property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, copy) NSString *addressFollow;
+@property (nonatomic, copy) NSString *placeholder;
 /* 最大高度，如果需要随文字改变高度的时候使用 */
 //: @property (nonatomic, assign) CGFloat maxHeight;
 @property (nonatomic, assign) CGFloat property;

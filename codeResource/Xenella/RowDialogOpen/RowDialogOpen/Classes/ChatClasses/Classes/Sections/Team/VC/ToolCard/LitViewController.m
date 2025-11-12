@@ -409,7 +409,7 @@
     //: self.contentTextView.delegate = self;
     self.contentTextView.delegate = self;
     //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
-    self.contentTextView.addressFollow = [RaveFirst extent:[[ApparentData sharedInstance] spacingBoutSuccessLogger]];
+    self.contentTextView.placeholder = [RaveFirst extent:[[ApparentData sharedInstance] spacingBoutSuccessLogger]];
     //: self.contentTextView.text = self.defaultContent;
     self.contentTextView.text = [self waterFinder:self.defaultContent];
 	[self setFactoryItemView:_numLabel];

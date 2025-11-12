@@ -23,7 +23,7 @@
 
 
 //: @dynamic placeholder;
-@dynamic addressFollow;
+@dynamic placeholder;
 //: @dynamic placeholderLabel;
 @dynamic expression;
 //: @dynamic textValue;
@@ -72,8 +72,7 @@ NSString const *viewTeamName = @"kKeyLabel";
 
 //: NSString const *kKeyPlaceHolder = @"kKeyPlaceHolder";
 NSString const *layoutApartAlert = @"kKeyPlaceHolder";
-//: -(void)setPlaceholder:(NSString *)_placeholder
--(void)setAddressFollow:(NSString *)_placeholder
+-(void)setPlaceholder:(NSString *)_placeholder
 {
     //  Sets our "placeholder" text string, creates a new UILabel to contain it, and modifies our UITextView to cope with
     //  showing/hiding the UILabel when needed.
@@ -121,8 +120,7 @@ NSString const *layoutApartAlert = @"kKeyPlaceHolder";
     [self progress];
 }
 
-//: -(NSString*)placeholder
--(NSString*)addressFollow
+-(NSString*)placeholder
 {
     //  Returns our "placeholder" text string
     //: return objc_getAssociatedObject(self, &kKeyPlaceHolder);

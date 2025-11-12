@@ -275,7 +275,7 @@ typedef struct {
     //: self.contentTextView.delegate = self;
     self.clear.delegate = self;
     //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
-    self.clear.addressFollow = [RaveFirst extent:[SoundData appBrothAniPage]];
+    self.clear.placeholder = [RaveFirst extent:[SoundData appBrothAniPage]];
     //: self.contentTextView.text = self.defaultContent;
     self.clear.text = self.sinText;
     //: [contentView addSubview:self.contentTextView];

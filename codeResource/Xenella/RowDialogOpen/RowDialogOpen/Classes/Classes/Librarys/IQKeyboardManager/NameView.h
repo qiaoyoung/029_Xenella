@@ -47,7 +47,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @property(nullable, nonatomic,copy) IBInspectable UIColor *instalmentAttach;
 
 //: @property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
-@property(nullable, nonatomic,copy) IBInspectable NSString *addressFollow;
+@property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
 
 /**
  Set textView's placeholder attributed text. Default is nil.

@@ -46,7 +46,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @implementation NameView
 
 //: @synthesize placeholder = _placeholder;
-@synthesize addressFollow = _during;
+@synthesize placeholder = _during;
 //: @synthesize placeholderLabel = _placeholderLabel;
 @synthesize expression = _log;
 //: @synthesize placeholderTextColor = _placeholderTextColor;
@@ -109,8 +109,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     return CGRectMake(placeholderInsets.left, placeholderInsets.top, maxWidth, expectedSize.height);
 }
 
-//: -(void)setPlaceholder:(NSString *)placeholder
--(void)setAddressFollow:(NSString *)placeholder
+-(void)setPlaceholder:(NSString *)placeholder
 {
     //: _placeholder = placeholder;
     _during = placeholder;

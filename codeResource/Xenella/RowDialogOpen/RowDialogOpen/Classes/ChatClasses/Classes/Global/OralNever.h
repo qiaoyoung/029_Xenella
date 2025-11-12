@@ -87,7 +87,7 @@ typedef NS_ENUM(NSInteger,MyUserAvatarType) {
  *  输入框的占位符
  */
 //: @property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, copy) NSString *addressFollow;
+@property (nonatomic, copy) NSString *placeholder;
 
 /**
  *  录音的最大时长

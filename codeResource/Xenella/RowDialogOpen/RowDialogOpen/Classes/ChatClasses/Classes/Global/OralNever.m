@@ -481,7 +481,7 @@ typedef struct {
     _listener = 60.f;
 	[self setPicture:_point];
     //: _placeholder = [FFFLanguageManager getTextWithKey:@"message_please_enter_content"];
-    _addressFollow = [RaveFirst extent:[StudData widgetPlaceFormat]];
+    _placeholder = [RaveFirst extent:[StudData widgetPlaceFormat]];
 	[self setPicture:_point];//@"请输入消息".;
     //: _inputMaxLength = 1000;
     _necessary = 1000;

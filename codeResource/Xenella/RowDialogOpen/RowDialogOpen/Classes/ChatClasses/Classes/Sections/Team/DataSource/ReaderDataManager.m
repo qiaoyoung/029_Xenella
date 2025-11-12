@@ -276,7 +276,7 @@
 @interface ReaderDataManager ()<NIMTeamManagerDelegate>
 
 //: @property (nonatomic, strong) NIMSession *session;
-@property (nonatomic, strong) NIMSession *alwaysSubmit;
+@property (nonatomic, strong) NIMSession *appropriate;
 //: @property (nonatomic, strong) NIMTeam *team;
 @property (nonatomic, strong) NIMTeam *game;
 
@@ -1366,7 +1366,7 @@
         _prop = team;
 	[self setGame:_prop];
         //: _session = session;
-        _alwaysSubmit = session;
+        _appropriate = session;
         //: if (team.type == NIMTeamTypeSuper) {
         if (team.type == NIMTeamTypeSuper) {
             //: [[NIMSDK sharedSDK].superTeamManager addDelegate:self];

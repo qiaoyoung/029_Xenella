@@ -236,7 +236,7 @@ typedef struct {
         //: _textView.textColor = [UIColor colorWithHexString:@"#333333"];
         _cleanTextView.textColor = [UIColor deal:[[IceData sharedInstance] moduleInspectorValue]];
         //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
-        _cleanTextView.addressFollow = [RaveFirst extent:[[IceData sharedInstance] commonPlayText]];
+        _cleanTextView.placeholder = [RaveFirst extent:[[IceData sharedInstance] commonPlayText]];
         //: _textView.delegate = self;
         _cleanTextView.delegate = self;
 //        _textView.textContainerInset = UIEdgeInsetsMake(20, 20, 20, 20);

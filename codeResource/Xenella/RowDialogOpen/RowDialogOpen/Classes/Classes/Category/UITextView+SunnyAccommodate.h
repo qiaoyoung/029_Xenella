@@ -18,7 +18,7 @@
 //: @property (nonatomic, strong) UILabel * placeholderLabel;
 @property (nonatomic, strong) UILabel * expression;
 //: @property (nonatomic, strong) NSString* placeholder;
-@property (nonatomic, strong) NSString* addressFollow;
+@property (nonatomic, strong) NSString* placeholder;
 //: @property (nonatomic, strong) NSString* textValue;
 @property (nonatomic, strong) NSString* publication;
 
