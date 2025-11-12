@@ -18,7 +18,7 @@
 @class MessageDistant;
 
 //: @protocol FFFCellLayoutConfig <NSObject>
-@protocol DenyConfig <NSObject>
+@protocol DenyBalance <NSObject>
 
 //: @optional
 @optional

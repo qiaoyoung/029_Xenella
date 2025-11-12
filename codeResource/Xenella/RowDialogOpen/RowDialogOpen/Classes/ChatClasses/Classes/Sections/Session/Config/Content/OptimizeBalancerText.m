@@ -12,7 +12,7 @@
 //: #import "OptimizeBalancerText.h"
 #import "OptimizeBalancerText.h"
 //: #import "FFFTextContentConfig.h"
-#import "HarvestConfig.h"
+#import "HarvestBalance.h"
 //: #import "FFFImageContentConfig.h"
 #import "BesideClassic.h"
 //: #import "FFFAudioContentConfig.h"
@@ -20,17 +20,17 @@
 //: #import "FFFVideoContentConfig.h"
 #import "NoisemakerClassic.h"
 //: #import "FFFFileContentConfig.h"
-#import "FormatConfig.h"
+#import "FormatBalance.h"
 //: #import "FFFNotificationContentConfig.h"
-#import "OkConfig.h"
+#import "DataHarvestBalance.h"
 //: #import "FFFLocationContentConfig.h"
 #import "UnsharedDistant.h"
 //: #import "FFFUnsupportContentConfig.h"
 #import "TerrainDistance.h"
 //: #import "FFFTipContentConfig.h"
-#import "AssemblageConfig.h"
+#import "AssemblageBalance.h"
 //: #import "FFFReplyedTextContentConfig.h"
-#import "PrevueConfig.h"
+#import "PrevueBalance.h"
 //: #import "FFFRtcCallRecordContentConfig.h"
 #import "OralSin.h"
 
@@ -106,7 +106,7 @@
     if (self = [super init])
     {
         //: _dict = @{@(NIMMessageTypeText) : [FFFTextContentConfig new],
-        _dict = @{@(NIMMessageTypeText) : [HarvestConfig new],
+        _dict = @{@(NIMMessageTypeText) : [HarvestBalance new],
                   //: @(NIMMessageTypeImage) : [FFFImageContentConfig new],
                   @(NIMMessageTypeImage) : [BesideClassic new],
                   //: @(NIMMessageTypeAudio) : [FFFAudioContentConfig new],
@@ -114,20 +114,20 @@
                   //: @(NIMMessageTypeVideo) : [FFFVideoContentConfig new],
                   @(NIMMessageTypeVideo) : [NoisemakerClassic new],
                   //: @(NIMMessageTypeFile) : [FFFFileContentConfig new],
-                  @(NIMMessageTypeFile) : [FormatConfig new],
+                  @(NIMMessageTypeFile) : [FormatBalance new],
                   //: @(NIMMessageTypeLocation) : [FFFLocationContentConfig new],
                   @(NIMMessageTypeLocation) : [UnsharedDistant new],
                   //: @(NIMMessageTypeNotification) : [FFFNotificationContentConfig new],
-                  @(NIMMessageTypeNotification) : [OkConfig new],
+                  @(NIMMessageTypeNotification) : [DataHarvestBalance new],
                   //: @(NIMMessageTypeTip) : [FFFTipContentConfig new],
-                  @(NIMMessageTypeTip) : [AssemblageConfig new],
+                  @(NIMMessageTypeTip) : [AssemblageBalance new],
                   //: @(NIMMessageTypeRtcCallRecord): [FFFRtcCallRecordContentConfig new],
                   @(NIMMessageTypeRtcCallRecord): [OralSin new],
         //: };
         };
 
         //: FFFReplyedTextContentConfig *replyedTextConfig = [FFFReplyedTextContentConfig new];
-        PrevueConfig *replyedTextConfig = [PrevueConfig new];
+        PrevueBalance *replyedTextConfig = [PrevueBalance new];
         //: _replyDict = @{
         _replyDict = @{
             //: @(NIMMessageTypeText) : replyedTextConfig,

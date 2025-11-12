@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TurnConfig.h
+//  TurnBalance.h
 // TaskIdentifyRave
 //
 //  Created by chris on 15/9/14.
@@ -23,7 +23,7 @@
 typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *titles);
 
 //: @protocol FFFContactSelectConfig <NSObject>
-@protocol TurnConfig <NSObject>
+@protocol TurnBalance <NSObject>
 
 //: @optional
 @optional
@@ -95,7 +95,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
  *  内置配置-选择好友
  */
 //: @interface NIMContactFriendSelectConfig : NSObject<FFFContactSelectConfig>
-@interface SteadDing : NSObject<TurnConfig>
+@interface SteadDing : NSObject<TurnBalance>
 
 //: @property (nonatomic,assign) BOOL needMutiSelected;
 @property (nonatomic,assign) BOOL technology;
@@ -122,7 +122,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
  *  内置配置-选择群成员
  */
 //: @interface NIMContactTeamMemberSelectConfig : NSObject<FFFContactSelectConfig>
-@interface TaskTeamConfig : NSObject<TurnConfig>
+@interface TaskTeamConfig : NSObject<TurnBalance>
 
 //: @property (nonatomic,assign) BOOL needMutiSelected;
 @property (nonatomic,assign) BOOL reason;
@@ -161,7 +161,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
  *  内置配置-选择群
  */
 //: @interface NIMContactTeamSelectConfig : NSObject<FFFContactSelectConfig>
-@interface ArtisticConfig : NSObject<TurnConfig>
+@interface ArtisticConfig : NSObject<TurnBalance>
 
 //: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
 @property (nonatomic,copy) NSArray *extendedAbsolute;

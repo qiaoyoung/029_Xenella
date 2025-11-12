@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  PrevueConfig.m
+//  PrevueBalance.m
 // TaskIdentifyRave
 //
 //  Created by He on 2020/3/25.
@@ -10,14 +10,14 @@
 
 // __M_A_C_R_O__
 //: #import "FFFReplyedTextContentConfig.h"
-#import "PrevueConfig.h"
+#import "PrevueBalance.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "ThyScrollView+TaskIdentifyRave.h"
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
 
 //: @interface FFFReplyedTextContentConfig ()
-@interface PrevueConfig ()
+@interface PrevueBalance ()
 
 //: @property (nonatomic,strong) StringAttributedLabel *label;
 @property (nonatomic,strong) ThyScrollView *color;
@@ -27,7 +27,7 @@
 @end
 
 //: @implementation FFFReplyedTextContentConfig
-@implementation PrevueConfig
+@implementation PrevueBalance
 
 
 - (ThyScrollView *)two:(ThyScrollView *)color {

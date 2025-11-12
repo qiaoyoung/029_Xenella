@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DistantConfig.h
+//  DistantBalance.h
 //  NIM
 //
 //  Created by chris on 16/1/13.
@@ -13,7 +13,7 @@
 #import "OptimizeBalancerText.h"
 
 //: @interface USERChatroomTextContentConfig : NSObject<CCCSessionContentConfig>
-@interface DistantConfig : NSObject<HealMember>
+@interface DistantBalance : NSObject<HealMember>
 
 
 //: @end

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  OkConfig.h
+//  DataHarvestBalance.h
 // TaskIdentifyRave
 //
 //  Created by amao on 9/15/15.
@@ -13,7 +13,7 @@
 #import "OptimizeBalancerText.h"
 
 //: @interface FFFNotificationContentConfig : NSObject<CCCSessionContentConfig>
-@interface OkConfig : NSObject<HealMember>
+@interface DataHarvestBalance : NSObject<HealMember>
 
 //: @end
 @end

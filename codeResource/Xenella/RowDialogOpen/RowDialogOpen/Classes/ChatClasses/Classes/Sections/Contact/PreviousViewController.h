@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 //: #import "FFFContactSelectConfig.h"
-#import "TurnConfig.h"
+#import "TurnBalance.h"
 
 //: typedef void(^ContactSelectFinishBlock)(NSArray *uids, NSString *groupName, UIImage *avater);
 typedef void(^ContactSelectFinishBlock)(NSArray *uids, NSString *groupName, UIImage *avater);
@@ -52,7 +52,7 @@ typedef void(^ContactSelectCancelBlock)(void);
 //: @property (nonatomic, copy) ContactSelectFinishBlock finshBlock;
 @property (nonatomic, copy) ContactSelectFinishBlock elect;
 //: @property (nonatomic, strong, readonly) id<FFFContactSelectConfig> config;
-@property (nonatomic, strong, readonly) id<TurnConfig> build;
+@property (nonatomic, strong, readonly) id<TurnBalance> build;
 
 @property (nonatomic, strong, readonly) UITableView *springTableView;
 
@@ -70,7 +70,7 @@ typedef void(^ContactSelectCancelBlock)(void);
  *  @return 选择器
  */
 //: - (instancetype)initWithConfig:(id<FFFContactSelectConfig>) config;
-- (instancetype)initWithTap:(id<TurnConfig>) config;
+- (instancetype)initWithTap:(id<TurnBalance>) config;
 
 //: @end
 @end

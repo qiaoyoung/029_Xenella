@@ -208,7 +208,7 @@
 //: #import "FFFChatUIManager.h"
 #import "LayoutKnownManager.h"
 //: #import "FFFContactSelectConfig.h"
-#import "TurnConfig.h"
+#import "TurnBalance.h"
 //: #import "FFFContactSelectViewController.h"
 #import "PreviousViewController.h"
 //: #import "FFFKitInfoFetchOption.h"

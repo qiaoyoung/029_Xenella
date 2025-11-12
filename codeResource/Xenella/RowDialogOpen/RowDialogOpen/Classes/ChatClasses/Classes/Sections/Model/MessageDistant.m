@@ -138,7 +138,7 @@
     if (UIEdgeInsetsEqualToEdgeInsets(_bubbleViewInsets, UIEdgeInsetsZero))
     {
         //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-        id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+        id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
         //: _bubbleViewInsets = [layoutConfig cellInsets:self];
         _bubbleViewInsets = [layoutConfig personification:self];
 	[self setBoard:_renaissance];
@@ -170,7 +170,7 @@
     if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
     {
         //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-        id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+        id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
         //: _replyBubbleViewInsets = [layoutConfig replyCellInsets:self];
         _replyBubbleViewInsets = [layoutConfig trice:self];
     }
@@ -231,7 +231,7 @@
 - (CGSize)remainSize:(CGFloat)width
 {
     //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-    id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+    id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
     //: CGSize size = [layoutConfig replyContentSize:self cellWidth:width];
     CGSize size = [layoutConfig pause:self monitor:width];
     //: return size;
@@ -244,7 +244,7 @@
     if (UIEdgeInsetsEqualToEdgeInsets(_contentViewInsets, UIEdgeInsetsZero))
     {
         //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-        id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+        id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
         //: _contentViewInsets = [layoutConfig contentViewInsets:self];
         _contentViewInsets = [layoutConfig aggregation:self];
 	[self setCell:self.searched];
@@ -262,7 +262,7 @@
 - (void)directionConfig
 {
     //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-    id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+    id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
 
     //: _shouldShowAvatar = [layoutConfig shouldShowAvatar:self];
     _shouldShowAvatar = [layoutConfig moveAvatar:self];
@@ -350,7 +350,7 @@
         //: [self updateLayoutConfig];
         [self directionConfig];
         //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-        id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+        id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
         //: size = [layoutConfig contentSize:self cellWidth:width];
         size = [layoutConfig ruleBook:self compartmentWidth:width];
 	[self setBoard:_renaissance];
@@ -433,7 +433,7 @@
     if (UIEdgeInsetsEqualToEdgeInsets(_replyContentViewInsets, UIEdgeInsetsZero))
     {
         //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-        id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+        id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
         //: _replyContentViewInsets = [layoutConfig replyContentViewInsets:self];
         _replyContentViewInsets = [layoutConfig fencingStick:self];
 	[self setBoard:_renaissance];

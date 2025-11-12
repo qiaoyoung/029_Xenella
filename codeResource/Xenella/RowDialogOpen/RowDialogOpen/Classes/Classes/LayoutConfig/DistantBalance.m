@@ -65,7 +65,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DistantConfig.m
+//  DistantBalance.m
 //  NIM
 //
 //  Created by chris on 16/1/13.
@@ -74,14 +74,14 @@
 
 // __M_A_C_R_O__
 //: #import "USERChatroomTextContentConfig.h"
-#import "DistantConfig.h"
+#import "DistantBalance.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "ThyScrollView+TaskIdentifyRave.h"
 //: #import "RobustDecoratorTransformer.h"
 #import "RobustDecoratorTransformer.h"
 
 //: @interface USERChatroomTextContentConfig()
-@interface DistantConfig()
+@interface DistantBalance()
 
 //: @property (nonatomic, strong) StringAttributedLabel *label;
 @property (nonatomic, strong) ThyScrollView *drawing;
@@ -90,7 +90,7 @@
 @end
 
 //: @implementation USERChatroomTextContentConfig
-@implementation DistantConfig
+@implementation DistantBalance
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)terminated:(CGFloat)cellWidth incident:(NIMMessage *)message

@@ -139,7 +139,7 @@
 //: #import "FFFKitDataProviderImpl.h"
 #import "SlateYeLoo.h"
 //: #import "FFFCellLayoutConfig.h"
-#import "DenyConfig.h"
+#import "DenyBalance.h"
 //: #import "FFFKitInfoFetchOption.h"
 #import "TerrainLot.h"
 //: #import "NSBundle+MyUserKit.h"
@@ -157,7 +157,7 @@
 //: @property (nonatomic,strong) FFFKitNotificationFirer *firer;
 @property (nonatomic,strong) HideBalancerFilled *duringLow;
 //: @property (nonatomic,strong) id<FFFCellLayoutConfig> layoutConfig;
-@property (nonatomic,strong) id<DenyConfig> factor;
+@property (nonatomic,strong) id<DenyBalance> factor;
 //: @end
 @end
 
@@ -165,17 +165,17 @@
 //: @implementation MyUserKit
 @implementation TaskIdentifyRave
 //: - (id<FFFCellLayoutConfig>)layoutConfig
-- (id<DenyConfig>)factor
+- (id<DenyBalance>)factor
 {
     //: return _layoutConfig;
     return _factor;
 }
 
 //: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig
-- (void)expandConfig:(DenyConfig *)layoutConfig
+- (void)expandConfig:(DenyBalance *)layoutConfig
 {
     //: if ([layoutConfig isKindOfClass:[FFFCellLayoutConfig class]])
-    if ([layoutConfig isKindOfClass:[DenyConfig class]])
+    if ([layoutConfig isKindOfClass:[DenyBalance class]])
     {
         //: self.layoutConfig = layoutConfig;
         self.factor = layoutConfig;
@@ -319,7 +319,7 @@
         //: _provider = [[FFFKitDataProviderImpl alloc] init]; 
         _size = [[SlateYeLoo alloc] init]; //默认使用 TaskIdentifyRave 的实现
         //: _layoutConfig = [[FFFCellLayoutConfig alloc] init];
-        _factor = [[DenyConfig alloc] init];
+        _factor = [[DenyBalance alloc] init];
         //: [self preloadNIMKitBundleResource];
         [self behavior];
     }

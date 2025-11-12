@@ -133,7 +133,7 @@ DisturbData screenAssPage = (DisturbData){242, (Byte []){215, 136, 150, 22, 72, 
     if (_bubbleView == nil)
     {
         //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-        id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+        id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
         //: NSString *contentStr = [layoutConfig cellContent:self.model];
         NSString *contentStr = [layoutConfig graceContent:self.model];
         //: NSAssert([contentStr length] > 0, @"should offer cell content class name");
@@ -810,7 +810,7 @@ DisturbData screenAssPage = (DisturbData){242, (Byte []){215, 136, 150, 22, 72, 
 - (BOOL)prep
 {
     //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-    id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+    id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
     //: BOOL disable = NO;
     BOOL disable = NO;
     //: if ([layoutConfig respondsToSelector:@selector(disableRetryButton:)])
@@ -882,7 +882,7 @@ DisturbData screenAssPage = (DisturbData){242, (Byte []){215, 136, 150, 22, 72, 
         [view removeFromSuperview];
     }
     //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-    id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+    id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
     //: self.customViews = [layoutConfig customViews:self.model];
     self.customViews = [layoutConfig capability:self.model];
 	[self setMessageView:_selectButton];
@@ -1298,7 +1298,7 @@ DisturbData screenAssPage = (DisturbData){242, (Byte []){215, 136, 150, 22, 72, 
 //    {
 //        if (!_replyedBubbleView)
 //        {
-//            id<DenyConfig> layoutConfig = [[TaskIdentifyRave sharedKit] layoutConfig];
+//            id<DenyBalance> layoutConfig = [[TaskIdentifyRave sharedKit] layoutConfig];
 //            NSString *contentStr = [layoutConfig replyContent:self.model];
 //            NSAssert([contentStr length] > 0, @"should offer cell content class name");
 //            Class clazz = NSClassFromString(contentStr);
@@ -1324,7 +1324,7 @@ DisturbData screenAssPage = (DisturbData){242, (Byte []){215, 136, 150, 22, 72, 
         if (!_replyedBubbleView)
         {
             //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-            id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+            id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
             //: NSString *contentStr = [layoutConfig replyContent:self.model];
             NSString *contentStr = [layoutConfig secondary:self.model];
             //: NSAssert([contentStr length] > 0, @"should offer cell content class name");

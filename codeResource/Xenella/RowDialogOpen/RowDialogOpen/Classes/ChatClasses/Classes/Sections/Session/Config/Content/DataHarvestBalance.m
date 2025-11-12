@@ -13,7 +13,7 @@ Byte kCaveValue[] = {22, 30, 12, 11, 20, 117, 160, 194, 93, 195, 80, 97, 89, 103
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  OkConfig.m
+//  DataHarvestBalance.m
 // TaskIdentifyRave
 //
 //  Created by amao on 9/15/15.
@@ -22,7 +22,7 @@ Byte kCaveValue[] = {22, 30, 12, 11, 20, 117, 160, 194, 93, 195, 80, 97, 89, 103
 
 // __M_A_C_R_O__
 //: #import "FFFNotificationContentConfig.h"
-#import "OkConfig.h"
+#import "DataHarvestBalance.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "ThyScrollView+TaskIdentifyRave.h"
 //: #import "FFFKitUtil.h"
@@ -33,7 +33,7 @@ Byte kCaveValue[] = {22, 30, 12, 11, 20, 117, 160, 194, 93, 195, 80, 97, 89, 103
 #import "TaskIdentifyRave.h"
 
 //: @implementation FFFNotificationContentConfig
-@implementation OkConfig
+@implementation DataHarvestBalance
 //: - (BOOL)enableBackgroundBubbleView:(NIMMessage *)message
 - (BOOL)afterIn:(NIMMessage *)message
 {

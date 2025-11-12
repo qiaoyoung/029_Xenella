@@ -112,7 +112,7 @@
 //: #import "USERSessionCustomContentConfig.h"
 #import "ActYe.h"
 //: #import "USERChatroomTextContentConfig.h"
-#import "DistantConfig.h"
+#import "DistantBalance.h"
 //: #import "USERWhiteboardAttachment.h"
 #import "VisualAspectEarnNotebookAttachment.h"
 //: #import "USERRedPacketTipAttachment.h"
@@ -120,11 +120,11 @@
 
 //: @interface USERCellLayoutConfig ()
 @interface ResistanceSupplyLayoutBalance ()
-@property (nonatomic,strong) DistantConfig *menuConfig;
+@property (nonatomic,strong) DistantBalance *menuConfig;
 //: @property (nonatomic,strong) USERSessionCustomContentConfig *sessionCustomconfig;
 @property (nonatomic,strong) ActYe *flow;
 //: @property (nonatomic,strong) USERChatroomTextContentConfig *chatroomTextConfig;
-@property (nonatomic,strong) DistantConfig *takeHome;
+@property (nonatomic,strong) DistantBalance *takeHome;
 //: @property (nonatomic,strong) NSArray *types;
 @property (nonatomic,strong) NSArray *enterArray;
 //: @end
@@ -287,7 +287,7 @@
 
 //: @end
 
-- (void)setTakeHome:(DistantConfig *)takeHome {
+- (void)setTakeHome:(DistantBalance *)takeHome {
     //: OC_CUSTOM_PROPERTY_INJECT
     _takeHome = takeHome;
 }
@@ -439,14 +439,14 @@
     return [super inform:model];
 }
 
-- (DistantConfig *)likely:(DistantConfig *)takeHome {
+- (DistantBalance *)likely:(DistantBalance *)takeHome {
     //: OC_CUSTOM_PROPERTY_INJECT
     _takeHome = takeHome;
     return takeHome;
 }
 
 //: #pragma mark - FFFCellLayoutConfig
-#pragma mark - DenyConfig
+#pragma mark - DenyBalance
 //: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)width{
 - (CGSize)ruleBook:(MessageDistant *)model compartmentWidth:(CGFloat)width{
 
@@ -532,7 +532,7 @@
         //: _sessionCustomconfig = [[USERSessionCustomContentConfig alloc] init];
         _flow = [[ActYe alloc] init];
         //: _chatroomTextConfig = [[USERChatroomTextContentConfig alloc] init];
-        _menuConfig = [[DistantConfig alloc] init];
+        _menuConfig = [[DistantBalance alloc] init];
     }
     //: return self;
     return self;

@@ -35,7 +35,7 @@
 //: #import "FFFKitEvent.h"             //点击事件封装类
 #import "CaseEvent.h"             //点击事件封装类
 //: #import "FFFCellLayoutConfig.h"
-#import "DenyConfig.h"
+#import "DenyBalance.h"
 //: #import "FFFSessionMessageContentView.h"
 #import "FirstMessageView.h"
 //: #import "FFFKitConfig.h"
@@ -116,7 +116,7 @@ extern const unsigned char kSwitchingPath[];
  *  返回当前的排版配置
  */
 //: - (id<FFFCellLayoutConfig>)layoutConfig;
-- (id<DenyConfig>)factor;
+- (id<DenyBalance>)factor;
 
 /**
  *  群信息变更通知接口
@@ -188,7 +188,7 @@ extern const unsigned char kSwitchingPath[];
  *  注册自定义的排版配置，通过注册自定义排版配置来实现自定义消息的定制化排版
  */
 //: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig;
-- (void)expandConfig:(DenyConfig *)layoutConfig;
+- (void)expandConfig:(DenyBalance *)layoutConfig;
 
 /**
  *  返回群信息

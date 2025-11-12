@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FormatConfig.m
+//  FormatBalance.m
 // TaskIdentifyRave
 //
 //  Created by amao on 9/15/15.
@@ -10,12 +10,12 @@
 
 // __M_A_C_R_O__
 //: #import "FFFFileContentConfig.h"
-#import "FormatConfig.h"
+#import "FormatBalance.h"
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
 
 //: @implementation FFFFileContentConfig
-@implementation FormatConfig
+@implementation FormatBalance
 
 //: - (UIEdgeInsets)contentViewInsets:(NIMMessage *)message
 - (UIEdgeInsets)sumy:(NIMMessage *)message

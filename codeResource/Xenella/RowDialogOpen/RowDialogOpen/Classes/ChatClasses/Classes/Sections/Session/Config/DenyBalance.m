@@ -10,7 +10,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFCellLayoutConfig.h"
-#import "DenyConfig.h"
+#import "DenyBalance.h"
 //: #import "FFFSessionMessageContentView.h"
 #import "FirstMessageView.h"
 //: #import "FFFSessionUnknowContentView.h"
@@ -29,13 +29,13 @@
 #import "TaskIdentifyRave.h"
 
 //: @interface FFFCellLayoutConfig()
-@interface DenyConfig()
+@interface DenyBalance()
 
 //: @end
 @end
 
 //: @implementation FFFCellLayoutConfig
-@implementation DenyConfig
+@implementation DenyBalance
 
 //: - (NSString *)cellContent:(FFFMessageModel *)model{
 - (NSString *)graceContent:(MessageDistant *)model{
@@ -211,7 +211,7 @@
     if (model.subTit.session.sessionType == NIMSessionTypeTeam)
     {
         //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-        id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+        id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig orientation:model];
         //: if (!left) {
@@ -231,7 +231,7 @@
     else if (model.subTit.session.sessionType == NIMSessionTypeSuperTeam)
     {
         //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-        id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+        id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig orientation:model];
         //: if (!left) {

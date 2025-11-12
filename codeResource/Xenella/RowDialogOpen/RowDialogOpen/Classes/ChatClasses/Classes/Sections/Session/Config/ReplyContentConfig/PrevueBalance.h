@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  PrevueConfig.h
+//  PrevueBalance.h
 // TaskIdentifyRave
 //
 //  Created by He on 2020/3/25.
@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface FFFReplyedTextContentConfig : NSObject<CCCSessionContentConfig>
-@interface PrevueConfig : NSObject<HealMember>
+@interface PrevueBalance : NSObject<HealMember>
 
 //: @end
 @end

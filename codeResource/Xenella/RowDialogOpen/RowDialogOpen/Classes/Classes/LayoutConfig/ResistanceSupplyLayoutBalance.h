@@ -15,7 +15,7 @@
 #import "TaskIdentifyRave.h"
 
 //: @interface USERCellLayoutConfig : FFFCellLayoutConfig<FFFCellLayoutConfig>
-@interface ResistanceSupplyLayoutBalance : DenyConfig<DenyConfig>
+@interface ResistanceSupplyLayoutBalance : DenyBalance<DenyBalance>
 
 //: @end
 @end

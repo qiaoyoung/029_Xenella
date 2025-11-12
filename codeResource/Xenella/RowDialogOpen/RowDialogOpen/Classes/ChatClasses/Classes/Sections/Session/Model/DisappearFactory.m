@@ -114,7 +114,7 @@
                  questionMode:(MessageDistant *)model
 {
     //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
-    id<DenyConfig> layoutConfig = [[TaskIdentifyRave collect] factor];
+    id<DenyBalance> layoutConfig = [[TaskIdentifyRave collect] factor];
     //: NSString *identity = [layoutConfig cellContent:model];
     NSString *identity = [layoutConfig graceContent:model];
     //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];

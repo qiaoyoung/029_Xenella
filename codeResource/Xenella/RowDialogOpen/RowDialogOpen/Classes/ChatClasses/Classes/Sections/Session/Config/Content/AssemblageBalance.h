@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AssemblageConfig.h
+//  AssemblageBalance.h
 // TaskIdentifyRave
 //
 //  Created by chris on 16/1/21.
@@ -13,7 +13,7 @@
 #import "OptimizeBalancerText.h"
 
 //: @interface FFFTipContentConfig : NSObject<CCCSessionContentConfig>
-@interface AssemblageConfig : NSObject<HealMember>
+@interface AssemblageBalance : NSObject<HealMember>
 
 //: @end
 @end

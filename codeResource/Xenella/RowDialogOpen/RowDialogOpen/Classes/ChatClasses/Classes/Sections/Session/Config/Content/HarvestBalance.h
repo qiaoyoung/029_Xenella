@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  HarvestConfig.h
+//  HarvestBalance.h
 // TaskIdentifyRave
 //
 //  Created by amao on 9/15/15.
@@ -13,7 +13,7 @@
 #import "OptimizeBalancerText.h"
 
 //: @interface FFFTextContentConfig : NSObject<CCCSessionContentConfig>
-@interface HarvestConfig : NSObject<HealMember>
+@interface HarvestBalance : NSObject<HealMember>
 
 //: @end
 @end

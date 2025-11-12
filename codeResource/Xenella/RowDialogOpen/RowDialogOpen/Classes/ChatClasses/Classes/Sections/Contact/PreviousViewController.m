@@ -336,7 +336,7 @@ typedef struct {
 }
 
 //: - (void)setConfig:(id<FFFContactSelectConfig>)config{
-- (void)setBuild:(id<TurnConfig>)config{
+- (void)setBuild:(id<TurnBalance>)config{
     //: _config = config;
     _build = config;
 	[self setCarrierPress:_grace];
@@ -491,7 +491,7 @@ typedef struct {
 }
 
 //: - (instancetype)initWithConfig:(id<FFFContactSelectConfig>) config{
-- (instancetype)initWithTap:(id<TurnConfig>) config{
+- (instancetype)initWithTap:(id<TurnBalance>) config{
     //: self = [self initWithNibName:nil bundle:nil];
     self = [self initWithNibName:nil bundle:nil];
 	[self setLeave:_excess];

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  AssemblageConfig.m
+//  AssemblageBalance.m
 // TaskIdentifyRave
 //
 //  Created by chris on 16/1/21.
@@ -10,14 +10,14 @@
 
 // __M_A_C_R_O__
 //: #import "FFFTipContentConfig.h"
-#import "AssemblageConfig.h"
+#import "AssemblageBalance.h"
 //: #import "FFFKitUtil.h"
 #import "ProfoundUtil.h"
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
 
 //: @implementation FFFTipContentConfig
-@implementation AssemblageConfig
+@implementation AssemblageBalance
 
 //: - (BOOL)enableBackgroundBubbleView:(NIMMessage *)message
 - (BOOL)afterIn:(NIMMessage *)message

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  HarvestConfig.m
+//  HarvestBalance.m
 // TaskIdentifyRave
 //
 //  Created by amao on 9/15/15.
@@ -10,14 +10,14 @@
 
 // __M_A_C_R_O__
 //: #import "FFFTextContentConfig.h"
-#import "HarvestConfig.h"
+#import "HarvestBalance.h"
 //: #import "StringAttributedLabel+MyUserKit.h"
 #import "ThyScrollView+TaskIdentifyRave.h"
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
 
 //: @interface FFFTextContentConfig()
-@interface HarvestConfig()
+@interface HarvestBalance()
 
 //: @property (nonatomic,strong) StringAttributedLabel *label;
 @property (nonatomic,strong) ThyScrollView *label;
@@ -27,7 +27,7 @@
 
 
 //: @implementation FFFTextContentConfig
-@implementation HarvestConfig
+@implementation HarvestBalance
 
 //: #pragma mark - Private
 #pragma mark - Private

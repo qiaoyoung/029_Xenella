@@ -13,7 +13,7 @@
 #import "ZonalClearViewport.h"
 
 //: @interface FFFCellLayoutConfig : NSObject<FFFCellLayoutConfig>
-@interface DenyConfig : NSObject<DenyConfig>
+@interface DenyBalance : NSObject<DenyBalance>
 
 //: @end
 @end

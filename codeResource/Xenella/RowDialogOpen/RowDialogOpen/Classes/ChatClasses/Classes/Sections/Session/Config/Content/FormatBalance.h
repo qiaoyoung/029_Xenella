@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FormatConfig.h
+//  FormatBalance.h
 // TaskIdentifyRave
 //
 //  Created by amao on 9/15/15.
@@ -13,7 +13,7 @@
 #import "OptimizeBalancerText.h"
 
 //: @interface FFFFileContentConfig : NSObject<CCCSessionContentConfig>
-@interface FormatConfig : NSObject<HealMember>
+@interface FormatBalance : NSObject<HealMember>
 
 //: @end
 @end
