@@ -1191,7 +1191,7 @@ ElfVcdelegate,RustDelegate,UINavigationControllerDelegate,UIImagePickerControlle
 //: #pragma mark - NIMTeamSwitchProtocol
 #pragma mark - LopeVolume
 //: - (void)cell:(FFFTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on{
-- (void)gesture:(WeltanschauungViewCell *)cell pinIdentify:(BOOL)on{
+- (void)gesture:(ThrottleOriginalTimelineVerse *)cell pinIdentify:(BOOL)on{
     //: if (cell.identify == NIMTeamCardSwithCellTypeTop) {
     if (cell.exclude == NIMTeamCardSwithCellTypeTop) {
         //: if ([self.delegate respondsToSelector:@selector(NIMTeamCardVCDidSetTop:)]) {
@@ -1622,7 +1622,7 @@ ElfVcdelegate,RustDelegate,UINavigationControllerDelegate,UIImagePickerControlle
 }
 
 //: - (void)didBuildTeamSwitchCell:(FFFTeamSwitchTableViewCell *)cell {
-- (void)estimated:(WeltanschauungViewCell *)cell {
+- (void)estimated:(ThrottleOriginalTimelineVerse *)cell {
     //: cell.switchDelegate = self;
     cell.reader = self;
 	[self setMotion:_goWritten];

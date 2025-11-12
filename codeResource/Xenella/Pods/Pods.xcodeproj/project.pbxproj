@@ -302,7 +302,7 @@
 		32F4D328738A649FB62C8FCC5B525FA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4052EF82E61B46C5B7B1F4E1A58EC86A /* Foundation.framework */; };
 		3307669E5309DDBBDDA67F32C3FC33E7 /* UINavigationController+CompassPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC336B25EDD0DEB973AD36BF8C65B3D /* UINavigationController+CompassPoint.m */; };
 		3359336CC1ABE5312A6F0E98E97E9630 /* OwlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F9F98D44DD998BDDBA5E48A36D9446 /* OwlHandler.m */; };
-		3362F0720580917B5F6F2AFB0F82B2DE /* WeltanschauungViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 130D3357DBDE77F2F092D8995AF2D752 /* WeltanschauungViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3362F0720580917B5F6F2AFB0F82B2DE /* ThrottleOriginalTimelineVerse.h in Headers */ = {isa = PBXBuildFile; fileRef = 130D3357DBDE77F2F092D8995AF2D752 /* ThrottleOriginalTimelineVerse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33A83762331612B23E9E53AC2A308CC8 /* TZPhotoPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AADCCDD12AA1DBFF020825AEBF1B75 /* TZPhotoPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		343B88D38F2C01B6ED143575FD02F710 /* NotebookViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4BFB77D872E605C6D5EACDE445967E /* NotebookViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		344D2213D472F5F38942C7AD2F24ABE1 /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 357D1B42AA9BFBCA7067833C06456318 /* Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -894,7 +894,7 @@
 		A6F16D5D6B543F82628CA0B9FBA9FC9C /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B365620EC0F2C97F604F898563B4ACE /* DetailController.m */; };
 		A6FF5D2E5E256BD5ECD16E0AAD51BB42 /* ArtisticView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C546DF495923D0FA2FE7CE507A85A21 /* ArtisticView.m */; };
 		A736700C9C65B995D56F440C8E918D21 /* TowCropTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8300437B5E2453C3E0C41C428B3D8C34 /* TowCropTextView.m */; };
-		A77F9ACB98705938D64C50487ADA36A1 /* WeltanschauungViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346BDA3917A744788A5539C44606A72A /* WeltanschauungViewCell.m */; };
+		A77F9ACB98705938D64C50487ADA36A1 /* ThrottleOriginalTimelineVerse.m in Sources */ = {isa = PBXBuildFile; fileRef = 346BDA3917A744788A5539C44606A72A /* ThrottleOriginalTimelineVerse.m */; };
 		A7C0EE36BC474A71A98B36EB405B63E9 /* mz_crypt_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = 34BBA171700426D269A894B21EFBD6AC /* mz_crypt_apple.c */; };
 		A7C3912370742DB34B537C6DE04ADAAE /* OralView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB608ADB13E0C27E7FA0E98F1731B3CA /* OralView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7CB833B59DA0E178B97B5CFBCABF2FF /* TurnForceSin+Biter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E415234F82399CB51763A022B206263 /* TurnForceSin+Biter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1734,7 +1734,7 @@
 		12BBE8A4244512FDC25BC1C7E860CE76 /* LoyalApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LoyalApplication.h; sourceTree = "<group>"; };
 		12BEE51C76483451FDB485BD017A31B3 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
 		12C582307BF0EFB72E22AFE4746EB9BD /* AllRightUp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AllRightUp.h; sourceTree = "<group>"; };
-		130D3357DBDE77F2F092D8995AF2D752 /* WeltanschauungViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WeltanschauungViewCell.h; sourceTree = "<group>"; };
+		130D3357DBDE77F2F092D8995AF2D752 /* ThrottleOriginalTimelineVerse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ThrottleOriginalTimelineVerse.h; sourceTree = "<group>"; };
 		130EA9D7C4FA3FA3739AA2516EC14EBF /* UIButton+LateAccommodate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LateAccommodate.m"; sourceTree = "<group>"; };
 		1319C9A09D31864726C8D84542B79A86 /* OptimizeBalancerText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OptimizeBalancerText.m; sourceTree = "<group>"; };
 		1374C456D71A389A77386D6369E8A0E1 /* HornViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HornViewController.h; sourceTree = "<group>"; };
@@ -1907,7 +1907,7 @@
 		33D6297E31F3816F146D3BA97D958106 /* ImpactView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ImpactView.h; sourceTree = "<group>"; };
 		3437BF4CA1E4A0322D92E34DEC245BE6 /* ArtisticView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ArtisticView.h; sourceTree = "<group>"; };
 		343FC3C07DD1DE4C49C06DFB623F8445 /* DenyConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DenyConfig.m; sourceTree = "<group>"; };
-		346BDA3917A744788A5539C44606A72A /* WeltanschauungViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WeltanschauungViewCell.m; sourceTree = "<group>"; };
+		346BDA3917A744788A5539C44606A72A /* ThrottleOriginalTimelineVerse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ThrottleOriginalTimelineVerse.m; sourceTree = "<group>"; };
 		34A04134746029793F8E520F4BBFA991 /* WKWebView+ElfNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WKWebView+ElfNetworking.h"; sourceTree = "<group>"; };
 		34BBA171700426D269A894B21EFBD6AC /* mz_crypt_apple.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_crypt_apple.c; path = SSZipArchive/minizip/mz_crypt_apple.c; sourceTree = "<group>"; };
 		355B9F8C3C7C846DCED5EE14A8E71E78 /* RoughDecentTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RoughDecentTool.h; sourceTree = "<group>"; };
@@ -5152,8 +5152,8 @@
 				A7398EA0153EF0BEC5AEA7F0E6FF7306 /* GroundView.m */,
 				16BA873650AED1616AA086F609D67F1A /* MerryLeafFabric.h */,
 				9F83CC552C9A8BF70F3F10802166AC98 /* MerryLeafFabric.m */,
-				130D3357DBDE77F2F092D8995AF2D752 /* WeltanschauungViewCell.h */,
-				346BDA3917A744788A5539C44606A72A /* WeltanschauungViewCell.m */,
+				130D3357DBDE77F2F092D8995AF2D752 /* ThrottleOriginalTimelineVerse.h */,
+				346BDA3917A744788A5539C44606A72A /* ThrottleOriginalTimelineVerse.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -6811,7 +6811,7 @@
 				20EC821594D64EF5C5C6C794941ACD2A /* VolumeWard.h in Headers */,
 				ECFD63C1E4664A76C0564493953B7910 /* WardReusableView.h in Headers */,
 				E29FC685D6F45318A03FF03A2D7F0485 /* WardViewCell.h in Headers */,
-				3362F0720580917B5F6F2AFB0F82B2DE /* WeltanschauungViewCell.h in Headers */,
+				3362F0720580917B5F6F2AFB0F82B2DE /* ThrottleOriginalTimelineVerse.h in Headers */,
 				08299310088C9404145958AEE7659646 /* WKWebView+ElfNetworking.h in Headers */,
 				136EF7D8CDB512F19C787FBB32169411 /* WorkFlowView.h in Headers */,
 				ADDF6C394B024CEACD9DD37CACE8042D /* SpeckledRefreshSuite.h in Headers */,
@@ -8032,7 +8032,7 @@
 				C721760CA71028FB4AC72EB4376618CA /* VolumeWard.m in Sources */,
 				70876C3851A23EA50D77984D3C8B4E9F /* WardReusableView.m in Sources */,
 				329363CFEB817C5EF596811B5CE6E8C9 /* WardViewCell.m in Sources */,
-				A77F9ACB98705938D64C50487ADA36A1 /* WeltanschauungViewCell.m in Sources */,
+				A77F9ACB98705938D64C50487ADA36A1 /* ThrottleOriginalTimelineVerse.m in Sources */,
 				BD0251FF02A3390AAC78BC4C4D84710C /* WKWebView+ElfNetworking.m in Sources */,
 				27037F16AFB1F20FF86549EBC0B8C764 /* WorkFlowView.m in Sources */,
 				0E6119E1A974145B65C7520301DDD64E /* SpeckledRefreshSuite.m in Sources */,

@@ -76,12 +76,12 @@
 
 // __M_A_C_R_O__
 //: #import "FFFTeamSwitchTableViewCell.h"
-#import "WeltanschauungViewCell.h"
+#import "ThrottleOriginalTimelineVerse.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 
 //: @implementation FFFTeamSwitchTableViewCell
-@implementation WeltanschauungViewCell
+@implementation ThrottleOriginalTimelineVerse
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

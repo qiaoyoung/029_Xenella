@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  WeltanschauungViewCell.h
+//  ThrottleOriginalTimelineVerse.h
 //  NIM
 //
 //  Created by amao on 5/29/15.
@@ -13,17 +13,17 @@
 #import <UIKit/UIKit.h>
 
 //: @class FFFTeamSwitchTableViewCell;
-@class WeltanschauungViewCell;
+@class ThrottleOriginalTimelineVerse;
 
 //: @protocol NIMTeamSwitchProtocol <NSObject>
 @protocol LopeVolume <NSObject>
 //: - (void)cell:(FFFTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on;
-- (void)gesture:(WeltanschauungViewCell *)cell pinIdentify:(BOOL)on;
+- (void)gesture:(ThrottleOriginalTimelineVerse *)cell pinIdentify:(BOOL)on;
 //: @end
 @end
 
 //: @interface FFFTeamSwitchTableViewCell : UITableViewCell
-@interface WeltanschauungViewCell : UITableViewCell
+@interface ThrottleOriginalTimelineVerse : UITableViewCell
 @property (nonatomic, assign) NSInteger exclude;
 //: @property (nonatomic, assign) NSInteger identify;
 @property (nonatomic, assign) NSInteger flag;

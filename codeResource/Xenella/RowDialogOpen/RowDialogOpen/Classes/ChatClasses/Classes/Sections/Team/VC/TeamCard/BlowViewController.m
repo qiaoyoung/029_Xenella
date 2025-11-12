@@ -570,7 +570,7 @@
 }
 
 //: - (void)didBuildTeamSwitchCell:(FFFTeamSwitchTableViewCell *)cell {}
-- (void)estimated:(WeltanschauungViewCell *)cell {}
+- (void)estimated:(ThrottleOriginalTimelineVerse *)cell {}
 
 
 //: #pragma mark - Getter
@@ -612,13 +612,13 @@
     //: NSString *identifier = [NSString stringWithFormat:@"TableSwitch%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SuggestData appLaunchText],(long)indexPath.section,(long)indexPath.row];
     //: FFFTeamSwitchTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
-    WeltanschauungViewCell *cell = [self.time dequeueReusableCellWithIdentifier:identifier];
+    ThrottleOriginalTimelineVerse *cell = [self.time dequeueReusableCellWithIdentifier:identifier];
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: if (!cell) {
     if (!cell) {
         //: cell = [[FFFTeamSwitchTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        cell = [[WeltanschauungViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[ThrottleOriginalTimelineVerse alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: CGFloat left = 60.f;
         CGFloat left = 60.f;
         //: CGFloat height = 1.f;

@@ -16,7 +16,7 @@
 //: #import "FFFTeamMemberListCell.h"
 #import "MerryLeafFabric.h"
 //: #import "FFFTeamSwitchTableViewCell.h"
-#import "WeltanschauungViewCell.h"
+#import "ThrottleOriginalTimelineVerse.h"
 //: #import "FFFTeamListDataManager.h"
 #import "ReaderDataManager.h"
 //: #import <NIMSDK/NIMSDK.h>
