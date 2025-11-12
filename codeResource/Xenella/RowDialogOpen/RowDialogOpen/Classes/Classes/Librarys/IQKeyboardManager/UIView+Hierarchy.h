@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQUIView+Hierarchy.h
+//  UIView+Hierarchy.h
 //  https://github.com/hackiftekhar/HealYe
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -26,8 +26,8 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "IQKeyboardManagerConstants.h"
-#import "IQKeyboardManagerConstants.h"
+//: #import "KeyboardManagerConstants.h"
+#import "KeyboardManagerConstants.h"
 
 //: @class UICollectionView, UIScrollView, UITableView, UISearchBar, NSArray;
 @class UICollectionView, UIScrollView, UITableView, UISearchBar, NSArray;

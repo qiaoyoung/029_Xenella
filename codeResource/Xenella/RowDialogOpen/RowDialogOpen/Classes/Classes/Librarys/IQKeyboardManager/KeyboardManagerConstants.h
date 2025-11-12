@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQKeyboardManagerConstants.h
+//  KeyboardManagerConstants.h
 //  https://github.com/hackiftekhar/HealYe
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //

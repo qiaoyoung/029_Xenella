@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQUIView+Hierarchy.m
+//  UIView+Hierarchy.m
 //  https://github.com/hackiftekhar/HealYe
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -28,14 +28,14 @@
 #import <UIKit/UIKit.h>
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "IQUIView+Hierarchy.h"
-#import "IQUIView+Hierarchy.h"
+//: #import "UIView+Hierarchy.h"
+#import "UIView+Hierarchy.h"
 //: #import "IQUITextFieldView+Additions.h"
-#import "IQUITextFieldView+Draw.h"
+#import "UITextFieldView+Draw.h"
 //: #import "IQUIViewController+Additions.h"
-#import "IQUIViewController+Draw.h"
-//: #import "IQNSArray+Sort.h"
-#import "IQNSArray+Sort.h"
+#import "UIViewController+Draw.h"
+//: #import "NSArray+Sort.h"
+#import "NSArray+Sort.h"
 
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQKeyboardManagerConstantsInternal.h
+//  UIViewController+Draw.h
 //  https://github.com/hackiftekhar/HealYe
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -24,3 +24,22 @@
 // THE SOFTWARE.
 
 // __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
+
+//: @class NSLayoutConstraint;
+@class NSLayoutConstraint;
+
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface UIViewController (Additions)
+@interface UIViewController (Draw)
+
+/**
+ This method is provided to override by viewController's if the library lifts a viewController which you doesn't want to lift . This may happen if you have implemented side menu feature in your app and the library try to lift the side menu controller. Overriding this method in side menu class to return correct controller should fix the problem.
+*/
+//: -(nullable UIViewController*)parentIQContainerViewController;
+-(nullable UIViewController*)each;
+
+//: @end
+@end

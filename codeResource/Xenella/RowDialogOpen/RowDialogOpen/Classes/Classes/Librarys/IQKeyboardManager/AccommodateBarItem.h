@@ -26,8 +26,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "IQKeyboardManagerConstants.h"
-#import "IQKeyboardManagerConstants.h"
+//: #import "KeyboardManagerConstants.h"
+#import "KeyboardManagerConstants.h"
 //: #import "IQBarButtonItem.h"
 #import "FifteenButtonItem.h"
 

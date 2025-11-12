@@ -27,7 +27,7 @@
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "IQUITextFieldView+Additions.h"
-#import "IQUITextFieldView+Draw.h"
+#import "UITextFieldView+Draw.h"
 
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")

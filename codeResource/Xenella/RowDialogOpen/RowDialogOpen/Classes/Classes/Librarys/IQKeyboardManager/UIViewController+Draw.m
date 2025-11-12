@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQUIViewController+Draw.m
+//  UIViewController+Draw.m
 //  https://github.com/hackiftekhar/HealYe
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -29,7 +29,7 @@
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "IQUIViewController+Additions.h"
-#import "IQUIViewController+Draw.h"
+#import "UIViewController+Draw.h"
 
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")

@@ -112,7 +112,7 @@
 
 // __DEBUG__
 // __CLOSE_PRINT__
-// WorthDownloader.m
+// SpeckledRefreshSuite.m
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -137,7 +137,7 @@
 //: #import <TargetConditionals.h>
 #import <TargetConditionals.h>
 //: #import "AFImageDownloader.h"
-#import "WorthDownloader.h"
+#import "SpeckledRefreshSuite.h"
 //: #import "AFHTTPSessionManager.h"
 #import "NationalSessionManager.h"
 
@@ -268,7 +268,7 @@
 @end
 
 //: @interface AFImageDownloader ()
-@interface WorthDownloader ()
+@interface SpeckledRefreshSuite ()
 
 //: @property (nonatomic, strong) NSMutableDictionary *mergedTasks;
 @property (nonatomic, strong) NSMutableDictionary *mergedTasks;
@@ -289,7 +289,7 @@
 @end
 
 //: @implementation AFImageDownloader
-@implementation WorthDownloader
+@implementation SpeckledRefreshSuite
 
 //: + (NSURLSessionConfiguration *)defaultURLSessionConfiguration {
 + (NSURLSessionConfiguration *)needConfiguration {
@@ -310,7 +310,7 @@
     //: configuration.timeoutIntervalForRequest = 60.0;
     configuration.timeoutIntervalForRequest = 60.0;
     //: configuration.URLCache = [AFImageDownloader defaultURLCache];
-    configuration.URLCache = [WorthDownloader small];
+    configuration.URLCache = [SpeckledRefreshSuite small];
 
     //: return configuration;
     return configuration;
@@ -678,7 +678,7 @@
 //: + (instancetype)defaultInstance {
 + (instancetype)debut {
     //: static AFImageDownloader *sharedInstance = nil;
-    static WorthDownloader *sharedInstance = nil;
+    static SpeckledRefreshSuite *sharedInstance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{

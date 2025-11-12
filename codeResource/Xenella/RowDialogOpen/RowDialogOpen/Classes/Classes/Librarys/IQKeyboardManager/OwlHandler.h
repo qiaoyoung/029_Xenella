@@ -28,8 +28,8 @@
 #import <Foundation/Foundation.h>
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "IQKeyboardManagerConstants.h"
-#import "IQKeyboardManagerConstants.h"
+//: #import "KeyboardManagerConstants.h"
+#import "KeyboardManagerConstants.h"
 
 //: @class UITextField, UIView, UIViewController;
 @class UITextField, UIView, UIViewController;

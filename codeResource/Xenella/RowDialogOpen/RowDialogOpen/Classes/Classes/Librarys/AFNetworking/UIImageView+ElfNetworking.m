@@ -80,7 +80,7 @@
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 //: #import "AFImageDownloader.h"
-#import "WorthDownloader.h"
+#import "SpeckledRefreshSuite.h"
 
 //: @interface UIImageView (_AFNetworking)
 @interface UIImageView (BesideColleague)
@@ -114,9 +114,9 @@
 @implementation UIImageView (ElfNetworking)
 
 //: + (AFImageDownloader *)sharedImageDownloader {
-+ (WorthDownloader *)blowRead {
++ (SpeckledRefreshSuite *)blowRead {
     //: return objc_getAssociatedObject([UIImageView class], @selector(sharedImageDownloader)) ?: [AFImageDownloader defaultInstance];
-    return objc_getAssociatedObject([UIImageView class], @selector(blowRead)) ?: [WorthDownloader debut];
+    return objc_getAssociatedObject([UIImageView class], @selector(blowRead)) ?: [SpeckledRefreshSuite debut];
 }
 
 //: - (void)clearActiveDownloadInformation {
@@ -159,7 +159,7 @@
     [self financialTask];
 
     //: AFImageDownloader *downloader = [[self class] sharedImageDownloader];
-    WorthDownloader *downloader = [[self class] blowRead];
+    SpeckledRefreshSuite *downloader = [[self class] blowRead];
     //: id <AFImageRequestCache> imageCache = downloader.imageCache;
     id <SolicitationCache> imageCache = downloader.imageCache;
 
@@ -282,7 +282,7 @@
 }
 
 //: + (void)setSharedImageDownloader:(AFImageDownloader *)imageDownloader {
-+ (void)setBlowRead:(WorthDownloader *)imageDownloader {
++ (void)setBlowRead:(SpeckledRefreshSuite *)imageDownloader {
     //: objc_setAssociatedObject([UIImageView class], @selector(sharedImageDownloader), imageDownloader, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject([UIImageView class], @selector(blowRead), imageDownloader, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

@@ -28,8 +28,8 @@
 #import <UIKit/UIKit.h>
 //: #import "IQBarButtonItem.h"
 #import "FifteenButtonItem.h"
-//: #import "IQKeyboardManagerConstantsInternal.h"
-#import "IQKeyboardManagerConstantsInternal.h"
+//:  
+ 
 
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")

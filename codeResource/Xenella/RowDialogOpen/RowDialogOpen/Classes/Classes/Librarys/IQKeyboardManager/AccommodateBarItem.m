@@ -28,10 +28,10 @@
 #import <UIKit/UIKit.h>
 //: #import "IQTitleBarButtonItem.h"
 #import "AccommodateBarItem.h"
-//: #import "IQKeyboardManagerConstants.h"
-#import "IQKeyboardManagerConstants.h"
-//: #import "IQKeyboardManagerConstantsInternal.h"
-#import "IQKeyboardManagerConstantsInternal.h"
+//: #import "KeyboardManagerConstants.h"
+#import "KeyboardManagerConstants.h"
+//:  
+ 
 
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")

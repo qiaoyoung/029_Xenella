@@ -1,7 +1,9 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// AFCompatibilityMacros.h
-// Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
+//
+//  NSArray+Sort.h
+//  https://github.com/hackiftekhar/HealYe
+//  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,3 +24,35 @@
 // THE SOFTWARE.
 
 // __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
+
+//: @class UIView;
+@class UIView;
+
+/**
+ UIView.subviews sorting category.
+ */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface NSArray (IQ_NSArray_Sort)
+@interface NSArray (Notebook)
+
+///--------------
+/// @name Sorting
+///--------------
+
+/**
+ Returns the array by sorting the UIView's by their tag property.
+ */
+//: @property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * sortedArrayByTag;
+@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * shade;
+
+/**
+ Returns the array by sorting the UIView's by their tag property.
+ */
+//: @property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * sortedArrayByPosition;
+@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * totalernalAnglePosition;
+
+//: @end
+@end

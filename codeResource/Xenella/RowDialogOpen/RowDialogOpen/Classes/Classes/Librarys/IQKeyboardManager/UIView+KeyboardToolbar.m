@@ -58,7 +58,7 @@ typedef struct {
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  IQUIView+IQKeyboardToolbar.m
+//  UIView+KeyboardToolbar.m
 //  https://github.com/hackiftekhar/HealYe
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -87,10 +87,10 @@ typedef struct {
 #import <UIKit/UIKit.h>
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "IQUIView+IQKeyboardToolbar.h"
-#import "IQUIView+IQKeyboardToolbar.h"
-//: #import "IQKeyboardManagerConstantsInternal.h"
-#import "IQKeyboardManagerConstantsInternal.h"
+//: #import "UIView+KeyboardToolbar.h"
+#import "UIView+KeyboardToolbar.h"
+//:  
+ 
 //: #import "IQKeyboardManager.h"
 #import "HealYe.h"
 

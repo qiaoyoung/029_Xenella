@@ -33,7 +33,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @class AFImageDownloader;
-@class WorthDownloader;
+@class SpeckledRefreshSuite;
 
 /**
  This category adds methods to the UIKit framework's `UIImageView` class. The methods in this category provide support for loading remote images asynchronously from a URL.
@@ -60,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
  The shared image downloader used to download images.
  */
 //: + (AFImageDownloader *)sharedImageDownloader;
-+ (WorthDownloader *)blowRead;
++ (SpeckledRefreshSuite *)blowRead;
 
 /**
  Asynchronously downloads an image from the specified URL, and sets it once the request is finished. Any previous image request for the receiver will be cancelled.
@@ -94,7 +94,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 //: + (void)setSharedImageDownloader:(AFImageDownloader *)imageDownloader;
-+ (void)setBlowRead:(WorthDownloader *)imageDownloader;
++ (void)setBlowRead:(SpeckledRefreshSuite *)imageDownloader;
 
 
 /**

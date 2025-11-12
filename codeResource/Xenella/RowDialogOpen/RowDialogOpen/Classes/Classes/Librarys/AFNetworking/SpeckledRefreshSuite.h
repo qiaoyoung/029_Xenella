@@ -1,6 +1,6 @@
 // __DEBUG__
 // __CLOSE_PRINT__
-// WorthDownloader.h
+// SpeckledRefreshSuite.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -44,13 +44,13 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 };
 
 /**
- The `ReaderReceipt` is an object vended by the `WorthDownloader` when starting a data task. It can be used to cancel active tasks running on the `WorthDownloader` session. As a general rule, image data tasks should be cancelled using the `ReaderReceipt` instead of calling `cancel` directly on the `task` itself. The `WorthDownloader` is optimized to handle duplicate task scenarios as well as pending versus active downloads.
+ The `ReaderReceipt` is an object vended by the `SpeckledRefreshSuite` when starting a data task. It can be used to cancel active tasks running on the `SpeckledRefreshSuite` session. As a general rule, image data tasks should be cancelled using the `ReaderReceipt` instead of calling `cancel` directly on the `task` itself. The `SpeckledRefreshSuite` is optimized to handle duplicate task scenarios as well as pending versus active downloads.
  */
 //: @interface AFImageDownloadReceipt : NSObject
 @interface ReaderReceipt : NSObject
 
 /**
- The data task created by the `WorthDownloader`.
+ The data task created by the `SpeckledRefreshSuite`.
 */
 /**
  The unique identifier for the success and failure blocks when duplicate requests are made.
@@ -63,10 +63,10 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 //: @end
 @end
 
-/** The `WorthDownloader` class is responsible for downloading images in parallel on a prioritized queue. Incoming downloads are added to the front or back of the queue depending on the download prioritization. Each downloaded image is cached in the underlying `NSURLCache` as well as the in-memory image cache. By default, any download request with a cached image equivalent in the image cache will automatically be served the cached image representation.
+/** The `SpeckledRefreshSuite` class is responsible for downloading images in parallel on a prioritized queue. Incoming downloads are added to the front or back of the queue depending on the download prioritization. Each downloaded image is cached in the underlying `NSURLCache` as well as the in-memory image cache. By default, any download request with a cached image equivalent in the image cache will automatically be served the cached image representation.
  */
 //: @interface AFImageDownloader : NSObject
-@interface WorthDownloader : NSObject
+@interface SpeckledRefreshSuite : NSObject
 
 /**
  The image cache used to store all downloaded images in. `SubmarineCache` by default.
@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
  
  @param configuration The `NSURLSessionConfiguration` to be be used
  
- @return An instance of `WorthDownloader` initialized with default values and custom `NSURLSessionConfiguration`
+ @return An instance of `SpeckledRefreshSuite` initialized with default values and custom `NSURLSessionConfiguration`
  */
 //: - (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)configuration;
 - (instancetype)initWithEdge:(NSURLSessionConfiguration *)configuration;
@@ -107,7 +107,7 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 - (void)box:(ReaderReceipt *)imageDownloadReceipt;
 
 /**
- The shared default instance of `WorthDownloader` initialized with default values.
+ The shared default instance of `SpeckledRefreshSuite` initialized with default values.
  */
 //: + (instancetype)defaultInstance;
 + (instancetype)debut;
@@ -135,20 +135,20 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 /**
  Default initializer
 
- @return An instance of `WorthDownloader` initialized with default values.
+ @return An instance of `SpeckledRefreshSuite` initialized with default values.
  */
 //: - (instancetype)init;
 - (instancetype)init;
 
 /**
- Initializes the `WorthDownloader` instance with the given session manager, download prioritization, maximum active download count and image cache.
+ Initializes the `SpeckledRefreshSuite` instance with the given session manager, download prioritization, maximum active download count and image cache.
 
  @param sessionManager The session manager to use to download images.
  @param downloadPrioritization The download prioritization of the download queue.
  @param maximumActiveDownloads  The maximum number of active downloads allowed at any given time. Recommend `4`.
  @param imageCache The image cache used to store all downloaded images in.
 
- @return The new `WorthDownloader` instance.
+ @return The new `SpeckledRefreshSuite` instance.
  */
 //: - (instancetype)initWithSessionManager:(AFHTTPSessionManager *)sessionManager
 - (instancetype)initWithLowExhibit:(NationalSessionManager *)sessionManager
