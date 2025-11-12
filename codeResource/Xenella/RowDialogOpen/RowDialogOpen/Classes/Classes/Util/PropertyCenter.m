@@ -149,8 +149,6 @@
 #import "UIView+Under.h"
 //: #import "USERCustomSysNotificationSender.h"
 #import "TerrainCustomSender.h"
-//: #import "USERGlobalMacro.h"
-#import "USERGlobalMacro.h"
 //: #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVFoundation.h>
 //: #import "USERSessionMsgConverter.h"

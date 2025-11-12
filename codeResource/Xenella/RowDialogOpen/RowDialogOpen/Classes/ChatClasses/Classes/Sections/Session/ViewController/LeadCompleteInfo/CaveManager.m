@@ -13,8 +13,6 @@
 #import "CaveManager.h"
 //: #import "SNLeadCompleteInfo.h"
 #import "ForceView.h"
-//: #import "SNWeakStrongMacro.h"
-#import "SNWeakStrongMacro.h"
 
 //: @interface SNLeadCompleteManager ()
 @interface CaveManager ()

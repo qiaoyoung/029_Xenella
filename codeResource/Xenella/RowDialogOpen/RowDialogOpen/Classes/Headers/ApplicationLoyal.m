@@ -292,8 +292,7 @@ Byte kBrightPlatform[] = {27, 2, 89, 11, 202, 142, 244, 16, 49, 221, 232, 18, 22
 #import "NSDictionary+Truth.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+TaskIdentifyRave.h"
-//: #import "USERGlobalMacro.h"
-#import "USERGlobalMacro.h"
+ 
 //: #import "NSString+USER.h"
 #import "NSString+SunnyAccommodate.h"
 
