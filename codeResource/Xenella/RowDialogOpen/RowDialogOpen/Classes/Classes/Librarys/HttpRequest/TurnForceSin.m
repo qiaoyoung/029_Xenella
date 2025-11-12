@@ -467,8 +467,8 @@
 #import<CommonCrypto/CommonDigest.h>
 //: #import "FFFConfig.h"
 #import "LooNever.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface HttpManager ()
 @interface TurnForceSin ()
@@ -566,7 +566,7 @@
 }
 
 //: + (void)uploadVideoWithURL:(NSString *)URL
-+ (void)enwrapTo:(NSString *)URL
++ (void)failedenwrapTo:(NSString *)URL
                  //: parameters:(id)parameters
                  vendorFound:(id)parameters
                      //: images:(NSData *)videoData
@@ -578,7 +578,7 @@
                     //: success:(ResponseSuccess)success
                     progressResponseSuccess:(ResponseSuccess)success
                      //: failed:(ResponseFailed)failed{
-                     cloak:(ResponseFailed)failed{
+                failed:(ResponseFailed)failed{
 
     //: if (![URL containsString:@"http"]){
     if (![URL containsString:[DestinationSternData sharedInstance].kApologizeHelper]){

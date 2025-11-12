@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DecoderNational.h
+//  StarTupleShowLucid.h
 //  NIM
 //
 //  Created by amao on 7/2/15.
@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 
 //: @interface USERCustomAttachmentDecoder : NSObject<NIMCustomAttachmentCoding>
-@interface DecoderNational : NSObject<NIMCustomAttachmentCoding>
+@interface StarTupleShowLucid : NSObject<NIMCustomAttachmentCoding>
 
 //: @end
 @end

@@ -1561,8 +1561,8 @@
 #import "PersonFifteenView.h"
 //: #import "ZMONReportHisView.h"
 #import "ImpactView.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 //: #import "AppDelegateManager.h"
 #import "ApplicationLoyal.h"
 

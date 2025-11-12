@@ -523,8 +523,8 @@
 #import "TurnForceSin+Biter.h"
 //: #import "CCCAutoLoginManager.h"
 #import "AccommodateThy.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @implementation HttpManager (Addtionals)
 @implementation TurnForceSin (Biter)

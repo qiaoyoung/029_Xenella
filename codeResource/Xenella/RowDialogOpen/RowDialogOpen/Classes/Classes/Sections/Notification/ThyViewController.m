@@ -236,8 +236,8 @@
 #import "CommandConverter.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: static const NSInteger MaxNotificationCount = 20;
 

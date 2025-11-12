@@ -245,8 +245,8 @@ InitiatoryData k_ladPlatform = (InitiatoryData){98, (Byte []){11, 17, 17, 23, 18
 #import "CropTow.h"
 //: #import "HttpManager+Addtionals.h"
 #import "TurnForceSin+Biter.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 //: #import "FFFLanguageManager.h"
 #import "RaveFirst.h"
 

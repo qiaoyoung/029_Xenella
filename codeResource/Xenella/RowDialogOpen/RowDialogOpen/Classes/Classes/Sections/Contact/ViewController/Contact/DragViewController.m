@@ -430,8 +430,8 @@
 #import "TakeViewCell.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface USERContactAddFriendViewController ()<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource,RecommendfriendCellDelegate>
 @interface DragViewController ()<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource,LoyalSunny>

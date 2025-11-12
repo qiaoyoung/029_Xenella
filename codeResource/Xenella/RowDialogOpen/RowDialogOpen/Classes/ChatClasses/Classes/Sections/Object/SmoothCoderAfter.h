@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "TheoryMildDatasetter.h"
-#import "TheoryMildDatasetter.h"
+//: #import "SurfaceFirmWaveBefore.h"
+#import "SurfaceFirmWaveBefore.h"
 //: #import "ImplementAuroraTranslateUnity.h"
 #import "ImplementAuroraTranslateUnity.h"
 
 //: @interface FFFSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
-@interface CountroduceAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
+@interface SmoothCoderAfter : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 //: @property (nonatomic,weak) id<FFFMessageCellDelegate> delegate;
 @property (nonatomic,weak) id<ResistanceTerrain> delegate;

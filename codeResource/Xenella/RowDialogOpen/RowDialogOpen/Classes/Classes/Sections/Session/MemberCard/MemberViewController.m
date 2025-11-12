@@ -98,8 +98,8 @@ Byte viewGiftedConfig[] = {16, 4, 67, 10, 164, 181, 184, 36, 74, 162, 166, 178, 
 #import "PreviousViewController.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
 typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);

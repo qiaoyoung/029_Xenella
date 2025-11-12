@@ -134,7 +134,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFSessionTableAdapter.h"
-#import "CountroduceAdapter.h"
+#import "SmoothCoderAfter.h"
 //: #import "FFFMessageModel.h"
 #import "MessageDistant.h"
 //: #import "FFFMessageCellFactory.h"
@@ -147,7 +147,7 @@
 #import "ThyScrollView+TaskIdentifyRave.h"
 
 //: @interface FFFSessionTableAdapter()
-@interface CountroduceAdapter()
+@interface SmoothCoderAfter()
 
 //: @property (nonatomic,strong) FFFMessageCellFactory *cellFactory;
 @property (nonatomic,strong) DisappearFactory *cellFactory;
@@ -156,7 +156,7 @@
 @end
 
 //: @implementation FFFSessionTableAdapter
-@implementation CountroduceAdapter
+@implementation SmoothCoderAfter
 
 //: - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

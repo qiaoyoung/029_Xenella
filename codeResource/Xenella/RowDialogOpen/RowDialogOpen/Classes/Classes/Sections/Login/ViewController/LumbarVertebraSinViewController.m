@@ -366,8 +366,8 @@
 #import "LumbarVertebraSinViewController.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface GetBackPasswordViewController ()
 @interface LumbarVertebraSinViewController ()

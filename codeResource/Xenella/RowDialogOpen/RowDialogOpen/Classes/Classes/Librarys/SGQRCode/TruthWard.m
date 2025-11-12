@@ -12,7 +12,7 @@
 //: #import "SGPermission.h"
 #import "TruthWard.h"
 //: #import "SGPermissionCamera.h"
-#import "DoinglyCamera.h"
+#import "ScaleMightyController.h"
 //: #import "SGPermissionPhoto.h"
 #import "PermissionProperty.h"
 
@@ -37,7 +37,7 @@
     //: if (self.type == SGPermissionTypeCamera) {
     if (self.recordingReceive == SGPermissionTypeCamera) {
         //: [SGPermissionCamera request:handler];
-        [DoinglyCamera motion:handler];
+        [ScaleMightyController motion:handler];
     //: } else if (self.type == SGPermissionTypePhoto) {
     } else if (self.recordingReceive == SGPermissionTypePhoto) {
         //: [SGPermissionPhoto request:handler];
@@ -55,7 +55,7 @@
     //: if (type == SGPermissionTypeCamera) {
     if (type == SGPermissionTypeCamera) {
         //: [SGPermissionCamera camera:^(SGPermissionCamera * _Nonnull camera, SGPermissionStatus status) {
-        [DoinglyCamera player:^(DoinglyCamera * _Nonnull camera, SGPermissionStatus status) {
+        [ScaleMightyController player:^(ScaleMightyController * _Nonnull camera, SGPermissionStatus status) {
             //: if (block) {
             if (block) {
                 //: block(permission, status);

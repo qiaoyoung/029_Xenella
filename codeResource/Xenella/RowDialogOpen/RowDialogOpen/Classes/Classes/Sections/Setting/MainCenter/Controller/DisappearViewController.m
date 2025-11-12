@@ -254,8 +254,8 @@
 #import "DisappearViewController.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface USERChangePasswordController ()<UITextFieldDelegate>
 @interface DisappearViewController ()<UITextFieldDelegate>

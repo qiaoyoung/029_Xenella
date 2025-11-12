@@ -15,7 +15,7 @@
 #import "ShaderMajorSplitStencil.h"
 
 //: @interface FFFSessionLayoutImpl : NSObject<NIMSessionLayout>
-@interface RaveImpl : NSObject<ReaderSessionLayout>
+@interface FocusAssemblerBuildZealous : NSObject<ReaderSessionLayout>
 
 //: @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UITableView *tableView;

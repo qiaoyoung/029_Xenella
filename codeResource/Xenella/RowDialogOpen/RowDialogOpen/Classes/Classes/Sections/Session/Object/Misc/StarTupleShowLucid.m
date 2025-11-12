@@ -326,7 +326,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DecoderNational.m
+//  StarTupleShowLucid.m
 //  NIM
 //
 //  Created by amao on 7/2/15.
@@ -335,7 +335,7 @@
 
 // __M_A_C_R_O__
 //: #import "USERCustomAttachmentDecoder.h"
-#import "DecoderNational.h"
+#import "StarTupleShowLucid.h"
 //: #import "USERCustomAttachmentDefines.h"
 #import "USERCustomAttachmentDefines.h"
 //: #import "USERJanKenPonAttachment.h"
@@ -358,7 +358,7 @@
 #import "ShareHappy.h"
 
 //: @implementation USERCustomAttachmentDecoder
-@implementation DecoderNational
+@implementation StarTupleShowLucid
 //: - (BOOL)checkAttachment:(id<NIMCustomAttachment>)attachment{
 - (BOOL)access:(id<NIMCustomAttachment>)attachment{
     //: BOOL check = NO;

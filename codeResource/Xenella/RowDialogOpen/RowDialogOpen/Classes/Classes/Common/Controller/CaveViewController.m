@@ -369,8 +369,8 @@
 #import "ImpactViewController.h"
 //: #import "Reachability.h"
 #import "Reachability.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 //: #import "SNGradientHelper.h"
 #import "MethodRough.h"
 

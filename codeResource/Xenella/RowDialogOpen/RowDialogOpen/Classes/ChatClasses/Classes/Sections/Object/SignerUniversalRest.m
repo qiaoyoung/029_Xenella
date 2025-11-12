@@ -10,12 +10,12 @@
 
 // __M_A_C_R_O__
 //: #import "FFFSessionDataSourceImpl.h"
-#import "BesideImpl.h"
+#import "SignerUniversalRest.h"
 //: #import "FFFSessionMsgDatasource.h"
 #import "DistinguishDatasource.h"
 
 //: @interface FFFSessionDataSourceImpl()
-@interface BesideImpl()
+@interface SignerUniversalRest()
 
 @property (nonatomic,strong) NSMutableArray *pendingMessages;//缓存的插入消息,聊天室需要在另外个线程计算高度,减少UI刷新
 
@@ -34,7 +34,7 @@
 @end
 
 //: @implementation FFFSessionDataSourceImpl
-@implementation BesideImpl
+@implementation SignerUniversalRest
 
 //: - (NSDictionary *)checkTeamReceipts:(NSArray<NIMMessageReceipt *> *)receipts
 - (NSDictionary *)flag:(NSArray<NIMMessageReceipt *> *)receipts

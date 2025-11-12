@@ -75,7 +75,7 @@ typedef struct {
 
 // __M_A_C_R_O__
 //: #import "FFFSessionLayoutImpl.h"
-#import "RaveImpl.h"
+#import "FocusAssemblerBuildZealous.h"
 //: #import "UITableView+ScrollToBottom.h"
 #import "UITableView+ScrollToBottom.h"
 //: #import "FFFMessageCell.h"
@@ -83,7 +83,7 @@ typedef struct {
 //: #import "RobustDecoratorTransformer.h"
 #import "RobustDecoratorTransformer.h"
 //: #import "FFFSessionTableAdapter.h"
-#import "CountroduceAdapter.h"
+#import "SmoothCoderAfter.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFKitKeyboardInfo.h"
@@ -92,7 +92,7 @@ typedef struct {
 #import "AdminView.h"
 
 //: @interface FFFSessionLayoutImpl()
-@interface RaveImpl()
+@interface FocusAssemblerBuildZealous()
 {
     //: NSMutableArray *_inserts;
     NSMutableArray *_inserts;
@@ -116,7 +116,7 @@ typedef struct {
 @end
 
 //: @implementation FFFSessionLayoutImpl
-@implementation RaveImpl
+@implementation FocusAssemblerBuildZealous
 
 //: - (void)insert:(NSArray<NSIndexPath *> *)indexPaths animated:(BOOL)animated
 - (void)photo:(NSArray<NSIndexPath *> *)indexPaths transaction:(BOOL)animated

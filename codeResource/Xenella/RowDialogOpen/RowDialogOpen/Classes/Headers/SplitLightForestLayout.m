@@ -24,7 +24,7 @@ ArtifactReflectData coreBehaviorKey = (ArtifactReflectData){184, (Byte []){220, 
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DoinglyTask.m
+//  SplitLightForestLayout.m
 //  NIM
 //
 //  Created by 彭爽 on 2021/9/8.
@@ -33,33 +33,33 @@ ArtifactReflectData coreBehaviorKey = (ArtifactReflectData){184, (Byte []){220, 
 
 // __M_A_C_R_O__
 //: #import "USERGlobalConfigManager.h"
-#import "DoinglyTask.h"
+#import "SplitLightForestLayout.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface USERGlobalConfigManager ()
-@interface DoinglyTask ()
+@interface SplitLightForestLayout ()
 //: @property (nonatomic ,strong) NSArray *secretQuestionArray;
 @property (nonatomic ,strong) NSArray *secretQuestionArray;
 //: @end
 @end
 
 //: @implementation USERGlobalConfigManager
-@implementation DoinglyTask
+@implementation SplitLightForestLayout
 
 //: static USERGlobalConfigManager *shareConfigManager = nil;
-static DoinglyTask *spacingCheckValue = nil;
+static SplitLightForestLayout *spacingCheckValue = nil;
 
 //: + (USERGlobalConfigManager *)shareConfigManager{
-+ (DoinglyTask *)perceptManager{
++ (SplitLightForestLayout *)perceptManager{
     //: @synchronized(self) {
     @synchronized(self) {
         //: if (shareConfigManager == nil) {
         if (spacingCheckValue == nil) {
             //: shareConfigManager = [[USERGlobalConfigManager alloc] init];
-            spacingCheckValue = [[DoinglyTask alloc] init];
+            spacingCheckValue = [[SplitLightForestLayout alloc] init];
         }
         //: return shareConfigManager;
         return spacingCheckValue;
@@ -80,7 +80,7 @@ static DoinglyTask *spacingCheckValue = nil;
         //: if (code.integerValue == 0) {
         if (code.integerValue == 0) {
             //: [USERGlobalConfigManager shareConfigManager].secretQuestionArray = [resultDict valueObjectForKey:@"data"];
-            [DoinglyTask perceptManager].secretQuestionArray = [resultDict toneWith:StringFromArtifactReflectData(&coreBehaviorKey)];
+            [SplitLightForestLayout perceptManager].secretQuestionArray = [resultDict toneWith:StringFromArtifactReflectData(&coreBehaviorKey)];
         }
     //: } failed:^(id responseObject, NSError *error) {
     } most:^(id responseObject, NSError *error) {
@@ -92,7 +92,7 @@ static DoinglyTask *spacingCheckValue = nil;
 //: + (NSArray *)getSecretQuestionList{
 + (NSArray *)questioning{
     //: return [USERGlobalConfigManager shareConfigManager].secretQuestionArray;
-    return [DoinglyTask perceptManager].secretQuestionArray;
+    return [SplitLightForestLayout perceptManager].secretQuestionArray;
 }
 
 //: @end

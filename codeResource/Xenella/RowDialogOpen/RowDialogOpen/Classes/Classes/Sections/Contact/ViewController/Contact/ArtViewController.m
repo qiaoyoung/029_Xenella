@@ -245,8 +245,8 @@
 #import "SuitViewController.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface CCCContactScanViewController ()<SGScanCodeDelegate, SGScanCodeSampleBufferDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @interface ArtViewController ()<SunnyWorth, DetailHorn, UINavigationControllerDelegate, UIImagePickerControllerDelegate>

@@ -237,7 +237,7 @@ Byte kBrightPlatform[] = {27, 2, 89, 11, 202, 142, 244, 16, 49, 221, 232, 18, 22
 //: #import "CCCLoginManager.h"
 #import "Manager.h"
 //: #import "USERCustomAttachmentDecoder.h"
-#import "DecoderNational.h"
+#import "StarTupleShowLucid.h"
 //: #import "USERClientUtil.h"
 #import "GreatUtil.h"
 //: #import "USERNotificationCenter.h"
@@ -282,8 +282,8 @@ Byte kBrightPlatform[] = {27, 2, 89, 11, 202, 142, 244, 16, 49, 221, 232, 18, 22
 #import "PreviousLieInWaitViewController.h"
 //: #import "HttpManager+Addtionals.h"
 #import "TurnForceSin+Biter.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 //: #import "MyUserDefaults.h"
 #import "SelectionDefaults.h"
 //: #import "MyUserDefaults+Util.h"
@@ -925,7 +925,7 @@ Byte kBrightPlatform[] = {27, 2, 89, 11, 202, 142, 244, 16, 49, 221, 232, 18, 22
 
     //注册自定义消息的解析器
     //: [NIMCustomObject registerCustomDecoder:[USERCustomAttachmentDecoder new]];
-    [NIMCustomObject registerCustomDecoder:[DecoderNational new]];
+    [NIMCustomObject registerCustomDecoder:[StarTupleShowLucid new]];
 
     //注册 TaskIdentifyRave 自定义排版配置
     //: [[MyUserKit sharedKit] registerLayoutConfig:[USERCellLayoutConfig new]];

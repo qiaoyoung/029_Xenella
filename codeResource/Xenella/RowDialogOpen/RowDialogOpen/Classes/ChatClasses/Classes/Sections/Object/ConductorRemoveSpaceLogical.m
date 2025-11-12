@@ -34,13 +34,13 @@ Byte k_relateData[] = {81, 4, 21, 6, 255, 17, 51, 48, 52, 46, 117};
 
 // __M_A_C_R_O__
 //: #import "FFFSessionInteractorImpl.h"
-#import "DetailImpl.h"
+#import "ConductorRemoveSpaceLogical.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 //: #import "FFFMessageModel.h"
 #import "MessageDistant.h"
 //: #import "FFFSessionTableAdapter.h"
-#import "CountroduceAdapter.h"
+#import "SmoothCoderAfter.h"
 //: #import "FFFKitMediaFetcher.h"
 #import "ReaderFetcher.h"
 //: #import "FFFMessageMaker.h"
@@ -83,7 +83,7 @@ dispatch_queue_t untilMaximumBill()
 
 
 //: @interface FFFSessionInteractorImpl()<NIMMediaManagerDelegate>
-@interface DetailImpl()<NIMMediaManagerDelegate>
+@interface ConductorRemoveSpaceLogical()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,strong) FFFKitMediaFetcher *mediaFetcher;
 @property (nonatomic,strong) ReaderFetcher *mediaFetcher;
@@ -110,7 +110,7 @@ dispatch_queue_t untilMaximumBill()
 @end
 
 //: @implementation FFFSessionInteractorImpl
-@implementation DetailImpl
+@implementation ConductorRemoveSpaceLogical
 
 //: - (void)refreshAllChatExtendDatasByModel:(FFFMessageModel *)model
 - (void)part:(MessageDistant *)model

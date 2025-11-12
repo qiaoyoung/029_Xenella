@@ -367,8 +367,8 @@
 #import "OftentimesViewController.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface TeamMemberNormalViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,NIMContactSelectDelegate>
 @interface DecentViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,ConMaximum>

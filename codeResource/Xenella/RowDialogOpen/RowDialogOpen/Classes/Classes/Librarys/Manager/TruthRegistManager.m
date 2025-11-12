@@ -349,8 +349,8 @@ typedef struct {
 #import "TruthRegistManager.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface USERRegistConfigManager ()
 @interface TruthRegistManager ()

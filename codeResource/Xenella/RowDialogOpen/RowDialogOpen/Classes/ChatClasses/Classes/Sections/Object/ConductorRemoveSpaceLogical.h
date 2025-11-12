@@ -13,11 +13,11 @@
 #import <Foundation/Foundation.h>
 //: #import "ShaderMajorSplitStencil.h"
 #import "ShaderMajorSplitStencil.h"
-//: #import "TheoryMildDatasetter.h"
-#import "TheoryMildDatasetter.h"
+//: #import "SurfaceFirmWaveBefore.h"
+#import "SurfaceFirmWaveBefore.h"
 
 //: @interface FFFSessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
-@interface DetailImpl : NSObject<DragSumeractor,Delegate>
+@interface ConductorRemoveSpaceLogical : NSObject<DragSumeractor,Delegate>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithTip:(NIMSession *)session

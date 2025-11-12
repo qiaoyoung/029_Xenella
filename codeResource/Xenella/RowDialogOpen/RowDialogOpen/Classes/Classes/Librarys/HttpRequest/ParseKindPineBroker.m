@@ -10,7 +10,7 @@ Byte colorQuitLogger[] = {49, 45, 68, 9, 153, 29, 129, 185, 197, 187, 183, 183, 
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  HttpInterfacedConst.m
+//  ParseKindPineBroker.m
 //  NIM
 //
 //  Created by 田玉龙 on 2022/7/30.
@@ -18,8 +18,8 @@ Byte colorQuitLogger[] = {49, 45, 68, 9, 153, 29, 129, 185, 197, 187, 183, 183, 
 //
 
 // __M_A_C_R_O__
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: NSString * RestApi(NSString *api) {
 NSString * untilClick(NSString *api) {

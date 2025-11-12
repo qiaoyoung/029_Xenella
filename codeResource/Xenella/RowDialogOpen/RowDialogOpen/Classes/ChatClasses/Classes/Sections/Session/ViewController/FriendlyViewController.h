@@ -17,8 +17,8 @@
 #import "DistantForceConfig.h"
 //: #import "ImplementAuroraTranslateUnity.h"
 #import "ImplementAuroraTranslateUnity.h"
-//: #import "TheoryMildDatasetter.h"
-#import "TheoryMildDatasetter.h"
+//: #import "SurfaceFirmWaveBefore.h"
+#import "SurfaceFirmWaveBefore.h"
 //: #import "FFFInputView.h"
 #import "PieceOfLandView.h"
 

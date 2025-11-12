@@ -292,7 +292,7 @@ typedef void (^HttpProgress)(NSProgress *progress);
                     //: success:(ResponseSuccess)success
                     progressResponseSuccess:(ResponseSuccess)success
                     //: failed:(ResponseFailed)failed;
-                    cloak:(ResponseFailed)failed;
+          failed:(ResponseFailed)failed;
 
 //: @end
 @end

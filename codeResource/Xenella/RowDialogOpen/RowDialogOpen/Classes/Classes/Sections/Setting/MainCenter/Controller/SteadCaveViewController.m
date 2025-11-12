@@ -575,8 +575,8 @@
 #import "ProsperousView.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 
 //: @interface FFFUserInfoViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,USERCustomUIAlertDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface SteadCaveViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,RustDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>

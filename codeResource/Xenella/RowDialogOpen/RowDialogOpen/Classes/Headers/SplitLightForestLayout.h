@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DoinglyTask.h
+//  SplitLightForestLayout.h
 //  NIM
 //
 //  Created by 彭爽 on 2021/9/8.
@@ -16,10 +16,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface USERGlobalConfigManager : NSObject
-@interface DoinglyTask : NSObject
+@interface SplitLightForestLayout : NSObject
 
 //: + (USERGlobalConfigManager *)shareConfigManager;
-+ (DoinglyTask *)perceptManager;
++ (SplitLightForestLayout *)perceptManager;
 //: + (NSArray *)getSecretQuestionList;
 + (NSArray *)questioning;
 //: + (void)refreshSecretQuestionConfig;

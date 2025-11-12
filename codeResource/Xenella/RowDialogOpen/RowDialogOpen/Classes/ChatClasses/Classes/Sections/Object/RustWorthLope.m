@@ -14,7 +14,7 @@
 //: #import "FFFSessionMsgDatasource.h"
 #import "DistinguishDatasource.h"
 //: #import "FFFSessionInteractorImpl.h"
-#import "DetailImpl.h"
+#import "ConductorRemoveSpaceLogical.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFMessageModel.h"
@@ -22,13 +22,13 @@
 //: #import "RobustDecoratorTransformer.h"
 #import "RobustDecoratorTransformer.h"
 //: #import "FFFSessionInteractorImpl.h"
-#import "DetailImpl.h"
+#import "ConductorRemoveSpaceLogical.h"
 //: #import "FFFSessionDataSourceImpl.h"
-#import "BesideImpl.h"
+#import "SignerUniversalRest.h"
 //: #import "FFFSessionLayoutImpl.h"
-#import "RaveImpl.h"
+#import "FocusAssemblerBuildZealous.h"
 //: #import "FFFSessionTableAdapter.h"
-#import "CountroduceAdapter.h"
+#import "SmoothCoderAfter.h"
 
 /*
                                             FriendlyViewController 类关系图
@@ -49,7 +49,7 @@
              |
              |
              |
-             ↓                                                       | ---> [CountroduceAdapter]
+             ↓                                                       | ---> [SmoothCoderAfter]
        [UITableView]                                                              .
             ↑                                                                     .
             .                                                                     .
@@ -61,10 +61,10 @@
 @interface RustWorthLope()
 
 //: @property (nonatomic,strong) FFFSessionTableAdapter *tableAdapter;
-@property (nonatomic,strong) CountroduceAdapter *tableAdapter;
+@property (nonatomic,strong) SmoothCoderAfter *tableAdapter;
 
 //: @property (nonatomic,strong) FFFSessionInteractorImpl *interactor;
-@property (nonatomic,strong) DetailImpl *interactor;
+@property (nonatomic,strong) ConductorRemoveSpaceLogical *interactor;
 
 //: @end
 @end
@@ -85,9 +85,9 @@
     PieceOfLandView *inputView = vc.sample;
 
     //: FFFSessionDataSourceImpl *datasource = [[FFFSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
-    BesideImpl *datasource = [[BesideImpl alloc] initWithSessionWrite:session honorConfig:sessionConfig];
+    SignerUniversalRest *datasource = [[SignerUniversalRest alloc] initWithSessionWrite:session honorConfig:sessionConfig];
     //: FFFSessionLayoutImpl *layout = [[FFFSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
-    RaveImpl *layout = [[RaveImpl alloc] initWithDripPan:session listener:sessionConfig];
+    FocusAssemblerBuildZealous *layout = [[FocusAssemblerBuildZealous alloc] initWithDripPan:session listener:sessionConfig];
     //: layout.tableView = tableView;
     layout.tableView = tableView;
     //: layout.inputView = inputView;
@@ -95,7 +95,7 @@
 
 
     //: _interactor = [[FFFSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
-    _interactor = [[DetailImpl alloc] initWithTip:session allow:sessionConfig];
+    _interactor = [[ConductorRemoveSpaceLogical alloc] initWithTip:session allow:sessionConfig];
     //: _interactor.delegate = vc;
     _interactor.delegate = vc;
     //: _interactor.dataSource = datasource;
@@ -107,7 +107,7 @@
     [layout setEyeDelegate:_interactor];
 
     //: _tableAdapter = [[FFFSessionTableAdapter alloc] init];
-    _tableAdapter = [[CountroduceAdapter alloc] init];
+    _tableAdapter = [[SmoothCoderAfter alloc] init];
     //: _tableAdapter.interactor = _interactor;
     _tableAdapter.interactor = _interactor;
     //: _tableAdapter.delegate = vc;

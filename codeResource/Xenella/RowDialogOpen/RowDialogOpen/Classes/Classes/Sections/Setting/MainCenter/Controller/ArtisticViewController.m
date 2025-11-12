@@ -317,8 +317,8 @@
 #import "FLAnimatedImage.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
-//: #import "HttpInterfacedConst.h"
-#import "HttpInterfacedConst.h"
+//: #import "ParseKindPineBroker.h"
+#import "ParseKindPineBroker.h"
 //: #import "SNGradientHelper.h"
 #import "MethodRough.h"
 

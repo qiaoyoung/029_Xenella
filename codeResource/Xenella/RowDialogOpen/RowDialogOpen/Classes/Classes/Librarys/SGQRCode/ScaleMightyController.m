@@ -10,12 +10,12 @@
 
 // __M_A_C_R_O__
 //: #import "SGPermissionCamera.h"
-#import "DoinglyCamera.h"
+#import "ScaleMightyController.h"
 //: #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVFoundation.h>
 
 //: @implementation SGPermissionCamera
-@implementation DoinglyCamera
+@implementation ScaleMightyController
 
 //: + (void)request:(void (^)(BOOL granted))handler {
 + (void)motion:(void (^)(BOOL granted))handler {
@@ -45,7 +45,7 @@
 //: + (void)camera:(SGPermissionCameraBlock)block {
 + (void)player:(SGPermissionCameraBlock)block {
     //: SGPermissionCamera *camera = [[SGPermissionCamera alloc] init];
-    DoinglyCamera *camera = [[DoinglyCamera alloc] init];
+    ScaleMightyController *camera = [[ScaleMightyController alloc] init];
 
     //: AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];

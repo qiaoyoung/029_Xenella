@@ -15,16 +15,16 @@
 #import "TruthWard.h"
 
 //: @class SGPermissionCamera;
-@class DoinglyCamera;
+@class ScaleMightyController;
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 //: typedef void(^SGPermissionCameraBlock)(SGPermissionCamera *camera, SGPermissionStatus status);
-typedef void(^SGPermissionCameraBlock)(DoinglyCamera *camera, SGPermissionStatus status);
+typedef void(^SGPermissionCameraBlock)(ScaleMightyController *camera, SGPermissionStatus status);
 
 //: @interface SGPermissionCamera : NSObject
-@interface DoinglyCamera : NSObject
+@interface ScaleMightyController : NSObject
 //: + (void)request:(void (^)(BOOL granted))handler;
 + (void)motion:(void (^)(BOOL granted))handler;
 //: + (void)camera:(SGPermissionCameraBlock)block;
