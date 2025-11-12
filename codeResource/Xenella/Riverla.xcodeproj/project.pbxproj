@@ -316,9 +316,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXBuildRule section */
-				/* End PBXBuildRule section */
-
 /* Begin PBXResourcesBuildPhase section */
 		AE5882E31A6F47E10070536A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -332,7 +329,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-    		39BCE4F464499F723A65CDC5 /* [CP] Embed Pods Frameworks */ = {
+		39BCE4F464499F723A65CDC5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,12 +388,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Riverla/Pods-Riverla-resources.sh",
-				"${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/Classes/Librarys/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/Classes/Librarys/SwitchlyView/SwitchlyView.bundle",
 				"${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Resources/RowDialogOpen.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SwitchlyView.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RowDialogOpen.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
