@@ -2,6 +2,37 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The app needs access to photo library to share images in chat.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>The app requires access to add new photos to your library, enabling you to save photos directly from the app.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The app needs to access the microphone to record audio information for users to have voice chats.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>The app need to use your address book permissions to recommend friends to you.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>The app needs access to your camera to take profile pictures.</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakaotalk</string>
+		<string>tg</string>
+		<string>http</string>
+		<string>https</string>
+		<string>whatsapp</string>
+		<string>line</string>
+		<string>twitter</string>
+		<string>tiktok</string>
+		<string>messenger</string>
+		<string>fb</string>
+		<string>youtube</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
