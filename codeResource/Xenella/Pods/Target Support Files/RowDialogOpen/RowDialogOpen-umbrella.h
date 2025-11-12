@@ -189,7 +189,7 @@
 #import "UIScrollView+Twitch.h"
 #import "UITextView+SunnyAccommodate.h"
 #import "UITextView+Util.h"
-#import "SwizzlingDefine.h"
+#import "GrowingFillShaderPostbox.h"
 #import "UINavigationBar+Decent.h"
 #import "UINavigationController+Decent.h"
 #import "UIView+Decent.h"
