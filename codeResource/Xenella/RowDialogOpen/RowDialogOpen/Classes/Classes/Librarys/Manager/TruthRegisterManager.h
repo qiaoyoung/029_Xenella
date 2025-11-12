@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TruthRegistManager.h
+//  TruthRegisterManager.h
 //  NIM
 //
 //  Created by 彭爽 on 2021/9/6.
@@ -18,7 +18,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface USERRegistConfigManager : NSObject
-@interface TruthRegistManager : NSObject
+@interface TruthRegisterManager : NSObject
 //: @property (nonatomic ,strong) NSMutableDictionary *registDict;
 @property (nonatomic ,strong) NSMutableDictionary *defense;
 //: @property (nonatomic ,strong) FFFLoginViewController *loginVC;
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)expand:(UINavigationController *)nav;
 
 //: + (USERRegistConfigManager *)shareConfigManager;
-+ (TruthRegistManager *)timing;
++ (TruthRegisterManager *)timing;
 
 //: + (void)refreshRegistConfig;
 + (void)address;

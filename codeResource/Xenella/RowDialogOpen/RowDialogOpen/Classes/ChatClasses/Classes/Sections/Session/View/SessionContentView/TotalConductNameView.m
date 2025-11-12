@@ -10,7 +10,7 @@ Byte screenInspectorPlatform[] = {61, 25, 12, 4, 58, 58, 58, 63, 93, 104, 57, 10
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TotalroduceConductNameView.m
+//  TotalConductNameView.m
 // TaskIdentifyRave
 //
 //  Created by chris on 15/1/28.
@@ -19,7 +19,7 @@ Byte screenInspectorPlatform[] = {61, 25, 12, 4, 58, 58, 58, 63, 93, 104, 57, 10
 
 // __M_A_C_R_O__
 //: #import "FFFSessionImageContentView.h"
-#import "TotalroduceConductNameView.h"
+#import "TotalConductNameView.h"
 //: #import "FFFMessageModel.h"
 #import "MessageDistant.h"
 //: #import "UIViewDeviceKit.h"
@@ -36,7 +36,7 @@ Byte screenInspectorPlatform[] = {61, 25, 12, 4, 58, 58, 58, 63, 93, 104, 57, 10
 #import "LooNever.h"
 
 //: @interface FFFSessionImageContentView()
-@interface TotalroduceConductNameView()
+@interface TotalConductNameView()
 
 //: @property (nonatomic,strong) FFFLoadProgressView * progressView;
 @property (nonatomic,strong) LopeView * progressView;
@@ -50,7 +50,7 @@ Byte screenInspectorPlatform[] = {61, 25, 12, 4, 58, 58, 58, 63, 93, 104, 57, 10
 @end
 
 //: @implementation FFFSessionImageContentView
-@implementation TotalroduceConductNameView
+@implementation TotalConductNameView
 
 //: - (void)refresh:(FFFMessageModel *)data
 - (void)original:(MessageDistant *)data

@@ -226,7 +226,7 @@ InitiatoryData k_ladPlatform = (InitiatoryData){98, (Byte []){11, 17, 17, 23, 18
 //: #import "FFFRegisterViewController.h"
 #import "YeViewController.h"
 //: #import "USERRegistConfigManager.h"
-#import "TruthRegistManager.h"
+#import "TruthRegisterManager.h"
 //: #import <CoreTelephony/CTCellularData.h>
 #import <CoreTelephony/CTCellularData.h>
 //: #import "RobustDecoratorTransformer.h"
@@ -655,7 +655,7 @@ InitiatoryData k_ladPlatform = (InitiatoryData){98, (Byte []){11, 17, 17, 23, 18
     [self.view addSubview:bg];
 
     //: [USERRegistConfigManager shareConfigManager].loginVC = self;
-    [TruthRegistManager timing].background = self;
+    [TruthRegisterManager timing].background = self;
 	[self setMakeMain:_reasonSearch];
 
     //: MyUserDefaults *userDefaults = [MyUserDefaults standardUserDefaults];

@@ -337,7 +337,7 @@ typedef struct {
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TruthRegistManager.m
+//  TruthRegisterManager.m
 //  NIM
 //
 //  Created by 彭爽 on 2021/9/6.
@@ -346,37 +346,37 @@ typedef struct {
 
 // __M_A_C_R_O__
 //: #import "USERRegistConfigManager.h"
-#import "TruthRegistManager.h"
+#import "TruthRegisterManager.h"
 //: #import "HttpManager.h"
 #import "TurnForceSin.h"
 //: #import "ParseKindPineBroker.h"
 #import "ParseKindPineBroker.h"
 
 //: @interface USERRegistConfigManager ()
-@interface TruthRegistManager ()
+@interface TruthRegisterManager ()
 //: @property (nonatomic ,strong) UINavigationController *nav;
 @property (nonatomic ,strong) UINavigationController *scriptDerive;
 //: @end
 @end
 
 //: @implementation USERRegistConfigManager
-@implementation TruthRegistManager
+@implementation TruthRegisterManager
 
 //: static USERRegistConfigManager *shareConfigManager = nil;
-static TruthRegistManager *spacingCheckValue = nil;
+static TruthRegisterManager *spacingCheckValue = nil;
 
 //: -(void)mobileRegist{
 -(void)untilRegist{
 
     //: NSString *account = [[USERRegistConfigManager shareConfigManager].registDict newStringValueForKey:@"account"];
-    NSString *account = [[self inputWith:[TruthRegistManager timing].statement] have:[EnabletoMinData featureApologizeSettings]];
+    NSString *account = [[self inputWith:[TruthRegisterManager timing].statement] have:[EnabletoMinData featureApologizeSettings]];
     //: [[USERRegistConfigManager shareConfigManager].registDict setObject:account forKey:@"mobile"];
-    [[TruthRegistManager timing].statement setObject:account forKey:[EnabletoMinData styleRiggerUtility]];
+    [[TruthRegisterManager timing].statement setObject:account forKey:[EnabletoMinData styleRiggerUtility]];
 
     //: NSDictionary *dict = [USERRegistConfigManager shareConfigManager].registDict;
-    NSDictionary *dict = [self inputWith:[TruthRegistManager timing].statement];
+    NSDictionary *dict = [self inputWith:[TruthRegisterManager timing].statement];
     //: UIImage *image = [USERRegistConfigManager shareConfigManager].headerImage;
-    UIImage *image = [TruthRegistManager timing].random;
+    UIImage *image = [TruthRegisterManager timing].random;
 
     //: if (!image) {
     if (!image) {
@@ -458,10 +458,10 @@ static TruthRegistManager *spacingCheckValue = nil;
 //: - (NSMutableDictionary *)registDictDefault{
 - (NSMutableDictionary *)networkGroup{
     //: [USERRegistConfigManager shareConfigManager].registDict = [NSMutableDictionary dictionaryWithCapacity:0];
-    [TruthRegistManager timing].statement = [NSMutableDictionary dictionaryWithCapacity:0];
+    [TruthRegisterManager timing].statement = [NSMutableDictionary dictionaryWithCapacity:0];
 	[self setAccommodate:_background];
     //: NSMutableDictionary *dict = [USERRegistConfigManager shareConfigManager].registDict;
-    NSMutableDictionary *dict = [self inputWith:[TruthRegistManager timing].statement];
+    NSMutableDictionary *dict = [self inputWith:[TruthRegisterManager timing].statement];
     //: [dict setObject:@"iOS" forKey:@"client"];
     [dict setObject:[EnabletoMinData commonWireMotePistolHelper] forKey:[EnabletoMinData featureImpactPath]];
     //: [dict setObject:@"" forKey:@"invitecode"];
@@ -476,7 +476,7 @@ static TruthRegistManager *spacingCheckValue = nil;
     [dict setObject:@"1" forKey:[EnabletoMinData moduleImpactSpecConfig]];
 
     //: return [USERRegistConfigManager shareConfigManager].registDict;
-    return [TruthRegistManager timing].statement;
+    return [TruthRegisterManager timing].statement;
 }
 
 
@@ -519,13 +519,13 @@ static TruthRegistManager *spacingCheckValue = nil;
 }
 
 //: + (USERRegistConfigManager *)shareConfigManager {
-+ (TruthRegistManager *)timing {
++ (TruthRegisterManager *)timing {
     //: @synchronized(self) {
     @synchronized(self) {
         //: if (shareConfigManager == nil) {
         if (spacingCheckValue == nil) {
             //: shareConfigManager = [[USERRegistConfigManager alloc] init];
-            spacingCheckValue = [[TruthRegistManager alloc] init];
+            spacingCheckValue = [[TruthRegisterManager alloc] init];
 
             //: [shareConfigManager registDictDefault];
             [spacingCheckValue networkGroup];
@@ -539,24 +539,24 @@ static TruthRegistManager *spacingCheckValue = nil;
 + (void)expand:(UINavigationController *)nav{
 
     //: [USERRegistConfigManager shareConfigManager].nav = nav;
-    [TruthRegistManager timing].scriptDerive = nav;
+    [TruthRegisterManager timing].scriptDerive = nav;
     //: NSString *ismustmobile = [MyUserDefaults standardUserDefaults].ismustmobile;
     NSString *ismustmobile = [SelectionDefaults without].history;//是否手机
 
     //: if ([USERRegistConfigManager shareConfigManager].headerImage == nil) {
-    if ([TruthRegistManager timing].random == nil) {//默认头像
+    if ([TruthRegisterManager timing].random == nil) {//默认头像
         //: [USERRegistConfigManager shareConfigManager].headerImage = [UIImage imageNamed:@"head_default"];
-        [TruthRegistManager timing].random = [UIImage imageNamed:[EnabletoMinData spacingOddHelper]];
+        [TruthRegisterManager timing].random = [UIImage imageNamed:[EnabletoMinData spacingOddHelper]];
     }
 
     //: if (ismustmobile.integerValue > 0) {
     if (ismustmobile.integerValue > 0) {
         //: [[USERRegistConfigManager shareConfigManager] mobileRegist];
-        [[TruthRegistManager timing] untilRegist];
+        [[TruthRegisterManager timing] untilRegist];
     //: }else{
     }else{
         //: [[USERRegistConfigManager shareConfigManager] accountRegist];
-        [[TruthRegistManager timing] accountMaxGrowing];
+        [[TruthRegisterManager timing] accountMaxGrowing];
 
     }
 
@@ -566,9 +566,9 @@ static TruthRegistManager *spacingCheckValue = nil;
 -(void)accountMaxGrowing{
 
     //: NSDictionary *dict = [USERRegistConfigManager shareConfigManager].registDict;
-    NSDictionary *dict = [self inputWith:[TruthRegistManager timing].statement];
+    NSDictionary *dict = [self inputWith:[TruthRegisterManager timing].statement];
     //: UIImage *image = [USERRegistConfigManager shareConfigManager].headerImage;
-    UIImage *image = [TruthRegistManager timing].random;
+    UIImage *image = [TruthRegisterManager timing].random;
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(150, 150)];
     UIImage *imageForAvatarUpload = [image past:CGSizeMake(150, 150)];
 

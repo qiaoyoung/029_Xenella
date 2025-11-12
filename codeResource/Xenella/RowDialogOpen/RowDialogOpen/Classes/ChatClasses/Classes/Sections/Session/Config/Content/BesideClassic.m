@@ -82,7 +82,7 @@
 - (NSString *)placement:(NIMMessage *)message
 {
     //: return @"FFFSessionImageContentView";
-    return @"TotalroduceConductNameView";
+    return @"TotalConductNameView";
 }
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message

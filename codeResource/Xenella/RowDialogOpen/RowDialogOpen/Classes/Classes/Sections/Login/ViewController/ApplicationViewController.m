@@ -627,7 +627,7 @@
 //: #import "TZImagePickerController.h"
 #import "TZImagePickerController.h"
 //: #import "USERRegistConfigManager.h"
-#import "TruthRegistManager.h"
+#import "TruthRegisterManager.h"
 //: #import "USERFileLocationHelper.h"
 #import "Helper.h"
 
@@ -853,7 +853,7 @@
 
 
     //: USERRegistConfigManager *manager = [USERRegistConfigManager shareConfigManager];
-    TruthRegistManager *manager = [TruthRegistManager timing];
+    TruthRegisterManager *manager = [TruthRegisterManager timing];
 
     //: if (_headerImage) {
     if (_refuse) {
@@ -874,7 +874,7 @@
 
     //注册
     //: [USERRegistConfigManager sendRegistRequest:self.navigationController];
-    [TruthRegistManager expand:self.navigationController];
+    [TruthRegisterManager expand:self.navigationController];
 }
 
 //: - (void)viewWillAppear:(BOOL)animated{

@@ -538,7 +538,7 @@
 //: #import "FFFRegisterViewController.h"
 #import "YeViewController.h"
 //: #import "USERRegistConfigManager.h"
-#import "TruthRegistManager.h"
+#import "TruthRegisterManager.h"
 //: #import "RobustDecoratorTransformer.h"
 #import "RobustDecoratorTransformer.h"
 //: #import "CCCAutoLoginManager.h"
@@ -1025,7 +1025,7 @@
     }
 
     //: USERRegistConfigManager *manager = [USERRegistConfigManager shareConfigManager];
-    TruthRegistManager *manager = [TruthRegistManager timing];
+    TruthRegisterManager *manager = [TruthRegisterManager timing];
     //: [manager.registDict setObject:@"iOS" forKey:@"client"];
     [manager.statement setObject:[[DerivativeData sharedInstance] layoutPlaceTimer] forKey:[[DerivativeData sharedInstance] styleTrikeBoltName]];
     //: [manager.registDict setObject:_usernameTextField.text forKey:@"account"];
@@ -1049,7 +1049,7 @@
      autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                   ;
     //: [USERRegistConfigManager firstSendRegistName:_usernameTextField.text pd:_passwordTextField.text RequestWithComplete:^(BOOL sucess, NSString *msg) {
-    [TruthRegistManager adjustment:_composition.text writeEntry:_input.text possibility:^(BOOL sucess, NSString *msg) {
+    [TruthRegisterManager adjustment:_composition.text writeEntry:_input.text possibility:^(BOOL sucess, NSString *msg) {
         @
          //: try{} @finally{} __typeof__(self) self = __weak_self__;
          try{} @finally{} __typeof__(self) self = __weak_self__;

@@ -435,7 +435,7 @@
 //: #import "UIView+Toast.h"
 #import "UIView+Under.h"
 //: #import "USERRegistConfigManager.h"
-#import "TruthRegistManager.h"
+#import "TruthRegisterManager.h"
 //: #import "FFFKitProgressHUD.h"
 #import "CoerceView.h"
 //: #import "ThyScrollView.h"

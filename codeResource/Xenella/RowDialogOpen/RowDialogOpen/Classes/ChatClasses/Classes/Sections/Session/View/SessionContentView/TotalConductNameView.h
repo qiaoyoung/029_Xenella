@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TotalroduceConductNameView.h
+//  TotalConductNameView.h
 // TaskIdentifyRave
 //
 //  Created by chris on 15/1/28.
@@ -13,7 +13,7 @@
 #import "FirstMessageView.h"
 
 //: @interface FFFSessionImageContentView : FFFSessionMessageContentView
-@interface TotalroduceConductNameView : FirstMessageView
+@interface TotalConductNameView : FirstMessageView
 
 //: @property (nonatomic,strong,readonly) UIImageView * imageView;
 @property (nonatomic,strong,readonly) UIImageView * imageView;

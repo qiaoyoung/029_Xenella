@@ -589,7 +589,7 @@
 		6BF4F383E2F2F696477A5A68DEC831CC /* AdViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 90540D8242131B66AFF8ABBE6C242FA6 /* AdViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C122165BF3ECE0BCCBB0EE8A010CC3E /* SalutationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E606BEE3CCC66BAE2A51963193128 /* SalutationViewController.m */; };
 		6C40436BF32794FE138F8D1A052CD8F0 /* SkullSessionRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E8F83D71BECA074B4398D1CD41EDFE /* SkullSessionRecordView.m */; };
-		6C49F372667BAA105EEBCE6E24CC369B /* TotalroduceConductNameView.h in Headers */ = {isa = PBXBuildFile; fileRef = E943B0FBB9C7C11C9EBA2DF56663D62C /* TotalroduceConductNameView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C49F372667BAA105EEBCE6E24CC369B /* TotalConductNameView.h in Headers */ = {isa = PBXBuildFile; fileRef = E943B0FBB9C7C11C9EBA2DF56663D62C /* TotalConductNameView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C7BB47AEC5CA2AD0AACBED16FC9D2D9 /* TZImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 679114940E63DC24358B917E73B77A92 /* TZImageRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C89F708C4183F65EE26E116C8A59A26 /* SDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 890AE6D13654454EE2069F5F2928386D /* SDWeakProxy.m */; };
 		6C9AF8D2A3A4FFE873BD3696D533FD3F /* IlluminatedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0E7A065CF44D1D5EC7579610EEFA5D /* IlluminatedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -878,7 +878,7 @@
 		A2F786591D30D87AFA6B028DF97924C1 /* UITextView+SunnyAccommodate.m in Sources */ = {isa = PBXBuildFile; fileRef = 014DBF659FEA371DB7A8833B1EF8090D /* UITextView+SunnyAccommodate.m */; };
 		A3A091765A6E18D712BDF8E0E863BD5C /* MinimumRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 571B1C1D5A77709AD31E2845C881211B /* MinimumRecord.m */; };
 		A3B844648F2536344EB7B1199781B779 /* PaperManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC2B3EDB83A80615D63FF84946251E5 /* PaperManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3C4E88FF6B978540A08CA71C2D3281B /* TruthRegistManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9354B781DA3219AE1726C9BBF3DCD1B /* TruthRegistManager.m */; };
+		A3C4E88FF6B978540A08CA71C2D3281B /* TruthRegisterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9354B781DA3219AE1726C9BBF3DCD1B /* TruthRegisterManager.m */; };
 		A41B680286EA4C95627B6CDF2A90CBA8 /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 9477080398C06C2F0BBC25AC3E617A09 /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4579DF92DB491A8A9C094133F71105F /* SalutationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E061CE5359736043117F32C9AD4B73B /* SalutationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A47CA822677947C3C5B61FAC702CDB22 /* DistantObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0D93DAA61CA3CF588F619DD24B9AFE /* DistantObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1246,7 +1246,7 @@
 		EB7B058DA6BE43839DA54A3C56C8B9E3 /* mz_strm_pkcrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = BB67300F7A535B7B98B1CD6F22EBDB0B /* mz_strm_pkcrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EBDF1100E4F2B6EAC8C731F275953A9E /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16788B0F73C0692B31D290C312F5330B /* TZProgressView.m */; };
 		EBE07626DFE87BB82EDA681B42D11D8B /* ArtSinControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8982A6156C275DD97B296058FEA5C57A /* ArtSinControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC78BC57245E0F937CA6C9E0CB9CD89A /* TotalroduceConductNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C347A8DB927A3DC5F19258C2DD3ED24 /* TotalroduceConductNameView.m */; };
+		EC78BC57245E0F937CA6C9E0CB9CD89A /* TotalConductNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C347A8DB927A3DC5F19258C2DD3ED24 /* TotalConductNameView.m */; };
 		EC8E84A8FFADDCA562A8608D141D9027 /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C09687ABD4E59C093CD62F4780CEB9 /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC94D8C1D8CD1851A62C85CE39060B47 /* UINavigationController+FifteenConduct.h in Headers */ = {isa = PBXBuildFile; fileRef = A71280590124CEFDA667C9D8D285903E /* UINavigationController+FifteenConduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC9B34262AED632D7EFB49804337648E /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B095C1169B3B2C1FDDFDC7A439F092 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1290,7 +1290,7 @@
 		F34C3F5E003C9B486173FA9295F1600F /* AccommodateThy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF959E9810A1C8284D4D9A6A2C43B1F /* AccommodateThy.m */; };
 		F35C166F2DCF285196A98AD6D3B0FAD2 /* ThyYe.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BA379DB31B2FA0F75EBC28F5A59A26 /* ThyYe.m */; };
 		F3AECEF6D3BB919B3E7392942E1BC58B /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC5888C2744168577002936D9FFDB44 /* MJRefreshBackFooter.m */; };
-		F3C36B4F7444DA9DB8788523C37207F8 /* TruthRegistManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B72DD815EA33A287FBF4A0520D5C870 /* TruthRegistManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C36B4F7444DA9DB8788523C37207F8 /* TruthRegisterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B72DD815EA33A287FBF4A0520D5C870 /* TruthRegisterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3E609A90A3163BF913E316170BBCE28 /* DisappearFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7155F9DCB9BA3C345BCB921227F7E554 /* DisappearFactory.m */; };
 		F437A0C18D5C91D3C0A21108CF6CC82B /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 921C6302BC4713BD4D20E08191ACAD94 /* NSArray+Safe.m */; };
 		F4394246AD54F63CD649B8E6E93AE5D9 /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CFDC0C36B26D9B62F6F8CF2FCA0BF /* TZPhotoPickerController.m */; };
@@ -1867,7 +1867,7 @@
 		2AC12B1890AC85BF3D90F9720CD92ABA /* ColleagueTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ColleagueTextView.h; sourceTree = "<group>"; };
 		2B0B5F4D04D87C7220C5F41C150AD3FB /* FLAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImageView.h; path = FLAnimatedImage/include/FLAnimatedImageView.h; sourceTree = "<group>"; };
 		2B23D1B537BB7B409436AAAA4226425F /* PublicSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PublicSecurityPolicy.m; sourceTree = "<group>"; };
-		2B72DD815EA33A287FBF4A0520D5C870 /* TruthRegistManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TruthRegistManager.h; sourceTree = "<group>"; };
+		2B72DD815EA33A287FBF4A0520D5C870 /* TruthRegisterManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TruthRegisterManager.h; sourceTree = "<group>"; };
 		2BA2A15B95D31A3068DDA6E7E310B6FD /* MinimumRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MinimumRecord.h; sourceTree = "<group>"; };
 		2BCAAA5B103FD442AEDDF4C14BED71BE /* LotControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LotControl.m; sourceTree = "<group>"; };
 		2BDB32FF6AFCB72A1C49220457C7768E /* success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "success@3x.png"; sourceTree = "<group>"; };
@@ -1955,7 +1955,7 @@
 		3B53040A2994DEE9D086ED5E5D99926C /* NSDictionary+Truth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Truth.h"; sourceTree = "<group>"; };
 		3B63E465A37930DCD2FE4474B0E09A13 /* FLAnimatedImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImage-dummy.m"; sourceTree = "<group>"; };
 		3B6CAEE4CF35A46502CE1A051285D9D7 /* ClassicToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ClassicToolbar.m; sourceTree = "<group>"; };
-		3C347A8DB927A3DC5F19258C2DD3ED24 /* TotalroduceConductNameView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TotalroduceConductNameView.m; sourceTree = "<group>"; };
+		3C347A8DB927A3DC5F19258C2DD3ED24 /* TotalConductNameView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TotalConductNameView.m; sourceTree = "<group>"; };
 		3C40FF9A55E6BF46E277C8B81D355A81 /* SDAsyncBlockOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAsyncBlockOperation.h; path = SDWebImage/Private/SDAsyncBlockOperation.h; sourceTree = "<group>"; };
 		3C52DD984600D48C57866373E8833E3F /* DragView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
 		3C75D6955E8CFDFD5599F8EE65DD930A /* DeviceBarePreload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DeviceBarePreload.m; sourceTree = "<group>"; };
@@ -2576,7 +2576,7 @@
 		A8E6BB83EB6A857327DCE7213E0409BD /* SDImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoder.h; path = SDWebImage/Core/SDImageCoder.h; sourceTree = "<group>"; };
 		A8F27947887AC8C4A27377EBB1558574 /* UIColor+Util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
 		A8F50BCA69F4F3D964E604398BE806DE /* ReaderDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReaderDataManager.m; sourceTree = "<group>"; };
-		A9354B781DA3219AE1726C9BBF3DCD1B /* TruthRegistManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TruthRegistManager.m; sourceTree = "<group>"; };
+		A9354B781DA3219AE1726C9BBF3DCD1B /* TruthRegisterManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TruthRegisterManager.m; sourceTree = "<group>"; };
 		A961A79D4966E90D8651F8646CC5154F /* UIImage+Metadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Metadata.h"; path = "SDWebImage/Core/UIImage+Metadata.h"; sourceTree = "<group>"; };
 		A96F1A2D04B7108B255CB9BB5A3CDBB7 /* DenyView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DenyView.h; sourceTree = "<group>"; };
 		A9DA7B2A6AEBC7299385C9809A5F2078 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
@@ -2929,7 +2929,7 @@
 		E83B701AAD1A6ED7D5A9C49AC7AE9DFB /* BindControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BindControl.h; sourceTree = "<group>"; };
 		E8733EE733A4C8E6906CC0AFC7D3A6FD /* BesideDistantSupply.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BesideDistantSupply.h; sourceTree = "<group>"; };
 		E8F4EFB61390099293E2A1C679767AB5 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
-		E943B0FBB9C7C11C9EBA2DF56663D62C /* TotalroduceConductNameView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TotalroduceConductNameView.h; sourceTree = "<group>"; };
+		E943B0FBB9C7C11C9EBA2DF56663D62C /* TotalConductNameView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TotalConductNameView.h; sourceTree = "<group>"; };
 		E96CD2296ECAA6CE26C166B4BBD7F118 /* info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "info@3x.png"; sourceTree = "<group>"; };
 		E96CE674954761060F571FA7FF6D418F /* View.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
 		E97413297CE18CFE69DD5E380FB40C88 /* FLAnimatedImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-umbrella.h"; sourceTree = "<group>"; };
@@ -3280,8 +3280,8 @@
 		074437286229F4677910BDE2FB31783B /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				2B72DD815EA33A287FBF4A0520D5C870 /* TruthRegistManager.h */,
-				A9354B781DA3219AE1726C9BBF3DCD1B /* TruthRegistManager.m */,
+				2B72DD815EA33A287FBF4A0520D5C870 /* TruthRegisterManager.h */,
+				A9354B781DA3219AE1726C9BBF3DCD1B /* TruthRegisterManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -5120,8 +5120,8 @@
 				6C20721E0FCB51FF6CFEE395E3419B2B /* SpatialArrangementControl.m */,
 				B1392BFA4057C83F24E47B6A7128B7BC /* TheView.h */,
 				3A3AD5E7079CA1C1C9440B014997D9C5 /* TheView.m */,
-				E943B0FBB9C7C11C9EBA2DF56663D62C /* TotalroduceConductNameView.h */,
-				3C347A8DB927A3DC5F19258C2DD3ED24 /* TotalroduceConductNameView.m */,
+				E943B0FBB9C7C11C9EBA2DF56663D62C /* TotalConductNameView.h */,
+				3C347A8DB927A3DC5F19258C2DD3ED24 /* TotalConductNameView.m */,
 				718A6743AA37E91D2FB3669FAFC0B3B0 /* TowCropTextView.h */,
 				8300437B5E2453C3E0C41C428B3D8C34 /* TowCropTextView.m */,
 			);
@@ -6728,7 +6728,7 @@
 				5B83B989E6E987BCFDB9CC37EFA66EEC /* ThyYe.h in Headers */,
 				30A25FE6C14B59E471CFCBA0BC7C6DC6 /* TossNorViewController.h in Headers */,
 				54DE4B5DBF686B5F681E89F6BED6BAE9 /* TossViewCell.h in Headers */,
-				6C49F372667BAA105EEBCE6E24CC369B /* TotalroduceConductNameView.h in Headers */,
+				6C49F372667BAA105EEBCE6E24CC369B /* TotalConductNameView.h in Headers */,
 				F4513167AF3A52F0461BE7529DDF6460 /* TowCropTextView.h in Headers */,
 				648A0AA27C74888CFA8D9731BA1A5659 /* TowManager.h in Headers */,
 				6D429BBDD9BA874A69FFDF2493022ECF /* TowOftEarn.h in Headers */,
@@ -6736,7 +6736,7 @@
 				1437B3BD31DD4FE0ABC7A0658BB9935F /* TruthArtNotifier.h in Headers */,
 				4146DF4049566DF697863AE7D38F1A49 /* TruthConductTitleHighlight.h in Headers */,
 				69B0F680560C832F5362A06D13CB9096 /* TruthControl.h in Headers */,
-				F3C36B4F7444DA9DB8788523C37207F8 /* TruthRegistManager.h in Headers */,
+				F3C36B4F7444DA9DB8788523C37207F8 /* TruthRegisterManager.h in Headers */,
 				6F04C30B7BDB8E4FE9C0FB24ADE3D44A /* TruthView.h in Headers */,
 				C8605F110A4CCB7979158C7F36EE44A8 /* TruthWard.h in Headers */,
 				6FC6956DE188888BE9314C8DF3D37123 /* TurnConfig.h in Headers */,
@@ -7959,7 +7959,7 @@
 				F35C166F2DCF285196A98AD6D3B0FAD2 /* ThyYe.m in Sources */,
 				EDBF6DB73FFBC53C5B693C28719E27F7 /* TossNorViewController.m in Sources */,
 				62DC975F2F86CADD4C423A551311D82D /* TossViewCell.m in Sources */,
-				EC78BC57245E0F937CA6C9E0CB9CD89A /* TotalroduceConductNameView.m in Sources */,
+				EC78BC57245E0F937CA6C9E0CB9CD89A /* TotalConductNameView.m in Sources */,
 				A736700C9C65B995D56F440C8E918D21 /* TowCropTextView.m in Sources */,
 				57CB52BD6A7A77251C0106E13DEB0F15 /* TowManager.m in Sources */,
 				5C73501D4E0F0775A4641202F8DA47B8 /* TowOftEarn.m in Sources */,
@@ -7967,7 +7967,7 @@
 				E006565D1BBD4FF553E25D88122446AD /* TruthArtNotifier.m in Sources */,
 				08C1D28650C06253C817A5812486157D /* TruthConductTitleHighlight.m in Sources */,
 				2439AA367946D72D264BDCAF9A0AF50A /* TruthControl.m in Sources */,
-				A3C4E88FF6B978540A08CA71C2D3281B /* TruthRegistManager.m in Sources */,
+				A3C4E88FF6B978540A08CA71C2D3281B /* TruthRegisterManager.m in Sources */,
 				496919503021CD9BB1CD395FF2F5530D /* TruthView.m in Sources */,
 				513F06F1AEFDBB96720B4101F22621DE /* TruthWard.m in Sources */,
 				B23E0F48226AC7F89F5B16368D572399 /* TurnConfig.m in Sources */,
