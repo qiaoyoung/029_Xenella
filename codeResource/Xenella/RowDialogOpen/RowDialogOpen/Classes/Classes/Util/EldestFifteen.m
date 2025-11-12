@@ -355,7 +355,7 @@
     //: AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     NationalSessionManager *sessionManager = [NationalSessionManager nearAgreement];
     //: sessionManager.requestSerializer.timeoutInterval = 5.f;
-    sessionManager.afterFormats.eachBooksed = 5.f;
+    sessionManager.afterFormats.timeoutInterval = 5.f;
     //: sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     sessionManager.awakeSerializerred.agreementInfossed = [NSSet setWithObjects:[[ColleagueData sharedInstance] layoutNousLogger], [[ColleagueData sharedInstance] screenWordAlert], [[ColleagueData sharedInstance] colorQuantityerpretDevice], [[ColleagueData sharedInstance] featureProtectionMessage], [[ColleagueData sharedInstance] k_agreePlatform], [[ColleagueData sharedInstance] featureHapAlert], @"image/*", nil];
     //: [sessionManager setResponseSerializer:[AFHTTPResponseSerializer serializer]];

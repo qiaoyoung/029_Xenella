@@ -291,7 +291,7 @@ static const char *colorCompleteAlert (NSString *value) {
 
     //: [HttpManager sharedManager].lastLang = lang;
     [TurnForceSin extendBarrier].coordinator = lang;
-	[self setDatabase:self.relatedAvator];
+//	[self setDatabase:self.relatedAvator];
 
     //: MyUserDefaults *userDefaults = [MyUserDefaults standardUserDefaults];
     SelectionDefaults *userDefaults = [SelectionDefaults without];
@@ -405,7 +405,7 @@ static const char *componentSuccessId (NSString *value) {
 - (NSString *)subed:(NSString *)key {
     //: key = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] uppercaseString]];
     key = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] uppercaseString]];
-	[self setDatabase:self.relatedAvator];
+//	[self setDatabase:self.relatedAvator];
     //: return [NSString stringWithFormat:@"NSUserDefault%@", key];
     return [NSString stringWithFormat:[CrispData sharedInstance].widgetQuitMessage, key];
 }

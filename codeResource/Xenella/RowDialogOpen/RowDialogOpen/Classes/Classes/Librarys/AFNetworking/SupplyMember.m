@@ -690,7 +690,7 @@ static NSArray * serializerPaths() {
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
         //: _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(allowsCellularAccess)), NSStringFromSelector(@selector(cachePolicy)), NSStringFromSelector(@selector(HTTPShouldHandleCookies)), NSStringFromSelector(@selector(HTTPShouldUsePipelining)), NSStringFromSelector(@selector(networkServiceType)), NSStringFromSelector(@selector(timeoutInterval))];
-        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(destinationOpposites)), NSStringFromSelector(@selector(genderOperases)), NSStringFromSelector(@selector(remainArraying)), NSStringFromSelector(@selector(agreementBeing)), NSStringFromSelector(@selector(consultingServiceTransformses)), NSStringFromSelector(@selector(eachBooksed))];
+        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(destinationOpposites)), NSStringFromSelector(@selector(genderOperases)), NSStringFromSelector(@selector(remainArraying)), NSStringFromSelector(@selector(agreementBeing)), NSStringFromSelector(@selector(consultingServiceTransformses)), NSStringFromSelector(@selector(timeoutInterval))];
     //: });
     });
 
@@ -1279,15 +1279,14 @@ paddy:(NSString *)field
     return [formData scanData];
 }
 
-//: - (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
-- (void)setEachBooksed:(NSTimeInterval)timeoutInterval {
+- (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
     //: [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self willChangeValueForKey:NSStringFromSelector(@selector(eachBooksed))];
+    [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
     //: _timeoutInterval = timeoutInterval;
-    _eachBooksed = timeoutInterval;
+    _timeoutInterval = timeoutInterval;
 	[self setSignStack:self.lastPrepare];
     //: [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self didChangeValueForKey:NSStringFromSelector(@selector(eachBooksed))];
+    [self didChangeValueForKey:NSStringFromSelector(@selector(imeoutInterval))];
 }
 
 //: - (instancetype)initWithCoder:(NSCoder *)decoder {

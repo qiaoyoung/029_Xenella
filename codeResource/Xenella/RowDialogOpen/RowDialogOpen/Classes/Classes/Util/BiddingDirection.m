@@ -364,7 +364,7 @@ static NationalSessionManager *themeSameText;
 //: + (void)setRequestTimeoutInterval:(NSTimeInterval)time {
 + (void)setOf:(NSTimeInterval)time {
     //: _sessionManager.requestSerializer.timeoutInterval = time;
-    themeSameText.afterFormats.eachBooksed = time;
+    themeSameText.afterFormats.timeoutInterval = time;
 }
 
 /**
@@ -476,7 +476,7 @@ static NationalSessionManager *themeSameText;
     //: _sessionManager = [AFHTTPSessionManager manager];
     themeSameText = [NationalSessionManager nearAgreement];
     //: _sessionManager.requestSerializer.timeoutInterval = 15.f;
-    themeSameText.afterFormats.eachBooksed = 15.f;
+    themeSameText.afterFormats.timeoutInterval = 15.f;
     //: _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     themeSameText.awakeSerializerred.agreementInfossed = [NSSet setWithObjects:[UtterData spacingDamaPath], [UtterData spacingWisdomPage], [UtterData coreSlipBoutTimer], [UtterData moduleOptionPage], [UtterData layoutLadInstallParentError], [UtterData widgetArcTitle], @"image/*", nil];
     // 打开状态栏的等待菊花

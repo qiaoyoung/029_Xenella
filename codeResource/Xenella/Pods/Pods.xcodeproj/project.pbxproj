@@ -5197,7 +5197,7 @@
 				76F1D1C1D7E716486833DFC3B14EDAB2 /* Manager */,
 				F14E41B7D21A1857C424278B66E46854 /* SDCycleScrollView */,
 				E2B0DCB4F27F13B72A45ABCE4422DF50 /* SGQRCode */,
-				D0214718060229E289F6016428A6B485 /* SVProgressHUD */,
+				D0214718060229E289F6016428A6B485 /* SwitchlyView */,
 				1C3BE288BB01B69C45543C8FC3375280 /* Toast */,
 				E398627FDDD02CA3894222734E31B690 /* ZCPickDataView */,
 			);
@@ -5326,7 +5326,7 @@
 			path = BaseView;
 			sourceTree = "<group>";
 		};
-		C6B2AD441890D3D4C3BED8CE67FA696E /* SVProgressHUD.bundle */ = {
+		C6B2AD441890D3D4C3BED8CE67FA696E /* SwitchlyView.bundle */ = {
 			isa = PBXGroup;
 			children = (
 				0B00A839543CC56DB518B34A692AE2FC /* angle-mask.png */,
@@ -5342,7 +5342,7 @@
 				69CA8953D960735045E0E35433FDAA65 /* success@2x.png */,
 				C9D0DAAB2DA5966713E61F529AB62CBD /* success@3x.png */,
 			);
-			path = SVProgressHUD.bundle;
+			path = SwitchlyView.bundle;
 			sourceTree = "<group>";
 		};
 		C817F8B821CCCCD64223E66B4DB7F437 /* TZImagePickerController */ = {
@@ -5465,7 +5465,7 @@
 			);
 			sourceTree = "<group>";
 		};
-		D0214718060229E289F6016428A6B485 /* SVProgressHUD */ = {
+		D0214718060229E289F6016428A6B485 /* SwitchlyView */ = {
 			isa = PBXGroup;
 			children = (
 				D969DB145C379EE191561F2D230063A4 /* NeErView.h */,
@@ -5476,9 +5476,9 @@
 				8FCBF2E0AFE485C079821588F3F252E2 /* SwitchlyView.m */,
 				6EDA29D38A5CBD4CF020010620A0434E /* ThyLayer.h */,
 				75388244A2AA0AC30BCAAF85B674ED45 /* ThyLayer.m */,
-				C6B2AD441890D3D4C3BED8CE67FA696E /* SVProgressHUD.bundle */,
+				C6B2AD441890D3D4C3BED8CE67FA696E /* SwitchlyView.bundle */,
 			);
-			path = SVProgressHUD;
+			path = SwitchlyView;
 			sourceTree = "<group>";
 		};
 		D0394C71B38248029123C387FFE1115C /* Resources */ = {
