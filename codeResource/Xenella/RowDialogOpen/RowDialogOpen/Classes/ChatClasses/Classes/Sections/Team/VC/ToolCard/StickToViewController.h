@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PainterGenericTranslateLoyal.h"
+#import "PainterGenericTranslateLoyal.h"
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
 

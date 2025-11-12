@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "USERContactDataMember.h"
 #import "NotebookResistance.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PainterGenericTranslateLoyal.h"
+#import "PainterGenericTranslateLoyal.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN

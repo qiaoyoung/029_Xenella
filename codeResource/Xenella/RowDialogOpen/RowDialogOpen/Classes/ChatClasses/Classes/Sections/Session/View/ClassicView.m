@@ -77,8 +77,8 @@
 // __M_A_C_R_O__
 //: #import "FFFSessionTimestampCell.h"
 #import "ClassicView.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "ZonalClearViewport.h"
+#import "ZonalClearViewport.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFTimestampModel.h"

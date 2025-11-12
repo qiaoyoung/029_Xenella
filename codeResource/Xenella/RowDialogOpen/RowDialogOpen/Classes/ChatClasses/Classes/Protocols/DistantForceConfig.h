@@ -11,8 +11,8 @@
 #import <Foundation/Foundation.h>
 //: #import "FFFMediaItem.h"
 #import "AdminPaper.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "ZonalClearViewport.h"
+#import "ZonalClearViewport.h"
 //: #import "FFFKitMessageProvider.h"
 #import "ArtisticNational.h"
 //: #import "FFFInputBarItemType.h"

@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PainterGenericTranslateLoyal.h"
+#import "PainterGenericTranslateLoyal.h"
 
 //: @class FFFAvatarImageView;
 @class FormatControl;

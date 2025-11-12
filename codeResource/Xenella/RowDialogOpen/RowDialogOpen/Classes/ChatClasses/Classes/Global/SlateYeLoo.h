@@ -10,10 +10,10 @@
 
 // __M_A_C_R_O__
 //: #import "FFFKitDataProvider.h"
-#import "TaskProvider.h"
+#import "QuotaElasticSelector.h"
 
 //: @interface FFFKitDataProviderImpl : NSObject<FFFKitDataProvider>
-@interface SlateYeLoo : NSObject<TaskProvider>
+@interface SlateYeLoo : NSObject<QuotaElasticSelector>
 
 //: @end
 @end

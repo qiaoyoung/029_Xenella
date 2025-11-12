@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "ZonalClearViewport.h"
+#import "ZonalClearViewport.h"
 
 //: @interface FFFCellLayoutConfig : NSObject<FFFCellLayoutConfig>
 @interface DenyConfig : NSObject<DenyConfig>

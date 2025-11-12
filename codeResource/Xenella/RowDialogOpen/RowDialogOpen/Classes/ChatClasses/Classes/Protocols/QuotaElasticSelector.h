@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  TaskProvider.h
+//  QuotaElasticSelector.h
 // TaskIdentifyRave
 //
 //  Created by amao on 8/13/15.
@@ -22,7 +22,7 @@
 @class NIMMessage;
 
 //: @protocol FFFKitDataProvider <NSObject>
-@protocol TaskProvider <NSObject>
+@protocol QuotaElasticSelector <NSObject>
 
 //: @optional
 @optional

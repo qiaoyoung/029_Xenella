@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "FFFSessionConfig.h"
 #import "DistantForceConfig.h"
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "StartArrayValid.h"
+#import "StartArrayValid.h"
 //: #import "CustomAlbumPickerView.h"
 #import "LotView.h"
 

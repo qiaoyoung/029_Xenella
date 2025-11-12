@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "FFFSessionViewController.h"
 #import "FriendlyViewController.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "TheoryMildDatasetter.h"
+#import "TheoryMildDatasetter.h"
 
 //: @class FFFSessionViewController;
 @class FriendlyViewController;

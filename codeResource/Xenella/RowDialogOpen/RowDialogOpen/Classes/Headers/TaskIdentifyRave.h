@@ -22,14 +22,14 @@
 #import "MessageDistant.h"         //message Wrapper
 //: #import "FFFKitMessageProvider.h"
 #import "ArtisticNational.h"
-//: #import "FFFCellConfig.h"           //message cell配置协议
-#import "FFFCellConfig.h"           //message cell配置协议
-//: #import "FFFInputProtocol.h"        //输入框回调
-#import "FFFInputProtocol.h"        //输入框回调
+//: #import "ZonalClearViewport.h"           //message cell配置协议
+#import "ZonalClearViewport.h"           //message cell配置协议
+//: #import "StartArrayValid.h"        //输入框回调
+#import "StartArrayValid.h"        //输入框回调
 //: #import "FFFKitDataProvider.h"      //APP内容提供器
-#import "TaskProvider.h"      //APP内容提供器
-//: #import "FFFMessageCellProtocol.h"  //message cell事件回调
-#import "FFFMessageCellProtocol.h"  //message cell事件回调
+#import "QuotaElasticSelector.h"      //APP内容提供器
+//: #import "ImplementAuroraTranslateUnity.h"  //message cell事件回调
+#import "ImplementAuroraTranslateUnity.h"  //message cell事件回调
 //: #import "FFFSessionConfig.h"        //会话页面配置
 #import "DistantForceConfig.h"        //会话页面配置
 //: #import "FFFKitEvent.h"             //点击事件封装类
@@ -46,8 +46,8 @@
 #import "CropViewController.h"
 //: #import "FFFKitIndependentModeExtraInfo.h"
 #import "GreatInfo.h"
-//: #import "FFFChatUIManagerProtocol.h"
-#import "FFFChatUIManagerProtocol.h"
+//: #import "DiagramSelectThemeNeat.h"
+#import "DiagramSelectThemeNeat.h"
 //: #import "FFFCollectionViewLeftAlignedLayout.h"
 #import "PaperViewLayout.h"
 //: #import "FFFKitQuickCommentUtil.h"
@@ -136,7 +136,7 @@ extern const unsigned char kSwitchingPath[];
 /**
  *  由于在独立聊天室模式下, IM 部分服务不可用，需要上层注入一些额外信息供组件显示使用。 默认为 nil，上层在独立聊天室模式下注入，注入时需要创建此对象并注入对象相关字段信息。
  *
- *  此字段需要配合默认的 TaskProvider ( SlateYeLoo ) 使用，如果上层自己定义了 provider ， 则忽略此字段。
+ *  此字段需要配合默认的 QuotaElasticSelector ( SlateYeLoo ) 使用，如果上层自己定义了 provider ， 则忽略此字段。
  */
 //: @property (nonatomic,strong) FFFKitIndependentModeExtraInfo *independentModeExtraInfo;
 @property (nonatomic,strong) GreatInfo *policy;
@@ -157,7 +157,7 @@ extern const unsigned char kSwitchingPath[];
  *  内容提供者，由上层开发者注入。如果没有则使用默认 provider
  */
 //: @property (nonatomic,strong) id<FFFKitDataProvider> provider;
-@property (nonatomic,strong) id<TaskProvider> size;
+@property (nonatomic,strong) id<QuotaElasticSelector> size;
 
 /**
  *  NIMKit语言所在Table，默认 language

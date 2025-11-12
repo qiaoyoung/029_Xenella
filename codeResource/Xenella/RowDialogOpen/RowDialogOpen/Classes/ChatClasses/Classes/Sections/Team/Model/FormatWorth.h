@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PainterGenericTranslateLoyal.h"
+#import "PainterGenericTranslateLoyal.h"
 
 //: @interface FFFTeamCardMemberItem : NSObject<FFFKitCardHeaderData>
 @interface FormatWorth : NSObject<ConductApplicationClassic>

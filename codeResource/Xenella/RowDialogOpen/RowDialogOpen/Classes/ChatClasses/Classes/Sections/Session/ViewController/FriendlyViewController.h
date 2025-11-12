@@ -15,10 +15,10 @@
 #import <NIMSDK/NIMSDK.h>
 //: #import "FFFSessionConfig.h"
 #import "DistantForceConfig.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "ImplementAuroraTranslateUnity.h"
+#import "ImplementAuroraTranslateUnity.h"
+//: #import "TheoryMildDatasetter.h"
+#import "TheoryMildDatasetter.h"
 //: #import "FFFInputView.h"
 #import "PieceOfLandView.h"
 

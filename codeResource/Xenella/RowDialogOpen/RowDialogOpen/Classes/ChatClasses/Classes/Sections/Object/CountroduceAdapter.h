@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "TheoryMildDatasetter.h"
+#import "TheoryMildDatasetter.h"
+//: #import "ImplementAuroraTranslateUnity.h"
+#import "ImplementAuroraTranslateUnity.h"
 
 //: @interface FFFSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 @interface CountroduceAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>

@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "FFFSessionConfigurator.h"
 #import "RustWorthLope.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
+//: #import "ShaderMajorSplitStencil.h"
+#import "ShaderMajorSplitStencil.h"
 
 //: @interface FFFSessionLayoutImpl : NSObject<NIMSessionLayout>
 @interface RaveImpl : NSObject<ReaderSessionLayout>

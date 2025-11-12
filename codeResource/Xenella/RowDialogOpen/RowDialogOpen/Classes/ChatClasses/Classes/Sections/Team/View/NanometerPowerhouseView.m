@@ -103,8 +103,8 @@
 #import "UIImage+TaskIdentifyRave.h"
 //: #import "FFFTeamHelper.h"
 #import "NorHelper.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PainterGenericTranslateLoyal.h"
+#import "PainterGenericTranslateLoyal.h"
 
 //: @interface NIMTeamMemberView : UIView{
 @interface AccommodateView : UIView{

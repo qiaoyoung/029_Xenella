@@ -485,12 +485,12 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "TheoryMildDatasetter.h"
+#import "TheoryMildDatasetter.h"
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "ImplementAuroraTranslateUnity.h"
+#import "ImplementAuroraTranslateUnity.h"
 //: #import "FFFMessageModel.h"
 #import "MessageDistant.h"
 //: #import "FFFKitUtil.h"
