@@ -12,12 +12,12 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface USERPinyinConverter : NSObject
+//: @interface USERConductorAuroraGenerous : NSObject
 @interface AdConverter : NSObject
 //: - (NSString *)toPinyin: (NSString *)source;
 - (NSString *)customCross: (NSString *)source;
 
-//: + (USERPinyinConverter *)sharedInstance;
+//: + (USERConductorAuroraGenerous *)sharedInstance;
 + (AdConverter *)mortificationChallenge;
 //: @end
 @end

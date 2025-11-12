@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  QueryionAdmin.h
+//  ParserPrudentWreath.h
 //  fanxingxue
 //
 //  Created by 曹宇 on 2018/3/28.
@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 
 //: @interface UserManager : NSObject
-@interface QueryionAdmin : NSObject
+@interface ParserPrudentWreath : NSObject
 //: + (void)callSevicePhoneNumber;
 + (void)separateOut;
 //: + (NSString *)getHeaderImageUrl;

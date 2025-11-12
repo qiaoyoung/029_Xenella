@@ -93,7 +93,7 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "USERSpellingCenter.h"
 #import "FormatLopeCenter.h"
-//: #import "USERPinyinConverter.h"
+//: #import "USERConductorAuroraGenerous.h"
 #import "AdConverter.h"
 
 //: @implementation SpellingUnit
@@ -165,7 +165,7 @@ typedef struct {
     {
         //: NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
         NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
-        //: NSString *pinyin = [[USERPinyinConverter sharedInstance] toPinyin:word];
+        //: NSString *pinyin = [[USERConductorAuroraGenerous sharedInstance] toPinyin:word];
         NSString *pinyin = [[AdConverter mortificationChallenge] customCross:word];
 
         //: if ([pinyin length])

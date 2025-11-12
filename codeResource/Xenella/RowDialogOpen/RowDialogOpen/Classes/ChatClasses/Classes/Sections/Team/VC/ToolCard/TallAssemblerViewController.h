@@ -46,7 +46,7 @@
 @end
 
 //: @interface FFFTeamAnnouncementListViewController : UIViewController
-@interface MagnitudeenseViewController : UIViewController
+@interface TallAssemblerViewController : UIViewController
 
 //: @property (nonatomic, weak) id <NIMTeamAnnouncementListVCDelegate> delegate;
 @property (nonatomic, weak) id <ElfVcdelegate> perThreading;

@@ -97,7 +97,7 @@ typedef struct {
 //: #import "USERMergeForwardSession.h"
 #import "BindSession.h"
 //: #import "USERMessageSerialization.h"
-#import "NumberroduceRust.h"
+#import "TaskInfiniteCoordinatorBeyond.h"
 //: #import "USERMultiRetweetAttachment.h"
 #import "VolumeWard.h"
 //: #import "USERSessionMsgConverter.h"
@@ -129,7 +129,7 @@ typedef void(^USERMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnul
 //: @property (nonatomic, strong) NSMutableArray <NIMMessage *> *messages;
 @property (nonatomic, strong) NSMutableArray <NIMMessage *> *straddle;
 //: @property (nonatomic, strong) USERMessageSerialization *serialize;
-@property (nonatomic, strong) NumberroduceRust *expand;
+@property (nonatomic, strong) TaskInfiniteCoordinatorBeyond *expand;
 
 //: @end
 @end
@@ -208,7 +208,7 @@ typedef void(^USERMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnul
         //: _identifier = (uint64_t)self;
         _replace = (uint64_t)self;
         //: _serialize = [[USERMessageSerialization alloc] init];
-        _expand = [[NumberroduceRust alloc] init];
+        _expand = [[TaskInfiniteCoordinatorBeyond alloc] init];
     }
     //: return self;
     return self;

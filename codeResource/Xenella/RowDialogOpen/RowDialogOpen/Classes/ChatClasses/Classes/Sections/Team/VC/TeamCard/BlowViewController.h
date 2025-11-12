@@ -14,7 +14,7 @@
 //: #import "FFFTeamCardRowItem.h"
 #import "DistanceHow.h"
 //: #import "FFFTeamMemberListCell.h"
-#import "NanometerPowerhouseView.h"
+#import "MerryLeafFabric.h"
 //: #import "FFFTeamSwitchTableViewCell.h"
 #import "WeltanschauungViewCell.h"
 //: #import "FFFTeamListDataManager.h"
@@ -110,7 +110,7 @@ typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
                                        inner:(NSArray <UIAlertAction *>*)actions;
 // 子类自定义cell
 //: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell;
-- (void)confirmCur:(NanometerPowerhouseView *)cell;
+- (void)confirmCur:(MerryLeafFabric *)cell;
 
 //显示弹框
 //: - (void)showAlert:(UIAlertController *)alert;

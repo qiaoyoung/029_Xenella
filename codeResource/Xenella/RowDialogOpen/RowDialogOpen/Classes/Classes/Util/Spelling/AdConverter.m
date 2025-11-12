@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "USERPinyinConverter.h"
+//: #import "USERConductorAuroraGenerous.h"
 #import "AdConverter.h"
 
-//: @implementation USERPinyinConverter
+//: @implementation USERConductorAuroraGenerous
 @implementation AdConverter
 //: - (NSString *)toPinyin: (NSString *)source
 - (NSString *)customCross: (NSString *)source
@@ -35,16 +35,16 @@
 }
 
 
-//: + (USERPinyinConverter *)sharedInstance
+//: + (USERConductorAuroraGenerous *)sharedInstance
 + (AdConverter *)mortificationChallenge
 {
-    //: static USERPinyinConverter *instance = nil;
+    //: static USERConductorAuroraGenerous *instance = nil;
     static AdConverter *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[USERPinyinConverter alloc] init];
+        //: instance = [[USERConductorAuroraGenerous alloc] init];
         instance = [[AdConverter alloc] init];
     //: });
     });

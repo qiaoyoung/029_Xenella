@@ -195,7 +195,7 @@ Byte screenRuleReflectInstallDevice[] = {19, 33, 83, 12, 186, 135, 70, 116, 40, 
 //: #import "FFFTeamMuteMemberListViewController.h"
 #import "DriveViewController.h"
 //: #import "FFFTeamAnnouncementListViewController.h"
-#import "MagnitudeenseViewController.h"
+#import "TallAssemblerViewController.h"
 //: #import "FFFTeamCardRowItem.h"
 #import "DistanceHow.h"
 //: #import "UIViewDeviceKit.h"
@@ -492,7 +492,7 @@ ElfVcdelegate,RustDelegate,UINavigationControllerDelegate,UIImagePickerControlle
     option.today = self.image.prop;
 
     //: FFFTeamAnnouncementListViewController *vc = [[FFFTeamAnnouncementListViewController alloc] initWithOption:option];
-    MagnitudeenseViewController *vc = [[MagnitudeenseViewController alloc] initWithInside:option];
+    TallAssemblerViewController *vc = [[TallAssemblerViewController alloc] initWithInside:option];
     //: vc.delegate = self;
     vc.perThreading = self;
     //: [self.navigationController pushViewController:vc animated:YES];
@@ -1361,7 +1361,7 @@ ElfVcdelegate,RustDelegate,UINavigationControllerDelegate,UIImagePickerControlle
 	[self setScale:_foundSecondary];
 }
 //: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell {
-- (void)confirmCur:(NanometerPowerhouseView *)cell {
+- (void)confirmCur:(MerryLeafFabric *)cell {
     //: cell.delegate = self;
     cell.perThreading = self;
 	[self setScale:_foundSecondary];

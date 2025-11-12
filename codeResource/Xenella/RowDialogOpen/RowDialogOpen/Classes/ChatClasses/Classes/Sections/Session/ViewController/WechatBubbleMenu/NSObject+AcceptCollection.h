@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  NSObject+Quantityernal.h
+//  NSObject+AcceptCollection.h
 //  NIM
 //
 //  Created by 田玉龙 on 2023/12/5.

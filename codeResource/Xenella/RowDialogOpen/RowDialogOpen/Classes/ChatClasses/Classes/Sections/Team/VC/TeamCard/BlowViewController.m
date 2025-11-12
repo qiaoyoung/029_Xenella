@@ -188,7 +188,7 @@
 //: #import "FFFKitColorButtonCell.h"
 #import "AdView.h"
 //: #import "FFFTeamMemberListCell.h"
-#import "NanometerPowerhouseView.h"
+#import "MerryLeafFabric.h"
 //: #import "ThyScrollView.h"
 #import "ThyScrollView.h"
 //: #import "FFFTeamCardSelectedViewController.h"
@@ -777,11 +777,11 @@
 //: - (UITableViewCell*)builidTeamMemberCell:(id<USERCardBodyData>) bodyData{
 - (UITableViewCell*)chemic:(id<TruthData>) bodyData{
     //: FFFTeamMemberListCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableMemberCell"];
-    NanometerPowerhouseView * cell = [self.time dequeueReusableCellWithIdentifier:[SuggestData moduleStrangerGiftedTitle]];
+    MerryLeafFabric * cell = [self.time dequeueReusableCellWithIdentifier:[SuggestData moduleStrangerGiftedTitle]];
     //: if (!cell) {
     if (!cell) {
         //: cell = [[FFFTeamMemberListCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"tableMemberCell"];
-        cell = [[NanometerPowerhouseView alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[SuggestData moduleStrangerGiftedTitle]];
+        cell = [[MerryLeafFabric alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[SuggestData moduleStrangerGiftedTitle]];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -919,7 +919,7 @@
 }
 
 //: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell {}
-- (void)confirmCur:(NanometerPowerhouseView *)cell {}
+- (void)confirmCur:(MerryLeafFabric *)cell {}
 
 
 //: #pragma mark - Public

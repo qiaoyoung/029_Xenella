@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  PinyinConverter.m
+//  ConductorAuroraGenerous.m
 //  NIM
 //
 //  Created by amao on 10/15/13.
@@ -9,11 +9,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPinyinConverter.h"
-#import "PinyinConverter.h"
+//: #import "FFFConductorAuroraGenerous.h"
+#import "ConductorAuroraGenerous.h"
 
-//: @interface FFFPinyinConverter ()
-@interface PinyinConverter ()
+//: @interface FFFConductorAuroraGenerous ()
+@interface ConductorAuroraGenerous ()
 {
     //: char *_pinyin;
     char *_pinyin;
@@ -25,8 +25,8 @@
 //: @end
 @end
 
-//: @implementation FFFPinyinConverter
-@implementation PinyinConverter
+//: @implementation FFFConductorAuroraGenerous
+@implementation ConductorAuroraGenerous
 //: - (NSString *)toPinyin: (NSString *)source
 - (NSString *)hem: (NSString *)source
 {
@@ -46,17 +46,17 @@
     return [mutableString stringByReplacingOccurrencesOfString:@"'" withString:@""];
 }
 
-//: + (FFFPinyinConverter *)sharedInstance
-+ (PinyinConverter *)forwards
+//: + (FFFConductorAuroraGenerous *)sharedInstance
++ (ConductorAuroraGenerous *)forwards
 {
-    //: static FFFPinyinConverter *instance = nil;
-    static PinyinConverter *instance = nil;
+    //: static FFFConductorAuroraGenerous *instance = nil;
+    static ConductorAuroraGenerous *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFPinyinConverter alloc] init];
-        instance = [[PinyinConverter alloc] init];
+        //: instance = [[FFFConductorAuroraGenerous alloc] init];
+        instance = [[ConductorAuroraGenerous alloc] init];
     //: });
     });
     //: return instance;

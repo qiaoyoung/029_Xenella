@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  NanometerPowerhouseView.h
+//  MerryLeafFabric.h
 //  NIM
 //
 //  Created by chris on 15/3/26.
@@ -27,7 +27,7 @@
 
 
 //: @interface FFFTeamMemberListCell : UITableViewCell
-@interface NanometerPowerhouseView : UITableViewCell
+@interface MerryLeafFabric : UITableViewCell
 
 
 //: @property(nonatomic, assign) NSInteger maxShowMemberCount;

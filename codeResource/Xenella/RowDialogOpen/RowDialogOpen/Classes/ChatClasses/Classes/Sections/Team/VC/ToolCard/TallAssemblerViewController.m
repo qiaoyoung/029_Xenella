@@ -322,7 +322,7 @@ typedef struct {
 
 // __M_A_C_R_O__
 //: #import "FFFTeamAnnouncementListViewController.h"
-#import "MagnitudeenseViewController.h"
+#import "TallAssemblerViewController.h"
 //: #import "FFFCreateTeamAnnouncement.h"
 #import "LitViewController.h"
 //: #import "FFFTeamAnnouncementListCell.h"
@@ -341,7 +341,7 @@ typedef struct {
 #import "SpokenView.h"
 
 //: @interface FFFTeamAnnouncementListViewController () <UITableViewDelegate,
-@interface MagnitudeenseViewController () <UITableViewDelegate,
+@interface TallAssemblerViewController () <UITableViewDelegate,
                                                      //: UITableViewDataSource,
                                                      UITableViewDataSource,
                                                      //: USERCreateTeamAnnouncementDelegate>
@@ -366,7 +366,7 @@ typedef struct {
 @end
 
 //: @implementation FFFTeamAnnouncementListViewController
-@implementation MagnitudeenseViewController
+@implementation TallAssemblerViewController
 
 //: - (instancetype)initWithOption:(NIMTeamAnnouncementListOption *)option {
 - (instancetype)initWithInside:(MaximumOwl *)option {

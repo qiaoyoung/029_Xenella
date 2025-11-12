@@ -1542,7 +1542,7 @@
 //: #import "FFFKitUtil.h"
 #import "ProfoundUtil.h"
 //: #import "FFFTeamAnnouncementListViewController.h"
-#import "MagnitudeenseViewController.h"
+#import "TallAssemblerViewController.h"
 //: #import "FFFTeamListDataManager.h"
 #import "ReaderDataManager.h"
 //: #import "LEEAlert.h"
@@ -3114,7 +3114,7 @@ HisDelegate>
                     //: option.team = team;
                     option.today = team;
                     //: FFFTeamAnnouncementListViewController *vc = [[FFFTeamAnnouncementListViewController alloc] initWithOption:option];
-                    MagnitudeenseViewController *vc = [[MagnitudeenseViewController alloc] initWithInside:option];
+                    TallAssemblerViewController *vc = [[TallAssemblerViewController alloc] initWithInside:option];
                     //: [self.navigationController pushViewController:vc animated:YES];
                     [self.navigationController pushViewController:vc animated:YES];
                 //: }];

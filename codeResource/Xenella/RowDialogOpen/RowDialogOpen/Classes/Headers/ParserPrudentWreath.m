@@ -17,7 +17,7 @@ MastData kHumPistolName = (MastData){105, (Byte []){12, 7, 98}, 2, 248, 232};
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  QueryionAdmin.m
+//  ParserPrudentWreath.m
 //  fanxingxue
 //
 //  Created by 曹宇 on 2018/3/28.
@@ -27,10 +27,10 @@ MastData kHumPistolName = (MastData){105, (Byte []){12, 7, 98}, 2, 248, 232};
 
 // __M_A_C_R_O__
 //: #import "UserManager.h"
-#import "QueryionAdmin.h"
+#import "ParserPrudentWreath.h"
 
 //: @implementation UserManager
-@implementation QueryionAdmin
+@implementation ParserPrudentWreath
 
 //判断是否登录
 //+ (NSString *)getMobileNumber{

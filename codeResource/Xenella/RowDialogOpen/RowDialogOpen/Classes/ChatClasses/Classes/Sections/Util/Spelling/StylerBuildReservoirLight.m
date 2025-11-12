@@ -85,9 +85,9 @@
 
 // __M_A_C_R_O__
 //: #import "FFFSpellingCenter.h"
-#import "MilageLit.h"
-//: #import "FFFPinyinConverter.h"
-#import "PinyinConverter.h"
+#import "StylerBuildReservoirLight.h"
+//: #import "FFFConductorAuroraGenerous.h"
+#import "ConductorAuroraGenerous.h"
 //: #import "YYModel/YYModel.h"
 #import "YYModel/YYModel.h"
 //: #import "NSObject+YYModel.h"
@@ -125,7 +125,7 @@
 @end
 
 //: @interface FFFSpellingCenter ()
-@interface MilageLit ()
+@interface StylerBuildReservoirLight ()
 //: - (NIMSpellingUnit *)calcSpellingOfString: (NSString *)source;
 - (MillionInstructionsPerSecondDisappear *)relieveText: (NSString *)source;
 //: @end
@@ -133,7 +133,7 @@
 
 
 //: @implementation FFFSpellingCenter
-@implementation MilageLit
+@implementation StylerBuildReservoirLight
 //: - (NIMSpellingUnit *)spellingForString:(NSString *)source
 - (MillionInstructionsPerSecondDisappear *)spellingWithAgal:(NSString *)source
 {
@@ -194,8 +194,8 @@
     {
         //: NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
         NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
-        //: NSString *pinyin = [[FFFPinyinConverter sharedInstance] toPinyin:word];
-        NSString *pinyin = [[PinyinConverter forwards] hem:word];
+        //: NSString *pinyin = [[FFFConductorAuroraGenerous sharedInstance] toPinyin:word];
+        NSString *pinyin = [[ConductorAuroraGenerous forwards] hem:word];
 
         //: if ([pinyin length])
         if ([pinyin length])
@@ -271,16 +271,16 @@
 
 
 //: + (FFFSpellingCenter *)sharedCenter
-+ (MilageLit *)work
++ (StylerBuildReservoirLight *)work
 {
     //: static FFFSpellingCenter *instance = nil;
-    static MilageLit *instance = nil;
+    static StylerBuildReservoirLight *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
         //: instance = [[FFFSpellingCenter alloc]init];
-        instance = [[MilageLit alloc]init];
+        instance = [[StylerBuildReservoirLight alloc]init];
     //: });
     });
     //: return instance;

@@ -12,7 +12,7 @@
 #import "RowDialogOpen/Classes/Headers/SelectionDefaults.h"
 #import "RowDialogOpen/Classes/Headers/BaseViewCell.h"
 #import "RowDialogOpen/Classes/Headers/SplitLightForestLayout.h"
-#import "RowDialogOpen/Classes/Headers/QueryionAdmin.h"
+#import "RowDialogOpen/Classes/Headers/ParserPrudentWreath.h"
 #import "RowDialogOpen/Classes/Headers/SNSingletonMacro.h"
 #import "RowDialogOpen/Classes/Headers/NSString+TaskIdentifyRave.h"
 #import "RowDialogOpen/Classes/Headers/SinCustomView.h"

@@ -522,7 +522,7 @@ typedef struct {
 //: #import "FFFTextView.h"
 #import "ArtisticScrollView.h"
 //: #import "NSObject+tyl_internalIdentifier.h"
-#import "NSObject+Quantityernal.h"
+#import "NSObject+AcceptCollection.h"
 //: #import "FFFBubbleMenuView.h"
 #import "CropFifteenView.h"
 //: #import "FFFBubbleButtonModel.h"

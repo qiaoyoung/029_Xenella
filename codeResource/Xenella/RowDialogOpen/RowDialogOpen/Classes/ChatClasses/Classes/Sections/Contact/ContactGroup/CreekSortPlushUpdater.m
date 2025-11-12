@@ -12,7 +12,7 @@
 //: #import "CreekSortPlushUpdater.h"
 #import "CreekSortPlushUpdater.h"
 //: #import "FFFSpellingCenter.h"
-#import "MilageLit.h"
+#import "StylerBuildReservoirLight.h"
 //: #import "FFFKitInfoFetchOption.h"
 #import "TerrainLot.h"
 
@@ -73,7 +73,7 @@
 //: - (NSString *)groupTitle{
 - (NSString *)already{
     //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
-    NSString *title = [[MilageLit work] remarkPrimary:[self map:self.springOperate].bite].capitalizedString;
+    NSString *title = [[StylerBuildReservoirLight work] remarkPrimary:[self map:self.springOperate].bite].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
     //: if (character >= 'A' && character <= 'Z') {
@@ -108,7 +108,7 @@
 //: - (id)sortKey{
 - (id)salt{
     //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
-    return [[MilageLit work] spellingWithAgal:[self map:self.springOperate].bite].shortSpelling;
+    return [[StylerBuildReservoirLight work] spellingWithAgal:[self map:self.springOperate].bite].shortSpelling;
 }
 
 
@@ -143,7 +143,7 @@
 //: - (id)sortKey{
 - (id)salt{
     //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
-    return [[MilageLit work] spellingWithAgal:self.behaviorTiming].shortSpelling;
+    return [[StylerBuildReservoirLight work] spellingWithAgal:self.behaviorTiming].shortSpelling;
 }
 
 //: - (NSString *)memberId{
@@ -155,7 +155,7 @@
 //: - (NSString *)groupTitle{
 - (NSString *)already{
     //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
-    NSString *title = [[MilageLit work] remarkPrimary:self.behaviorTiming].capitalizedString;
+    NSString *title = [[StylerBuildReservoirLight work] remarkPrimary:self.behaviorTiming].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
     //: if (character >= 'A' && character <= 'Z') {
@@ -234,7 +234,7 @@
 //: - (NSString *)groupTitle{
 - (NSString *)already{
     //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
-    NSString *title = [[MilageLit work] remarkPrimary:self.behaviorTiming].capitalizedString;
+    NSString *title = [[StylerBuildReservoirLight work] remarkPrimary:self.behaviorTiming].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
     //: if (character >= 'A' && character <= 'Z') {
@@ -281,7 +281,7 @@
 //: - (id)sortKey{
 - (id)salt{
     //: return [[FFFSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
-    return [[MilageLit work] spellingWithAgal:[self behaviorTiming]].shortSpelling;
+    return [[StylerBuildReservoirLight work] spellingWithAgal:[self behaviorTiming]].shortSpelling;
 }
 
 //: - (NSString *)avatarUrlString {

@@ -24,7 +24,7 @@
 @end
 
 //: @interface FFFSpellingCenter : NSObject
-@interface MilageLit : NSObject
+@interface StylerBuildReservoirLight : NSObject
 {
     //: NSString *_filepath;
     NSString *_filepath;
@@ -39,6 +39,6 @@
 //: - (NSString *)firstLetter: (NSString *)input; 
 - (NSString *)remarkPrimary: (NSString *)input; //首字母
 //: + (FFFSpellingCenter *)sharedCenter;
-+ (MilageLit *)work;
++ (StylerBuildReservoirLight *)work;
 //: @end
 @end

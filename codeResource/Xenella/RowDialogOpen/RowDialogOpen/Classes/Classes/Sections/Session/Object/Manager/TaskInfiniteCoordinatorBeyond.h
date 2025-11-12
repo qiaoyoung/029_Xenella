@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  NumberroduceRust.h
+//  TaskInfiniteCoordinatorBeyond.h
 //  NIM
 //
 //  Created by Netease on 2019/10/16.
@@ -24,7 +24,7 @@ typedef void(^USERMessageEncodeResult)(NSError * _Nullable error, DetailEnablely
 typedef void(^USERMessageDecodeResult)(NSError * _Nullable error, NSMutableArray<NIMMessage *> * _Nullable messages);
 
 //: @interface USERMessageSerialization : NSObject
-@interface NumberroduceRust : NSObject
+@interface TaskInfiniteCoordinatorBeyond : NSObject
 
 //: - (void)encode:(NSArray <NIMMessage *>*)messages
 - (void)deepMember:(NSArray <NIMMessage *>*)messages

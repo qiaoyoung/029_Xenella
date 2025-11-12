@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  NSObject+Quantityernal.m
+//  NSObject+AcceptCollection.m
 //  NIM
 //
 //  Created by 田玉龙 on 2023/12/5.
@@ -10,7 +10,7 @@
 
 // __M_A_C_R_O__
 //: #import "NSObject+tyl_internalIdentifier.h"
-#import "NSObject+Quantityernal.h"
+#import "NSObject+AcceptCollection.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 

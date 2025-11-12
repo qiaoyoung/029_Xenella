@@ -117,7 +117,7 @@ typedef struct {
 //: #import "USERSessionViewController.h"
 #import "IdentifyViewController.h"
 //: #import "NSObject+tyl_internalIdentifier.h"
-#import "NSObject+Quantityernal.h"
+#import "NSObject+AcceptCollection.h"
 
 //: @interface FFFSessionTextContentView()<StringAttributedLabelDelegate>
 @interface TowCropTextView()<HealElf>

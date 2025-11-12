@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  PinyinConverter.h
+//  ConductorAuroraGenerous.h
 //  NIM
 //
 //  Created by amao on 10/15/13.
@@ -12,14 +12,14 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface FFFPinyinConverter : NSObject
-@interface PinyinConverter : NSObject
+//: @interface FFFConductorAuroraGenerous : NSObject
+@interface ConductorAuroraGenerous : NSObject
 
 //: - (NSString *)toPinyin: (NSString *)source;
 - (NSString *)hem: (NSString *)source;
 
-//: + (FFFPinyinConverter *)sharedInstance;
-+ (PinyinConverter *)forwards;
+//: + (FFFConductorAuroraGenerous *)sharedInstance;
++ (ConductorAuroraGenerous *)forwards;
 
 //: @end
 @end

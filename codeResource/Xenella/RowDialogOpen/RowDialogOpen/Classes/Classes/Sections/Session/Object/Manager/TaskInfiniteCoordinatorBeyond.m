@@ -87,7 +87,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  NumberroduceRust.m
+//  TaskInfiniteCoordinatorBeyond.m
 //  NIM
 //
 //  Created by Netease on 2019/10/16.
@@ -96,7 +96,7 @@
 
 // __M_A_C_R_O__
 //: #import "USERMessageSerialization.h"
-#import "NumberroduceRust.h"
+#import "TaskInfiniteCoordinatorBeyond.h"
 //: #import "USERFileLocationHelper.h"
 #import "Helper.h"
 //: #import "USERFileUtil.h"
@@ -124,7 +124,7 @@ static dispatch_queue_t theQueue()
 }
 
 //: @interface USERMessageSerialization ()
-@interface NumberroduceRust ()
+@interface TaskInfiniteCoordinatorBeyond ()
 
 //: @property (nonatomic, copy) NSString *targetFile;
 @property (nonatomic, copy) NSString *pass;
@@ -134,7 +134,7 @@ static dispatch_queue_t theQueue()
 
 
 //: @implementation USERMessageSerialization
-@implementation NumberroduceRust
+@implementation TaskInfiniteCoordinatorBeyond
 
 //: - (void)decode:(NSString *)filePath
 - (void)snip:(NSString *)filePath

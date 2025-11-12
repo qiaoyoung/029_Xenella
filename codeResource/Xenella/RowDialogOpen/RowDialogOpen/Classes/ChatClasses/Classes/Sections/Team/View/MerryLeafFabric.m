@@ -81,7 +81,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  NanometerPowerhouseView.m
+//  MerryLeafFabric.m
 //  NIM
 //
 //  Created by chris on 15/3/26.
@@ -90,7 +90,7 @@
 
 // __M_A_C_R_O__
 //: #import "FFFTeamMemberListCell.h"
-#import "NanometerPowerhouseView.h"
+#import "MerryLeafFabric.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "FFFAvatarImageView.h"
@@ -239,7 +239,7 @@ const CGFloat appBindDistinguishPlatform (NSString *value) {
 };
 
 //: @interface FFFTeamMemberListCell()
-@interface NanometerPowerhouseView()
+@interface MerryLeafFabric()
 
 //: @property(nonatomic, strong) UIButton *addBtn;
 @property(nonatomic, strong) UIButton *videoMenuBtn;
@@ -251,7 +251,7 @@ const CGFloat appBindDistinguishPlatform (NSString *value) {
 @end
 
 //: @implementation FFFTeamMemberListCell
-@implementation NanometerPowerhouseView
+@implementation MerryLeafFabric
 //: - (void)layoutSubviews{
 - (void)layoutSubviews{
     //: [super layoutSubviews];
