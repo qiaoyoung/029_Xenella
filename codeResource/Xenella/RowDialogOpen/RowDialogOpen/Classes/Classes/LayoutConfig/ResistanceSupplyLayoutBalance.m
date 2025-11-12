@@ -99,7 +99,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  ResistanceSupplyLayoutConfig.m
+//  ResistanceSupplyLayoutBalance.m
 //  NIM
 //
 //  Created by amao on 2016/11/22.
@@ -108,7 +108,7 @@
 
 // __M_A_C_R_O__
 //: #import "USERCellLayoutConfig.h"
-#import "ResistanceSupplyLayoutConfig.h"
+#import "ResistanceSupplyLayoutBalance.h"
 //: #import "USERSessionCustomContentConfig.h"
 #import "ActYe.h"
 //: #import "USERChatroomTextContentConfig.h"
@@ -119,7 +119,7 @@
 #import "CompAttachment.h"
 
 //: @interface USERCellLayoutConfig ()
-@interface ResistanceSupplyLayoutConfig ()
+@interface ResistanceSupplyLayoutBalance ()
 @property (nonatomic,strong) DistantConfig *menuConfig;
 //: @property (nonatomic,strong) USERSessionCustomContentConfig *sessionCustomconfig;
 @property (nonatomic,strong) ActYe *flow;
@@ -131,7 +131,7 @@
 @end
 
 //: @implementation USERCellLayoutConfig
-@implementation ResistanceSupplyLayoutConfig
+@implementation ResistanceSupplyLayoutBalance
 
 //: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
 - (UIEdgeInsets)personification:(MessageDistant *)model

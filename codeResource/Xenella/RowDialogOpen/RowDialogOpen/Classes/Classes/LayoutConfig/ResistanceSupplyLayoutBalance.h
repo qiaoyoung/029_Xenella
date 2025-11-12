@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  ResistanceSupplyLayoutConfig.h
+//  ResistanceSupplyLayoutBalance.h
 //  NIM
 //
 //  Created by amao on 2016/11/22.
@@ -15,7 +15,7 @@
 #import "TaskIdentifyRave.h"
 
 //: @interface USERCellLayoutConfig : FFFCellLayoutConfig<FFFCellLayoutConfig>
-@interface ResistanceSupplyLayoutConfig : DenyConfig<DenyConfig>
+@interface ResistanceSupplyLayoutBalance : DenyConfig<DenyConfig>
 
 //: @end
 @end

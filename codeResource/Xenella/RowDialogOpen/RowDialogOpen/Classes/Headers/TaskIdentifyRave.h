@@ -31,7 +31,7 @@
 //: #import "ImplementAuroraTranslateUnity.h"  //message cell事件回调
 #import "ImplementAuroraTranslateUnity.h"  //message cell事件回调
 //: #import "FFFSessionConfig.h"        //会话页面配置
-#import "DistantForceConfig.h"        //会话页面配置
+#import "DistantForceBalance.h"        //会话页面配置
 //: #import "FFFKitEvent.h"             //点击事件封装类
 #import "CaseEvent.h"             //点击事件封装类
 //: #import "FFFCellLayoutConfig.h"

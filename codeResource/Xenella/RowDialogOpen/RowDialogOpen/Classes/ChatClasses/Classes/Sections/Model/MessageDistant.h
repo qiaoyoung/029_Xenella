@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 
 //: @interface FFFMessageModel : NSObject
 @interface MessageDistant : NSObject

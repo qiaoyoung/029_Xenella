@@ -26,7 +26,7 @@
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithDripPan:(NIMSession *)session
                          //: config:(id<FFFSessionConfig>)sessionConfig;
-                         listener:(id<DistantForceConfig>)sessionConfig;
+                         listener:(id<DistantForceBalance>)sessionConfig;
 
 //: @end
 @end

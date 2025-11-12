@@ -22,7 +22,7 @@
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithTip:(NIMSession *)session
                          //: config:(id<FFFSessionConfig>)sessionConfig;
-                         allow:(id<DistantForceConfig>)sessionConfig;
+                         allow:(id<DistantForceBalance>)sessionConfig;
 
 //: @property(nonatomic,strong) id<NIMSessionDataSource> dataSource;
 @property(nonatomic,strong) id<UnopenHearingSunnyTrailheadSource> dataSource;

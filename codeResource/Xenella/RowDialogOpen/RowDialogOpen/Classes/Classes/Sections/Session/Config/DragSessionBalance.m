@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DragSessionConfig.m
+//  DragSessionBalance.m
 //  NIM
 //
 //  Created by He on 2020/4/12.
@@ -10,12 +10,12 @@
 
 // __M_A_C_R_O__
 //: #import "USERThreadSessionConfig.h"
-#import "DragSessionConfig.h"
+#import "DragSessionBalance.h"
 //: #import "USERBundleSetting.h"
 #import "DenySetting.h"
 
 //: @interface USERThreadSessionConfig ()
-@interface DragSessionConfig ()
+@interface DragSessionBalance ()
 
 //: @property (nonatomic,strong) NIMMessage *threadMessage;
 @property (nonatomic,strong) NIMMessage *manageUnitsed;
@@ -27,7 +27,7 @@
 @end
 
 //: @implementation USERThreadSessionConfig
-@implementation DragSessionConfig
+@implementation DragSessionBalance
 
 //: - (BOOL)shouldShowPinContent
 - (BOOL)temporaryWorker

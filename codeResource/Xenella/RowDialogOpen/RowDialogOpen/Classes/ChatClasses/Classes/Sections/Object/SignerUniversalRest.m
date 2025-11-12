@@ -23,7 +23,7 @@
 @property (nonatomic,strong) NSMutableArray *available;
 
 //: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
-@property (nonatomic,strong) id<DistantForceConfig> sessionConfig;
+@property (nonatomic,strong) id<DistantForceBalance> sessionConfig;
 //: @property (nonatomic,strong) FFFSessionMsgDatasource *dataSource;
 @property (nonatomic,strong) DistinguishDatasource *dataSource;
 
@@ -452,7 +452,7 @@
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithSessionWrite:(NIMSession *)session
                          //: config:(id<FFFSessionConfig>)sessionConfig
-                         honorConfig:(id<DistantForceConfig>)sessionConfig
+                         honorConfig:(id<DistantForceBalance>)sessionConfig
 {
     //: self = [super init];
     self = [super init];

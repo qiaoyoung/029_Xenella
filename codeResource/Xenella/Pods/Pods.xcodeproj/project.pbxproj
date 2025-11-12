@@ -236,7 +236,7 @@
 		270242AE06A5D7ECB11BAFDD1C6FA8D9 /* UIColor+SDHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0B5B65EE10A8D961A73D3D19679AB /* UIColor+SDHexString.m */; };
 		27037F16AFB1F20FF86549EBC0B8C764 /* WorkFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15483BA276753F69DBDAB6424DF17343 /* WorkFlowView.m */; };
 		27B78BD93F07A77F16852FCC14D7D48E /* ApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E1380CD48CCAEAA45A88D63704664C /* ApplicationViewController.m */; };
-		27FED38F4965C51E22FB772E3F84ED11 /* ResistanceSupplyLayoutConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0F37CD65BECE652379551661941B32 /* ResistanceSupplyLayoutConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27FED38F4965C51E22FB772E3F84ED11 /* ResistanceSupplyLayoutBalance.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0F37CD65BECE652379551661941B32 /* ResistanceSupplyLayoutBalance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28444716CE2FA6145B1D5F4990F7F049 /* NSDictionary+Truth.m in Sources */ = {isa = PBXBuildFile; fileRef = DC11E11C90C7E9DA4023ECFF53C752C6 /* NSDictionary+Truth.m */; };
 		285482104E6329C76EB22FD193232998 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = E6CDF351CEF791A0AB7A6AE09CFEF63A /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28BA9702905AA2B4C1E9E4878032D4E4 /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = F91D847DE11FC4532C1970A2CB3175AD /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -246,7 +246,7 @@
 		29A4776D3D003079DF143BD0B1C255B3 /* SDAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0C58A75D1327F87EDC5EF00F74AA4E /* SDAnimatedImageView.m */; };
 		29C084BBD3BCDEE22E15817C4F6D3CF5 /* LooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDA1455C89B085ADB831B80E220FB /* LooViewController.m */; };
 		29E2AECF585C6149A80FF71742BC873A /* UIViewController+Decent.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E66A090DE9CE5361894476533B0B03 /* UIViewController+Decent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A1C00683CE5D17B4A50C18FE65DC94E /* DistantForceConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC61589336224023948BAC22AEF7C4A /* DistantForceConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A1C00683CE5D17B4A50C18FE65DC94E /* DistantForceBalance.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC61589336224023948BAC22AEF7C4A /* DistantForceBalance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A5FA57CC7694FF443B5F4920F85C73C /* PropertyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEF45CFF32078F7BC17C3C075FE1EE /* PropertyCenter.m */; };
 		2A627E613C1B4D8C20AACBF924C88C39 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D4915628B0BCD9C940E5C8030190E1 /* CoreFoundation.framework */; };
 		2A9CFA647A5A1F7A3E8863743D62CB4F /* ForceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7C9EC608C8626EFE13648CA88A3D81 /* ForceView.m */; };
@@ -361,7 +361,7 @@
 		3E310B6DC9DDD17BCAF56D7BE25512E3 /* SubmarineCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58371E1094DE9086575B1EF30D309 /* SubmarineCache.m */; };
 		3E339710781B59B8F649D36B2E62345D /* TZImageCropManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 92BE9D4A553255DCAD795CDE81A06BFA /* TZImageCropManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E596308292A801AD5C2BFE52024D218 /* ScaleMightyController.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A367F270BB1C5BF775CAD71319C94 /* ScaleMightyController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E5F626079E4168B6B84D68C1ECAB46C /* DragSessionConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDD425ACC1D2A759C9E821F2CBB9239 /* DragSessionConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E5F626079E4168B6B84D68C1ECAB46C /* DragSessionBalance.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDD425ACC1D2A759C9E821F2CBB9239 /* DragSessionBalance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3EBB2555006E7A67DD5CB75BC40C00D5 /* HornControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3666F64F5A1B3A8B8977DA5600952441 /* HornControl.m */; };
 		3EC808E07FA8914C5F04956BCC49217B /* RowDialogOpen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7856B919E37DECA353F016CA2D6D8DA /* RowDialogOpen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3ED8FA964366AABF1C237630A432690A /* NSData+SunnyAccommodate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B078C873D9851D4FF0A5F354C47F231 /* NSData+SunnyAccommodate.m */; };
@@ -465,7 +465,7 @@
 		523235228A1C021C67F2E3776A922DC5 /* MJRefreshTrailer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEACDE5C97FFB5736DACD3D1CEBCCE7B /* MJRefreshTrailer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5245728034A21EA9BBD9BEE1F9B2E2FA /* UIImage+ExtendedCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = 740BC51E2DDA1176CEA001A24FEC1BF1 /* UIImage+ExtendedCacheData.m */; };
 		524E2E7ABD52874B06C8644AF2955AEE /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B19C79C3273A3AD650EE0C59907D36 /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		528039F78DB83E074A5AD114D8DD14EB /* DragSessionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3741483207E162E02BA7619D34EAE89E /* DragSessionConfig.m */; };
+		528039F78DB83E074A5AD114D8DD14EB /* DragSessionBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3741483207E162E02BA7619D34EAE89E /* DragSessionBalance.m */; };
 		529988B2978AF00C802CA9AEA5ED4DE9 /* ArtElfView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F5226D45EBB643156397EC5637AE1D /* ArtElfView.m */; };
 		52C777DF07EC12E99D837A5FE3D4C630 /* YYTextLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F75375351A3F085E1ECA0D723E9B57A /* YYTextLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5380042DB3295B2CD2760461CDBC566F /* BindControl.h in Headers */ = {isa = PBXBuildFile; fileRef = E83B701AAD1A6ED7D5A9C49AC7AE9DFB /* BindControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1310,7 +1310,7 @@
 		F6740A027E986000BA56D52516380F60 /* angle-mask.png in Sources */ = {isa = PBXBuildFile; fileRef = 3F312438DF927DBA4CDAD324347D51A5 /* angle-mask.png */; };
 		F680B02D118CF023E7954698F7F3CC8E /* YYTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F149CBBF842DA185F44221A34571313A /* YYTextArchiver.m */; };
 		F684C7330436B4283ABFC5507B270A94 /* SDImageIOAnimatedCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4F4BE2DF61B3A33E1CCB3D2F3EEC5C /* SDImageIOAnimatedCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6A1107E7995EE2A3F57C95AC6BF0589 /* ResistanceSupplyLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 867EE0D38FF3374BA0672046D087C35B /* ResistanceSupplyLayoutConfig.m */; };
+		F6A1107E7995EE2A3F57C95AC6BF0589 /* ResistanceSupplyLayoutBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 867EE0D38FF3374BA0672046D087C35B /* ResistanceSupplyLayoutBalance.m */; };
 		F6D1C960368EB1E067ABD0BFF707FC56 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA156DE64F206A8135210FA91F10A11 /* MASConstraintMaker.m */; };
 		F6E6173033F02B0287AD48FCEF9D48BB /* DecentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C4802880ACC37F8A98868FA2BB65 /* DecentViewController.m */; };
 		F70A50EC0598FAE1AA1B3338156A3856 /* PropertyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CEFC11E295A5E413C9DDCA279ABF55 /* PropertyView.m */; };
@@ -1806,7 +1806,7 @@
 		1E7A6B430880EDFDA1853ED9AECF531C /* NSBezierPath+SDRoundedCorners.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+SDRoundedCorners.m"; path = "SDWebImage/Private/NSBezierPath+SDRoundedCorners.m"; sourceTree = "<group>"; };
 		1E826958D73E8B413135F2A3CC807862 /* UINavigationBar+CompassPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+CompassPoint.m"; sourceTree = "<group>"; };
 		1E8BAADD07EBBE0894954C9171F9ED6E /* UIProgressView+ElfNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+ElfNetworking.h"; sourceTree = "<group>"; };
-		1EDD425ACC1D2A759C9E821F2CBB9239 /* DragSessionConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DragSessionConfig.h; sourceTree = "<group>"; };
+		1EDD425ACC1D2A759C9E821F2CBB9239 /* DragSessionBalance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DragSessionBalance.h; sourceTree = "<group>"; };
 		1F4FF854E7A300E5A62B1B3F33C22D83 /* SDWebImageOptionsProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOptionsProcessor.m; path = SDWebImage/Core/SDWebImageOptionsProcessor.m; sourceTree = "<group>"; };
 		1FCC1A020F7E743E2B4AE0C592224589 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1925,7 +1925,7 @@
 		368E8F335ACA4B3BCDD6C6A0EC71A9AE /* JustView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JustView.m; sourceTree = "<group>"; };
 		36A8418A9DB952789DA292D73DB41DB4 /* NSAttributedString+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+YYText.m"; path = "YYText/Utility/NSAttributedString+YYText.m"; sourceTree = "<group>"; };
 		36CF9A63A26D16E9B16F8DC2CD1682CE /* FLAnimatedImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FLAnimatedImage-Info.plist"; sourceTree = "<group>"; };
-		3741483207E162E02BA7619D34EAE89E /* DragSessionConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DragSessionConfig.m; sourceTree = "<group>"; };
+		3741483207E162E02BA7619D34EAE89E /* DragSessionBalance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DragSessionBalance.m; sourceTree = "<group>"; };
 		3744634D5FA88ABCB195F93DE6182E82 /* AdminPaper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdminPaper.m; sourceTree = "<group>"; };
 		374F3B8104A2827B088F63B3E136A75C /* SpeckledRefreshSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SpeckledRefreshSuite.h; sourceTree = "<group>"; };
 		376418539EEE3DCA5FEDF99BC78B2882 /* ClassicViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ClassicViewController.m; sourceTree = "<group>"; };
@@ -2376,7 +2376,7 @@
 		862CAD761D56C0ED955B0A687F483EC3 /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/Core/SDAnimatedImage.m; sourceTree = "<group>"; };
 		8642FBC1380B4F68C6D196DAD832C470 /* DisappearView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DisappearView.h; sourceTree = "<group>"; };
 		867AB68773CCDD17BB42C1CBC358774C /* SpokenView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SpokenView.h; sourceTree = "<group>"; };
-		867EE0D38FF3374BA0672046D087C35B /* ResistanceSupplyLayoutConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ResistanceSupplyLayoutConfig.m; sourceTree = "<group>"; };
+		867EE0D38FF3374BA0672046D087C35B /* ResistanceSupplyLayoutBalance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ResistanceSupplyLayoutBalance.m; sourceTree = "<group>"; };
 		869A989F8E161CD91CAC333917F8E92E /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
 		86C5D2DBA7D2616A19ED922DBC822238 /* TurnConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TurnConfig.m; sourceTree = "<group>"; };
 		86DF63538AB0A7C7D415B1D421047CCD /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
@@ -2744,13 +2744,13 @@
 		CA2E5C0CFF9F3997FAB8E690DE8C58A7 /* Pods-Riverla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Riverla.release.xcconfig"; sourceTree = "<group>"; };
 		CA496D7915F6A0FE7D8AA8EFF1F01FFC /* TheAdminView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TheAdminView.h; sourceTree = "<group>"; };
 		CA4C3E1C181EC265DD6C016241834780 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		CAC61589336224023948BAC22AEF7C4A /* DistantForceConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DistantForceConfig.h; sourceTree = "<group>"; };
+		CAC61589336224023948BAC22AEF7C4A /* DistantForceBalance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DistantForceBalance.h; sourceTree = "<group>"; };
 		CAD5D8959B59CD8ECAEA6C606B842D81 /* Reachability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.release.xcconfig; sourceTree = "<group>"; };
 		CAD7555EF29F03808EA97969AA8F7A55 /* BesideParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BesideParser.h; sourceTree = "<group>"; };
 		CAF62804EE5A4646A521146089EA05E2 /* UIImage+Metadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Metadata.m"; path = "SDWebImage/Core/UIImage+Metadata.m"; sourceTree = "<group>"; };
 		CB0057680A578E4CF8705B8CA1BADE1D /* VisualAspectEarnNotebookAttachment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VisualAspectEarnNotebookAttachment.m; sourceTree = "<group>"; };
 		CB00D2101F26165A056701AB01F1226E /* NSString+Member.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Member.m"; sourceTree = "<group>"; };
-		CB0F37CD65BECE652379551661941B32 /* ResistanceSupplyLayoutConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ResistanceSupplyLayoutConfig.h; sourceTree = "<group>"; };
+		CB0F37CD65BECE652379551661941B32 /* ResistanceSupplyLayoutBalance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ResistanceSupplyLayoutBalance.h; sourceTree = "<group>"; };
 		CB2A8756093717CB237E022C122B7A69 /* TossNorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TossNorViewController.m; sourceTree = "<group>"; };
 		CB5B40B45F806023DDD375B7456DFAAC /* DistinguishDatasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DistinguishDatasource.h; sourceTree = "<group>"; };
 		CB6D527C8443A8D897BAC50C67F18283 /* UITextView+Util.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Util.m"; sourceTree = "<group>"; };
@@ -4070,8 +4070,8 @@
 			children = (
 				38D2C60D72FADDB16B19DEB976FE66AB /* ColleagueThy.h */,
 				1E77D9554057531AD53B301B3B84DFE8 /* ColleagueThy.m */,
-				1EDD425ACC1D2A759C9E821F2CBB9239 /* DragSessionConfig.h */,
-				3741483207E162E02BA7619D34EAE89E /* DragSessionConfig.m */,
+				1EDD425ACC1D2A759C9E821F2CBB9239 /* DragSessionBalance.h */,
+				3741483207E162E02BA7619D34EAE89E /* DragSessionBalance.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -4083,8 +4083,8 @@
 				314BC5D36F5CC12F1381DF214F7495F5 /* ActYe.m */,
 				FD090BE7B0F272B40053475E7AE2FEE7 /* DistantConfig.h */,
 				089BBBA999E735E3F904F9D129BD152C /* DistantConfig.m */,
-				CB0F37CD65BECE652379551661941B32 /* ResistanceSupplyLayoutConfig.h */,
-				867EE0D38FF3374BA0672046D087C35B /* ResistanceSupplyLayoutConfig.m */,
+				CB0F37CD65BECE652379551661941B32 /* ResistanceSupplyLayoutBalance.h */,
+				867EE0D38FF3374BA0672046D087C35B /* ResistanceSupplyLayoutBalance.m */,
 			);
 			path = LayoutConfig;
 			sourceTree = "<group>";
@@ -5173,7 +5173,7 @@
 			isa = PBXGroup;
 			children = (
 				B5DD1C0703480F5EB1A5335494855A63 /* ArtisticNational.h */,
-				CAC61589336224023948BAC22AEF7C4A /* DistantForceConfig.h */,
+				CAC61589336224023948BAC22AEF7C4A /* DistantForceBalance.h */,
 				0AB23E57047E34FDBE026F012A29DF74 /* PainterGenericTranslateLoyal.h */,
 				9D62C926DE41B8EBB030F4C144BD0F3F /* ZonalClearViewport.h */,
 				60848109EAFFFE9A58C9EF0ECDC5C133 /* DiagramSelectThemeNeat.h */,
@@ -6460,14 +6460,14 @@
 				DDD5DF9CBEE6E560B6C73FE7CD674C1B /* DistanceView.h in Headers */,
 				96A1295DCFEB57D4572AE0898038DBC0 /* DistanceViewController.h in Headers */,
 				382411C6C573BA145C13008D7198FBE5 /* DistantConfig.h in Headers */,
-				2A1C00683CE5D17B4A50C18FE65DC94E /* DistantForceConfig.h in Headers */,
+				2A1C00683CE5D17B4A50C18FE65DC94E /* DistantForceBalance.h in Headers */,
 				858D3B360351A2D92ED8EDC4BCEADD3D /* DistantNameView.h in Headers */,
 				A47CA822677947C3C5B61FAC702CDB22 /* DistantObject.h in Headers */,
 				4F9659DB6ED78276A4214D902639A4AB /* DistinguishDatasource.h in Headers */,
 				3E596308292A801AD5C2BFE52024D218 /* ScaleMightyController.h in Headers */,
 				4BBF6FF3D2305AF62CE68502771768B0 /* SplitLightForestLayout.h in Headers */,
 				982D1A917AE1E3B81627F542E51EAFBF /* DragReusableView.h in Headers */,
-				3E5F626079E4168B6B84D68C1ECAB46C /* DragSessionConfig.h in Headers */,
+				3E5F626079E4168B6B84D68C1ECAB46C /* DragSessionBalance.h in Headers */,
 				579A62FE697315738AC158013C388A4E /* DragView.h in Headers */,
 				F00FCE395F6EB2731208415B75815148 /* DragViewController.h in Headers */,
 				D237AFA029749D71B3A0ABB31DAEFC0A /* DriveViewController.h in Headers */,
@@ -6655,7 +6655,7 @@
 				9F29F7E7E18FCD0D19EFD6F071157771 /* RecordViewCell.h in Headers */,
 				D01A22CFC11A5DD396267470F4750EB6 /* RegisterVolume.h in Headers */,
 				ACB44EA480B89639B5115BE8D513A79B /* ResistanceSunnyRust.h in Headers */,
-				27FED38F4965C51E22FB772E3F84ED11 /* ResistanceSupplyLayoutConfig.h in Headers */,
+				27FED38F4965C51E22FB772E3F84ED11 /* ResistanceSupplyLayoutBalance.h in Headers */,
 				B9F47342EC83D41088AFEE63A0311073 /* ResistanceView.h in Headers */,
 				5FFBAEEF3915FB4039F2936871EF9F96 /* RoughCommand.h in Headers */,
 				AE6F806F111207D3B1F6A4B1C1D6B462 /* RoughDecentTool.h in Headers */,
@@ -7711,7 +7711,7 @@
 				BA7DEB37D624886C858946A7343D14A8 /* ScaleMightyController.m in Sources */,
 				A182996CDF34D5A7DC773494065FCEDB /* SplitLightForestLayout.m in Sources */,
 				A10556D13A16E0C231FCF4414355E188 /* DragReusableView.m in Sources */,
-				528039F78DB83E074A5AD114D8DD14EB /* DragSessionConfig.m in Sources */,
+				528039F78DB83E074A5AD114D8DD14EB /* DragSessionBalance.m in Sources */,
 				EA36CFF131913743A850125500D14439 /* DragView.m in Sources */,
 				1A0D0458660712CC3555B87285EAB4AA /* DragViewController.m in Sources */,
 				2001B38FFD120D4910E869434884D46A /* DriveViewController.m in Sources */,
@@ -7890,7 +7890,7 @@
 				B5F92400E767F7B332579554E6927E4A /* ReaderFetcher.m in Sources */,
 				2BBCCD89C036ACD34E8F04FAF91B3167 /* RecordViewCell.m in Sources */,
 				471EC815780FA34CDFB56BBD5DCA26B8 /* ResistanceSunnyRust.m in Sources */,
-				F6A1107E7995EE2A3F57C95AC6BF0589 /* ResistanceSupplyLayoutConfig.m in Sources */,
+				F6A1107E7995EE2A3F57C95AC6BF0589 /* ResistanceSupplyLayoutBalance.m in Sources */,
 				3B1C7CF2D61314FC65833F8E70D95778 /* ResistanceView.m in Sources */,
 				EE2661DF29FE85C1F38A5017F0944066 /* RoughCommand.m in Sources */,
 				E80E341938D9145F11E64E48A15312B1 /* RoughDecentTool.m in Sources */,

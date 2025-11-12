@@ -3489,7 +3489,7 @@ typedef struct {
 //: #pragma mark - 配置项
 #pragma mark - 配置项
 //: - (id<FFFSessionConfig>)sessionConfig
-- (id<DistantForceConfig>)afterCorrect
+- (id<DistantForceBalance>)afterCorrect
 {
     //: return nil; 
     return nil; //使用默认配置

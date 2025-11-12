@@ -21,12 +21,12 @@ Byte viewWisdomConfig[] = {14, 12, 31, 13, 245, 57, 104, 237, 2, 117, 102, 221, 
 //: #import "USERThreadTalkSessionViewController.h"
 #import "FormerViewController.h"
 //: #import "USERThreadSessionConfig.h"
-#import "DragSessionConfig.h"
+#import "DragSessionBalance.h"
 
 //: @interface USERThreadTalkSessionViewController ()
 @interface FormerViewController ()
 //: @property (nonatomic,strong) USERThreadSessionConfig *sessionConfig;
-@property (nonatomic,strong) DragSessionConfig *blackCollectMark;
+@property (nonatomic,strong) DragSessionBalance *blackCollectMark;
 //: @property (nonatomic,strong) NIMMessage *threadMesssage;
 @property (nonatomic,strong) NIMMessage *messsage;
 //: @end
@@ -115,12 +115,12 @@ Byte viewWisdomConfig[] = {14, 12, 31, 13, 245, 57, 104, 237, 2, 117, 102, 221, 
 }
 
 //: - (id<FFFSessionConfig>)sessionConfig
-- (id<DistantForceConfig>)blackCollectMark
+- (id<DistantForceBalance>)blackCollectMark
 {
     //: if (_sessionConfig == nil) {
     if (_blackCollectMark == nil) {
         //: _sessionConfig = [[USERThreadSessionConfig alloc] initWithMessage:self.threadMesssage];
-        _blackCollectMark = [[DragSessionConfig alloc] initWithRefer:self.messsage];
+        _blackCollectMark = [[DragSessionBalance alloc] initWithRefer:self.messsage];
         //: _sessionConfig.session = self.session;
         _blackCollectMark.blue = self.found;
     }

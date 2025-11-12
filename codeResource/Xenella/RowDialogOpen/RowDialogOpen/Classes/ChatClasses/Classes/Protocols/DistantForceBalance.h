@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DistantForceConfig.h
+//  DistantForceBalance.h
 // TaskIdentifyRave
 //
 //  Created by amao on 8/12/15.
@@ -23,7 +23,7 @@
 // __M_A_C_R_O__
 
 //: @protocol FFFSessionConfig <NSObject>
-@protocol DistantForceConfig <NSObject>
+@protocol DistantForceBalance <NSObject>
 //: @optional
 @optional
 

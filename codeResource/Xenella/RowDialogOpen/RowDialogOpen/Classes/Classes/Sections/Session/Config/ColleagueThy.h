@@ -13,9 +13,9 @@
 #import <Foundation/Foundation.h>
 
 //: @class FFFSessionConfig;
-@class DistantForceConfig;
+@class DistantForceBalance;
 //: @interface USERSessionConfig : NSObject<FFFSessionConfig>
-@interface ColleagueThy : NSObject<DistantForceConfig>
+@interface ColleagueThy : NSObject<DistantForceBalance>
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *blue;
 

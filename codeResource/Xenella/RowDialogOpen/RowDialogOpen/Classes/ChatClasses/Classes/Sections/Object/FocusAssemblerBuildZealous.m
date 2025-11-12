@@ -110,7 +110,7 @@ typedef struct {
 @property (nonatomic,weak) id<Delegate> eyeDelegate;
 
 //: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
-@property (nonatomic,strong) id<DistantForceConfig> sessionConfig;
+@property (nonatomic,strong) id<DistantForceBalance> sessionConfig;
 
 //: @end
 @end
@@ -237,7 +237,7 @@ typedef struct {
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithDripPan:(NIMSession *)session
                          //: config:(id<FFFSessionConfig>)sessionConfig
-                         listener:(id<DistantForceConfig>)sessionConfig
+                         listener:(id<DistantForceBalance>)sessionConfig
 {
     //: self = [super init];
     self = [super init];

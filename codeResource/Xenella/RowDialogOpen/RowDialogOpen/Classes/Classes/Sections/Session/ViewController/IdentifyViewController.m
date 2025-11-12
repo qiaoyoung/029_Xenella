@@ -1516,7 +1516,7 @@
 //: #import "USERRedPacketTipAttachment.h"
 #import "CompAttachment.h"
 //: #import "USERCellLayoutConfig.h"
-#import "ResistanceSupplyLayoutConfig.h"
+#import "ResistanceSupplyLayoutBalance.h"
 //: #import "USERMulSelectFunctionBar.h"
 #import "MinimumView.h"
 //: #import "USERMergeForwardSession.h"
@@ -4840,7 +4840,7 @@ HisDelegate>
 
 
 //: - (id<FFFSessionConfig>)sessionConfig
-- (id<DistantForceConfig>)blackCollectMark
+- (id<DistantForceBalance>)blackCollectMark
 {
     //: if (_sessionConfig == nil) {
     if (_blackCollectMark == nil) {

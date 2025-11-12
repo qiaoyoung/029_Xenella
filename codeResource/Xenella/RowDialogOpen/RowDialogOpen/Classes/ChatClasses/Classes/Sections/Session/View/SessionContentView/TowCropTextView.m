@@ -113,7 +113,7 @@ typedef struct {
 //: #import "FFFTextView.h"
 #import "ArtisticScrollView.h"
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 //: #import "USERSessionViewController.h"
 #import "IdentifyViewController.h"
 //: #import "NSObject+tyl_internalIdentifier.h"

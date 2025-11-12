@@ -12,7 +12,7 @@
 //: #import "FFFPageView.h"
 #import "HappyPageView.h"
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 
 //: @class NIMInputEmoticonCatalog;
 @class InputNever;
@@ -57,7 +57,7 @@
 //: @property (nonatomic, strong) NSArray *totalCatalogData;
 @property (nonatomic, strong) NSArray *totalCatalogData;
 //: @property (nonatomic, weak) id<FFFSessionConfig> config;
-@property (nonatomic, weak) id<DistantForceConfig> config;
+@property (nonatomic, weak) id<DistantForceBalance> config;
 
 //: @property (nonatomic, weak) id<NIMInputEmoticonProtocol> delegate;
 @property (nonatomic, weak) id<TowProperty> delegate;

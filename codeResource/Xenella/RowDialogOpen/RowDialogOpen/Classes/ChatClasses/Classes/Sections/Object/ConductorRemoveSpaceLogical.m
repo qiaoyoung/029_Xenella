@@ -101,7 +101,7 @@ dispatch_queue_t untilMaximumBill()
 @property (nonatomic,assign) UserSessionState sessionState;
 
 //: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
-@property (nonatomic,strong) id<DistantForceConfig> sessionConfig;
+@property (nonatomic,strong) id<DistantForceBalance> sessionConfig;
 
 //: @property (nonatomic,strong) NIMMessage *referenceMessage;
 @property (nonatomic,strong) NIMMessage *referenceMessage;
@@ -1065,7 +1065,7 @@ dispatch_queue_t untilMaximumBill()
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithTip:(NIMSession *)session
                          //: config:(id<FFFSessionConfig>)sessionConfig
-                         allow:(id<DistantForceConfig>)sessionConfig
+                         allow:(id<DistantForceBalance>)sessionConfig
 {
     //: self = [super init];
     self = [super init];

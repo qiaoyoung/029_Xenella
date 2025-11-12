@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 //: #import "StartArrayValid.h"
 #import "StartArrayValid.h"
 
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface InputArtView : UIView
 
 //: @property (nonatomic,weak) id<FFFSessionConfig> config;
-@property (nonatomic,weak) id<DistantForceConfig> config;
+@property (nonatomic,weak) id<DistantForceBalance> config;
 //: @property (nonatomic,weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic,weak) id<OftentimesTurn> actionDelegate;
 

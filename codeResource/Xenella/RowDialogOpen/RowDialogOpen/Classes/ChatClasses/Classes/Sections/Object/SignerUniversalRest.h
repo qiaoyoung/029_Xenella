@@ -16,7 +16,7 @@
 //: #import "ShaderMajorSplitStencil.h"
 #import "ShaderMajorSplitStencil.h"
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 
 //: @interface FFFSessionDataSourceImpl : NSObject<NIMSessionDataSource>
 @interface SignerUniversalRest : NSObject<UnopenHearingSunnyTrailheadSource>
@@ -24,7 +24,7 @@
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithSessionWrite:(NIMSession *)session
                          //: config:(id<FFFSessionConfig>)sessionConfig;
-                         honorConfig:(id<DistantForceConfig>)sessionConfig;
+                         honorConfig:(id<DistantForceBalance>)sessionConfig;
 
 //: @end
 @end

@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 //: #import "StartArrayValid.h"
 #import "StartArrayValid.h"
 //: #import "CustomAlbumPickerView.h"
@@ -36,7 +36,7 @@
 @property (nonatomic, strong) LotView *albumPickerView;
 
 //: @property (nonatomic,weak) id<FFFSessionConfig> config;
-@property (nonatomic,weak) id<DistantForceConfig> config;
+@property (nonatomic,weak) id<DistantForceBalance> config;
 
 //: @property (nonatomic, weak) id<moreCustomPickerViewDelegate> delegate;
 @property (nonatomic, weak) id<moreCustomPickerViewDelegate> delegate;

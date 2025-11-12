@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak) id<OftentimesTurn> exception;
 
 //: @property (nonatomic,weak) id<FFFSessionConfig> config;
-@property (nonatomic,weak) id<DistantForceConfig> odd;
+@property (nonatomic,weak) id<DistantForceBalance> odd;
 
 //: @property (nonatomic, copy)void (^selectBlock)(FFFMediaItem *item);
 @property (nonatomic, copy)void (^wireless)(AdminPaper *item);

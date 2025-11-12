@@ -230,7 +230,7 @@
 @property (nonatomic, assign) NIMAudioRecordPhase hand;
 @property (nonatomic, strong) NSArray *maker;
 //: @property (nonatomic, weak) id<FFFSessionConfig> inputConfig;
-@property (nonatomic, weak) id<DistantForceConfig> place;
+@property (nonatomic, weak) id<DistantForceBalance> place;
 
 //: @property (nonatomic, weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic, weak) id<OftentimesTurn> supernumerary;
@@ -255,7 +255,7 @@
 //: - (instancetype)initWithFrame:(CGRect)frame
 - (instancetype)initWith:(CGRect)frame
                        //: config:(id<FFFSessionConfig>)config
-                       secondarySessionConfig:(id<DistantForceConfig>)config
+                       secondarySessionConfig:(id<DistantForceBalance>)config
 {
     //: self = [super initWithFrame:frame];
     self = [super initWithFrame:frame];

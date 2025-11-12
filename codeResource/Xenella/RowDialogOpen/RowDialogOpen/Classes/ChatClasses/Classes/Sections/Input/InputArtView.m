@@ -503,7 +503,7 @@ typedef struct {
 }
 
 //: - (void)setConfig:(id<FFFSessionConfig>)config
-- (void)setConfig:(id<DistantForceConfig>)config
+- (void)setConfig:(id<DistantForceBalance>)config
 {
     //: _config = config;
     _config = config;

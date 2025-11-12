@@ -14,7 +14,7 @@
 //: #import "StartArrayValid.h"
 #import "StartArrayValid.h"
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 //: #import "FFFInputToolBar.h"
 #import "TurnView.h"
 //: #import "FFFInputAtCache.h"
@@ -93,7 +93,7 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: - (instancetype)initWithFrame:(CGRect)frame
 - (instancetype)initWith:(CGRect)frame
                        //: config:(id<FFFSessionConfig>)config;
-                       secondarySessionConfig:(id<DistantForceConfig>)config;
+                       secondarySessionConfig:(id<DistantForceBalance>)config;
 //: - (void)setInputTextPlaceHolder:(NSString*)placeHolder;
 - (void)setInputSignalHolder:(NSString*)placeHolder;
 

@@ -550,7 +550,7 @@
 //: - (instancetype)initWithSession:(NIMSession*)session
 - (instancetype)initWithNetwork:(NIMSession*)session
                          //: config:(id<FFFSessionConfig>)sessionConfig
-                         financialError:(id<DistantForceConfig>)sessionConfig
+                         financialError:(id<DistantForceBalance>)sessionConfig
 {
     //: if (self = [self init]) {
     if (self = [self init]) {

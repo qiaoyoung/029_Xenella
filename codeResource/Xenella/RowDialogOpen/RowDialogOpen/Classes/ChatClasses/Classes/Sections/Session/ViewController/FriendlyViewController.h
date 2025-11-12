@@ -14,7 +14,7 @@
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 //: #import "ImplementAuroraTranslateUnity.h"
 #import "ImplementAuroraTranslateUnity.h"
 //: #import "SurfaceFirmWaveBefore.h"
@@ -124,7 +124,7 @@
  *  会话页详细配置
  */
 //: - (id<FFFSessionConfig>)sessionConfig;
-- (id<DistantForceConfig>)afterCorrect;
+- (id<DistantForceBalance>)afterCorrect;
 
 /**
  *  会话页长按消息可以弹出的菜单

@@ -334,7 +334,7 @@ typedef struct {
 //: #import "NSString+USER.h"
 #import "NSString+SunnyAccommodate.h"
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 //: #import "USERSessionUtil.h"
 #import "DenyTheUtil.h"
 //: #import "FFFInputEmoticonManager.h"

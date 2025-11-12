@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DragSessionConfig.h
+//  DragSessionBalance.h
 //  NIM
 //
 //  Created by He on 2020/4/12.
@@ -18,7 +18,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface USERThreadSessionConfig : USERSessionConfig
-@interface DragSessionConfig : ColleagueThy
+@interface DragSessionBalance : ColleagueThy
 
 //: - (instancetype)initWithMessage:(NIMMessage *)message;
 - (instancetype)initWithRefer:(NIMMessage *)message;

@@ -78,7 +78,7 @@
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.found;
     //: id<FFFSessionConfig> sessionConfig = vc.sessionConfig;
-    id<DistantForceConfig> sessionConfig = vc.afterCorrect;
+    id<DistantForceBalance> sessionConfig = vc.afterCorrect;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.titles;
     //: FFFInputView *inputView = vc.sessionInputView;

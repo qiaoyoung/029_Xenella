@@ -14,7 +14,7 @@
 //: #import "FFFKitMessageProvider.h"
 #import "ArtisticNational.h"
 //: #import "FFFSessionConfig.h"
-#import "DistantForceConfig.h"
+#import "DistantForceBalance.h"
 
 //: @class FFFMessageModel;
 @class MessageDistant;
@@ -38,7 +38,7 @@
 //: @property (nonatomic, readonly) NSInteger messageLimit; 
 @property (nonatomic, readonly) NSInteger exclude;
 //: @property (nonatomic, weak) id<FFFSessionConfig> sessionConfig;
-@property (nonatomic, weak) id<DistantForceConfig> sessionConfig;
+@property (nonatomic, weak) id<DistantForceBalance> sessionConfig;
 
 //复位消息
 //: - (void)resetMessages:(void(^)(NSError *error)) handler;
@@ -65,7 +65,7 @@
 //: - (instancetype)initWithSession:(NIMSession*)session
 - (instancetype)initWithNetwork:(NIMSession*)session
                          //: config:(id<FFFSessionConfig>)sessionConfig;
-                         financialError:(id<DistantForceConfig>)sessionConfig;
+                         financialError:(id<DistantForceBalance>)sessionConfig;
 //清理缓存数据
 //: - (void)cleanCache;
 - (void)saving;

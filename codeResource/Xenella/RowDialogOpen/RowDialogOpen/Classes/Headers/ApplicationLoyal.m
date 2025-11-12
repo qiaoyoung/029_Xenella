@@ -247,7 +247,7 @@ Byte kBrightPlatform[] = {27, 2, 89, 11, 202, 142, 244, 16, 49, 221, 232, 18, 22
 //: #import "USERSDKConfigDelegate.h"
 #import "NorThy.h"
 //: #import "USERCellLayoutConfig.h"
-#import "ResistanceSupplyLayoutConfig.h"
+#import "ResistanceSupplyLayoutBalance.h"
 //: #import "USERSubscribeManager.h"
 #import "PullProperty.h"
 //: #import "USERBundleSetting.h"
@@ -929,7 +929,7 @@ Byte kBrightPlatform[] = {27, 2, 89, 11, 202, 142, 244, 16, 49, 221, 232, 18, 22
 
     //注册 TaskIdentifyRave 自定义排版配置
     //: [[MyUserKit sharedKit] registerLayoutConfig:[USERCellLayoutConfig new]];
-    [[TaskIdentifyRave collect] expandConfig:[ResistanceSupplyLayoutConfig new]];
+    [[TaskIdentifyRave collect] expandConfig:[ResistanceSupplyLayoutBalance new]];
 
     //: [[NIMSDKConfig sharedConfig] setTeamReceiptEnabled:YES];
     [[NIMSDKConfig sharedConfig] setTeamReceiptEnabled:YES];
