@@ -15,8 +15,8 @@
 #import "UIImage+TaskIdentifyRave.h"
 //: #import "FFFInputEmoticonManager.h"
 #import "SignalManager.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
 //: #import "FFFKitDevice.h"

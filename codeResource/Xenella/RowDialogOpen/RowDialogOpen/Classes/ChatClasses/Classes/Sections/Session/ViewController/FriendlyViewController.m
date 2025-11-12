@@ -527,8 +527,8 @@ typedef struct {
 #import "CropFifteenView.h"
 //: #import "FFFBubbleButtonModel.h"
 #import "AirBubbleRecord.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "FFFInputAudioView.h"
 #import "InputArtView.h"
 //: #import "UIView+USER.h"

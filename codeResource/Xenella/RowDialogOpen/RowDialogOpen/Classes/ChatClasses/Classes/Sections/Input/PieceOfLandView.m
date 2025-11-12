@@ -183,8 +183,8 @@
 #import "ResistanceView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "FFFInputEmoticonManager.h"
 #import "SignalManager.h"
 //: #import "FFFInputToolBar.h"

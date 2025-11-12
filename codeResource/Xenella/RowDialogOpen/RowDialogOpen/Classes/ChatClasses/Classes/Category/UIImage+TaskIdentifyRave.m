@@ -32,8 +32,8 @@ Byte coreSouTitle[] = {71, 3, 32, 13, 153, 202, 43, 124, 182, 218, 249, 168, 35,
 // __M_A_C_R_O__
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+TaskIdentifyRave.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "MyUserKit.h"
 #import "TaskIdentifyRave.h"
 //: #import "FFFKitDevice.h"

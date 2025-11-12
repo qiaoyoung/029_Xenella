@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "OptimizeBalancerText.h"
+#import "OptimizeBalancerText.h"
 
 //: @interface FFFFileContentConfig : NSObject<CCCSessionContentConfig>
 @interface FormatConfig : NSObject<HealMember>

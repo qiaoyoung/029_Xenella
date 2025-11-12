@@ -42,8 +42,8 @@ Byte commonRepresentativeName[] = {95, 3, 12, 10, 209, 220, 199, 88, 4, 250, 115
 #import "SignalManager.h"
 //: #import "FFFInputEmoticonTabView.h"
 #import "MethodControl.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+TaskIdentifyRave.h"
 //: #import "FFFMessageMaker.h"

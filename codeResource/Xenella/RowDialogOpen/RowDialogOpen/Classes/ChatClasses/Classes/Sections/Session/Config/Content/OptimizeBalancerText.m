@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.m
+//  OptimizeBalancerText.m
 // TaskIdentifyRave
 //
 //  Created by amao on 9/15/15.
@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "OptimizeBalancerText.h"
+#import "OptimizeBalancerText.h"
 //: #import "FFFTextContentConfig.h"
 #import "HarvestConfig.h"
 //: #import "FFFImageContentConfig.h"
