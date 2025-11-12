@@ -1,0 +1,31 @@
+{
+  "userId": "xenellaa",
+  "fullName": "Alexandra Dubois",
+  "nationality": "French",
+  "country": "France",
+  "profession": "Painter",
+  "artStyle": "Contemporary Abstract",
+  "bio": "Alexandra Dubois is a contemporary abstract painter based in Paris, France. Her work explores the intersection of color, form, and emotion through bold brushstrokes and vibrant palettes. With over 15 years of experience, she has exhibited her work in galleries across Europe.",
+  "specialization": [
+    "Abstract Painting",
+    "Mixed Media",
+    "Color Theory"
+  ],
+  "yearsOfExperience": 15,
+  "media": {
+    "coverImage": "assets/DecodeMediumResource/Xenellaa/Cover.jpg",
+    "profileImage": "assets/DecodeMediumResource/Xenellaa/user.jpg",
+    "backgroundImage": "assets/DecodeMediumResource/Xenellaa/userBG.jpg",
+    "video": "assets/DecodeMediumResource/Xenellaa/video.mp4",
+    "videoPost": "Today in my Paris studio, exploring the boundaries of abstract expression. Each brushstroke tells a story of color and emotion. The morning light through my window creates the perfect atmosphere for creating. #AbstractArt #PaintingLife #ParisArtist"
+  },
+  "contact": {
+    "email": "alexandra@xenellaa.com",
+    "location": "Paris, France"
+  },
+  "artworkCount": 120,
+  "followers": 450,
+  "verified": true,
+  "languages": ["French", "English", "Spanish"]
+}
+

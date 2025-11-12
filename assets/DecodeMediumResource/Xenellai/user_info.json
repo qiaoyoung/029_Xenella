@@ -1,0 +1,31 @@
+{
+  "userId": "xenellai",
+  "fullName": "Isabella Santos",
+  "nationality": "Portuguese",
+  "country": "Portugal",
+  "profession": "Painter",
+  "artStyle": "Fauvism & Colorist Painting",
+  "bio": "Isabella Santos is a vibrant colorist painter from Lisbon, inspired by Fauvist principles and the bright Mediterranean light. Her bold, expressive use of color and energetic brushwork captures the essence of Portuguese culture and coastal landscapes.",
+  "specialization": [
+    "Fauvism",
+    "Colorist Painting",
+    "Seascape"
+  ],
+  "yearsOfExperience": 10,
+  "media": {
+    "coverImage": "assets/DecodeMediumResource/Xenellai/Cover.jpg",
+    "profileImage": "assets/DecodeMediumResource/Xenellai/user.jpg",
+    "backgroundImage": "assets/DecodeMediumResource/Xenellai/userBG.jpg",
+    "video": "assets/DecodeMediumResource/Xenellai/video.mp4",
+    "videoPost": "Painting by the sea in Lisbon, inspired by the vibrant Mediterranean light. Fauvist colors dance across my canvas as I capture the energy of the Portuguese coast. Bold, expressive, and full of life - that's how I paint. #Fauvism #ColoristPainting #LisbonArtist"
+  },
+  "contact": {
+    "email": "isabella@xenellai.com",
+    "location": "Lisbon, Portugal"
+  },
+  "artworkCount": 70,
+  "followers": 250,
+  "verified": true,
+  "languages": ["Portuguese", "English", "Spanish"]
+}
+
