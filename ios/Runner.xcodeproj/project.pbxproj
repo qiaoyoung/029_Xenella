@@ -16,7 +16,6 @@
 		9E18B0062EC309A700AFF5A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0052EC309A700AFF5A8 /* main.m */; };
 		9E18B0072EC309A700AFF5A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0042EC309A700AFF5A8 /* AppDelegate.m */; };
 		B17170862EC5D24400160042 /* ModernSkillAdaptive.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1716DAA2EC5D24400160042 /* ModernSkillAdaptive.bundle */; };
-		B17170872EC5D24400160042 /* confuse_entry_points_objc.txt in Resources */ = {isa = PBXBuildFile; fileRef = B17170842EC5D24400160042 /* confuse_entry_points_objc.txt */; };
 		B17170882EC5D24400160042 /* StencilModeControlSaver.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B17162282EC5D24400160042 /* StencilModeControlSaver.bundle */; };
 		B17170892EC5D24400160042 /* GenerousImportFalls.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1715B1A2EC5D24400160042 /* GenerousImportFalls.bundle */; };
 		B171708A2EC5D24400160042 /* SegmentPetalByTimelineUnder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1715CB42EC5D24400160042 /* SegmentPetalByTimelineUnder.bundle */; };
@@ -9218,7 +9217,6 @@
 		B17170802EC5D24400160042 /* WorkflowAnimatorSplashExtraPackage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkflowAnimatorSplashExtraPackage.m; sourceTree = "<group>"; };
 		B17170812EC5D24400160042 /* WorldSystematicVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldSystematicVector.h; sourceTree = "<group>"; };
 		B17170822EC5D24400160042 /* WorldSystematicVector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldSystematicVector.m; sourceTree = "<group>"; };
-		B17170842EC5D24400160042 /* confuse_entry_points_objc.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = confuse_entry_points_objc.txt; sourceTree = "<group>"; };
 		EA5DF0D5D2230B8AFE3F1E63 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		EED6EA0685E9BBFD06EDEAE0 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -15524,7 +15522,6 @@
 				B1716C4D2EC5D24400160042 /* RunTupleOptionDome */,
 				B1716EE32EC5D24400160042 /* ThrottleZealous */,
 				B17170832EC5D24400160042 /* ToolbarCancelDeliver */,
-				B17170842EC5D24400160042 /* confuse_entry_points_objc.txt */,
 			);
 			path = ShapeResolverPause;
 			sourceTree = "<group>";
@@ -15606,7 +15603,6 @@
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
 				B17170862EC5D24400160042 /* ModernSkillAdaptive.bundle in Resources */,
-				B17170872EC5D24400160042 /* confuse_entry_points_objc.txt in Resources */,
 				B17170882EC5D24400160042 /* StencilModeControlSaver.bundle in Resources */,
 				B17170892EC5D24400160042 /* GenerousImportFalls.bundle in Resources */,
 				B171708A2EC5D24400160042 /* SegmentPetalByTimelineUnder.bundle in Resources */,
