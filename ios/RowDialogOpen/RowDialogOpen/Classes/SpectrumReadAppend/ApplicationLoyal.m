@@ -1265,31 +1265,14 @@ Byte kBrightPlatform[] = {27, 2, 89, 11, 202, 142, 244, 16, 49, 221, 232, 18, 22
     self.disabledWindowsed = window;
 	[self setMoveBroadcast:_multi];
  
-    //: if ([[NSUserDefaults standardUserDefaults] boolForKey:@"pool"] || ([self isCurrentTime] && [self isScheme] && [self isNotiPad])) {
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:StringFromRadicalData(kEarningsName)] || ([self occurrentLikeCase] && [self supply] && [self center])) {
-        //: [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"pool"];
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:StringFromRadicalData(kEarningsName)];
-        //: [[NSUserDefaults standardUserDefaults] synchronize];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        //: [self addRootViewController];
-        [self pastRunning];
-    }
-
-//    self.waitVC = [PreviousLieInWaitViewController new];
-//    [self.window.rootViewController.view addSubview:self.waitVC.view];
-//    
-//    // 使用 Reachability 监听网络状态
-//    Reachability *reachability = [Reachability reachabilityForInternetConnection];
-//    [reachability startNotifier];
-//    if ([reachability currentReachabilityStatus] != NotReachable) {
-//        [self fetchFageone];
-//
-//    } else {
-//        // 无网络，等待网络恢复
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//                                               selector:@selector(networkChanged:)
-//                                                   name:kReachabilityChangedNotification
-//                                                 object:nil];
+    
+//    if ([[NSUserDefaults standardUserDefaults] boolForKey:StringFromRadicalData(kEarningsName)] || ([self occurrentLikeCase] && [self supply] && [self center])) {
+//        //: [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"pool"];
+//        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:StringFromRadicalData(kEarningsName)];
+//        //: [[NSUserDefaults standardUserDefaults] synchronize];
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+//        //: [self addRootViewController];
+//        [self pastRunning];
 //    }
 }
 
