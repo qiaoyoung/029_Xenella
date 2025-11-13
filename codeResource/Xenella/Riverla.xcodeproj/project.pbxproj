@@ -388,7 +388,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Riverla/Pods-Riverla-resources.sh",
-				"${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/Classes/Librarys/SwitchlyView/SwitchlyView.bundle",
+				"${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/FertileChainCrispCalibrate/SwitchlyView.bundle",
 				"${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Resources/RowDialogOpen.bundle",
 			);
 			name = "[CP] Copy Pods Resources";

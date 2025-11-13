@@ -97,11 +97,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/Classes/Librarys/SwitchlyView/SwitchlyView.bundle"
+  install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/FertileChainCrispCalibrate/SwitchlyView.bundle"
   install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Resources/RowDialogOpen.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/Classes/Librarys/SwitchlyView/SwitchlyView.bundle"
+  install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Classes/FertileChainCrispCalibrate/SwitchlyView.bundle"
   install_resource "${PODS_ROOT}/../RowDialogOpen/RowDialogOpen/Resources/RowDialogOpen.bundle"
 fi
 
