@@ -2,17 +2,17 @@
 // __CLOSE_PRINT__
 //
 //  RoughCommand.m
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/8/6.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuBasedModel.h"
+//: #import "DirectAnalyzeBasedModel.h"
 #import "RoughCommand.h"
 
-//: @implementation FFDropDownMenuBasedModel
+//: @implementation DirectAnalyzeBasedModel
 @implementation RoughCommand
 
 //: @end

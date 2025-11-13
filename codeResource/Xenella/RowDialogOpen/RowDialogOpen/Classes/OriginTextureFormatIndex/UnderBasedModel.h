@@ -2,20 +2,20 @@
 // __CLOSE_PRINT__
 //
 //  UnderBasedModel.h
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/7/31.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuBasedModel.h"
+//: #import "DirectAnalyzeBasedModel.h"
 #import "RoughCommand.h"
 
 /**
  *  下拉菜单模型
  */
-//: @interface FFDropDownMenuModel : FFDropDownMenuBasedModel
+//: @interface DirectAnalyzeModel : DirectAnalyzeBasedModel
 @interface UnderBasedModel : RoughCommand
 
 

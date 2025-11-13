@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  KMSwizzle.m
+//  InterpreterRavenSplitNatural.m
 //
 //  Copyright (c) 2017 Zhouqi Mo (https://github.com/MoZhouqi)
 //
@@ -24,12 +24,12 @@
 //  THE SOFTWARE.
 
 // __M_A_C_R_O__
-//: #import "KMSwizzle.h"
-#import "KMSwizzle.h"
+//: #import "InterpreterRavenSplitNatural.h"
+#import "InterpreterRavenSplitNatural.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
 
-//: void KMSwizzleMethod(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector) {
+//: void InterpreterRavenSplitNaturalMethod(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector) {
 void libraryAlbum(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector) {
     //: Method originalMethod = class_getInstanceMethod(originalCls, originalSelector);
     Method originalMethod = class_getInstanceMethod(originalCls, originalSelector);

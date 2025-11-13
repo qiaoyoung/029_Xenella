@@ -66,7 +66,7 @@
 // __CLOSE_PRINT__
 //
 //  FreshmanBasedCell.m
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/7/31.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
@@ -75,20 +75,20 @@
 //other
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuCell.h"
+//: #import "DirectAnalyzeCell.h"
 #import "FreshmanBasedCell.h"
-//: #import "FFDropDownMenuModel.h"
+//: #import "DirectAnalyzeModel.h"
 #import "UnderBasedModel.h"
-//: #import "FFDropDownMenu.h"
-#import "FFDropDownMenu.h"
+//: #import "DirectAnalyze.h"
+#import "DirectAnalyze.h"
 
-//: @interface FFDropDownMenuCell ()
+//: @interface DirectAnalyzeCell ()
 @interface FreshmanBasedCell ()
 
 //: @end
 @end
 
-//: @implementation FFDropDownMenuCell
+//: @implementation DirectAnalyzeCell
 @implementation FreshmanBasedCell
 
 //: - (void)setTitleColor:(UIColor *)titleColor {
@@ -158,7 +158,7 @@
     //: _menuModel = menuModel;
     menuModel = menuModel;
 
-    //: FFDropDownMenuModel *realMenuModel = (FFDropDownMenuModel *)menuModel;
+    //: DirectAnalyzeModel *realMenuModel = (DirectAnalyzeModel *)menuModel;
     UnderBasedModel *realMenuModel = (UnderBasedModel *)menuModel;
     //: self.customTitleLabel.text = realMenuModel.menuItemTitle;
     self.trust.text = realMenuModel.extraText;

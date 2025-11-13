@@ -81,8 +81,8 @@
 #import "UINavigationBar+CompassPoint.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "KMSwizzle.h"
-#import "KMSwizzle.h"
+//: #import "InterpreterRavenSplitNatural.h"
+#import "InterpreterRavenSplitNatural.h"
 
 //: @implementation UINavigationBar (KMNavigationBarTransition)
 @implementation UINavigationBar (CompassPoint)
@@ -115,7 +115,7 @@
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: KMSwizzleMethod([self class],
+        //: InterpreterRavenSplitNaturalMethod([self class],
         libraryAlbum([self class],
                         //: @selector(layoutSubviews),
                         @selector(layoutSubviews),

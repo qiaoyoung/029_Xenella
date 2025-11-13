@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  SwitchlyView+ZC.m
+//  SwitchlyView+Progress.m
 //  ZCAuctionCar
 //
 //  Created by 彭爽 on 2021/4/6.
@@ -9,7 +9,7 @@
 
 // __M_A_C_R_O__
 //: #import "SVProgressHUD+ZC.h"
-#import "SwitchlyView+ZC.h"
+#import "SwitchlyView+Progress.h"
 
 //: @implementation SVProgressHUD (ZC)
 

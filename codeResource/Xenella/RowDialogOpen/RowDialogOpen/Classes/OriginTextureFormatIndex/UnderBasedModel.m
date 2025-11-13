@@ -2,17 +2,17 @@
 // __CLOSE_PRINT__
 //
 //  UnderBasedModel.m
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/7/31.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuModel.h"
+//: #import "DirectAnalyzeModel.h"
 #import "UnderBasedModel.h"
 
-//: @implementation FFDropDownMenuModel
+//: @implementation DirectAnalyzeModel
 @implementation UnderBasedModel
 
 /**
@@ -26,7 +26,7 @@
  */
 //: + (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock {
 + (instancetype)occurrence:(NSString *)menuItemTitle woman:(NSString *)menuItemIconName employDog:(FFMenuBlock)menuBlock {
-    //: FFDropDownMenuModel *model = [FFDropDownMenuModel new];
+    //: DirectAnalyzeModel *model = [DirectAnalyzeModel new];
     UnderBasedModel *model = [UnderBasedModel new];
     //: model.menuItemTitle = menuItemTitle;
     model.extraText = menuItemTitle;

@@ -2,23 +2,23 @@
 // __CLOSE_PRINT__
 //
 //  RustView.m
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/7/31.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuTriangleView.h"
+//: #import "DirectAnalyzeTriangleView.h"
 #import "RustView.h"
 
-//: @interface FFDropDownMenuTriangleView ()
+//: @interface DirectAnalyzeTriangleView ()
 @interface RustView ()
 
 //: @end
 @end
 
-//: @implementation FFDropDownMenuTriangleView
+//: @implementation DirectAnalyzeTriangleView
 @implementation RustView
 
 //: @end

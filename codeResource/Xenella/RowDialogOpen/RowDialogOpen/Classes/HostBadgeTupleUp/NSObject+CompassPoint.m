@@ -32,8 +32,8 @@
 #import "UINavigationBar+TruthIntervalernal.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "KMSwizzle.h"
-#import "KMSwizzle.h"
+//: #import "InterpreterRavenSplitNatural.h"
+#import "InterpreterRavenSplitNatural.h"
 
 //: @implementation NSObject (KMNavigationBarTransition)
 
@@ -47,7 +47,7 @@
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: KMSwizzleMethod(objc_getClass("_UIBarBackground"),
+        //: InterpreterRavenSplitNaturalMethod(objc_getClass("_UIBarBackground"),
         libraryAlbum(objc_getClass("_UIBarBackground"),
                         //: @selector(setHidden:),
                         @selector(setHidden:),

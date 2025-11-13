@@ -8,13 +8,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuBasedCell.h"
+//: #import "DirectAnalyzeBasedCell.h"
 #import "WorthViewCell.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFDropDownMenuCustomCell : FFDropDownMenuBasedCell
+//: @interface DirectAnalyzeCustomCell : DirectAnalyzeBasedCell
 @interface DeleteNorCompartmentView : WorthViewCell
 
 //: @end

@@ -79,12 +79,12 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuCustomCell.h"
+//: #import "DirectAnalyzeCustomCell.h"
 #import "DeleteNorCompartmentView.h"
-//: #import "FFDropDownMenuModel.h"
+//: #import "DirectAnalyzeModel.h"
 #import "UnderBasedModel.h"
 
-//: @interface FFDropDownMenuCustomCell ()
+//: @interface DirectAnalyzeCustomCell ()
 @interface DeleteNorCompartmentView ()
 /** 图片 */
 //: @property (weak, nonatomic) UIImageView *customImageView;
@@ -101,7 +101,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFDropDownMenuCustomCell
+//: @implementation DirectAnalyzeCustomCell
 @implementation DeleteNorCompartmentView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -184,7 +184,7 @@ typedef struct {
     //: _menuModel = menuModel;
     menuModel = menuModel;
 
-    //: FFDropDownMenuModel *realMenuModel = (FFDropDownMenuModel *)menuModel;
+    //: DirectAnalyzeModel *realMenuModel = (DirectAnalyzeModel *)menuModel;
     UnderBasedModel *realMenuModel = (UnderBasedModel *)menuModel;
     //: self.customTitleLabel.text = realMenuModel.menuItemTitle;
     self.grace.text = realMenuModel.extraText;

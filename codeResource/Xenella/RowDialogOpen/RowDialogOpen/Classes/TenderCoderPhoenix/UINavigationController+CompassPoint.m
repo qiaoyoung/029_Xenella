@@ -103,8 +103,8 @@ typedef struct {
 #import "ArtisticUp.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "KMSwizzle.h"
-#import "KMSwizzle.h"
+//: #import "InterpreterRavenSplitNatural.h"
+#import "InterpreterRavenSplitNatural.h"
 
 //: @implementation UINavigationController (KMNavigationBarTransition)
 @implementation UINavigationController (CompassPoint)
@@ -131,7 +131,7 @@ typedef struct {
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: KMSwizzleMethod([self class],
+        //: InterpreterRavenSplitNaturalMethod([self class],
         libraryAlbum([self class],
                         //: @selector(pushViewController:animated:),
                         @selector(pushViewController:animated:),
@@ -140,7 +140,7 @@ typedef struct {
                         //: @selector(km_pushViewController:animated:));
                         @selector(thrust:area:));
 
-        //: KMSwizzleMethod([self class],
+        //: InterpreterRavenSplitNaturalMethod([self class],
         libraryAlbum([self class],
                         //: @selector(popViewControllerAnimated:),
                         @selector(popViewControllerAnimated:),
@@ -149,7 +149,7 @@ typedef struct {
                         //: @selector(km_popViewControllerAnimated:));
                         @selector(globals:));
 
-        //: KMSwizzleMethod([self class],
+        //: InterpreterRavenSplitNaturalMethod([self class],
         libraryAlbum([self class],
                         //: @selector(popToViewController:animated:),
                         @selector(popToViewController:animated:),
@@ -158,7 +158,7 @@ typedef struct {
                         //: @selector(km_popToViewController:animated:));
                         @selector(disabled:theme:));
 
-        //: KMSwizzleMethod([self class],
+        //: InterpreterRavenSplitNaturalMethod([self class],
         libraryAlbum([self class],
                         //: @selector(popToRootViewControllerAnimated:),
                         @selector(popToRootViewControllerAnimated:),
@@ -167,7 +167,7 @@ typedef struct {
                         //: @selector(km_popToRootViewControllerAnimated:));
                         @selector(rooting:));
 
-        //: KMSwizzleMethod([self class],
+        //: InterpreterRavenSplitNaturalMethod([self class],
         libraryAlbum([self class],
                         //: @selector(setViewControllers:animated:),
                         @selector(setViewControllers:animated:),

@@ -2,7 +2,7 @@
 // __CLOSE_PRINT__
 //
 //  RustView.h
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/7/31.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
@@ -15,7 +15,7 @@
 /**
  *  下拉菜单的三角形 
  */
-//: @interface FFDropDownMenuTriangleView : UIView
+//: @interface DirectAnalyzeTriangleView : UIView
 @interface RustView : UIView
 
 /** 三角形的颜色 */

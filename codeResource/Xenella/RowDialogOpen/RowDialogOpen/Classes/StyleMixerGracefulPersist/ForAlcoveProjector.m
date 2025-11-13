@@ -97,7 +97,7 @@
     return data + primarySound;
 }
 
-//: %@这个类不是FFDropDownMenuBasedCell的子类,请继承这个类
+//: %@这个类不是DirectAnalyzeBasedCell的子类,请继承这个类
 - (NSString *)kMinimumAlert {
     /* static */ NSString *kMinimumAlert = nil;
     if (!kMinimumAlert) {
@@ -125,8 +125,8 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFDropDownMenuVC.m
-//  FFDropDownMenuDemo
+//  DirectAnalyzeVC.m
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/7/31.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
@@ -135,14 +135,14 @@
 //other
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuView.h"
+//: #import "DirectAnalyzeView.h"
 #import "ForAlcoveProjector.h"
-//: #import "FFDropDownMenuTriangleView.h"
+//: #import "DirectAnalyzeTriangleView.h"
 #import "RustView.h"
-//: #import "FFDropDownMenu.h"
-#import "FFDropDownMenu.h"
+//: #import "DirectAnalyze.h"
+#import "DirectAnalyze.h"
 
-//: @interface FFDropDownMenuView ()<UITableViewDataSource, UITableViewDelegate>
+//: @interface DirectAnalyzeView ()<UITableViewDataSource, UITableViewDelegate>
 @interface ForAlcoveProjector ()<UITableViewDataSource, UITableViewDelegate>
 
 /**tableView*/
@@ -155,7 +155,7 @@
 /** 视图是否在显示*/
 //: @property (nonatomic, assign) BOOL isShow;
 @property (nonatomic, assign) BOOL signature;
-//: @property (nonatomic, strong) FFDropDownMenuTriangleView *triangleView;
+//: @property (nonatomic, strong) DirectAnalyzeTriangleView *triangleView;
 @property (nonatomic, strong) RustView *businessOrganizationPosition;
 
 /** 菜单view的容器 */
@@ -176,7 +176,7 @@
 //: @end
 @end
 
-//: @implementation FFDropDownMenuView
+//: @implementation DirectAnalyzeView
 @implementation ForAlcoveProjector
 
 
@@ -208,9 +208,9 @@
 //: - (void)menuDidShow {
 - (void)sampleDemonstrate {
 
-    //: if ([self.delegate respondsToSelector:@selector(ffDropDownMenuViewWDidAppear)]) {
+    //: if ([self.delegate respondsToSelector:@selector(DirectAnalyzeViewWDidAppear)]) {
     if ([self.perThreading respondsToSelector:@selector(needAlongside)]) {
-        //: [self.delegate ffDropDownMenuViewWDidAppear];
+        //: [self.delegate DirectAnalyzeViewWDidAppear];
         [self.perThreading needAlongside];
     }
 }
@@ -227,9 +227,9 @@
 //: - (void)menuWillShow {
 - (void)module {
 
-    //: if ([self.delegate respondsToSelector:@selector(ffDropDownMenuViewWillAppear)]) {
+    //: if ([self.delegate respondsToSelector:@selector(DirectAnalyzeViewWillAppear)]) {
     if ([self.perThreading respondsToSelector:@selector(targetAspect)]) {
-        //: [self.delegate ffDropDownMenuViewWillAppear];
+        //: [self.delegate DirectAnalyzeViewWillAppear];
         [self.perThreading targetAspect];
     }
 }
@@ -246,7 +246,7 @@
         return cell;
     }
 
-    //: FFDropDownMenuBasedCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+    //: DirectAnalyzeBasedCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
     WorthViewCell *cell = [tableView dequeueReusableCellWithIdentifier:k_overName(nil)];
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -254,15 +254,15 @@
     //: cell.backgroundColor = [UIColor clearColor];
     cell.backgroundColor = [UIColor clearColor];
 	[self setAvailable:_parentY];
-    //: FFDropDownMenuBasedModel *menuModel = self.menuModelsArray[indexPath.row];
+    //: DirectAnalyzeBasedModel *menuModel = self.menuModelsArray[indexPath.row];
     RoughCommand *menuModel = [self candid:self.succeedArray][indexPath.row];
 
     //如果用框架中默认的菜单样式，则隐藏最后一个菜单的下划线
 
-    //: if ([cell isMemberOfClass:[FFDropDownMenuCell class]]) {
+    //: if ([cell isMemberOfClass:[DirectAnalyzeCell class]]) {
     if ([cell isMemberOfClass:[FreshmanBasedCell class]]) {
 
-        //: FFDropDownMenuCell *tempCell = (FFDropDownMenuCell *)cell;
+        //: DirectAnalyzeCell *tempCell = (DirectAnalyzeCell *)cell;
         FreshmanBasedCell *tempCell = (FreshmanBasedCell *)cell;
         //: tempCell.titleColor = self.titleColor;
         tempCell.perColorRecent = [self upgradeConnect:self.option];
@@ -295,9 +295,9 @@
     //: cell.menuModel = menuModel;
     cell.glassBuild = menuModel;
 
-    //: if ([self.delegate respondsToSelector:@selector(ffDropDownMenuView:WillAppearMenuCell:index:)]) {
+    //: if ([self.delegate respondsToSelector:@selector(DirectAnalyzeView:WillAppearMenuCell:index:)]) {
     if ([self.perThreading respondsToSelector:@selector(map:stateWith:full:)]) {
-        //: [self.delegate ffDropDownMenuView:self WillAppearMenuCell:cell index:indexPath.row];
+        //: [self.delegate DirectAnalyzeView:self WillAppearMenuCell:cell index:indexPath.row];
         [self.perThreading map:self stateWith:cell full:indexPath.row];
     }
     //: return cell;
@@ -310,9 +310,9 @@
 //: - (void)menuWillDisappear {
 - (void)indicatorOf {
 
-    //: if ([self.delegate respondsToSelector:@selector(ffDropDownMenuViewWillDisappear)]) {
+    //: if ([self.delegate respondsToSelector:@selector(DirectAnalyzeViewWillDisappear)]) {
     if ([self.perThreading respondsToSelector:@selector(exclusiveDisappear)]) {
-        //: [self.delegate ffDropDownMenuViewWillDisappear];
+        //: [self.delegate DirectAnalyzeViewWillDisappear];
         [self.perThreading exclusiveDisappear];
     }
 }
@@ -441,7 +441,7 @@
 
 
         //公共属性的  默认属性的赋值<assign>
-        //: self.cellClassName = @"FFDropDownMenuCell";
+        //: self.cellClassName = @"DirectAnalyzeCell";
         self.dot = @"FreshmanBasedCell";
         //: self.menuWidth = 150;
         self.moreEntity = 150;
@@ -477,8 +477,8 @@
         //: self.animateDuration = 0.2;
         self.rateOfDepreciation = 0.2;
 	[self setValid:self.rest];
-        //: self.menuAnimateType = FFDropDownMenuViewAnimateType_ScaleBasedTopRight;
-        self.tingPin = FFDropDownMenuViewAnimateType_ScaleBasedTopRight;
+        //: self.menuAnimateType = DirectAnalyzeViewAnimateType_ScaleBasedTopRight;
+        self.tingPin = DirectAnalyzeViewAnimateType_ScaleBasedTopRight;
         //: self.ifShouldScroll = NO;
         self.underlying = NO;
         //: self.menuBarHeight = -100; 
@@ -525,11 +525,11 @@
 }
 
 
-//: - (FFDropDownMenuTriangleView *)triangleView {
+//: - (DirectAnalyzeTriangleView *)triangleView {
 - (RustView *)businessOrganizationPosition {
     //: if (_triangleView == nil) {
     if (_businessOrganizationPosition == nil) {
-        //: FFDropDownMenuTriangleView *triangleView = [[FFDropDownMenuTriangleView alloc] init];
+        //: DirectAnalyzeTriangleView *triangleView = [[DirectAnalyzeTriangleView alloc] init];
         RustView *triangleView = [[RustView alloc] init];
         //: [self addSubview:triangleView];
         [self addSubview:triangleView];
@@ -569,8 +569,8 @@
     //  淡入淡出效果
     //=============
 
-    //: if (self.menuAnimateType == FFDropDownMenuViewAnimateType_FadeInFadeOut) {
-    if (self.tingPin == FFDropDownMenuViewAnimateType_FadeInFadeOut) {
+    //: if (self.menuAnimateType == DirectAnalyzeViewAnimateType_FadeInFadeOut) {
+    if (self.tingPin == DirectAnalyzeViewAnimateType_FadeInFadeOut) {
         //: self.tableView.alpha = 0;
         self.rowFamilyLie.alpha = 0;
 	[self setAvailable:_parentY];
@@ -597,8 +597,8 @@
     //   卷帘效果
     //=============
 
-    //: else if (self.menuAnimateType == FFDropDownMenuViewAnimateType_RollerShutter) {
-    else if (self.tingPin == FFDropDownMenuViewAnimateType_RollerShutter) {
+    //: else if (self.menuAnimateType == DirectAnalyzeViewAnimateType_RollerShutter) {
+    else if (self.tingPin == DirectAnalyzeViewAnimateType_RollerShutter) {
         //: self.backgroundColor = [UIColor colorWithRed:(0)/255.0 green:(0)/255.0 blue:(0)/255.0 alpha:(self.bgColorbeginAlpha)];
         self.backgroundColor = [UIColor colorWithRed:(0)/255.0 green:(0)/255.0 blue:(0)/255.0 alpha:(self.selected)];
 	[self setInsert:self.option];
@@ -628,8 +628,8 @@
     //  上往下落下
     //============
 
-    //: else if (self.menuAnimateType == FFDropDownMenuViewAnimateType_FallFromTop) {
-    else if (self.tingPin == FFDropDownMenuViewAnimateType_FallFromTop) {
+    //: else if (self.menuAnimateType == DirectAnalyzeViewAnimateType_FallFromTop) {
+    else if (self.tingPin == DirectAnalyzeViewAnimateType_FallFromTop) {
         //: CGRect tableViewLayerFrame = self.menuContentView.bounds;
         CGRect tableViewLayerFrame = self.stop.bounds;
         //: tableViewLayerFrame.origin.y = -tableViewLayerFrame.size.height;
@@ -752,8 +752,8 @@
         //淡入淡出动画效果
         //=============
 
-        //: if (self.menuAnimateType == FFDropDownMenuViewAnimateType_FadeInFadeOut) {
-        if (self.tingPin == FFDropDownMenuViewAnimateType_FadeInFadeOut) {
+        //: if (self.menuAnimateType == DirectAnalyzeViewAnimateType_FadeInFadeOut) {
+        if (self.tingPin == DirectAnalyzeViewAnimateType_FadeInFadeOut) {
             //: [UIView animateWithDuration:self.animateDuration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [UIView animateWithDuration:[self commandWith:self.rateOfDepreciation] delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 //: weakSelf.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:self.bgColorbeginAlpha];
@@ -776,8 +776,8 @@
         //   卷帘效果
         //============
 
-        //: else if (self.menuAnimateType == FFDropDownMenuViewAnimateType_RollerShutter) {
-        else if (self.tingPin == FFDropDownMenuViewAnimateType_RollerShutter) {
+        //: else if (self.menuAnimateType == DirectAnalyzeViewAnimateType_RollerShutter) {
+        else if (self.tingPin == DirectAnalyzeViewAnimateType_RollerShutter) {
             //: [UIView animateWithDuration:self.animateDuration animations:^{
             [UIView animateWithDuration:[self commandWith:self.rateOfDepreciation] animations:^{
                 //: CGRect frame = weakSelf.menuContentView.bounds;
@@ -802,8 +802,8 @@
         // 从上往下落下
         //============
 
-        //: else if (self.menuAnimateType == FFDropDownMenuViewAnimateType_FallFromTop) {
-        else if (self.tingPin == FFDropDownMenuViewAnimateType_FallFromTop) {
+        //: else if (self.menuAnimateType == DirectAnalyzeViewAnimateType_FallFromTop) {
+        else if (self.tingPin == DirectAnalyzeViewAnimateType_FallFromTop) {
 
 
             //: [UIView animateWithDuration:self.animateDuration animations:^{
@@ -864,8 +864,8 @@
         //淡入淡出动画效果
         //=============
 
-        //: if (self.menuAnimateType == FFDropDownMenuViewAnimateType_FadeInFadeOut) {
-        if (self.tingPin == FFDropDownMenuViewAnimateType_FadeInFadeOut) {
+        //: if (self.menuAnimateType == DirectAnalyzeViewAnimateType_FadeInFadeOut) {
+        if (self.tingPin == DirectAnalyzeViewAnimateType_FadeInFadeOut) {
             //: self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:self.bgColorbeginAlpha];
             self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:self.selected];
 	[self setInsert:self.option];
@@ -877,8 +877,8 @@
         //   卷帘效果
         //=============
 
-        //: else if (self.menuAnimateType == FFDropDownMenuViewAnimateType_RollerShutter) {
-        else if (self.tingPin == FFDropDownMenuViewAnimateType_RollerShutter) {
+        //: else if (self.menuAnimateType == DirectAnalyzeViewAnimateType_RollerShutter) {
+        else if (self.tingPin == DirectAnalyzeViewAnimateType_RollerShutter) {
             //: [self removeFromSuperview];
             [self removeFromSuperview];
         }
@@ -888,8 +888,8 @@
         //  从上往下落下
         //=============
 
-        //: else if (self.menuAnimateType == FFDropDownMenuViewAnimateType_FallFromTop) {
-        else if (self.tingPin == FFDropDownMenuViewAnimateType_FallFromTop) {
+        //: else if (self.menuAnimateType == DirectAnalyzeViewAnimateType_FallFromTop) {
+        else if (self.tingPin == DirectAnalyzeViewAnimateType_FallFromTop) {
             //: CGRect tableViewLayerFrame = self.menuContentView.bounds;
             CGRect tableViewLayerFrame = self.stop.bounds;
             //: tableViewLayerFrame.origin.y = -tableViewLayerFrame.size.height;
@@ -1010,34 +1010,34 @@ static NSString *const k_overName (NSString *value) {
         //锚点的设置 <set anchorPoint>
         //: switch (self.menuAnimateType) {
         switch (self.tingPin) {
-            //: case FFDropDownMenuViewAnimateType_ScaleBasedTopRight: 
-            case FFDropDownMenuViewAnimateType_ScaleBasedTopRight: //右上角
+            //: case DirectAnalyzeViewAnimateType_ScaleBasedTopRight: 
+            case DirectAnalyzeViewAnimateType_ScaleBasedTopRight: //右上角
                 //: tableView.layer.anchorPoint = CGPointMake(1, 0);
                 tableView.layer.anchorPoint = CGPointMake(1, 0);
                 //: break;
                 break;
-            //: case FFDropDownMenuViewAnimateType_ScaleBasedTopLeft: 
-            case FFDropDownMenuViewAnimateType_ScaleBasedTopLeft: //左上角
+            //: case DirectAnalyzeViewAnimateType_ScaleBasedTopLeft: 
+            case DirectAnalyzeViewAnimateType_ScaleBasedTopLeft: //左上角
                 //: tableView.layer.anchorPoint = CGPointMake(0, 0);
                 tableView.layer.anchorPoint = CGPointMake(0, 0);
                 //: break;
                 break;
-            //: case FFDropDownMenuViewAnimateType_ScaleBasedMiddle: 
-            case FFDropDownMenuViewAnimateType_ScaleBasedMiddle: //中间
+            //: case DirectAnalyzeViewAnimateType_ScaleBasedMiddle: 
+            case DirectAnalyzeViewAnimateType_ScaleBasedMiddle: //中间
                 //: break;
                 break;
-            //: case FFDropDownMenuViewAnimateType_FadeInFadeOut: 
-            case FFDropDownMenuViewAnimateType_FadeInFadeOut: //淡入淡出效果
+            //: case DirectAnalyzeViewAnimateType_FadeInFadeOut: 
+            case DirectAnalyzeViewAnimateType_FadeInFadeOut: //淡入淡出效果
                 //: break;
                 break;
-            //: case FFDropDownMenuViewAnimateType_RollerShutter: 
-            case FFDropDownMenuViewAnimateType_RollerShutter: //卷帘效果
+            //: case DirectAnalyzeViewAnimateType_RollerShutter: 
+            case DirectAnalyzeViewAnimateType_RollerShutter: //卷帘效果
                 //: tableView.layer.anchorPoint = CGPointMake(0.5, 1);
                 tableView.layer.anchorPoint = CGPointMake(0.5, 1);
                 //: break;
                 break;
-            //: case FFDropDownMenuViewAnimateType_FallFromTop:
-            case FFDropDownMenuViewAnimateType_FallFromTop:
+            //: case DirectAnalyzeViewAnimateType_FallFromTop:
+            case DirectAnalyzeViewAnimateType_FallFromTop:
             //: break;
             break;
 
@@ -1061,9 +1061,9 @@ static NSString *const k_overName (NSString *value) {
                 return _rowFamilyLie;
             }
 
-            //: if (![NSClassFromString(className) isSubclassOfClass:[FFDropDownMenuBasedCell class]]) {
+            //: if (![NSClassFromString(className) isSubclassOfClass:[DirectAnalyzeBasedCell class]]) {
             if (![NSClassFromString(className) isSubclassOfClass:[WorthViewCell class]]) {
-                //: NSLog(@"\n\n--------------------------------------------------\n%s方法中的第  %d  行打印: \n%@\n--------------------------------------------------\n\n",__func__,__LINE__,[NSString stringWithFormat:@"%@这个类不是FFDropDownMenuBasedCell的子类,请继承这个类",className]);
+                //: NSLog(@"\n\n--------------------------------------------------\n%s方法中的第  %d  行打印: \n%@\n--------------------------------------------------\n\n",__func__,__LINE__,[NSString stringWithFormat:@"%@这个类不是DirectAnalyzeBasedCell的子类,请继承这个类",className]);
                 NSLog([[TabulaRasaData sharedInstance] viewOntoError],__func__,__LINE__,[NSString stringWithFormat:[[TabulaRasaData sharedInstance] kMinimumAlert],className]);
                 //: return _tableView;
                 return _rowFamilyLie;
@@ -1086,9 +1086,9 @@ static NSString *const k_overName (NSString *value) {
                 return _rowFamilyLie;
             }
 
-            //: if (![NSClassFromString(self.cellClassName) isSubclassOfClass:[FFDropDownMenuBasedCell class]]) {
+            //: if (![NSClassFromString(self.cellClassName) isSubclassOfClass:[DirectAnalyzeBasedCell class]]) {
             if (![NSClassFromString([self theSumerrupt:self.dot]) isSubclassOfClass:[WorthViewCell class]]) {
-                //: NSLog(@"\n\n--------------------------------------------------\n%s方法中的第  %d  行打印: \n%@\n--------------------------------------------------\n\n",__func__,__LINE__,[NSString stringWithFormat:@"%@这个类不是FFDropDownMenuBasedCell的子类,请继承这个类",self.cellClassName]);
+                //: NSLog(@"\n\n--------------------------------------------------\n%s方法中的第  %d  行打印: \n%@\n--------------------------------------------------\n\n",__func__,__LINE__,[NSString stringWithFormat:@"%@这个类不是DirectAnalyzeBasedCell的子类,请继承这个类",self.cellClassName]);
                 NSLog([[TabulaRasaData sharedInstance] viewOntoError],__func__,__LINE__,[NSString stringWithFormat:[[TabulaRasaData sharedInstance] kMinimumAlert],self.dot]);
                 //: return _tableView;
                 return _rowFamilyLie;
@@ -1276,7 +1276,7 @@ static NSString *const k_overName (NSString *value) {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //: if (self.isShow == YES) {
     if (self.signature == YES) {
-        //: FFDropDownMenuBasedModel *menuModel = self.menuModelsArray[indexPath.row];
+        //: DirectAnalyzeBasedModel *menuModel = self.menuModelsArray[indexPath.row];
         RoughCommand *menuModel = [self candid:self.succeedArray][indexPath.row];
         //: if (menuModel.menuBlock) {
         if (menuModel.generalDate) {
@@ -1303,8 +1303,8 @@ static NSString *const k_overName (NSString *value) {
 	[self setProgression:self.moreEntity];
 }
 
-//: - (void)setMenuAnimateType:(FFDropDownMenuViewAnimateType)menuAnimateType { 
-- (void)setTingPin:(FFDropDownMenuViewAnimateType)menuAnimateType { //15
+//: - (void)setMenuAnimateType:(DirectAnalyzeViewAnimateType)menuAnimateType { 
+- (void)setTingPin:(DirectAnalyzeViewAnimateType)menuAnimateType { //15
     //: _menuAnimateType = menuAnimateType;
     _tingPin = menuAnimateType;
 	[self setFormat:self.betweenCartComponent];
@@ -1326,7 +1326,7 @@ static NSString *const k_overName (NSString *value) {
 //: + (instancetype)ff_DefaultStyleDropDownMenuWithMenuModelsArray:(NSArray *)menuModelsArray menuWidth:(CGFloat)menuWidth eachItemHeight:(CGFloat)eachItemHeight menuRightMargin:(CGFloat)menuRightMargin triangleRightMargin:(CGFloat)triangleRightMargin {
 + (instancetype)style:(NSArray *)menuModelsArray model:(CGFloat)menuWidth empty:(CGFloat)eachItemHeight raw:(CGFloat)menuRightMargin margin:(CGFloat)triangleRightMargin {
 
-    //: FFDropDownMenuView *menuView = [FFDropDownMenuView new];
+    //: DirectAnalyzeView *menuView = [DirectAnalyzeView new];
     ForAlcoveProjector *menuView = [ForAlcoveProjector new];
 
     //: menuView.menuModelsArray = menuModelsArray;
@@ -1378,9 +1378,9 @@ static NSString *const k_overName (NSString *value) {
 
 //: - (void)menuDidDisappear {
 - (void)untilIndependent {
-    //: if ([self.delegate respondsToSelector:@selector(ffDropDownMenuViewWDidDisappear)]) {
+    //: if ([self.delegate respondsToSelector:@selector(DirectAnalyzeViewWDidDisappear)]) {
     if ([self.perThreading respondsToSelector:@selector(multipleTreat)]) {
-        //: [self.delegate ffDropDownMenuViewWDidDisappear];
+        //: [self.delegate DirectAnalyzeViewWDidDisappear];
         [self.perThreading multipleTreat];
     }
 

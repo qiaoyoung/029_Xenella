@@ -30,8 +30,8 @@
 #import "UIScrollView+TruthIntervalernal.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "KMSwizzle.h"
-#import "KMSwizzle.h"
+//: #import "InterpreterRavenSplitNatural.h"
+#import "InterpreterRavenSplitNatural.h"
 
 //: @implementation UIScrollView (KMNavigationBarTransition)
 @implementation UIScrollView (CompassPoint)

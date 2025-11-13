@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  KMSwizzle.h
+//  InterpreterRavenSplitNatural.h
 //
 //  Copyright (c) 2017 Zhouqi Mo (https://github.com/MoZhouqi)
 //
@@ -27,5 +27,5 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: extern void KMSwizzleMethod(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector);
+//: extern void InterpreterRavenSplitNaturalMethod(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector);
 extern void libraryAlbum(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector);

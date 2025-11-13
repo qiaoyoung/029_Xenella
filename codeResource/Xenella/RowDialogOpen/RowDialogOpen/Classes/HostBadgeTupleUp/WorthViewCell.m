@@ -2,17 +2,17 @@
 // __CLOSE_PRINT__
 //
 //  WorthViewCell.m
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/8/5.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuBasedCell.h"
+//: #import "DirectAnalyzeBasedCell.h"
 #import "WorthViewCell.h"
 
-//: @implementation FFDropDownMenuBasedCell
+//: @implementation DirectAnalyzeBasedCell
 @implementation WorthViewCell
 
 

@@ -1,8 +1,8 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFDropDownMenuVC.h
-//  FFDropDownMenuDemo
+//  DirectAnalyzeVC.h
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/7/31.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
@@ -11,16 +11,16 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFDropDownMenuBasedModel.h"
+//: #import "DirectAnalyzeBasedModel.h"
 #import "RoughCommand.h"
-//: #import "FFDropDownMenuModel.h"
+//: #import "DirectAnalyzeModel.h"
 #import "UnderBasedModel.h"
-//: #import "FFDropDownMenuBasedCell.h"
+//: #import "DirectAnalyzeBasedCell.h"
 #import "WorthViewCell.h"
-//: #import "FFDropDownMenuCell.h"
+//: #import "DirectAnalyzeCell.h"
 #import "FreshmanBasedCell.h"
 
-//: @class FFDropDownMenuView;
+//: @class DirectAnalyzeView;
 @class ForAlcoveProjector;
 
 //model
@@ -44,49 +44,49 @@
  *  dropdownMenu animationType.
  *  菜单展现的动画类型
  */
-//: typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
-typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
+//: typedef NS_ENUM(NSInteger, DirectAnalyzeViewAnimateType) {
+typedef NS_ENUM(NSInteger, DirectAnalyzeViewAnimateType) {
     /**
      *  scale based the point of upper right corner.
      *  以右上角为基点进行伸缩
      */
-    //: FFDropDownMenuViewAnimateType_ScaleBasedTopRight = 0, 
-    FFDropDownMenuViewAnimateType_ScaleBasedTopRight = 0, //default
+    //: DirectAnalyzeViewAnimateType_ScaleBasedTopRight = 0, 
+    DirectAnalyzeViewAnimateType_ScaleBasedTopRight = 0, //default
     /**
      *  scale based the point of upper left corner.
      *  以左上角为基点进行伸缩
      */
-    //: FFDropDownMenuViewAnimateType_ScaleBasedTopLeft,
-    FFDropDownMenuViewAnimateType_ScaleBasedTopLeft,
+    //: DirectAnalyzeViewAnimateType_ScaleBasedTopLeft,
+    DirectAnalyzeViewAnimateType_ScaleBasedTopLeft,
     /**
      *  scale based the middle point
      *  以中点为基点进行伸缩
      */
-    //: FFDropDownMenuViewAnimateType_ScaleBasedMiddle,
-    FFDropDownMenuViewAnimateType_ScaleBasedMiddle,
+    //: DirectAnalyzeViewAnimateType_ScaleBasedMiddle,
+    DirectAnalyzeViewAnimateType_ScaleBasedMiddle,
     /**
      *  fade in fade out
      *  淡入淡出效果
      */
-    //: FFDropDownMenuViewAnimateType_FadeInFadeOut,
-    FFDropDownMenuViewAnimateType_FadeInFadeOut,
+    //: DirectAnalyzeViewAnimateType_FadeInFadeOut,
+    DirectAnalyzeViewAnimateType_FadeInFadeOut,
     /**
      *  animate like RollerShutter
      *  卷帘效果
      */
-    //: FFDropDownMenuViewAnimateType_RollerShutter,
-    FFDropDownMenuViewAnimateType_RollerShutter,
+    //: DirectAnalyzeViewAnimateType_RollerShutter,
+    DirectAnalyzeViewAnimateType_RollerShutter,
     /**
      *  fall from top
      *  从上往下落下
      */
-    //: FFDropDownMenuViewAnimateType_FallFromTop,
-    FFDropDownMenuViewAnimateType_FallFromTop,
+    //: DirectAnalyzeViewAnimateType_FallFromTop,
+    DirectAnalyzeViewAnimateType_FallFromTop,
 //: };
 };
 
 
-//: @protocol FFDropDownMenuViewDelegate <NSObject>
+//: @protocol DirectAnalyzeViewDelegate <NSObject>
 @protocol DrawInSelection <NSObject>
 
 
@@ -95,19 +95,19 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
 
 /** 若是自定义cell样式的，可以在这个代理方法中稍微小修改cell的样式，比如是否需要下划线、字体的颜色等等*/
 /** you can modify menu cell style, Such as if should show underline */
-//: - (void)ffDropDownMenuView:(FFDropDownMenuView *)menuView WillAppearMenuCell:(FFDropDownMenuBasedCell *)menuCell index:(NSInteger)index;
+//: - (void)DirectAnalyzeView:(DirectAnalyzeView *)menuView WillAppearMenuCell:(DirectAnalyzeBasedCell *)menuCell index:(NSInteger)index;
 - (void)map:(ForAlcoveProjector *)menuView stateWith:(WorthViewCell *)menuCell full:(NSInteger)index;
 
-//: - (void)ffDropDownMenuViewWillAppear;
+//: - (void)DirectAnalyzeViewWillAppear;
 - (void)targetAspect;
 
-//: - (void)ffDropDownMenuViewWDidAppear;
+//: - (void)DirectAnalyzeViewWDidAppear;
 - (void)needAlongside;
 
-//: - (void)ffDropDownMenuViewWillDisappear;
+//: - (void)DirectAnalyzeViewWillDisappear;
 - (void)exclusiveDisappear;
 
-//: - (void)ffDropDownMenuViewWDidDisappear;
+//: - (void)DirectAnalyzeViewWDidDisappear;
 - (void)multipleTreat;
 
 
@@ -119,7 +119,7 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
  *  drop-down menu
  *  下拉菜单
  */
-//: @interface FFDropDownMenuView : UIView
+//: @interface DirectAnalyzeView : UIView
 @interface ForAlcoveProjector : UIView
 
 
@@ -135,7 +135,7 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
  *  >>>>注意:若还需要对个别属性进行赋值、可以再单独对个别属性进行赋值。但是最后一定要调用 setup方法
  *
  *
- *  @param menuModelsArray     下拉菜单模型数组,数组中存放着(FFDropDownMenuModel模型对象)
+ *  @param menuModelsArray     下拉菜单模型数组,数组中存放着(DirectAnalyzeModel模型对象)
  *  @param menuWidth           菜单的宽度                ---- 若要使用默认宽度、传FFDefaultFloat
  *  @param eachItemHeight      每一个选项的高度           ---- 若要使用默认高度、传FFDefaultFloat
  *  @param menuRightMargin     菜单条离屏幕右边的间距      ---- 若要使用默认间距、传FFDefaultFloat
@@ -198,14 +198,14 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
 //: @property (nonatomic, strong) UIColor *triangleColor;
 @property (nonatomic, strong) UIColor *valid;
 
-/** 15、菜单的弹出的动画效果类型(若不设置，默认为FFDropDownMenuViewAnimateType_ScaleBasedTopRight)
+/** 15、菜单的弹出的动画效果类型(若不设置，默认为DirectAnalyzeViewAnimateType_ScaleBasedTopRight)
  *     -----------------------------------------------------------
  *     English description:
  *     -----------------------------------------------------------
- *     show drop-down menu animate type. (if not assign, default value is FFDropDownMenuViewAnimateType_ScaleBasedTopRight)
+ *     show drop-down menu animate type. (if not assign, default value is DirectAnalyzeViewAnimateType_ScaleBasedTopRight)
  */
-//: @property (nonatomic, assign) FFDropDownMenuViewAnimateType menuAnimateType;
-@property (nonatomic, assign) FFDropDownMenuViewAnimateType tingPin;
+//: @property (nonatomic, assign) DirectAnalyzeViewAnimateType menuAnimateType;
+@property (nonatomic, assign) DirectAnalyzeViewAnimateType tingPin;
 
 /** 6、菜单条离屏幕右边的间距(若不设置，默认为10.0)
  *     -----------------------------------------------------------
@@ -230,7 +230,7 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
 
 //: @property (nonatomic, strong) UIColor *menuItemBackgroundColor;
 @property (nonatomic, strong) UIColor *mechanically;
-/** 2、cell的类名, 必须是FFDropDownMenuBasedCell的子类
+/** 2、cell的类名, 必须是DirectAnalyzeBasedCell的子类
  *               若用框架自带的cell,直接传@"FreshmanBasedCell"
  *               若使用自定义的cell,就传自定义cell的类名,若cell是xib,则传@"类名.xib"
  *                     举例如下:
@@ -374,7 +374,7 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
 /** 18、delegate
  *
  */
-//: @property (nonatomic, weak) id<FFDropDownMenuViewDelegate> delegate;
+//: @property (nonatomic, weak) id<DirectAnalyzeViewDelegate> delegate;
 @property (nonatomic, weak) id<DrawInSelection> perThreading;
 
 //==========================================================================
@@ -384,7 +384,7 @@ typedef NS_ENUM(NSInteger, FFDropDownMenuViewAnimateType) {
 
 
 
-/** 1、下拉菜单模型数组(数组里面存放 FFDropDownMenuBasedModel的子类的对象) 
+/** 1、下拉菜单模型数组(数组里面存放 DirectAnalyzeBasedModel的子类的对象) 
  *     -----------------------------------------------------------
  *     English description:
  *     -----------------------------------------------------------

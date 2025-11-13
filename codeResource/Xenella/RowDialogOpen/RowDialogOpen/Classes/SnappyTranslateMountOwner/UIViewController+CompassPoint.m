@@ -100,8 +100,8 @@
 #import "ArtisticUp.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "KMSwizzle.h"
-#import "KMSwizzle.h"
+//: #import "InterpreterRavenSplitNatural.h"
+#import "InterpreterRavenSplitNatural.h"
 
 //: @implementation UIViewController (KMNavigationBarTransition)
 @implementation UIViewController (CompassPoint)
@@ -112,7 +112,7 @@
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: KMSwizzleMethod([self class],
+        //: InterpreterRavenSplitNaturalMethod([self class],
         libraryAlbum([self class],
                         //: @selector(viewWillLayoutSubviews),
                         @selector(viewWillLayoutSubviews),
@@ -121,7 +121,7 @@
                         //: @selector(km_viewWillLayoutSubviews));
                         @selector(lengthElite));
 
-        //: KMSwizzleMethod([self class],
+        //: InterpreterRavenSplitNaturalMethod([self class],
         libraryAlbum([self class],
                         //: @selector(viewWillAppear:),
                         @selector(viewWillAppear:),
@@ -130,7 +130,7 @@
                         //: @selector(km_viewWillAppear:));
                         @selector(optionView:));
 
-        //: KMSwizzleMethod([self class],
+        //: InterpreterRavenSplitNaturalMethod([self class],
         libraryAlbum([self class],
                         //: @selector(viewDidAppear:),
                         @selector(viewDidAppear:),

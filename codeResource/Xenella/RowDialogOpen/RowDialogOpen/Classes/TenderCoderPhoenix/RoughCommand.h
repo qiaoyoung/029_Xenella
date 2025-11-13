@@ -2,7 +2,7 @@
 // __CLOSE_PRINT__
 //
 //  RoughCommand.h
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/8/6.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
@@ -19,9 +19,9 @@ typedef void(^FFMenuBlock)();
 /**
  *  下拉菜单的基本模型，所有自定义模型必须继承这个模型
  *
- *  注意:若自定义一个继承于这个类的菜单模型，必须要自定义一个继承于FFDropDownMenuBasedCell的菜单cell
+ *  注意:若自定义一个继承于这个类的菜单模型，必须要自定义一个继承于DirectAnalyzeBasedCell的菜单cell
  */
-//: @interface FFDropDownMenuBasedModel : NSObject
+//: @interface DirectAnalyzeBasedModel : NSObject
 @interface RoughCommand : NSObject
 
 /** 点击回调的block */

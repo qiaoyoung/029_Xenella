@@ -2,20 +2,20 @@
 // __CLOSE_PRINT__
 //
 //  FreshmanBasedCell.h
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/7/31.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
 // __M_A_C_R_O__
-//: #import "FFDropDownMenuBasedCell.h"
+//: #import "DirectAnalyzeBasedCell.h"
 #import "WorthViewCell.h"
 
 /**
  *  下拉菜单cell
  */
-//: @interface FFDropDownMenuCell : FFDropDownMenuBasedCell
+//: @interface DirectAnalyzeCell : DirectAnalyzeBasedCell
 @interface FreshmanBasedCell : WorthViewCell
 
 /** 底部分割线 */

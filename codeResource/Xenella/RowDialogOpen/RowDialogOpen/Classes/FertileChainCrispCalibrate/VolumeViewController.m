@@ -764,9 +764,9 @@
 #import "SwitchlyView.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Under.h"
-//: #import "FFDropDownMenu.h"
-#import "FFDropDownMenu.h"
-//: #import "FFDropDownMenuView.h"
+//: #import "DirectAnalyze.h"
+#import "DirectAnalyze.h"
+//: #import "DirectAnalyzeView.h"
 #import "ForAlcoveProjector.h"
 //: #import "USERContactAddFriendViewController.h"
 #import "DragViewController.h"
@@ -1098,7 +1098,7 @@
     NSArray *modelsArray = [self schedule];
 
 
-    //: self.dropdownMenu = [FFDropDownMenuView new];
+    //: self.dropdownMenu = [DirectAnalyzeView new];
     self.version = [ForAlcoveProjector new];
 
      //进行属性的赋值
@@ -1114,7 +1114,7 @@
      //: self.dropdownMenu.menuModelsArray = modelsArray;
      self.version.succeedArray = modelsArray;
      /** cell的类名 */
-     //: self.dropdownMenu.cellClassName = @"FFDropDownMenuCell";
+     //: self.dropdownMenu.cellClassName = @"DirectAnalyzeCell";
      self.version.dot = @"FreshmanBasedCell";
      /** 菜单的宽度(若不设置，默认为 150) */
      //: self.dropdownMenu.menuWidth = 120;
@@ -1156,11 +1156,11 @@
      //: self.dropdownMenu.animateDuration = -10.0;
      self.version.rateOfDepreciation = -10.0;
      /** 菜单的伸缩类型 */
-     //: self.dropdownMenu.menuAnimateType = FFDropDownMenuViewAnimateType_ScaleBasedTopRight;
-     self.version.tingPin = FFDropDownMenuViewAnimateType_ScaleBasedTopRight;
+     //: self.dropdownMenu.menuAnimateType = DirectAnalyzeViewAnimateType_ScaleBasedTopRight;
+     self.version.tingPin = DirectAnalyzeViewAnimateType_ScaleBasedTopRight;
 	[self setOfRatio:_roleMeasure];
 
-    //: self.dropdownMenu.cellClassName = @"FFDropDownMenuCustomCell";
+    //: self.dropdownMenu.cellClassName = @"DirectAnalyzeCustomCell";
     self.version.dot = @"DeleteNorCompartmentView";
 	[self setOfRatio:_roleMeasure];
 
@@ -1176,7 +1176,7 @@
     //菜单模型0
     //: NSString *add_friend = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     NSString *add_friend = [RaveFirst extent:[VesselDetectRatedData sharedInstance].coreSkiPath];
-    //: FFDropDownMenuModel *menuModel0 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:add_friend menuItemIconName:@"ic_add_fiend" menuBlock:^{
+    //: DirectAnalyzeModel *menuModel0 = [DirectAnalyzeModel ff_DropDownMenuModelWithMenuItemTitle:add_friend menuItemIconName:@"ic_add_fiend" menuBlock:^{
     UnderBasedModel *menuModel0 = [UnderBasedModel occurrence:add_friend woman:[VesselDetectRatedData sharedInstance].k_matchName employDog:^{
         //: USERContactAddFriendViewController *vc = [[USERContactAddFriendViewController alloc] initWithNibName:nil bundle:nil];
         DragViewController *vc = [[DragViewController alloc] initWithNibName:nil bundle:nil];
@@ -1189,7 +1189,7 @@
     NSString *activity = [RaveFirst extent:[VesselDetectRatedData sharedInstance].commonLaunchName];
 
     //菜单模型1
-    //: FFDropDownMenuModel *menuModel1 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:activity menuItemIconName:@"ic_create_chat" menuBlock:^{
+    //: DirectAnalyzeModel *menuModel1 = [DirectAnalyzeModel ff_DropDownMenuModelWithMenuItemTitle:activity menuItemIconName:@"ic_create_chat" menuBlock:^{
     UnderBasedModel *menuModel1 = [UnderBasedModel occurrence:activity woman:[VesselDetectRatedData sharedInstance].coreReekGiftedFleeContent employDog:^{
         //: if (_creatTeam.integerValue != 0) {
         if (_maker.integerValue != 0) {
@@ -1208,7 +1208,7 @@
      //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
      autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                   ;
-    //: FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[FFFLanguageManager getTextWithKey:@"fragment_contact_new_scan"] menuItemIconName:@"ic_scan" menuBlock:^{
+    //: DirectAnalyzeModel *menuModel3 = [DirectAnalyzeModel ff_DropDownMenuModelWithMenuItemTitle:[FFFLanguageManager getTextWithKey:@"fragment_contact_new_scan"] menuItemIconName:@"ic_scan" menuBlock:^{
     UnderBasedModel *menuModel3 = [UnderBasedModel occurrence:[RaveFirst extent:[VesselDetectRatedData sharedInstance].componentWoodFormat] woman:[VesselDetectRatedData sharedInstance].componentBasicText employDog:^{
         @
          //: try{} @finally{} __typeof__(self) self = __weak_self__;

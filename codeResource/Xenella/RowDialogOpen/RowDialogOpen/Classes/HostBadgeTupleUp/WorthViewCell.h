@@ -2,7 +2,7 @@
 // __CLOSE_PRINT__
 //
 //  WorthViewCell.h
-//  FFDropDownMenuDemo
+//  DirectAnalyzeDemo
 //
 //  Created by mac on 16/8/5.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
@@ -15,7 +15,7 @@
 /**
  *  下拉菜单的基本cell,  自定义cell继承这个cell即可
  */
-//: @interface FFDropDownMenuBasedCell : UITableViewCell
+//: @interface DirectAnalyzeBasedCell : UITableViewCell
 @interface WorthViewCell : UITableViewCell
 
 {
