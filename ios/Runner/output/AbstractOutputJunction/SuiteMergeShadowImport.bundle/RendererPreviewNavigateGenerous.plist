@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>compressRenderer</key>
+    <string>ThroughPresentTabbar</string>
+    <key>iconicHeavenTransformer</key>
+    <string>SuiteParsePainterAccurate</string>
+    <key>urbaneBlockResolver</key>
+    <string>MarkWinterCleanDome</string>
+    <key>accelerateConductorPositive</key>
+    <string>ClipBrokerSchedulerFlow</string>
+    <key>navigationBarAerial</key>
+    <string>SaveHandsomeVirtuous</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>beginSelectorInformation</key>
+    <string>RemoveTimeCohesive</string>
+    <key>workflowAnimatorTransformerToward</key>
+    <string>PresenterEnqueueDriveCompress</string>
+    <key>onyxDisplay</key>
+    <string>ShuffleBundleThroughoutMajor</string>
+    <key>gulfCleanShaderGraceful</key>
+    <string>CoreResolverAroundAcross</string>
+</dict>
+</plist>
