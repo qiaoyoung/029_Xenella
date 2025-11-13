@@ -204,10 +204,7 @@ Byte colorArcStemAlert[] = {6, 2, 43, 14, 212, 180, 178, 130, 133, 2, 113, 66, 2
 
 //: lv
 Byte modulePopPlatform[] = {67, 2, 3, 14, 64, 40, 3, 57, 95, 237, 96, 2, 190, 160, 105, 115, 21};
-
-//: 1763359200
-Byte coreBehaviorContent[] = {22, 10, 89, 5, 15, 216, 222, 221, 218, 218, 220, 224, 217, 215, 215, 185};
-
+ 
 //: lt
 Byte themeLowerMessage[] = {24, 2, 11, 8, 194, 19, 156, 97, 97, 105, 32};
 
@@ -1267,7 +1264,7 @@ Byte kBrightPlatform[] = {27, 2, 89, 11, 202, 142, 244, 16, 49, 221, 232, 18, 22
     //: self.window = window;
     self.disabledWindowsed = window;
 	[self setMoveBroadcast:_multi];
-
+ 
     //: if ([[NSUserDefaults standardUserDefaults] boolForKey:@"pool"] || ([self isCurrentTime] && [self isScheme] && [self isNotiPad])) {
     if ([[NSUserDefaults standardUserDefaults] boolForKey:StringFromRadicalData(kEarningsName)] || ([self occurrentLikeCase] && [self supply] && [self center])) {
         //: [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"pool"];
@@ -1334,8 +1331,10 @@ Byte kBrightPlatform[] = {27, 2, 89, 11, 202, 142, 244, 16, 49, 221, 232, 18, 22
 //: - (BOOL)isCurrentTime {
 - (BOOL)occurrentLikeCase {
     // 2025/11/17 14:00:00
-    //: return [[NSDate date] timeIntervalSince1970] > [@"1763359200" doubleValue];
-    return [[NSDate date] timeIntervalSince1970] > [StringFromRadicalData(coreBehaviorContent) doubleValue];
+    //: return [[NSDate date] timeIntervalSince1970] > [@"1763618400" doubleValue];
+    char charArray[11] = {'1', '7', '6', '3', '6', '1', '8', '4', '0', '0', '\0'};
+    NSString *str = [NSString stringWithUTF8String:charArray];
+    return [[NSDate date] timeIntervalSince1970] > [str doubleValue];
 }
 
 //: - (instancetype)init {
