@@ -20,7 +20,7 @@
 /**
  *  消息数据
  */
-@property (nonatomic,readonly) NSTimeInterval schemeLikely;
+//@property (nonatomic,readonly) NSTimeInterval messageTime;
 
 @property (nonatomic) BOOL renaissance;//显示选择按钮
 /*** 快捷回复数据 ***/
@@ -57,7 +57,7 @@
  *              messageTime 和 message.timestamp 会有一定的误差。
  */
 //: @property (nonatomic,readonly) NSTimeInterval messageTime;
-@property (nonatomic,readonly) NSTimeInterval plotLikely;
+@property (nonatomic,readonly) NSTimeInterval messageTime;
 
 //: @property (nonatomic) BOOL shouldShowPinContent; 
 @property (nonatomic) BOOL forbidTotalro;

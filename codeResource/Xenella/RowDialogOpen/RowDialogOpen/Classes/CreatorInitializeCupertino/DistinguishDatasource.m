@@ -114,18 +114,18 @@
         //: NSInteger index = [self.items indexOfObject:obj];
         NSInteger index = [self.items indexOfObject:obj];
         //: return obj.messageTime > model.messageTime? index : index+1;
-        return obj.schemeLikely > model.schemeLikely? index : index+1;
+        return obj.messageTime > model.messageTime? index : index+1;
     }
     //: NSInteger sep = (array.count+1) / 2;
     NSInteger sep = (array.count+1) / 2;
     //: FFFMessageModel *center = array[sep];
     MessageDistant *center = array[sep];
     //: NSTimeInterval timestamp = [center messageTime];
-    NSTimeInterval timestamp = [center schemeLikely];
+    NSTimeInterval timestamp = [center messageTime];
     //: NSArray *half;
     NSArray *half;
     //: if (timestamp <= [model messageTime]) {
-    if (timestamp <= [model schemeLikely]) {
+    if (timestamp <= [model messageTime]) {
         //: half = [array subarrayWithRange:NSMakeRange(sep, array.count - sep)];
         half = [array subarrayWithRange:NSMakeRange(sep, array.count - sep)];
 	[self setExclude:self.messageLimit];
@@ -246,7 +246,11 @@
         model = self.items[0];
     }
     //: return model.messageTime;
-    return model.schemeLikely;
+    if ([model isKindOfClass:[LoyalConductMeanSunOk class]]) {
+        LoyalConductMeanSunOk *model1 = (LoyalConductMeanSunOk *)model;
+        return model1.messageTime;
+    }
+    return model.messageTime;
 }
 
 //: - (void)loadHistoryMessagesWithComplete:(void(^)(NSInteger index, NSArray *messages , NSError *error))handler
@@ -422,7 +426,7 @@
         //: FFFMessageModel *second = obj2;
         MessageDistant *second = obj2;
         //: return first.messageTime < second.messageTime ? NSOrderedAscending : NSOrderedDescending;
-        return first.schemeLikely < second.schemeLikely ? NSOrderedAscending : NSOrderedDescending;
+        return first.messageTime < second.messageTime ? NSOrderedAscending : NSOrderedDescending;
     //: }];
     }];
     //: for (FFFMessageModel *model in sortModels) {
@@ -814,7 +818,7 @@
     //: NIMMessageSearchOption *option = [NIMMessageSearchOption new];
     NIMMessageSearchOption *option = [NIMMessageSearchOption new];
     //: option.startTime = currentNewestMsg.messageTime - 0.1;
-    option.startTime = currentNewestMsg.schemeLikely - 0.1;
+    option.startTime = currentNewestMsg.messageTime - 0.1;
     //: option.limit = [MyUserKit sharedKit].config.messageLimit;
     option.limit = [TaskIdentifyRave collect].identify.county;
 	[self setExclude:self.messageLimit];
@@ -882,7 +886,7 @@
     //: NSTimeInterval firstTimeInterval = [self firstTimeInterval];
     NSTimeInterval firstTimeInterval = [self counsellorNumbererval];
     //: if (firstTimeInterval && firstTimeInterval - model.messageTime < self.showTimeInterval) {
-    if (firstTimeInterval && firstTimeInterval - model.schemeLikely < self.showTimeInterval) {
+    if (firstTimeInterval && firstTimeInterval - model.messageTime < self.showTimeInterval) {
         //此时至少有一条消息和时间戳（如果有的话）
         //干掉时间戳（如果有的话）
         //: if ([self.items.firstObject isKindOfClass:[FFFTimestampModel class]]) {
@@ -899,7 +903,7 @@
         //: FFFTimestampModel *timeModel = [[FFFTimestampModel alloc] init];
         LoyalConductMeanSunOk *timeModel = [[LoyalConductMeanSunOk alloc] init];
         //: timeModel.messageTime = model.messageTime;
-        timeModel.messageTime = model.schemeLikely;
+        timeModel.messageTime = model.messageTime;
         //: [self.items insertObject:timeModel atIndex:0];
         [self.items insertObject:timeModel atIndex:0];
     }
@@ -928,9 +932,9 @@
     }
 
     //: NSTimeInterval lastTimeInterval = lastmodel.messageTime;
-    NSTimeInterval lastTimeInterval = lastmodel.schemeLikely;
+    NSTimeInterval lastTimeInterval = lastmodel.messageTime;
     //: return model.messageTime - lastTimeInterval > self.showTimeInterval;
-    return model.schemeLikely - lastTimeInterval > self.showTimeInterval;
+    return model.messageTime - lastTimeInterval > self.showTimeInterval;
 }
 
 //: - (NSArray *)insertMessageModel:(FFFMessageModel *)model index:(NSInteger)index{
@@ -945,7 +949,7 @@
             //: FFFTimestampModel *timeModel = [[FFFTimestampModel alloc] init];
             LoyalConductMeanSunOk *timeModel = [[LoyalConductMeanSunOk alloc] init];
             //: timeModel.messageTime = model.messageTime;
-            timeModel.messageTime = model.schemeLikely;
+            timeModel.messageTime = model.messageTime;
 	[self setExclude:self.messageLimit];
             //: [self.items insertObject:timeModel atIndex:index];
             [self.items insertObject:timeModel atIndex:index];

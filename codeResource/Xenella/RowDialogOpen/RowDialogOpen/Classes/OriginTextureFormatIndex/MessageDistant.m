@@ -322,9 +322,9 @@
 
 //: @end
 
-- (void)setPlotLikely:(NSTimeInterval)plotLikely {
+- (void)setmessageTime:(NSTimeInterval)messageTime {
     //: OC_CUSTOM_PROPERTY_INJECT
-    _plotLikely = plotLikely;
+    _messageTime = messageTime;
 }
 
 - (void)setForbidTotalro:(BOOL)forbidTotalro {
@@ -333,10 +333,10 @@
 }
 
 
-- (NSTimeInterval)occupancyRate:(NSTimeInterval)plotLikely {
+- (NSTimeInterval)occupancyRate:(NSTimeInterval)messageTime {
     //: OC_CUSTOM_PROPERTY_INJECT
-    _plotLikely = plotLikely;
-    return plotLikely;
+    _messageTime = messageTime;
+    return messageTime;
 }
 
 //: - (CGSize)contentSize:(CGFloat)width
@@ -371,7 +371,7 @@
         //: _message = message;
         _subTit = message;
         //: _messageTime = message.timestamp;
-        _schemeLikely = message.timestamp;
+        _messageTime = message.timestamp;
 	[self setPlayerCar:_shouldShowAvatar];
         //: _contentSizeInfo = [[NSMutableDictionary alloc] init];
         _house = [[NSMutableDictionary alloc] init];

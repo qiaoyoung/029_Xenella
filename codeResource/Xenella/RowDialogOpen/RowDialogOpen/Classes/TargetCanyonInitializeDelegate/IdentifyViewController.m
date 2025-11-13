@@ -1729,7 +1729,7 @@ HisDelegate>
             //: NIMMessage *tip = [USERSessionMsgConverter msgWithTip:[USERSessionUtil tipOnMessageRevoked:nil]];
             NIMMessage *tip = [CommandConverter bank:[DenyTheUtil replyBy:nil]];
             //: tip.timestamp = model.messageTime;
-            tip.timestamp = model.schemeLikely;
+            tip.timestamp = model.messageTime;
             //[weakSelf uiInsertMessages:@[tip]];//撤回消息不显示
 
             //: tip.timestamp = message.timestamp;
@@ -2880,7 +2880,7 @@ HisDelegate>
                                             //: revokeCallbackExt:nil];
                                             exist:nil];
         //: tip.timestamp = model.messageTime;
-        tip.timestamp = model.schemeLikely;
+        tip.timestamp = model.messageTime;
         //[self uiInsertMessages:@[tip]];//撤回消息不显示
 
         //: tip.timestamp = message.timestamp;

@@ -240,7 +240,7 @@
     [self endEditing:YES];
 //    self.box.frame = CGRectMake(0, SCREEN_HEIGHT-210, SCREEN_WIDTH, 210);
     //: if (!self.titleLabel.text.length) {
-    if (!self.primrosePath.text.length) {
+    if (!self.why.text.length) {
         //: [self makeToast:[FFFLanguageManager getTextWithKey:@"set_nick_activity_input"] duration:2.0 position:CSToastPositionCenter];
         [self response:[RaveFirst extent:[[RatedData sharedInstance] appSpecSettings]] reading:2.0 single:moduleCoordinatorKey];
         //: return;
@@ -252,7 +252,7 @@
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
     //: [[NIMSDK sharedSDK].userManager updateMyUserInfo:@{@(NIMUserInfoUpdateTagNick) : self.titleLabel.text} completion:^(NSError *error) {
-    [[NIMSDK sharedSDK].userManager updateMyUserInfo:@{@(NIMUserInfoUpdateTagNick) : self.primrosePath.text} completion:^(NSError *error) {
+    [[NIMSDK sharedSDK].userManager updateMyUserInfo:@{@(NIMUserInfoUpdateTagNick) : self.why.text} completion:^(NSError *error) {
         //: [SVProgressHUD dismiss];
         [SwitchlyView tagForbidLoop];
         //: if (!error) {
