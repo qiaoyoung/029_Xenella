@@ -9288,7 +9288,7 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 				9E18B0032EC309A700AFF5A8 /* AppDelegate.h */,
 				9E18B0042EC309A700AFF5A8 /* AppDelegate.m */,
-				B17170852EC5D24400160042 /* output */,
+				B17170852EC5D24400160042 /* ShapeResolverPause */,
 				9E18B0052EC309A700AFF5A8 /* main.m */,
 			);
 			path = Runner;
@@ -15506,7 +15506,7 @@
 			path = ToolbarCancelDeliver;
 			sourceTree = "<group>";
 		};
-		B17170852EC5D24400160042 /* output */ = {
+		B17170852EC5D24400160042 /* ShapeResolverPause */ = {
 			isa = PBXGroup;
 			children = (
 				B17159952EC5D24400160042 /* AbstractOutputJunction */,
@@ -15526,7 +15526,7 @@
 				B17170832EC5D24400160042 /* ToolbarCancelDeliver */,
 				B17170842EC5D24400160042 /* confuse_entry_points_objc.txt */,
 			);
-			path = output;
+			path = ShapeResolverPause;
 			sourceTree = "<group>";
 		};
 		E62BDFA1349D0FEA53B918B7 /* Frameworks */ = {
