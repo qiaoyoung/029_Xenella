@@ -2544,7 +2544,7 @@
     //: config.filterIds = users;
     config.filterIds = users;
     //: config.alreadySelectedMemberId = @[self.userId];
-    config.alreadySelectedMemberId = @[self.userId];
+    config.albumDark = @[self.userId];
     //需要多选
     //: config.needMutiSelected = YES;
     config.needMutiSelected = YES;

@@ -395,7 +395,7 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setFit:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -485,7 +485,7 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
 //: #pragma mark - 配置项
 #pragma mark - 配置项
 //: - (id<PacificPineMap>)sessionConfig
-- (id<PacificPineMap>)selfWinding
+- (id<PacificPineMap>)sessionConfig
 {
     //: return nil; 
     return nil; //使用默认配置
@@ -1267,16 +1267,16 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: NSArray *items;
     NSArray *items;
     //: if (!self.sessionConfig)
-    if (!self.selfWinding)
+    if (!self.sessionConfig)
     {
         //: items = [[TreatLayoutExotic sharedKit].config defaultMenuItemsWithMessage:message];
         items = [[TreatLayoutExotic kitIn].config dismiss:message];
     }
     //: else if([self.sessionConfig respondsToSelector:@selector(menuItemsWithMessage:)])
-    else if([self.selfWinding respondsToSelector:@selector(looksed:)])
+    else if([self.sessionConfig respondsToSelector:@selector(looksed:)])
     {
         //: items = [self.sessionConfig menuItemsWithMessage:message];
-        items = [self.selfWinding looksed:message];
+        items = [self.sessionConfig looksed:message];
     }
 
     //: [items enumerateObjectsUsingBlock:^(CalibrateReturnDevice *item, NSUInteger idx, BOOL *stop) {
@@ -1324,7 +1324,7 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setFit:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -1403,7 +1403,7 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     }];
 }
 //: - (void)onTapMenuItemCopy:(CalibrateReturnDevice *)item
-- (void)keyed:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemCopy:(CalibrateReturnDevice *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -1574,10 +1574,10 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: BOOL disable = NO;
     BOOL disable = NO;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableAudioPlayedStatusIcon)])
-    if ([self.selfWinding respondsToSelector:@selector(pathIcon)])
+    if ([self.sessionConfig respondsToSelector:@selector(pathIcon)])
     {
         //: disable = [self.sessionConfig disableAudioPlayedStatusIcon];
-        disable = [self.selfWinding pathIcon];
+        disable = [self.sessionConfig pathIcon];
     }
     //: return disable;
     return disable;
@@ -1687,9 +1687,9 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableInputView)]) {
-    if ([self.selfWinding respondsToSelector:@selector(beingMap)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(beingMap)]) {
         //: should = ![self.sessionConfig disableInputView];
-        should = ![self.selfWinding beingMap];
+        should = ![self.sessionConfig beingMap];
     }
     //: return should;
     return should;
@@ -1704,9 +1704,9 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableReceiveNewMessages)]) {
-    if ([self.selfWinding respondsToSelector:@selector(restrainItemMessagesIgnore)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(restrainItemMessagesIgnore)]) {
         //: should = ![self.sessionConfig disableReceiveNewMessages];
-        should = ![self.selfWinding restrainItemMessagesIgnore];
+        should = ![self.sessionConfig restrainItemMessagesIgnore];
     }
     //: return should;
     return should;
@@ -1785,9 +1785,9 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: BOOL needProximityMonitor = YES;
     BOOL needProximityMonitor = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableProximityMonitor)]) {
-    if ([self.selfWinding respondsToSelector:@selector(ruleDatabase)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(ruleDatabase)]) {
         //: needProximityMonitor = !self.sessionConfig.disableProximityMonitor;
-        needProximityMonitor = !self.selfWinding.ruleDatabase;
+        needProximityMonitor = !self.sessionConfig.ruleDatabase;
     }
     //: return needProximityMonitor;
     return needProximityMonitor;
@@ -2412,7 +2412,7 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setFit:message];
+    [self.interactor setReferenceMessage:message];
 
     //: handle = [self shouldShowMenuByMessage:message];
     handle = [self shouldMessage:message];
@@ -2558,7 +2558,7 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     if ([self natural])
     {
         //: self.sessionInputView = [[EnumUtmostBuildInterpreterThroughout alloc] initWithFrame:CGRectMake(0, 0, self.view.device_width,0) config:self.sessionConfig];
-        self.sessionInputView = [[EnumUtmostBuildInterpreterThroughout alloc] initWithStreetwiseVideo:CGRectMake(0, 0, self.view.device_width,0) column:self.selfWinding];
+        self.sessionInputView = [[EnumUtmostBuildInterpreterThroughout alloc] initWithStreetwiseVideo:CGRectMake(0, 0, self.view.device_width,0) column:self.sessionConfig];
         //: self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         //: [self.sessionInputView setSession:self.session];
@@ -2701,16 +2701,16 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: self.messageForMenu = nil;
     self.messageForMenu = nil;
     //: [self.interactor setReferenceMessage:nil];
-    [self.interactor setFit:nil];
+    [self.interactor setReferenceMessage:nil];
 
     //: if ([self.sessionConfig respondsToSelector:@selector(clearThreadMessageAfterSent)])
-    if ([self.selfWinding respondsToSelector:@selector(actionModel)])
+    if ([self.sessionConfig respondsToSelector:@selector(actionModel)])
     {
         //: if ([self.sessionConfig clearThreadMessageAfterSent])
-        if ([self.selfWinding actionModel])
+        if ([self.sessionConfig actionModel])
         {
             //: [self.sessionConfig cleanThreadMessage];
-            [self.selfWinding molarity];
+            [self.sessionConfig molarity];
         }
     }
 }
@@ -3027,9 +3027,9 @@ Byte colorCampusPoetConfig[] = {13, 7, 3, 116, 110, 101, 116, 110, 111, 99, 248}
     //: NIMAudioType type = NIMAudioTypeAAC;
     NIMAudioType type = NIMAudioTypeAAC;
     //: if ([self.sessionConfig respondsToSelector:@selector(recordType)]) {
-    if ([self.selfWinding respondsToSelector:@selector(nameElement)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(nameElement)]) {
         //: type = [self.sessionConfig recordType];
-        type = [self.selfWinding nameElement];
+        type = [self.sessionConfig nameElement];
     }
     //: return type;
     return type;

@@ -663,7 +663,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemDelete:(CalibrateReturnDevice *)item
-- (void)externalErase:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemDelete:(CalibrateReturnDevice *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -776,7 +776,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)accountingData:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 
@@ -909,7 +909,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemForword:(CalibrateReturnDevice *)item
-- (void)closeInForword:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemForword:(CalibrateReturnDevice *)item
 {
     //: EnumAtlasMapAfter *vc = [[EnumAtlasMapAfter alloc]init];
     EnumAtlasMapAfter *vc = [[EnumAtlasMapAfter alloc]init];
@@ -1290,7 +1290,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemMutiSelect:(CalibrateReturnDevice *)item
-- (void)instruction:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemMutiSelect:(CalibrateReturnDevice *)item
 {
     //: [self switchUIWithSessionState:TagAcrossControllerScheduleSelect];
     [self noticeState:TagAcrossControllerScheduleSelect];
@@ -2120,7 +2120,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemUnpin:(CalibrateReturnDevice *)item
-- (void)gestureUnpin:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemUnpin:(CalibrateReturnDevice *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2153,7 +2153,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemMark:(CalibrateReturnDevice *)item
-- (void)onAndCharacterize:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemMark:(CalibrateReturnDevice *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2228,7 +2228,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemRevoke:(CalibrateReturnDevice *)item
-- (void)primary:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemRevoke:(CalibrateReturnDevice *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2538,7 +2538,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemTranslation:(CalibrateReturnDevice *)item
-- (void)alongside:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemTranslation:(CalibrateReturnDevice *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2820,7 +2820,7 @@ WorkActionSilverCohesiveNextDelegate>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(CalibrateReturnDevice *)item
-- (void)below:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemReply:(CalibrateReturnDevice *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self messageForMenu];
@@ -3062,7 +3062,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemPin:(CalibrateReturnDevice *)item
-- (void)share:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemPin:(CalibrateReturnDevice *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -3153,7 +3153,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemAudio2Text:(CalibrateReturnDevice *)item
-- (void)audio:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemAudio2Text:(CalibrateReturnDevice *)item
 {
 
 }
@@ -3174,7 +3174,7 @@ WorkActionSilverCohesiveNextDelegate>
  //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)access:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -3279,7 +3279,7 @@ WorkActionSilverCohesiveNextDelegate>
 }
 
 //: - (void)onTapMenuItemReport:(CalibrateReturnDevice *)item
-- (void)itemExpected:(CalibrateReturnDevice *)item
+- (void)onTapMenuItemReport:(CalibrateReturnDevice *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.translateView];
@@ -3533,7 +3533,7 @@ WorkActionSilverCohesiveNextDelegate>
 
 }
 //: - (void)showVideo:(NIMMessage *)message
-- (void)lift:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;

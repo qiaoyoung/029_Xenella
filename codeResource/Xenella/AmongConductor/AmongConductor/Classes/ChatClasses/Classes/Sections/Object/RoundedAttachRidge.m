@@ -78,7 +78,7 @@
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.session;
     //: id<PacificPineMap> sessionConfig = vc.sessionConfig;
-    id<PacificPineMap> sessionConfig = vc.selfWinding;
+    id<PacificPineMap> sessionConfig = vc.sessionConfig;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.tableView;
     //: EnumUtmostBuildInterpreterThroughout *inputView = vc.sessionInputView;
@@ -104,7 +104,7 @@
     _interactor.layout = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setBareDelegate:_interactor];
+    [layout setDelegate:_interactor];
 
     //: _tableAdapter = [[EndPackBoundTide alloc] init];
     _tableAdapter = [[EndPackBoundTide alloc] init];

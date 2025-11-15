@@ -58,7 +58,7 @@
 @implementation NavigationBarCivicSnappyPlaza
 
 //: - (NSString *)memberId{
-- (NSString *)remarkSave{
+- (NSString *)will{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -66,7 +66,7 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)evaluate{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }
@@ -84,13 +84,13 @@
 }
 
 //: - (id)sortKey {
-- (id)appear {
+- (id)photo {
     //: return [[PrintCoralTransformer sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[PrintCoralTransformer centralCity] photoPad:self.info.showName].shortSpelling;
 }
 
 //: - (NSString *)userId{
-- (NSString *)exceptionPull{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -120,7 +120,7 @@
 }
 
 //: - (NSString *)showName{
-- (NSString *)voice{
+- (NSString *)agreementAcross{
     //: return self.info.showName;
     return self.info.showName;
 }
@@ -143,7 +143,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)odd {
+- (NSString *)avoid {
     //: NSString *title = [[PrintCoralTransformer sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[PrintCoralTransformer centralCity] maxDownLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];

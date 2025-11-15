@@ -1694,9 +1694,9 @@ AroundReleaseLoadDelegate> {
         //: id<LushPlazaRaven> contactItem = (id<LushPlazaRaven>)[_contacts memberOfIndex:indexPath];
         id<LushPlazaRaven> contactItem = (id<LushPlazaRaven>)[_contacts atTheSameTime:indexPath];
         //: if([contactItem respondsToSelector:@selector(userId)]){
-        if([contactItem respondsToSelector:@selector(exceptionPull)]){
+        if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.exceptionPull;
+            NSString * friendId = contactItem.userId;
             //: if ([ids containsObject:friendId]) {
             if ([ids containsObject:friendId]) {
                 //: [indexPaths addObject:indexPath];
@@ -1833,17 +1833,17 @@ AroundReleaseLoadDelegate> {
             ([self performSelector:sel withObject:nil]);
         }
         //: else if (contactItem.vcName.length) {
-        else if (contactItem.resourcePointText.length) {
+        else if (contactItem.vcName.length) {
             //: Class clazz = NSClassFromString(contactItem.vcName);
-            Class clazz = NSClassFromString(contactItem.resourcePointText);
+            Class clazz = NSClassFromString(contactItem.vcName);
             //: UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
         //: }else if([contactItem respondsToSelector:@selector(userId)]){
-        }else if([contactItem respondsToSelector:@selector(exceptionPull)]){
+        }else if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.exceptionPull;
+            NSString * friendId = contactItem.userId;
             //: [self enterPersonalCard:friendId];
             [self beforeMagnituderudeOn:friendId];
         }

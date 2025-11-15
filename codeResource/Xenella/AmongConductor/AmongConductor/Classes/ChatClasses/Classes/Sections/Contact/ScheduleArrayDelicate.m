@@ -161,7 +161,7 @@ SpiritData styleRoutineSagData = (SpiritData){245, (Byte []){156, 150, 154, 155,
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.config.line) {
+    if (self.config.showSelectHeaderview) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.setGroupnameView];

@@ -16,11 +16,11 @@
 @protocol StreamTransformableFilledSpectrum <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)bringOut;
+- (NSString *)avoid;
 //: - (NSString *)memberId;
-- (NSString *)leave;
+- (NSString *)will;
 //: - (id)sortKey;
-- (id)canView;
+- (id)photo;
 
 //: @end
 @end

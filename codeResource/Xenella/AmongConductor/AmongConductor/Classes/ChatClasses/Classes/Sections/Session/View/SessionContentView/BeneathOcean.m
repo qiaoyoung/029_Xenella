@@ -118,7 +118,7 @@ HoseData viewSilverId = (HoseData){142, (Byte []){231, 224, 248, 239, 226, 231, 
                 //: self.textView.actionDelegate = vc;
                 self.textView.actionDelegate = vc;
                 //: self.textView.config = vc.sessionConfig;
-                self.textView.config = vc.selfWinding;
+                self.textView.config = vc.sessionConfig;
             }
         //: }];
         }];

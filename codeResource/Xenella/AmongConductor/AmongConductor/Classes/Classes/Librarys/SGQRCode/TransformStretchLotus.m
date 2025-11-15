@@ -418,7 +418,7 @@
     //: if (self.link == nil) {
     if (self.link == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[PaintRuggedizedSelector weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.link = [CADisplayLink displayLinkWithTarget:[PaintRuggedizedSelector area:self] selector:@selector(updateUI)];
+        self.link = [CADisplayLink displayLinkWithTarget:[PaintRuggedizedSelector area:self] selector:@selector(presentSession)];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }

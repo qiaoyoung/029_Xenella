@@ -86,7 +86,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 
 /// 是否显示头部的群头像 群名字headerview
 //: - (BOOL)showSelectHeaderview;
-- (BOOL)line;
+- (BOOL)showSelectHeaderview;
 
 //: @end
 @end
@@ -98,7 +98,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @interface DecentMuseTruthGrove : NSObject<GetReplayQuick>
 
 //: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
-@property (nonatomic,copy) NSArray *alreadySelectedMemberId;
+@property (nonatomic,copy) NSArray *albumDark;
 
 //: @property (nonatomic,copy) NSArray *filterIds;
 @property (nonatomic,copy) NSArray *filterIds;
@@ -140,7 +140,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,assign) OwlCollectorOcean teamType;
 
 //: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
-@property (nonatomic,copy) NSArray *alreadySelectedMemberId;
+@property (nonatomic,copy) NSArray *albumDark;
 
 //: @property (nonatomic,assign) BOOL needMutiSelected;
 @property (nonatomic,assign) BOOL needMutiSelected;
@@ -177,7 +177,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,assign) BOOL needMutiSelected;
 
 //: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
-@property (nonatomic,copy) NSArray *alreadySelectedMemberId;
+@property (nonatomic,copy) NSArray *albumDark;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
 @property (nonatomic,assign) BOOL showSelectHeaderview;

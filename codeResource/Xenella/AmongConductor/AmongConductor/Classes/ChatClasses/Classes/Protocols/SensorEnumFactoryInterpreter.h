@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger, StringCoreWealthy) {
 - (NSString *)readingFull;
 
 //: - (NSString *)userId;
-- (NSString *)exceptionPull;
+- (NSString *)userId;
 
 //: - (NIMTeamMemberType)userType;
 - (NIMTeamMemberType)breedJump;

@@ -74,12 +74,12 @@
     //: for (id<StreamTransformableFilledSpectrum>member in members) {
     for (id<StreamTransformableFilledSpectrum>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member leave] isEqualToString:me]) {
+        if ([[member will] isEqualToString:me]) {
             //: continue;
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member bringOut];
+        NSString *groupTitle = [member avoid];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {
@@ -140,7 +140,7 @@
         //: for (id<StreamTransformableFilledSpectrum> member in members) {
         for (id<StreamTransformableFilledSpectrum> member in members) {
             //: if ([[member memberId] isEqualToString:uid]) {
-            if ([[member leave] isEqualToString:uid]) {
+            if ([[member will] isEqualToString:uid]) {
                 //: return member;
                 return member;
             }
@@ -160,7 +160,7 @@
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<StreamTransformableFilledSpectrum> member1, id<StreamTransformableFilledSpectrum> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<StreamTransformableFilledSpectrum> member1, id<StreamTransformableFilledSpectrum> member2) {
             //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _groupMemberComparator([member1 canView], [member2 canView]);
+            return _groupMemberComparator([member1 photo], [member2 photo]);
         //: }];
         }];
     //: }];
@@ -191,7 +191,7 @@
 - (void)tit:(id<StreamTransformableFilledSpectrum>)member
 {
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member bringOut];
+    NSString *groupTitle = [member avoid];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     //: AtlasStopProjector *pair = [_groups objectAtIndex:groupIndex];
@@ -338,7 +338,7 @@
 //: - (void)removeGroupMember:(id<StreamTransformableFilledSpectrum>)member{
 - (void)size:(id<StreamTransformableFilledSpectrum>)member{
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member bringOut];
+    NSString *groupTitle = [member avoid];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     //: AtlasStopProjector *pair = [_groups objectAtIndex:groupIndex];

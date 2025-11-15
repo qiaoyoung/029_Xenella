@@ -76,7 +76,7 @@
  *  会话页详细配置
  */
 //: - (id<PacificPineMap>)sessionConfig;
-- (id<PacificPineMap>)selfWinding;
+- (id<PacificPineMap>)sessionConfig;
 
 
 /**

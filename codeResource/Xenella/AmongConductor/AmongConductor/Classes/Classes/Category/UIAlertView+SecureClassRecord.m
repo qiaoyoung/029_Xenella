@@ -19,8 +19,7 @@ static char colorLabSourceTitle;
 
 //: @implementation UIAlertView (SecureClassRecord)
 @implementation UIAlertView (SecureClassRecord)
-//: - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-- (void)sightLocal:(UIAlertView *)alertView automatically:(NSInteger)buttonIndex
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     //: AlertBlock block = objc_getAssociatedObject(self, &kUIAlertViewBlockAddress);
     AlertBlock block = objc_getAssociatedObject(self, &colorLabSourceTitle);

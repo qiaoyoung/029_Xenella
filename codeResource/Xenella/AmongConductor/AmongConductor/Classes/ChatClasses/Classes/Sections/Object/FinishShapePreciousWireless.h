@@ -137,7 +137,7 @@
 - (void)playerBelow:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<UprightConductorJubilant>)delegate;
-- (void)setBareDelegate:(id<UprightConductorJubilant>)delegate;
+- (void)setDelegate:(id<UprightConductorJubilant>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)makeRefresh;

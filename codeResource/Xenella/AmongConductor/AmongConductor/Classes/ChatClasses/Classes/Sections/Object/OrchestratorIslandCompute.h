@@ -182,7 +182,7 @@ typedef NS_ENUM(NSUInteger, TagAcrossControllerSchedule) {
 - (void)setOpinion:(TagAcrossControllerSchedule)sessionState;
 
 //: - (void)setReferenceMessage:(NIMMessage *)message;
-- (void)setFit:(NIMMessage *)message;
+- (void)setReferenceMessage:(NIMMessage *)message;
 
 //: @end
 @end
