@@ -68,19 +68,19 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 #pragma mark - Make Toast Methods
 
 - (void)makeToast:(NSString *)message {
-    [self makeToast:message duration:[AAAA_CSToastManager_BBBB defaultDuration] position:[AAAA_CSToastManager_BBBB defaultPosition] style:nil];
+    [self makeToast:message duration:[HandleOutlineBeneathWise defaultDuration] position:[HandleOutlineBeneathWise defaultPosition] style:nil];
 }
 
 - (void)makeToast:(NSString *)message duration:(NSTimeInterval)duration position:(id)position {
     [self makeToast:message duration:duration position:position style:nil];
 }
 
-- (void)makeToast:(NSString *)message duration:(NSTimeInterval)duration position:(id)position style:(AAAA_CSToastStyle_BBBB *)style {
+- (void)makeToast:(NSString *)message duration:(NSTimeInterval)duration position:(id)position style:(SnappyThemeFill *)style {
     UIView *toast = [self toastViewForMessage:message title:nil image:nil style:style];
     [self showToast:toast duration:duration position:position completion:nil];
 }
 
-- (void)makeToast:(NSString *)message duration:(NSTimeInterval)duration position:(id)position title:(NSString *)title image:(UIImage *)image style:(AAAA_CSToastStyle_BBBB *)style completion:(void(^)(BOOL didTap))completion {
+- (void)makeToast:(NSString *)message duration:(NSTimeInterval)duration position:(id)position title:(NSString *)title image:(UIImage *)image style:(SnappyThemeFill *)style completion:(void(^)(BOOL didTap))completion {
     UIView *toast = [self toastViewForMessage:message title:title image:image style:style];
     [self showToast:toast duration:duration position:position completion:completion];
 }
@@ -88,7 +88,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 #pragma mark - Show Toast Methods
 
 - (void)showToast:(UIView *)toast {
-    [self showToast:toast duration:[AAAA_CSToastManager_BBBB defaultDuration] position:[AAAA_CSToastManager_BBBB defaultPosition] completion:nil];
+    [self showToast:toast duration:[HandleOutlineBeneathWise defaultDuration] position:[HandleOutlineBeneathWise defaultPosition] completion:nil];
 }
 
 - (void)showToast:(UIView *)toast duration:(NSTimeInterval)duration position:(id)position completion:(void(^)(BOOL didTap))completion {
@@ -98,7 +98,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
     // store the completion block on the toast view
     objc_setAssociatedObject(toast, &CSToastCompletionKey, completion, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    if ([AAAA_CSToastManager_BBBB isQueueEnabled] && [self.cs_activeToasts count] > 0) {
+    if ([HandleOutlineBeneathWise isQueueEnabled] && [self.cs_activeToasts count] > 0) {
         // we're about to queue this toast view so we need to store the duration and position as well
         objc_setAssociatedObject(toast, &CSToastDurationKey, @(duration), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         objc_setAssociatedObject(toast, &CSToastPositionKey, position, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -152,7 +152,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
     toast.center = [self cs_centerPointForPosition:position withToast:toast];
     toast.alpha = 0.0;
     
-    if ([AAAA_CSToastManager_BBBB isTapToDismissEnabled]) {
+    if ([HandleOutlineBeneathWise isTapToDismissEnabled]) {
         UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cs_handleToastTapped:)];
         [toast addGestureRecognizer:recognizer];
         toast.userInteractionEnabled = YES;
@@ -163,7 +163,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
     
     [self addSubview:toast];
     
-    [UIView animateWithDuration:[[AAAA_CSToastManager_BBBB sharedStyle] fadeDuration]
+    [UIView animateWithDuration:[[HandleOutlineBeneathWise sharedStyle] fadeDuration]
                           delay:0.0
                         options:(UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionAllowUserInteraction)
                      animations:^{
@@ -183,7 +183,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
     NSTimer *timer = (NSTimer *)objc_getAssociatedObject(toast, &CSToastTimerKey);
     [timer invalidate];
     
-    [UIView animateWithDuration:[[AAAA_CSToastManager_BBBB sharedStyle] fadeDuration]
+    [UIView animateWithDuration:[[HandleOutlineBeneathWise sharedStyle] fadeDuration]
                           delay:0.0
                         options:(UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionBeginFromCurrentState)
                      animations:^{
@@ -215,13 +215,13 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 
 #pragma mark - View Construction
 
-- (UIView *)toastViewForMessage:(NSString *)message title:(NSString *)title image:(UIImage *)image style:(AAAA_CSToastStyle_BBBB *)style {
+- (UIView *)toastViewForMessage:(NSString *)message title:(NSString *)title image:(UIImage *)image style:(SnappyThemeFill *)style {
     // sanity
     if (message == nil && title == nil && image == nil) return nil;
     
     // default to the shared style
     if (style == nil) {
-        style = [AAAA_CSToastManager_BBBB sharedStyle];
+        style = [HandleOutlineBeneathWise sharedStyle];
     }
     
     // dynamically build a toast view with any combination of message, title, & image
@@ -379,7 +379,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
     UIView *existingActivityView = (UIView *)objc_getAssociatedObject(self, &CSToastActivityViewKey);
     if (existingActivityView != nil) return;
     
-    AAAA_CSToastStyle_BBBB *style = [AAAA_CSToastManager_BBBB sharedStyle];
+    SnappyThemeFill *style = [HandleOutlineBeneathWise sharedStyle];
     
     UIView *activityView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, style.activitySize.width, style.activitySize.height)];
     activityView.center = [self cs_centerPointForPosition:position withToast:activityView];
@@ -416,7 +416,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 - (void)hideToastActivity {
     UIView *existingActivityView = (UIView *)objc_getAssociatedObject(self, &CSToastActivityViewKey);
     if (existingActivityView != nil) {
-        [UIView animateWithDuration:[[AAAA_CSToastManager_BBBB sharedStyle] fadeDuration]
+        [UIView animateWithDuration:[[HandleOutlineBeneathWise sharedStyle] fadeDuration]
                               delay:0.0
                             options:(UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionBeginFromCurrentState)
                          animations:^{
@@ -431,7 +431,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 #pragma mark - Helpers
 
 - (CGPoint)cs_centerPointForPosition:(id)point withToast:(UIView *)toast {
-    AAAA_CSToastStyle_BBBB *style = [AAAA_CSToastManager_BBBB sharedStyle];
+    SnappyThemeFill *style = [HandleOutlineBeneathWise sharedStyle];
     
     UIEdgeInsets safeInsets = UIEdgeInsetsZero;
     if (@available(iOS 11.0, *)) {
@@ -457,7 +457,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 
 @end
 
-@implementation AAAA_CSToastStyle_BBBB
+@implementation SnappyThemeFill
 
 #pragma mark - Constructors
 
@@ -503,9 +503,9 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 
 @end
 
-@interface AAAA_CSToastManager_BBBB ()
+@interface HandleOutlineBeneathWise ()
 
-@property (strong, nonatomic) AAAA_CSToastStyle_BBBB *sharedStyle;
+@property (strong, nonatomic) SnappyThemeFill *sharedStyle;
 @property (assign, nonatomic, getter=isTapToDismissEnabled) BOOL tapToDismissEnabled;
 @property (assign, nonatomic, getter=isQueueEnabled) BOOL queueEnabled;
 @property (assign, nonatomic) NSTimeInterval defaultDuration;
@@ -513,12 +513,12 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 
 @end
 
-@implementation AAAA_CSToastManager_BBBB
+@implementation HandleOutlineBeneathWise
 
 #pragma mark - Constructors
 
 + (instancetype)sharedManager {
-    static AAAA_CSToastManager_BBBB *_sharedManager = nil;
+    static HandleOutlineBeneathWise *_sharedManager = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         _sharedManager = [[self alloc] init];
@@ -530,7 +530,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.sharedStyle = [[AAAA_CSToastStyle_BBBB alloc] initWithDefaultStyle];
+        self.sharedStyle = [[SnappyThemeFill alloc] initWithDefaultStyle];
         self.tapToDismissEnabled = YES;
         self.queueEnabled = NO;
         self.defaultDuration = 3.0;
@@ -541,11 +541,11 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 
 #pragma mark - Singleton Methods
 
-+ (void)setSharedStyle:(AAAA_CSToastStyle_BBBB *)sharedStyle {
++ (void)setSharedStyle:(SnappyThemeFill *)sharedStyle {
     [[self sharedManager] setSharedStyle:sharedStyle];
 }
 
-+ (AAAA_CSToastStyle_BBBB *)sharedStyle {
++ (SnappyThemeFill *)sharedStyle {
     return [[self sharedManager] sharedStyle];
 }
 

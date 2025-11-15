@@ -7,27 +7,27 @@
 //
 
 #import "AppDelegate.h"
-#import "AAAA_AppDelegateManager_BBBB.h"
+#import "FolderThroughout.h"
  
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] initDelegateWithWindow:self.window];
+    [[FolderThroughout sharedInstance] initDelegateWithWindow:self.window];
     return YES;
 }
  
 #pragma mark - ApplicationDelegate
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] applicationDidBecomeActive:application];
+    [[FolderThroughout sharedInstance] applicationDidBecomeActive:application];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] applicationDidEnterBackground:application];
+    [[FolderThroughout sharedInstance] applicationDidEnterBackground:application];
 }
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [[FolderThroughout sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 }
  
 #pragma mark - openURL

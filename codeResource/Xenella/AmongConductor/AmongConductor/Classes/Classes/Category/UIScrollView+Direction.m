@@ -11,8 +11,8 @@
 
 
 @interface UIScrollView ()
-@property (assign, nonatomic) AAAA_USERScrollViewDirection_BBBB horizontalScrollingDirection;
-@property (assign, nonatomic) AAAA_USERScrollViewDirection_BBBB verticalScrollingDirection;
+@property (assign, nonatomic) TimelineSageAlign horizontalScrollingDirection;
+@property (assign, nonatomic) TimelineSageAlign verticalScrollingDirection;
 @end
 
 
@@ -40,39 +40,39 @@ static const char verticalScrollingDirectionKey;
     CGPoint oldContentOffset = [[change valueForKey:NSKeyValueChangeOldKey] CGPointValue];
     
     if (oldContentOffset.x < newContentOffset.x) {
-        self.horizontalScrollingDirection = AAAA_USERScrollViewDirection_BBBBRight;
+        self.horizontalScrollingDirection = TimelineSageAlignRight;
     } else if (oldContentOffset.x > newContentOffset.x) {
-        self.horizontalScrollingDirection = AAAA_USERScrollViewDirection_BBBBLeft;
+        self.horizontalScrollingDirection = TimelineSageAlignLeft;
     } else {
-        self.horizontalScrollingDirection = AAAA_USERScrollViewDirection_BBBBNone;
+        self.horizontalScrollingDirection = TimelineSageAlignNone;
     }
     
     if (oldContentOffset.y < newContentOffset.y) {
-        self.verticalScrollingDirection = AAAA_USERScrollViewDirection_BBBBDown;
+        self.verticalScrollingDirection = TimelineSageAlignDown;
     } else if (oldContentOffset.y > newContentOffset.y) {
-        self.verticalScrollingDirection = AAAA_USERScrollViewDirection_BBBBUp;
+        self.verticalScrollingDirection = TimelineSageAlignUp;
     } else {
-        self.verticalScrollingDirection = AAAA_USERScrollViewDirection_BBBBNone;
+        self.verticalScrollingDirection = TimelineSageAlignNone;
     }
 }
 
 #pragma mark - Properties
-- (AAAA_USERScrollViewDirection_BBBB)horizontalScrollingDirection
+- (TimelineSageAlign)horizontalScrollingDirection
 {
     return [objc_getAssociatedObject(self, (void *)&horizontalScrollingDirectionKey) intValue];
 }
 
-- (void)setHorizontalScrollingDirection:(AAAA_USERScrollViewDirection_BBBB)horizontalScrollingDirection
+- (void)setHorizontalScrollingDirection:(TimelineSageAlign)horizontalScrollingDirection
 {
     objc_setAssociatedObject(self, (void *)&horizontalScrollingDirectionKey, [NSNumber numberWithInt:horizontalScrollingDirection], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (AAAA_USERScrollViewDirection_BBBB)verticalScrollingDirection
+- (TimelineSageAlign)verticalScrollingDirection
 {
     return [objc_getAssociatedObject(self, (void *)&verticalScrollingDirectionKey) intValue];
 }
 
-- (void)setVerticalScrollingDirection:(AAAA_USERScrollViewDirection_BBBB)verticalScrollingDirection
+- (void)setVerticalScrollingDirection:(TimelineSageAlign)verticalScrollingDirection
 {
     objc_setAssociatedObject(self, (void *)&verticalScrollingDirectionKey, [NSNumber numberWithInt:verticalScrollingDirection], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

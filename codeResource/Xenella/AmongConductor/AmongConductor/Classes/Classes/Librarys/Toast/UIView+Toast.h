@@ -29,7 +29,7 @@ extern const NSString * CSToastPositionTop;
 extern const NSString * CSToastPositionCenter;
 extern const NSString * CSToastPositionBottom;
 
-@class AAAA_CSToastStyle_BBBB;
+@class SnappyThemeFill;
 
 /**
  Toast is an Objective-C category that adds toast notifications to the UIView
@@ -77,7 +77,7 @@ extern const NSString * CSToastPositionBottom;
 - (void)makeToast:(NSString *)message
          duration:(NSTimeInterval)duration
          position:(id)position
-            style:(AAAA_CSToastStyle_BBBB *)style;
+            style:(SnappyThemeFill *)style;
 
 /**
  Creates and presents a new toast view with a message, title, and image. Duration,
@@ -100,7 +100,7 @@ extern const NSString * CSToastPositionBottom;
          position:(id)position
             title:(NSString *)title
             image:(UIImage *)image
-            style:(AAAA_CSToastStyle_BBBB *)style
+            style:(SnappyThemeFill *)style
        completion:(void(^)(BOOL didTap))completion;
 
 /**
@@ -120,7 +120,7 @@ extern const NSString * CSToastPositionBottom;
 - (UIView *)toastViewForMessage:(NSString *)message
                           title:(NSString *)title
                           image:(UIImage *)image
-                          style:(AAAA_CSToastStyle_BBBB *)style;
+                          style:(SnappyThemeFill *)style;
 
 /**
  Hides the active toast. If there are multiple toasts active in a view, this method
@@ -209,16 +209,16 @@ extern const NSString * CSToastPositionBottom;
 @end
 
 /**
- `AAAA_CSToastStyle_BBBB` instances define the look and feel for toast views created via the 
+ `SnappyThemeFill` instances define the look and feel for toast views created via the 
  `makeToast:` methods as well for toast views created directly with
  `toastViewForMessage:title:image:style:`.
  
- @warning `AAAA_CSToastStyle_BBBB` offers relatively simple styling options for the default
+ @warning `SnappyThemeFill` offers relatively simple styling options for the default
  toast view. If you require a toast view with more complex UI, it probably makes more
  sense to create your own custom UIView subclass and present it with the `showToast:`
  methods.
  */
-@interface AAAA_CSToastStyle_BBBB : NSObject
+@interface SnappyThemeFill : NSObject
 
 /**
  The background color. Default is `[UIColor blackColor]` at 80% opacity.
@@ -339,41 +339,41 @@ extern const NSString * CSToastPositionBottom;
 @property (assign, nonatomic) NSTimeInterval fadeDuration;
 
 /**
- Creates a new instance of `AAAA_CSToastStyle_BBBB` with all the default values set.
+ Creates a new instance of `SnappyThemeFill` with all the default values set.
  */
 - (instancetype)initWithDefaultStyle NS_DESIGNATED_INITIALIZER;
 
 /**
  @warning Only the designated initializer should be used to create
- an instance of `AAAA_CSToastStyle_BBBB`.
+ an instance of `SnappyThemeFill`.
  */
 - (instancetype)init NS_UNAVAILABLE;
 
 @end
 
 /**
- `AAAA_CSToastManager_BBBB` provides general configuration options for all toast
+ `HandleOutlineBeneathWise` provides general configuration options for all toast
  notifications. Backed by a singleton instance.
  */
-@interface AAAA_CSToastManager_BBBB : NSObject
+@interface HandleOutlineBeneathWise : NSObject
 
 /**
  Sets the shared style on the singleton. The shared style is used whenever
  a `makeToast:` method (or `toastViewForMessage:title:image:style:`) is called
- with with a nil style. By default, this is set to `AAAA_CSToastStyle_BBBB`'s default
+ with with a nil style. By default, this is set to `SnappyThemeFill`'s default
  style.
  
  @param sharedStyle the shared style
  */
-+ (void)setSharedStyle:(AAAA_CSToastStyle_BBBB *)sharedStyle;
++ (void)setSharedStyle:(SnappyThemeFill *)sharedStyle;
 
 /**
  Gets the shared style from the singlton. By default, this is
- `AAAA_CSToastStyle_BBBB`'s default style.
+ `SnappyThemeFill`'s default style.
  
  @return the shared style
  */
-+ (AAAA_CSToastStyle_BBBB *)sharedStyle;
++ (SnappyThemeFill *)sharedStyle;
 
 /**
  Enables or disables tap to dismiss on toast views. Default is `YES`.

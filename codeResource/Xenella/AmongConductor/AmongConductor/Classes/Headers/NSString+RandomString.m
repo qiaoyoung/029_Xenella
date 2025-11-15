@@ -69,7 +69,7 @@ NSString * emptyString(NSString *anMaybeEmptyString) {
 }
 
 - (NSString *)user_localized {
-    NSString * result = [self nim_localizedWithTable:[AAAA_MyUserKit_BBBB sharedKit].languageTable];
+    NSString * result = [self nim_localizedWithTable:[TreatLayoutExotic sharedKit].languageTable];
     return result;
 //    return [self nim_localized];
 //    return NSLocalizedString(self, nil);
