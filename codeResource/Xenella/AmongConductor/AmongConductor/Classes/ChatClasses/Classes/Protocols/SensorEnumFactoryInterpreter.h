@@ -93,19 +93,19 @@ typedef NS_ENUM(NSInteger, StringCoreWealthy) {
 @protocol DelegateAnimateSpot <NSObject>
 
 //: - (id)value;
-- (id)verticalCommitGroup;
+- (id)value;
 
 //: - (NSString *)title;
-- (NSString *)go;
+- (NSString *)title;
 
 //: - (NSString *)img;
-- (NSString *)deletekick;
+- (NSString *)img;
 
 //: - (BOOL)selected;
-- (BOOL)opera;
+- (BOOL)selected;
 
 //: - (void)setSelected:(BOOL)selected;
-- (void)setOpera:(BOOL)selected;
+- (void)setSelected:(BOOL)selected;
 
 //: @end
 @end
@@ -114,45 +114,45 @@ typedef NS_ENUM(NSInteger, StringCoreWealthy) {
 @protocol ReferenceAgainst <NSObject>
 
 //: - (NSString *)title;
-- (NSString *)sumerestVideo;
+- (NSString *)title;
 
 //: - (id)value;
-- (id)primeValue;
+- (id)value;
 
 //: - (StringCoreWealthy)type;
-- (StringCoreWealthy)rangeField;
+- (StringCoreWealthy)type;
 
 //: - (CGFloat)rowHeight;
-- (CGFloat)conversationBackground;
+- (CGFloat)rowHeight;
 
 //: - (NIMTeamCardRowSelectedBlock)selectedBlock;
-- (NIMTeamCardRowSelectedBlock)entityPriorityBlock;
+- (NIMTeamCardRowSelectedBlock)selectedBlock;
 
 //: - (NSMutableArray <id <DelegateAnimateSpot>> *)optionItems;
-- (NSMutableArray <id <DelegateAnimateSpot>> *)shared;
+- (NSMutableArray <id <DelegateAnimateSpot>> *)optionItems;
 
 //: @optional
 @optional
 //: - (NSString *)subTitle;
-- (NSString *)subLocal;
+- (NSString *)subTitle;
 
 //: - (UIImage *)img;
-- (UIImage *)produce;
+- (UIImage *)img;
 
 //: - (SEL)action;
-- (SEL)voiceAction;
+- (SEL)action;
 
 //: - (BOOL)actionDisabled;
-- (BOOL)linksmanKick;
+- (BOOL)actionDisabled;
 
 //: - (BOOL)switchOn;
-- (BOOL)depth;
+- (BOOL)switchOn;
 
 //: - (NSInteger)identify;
-- (NSInteger)pic;
+- (NSInteger)identify;
 
 //: - (BOOL)disableUserInteraction;
-- (BOOL)space;
+- (BOOL)disableUserInteraction;
 
 //: @end
 @end

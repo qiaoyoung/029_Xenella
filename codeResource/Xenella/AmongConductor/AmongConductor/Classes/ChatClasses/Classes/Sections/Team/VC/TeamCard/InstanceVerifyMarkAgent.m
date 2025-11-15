@@ -278,18 +278,18 @@
     sep.hidden = (indexPath.row + 1 == [self.tableView numberOfRowsInSection:indexPath.section]);
 
     //: cell.textLabel.text = bodyData.title;
-    cell.textLabel.text = bodyData.sumerestVideo;
+    cell.textLabel.text = bodyData.title;
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor colorWithHexString:@"#2C3042"];
     cell.textLabel.textColor = [UIColor extra:[SlopPailData sharedInstance].coreExternalPileDiscoveryMessage];
     //: cell.imageView.image = bodyData.img;
-    cell.imageView.image = bodyData.produce;
+    cell.imageView.image = bodyData.img;
 
     //: cell.switcher.on = bodyData.switchOn;
-    cell.switcher.on = bodyData.depth;
+    cell.switcher.on = bodyData.switchOn;
     //: cell.identify = bodyData.identify;
-    cell.identify = bodyData.pic;
+    cell.identify = bodyData.identify;
 
     //: [self didBuildTeamSwitchCell:cell];
     [self personCell:cell];
@@ -371,7 +371,7 @@
     //: cell.button.style = DocumentPlatformDatasetterReliefUpdaterStyleRed;
     cell.button.style = DocumentPlatformDatasetterReliefUpdaterStyleRed;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.button setTitle:bodyData.sumerestVideo forState:UIControlStateNormal];
+    [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -383,7 +383,7 @@
     //: UITableViewCell * cell;
     UITableViewCell * cell;
     //: StringCoreWealthy type = bodyData.type;
-    StringCoreWealthy type = bodyData.rangeField;
+    StringCoreWealthy type = bodyData.type;
     //: switch (type) {
     switch (type) {
         //: case StringCoreWealthyCommon:
@@ -507,7 +507,7 @@
     //: cell.button.style = DocumentPlatformDatasetterReliefUpdaterStyleBlue;
     cell.button.style = DocumentPlatformDatasetterReliefUpdaterStyleBlue;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.button setTitle:bodyData.sumerestVideo forState:UIControlStateNormal];
+    [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -583,7 +583,7 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.sumerestVideo,bodyData.subLocal];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor blackColor];
@@ -592,7 +592,7 @@
 //    cell.imageView.image = bodyData.img;
 
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(linksmanKick)] && bodyData.linksmanKick) {
+    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
         //: cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
     //: }else{
@@ -701,9 +701,9 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.titleLabel.text = bodyData.title;
-    cell.titleLabel.text = bodyData.sumerestVideo;
+    cell.titleLabel.text = bodyData.title;
     //: cell.iconImageView.image = bodyData.img;
-    cell.iconImageView.image = bodyData.produce;
+    cell.iconImageView.image = bodyData.img;
 //    cell.contentLabel.text = bodyData.subTitle;
 //    if ([bodyData respondsToSelector:@selector(subTitle)]) {
 //        cell.contentLabel.text = bodyData.subTitle ?: LangKey(@"未设置");
@@ -761,7 +761,7 @@
     //: id<ReferenceAgainst> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<ReferenceAgainst> bodyData = [self apply:indexPath];
     //: return bodyData.rowHeight;
-    return bodyData.conversationBackground;
+    return bodyData.rowHeight;
 }
 
 //: #pragma mark - Private
@@ -1005,22 +1005,22 @@
     //: id<ReferenceAgainst> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<ReferenceAgainst> bodyData = [self apply:indexPath];
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(linksmanKick)] && bodyData.linksmanKick) {
+    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
         //: return;
         return;
     }
     //: if (bodyData.type == StringCoreWealthySelected) {
-    if (bodyData.rangeField == StringCoreWealthySelected) {
+    if (bodyData.type == StringCoreWealthySelected) {
         //: EnableSplitWithRefresh *vc = [EnableSplitWithRefresh instanceWithTitle:bodyData.title
-        EnableSplitWithRefresh *vc = [EnableSplitWithRefresh child:bodyData.sumerestVideo
+        EnableSplitWithRefresh *vc = [EnableSplitWithRefresh child:bodyData.title
                                                                                //: items:bodyData.optionItems
-                                                                               mainVisible:bodyData.shared
+                                                                               mainVisible:bodyData.optionItems
                                                                               //: result:^(id<DelegateAnimateSpot> _Nonnull item) {
                                                                               awaited:^(id<DelegateAnimateSpot> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
-              if (bodyData.entityPriorityBlock) {
+              if (bodyData.selectedBlock) {
                   //: bodyData.selectedBlock(item);
-                  bodyData.entityPriorityBlock(item);
+                  bodyData.selectedBlock(item);
               }
           //: }];
           }];
@@ -1029,13 +1029,13 @@
     //: } else {
     } else {
         //: if ([bodyData respondsToSelector:@selector(action)]) {
-        if ([bodyData respondsToSelector:@selector(voiceAction)]) {
+        if ([bodyData respondsToSelector:@selector(action)]) {
             //: if (bodyData.action) {
-            if (bodyData.voiceAction) {
+            if (bodyData.action) {
                 //: do {
                 do {
                 //: [self performSelector:bodyData.action];
-                [self performSelector:bodyData.voiceAction];
+                [self performSelector:bodyData.action];
                 //: } while (0);
                 } while (0);
             }

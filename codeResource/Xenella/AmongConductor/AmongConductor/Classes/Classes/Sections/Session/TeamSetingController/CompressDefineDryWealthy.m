@@ -1543,7 +1543,7 @@ RunConnectorFeatureInitialize,UponConnectStartDelegate,UINavigationControllerDel
     //: teamMute.selectedBlock = ^(id<DelegateAnimateSpot> item) {
     teamMute.selectedBlock = ^(id<DelegateAnimateSpot> item) {
         //: [weakSelf didUpdateTeamMute:[item.value integerValue]];
-        [weakSelf powerhouseMute:[item.verticalCommitGroup integerValue]];
+        [weakSelf powerhouseMute:[item.value integerValue]];
     //: };
     };
     //: teamMute.identify = MaterialArrayWithinMute;
@@ -1579,7 +1579,7 @@ RunConnectorFeatureInitialize,UponConnectStartDelegate,UINavigationControllerDel
     //: teamNotify.selectedBlock = ^(id<DelegateAnimateSpot> item) {
     teamNotify.selectedBlock = ^(id<DelegateAnimateSpot> item) {
         //: [weakSelf didUpdateNotifiyState:[item.value integerValue]];
-        [weakSelf refresh:[item.verticalCommitGroup integerValue]];
+        [weakSelf refresh:[item.value integerValue]];
     //: };
     };
     //: teamNotify.img = [UIImage imageNamed:@"ic_group_notice"];
@@ -1603,7 +1603,7 @@ RunConnectorFeatureInitialize,UponConnectStartDelegate,UINavigationControllerDel
     //: itemAuth.selectedBlock = ^(id<DelegateAnimateSpot> item) {
     itemAuth.selectedBlock = ^(id<DelegateAnimateSpot> item) {
         //: [weakSelf didupdateTeamJoinMode:[item.value integerValue]];
-        [weakSelf omission:[item.verticalCommitGroup integerValue]];
+        [weakSelf omission:[item.value integerValue]];
     //: };
     };
     //: itemAuth.img = [UIImage imageNamed:@"ic_identity_authentication"];
@@ -1626,7 +1626,7 @@ RunConnectorFeatureInitialize,UponConnectStartDelegate,UINavigationControllerDel
     //: itemInvite.selectedBlock = ^(id<DelegateAnimateSpot> item) {
     itemInvite.selectedBlock = ^(id<DelegateAnimateSpot> item) {
         //: [weakSelf didUpdateTeamInviteMode:[item.value integerValue]];
-        [weakSelf property:[item.verticalCommitGroup integerValue]];
+        [weakSelf property:[item.value integerValue]];
     //: };
     };
     //: itemInvite.img = [UIImage imageNamed:@"ic_invite"];
@@ -1649,7 +1649,7 @@ RunConnectorFeatureInitialize,UponConnectStartDelegate,UINavigationControllerDel
     //: itemUpdateInfo.selectedBlock = ^(id<DelegateAnimateSpot> item) {
     itemUpdateInfo.selectedBlock = ^(id<DelegateAnimateSpot> item) {
         //: [weakSelf didUpdateTeamInfoMode:[item.value integerValue]];
-        [weakSelf transferral:[item.verticalCommitGroup integerValue]];
+        [weakSelf transferral:[item.value integerValue]];
     //: };
     };
     //: itemUpdateInfo.img = [UIImage imageNamed:@"ic_modify"];
@@ -1672,7 +1672,7 @@ RunConnectorFeatureInitialize,UponConnectStartDelegate,UINavigationControllerDel
     //: itemBeInvite.selectedBlock = ^(id<DelegateAnimateSpot> item) {
     itemBeInvite.selectedBlock = ^(id<DelegateAnimateSpot> item) {
         //: [weakSelf didUpdateTeamBeInviteMode:[item.value integerValue]];
-        [weakSelf microscopical:[item.verticalCommitGroup integerValue]];
+        [weakSelf microscopical:[item.value integerValue]];
     //: };
     };
     //: itemBeInvite.img = [UIImage imageNamed:@"ic_invitee_verification"];

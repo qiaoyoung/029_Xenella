@@ -137,7 +137,7 @@ Byte coreSealPage[] = {69, 7, 11, 11, 158, 167, 147, 244, 156, 76, 203, 46, 81, 
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
-        [obj setOpera:selected];
+        [obj setSelected:selected];
     //: }];
     }];
     //: [self.tableView reloadData];
@@ -163,7 +163,7 @@ Byte coreSealPage[] = {69, 7, 11, 11, 158, 167, 147, 244, 156, 76, 203, 46, 81, 
         //: [items enumerateObjectsUsingBlock:^(id<DelegateAnimateSpot> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items enumerateObjectsUsingBlock:^(id<DelegateAnimateSpot> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
-            if (obj.opera) {
+            if (obj.selected) {
                 //: weakSelf.selectedIndex = idx;
                 weakSelf.selectedIndex = idx;
             }
@@ -244,11 +244,11 @@ Byte coreSealPage[] = {69, 7, 11, 11, 158, 167, 147, 244, 156, 76, 203, 46, 81, 
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
-    cell.iconImageView.image = [UIImage imageNamed:bodyData.deletekick];
+    cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
     //: cell.titleLabel.text = bodyData.title;
-    cell.titleLabel.text = bodyData.go;
+    cell.titleLabel.text = bodyData.title;
     //: cell.arrowsImageView.hidden = ![bodyData selected];
-    cell.arrowsImageView.hidden = ![bodyData opera];
+    cell.arrowsImageView.hidden = ![bodyData selected];
 
     //: return cell;
     return cell;
