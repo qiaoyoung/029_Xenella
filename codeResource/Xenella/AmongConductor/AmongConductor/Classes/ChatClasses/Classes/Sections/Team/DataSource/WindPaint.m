@@ -280,7 +280,7 @@
 @property (nonatomic, strong) NIMTeamMember *myTeamInfo;
 
 //: @property (nonatomic, strong) NIMSession *session;
-@property (nonatomic, strong) NIMSession *session;
+@property (nonatomic, strong) NIMSession *pass;
 
 //: @end
 @end
@@ -1209,7 +1209,7 @@
         //: _team = team;
         _team = team;
         //: _session = session;
-        _session = session;
+        _pass = session;
         //: if (team.type == NIMTeamTypeSuper) {
         if (team.type == NIMTeamTypeSuper) {
             //: [[NIMSDK sharedSDK].superTeamManager addDelegate:self];
