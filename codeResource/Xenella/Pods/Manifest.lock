@@ -1,11 +1,5 @@
 PODS:
-  - FLAnimatedImage (1.0.17)
-  - FMDB (2.7.12):
-    - FMDB/standard (= 2.7.12)
-  - FMDB/Core (2.7.12)
-  - FMDB/standard (2.7.12):
-    - FMDB/Core
-  - HolisticSaver (1.0.0):
+  - AmongConductor (1.0.0):
     - FMDB
     - Masonry
     - MJRefresh
@@ -20,6 +14,12 @@ PODS:
     - YYImage/WebP
     - YYModel
     - YYText
+  - FLAnimatedImage (1.0.17)
+  - FMDB (2.7.12):
+    - FMDB/standard (= 2.7.12)
+  - FMDB/Core (2.7.12)
+  - FMDB/standard (2.7.12):
+    - FMDB/Core
   - Masonry (1.1.0)
   - MJRefresh (3.7.9)
   - NIMSDK_LITE (9.20.14):
@@ -51,7 +51,7 @@ PODS:
   - YYText (1.0.7)
 
 DEPENDENCIES:
-  - HolisticSaver (from `HolisticSaver`)
+  - AmongConductor (from `AmongConductor`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -72,13 +72,13 @@ SPEC REPOS:
     - YYText
 
 EXTERNAL SOURCES:
-  HolisticSaver:
-    :path: HolisticSaver
+  AmongConductor:
+    :path: AmongConductor
 
 SPEC CHECKSUMS:
+  AmongConductor: c33f0e01c0ff06f44d209eb031f4924603966d39
   FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
   FMDB: 728731dd336af3936ce00f91d9d8495f5718a0e6
-  HolisticSaver: 75bdaad3d6789786702e825904064fb67ed79764
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
   NIMSDK_LITE: 446480c6be86c43d71421b5564911a8e9a936a34
@@ -93,6 +93,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 35ecfa133baa1b152f8bc68e5ca4795678126677
+PODFILE CHECKSUM: 47c8b411e0b82f64bd8b7458fe9e7c3c6b884c67
 
 COCOAPODS: 1.16.2
