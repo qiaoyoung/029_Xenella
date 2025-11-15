@@ -1,6 +1,0 @@
-framework module AmongConductor {
-  umbrella header "AmongConductor-umbrella.h"
-
-  export *
-  module * { export * }
-}
