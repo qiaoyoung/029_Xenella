@@ -209,7 +209,7 @@ API_AVAILABLE(ios(13.0), tvos(13.0));
 
 /** 设置 系统界面样式 -> 格式: .LeeUserInterfaceStyle(UIUserInterfaceStyleUnspecified) */
 //: @property (nonatomic, copy, readonly) LEEConfigToUserInterfaceStyle LeeUserInterfaceStyle API_AVAILABLE(ios(13.0), tvos(13.0));
-@property (nonatomic, copy, readonly) LEEConfigToUserInterfaceStyle LeeUserInterfaceStyle
+@property (nonatomic, copy, readonly) LEEConfigToUserInterfaceStyle LeeUserInterfaceStyle;
 /** 设置 颜色 -> 格式: .LeeHeaderColor(UIColor) */
 //: @property (nonatomic, copy, readonly) LEEConfigToColor LeeHeaderColor;
 @property (nonatomic, copy, readonly) LEEConfigToColor LeeHeaderColor;

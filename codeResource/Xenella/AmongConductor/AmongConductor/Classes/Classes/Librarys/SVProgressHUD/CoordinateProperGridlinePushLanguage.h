@@ -112,7 +112,7 @@ typedef void (^CoordinateProperGridlinePushLanguageDismissCompletion)(void);
 /// Color for the background layer behind the HUD.
 /// @discussion Default: [UIColor colorWithWhite:0 alpha:0.4].
 //: @property (strong, nonatomic, nonnull) UIColor *backgroundLayerColor __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIColor *backgroundLayerColor /// Offset from the center position, can be used to adjust the HUD position.
+@property (strong, nonatomic, nonnull) UIColor *backgroundLayerColor; /// Offset from the center position, can be used to adjust the HUD position.
 /// @discussion Default: 0, 0.
 //: @property (assign, nonatomic) UIOffset offsetFromCenter __attribute__((annotate("ui_appearance_selector")));
 @property (assign, nonatomic) UIOffset offsetFromCenter
@@ -153,7 +153,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Radius of the ring shown in the HUD when there's associated text.
 /// @discussion Default: 18 pt.
 //: @property (assign, nonatomic) CGFloat ringRadius __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGFloat ringRadius /// The maximum amount of time in seconds the HUD will display.
+@property (assign, nonatomic) CGFloat ringRadius; /// The maximum amount of time in seconds the HUD will display.
 /// @discussion Default: CGFLOAT_MAX.
 //: @property (assign, nonatomic) NSTimeInterval maximumDismissTimeInterval;
 @property (assign, nonatomic) NSTimeInterval maximumDismissTimeInterval;
@@ -176,7 +176,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// The image displayed when showing error messages.
 /// @discussion Default: xmark from SF Symbols (iOS 13+) or the bundled error image provided by Freepik.
 //: @property (strong, nonatomic, nonnull) UIImage *errorImage __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIImage *errorImage /// Indicates if motion effects should be applied to the HUD.
+@property (strong, nonatomic, nonnull) UIImage *errorImage; /// Indicates if motion effects should be applied to the HUD.
 /// @discussion Default: YES.
 //: @property (assign, nonatomic) BOOL motionEffectEnabled;
 @property (assign, nonatomic) BOOL motionEffectEnabled;
@@ -237,7 +237,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Indicates whether images within the HUD should be tinted.
 /// @discussion Default: YES.
 //: @property (assign, nonatomic) BOOL shouldTintImages __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) BOOL shouldTintImages
+@property (assign, nonatomic) BOOL shouldTintImages;
 /// The minimum amount of time in seconds the HUD will display.
 /// @discussion Default: 5.0 seconds.
 //: @property (assign, nonatomic) NSTimeInterval minimumDismissTimeInterval;

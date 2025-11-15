@@ -30,5 +30,8 @@
 //: @interface UIScrollView (RegisterAccelerateHumbleAttach)
 @interface UIScrollView (RegisterAccelerateHumbleAttach)
 
+@property (nonatomic, assign) UIScrollViewContentInsetAdjustmentBehavior listingPriority NS_AVAILABLE_IOS(11_0);
+@property (nonatomic, assign) BOOL gravityUnit NS_AVAILABLE_IOS(11_0);
+
 //: @end
 @end

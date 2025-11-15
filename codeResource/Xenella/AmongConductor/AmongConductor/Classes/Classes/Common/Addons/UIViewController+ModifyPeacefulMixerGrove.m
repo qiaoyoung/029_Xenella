@@ -127,7 +127,7 @@ Byte kNearName[] = {75, 11, 9, 213, 186, 18, 66, 177, 194, 114, 97, 66, 114, 97,
     //: if ([self respondsToSelector:sel]) {
     if ([self respondsToSelector:sel]) {
         //: SuppressPerformSelectorLeakWarning(use = (BOOL)[self performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[self performSelector:sel]);
+        use = (BOOL)[self performSelector:sel];
     }
     //: return use;
     return use;

@@ -18,51 +18,33 @@
 
 
 
-//: @implementation AppDelegate
 @implementation AppDelegate
 
-//: #pragma mark - ApplicationDelegate
 #pragma mark - ApplicationDelegate
-//: - (void)applicationDidBecomeActive:(UIApplication *)application {
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    //: [[FolderThroughout sharedInstance] applicationDidBecomeActive:application];
-    [[FolderThroughout sharedInstance] applicationDidBecomeActive:application];
+    [[FolderThroughout previous] executed:application];
 }
 
-//: - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [GeneratedPluginRegistrant registerWithRegistry:self];
-    //: [[FolderThroughout sharedInstance] initDelegateWithWindow:self.window];
-    [[FolderThroughout sharedInstance] initDelegateWithWindow:self.window];
-    //: return YES;
+    [[FolderThroughout previous] initCycle:self.window];
     return YES;
 }
 
-//: #pragma mark - openURL
 #pragma mark - openURL
-//: - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    //: return YES;
     return YES;
 }
 
-//: - (void)applicationDidEnterBackground:(UIApplication *)application {
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    //: [[FolderThroughout sharedInstance] applicationDidEnterBackground:application];
-    [[FolderThroughout sharedInstance] applicationDidEnterBackground:application];
+    [[FolderThroughout previous] takeWaterDown:application];
 }
-
-//: - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
+ 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
-    //: return YES;
     return YES;
 }
-
-//: - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+ 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    //: [[FolderThroughout sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-    [[FolderThroughout sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [[FolderThroughout previous] registerProperty:app index:deviceToken];
 }
 
-//: @end
 @end

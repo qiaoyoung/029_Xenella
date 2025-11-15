@@ -364,7 +364,7 @@
 //: - (void)rightButtonClicked:(id)sender{
 - (void)beyondSnap:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = waftRadio(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(errorFire)]) {
         //: [self.delegate dismissDataPickerView];
@@ -399,7 +399,7 @@
 //: - (void)leftButtonClicked:(id)sender{
 - (void)graces:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = waftRadio(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(errorFire)]) {
         //: [self.delegate dismissDataPickerView];
@@ -582,7 +582,7 @@
     //: self.delegate = delegate;
     self.delegate = delegate;
     //: delegateClass = object_getClass(delegate);
-    delegateClass = waftRadio(delegate);
+    delegateClass = object_getClass(delegate);
 }
 
 //: - (void)show{

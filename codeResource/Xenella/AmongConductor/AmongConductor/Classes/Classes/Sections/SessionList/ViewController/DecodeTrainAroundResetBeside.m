@@ -236,7 +236,7 @@ Byte featureFieldAlert[] = {44, 12, 24, 10, 179, 22, 109, 33, 245, 107, 129, 123
 //: @interface DecodeTrainAroundResetBeside ()<NIMLoginManagerDelegate,TallRemoveTabviewTheoryDelegate,NIMEventSubscribeManagerDelegate,UIViewControllerPreviewingDelegate,NIMChatExtendManagerDelegate, NIMConversationManagerDelegate,OpalWorkflowAnimatorElevateDelegate,NIMSystemNotificationManagerDelegate>
 @interface DecodeTrainAroundResetBeside ()<NIMLoginManagerDelegate,TallRemoveTabviewTheoryDelegate,NIMEventSubscribeManagerDelegate,UIViewControllerPreviewingDelegate,NIMChatExtendManagerDelegate, NIMConversationManagerDelegate,OpalWorkflowAnimatorElevateDelegate,NIMSystemNotificationManagerDelegate>
 
-@property (nonatomic, strong) IconReleaseInfinityView *dropdownMenu//: @property (nonatomic, strong) SpeakRelayNavigateEvent *loadingView;
+@property (nonatomic, strong) IconReleaseInfinityView *dropdownMenu;//: @property (nonatomic, strong) SpeakRelayNavigateEvent *loadingView;
 @property (nonatomic, strong) SpeakRelayNavigateEvent *loadingView;
 //: @property (nonatomic,strong) TallRemoveTabviewTheory *header;
 @property (nonatomic,strong) TallRemoveTabviewTheory *header;

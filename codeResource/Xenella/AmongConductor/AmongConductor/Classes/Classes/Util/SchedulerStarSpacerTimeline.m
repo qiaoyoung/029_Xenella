@@ -121,7 +121,7 @@ static void approachCompletion(SystemSoundID soundID, void *data)
         //: SEL selector = NSSelectorFromString(@"vibrate");
         SEL selector = NSSelectorFromString([ImpairerData sharedInstance].featureHintPreference);
         //: SuppressPerformSelectorLeakWarning([(SchedulerStarSpacerTimeline *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
-        SuppressPerformSelectorLeakWarning([(SchedulerStarSpacerTimeline *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+        ([(SchedulerStarSpacerTimeline *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
     }
 }
 

@@ -258,7 +258,7 @@ API_AVAILABLE(ios(13.0), tvos(13.0));
 //: @property (nonatomic, assign) CornerRadii modelCornerRadii;
 @property (nonatomic, assign) CornerRadii modelCornerRadii;
 //: @property (nonatomic, assign) UIUserInterfaceStyle modelUserInterfaceStyle API_AVAILABLE(ios(13.0), tvos(13.0));
-@property (nonatomic, assign) UIUserInterfaceStyle modelUserInterfaceStyle//: @property (nonatomic, copy) BOOL (^modelShouldClose)(void);
+@property (nonatomic, assign) UIUserInterfaceStyle modelUserInterfaceStyle;//: @property (nonatomic, copy) BOOL (^modelShouldClose)(void);
 @property (nonatomic, copy) BOOL (^modelShouldClose)(void);
 //: @property (nonatomic, assign) LEEBackgroundStyle modelBackgroundStyle;
 @property (nonatomic, assign) LEEBackgroundStyle modelBackgroundStyle;

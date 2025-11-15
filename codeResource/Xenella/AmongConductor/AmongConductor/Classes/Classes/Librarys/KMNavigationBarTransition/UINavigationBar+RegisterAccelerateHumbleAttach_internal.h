@@ -33,5 +33,6 @@
 //: @property (nonatomic, assign) BOOL km_isFakeBar;
 @property (nonatomic, assign) BOOL km_isFakeBar;
 
+@property(nonatomic, assign) BOOL gravityUnit;
 //: @end
 @end

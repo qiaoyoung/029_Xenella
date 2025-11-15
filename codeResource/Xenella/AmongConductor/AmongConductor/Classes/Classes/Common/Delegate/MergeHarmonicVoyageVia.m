@@ -76,7 +76,7 @@ Byte moduleWeatherPlatform[] = {52, 11, 59, 13, 137, 239, 42, 85, 1, 28, 157, 75
     //: if ([vc respondsToSelector:sel]) {
     if ([vc respondsToSelector:sel]) {
         //: SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
+        use = (BOOL)[vc performSelector:sel];
     }
     //: return use;
     return use;
@@ -180,7 +180,7 @@ Byte moduleWeatherPlatform[] = {52, 11, 59, 13, 137, 239, 42, 85, 1, 28, 157, 75
     //: if ([vc respondsToSelector:sel]) {
     if ([vc respondsToSelector:sel]) {
         //: SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
+        use = (BOOL)[vc performSelector:sel];
     }
     //: return use;
     return use;

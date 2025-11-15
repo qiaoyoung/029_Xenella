@@ -33,7 +33,7 @@ NS_AVAILABLE_IOS(8_0);// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) IBInspectable UIColor *tintColor; 
 @property (nonatomic) IBInspectable UIColor *tintColor;// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) UIBlurEffect *blurEffect NS_AVAILABLE_IOS(8_0); 
-@property (nonatomic) UIBlurEffect *blurEffect
+@property (nonatomic) UIBlurEffect *blurEffect;
 //: @property (nonatomic) IBInspectable BOOL indeterminate;
 @property (nonatomic) IBInspectable BOOL indeterminate;
 //: @property (nonatomic, copy) void(^animationDidStopBlock)();

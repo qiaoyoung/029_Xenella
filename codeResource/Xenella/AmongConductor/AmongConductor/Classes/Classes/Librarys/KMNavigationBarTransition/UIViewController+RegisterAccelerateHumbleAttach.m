@@ -49,6 +49,7 @@ Byte componentGalVirtuePeaText[] = {33, 15, 22, 13, 228, 125, 141, 79, 157, 42, 
 #import <objc/runtime.h>
 //: #import "DriverBulkySolutionLotus.h"
 #import "DriverBulkySolutionLotus.h"
+#import "UIScrollView+RegisterAccelerateHumbleAttach.h"
 
 //: @implementation UIViewController (RegisterAccelerateHumbleAttach)
 @implementation UIViewController (RegisterAccelerateHumbleAttach)
@@ -114,11 +115,11 @@ Byte componentGalVirtuePeaText[] = {33, 15, 22, 13, 228, 125, 141, 79, 157, 42, 
         //: if (scrollView) {
         if (scrollView) {
             //: if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
-            if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
+            if (scrollView.gravityUnit) {
                 //: scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
-                scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
+                scrollView.contentInsetAdjustmentBehavior = scrollView.listingPriority;
                 //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
-                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
+                scrollView.gravityUnit = NO;
             }
         }
     }
@@ -374,11 +375,11 @@ Byte componentGalVirtuePeaText[] = {33, 15, 22, 13, 228, 125, 141, 79, 157, 42, 
             //: if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
             if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
                 //: scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
-                scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
+                scrollView.listingPriority = contentInsetAdjustmentBehavior;
                 //: scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
                 scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
                 //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
-                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
+                scrollView.gravityUnit = YES;
             }
         }
     }
