@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AcrossEnableVector.h
 //  fanxingxue
@@ -6,24 +8,38 @@
 //  Copyright © 2018年 caoyu. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface AcrossEnableVector : NSObject
 @interface AcrossEnableVector : NSObject
-+(BOOL)isLogin;
-+ (void)refrushNewData;
-+ (NSString *)getUserId;
+//: + (void)callSevicePhoneNumber;
++ (void)dittyBag;
+//: + (void)logout;
++ (void)exist;
+//: + (void)saveUserInfo:(id)responseObject;
++ (void)accountInfo:(id)responseObject;
 
-+ (NSString *)getHeaderImageUrl;
-+ (NSString *)getNickName;
-
-
-+ (void)callSevicePhoneNumber;
-+ (NSString *)getMobileNumber;
-
-+ (void)saveUserInfo:(id)responseObject;
-+ (void)logout;
+//: + (NSString *)getUserId;
++ (NSString *)outsideOrientationTotal;
+//: + (void)refrushNewData;
++ (void)betweenAssociate;
 
 
-+ (NSString *)getLocaleString;
+//: +(BOOL)isLogin;
++(BOOL)field;
+//: + (NSString *)getLocaleString;
++ (NSString *)cord;
 
+//: + (NSString *)getMobileNumber;
++ (NSString *)ratioEnable;
+//: + (NSString *)getNickName;
++ (NSString *)oddKind;
+
+
+//: + (NSString *)getHeaderImageUrl;
++ (NSString *)stick;
+
+//: @end
 @end

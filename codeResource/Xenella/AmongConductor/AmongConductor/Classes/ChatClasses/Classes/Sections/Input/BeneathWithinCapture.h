@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMInputAtManager.h
 // TreatLayoutExotic
@@ -6,31 +8,42 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define NIMInputAtStartChar  @"@"
-#define NIMInputAtEndChar    @"\u2004"
-
+//: @interface SeasonalDuneTerminalTo : NSObject
 @interface SeasonalDuneTerminalTo : NSObject
 
-@property (nonatomic,copy) NSString *name;
-
+//: @property (nonatomic,copy) NSString *uid;
 @property (nonatomic,copy) NSString *uid;
 
+//: @property (nonatomic,assign) NSRange range;
 @property (nonatomic,assign) NSRange range;
 
+//: @property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *name;
+
+//: @end
 @end
 
+//: @interface BeneathWithinCapture : NSObject
 @interface BeneathWithinCapture : NSObject
 
-- (NSArray *)allAtUid:(NSString *)sendText;
+//: - (void)clean;
+- (void)colorClean;
 
-- (void)clean;
+//: - (NSArray *)allAtUid:(NSString *)sendText;
+- (NSArray *)atUid:(NSString *)sendText;
 
-- (void)addAtItem:(SeasonalDuneTerminalTo *)item;
+//: - (SeasonalDuneTerminalTo *)removeName:(NSString *)name;
+- (SeasonalDuneTerminalTo *)remove:(NSString *)name;
 
-- (SeasonalDuneTerminalTo *)item:(NSString *)name;
+//: - (void)addAtItem:(SeasonalDuneTerminalTo *)item;
+- (void)path:(SeasonalDuneTerminalTo *)item;
 
-- (SeasonalDuneTerminalTo *)removeName:(NSString *)name;
+//: - (SeasonalDuneTerminalTo *)item:(NSString *)name;
+- (SeasonalDuneTerminalTo *)distance:(NSString *)name;
 
+//: @end
 @end

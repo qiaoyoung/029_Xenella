@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIScrollView+PackUniqueYieldProvision.m
 //  https://github.com/hackiftekhar/CrestlineRationalFormatterRestore
@@ -21,75 +23,107 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
-
+//: #import "UIScrollView+PackUniqueYieldProvision.h"
 #import "UIScrollView+PackUniqueYieldProvision.h"
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation UIScrollView (PackUniqueYieldProvision)
 @implementation UIScrollView (PackUniqueYieldProvision)
 
--(void)setShouldIgnoreScrollingAdjustment:(BOOL)shouldIgnoreScrollingAdjustment
-{
-    objc_setAssociatedObject(self, @selector(shouldIgnoreScrollingAdjustment), @(shouldIgnoreScrollingAdjustment), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
+//: -(BOOL)shouldIgnoreScrollingAdjustment
 -(BOOL)shouldIgnoreScrollingAdjustment
 {
+    //: NSNumber *shouldIgnoreScrollingAdjustment = objc_getAssociatedObject(self, @selector(shouldIgnoreScrollingAdjustment));
     NSNumber *shouldIgnoreScrollingAdjustment = objc_getAssociatedObject(self, @selector(shouldIgnoreScrollingAdjustment));
-    
+
+    //: return [shouldIgnoreScrollingAdjustment boolValue];
     return [shouldIgnoreScrollingAdjustment boolValue];
 }
 
--(void)setShouldIgnoreContentInsetAdjustment:(BOOL)shouldIgnoreContentInsetAdjustment
+//: -(void)setShouldIgnoreScrollingAdjustment:(BOOL)shouldIgnoreScrollingAdjustment
+-(void)setShouldIgnoreScrollingAdjustment:(BOOL)shouldIgnoreScrollingAdjustment
 {
-    objc_setAssociatedObject(self, @selector(shouldIgnoreContentInsetAdjustment), @(shouldIgnoreContentInsetAdjustment), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    //: objc_setAssociatedObject(self, @selector(shouldIgnoreScrollingAdjustment), @(shouldIgnoreScrollingAdjustment), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(shouldIgnoreScrollingAdjustment), @(shouldIgnoreScrollingAdjustment), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(BOOL)shouldIgnoreContentInsetAdjustment
-{
-    NSNumber *shouldIgnoreContentInsetAdjustment = objc_getAssociatedObject(self, @selector(shouldIgnoreContentInsetAdjustment));
-    
-    return [shouldIgnoreContentInsetAdjustment boolValue];
-}
-
+//: -(void)setShouldRestoreScrollViewContentOffset:(BOOL)shouldRestoreScrollViewContentOffset
 -(void)setShouldRestoreScrollViewContentOffset:(BOOL)shouldRestoreScrollViewContentOffset
 {
+    //: objc_setAssociatedObject(self, @selector(shouldRestoreScrollViewContentOffset), @(shouldRestoreScrollViewContentOffset), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, @selector(shouldRestoreScrollViewContentOffset), @(shouldRestoreScrollViewContentOffset), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+//: -(BOOL)shouldIgnoreContentInsetAdjustment
+-(BOOL)shouldIgnoreContentInsetAdjustment
+{
+    //: NSNumber *shouldIgnoreContentInsetAdjustment = objc_getAssociatedObject(self, @selector(shouldIgnoreContentInsetAdjustment));
+    NSNumber *shouldIgnoreContentInsetAdjustment = objc_getAssociatedObject(self, @selector(shouldIgnoreContentInsetAdjustment));
+
+    //: return [shouldIgnoreContentInsetAdjustment boolValue];
+    return [shouldIgnoreContentInsetAdjustment boolValue];
+}
+
+//: -(BOOL)shouldRestoreScrollViewContentOffset
 -(BOOL)shouldRestoreScrollViewContentOffset
 {
+    //: NSNumber *shouldRestoreScrollViewContentOffset = objc_getAssociatedObject(self, @selector(shouldRestoreScrollViewContentOffset));
     NSNumber *shouldRestoreScrollViewContentOffset = objc_getAssociatedObject(self, @selector(shouldRestoreScrollViewContentOffset));
-    
+
+    //: return [shouldRestoreScrollViewContentOffset boolValue];
     return [shouldRestoreScrollViewContentOffset boolValue];
 }
 
+//: -(void)setShouldIgnoreContentInsetAdjustment:(BOOL)shouldIgnoreContentInsetAdjustment
+-(void)setShouldIgnoreContentInsetAdjustment:(BOOL)shouldIgnoreContentInsetAdjustment
+{
+    //: objc_setAssociatedObject(self, @selector(shouldIgnoreContentInsetAdjustment), @(shouldIgnoreContentInsetAdjustment), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(shouldIgnoreContentInsetAdjustment), @(shouldIgnoreContentInsetAdjustment), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: @end
 @end
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation UITableView (RotateBesideMighty)
 @implementation UITableView (RotateBesideMighty)
 
--(nullable NSIndexPath*)previousIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath
+//: -(nullable NSIndexPath*)previousIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath
+-(nullable NSIndexPath*)memberNumberro:(nonnull NSIndexPath*)indexPath
 {
+    //: NSInteger previousRow = indexPath.row - 1;
     NSInteger previousRow = indexPath.row - 1;
+    //: NSInteger previousSection = indexPath.section;
     NSInteger previousSection = indexPath.section;
-    
+
     //Fixing indexPath
+    //: if (previousRow < 0)
     if (previousRow < 0)
     {
+        //: previousSection -= 1;
         previousSection -= 1;
-        
+
+        //: if (previousSection >= 0)
         if (previousSection >= 0)
         {
+            //: previousRow = [self numberOfRowsInSection:previousSection]-1;
             previousRow = [self numberOfRowsInSection:previousSection]-1;
         }
     }
-    
+
+    //: if (previousRow >= 0 && previousSection >= 0)
     if (previousRow >= 0 && previousSection >= 0)
     {
+        //: return [NSIndexPath indexPathForRow:previousRow inSection:previousSection];
         return [NSIndexPath indexPathForRow:previousRow inSection:previousSection];
     }
-    
+
+    //: return nil;
     return nil;
 }
 
@@ -113,32 +147,45 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 //    return nil;
 //}
 //
+//: @end
 @end
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation UICollectionView (RotateBesideMighty)
 @implementation UICollectionView (RotateBesideMighty)
 
--(nullable NSIndexPath*)previousIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath
+//: -(nullable NSIndexPath*)previousIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath
+-(nullable NSIndexPath*)priorityOff:(nonnull NSIndexPath*)indexPath
 {
+    //: NSInteger previousRow = indexPath.row - 1;
     NSInteger previousRow = indexPath.row - 1;
+    //: NSInteger previousSection = indexPath.section;
     NSInteger previousSection = indexPath.section;
-    
+
     //Fixing indexPath
+    //: if (previousRow < 0)
     if (previousRow < 0)
     {
+        //: previousSection -= 1;
         previousSection -= 1;
-        
+
+        //: if (previousSection >= 0)
         if (previousSection >= 0)
         {
+            //: previousRow = [self numberOfItemsInSection:previousSection]-1;
             previousRow = [self numberOfItemsInSection:previousSection]-1;
         }
     }
-    
+
+    //: if (previousRow >= 0 && previousSection >= 0)
     if (previousRow >= 0 && previousSection >= 0)
     {
+        //: return [NSIndexPath indexPathForItem:previousRow inSection:previousSection];
         return [NSIndexPath indexPathForItem:previousRow inSection:previousSection];
     }
-    
+
+    //: return nil;
     return nil;
 }
 
@@ -162,4 +209,5 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 //    return nil;
 //}
 
+//: @end
 @end

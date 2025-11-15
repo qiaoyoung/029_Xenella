@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  HavenOpenLattice.h
 //  NIM
@@ -6,40 +8,64 @@
 //  Copyright © 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: typedef NS_ENUM(NSUInteger,HavenOpenLatticeNetworkType) {
 typedef NS_ENUM(NSUInteger,HavenOpenLatticeNetworkType) {
+    //: HavenOpenLatticeNetworkTypeUnknown,
     HavenOpenLatticeNetworkTypeUnknown,
+    //: HavenOpenLatticeNetworkTypeWifi,
     HavenOpenLatticeNetworkTypeWifi,
+    //: HavenOpenLatticeNetworkTypeWwan,
     HavenOpenLatticeNetworkTypeWwan,
+    //: HavenOpenLatticeNetworkType2G,
     HavenOpenLatticeNetworkType2G,
+    //: HavenOpenLatticeNetworkType3G,
     HavenOpenLatticeNetworkType3G,
+    //: HavenOpenLatticeNetworkType4G,
     HavenOpenLatticeNetworkType4G,
+//: };
 };
 
+//: @interface HavenOpenLattice : NSObject
 @interface HavenOpenLattice : NSObject
 
-+ (HavenOpenLattice *)currentDevice;
-
 //图片/音频推荐参数
-- (CGFloat)suggestImagePixels;
+//: - (CGFloat)suggestImagePixels;
+- (CGFloat)eventEqual;
 
-- (CGFloat)compressQuality;
+//: - (HavenOpenLatticeNetworkType)currentNetworkType;
+- (HavenOpenLatticeNetworkType)compositionBorder;
 
 //App状态
-- (BOOL)isUsingWifi;
-- (BOOL)isInBackground;
+//: - (BOOL)isUsingWifi;
+- (BOOL)under;
 
-- (HavenOpenLatticeNetworkType)currentNetworkType;
-- (NSString *)networkStatus:(HavenOpenLatticeNetworkType)networkType;
+//: - (NSInteger)cpuCount;
+- (NSInteger)creation;
+//: - (CGFloat)compressQuality;
+- (CGFloat)recognize;
 
-- (NSInteger)cpuCount;
+//: - (BOOL)isInBackground;
+- (BOOL)transfer;
+//: - (NSString *)networkStatus:(HavenOpenLatticeNetworkType)networkType;
+- (NSString *)challenge:(HavenOpenLatticeNetworkType)networkType;
 
-- (BOOL)isLowDevice;
-- (BOOL)isIphone;
-- (NSString *)machineName;
+//: - (BOOL)isLowDevice;
+- (BOOL)player;
+
+//: - (NSString *)machineName;
+- (NSString *)root;
+//: - (BOOL)isIphone;
+- (BOOL)need;
+//: - (CGFloat)statusBarHeight;
+- (CGFloat)statement;
 
 
-- (CGFloat)statusBarHeight;
+//: + (HavenOpenLattice *)currentDevice;
++ (HavenOpenLattice *)currentDeviceDrop;
 
+//: @end
 @end

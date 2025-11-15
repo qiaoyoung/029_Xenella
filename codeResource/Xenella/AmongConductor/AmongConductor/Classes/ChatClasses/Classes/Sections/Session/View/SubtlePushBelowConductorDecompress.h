@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  USERSessionTipCell.h
 //  NIMDemo
@@ -6,16 +8,26 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import "ConductorSearchSelect.h"
 #import "ConductorSearchSelect.h"
+
+//: @class StructureDurableMatchGuidebookCalm;
 @class StructureDurableMatchGuidebookCalm;
 
+//: @interface SubtlePushBelowConductorDecompress : UITableViewCell
 @interface SubtlePushBelowConductorDecompress : UITableViewCell
 
+//: @property (strong, nonatomic) UIImageView *timeBGView;
 @property (strong, nonatomic) UIImageView *timeBGView;
 
+//: @property (strong, nonatomic) UILabel *timeLabel;
 @property (strong, nonatomic) UILabel *timeLabel;
 
-- (void)refreshData:(StructureDurableMatchGuidebookCalm *)data;
+//: - (void)refreshData:(StructureDurableMatchGuidebookCalm *)data;
+- (void)soberUp:(StructureDurableMatchGuidebookCalm *)data;
 
+//: @end
 @end

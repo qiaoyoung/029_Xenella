@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CrestlineRationalFormatterRestoreConstants.h
 //  https://github.com/hackiftekhar/CrestlineRationalFormatterRestore
@@ -20,15 +22,13 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
-#ifndef CrestlineRationalFormatterRestoreConstants_h
-#define CrestlineRationalFormatterRestoreConstants_h
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
 ///-----------------------------------
 /// @name DuringLuckyFrameParadiseManageBehavior
 ///-----------------------------------
+
+// __M_A_C_R_O__
 
 /**
  `DuringLuckyFrameParadiseBySubviews`
@@ -40,10 +40,15 @@
  `DuringLuckyFrameParadiseByPosition`
  Creates Toolbar according to the y,x position of textField in it's superview coordinate.
  */
+//: typedef NS_ENUM(NSInteger, DuringLuckyFrameParadiseManageBehavior) {
 typedef NS_ENUM(NSInteger, DuringLuckyFrameParadiseManageBehavior) {
+    //: DuringLuckyFrameParadiseBySubviews,
     DuringLuckyFrameParadiseBySubviews,
+    //: DuringLuckyFrameParadiseByTag,
     DuringLuckyFrameParadiseByTag,
+    //: DuringLuckyFrameParadiseByPosition,
     DuringLuckyFrameParadiseByPosition,
+//: };
 };
 
 /**
@@ -56,10 +61,15 @@ typedef NS_ENUM(NSInteger, DuringLuckyFrameParadiseManageBehavior) {
  `MakeMethodClassAlwaysShow`
  Always show nextPrevious buttons, if there are more than 1 textField then both buttons will be visible but will be shown as disabled.
  */
+//: typedef NS_ENUM(NSUInteger, MakeMethodClass) {
 typedef NS_ENUM(NSUInteger, MakeMethodClass) {
+    //: MakeMethodClassDefault,
     MakeMethodClassDefault,
+    //: MakeMethodClassAlwaysHide,
     MakeMethodClassAlwaysHide,
+    //: MakeMethodClassAlwaysShow,
     MakeMethodClassAlwaysShow,
+//: };
 };
 
 /**
@@ -72,13 +82,18 @@ typedef NS_ENUM(NSUInteger, MakeMethodClass) {
  `MaterialFlameSuiteDisabled`
  setting is disabled.
  */
+//: typedef NS_ENUM(NSUInteger, MaterialFlameSuite) {
 typedef NS_ENUM(NSUInteger, MaterialFlameSuite) {
+    //: MaterialFlameSuiteDefault,
     MaterialFlameSuiteDefault,
+    //: MaterialFlameSuiteEnabled,
     MaterialFlameSuiteEnabled,
+    //: MaterialFlameSuiteDisabled,
     MaterialFlameSuiteDisabled,
+//: };
 };
 
-#endif
+
 
 /*
  

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSString+NIM.h
 // TreatLayoutExotic
@@ -6,28 +8,42 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface NSString (TreatLayoutExotic)
 @interface NSString (TreatLayoutExotic)
 
-- (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+//: - (BOOL)nim_fileIsExist;
+- (BOOL)identityErase;
 
-- (NSString *)nim_MD5String;
+//: - (NSUInteger)nim_getBytesLength;
+- (NSUInteger)today;
 
-- (NSUInteger)nim_getBytesLength;
+//: - (NSString *)nim_localizedWithTable:(NSString *)table;
+- (NSString *)firstCan:(NSString *)table;
 
-- (NSString *)nim_stringByDeletingPictureResolution;
+//: - (NSString *)nim_MD5String;
+- (NSString *)submitText;
 
-- (UIColor *)nim_hexToColor;
+//: - (NSString *)nim_localized;
+- (NSString *)absoluteLocalized;
 
-- (BOOL)nim_fileIsExist;
+//: - (NSString *)nim_stringByDeletingPictureResolution;
+- (NSString *)validTrait;
 
 
-- (NSString *)nim_localized;
+//: - (NSRange)nim_rangeOfLastUnicode;
+- (NSRange)unicode;
 
-- (NSString *)nim_localizedWithTable:(NSString *)table;
+//: - (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+- (CGSize)emotion:(UIFont *)font;
 
-- (BOOL)nim_containsEmoji;
+//: - (UIColor *)nim_hexToColor;
+- (UIColor *)extendPutColor;
 
-- (NSRange)nim_rangeOfLastUnicode;
+//: - (BOOL)nim_containsEmoji;
+- (BOOL)loop;
+//: @end
 @end

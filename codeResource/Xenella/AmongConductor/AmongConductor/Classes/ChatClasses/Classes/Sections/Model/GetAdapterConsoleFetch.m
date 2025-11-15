@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  GetAdapterConsoleFetch.m
 // TreatLayoutExotic
@@ -6,8 +8,12 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "GetAdapterConsoleFetch.h"
 #import "GetAdapterConsoleFetch.h"
 
+//: @implementation GetAdapterConsoleFetch
 @implementation GetAdapterConsoleFetch
 
+//: @end
 @end

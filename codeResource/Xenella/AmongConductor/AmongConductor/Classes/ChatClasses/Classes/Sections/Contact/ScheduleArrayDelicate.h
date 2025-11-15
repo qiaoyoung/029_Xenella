@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ScheduleArrayDelicate.h
 // TreatLayoutExotic
@@ -6,35 +8,57 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import "GetReplayQuick.h"
 #import "GetReplayQuick.h"
 
+//: typedef void(^ContactSelectFinishBlock)(NSArray *uids, NSString *groupName, UIImage *avater);
 typedef void(^ContactSelectFinishBlock)(NSArray *uids, NSString *groupName, UIImage *avater);
+//: typedef void(^ContactSelectCancelBlock)(void);
 typedef void(^ContactSelectCancelBlock)(void);
 
+//: @protocol TextureOntoThroughSequenceRobust <NSObject>
 @protocol TextureOntoThroughSequenceRobust <NSObject>
 
+//: @optional
 @optional
 
-- (void)didFinishedSelect:(NSArray *)selectedContacts; // 返回userID
+//: - (void)didFinishedSelect:(NSArray *)selectedContacts; 
+- (void)sorted:(NSArray *)selectedContacts; // 返回userID
 
-- (void)didCancelledSelect;
+//: - (void)didCancelledSelect;
+- (void)rememberBy;
 
+//: @end
 @end
 
 
+//: @interface ScheduleArrayDelicate : UIViewController
 @interface ScheduleArrayDelicate : UIViewController
 
-@property (nonatomic, strong, readonly) UITableView *tableView;
-
+//: @property (nonatomic, strong, readonly) id<GetReplayQuick> config;
 @property (nonatomic, strong, readonly) id<GetReplayQuick> config;
 
-//回调处理
-@property (nonatomic, weak) id<TextureOntoThroughSequenceRobust> delegate;
-
+//: @property (nonatomic, copy) ContactSelectFinishBlock finshBlock;
 @property (nonatomic, copy) ContactSelectFinishBlock finshBlock;
 
+//回调处理
+//: @property (nonatomic, weak) id<TextureOntoThroughSequenceRobust> delegate;
+@property (nonatomic, weak) id<TextureOntoThroughSequenceRobust> delegate;
+
+//: @property (nonatomic, strong, readonly) UITableView *tableView;
+@property (nonatomic, strong, readonly) UITableView *tableView;
+
+//: @property (nonatomic, copy) ContactSelectCancelBlock cancelBlock;
 @property (nonatomic, copy) ContactSelectCancelBlock cancelBlock;
+
+/**
+ *  弹出联系人选择器
+ */
+//: - (void)show;
+- (void)mistranslation;
 
 /**
  *  初始化方法
@@ -43,11 +67,8 @@ typedef void(^ContactSelectCancelBlock)(void);
  *
  *  @return 选择器
  */
-- (instancetype)initWithConfig:(id<GetReplayQuick>) config;
+//: - (instancetype)initWithConfig:(id<GetReplayQuick>) config;
+- (instancetype)initWithExecute:(id<GetReplayQuick>) config;
 
-/**
- *  弹出联系人选择器
- */
-- (void)show;
-
+//: @end
 @end

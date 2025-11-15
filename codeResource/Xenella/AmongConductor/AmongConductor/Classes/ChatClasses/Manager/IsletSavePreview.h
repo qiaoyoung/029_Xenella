@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  IsletSavePreview.h
 //  NIM
@@ -6,18 +8,29 @@
 //  Copyright © 2022 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface IsletSavePreview : NSObject
 @interface IsletSavePreview : NSObject
+//: @property (nonatomic,strong) NSMutableDictionary *langDict;
 @property (nonatomic,strong) NSMutableDictionary *langDict;
-+ (IsletSavePreview *)shareInstance;
-- (void)setLanguagre:(NSString *)langType;
-+ (NSString *)getTextWithKey:(NSString *)key;
+//: + (NSString *)getLocale;
++ (NSString *)move;
+//: - (void)setLanguagre:(NSString *)langType;
+- (void)setTranslateAcross:(NSString *)langType;
+//: + (NSString *)getTextWithKey:(NSString *)key;
++ (NSString *)being:(NSString *)key;
 
-+ (NSString *)getLocale;
+//: + (IsletSavePreview *)shareInstance;
++ (IsletSavePreview *)share;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DecoratorRunRoundedTransformerOwl.m
 // TreatLayoutExotic
@@ -6,17 +8,27 @@
 //  Copyright © 2019 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "DecoratorRunRoundedTransformerOwl.h"
 #import "DecoratorRunRoundedTransformerOwl.h"
 
+//: @implementation DecoratorRunRoundedTransformerOwl
 @implementation DecoratorRunRoundedTransformerOwl
 
+//: - (instancetype)init {
 - (instancetype)init {
+    //: if (self = [super init]) {
     if (self = [super init]) {
+        //: _offset = 0;
         _offset = 0;
+        //: _count = -1;
         _count = -1;
+        //: _isRefresh = YES;
         _isRefresh = YES;
     }
+    //: return self;
     return self;
 }
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PresenterDropAccelerate.h
 //  FormatterElementPeakSchedule
@@ -5,30 +7,41 @@
 //  Created by amao on 13-8-31.
 //  Copyright (c) 2013年 www.xiangwangfeng.com. All rights reserved.
 //
-
-#ifndef FloraInsideSortListPiece_h
-#define FloraInsideSortListPiece_h
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <CoreText/CoreText.h>
 #import <CoreText/CoreText.h>
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+// __M_A_C_R_O__
+
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: typedef NS_OPTIONS(NSUInteger, FrugalMergeAboveMode) {
 typedef NS_OPTIONS(NSUInteger, FrugalMergeAboveMode) {
+    //: FrugalMergeAboveModeTop,
     FrugalMergeAboveModeTop,
+    //: FrugalMergeAboveModeCenter,
     FrugalMergeAboveModeCenter,
+    //: FrugalMergeAboveModeBottom
     FrugalMergeAboveModeBottom
+//: };
 };
 
+//: @class FormatterElementPeakSchedule;
 @class FormatterElementPeakSchedule;
 
+//: @protocol ParameterTextInteractive <NSObject>
 @protocol ParameterTextInteractive <NSObject>
-- (void)FormatterElementPeakSchedule:(FormatterElementPeakSchedule *)label
-             clickedOnLink:(id)linkData;
+//: - (void)FormatterElementPeakSchedule:(FormatterElementPeakSchedule *)label
+- (void)element:(FormatterElementPeakSchedule *)label
+             //: clickedOnLink:(id)linkData;
+             fill:(id)linkData;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END
-
-#endif

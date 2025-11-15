@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ReservoirPackAssemblerNearConvert.h
 // TreatLayoutExotic
@@ -6,12 +8,18 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "WindClass.h"
 #import "WindClass.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface ReservoirPackAssemblerNearConvert : NSObject<ElmTuneLayer>
 @interface ReservoirPackAssemblerNearConvert : NSObject<ElmTuneLayer>
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

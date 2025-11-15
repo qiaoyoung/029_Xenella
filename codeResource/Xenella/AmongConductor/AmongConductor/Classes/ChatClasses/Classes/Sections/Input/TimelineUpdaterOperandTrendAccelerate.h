@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TimelineUpdaterOperandTrendAccelerate.h
 // TreatLayoutExotic
@@ -6,24 +8,40 @@
 //  Copyright © 2022 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "YYTextAttribute.h"
 #import "YYTextAttribute.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: typedef NS_ENUM(NSUInteger, TenderRateMergeSpace) {
 typedef NS_ENUM(NSUInteger, TenderRateMergeSpace) {
+    //: TenderRateMergeSpaceDefault = 0, 
     TenderRateMergeSpaceDefault = 0, /// 服务下发了不认识的类型
+    //: TenderRateMergeSpaceEmoji,
     TenderRateMergeSpaceEmoji,
+//: };
 };
 
+//: @interface TimelineUpdaterOperandTrendAccelerate : YYTextHighlight
 @interface TimelineUpdaterOperandTrendAccelerate : YYTextHighlight
 
-@property (nonatomic, assign) TenderRateMergeSpace type;
+//: @property (nonatomic, copy) NSString *text;
 @property (nonatomic, copy) NSString *text;
+//: @property (nonatomic, copy) NSString *textId;
 @property (nonatomic, copy) NSString *textId;
+//: @property (nonatomic, copy) NSString *link;
 @property (nonatomic, copy) NSString *link;
-@property (nonatomic, assign)  BOOL needFollow; //点击发布后自动关注@对象
-@property (nonatomic, assign) BOOL associate; // 联想话题区分
+//: @property (nonatomic, assign) TenderRateMergeSpace type;
+@property (nonatomic, assign) TenderRateMergeSpace type;
+//: @property (nonatomic, assign) BOOL needFollow; 
+@property (nonatomic, assign) BOOL needFollow;//点击发布后自动关注@对象
+//: @property (nonatomic, assign) BOOL associate; 
+@property (nonatomic, assign) BOOL associate;// 联想话题区分
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

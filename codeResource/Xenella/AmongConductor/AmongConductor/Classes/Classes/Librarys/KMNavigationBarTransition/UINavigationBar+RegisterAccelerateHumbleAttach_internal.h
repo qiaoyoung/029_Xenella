@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UINavigationBar+RegisterAccelerateHumbleAttach_internal.h
 //
@@ -20,11 +22,16 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+// __M_A_C_R_O__
+
+//: @interface UINavigationBar (RegisterAccelerateHumbleAttach_internal)
 @interface UINavigationBar (RegisterAccelerateHumbleAttach_internal)
 
+//: @property (nonatomic, assign) BOOL km_isFakeBar;
 @property (nonatomic, assign) BOOL km_isFakeBar;
 
+//: @end
 @end

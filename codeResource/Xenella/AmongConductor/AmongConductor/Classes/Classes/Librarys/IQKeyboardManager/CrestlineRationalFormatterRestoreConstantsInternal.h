@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CrestlineRationalFormatterRestoreConstantsInternal.h
 //  https://github.com/hackiftekhar/CrestlineRationalFormatterRestore
@@ -21,8 +23,4 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#ifndef CrestlineRationalFormatterRestoreConstantsInternal_h
-#define CrestlineRationalFormatterRestoreConstantsInternal_h
-
-
-#endif
+// __M_A_C_R_O__

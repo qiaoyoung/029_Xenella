@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ImportClusterPreviewBehind.h
 //  NIM
@@ -6,12 +8,18 @@
 //  Copyright © 2021 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "RevokeForceRenderer.h"
 #import "RevokeForceRenderer.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface ImportClusterPreviewBehind : RevokeForceRenderer
 @interface ImportClusterPreviewBehind : RevokeForceRenderer
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

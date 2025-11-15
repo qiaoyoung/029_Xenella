@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ScaleGladeMaskSecure.h
 //  https://github.com/hackiftekhar/CrestlineRationalFormatterRestore
@@ -21,18 +23,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "CrestlineRationalFormatterRestoreConstants.h"
 #import "CrestlineRationalFormatterRestoreConstants.h"
 
+//: @class UITextField, UIView, UIViewController;
 @class UITextField, UIView, UIViewController;
+//: @protocol UITextFieldDelegate, UITextViewDelegate;
 @protocol UITextFieldDelegate, UITextViewDelegate;
 
 /**
  Manages the return key to work like next/done in a view hierarchy.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface ScaleGladeMaskSecure : NSObject
 @interface ScaleGladeMaskSecure : NSObject
 
 ///----------------------
@@ -42,27 +51,6 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 /**
  Add all the textFields available in UIViewController's view.
  */
--(nonnull instancetype)initWithViewController:(nullable UIViewController*)controller NS_DESIGNATED_INITIALIZER;
-
-/**
- Unavailable. Please use initWithViewController: or init method
- */
--(nonnull instancetype)initWithCoder:(nullable NSCoder *)aDecoder NS_UNAVAILABLE;
-
-///---------------
-/// @name Settings
-///---------------
-
-/**
- Delegate of textField/textView.
- */
-@property(nullable, nonatomic, weak) id<UITextFieldDelegate,UITextViewDelegate> delegate;
-
-/**
- Set the last textfield return key type. Default is UIReturnKeyDefault.
- */
-@property(nonatomic, assign) UIReturnKeyType lastTextFieldReturnKeyType;
-
 ///----------------------------------------------
 /// @name Registering/Unregistering textFieldView
 ///----------------------------------------------
@@ -72,27 +60,57 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
  
  @param textFieldView UITextField/UITextView object to register.
  */
--(void)addTextFieldView:(nonnull UIView*)textFieldView;
+//: -(void)addTextFieldView:(nonnull UIView*)textFieldView;
+-(void)startOutView:(nonnull UIView*)textFieldView;
 
 /**
- Should pass UITextField/UITextView instance. Restore it's textFieldView delegate and it's returnKeyType.
-
- @param textFieldView UITextField/UITextView object to unregister.
+ Unavailable. Please use initWithViewController: or init method
  */
--(void)removeTextFieldView:(nonnull UIView*)textFieldView;
+//: -(nonnull instancetype)initWithCoder:(nullable NSCoder *)aDecoder UNAVAILABLE_ATTRIBUTE;
+-(nonnull instancetype)initWithCoder:(nullable NSCoder *)aDecoder UNAVAILABLE_ATTRIBUTE;
 
 /**
- Add all the UITextField/UITextView responderView's.
- 
- @param view object to register all it's responder subviews.
+ Set the last textfield return key type. Default is UIReturnKeyDefault.
  */
--(void)addResponderFromView:(nonnull UIView*)view;
+//: @property(nonatomic, assign) UIReturnKeyType lastTextFieldReturnKeyType;
+@property(nonatomic, assign) UIReturnKeyType lastTextFieldReturnKeyType;
+
+///---------------
+/// @name Settings
+///---------------
+
+/**
+ Delegate of textField/textView.
+ */
+//: @property(nullable, nonatomic, weak) id<UITextFieldDelegate,UITextViewDelegate> delegate;
+@property(nullable, nonatomic, weak) id<UITextFieldDelegate,UITextViewDelegate> delegate;
 
 /**
  Remove all the UITextField/UITextView responderView's.
  
  @param view object to unregister all it's responder subviews.
  */
--(void)removeResponderFromView:(nonnull UIView*)view;
+//: -(void)removeResponderFromView:(nonnull UIView*)view;
+-(void)previous:(nonnull UIView*)view;
 
+/**
+ Should pass UITextField/UITextView instance. Restore it's textFieldView delegate and it's returnKeyType.
+
+ @param textFieldView UITextField/UITextView object to unregister.
+ */
+//: -(void)removeTextFieldView:(nonnull UIView*)textFieldView;
+-(void)family:(nonnull UIView*)textFieldView;
+
+/**
+ Add all the UITextField/UITextView responderView's.
+ 
+ @param view object to register all it's responder subviews.
+ */
+//: -(void)addResponderFromView:(nonnull UIView*)view;
+-(void)button:(nonnull UIView*)view;
+
+//: -(nonnull instancetype)initWithViewController:(nullable UIViewController*)controller NS_DESIGNATED_INITIALIZER;
+-(nonnull instancetype)initWithFlash:(nullable UIViewController*)controller NS_DESIGNATED_INITIALIZER;
+
+//: @end
 @end

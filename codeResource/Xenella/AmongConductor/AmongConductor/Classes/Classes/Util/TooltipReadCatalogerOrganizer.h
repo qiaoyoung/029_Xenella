@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TooltipReadCatalogerOrganizer.h
 //  NIM
@@ -6,12 +8,18 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
 
+//: @class OrchestratorOutlineAcrossSubmit;
 @class OrchestratorOutlineAcrossSubmit;
 
+//: @interface TooltipReadCatalogerOrganizer : NSObject
 @interface TooltipReadCatalogerOrganizer : NSObject
 
-+ (instancetype)sharedCenter;
-- (void)start;
+//: - (void)start;
+- (void)posture;
+//: + (instancetype)sharedCenter;
++ (instancetype)midfieldRemark;
 
+//: @end
 @end

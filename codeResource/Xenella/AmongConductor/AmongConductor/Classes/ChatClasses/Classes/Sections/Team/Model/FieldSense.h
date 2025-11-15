@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TeamCardRowItem.h
 //  NIM
@@ -6,39 +8,59 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import "SensorEnumFactoryInterpreter.h"
 #import "SensorEnumFactoryInterpreter.h"
 
+//: typedef void(^NIMTeamCardRowSelectedBlock)(id <DelegateAnimateSpot> item);
 typedef void(^NIMTeamCardRowSelectedBlock)(id <DelegateAnimateSpot> item);
 
+//: @interface FieldSense : NSObject
 @interface FieldSense : NSObject
 
-@property(nonatomic,copy) NSString *title;
-
-@property(nonatomic,copy) NSString *subTitle;
-
-@property(nonatomic,copy) UIImage *img;
-
-@property(nonatomic,assign) CGFloat rowHeight;
-
-@property(nonatomic,assign) SEL action;
-
-@property(nonatomic,assign) BOOL actionDisabled;
-
-@property(nonatomic,assign) BOOL disableUserInteraction;
-
-@property(nonatomic,assign) StringCoreWealthy type;
-
-@property(nonatomic,assign) BOOL switchOn;
-
-@property(nonatomic,strong) id value;
-
-@property(nonatomic,assign) NSInteger identify;
-
-@property(nonatomic,strong) NSMutableArray <id <DelegateAnimateSpot>> *optionItems;
-
+//: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
 @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
 
+//: @property(nonatomic,assign) BOOL disableUserInteraction;
+@property(nonatomic,assign) BOOL disableUserInteraction;
+
+//: @property(nonatomic,strong) id value;
+@property(nonatomic,strong) id value;
+
+//: @property(nonatomic,assign) StringCoreWealthy type;
+@property(nonatomic,assign) StringCoreWealthy type;
+
+//: @property(nonatomic,assign) BOOL selected;
 @property(nonatomic,assign) BOOL selected;
 
+//: @property(nonatomic,copy) UIImage *img;
+@property(nonatomic,copy) UIImage *img;
+
+//: @property(nonatomic,copy) NSString *subTitle;
+@property(nonatomic,copy) NSString *subTitle;
+
+//: @property(nonatomic,assign) CGFloat rowHeight;
+@property(nonatomic,assign) CGFloat rowHeight;
+
+//: @property(nonatomic,assign) BOOL actionDisabled;
+@property(nonatomic,assign) BOOL actionDisabled;
+
+//: @property(nonatomic,copy) NSString *title;
+@property(nonatomic,copy) NSString *title;
+
+//: @property(nonatomic,assign) BOOL switchOn;
+@property(nonatomic,assign) BOOL switchOn;
+
+//: @property(nonatomic,assign) NSInteger identify;
+@property(nonatomic,assign) NSInteger identify;
+
+//: @property(nonatomic,assign) SEL action;
+@property(nonatomic,assign) SEL action;
+
+//: @property(nonatomic,strong) NSMutableArray <id <DelegateAnimateSpot>> *optionItems;
+@property(nonatomic,strong) NSMutableArray <id <DelegateAnimateSpot>> *optionItems;
+
+//: @end
 @end

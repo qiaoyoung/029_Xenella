@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  OrchestratorOutlineAcrossSubmit.h
 //  NIM
@@ -6,24 +8,37 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @class BindLayoutPreloadFetch;
 @class BindLayoutPreloadFetch;
+//: @interface OrchestratorOutlineAcrossSubmit : NSObject
 @interface OrchestratorOutlineAcrossSubmit : NSObject
 
-dSINGLETON_FOR_CLASS_HEADER(OrchestratorOutlineAcrossSubmit);
+//: - (BOOL)saveNotification:(BindLayoutPreloadFetch *)notification;
+- (BOOL)relieveAwakeNotification:(BindLayoutPreloadFetch *)notification;
+;
 
+//: @property (nonatomic,assign) NSInteger unreadCount;
 @property (nonatomic,assign) NSInteger unreadCount;
 
-- (NSArray *)fetchNotifications:(BindLayoutPreloadFetch *)notification
-                          limit:(NSInteger)limit;
+//: - (void)deleteAllNotification;
+- (void)originalNotification;
 
-- (BOOL)saveNotification:(BindLayoutPreloadFetch *)notification;
 
-- (void)deleteNotification:(BindLayoutPreloadFetch *)notification;
+//: + (instancetype)sharedInstance;;
++ (instancetype)container;
+//: - (void)deleteNotification:(BindLayoutPreloadFetch *)notification;
+- (void)protect:(BindLayoutPreloadFetch *)notification;
 
-- (void)deleteAllNotification;
+//: - (NSArray *)fetchNotifications:(BindLayoutPreloadFetch *)notification
+- (NSArray *)origin:(BindLayoutPreloadFetch *)notification
+                          //: limit:(NSInteger)limit;
+                          visibleLimit:(NSInteger)limit;
+//: - (void)markAllNotificationsAsRead;
+- (void)fast;
 
-- (void)markAllNotificationsAsRead;
-
+//: @end
 @end

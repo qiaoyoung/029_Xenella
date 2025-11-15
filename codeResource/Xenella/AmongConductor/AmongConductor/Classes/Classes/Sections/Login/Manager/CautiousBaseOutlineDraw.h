@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CautiousBaseOutlineDraw.h
 //  sohunews
@@ -7,10 +9,11 @@
 //
 //  modify by tengli on 2022.8.1 (V6.7.8)
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-
-
+//: @interface CautiousBaseOutlineDraw : NSObject
 @interface CautiousBaseOutlineDraw : NSObject
 
 
@@ -19,21 +22,6 @@
  IUUID 生成后保存至磁盘,卸载重装后重新生成
  IDFA & IDFV & MCI 变化,也会重新生成
  */
-+ (NSString *)deviceIUUID;
-
-/**
- IDFA & IDFV & MCI 变化,重新生成
- */
-+ (void)updateDeviceIUUID;
-
-/*
- * @method uniqueDeviceIdentifier
- * @description use this method when you need a unique identifier in one app.
- * It generates a hash from the MAC-address in combination with the bundle identifier
- * of your app.
- */
-- (NSString *)uniqueDeviceIdentifier;
-
 /*
  * @method uniqueGlobalDeviceIdentifier
  * @description use this method when you need a unique global identifier to track a device
@@ -41,33 +29,61 @@
  * from different apps.
  * It generates a hash from the MAC-address only.
  */
-- (NSString *)uniqueGlobalDeviceIdentifier;
+//: - (NSString *)uniqueGlobalDeviceIdentifier;
+- (NSString *)magnitudeernational;
 
+/*
+ * @method uniqueDeviceIdentifier
+ * @description use this method when you need a unique identifier in one app.
+ * It generates a hash from the MAC-address in combination with the bundle identifier
+ * of your app.
+ */
+//: - (NSString *)uniqueDeviceIdentifier;
+- (NSString *)schedule;
 
+/// 语言
+//: + (NSString *)language;
++ (NSString *)declaration;
+
+//: #pragma mark - CAID
 #pragma mark - CAID
 
 /// 设备启动时间
-+ (NSString *)bootTimeInSec;
+//: + (NSString *)bootTimeInSec;
++ (NSString *)simple;
+
+
+/// 系统更新时间
+//: + (NSString *)sysFileTime;
++ (NSString *)clean;
 
 /// 国家
-+ (NSString *)countryCode;
+//: + (NSString *)countryCode;
++ (NSString *)counterrupt;
 
-/// 语言
-+ (NSString *)language;
+///时区
+//: + (NSString *)timeZone;
++ (NSString *)topographicPoint;
+
+
+/**
+ IDFA & IDFV & MCI 变化,重新生成
+ */
+//: + (void)updateDeviceIUUID;
++ (void)database;
+
+//: + (NSString *)deviceIUUID;
++ (NSString *)resource;
 
 
 /// 运营商
-+(NSString* )carrierInfo;
-
-/// 系统更新时间
-+ (NSString *)sysFileTime;
-
-
-///时区
-+ (NSString *)timeZone;
+//: +(NSString* )carrierInfo;
++(NSString* )no;
 
 //get system uptime since last boot 获取系统当前运行了多长时间
-+ (NSTimeInterval)uptime;
+//: + (NSTimeInterval)uptime;
++ (NSTimeInterval)stick;
 
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  USERSessionMsgHelper.h
 //  NIMDemo
@@ -6,53 +8,84 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class LogicBoardSelector;
 @class LogicBoardSelector;
+//: @class NearBuildStyle;
 @class NearBuildStyle;
+//: @class RecordPragmaticTrainWithin;
 @class RecordPragmaticTrainWithin;
+//: @class ManageOpenAssembler;
 @class ManageOpenAssembler;
+//: @class LaunchLayoutFacadeBeneath;
 @class LaunchLayoutFacadeBeneath;
+//: @class ErrorHubsetSearchApply;
 @class ErrorHubsetSearchApply;
+//: @class MountRegisterConstruct;
 @class MountRegisterConstruct;
 
+//: @interface SelectDataSourceMight : NSObject
 @interface SelectDataSourceMight : NSObject
 
-+ (NIMMessage *)msgWithText:(NSString *)text;
+//: + (NIMMessage *)msgWithJenKenPon:(LogicBoardSelector *)attachment;
++ (NIMMessage *)scheme:(LogicBoardSelector *)attachment;
 
-+ (NIMMessage *)msgWithImage:(UIImage *)image;
+//: + (NIMMessage *)msgWithRedPacketTip:(LaunchLayoutFacadeBeneath *)attachment;
++ (NIMMessage *)sN:(LaunchLayoutFacadeBeneath *)attachment;
 
-+ (NIMMessage *)msgWithImagePath:(NSString *)path;
+//: + (NIMMessage *)msgWithTip:(NSString *)tip;
++ (NIMMessage *)smartForwardFingertip:(NSString *)tip;
 
-+ (NIMMessage *)msgWithAudio:(NSString *)filePath;
+//: + (NIMMessage *)msgWithWhiteboardAttachment:(RecordPragmaticTrainWithin *)attachment;
++ (NIMMessage *)emptySuspend:(RecordPragmaticTrainWithin *)attachment;
 
-+ (NIMMessage *)msgWithVideo:(NSString *)filePath;
+//: + (NIMMessage *)msgWithVideo:(NSString *)filePath;
++ (NIMMessage *)invite:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithJenKenPon:(LogicBoardSelector *)attachment;
+//: + (NIMMessage *)msgWithAudio:(NSString *)filePath;
++ (NIMMessage *)waitAudio:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithSnapchatAttachment:(NearBuildStyle *)attachment;
+//: + (NIMMessage *)msgWithRevocationMessage:(NIMMessage *)revocationMessage;
++ (NIMMessage *)move:(NIMMessage *)revocationMessage;
 
-+ (NIMMessage *)msgWithWhiteboardAttachment:(RecordPragmaticTrainWithin *)attachment;
+//: + (NIMMessage *)msgWithFilePath:(NSString *)path;
++ (NIMMessage *)smartPath:(NSString *)path;
 
-+ (NIMMessage *)msgWithFilePath:(NSString *)path;
+//: + (NIMMessage *)msgWithFileData:(NSData *)data extension:(NSString *)extension;
++ (NIMMessage *)layerData:(NSData *)data sampleFile:(NSString *)extension;
 
-+ (NIMMessage *)msgWithFileData:(NSData *)data extension:(NSString *)extension;
+//: + (NIMMessage *)msgWithMultiRetweetAttachment:(ErrorHubsetSearchApply *)attachment;
++ (NIMMessage *)dayPop:(ErrorHubsetSearchApply *)attachment;
 
-+ (NIMMessage *)msgWithTip:(NSString *)tip;
+//: + (NIMMessage *)msgWithShareCard:(MountRegisterConstruct *)attachment;
++ (NIMMessage *)than:(MountRegisterConstruct *)attachment;
 
-+ (NIMMessage *)msgWithTip:(NSString *)tip
-              revokeAttach:(NSString *)revokeAttach
-         revokeCallbackExt:(NSString *)revokeCallbackExt;
+//: + (NIMMessage *)msgWithSnapchatAttachment:(NearBuildStyle *)attachment;
++ (NIMMessage *)queryed:(NearBuildStyle *)attachment;
 
-+ (NIMMessage *)msgWithRedPacket:(ManageOpenAssembler *)attachment;
 
-+ (NIMMessage *)msgWithRedPacketTip:(LaunchLayoutFacadeBeneath *)attachment;
+//: + (NIMMessage *)msgWithRedPacket:(ManageOpenAssembler *)attachment;
++ (NIMMessage *)address:(ManageOpenAssembler *)attachment;
 
-+ (NIMMessage *)msgWithMultiRetweetAttachment:(ErrorHubsetSearchApply *)attachment;
+//: + (NIMMessage *)msgWithTip:(NSString *)tip
++ (NIMMessage *)beforeDate:(NSString *)tip
+              //: revokeAttach:(NSString *)revokeAttach
+              first:(NSString *)revokeAttach
+         //: revokeCallbackExt:(NSString *)revokeCallbackExt;
+         processor:(NSString *)revokeCallbackExt;
+//: + (NIMMessage *)msgWithImagePath:(NSString *)path;
++ (NIMMessage *)prefer:(NSString *)path;
 
-+ (NIMMessage *)msgWithRevocationMessage:(NIMMessage *)revocationMessage;
+//: + (NIMMessage *)msgWithText:(NSString *)text;
++ (NIMMessage *)automaticallyColumn:(NSString *)text;
 
-+ (NIMMessage *)msgWithShareCard:(MountRegisterConstruct *)attachment;
+//: + (NIMMessage *)msgWithImage:(UIImage *)image;
++ (NIMMessage *)alongside:(UIImage *)image;
 
+//: @end
 @end

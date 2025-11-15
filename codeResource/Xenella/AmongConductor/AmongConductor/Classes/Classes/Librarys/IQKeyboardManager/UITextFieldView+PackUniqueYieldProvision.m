@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UITextFieldView+PackUniqueYieldProvision.m
 //  https://github.com/hackiftekhar/CrestlineRationalFormatterRestore
@@ -21,64 +23,90 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
-
+//: #import "UITextFieldView+PackUniqueYieldProvision.h"
 #import "UITextFieldView+PackUniqueYieldProvision.h"
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation UIView (PackUniqueYieldProvision)
 @implementation UIView (PackUniqueYieldProvision)
 
+//: -(void)setKeyboardDistanceFromTextField:(CGFloat)keyboardDistanceFromTextField
 -(void)setKeyboardDistanceFromTextField:(CGFloat)keyboardDistanceFromTextField
 {
     //Can't be less than zero. Minimum is zero.
-    keyboardDistanceFromTextField = MAX(keyboardDistanceFromTextField, 0);
-    
+    //: keyboardDistanceFromTextField = ((keyboardDistanceFromTextField) > (0) ? (keyboardDistanceFromTextField) : (0));
+    keyboardDistanceFromTextField = ((keyboardDistanceFromTextField) > (0) ? (keyboardDistanceFromTextField) : (0));
+
+    //: objc_setAssociatedObject(self, @selector(keyboardDistanceFromTextField), @(keyboardDistanceFromTextField), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, @selector(keyboardDistanceFromTextField), @(keyboardDistanceFromTextField), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(CGFloat)keyboardDistanceFromTextField
-{
-    NSNumber *keyboardDistanceFromTextField = objc_getAssociatedObject(self, @selector(keyboardDistanceFromTextField));
-    
-    return (keyboardDistanceFromTextField != nil)?[keyboardDistanceFromTextField floatValue]:kIQUseDefaultKeyboardDistance;
-}
-
--(void)setIgnoreSwitchingByNextPrevious:(BOOL)ignoreSwitchingByNextPrevious
-{
-    objc_setAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious), @(ignoreSwitchingByNextPrevious), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
--(BOOL)ignoreSwitchingByNextPrevious
-{
-    NSNumber *ignoreSwitchingByNextPrevious = objc_getAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious));
-    
-    return [ignoreSwitchingByNextPrevious boolValue];
-}
-
--(void)setEnableMode:(MaterialFlameSuite)enableMode
-{
-    objc_setAssociatedObject(self, @selector(enableMode), @(enableMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
--(MaterialFlameSuite)enableMode
-{
-    NSNumber *enableMode = objc_getAssociatedObject(self, @selector(enableMode));
-    
-    return [enableMode unsignedIntegerValue];
-}
-
+//: -(void)setShouldResignOnTouchOutsideMode:(MaterialFlameSuite)shouldResignOnTouchOutsideMode
 -(void)setShouldResignOnTouchOutsideMode:(MaterialFlameSuite)shouldResignOnTouchOutsideMode
 {
+    //: objc_setAssociatedObject(self, @selector(shouldResignOnTouchOutsideMode), @(shouldResignOnTouchOutsideMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, @selector(shouldResignOnTouchOutsideMode), @(shouldResignOnTouchOutsideMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+//: -(void)setIgnoreSwitchingByNextPrevious:(BOOL)ignoreSwitchingByNextPrevious
+-(void)setIgnoreSwitchingByNextPrevious:(BOOL)ignoreSwitchingByNextPrevious
+{
+    //: objc_setAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious), @(ignoreSwitchingByNextPrevious), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious), @(ignoreSwitchingByNextPrevious), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: -(void)setEnableMode:(MaterialFlameSuite)enableMode
+-(void)setEnableMode:(MaterialFlameSuite)enableMode
+{
+    //: objc_setAssociatedObject(self, @selector(enableMode), @(enableMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(enableMode), @(enableMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: -(CGFloat)keyboardDistanceFromTextField
+-(CGFloat)keyboardDistanceFromTextField
+{
+    //: NSNumber *keyboardDistanceFromTextField = objc_getAssociatedObject(self, @selector(keyboardDistanceFromTextField));
+    NSNumber *keyboardDistanceFromTextField = objc_getAssociatedObject(self, @selector(keyboardDistanceFromTextField));
+
+    //: return (keyboardDistanceFromTextField != nil)?[keyboardDistanceFromTextField floatValue]:kIQUseDefaultKeyboardDistance;
+    return (keyboardDistanceFromTextField != nil)?[keyboardDistanceFromTextField floatValue]:layoutPhaseValue(nil);
+}
+
+//: -(BOOL)ignoreSwitchingByNextPrevious
+-(BOOL)ignoreSwitchingByNextPrevious
+{
+    //: NSNumber *ignoreSwitchingByNextPrevious = objc_getAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious));
+    NSNumber *ignoreSwitchingByNextPrevious = objc_getAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious));
+
+    //: return [ignoreSwitchingByNextPrevious boolValue];
+    return [ignoreSwitchingByNextPrevious boolValue];
+}
+
+//: -(MaterialFlameSuite)shouldResignOnTouchOutsideMode
 -(MaterialFlameSuite)shouldResignOnTouchOutsideMode
 {
+    //: NSNumber *shouldResignOnTouchOutsideMode = objc_getAssociatedObject(self, @selector(shouldResignOnTouchOutsideMode));
     NSNumber *shouldResignOnTouchOutsideMode = objc_getAssociatedObject(self, @selector(shouldResignOnTouchOutsideMode));
-    
+
+    //: return [shouldResignOnTouchOutsideMode unsignedIntegerValue];
     return [shouldResignOnTouchOutsideMode unsignedIntegerValue];
 }
 
+//: -(MaterialFlameSuite)enableMode
+-(MaterialFlameSuite)enableMode
+{
+    //: NSNumber *enableMode = objc_getAssociatedObject(self, @selector(enableMode));
+    NSNumber *enableMode = objc_getAssociatedObject(self, @selector(enableMode));
+
+    //: return [enableMode unsignedIntegerValue];
+    return [enableMode unsignedIntegerValue];
+}
+
+//: @end
 @end
 
 ///------------------------------------
@@ -88,5 +116,11 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 /**
  Uses default keyboard distance for textField.
  */
-CGFloat const kIQUseDefaultKeyboardDistance = CGFLOAT_MAX;
+//: CGFloat const kIQUseDefaultKeyboardDistance = 1.7976931348623157e+308;
 
+CGFloat const layoutPhaseValue (NSString *value) {
+    if (value) {
+        return  1.7976931348623157e+308;
+    }
+    return  1.7976931348623157e+308;
+};

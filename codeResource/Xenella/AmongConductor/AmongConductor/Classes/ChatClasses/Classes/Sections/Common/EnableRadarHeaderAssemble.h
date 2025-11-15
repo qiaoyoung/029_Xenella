@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  EnableRadarHeaderAssemble.h
 // TreatLayoutExotic
@@ -6,34 +8,50 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
+//: #import "HelperAbundantLocalizeConsumeDefine.h"
 #import "HelperAbundantLocalizeConsumeDefine.h"
 
-
+//: @class TimerHarborCozy;
 @class TimerHarborCozy;
 
+//: @interface EnableRadarHeaderAssemble : NSObject<HelperAbundantLocalizeConsumeDefineDelegate>
 @interface EnableRadarHeaderAssemble : NSObject<HelperAbundantLocalizeConsumeDefineDelegate>
 
-@property (nonatomic,strong) NSMutableDictionary *cachedInfo;
-
-@property (nonatomic,strong) HelperAbundantLocalizeConsumeDefine *timer;
-
+//: @property (nonatomic,assign) NSTimeInterval timeInterval;
 @property (nonatomic,assign) NSTimeInterval timeInterval;
 
-- (void)addFireInfo:(TimerHarborCozy *)info;
+//: @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
+@property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 
+//: @property (nonatomic,strong) HelperAbundantLocalizeConsumeDefine *timer;
+@property (nonatomic,strong) HelperAbundantLocalizeConsumeDefine *timer;
+
+//: - (void)addFireInfo:(TimerHarborCozy *)info;
+- (void)constant:(TimerHarborCozy *)info;
+
+//: @end
 @end
 
 
+//: @interface TimerHarborCozy : NSObject
 @interface TimerHarborCozy : NSObject
 
+//: @property (nonatomic,copy) NSString *notificationName;
+@property (nonatomic,copy) NSString *notificationName;
+
+//: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-@property (nonatomic,copy)   NSString *notificationName;
+//: - (NSString *)saveIdentity;
+- (NSString *)family;
 
-- (NSObject *)fireObject;
+//: - (NSObject *)fireObject;
+- (NSObject *)colorAcross;
 
-- (NSString *)saveIdentity;
-
+//: @end
 @end

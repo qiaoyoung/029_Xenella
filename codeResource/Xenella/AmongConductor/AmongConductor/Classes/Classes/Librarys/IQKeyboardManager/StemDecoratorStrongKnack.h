@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  StemDecoratorStrongKnack.h
 //  https://github.com/hackiftekhar/CrestlineRationalFormatterRestore
@@ -21,11 +23,17 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+
 /**
  If you need to enable previous/next toolbar button with some complex hierarchy where your textFields are not in same view, then make the top view as StemDecoratorStrongKnack.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface StemDecoratorStrongKnack : UIView
 @interface StemDecoratorStrongKnack : UIView
 
+//: @end
 @end

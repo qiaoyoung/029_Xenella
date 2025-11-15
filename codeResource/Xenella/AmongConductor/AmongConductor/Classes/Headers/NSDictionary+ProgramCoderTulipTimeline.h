@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSDictionary+ProgramCoderTulipTimeline.h
 //  Kitalker
@@ -6,25 +8,38 @@
 //  Copyright (c) 2012年 ibm. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface NSDictionary (ProgramCoderTulipTimeline)
 @interface NSDictionary (ProgramCoderTulipTimeline)
 
-- (NSString *)jsonString;
+//: - (NSInteger)integerValueForKey:(id)key;
+- (NSInteger)own:(id)key;
 
-- (BOOL)boolValueForKey:(id)key;
+//: - (id)valueObjectForKey:(id)aKey;
+- (id)fast:(id)aKey;
 
-- (int)intValueForKey:(id)key;
+//: - (double)doubleValueForKey:(id)key;
+- (double)dosageKey:(id)key;
 
-- (NSInteger)integerValueForKey:(id)key;
+//: - (float)floatValueForKey:(id)key;
+- (float)listing:(id)key;
 
-- (float)floatValueForKey:(id)key;
+//: - (NSString *)jsonString;
+- (NSString *)renderButton;
 
-- (double)doubleValueForKey:(id)key;
+//: - (NSString *)newStringValueForKey:(id)key;
+- (NSString *)untilAgreementKey:(id)key;
 
-- (NSString *)newStringValueForKey:(id)key;
+//: - (NSArray *)arrayValueForKey:(id)aKey;
+- (NSArray *)exit:(id)aKey;
 
-- (id)valueObjectForKey:(id)aKey;
+//: - (int)intValueForKey:(id)key;
+- (int)fragment:(id)key;
 
-- (NSArray *)arrayValueForKey:(id)aKey;
+//: - (BOOL)boolValueForKey:(id)key;
+- (BOOL)randomHour:(id)key;
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSString+RandomString.h
 //  NIMDemo
@@ -6,24 +8,36 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-NSString * emptyString(NSString *anMaybeEmptyString);
+//: NSString * emptyString(NSString *anMaybeEmptyString);
+NSString * bareProtect(NSString *anMaybeEmptyString);
 
+//: @interface NSString (RandomString)
 @interface NSString (RandomString)
 
-- (CGSize)stringSizeWithFont:(UIFont *)font;
+//: - (NSString *)MD5String;
+- (NSString *)above;
 
-- (NSString *)MD5String;
+//: + (NSString *)randomStringWithLength:(NSUInteger)length;
++ (NSString *)start:(NSUInteger)length;
 
-- (NSUInteger)getBytesLength;
+//: - (NSString *)user_localized;
+- (NSString *)rejectDown;
 
-- (NSString *)stringByDeletingPictureResolution;
+//: - (NSString *)stringByDeletingPictureResolution;
+- (NSString *)monitor;
 
-- (NSString *)tokenByPassword;
+//: - (CGSize)stringSizeWithFont:(UIFont *)font;
+- (CGSize)first:(UIFont *)font;
 
-- (NSString *)user_localized;
+//: - (NSUInteger)getBytesLength;
+- (NSUInteger)location;
 
-+ (NSString *)randomStringWithLength:(NSUInteger)length;
+//: - (NSString *)tokenByPassword;
+- (NSString *)unrighteousness;
 
+//: @end
 @end

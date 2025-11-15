@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AgainstSnapshotterBuilderWinter.h
 //  https://github.com/hackiftekhar/CrestlineRationalFormatterRestore
@@ -21,41 +23,49 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "RingRockViableStream.h"
 #import "RingRockViableStream.h"
-
 
 /**
  AgainstSnapshotterBuilderWinter for CrestlineRationalFormatterRestore.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface AgainstSnapshotterBuilderWinter : UIToolbar <UIInputViewAudioFeedback>
 @interface AgainstSnapshotterBuilderWinter : UIToolbar <UIInputViewAudioFeedback>
 
 /**
  Previous bar button of toolbar.
  */
+/**
+ Fixed space bar button of toolbar.
+ */
+//: @property(nonnull, nonatomic, strong) StrikeRealmForTerminal *fixedSpaceBarButton;
+@property(nonnull, nonatomic, strong) StrikeRealmForTerminal *fixedSpaceBarButton;
+
+//: @property(nonnull, nonatomic, strong) StrikeRealmForTerminal *previousBarButton;
 @property(nonnull, nonatomic, strong) StrikeRealmForTerminal *previousBarButton;
+
+/**
+ Done bar button of toolbar.
+ */
+//: @property(nonnull, nonatomic, strong) StrikeRealmForTerminal *doneBarButton;
+@property(nonnull, nonatomic, strong) StrikeRealmForTerminal *doneBarButton;
 
 /**
  Next bar button of toolbar.
  */
+//: @property(nonnull, nonatomic, strong) StrikeRealmForTerminal *nextBarButton;
 @property(nonnull, nonatomic, strong) StrikeRealmForTerminal *nextBarButton;
 
 /**
  Title bar button of toolbar.
  */
+//: @property(nonnull, nonatomic, strong, readonly) RingRockViableStream *titleBarButton;
 @property(nonnull, nonatomic, strong, readonly) RingRockViableStream *titleBarButton;
 
-/**
- Done bar button of toolbar.
- */
-@property(nonnull, nonatomic, strong) StrikeRealmForTerminal *doneBarButton;
-
-/**
- Fixed space bar button of toolbar.
- */
-@property(nonnull, nonatomic, strong) StrikeRealmForTerminal *fixedSpaceBarButton;
-
+//: @end
 @end
-

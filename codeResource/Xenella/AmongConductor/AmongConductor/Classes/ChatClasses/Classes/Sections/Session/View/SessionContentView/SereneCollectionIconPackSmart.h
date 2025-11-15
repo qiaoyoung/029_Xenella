@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SereneCollectionIconPackSmart.h
 // TreatLayoutExotic
@@ -6,16 +8,25 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import "OntoSurgeAccess.h"
 #import "OntoSurgeAccess.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface SereneCollectionIconPackSmart : OntoSurgeAccess
 @interface SereneCollectionIconPackSmart : OntoSurgeAccess
 
-@property (nonatomic, strong) UILabel *textLabel;
+//: @property (nonatomic, strong) UIImageView *icImage;
 @property (nonatomic, strong) UIImageView *icImage;
+//: @property (nonatomic, strong) UILabel *textLabel;
+@property (nonatomic, strong) UILabel *textLabel;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

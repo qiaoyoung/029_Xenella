@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIScrollView+RegisterAccelerateHumbleAttach.m
 //
@@ -21,29 +23,44 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "UIScrollView+RegisterAccelerateHumbleAttach.h"
 #import "UIScrollView+RegisterAccelerateHumbleAttach.h"
+//: #import "UIScrollView+RegisterAccelerateHumbleAttach_internal.h"
 #import "UIScrollView+RegisterAccelerateHumbleAttach_internal.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
+//: #import "DriverBulkySolutionLotus.h"
 #import "DriverBulkySolutionLotus.h"
 
+//: @implementation UIScrollView (RegisterAccelerateHumbleAttach)
 @implementation UIScrollView (RegisterAccelerateHumbleAttach)
 
-#ifdef __IPHONE_11_0
-- (UIScrollViewContentInsetAdjustmentBehavior)km_originalContentInsetAdjustmentBehavior {
+
+//: - (UIScrollViewContentInsetAdjustmentBehavior)km_originalContentInsetAdjustmentBehavior {
+- (UIScrollViewContentInsetAdjustmentBehavior)listingPriority {
+    //: return [objc_getAssociatedObject(self, _cmd) integerValue];
     return [objc_getAssociatedObject(self, _cmd) integerValue];
 }
 
-- (void)setKm_originalContentInsetAdjustmentBehavior:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
-    objc_setAssociatedObject(self, @selector(km_originalContentInsetAdjustmentBehavior), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//: - (void)setKm_shouldRestoreContentInsetAdjustmentBehavior:(BOOL)isShould {
+- (void)setGravityUnit:(BOOL)isShould {
+    //: objc_setAssociatedObject(self, @selector(km_shouldRestoreContentInsetAdjustmentBehavior), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(gravityUnit), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (BOOL)km_shouldRestoreContentInsetAdjustmentBehavior {
+//: - (void)setKm_originalContentInsetAdjustmentBehavior:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
+- (void)setListingPriority:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
+    //: objc_setAssociatedObject(self, @selector(km_originalContentInsetAdjustmentBehavior), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(listingPriority), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: - (BOOL)km_shouldRestoreContentInsetAdjustmentBehavior {
+- (BOOL)gravityUnit {
+    //: return [objc_getAssociatedObject(self, _cmd) boolValue];
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
-- (void)setKm_shouldRestoreContentInsetAdjustmentBehavior:(BOOL)isShould {
-    objc_setAssociatedObject(self, @selector(km_shouldRestoreContentInsetAdjustmentBehavior), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-#endif
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ConductorLuckyThornWorkflowAnimator.m
 //  CatalogerViewportSchedule
@@ -6,58 +8,87 @@
 //  Copyright (c) 2015 Tanguy Aladenise. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "ConductorLuckyThornWorkflowAnimator.h"
 #import "ConductorLuckyThornWorkflowAnimator.h"
 
+//: @implementation ConductorLuckyThornWorkflowAnimator
 @implementation ConductorLuckyThornWorkflowAnimator
 
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self initialization];
-    }
-    
-    return self;
-}
-
-
+//: - (id)initWithFrame:(CGRect)frame
 - (id)initWithFrame:(CGRect)frame
 {
+    //: self = [super initWithFrame:frame];
     self = [super initWithFrame:frame];
+    //: if (self) {
     if (self) {
-        [self initialization];
+        //: [self initialization];
+        [self advanced];
     }
+    //: return self;
     return self;
 }
 
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+//: - (void)changeActivityState:(BOOL)active
+- (void)pushAppear:(BOOL)active
 {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self initialization];
-    }
-    
-    return self;
-}
-
-- (void)initialization
-{
-    self.backgroundColor    = [UIColor clearColor];
-    self.layer.cornerRadius = CGRectGetWidth(self.frame) / 2;
-    self.layer.borderColor  = [UIColor whiteColor].CGColor;
-    self.layer.borderWidth  = 2;
-}
-
-
-- (void)changeActivityState:(BOOL)active
-{
+    //: if (active) {
     if (active) {
+        //: self.backgroundColor = [UIColor whiteColor];
         self.backgroundColor = [UIColor whiteColor];
+    //: } else {
     } else {
+        //: self.backgroundColor = [UIColor clearColor];
         self.backgroundColor = [UIColor clearColor];
     }
 }
 
+
+//: - (void)initialization
+- (void)advanced
+{
+    //: self.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor clearColor];
+    //: self.layer.cornerRadius = CGRectGetWidth(self.frame) / 2;
+    self.layer.cornerRadius = CGRectGetWidth(self.frame) / 2;
+    //: self.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.layer.borderColor = [UIColor whiteColor].CGColor;
+    //: self.layer.borderWidth = 2;
+    self.layer.borderWidth = 2;
+}
+
+//: - (id)initWithCoder:(NSCoder *)aDecoder
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    //: self = [super initWithCoder:aDecoder];
+    self = [super initWithCoder:aDecoder];
+    //: if (self) {
+    if (self) {
+        //: [self initialization];
+        [self advanced];
+    }
+
+    //: return self;
+    return self;
+}
+
+
+//: - (instancetype)init
+- (instancetype)init
+{
+    //: self = [super init];
+    self = [super init];
+    //: if (self) {
+    if (self) {
+        //: [self initialization];
+        [self advanced];
+    }
+
+    //: return self;
+    return self;
+}
+
+//: @end
 @end

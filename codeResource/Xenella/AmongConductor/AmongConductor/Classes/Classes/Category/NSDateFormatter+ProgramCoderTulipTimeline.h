@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSDateFormatter+KIDateFormatter.h
 //  Kitalker
@@ -6,20 +8,30 @@
 //
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface NSDateFormatter (ProgramCoderTulipTimeline)
 @interface NSDateFormatter (ProgramCoderTulipTimeline)
 
-+ (NSString *)dateStringWithFormat:(NSString *)format date:(NSDate *)date;
+//: - (NSString *)day:(NSDate *)date;
+- (NSString *)load:(NSDate *)date;
 
-- (NSString *)weekday:(NSDate *)date;
+//: - (NSString *)month:(NSDate *)date;
+- (NSString *)parentBare:(NSDate *)date;
 
-- (NSString *)day:(NSDate *)date;
+//: + (NSString *)dateStringWithFormat:(NSString *)format date:(NSDate *)date;
++ (NSString *)reSumroduce:(NSString *)format tab:(NSDate *)date;
 
-- (NSString *)month:(NSDate *)date;
+//: - (NSString *)weekday:(NSDate *)date;
+- (NSString *)resistance:(NSDate *)date;
 
-- (NSString *)year:(NSDate *)date;
+//: - (NSString *)dateStringWithFormat:(NSString *)format date:(NSDate *)date;
+- (NSString *)limit:(NSString *)format voiceTo:(NSDate *)date;
 
-- (NSString *)dateStringWithFormat:(NSString *)format date:(NSDate *)date;
+//: - (NSString *)year:(NSDate *)date;
+- (NSString *)contactYear:(NSDate *)date;
 
+//: @end
 @end

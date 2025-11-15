@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ScrollViewAnalyzeTerrainLotus.h
 //  天天网
@@ -6,13 +8,19 @@
 //  Copyright (c) 2014年 Ios. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface ScrollViewAnalyzeTerrainLotus : UIView
 @interface ScrollViewAnalyzeTerrainLotus : UIView
 
-+ (ScrollViewAnalyzeTerrainLotus *)showNoticeTo:(UIView *)view animated:(BOOL)animated;
+//: - (void)hideNoticeAnimated:(BOOL)animated;
+- (void)footStandard:(BOOL)animated;
 
-- (void)hideNoticeAnimated:(BOOL)animated;
+//: + (ScrollViewAnalyzeTerrainLotus *)showNoticeTo:(UIView *)view animated:(BOOL)animated;
++ (ScrollViewAnalyzeTerrainLotus *)added:(UIView *)view alongNotice:(BOOL)animated;
 
 
+//: @end
 @end

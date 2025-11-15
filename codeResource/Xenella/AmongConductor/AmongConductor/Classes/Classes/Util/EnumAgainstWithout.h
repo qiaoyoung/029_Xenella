@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  EnumAgainstWithout.h
 //  NIM
@@ -6,25 +8,33 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define ImageExt   (@"jpg")
-
-
+//: @interface EnumAgainstWithout : NSObject
 @interface EnumAgainstWithout : NSObject
 
-+ (NSString *)getAppDocumentPath;
+//: + (NSString *)getAppDocumentPath;
++ (NSString *)regular;
 
-+ (NSString *)getAppTempPath;
+//: + (NSString *)userDirectory;
++ (NSString *)port;
 
-+ (NSString *)userDirectory;
+//: + (NSString *)getAppTempPath;
++ (NSString *)greenPath;
 
-+ (NSString *)genFilenameWithExt:(NSString *)ext;
+//: + (NSString *)filepathForMergeForwardFile:(NSString *)filename;
++ (NSString *)cross:(NSString *)filename;
 
-+ (NSString *)filepathForVideo:(NSString *)filename;
+//: + (NSString *)genFilenameWithExt:(NSString *)ext;
++ (NSString *)exist:(NSString *)ext;
 
-+ (NSString *)filepathForImage:(NSString *)filename;
+//: + (NSString *)filepathForVideo:(NSString *)filename;
++ (NSString *)diskOmit:(NSString *)filename;
 
-+ (NSString *)filepathForMergeForwardFile:(NSString *)filename;
+//: + (NSString *)filepathForImage:(NSString *)filename;
++ (NSString *)visualisation:(NSString *)filename;
 
+//: @end
 @end

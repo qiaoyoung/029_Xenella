@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  WriteGraveWingVocal.h
 //
@@ -29,49 +31,58 @@
 //
 //  3. This notice may not be removed or altered from any source distribution.
 //
-
-
-#import <UIKit/UIKit.h>
-
-
+//: #pragma GCC diagnostic push
 #pragma GCC diagnostic push
+//: #pragma GCC diagnostic ignored "-Wobjc-missing-property-synthesis"
 #pragma GCC diagnostic ignored "-Wobjc-missing-property-synthesis"
 
-
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
+//: #import <Availability.h>
 #import <Availability.h>
-#undef weak_ref
-#if __has_feature(objc_arc) && __has_feature(objc_arc_weak)
-#define weak_ref weak
-#else
-#define weak_ref unsafe_unretained
-#endif
 
-
+//: @interface UIImage (WriteGraveWingVocal)
 @interface UIImage (WriteGraveWingVocal)
 
-- (UIImage *)blurredImageWithRadius:(CGFloat)radius iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor;
+//: - (UIImage *)blurredImageWithRadius:(CGFloat)radius iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor;
+- (UIImage *)challenge:(CGFloat)radius tincture:(NSUInteger)iterations personal:(UIColor *)tintColor;
 
+//: @end
 @end
 
 
+//: @interface WriteGraveWingVocal : UIView
 @interface WriteGraveWingVocal : UIView
 
+//: + (void)setBlurEnabled:(BOOL)blurEnabled;
 + (void)setBlurEnabled:(BOOL)blurEnabled;
-+ (void)setUpdatesEnabled;
-+ (void)setUpdatesDisabled;
+//: + (void)setUpdatesDisabled;
++ (void)popRequest;
+//: - (void)updateAsynchronously:(BOOL)async completion:(void (^)())completion;
+- (void)drag:(BOOL)async walkOut:(void (^)())completion;
 
-@property (nonatomic, getter = isBlurEnabled) BOOL blurEnabled;
-@property (nonatomic, getter = isDynamic) BOOL dynamic;
+//: @property (nonatomic, assign) NSUInteger iterations;
 @property (nonatomic, assign) NSUInteger iterations;
-@property (nonatomic, assign) NSTimeInterval updateInterval;
-@property (nonatomic, assign) CGFloat blurRadius;
+//: @property (nonatomic, getter = isBlurEnabled) BOOL blurEnabled;
+@property (nonatomic, getter = isBlurEnabled) BOOL blurEnabled;
+//: @property (nonatomic, strong) UIColor *tintColor;
 @property (nonatomic, strong) UIColor *tintColor;
-@property (nonatomic, weak_ref) UIView *underlyingView;
+//: @property (nonatomic, assign) NSTimeInterval updateInterval;
+@property (nonatomic, assign) NSTimeInterval updateInterval;
+//: @property (nonatomic, getter = isDynamic) BOOL dynamic;
+@property (nonatomic, getter = isDynamic) BOOL dynamic;
+//: @property (nonatomic, weak) UIView *underlyingView;
+@property (nonatomic, weak) UIView *underlyingView;
+//: @property (nonatomic, assign) CGFloat blurRadius;
+@property (nonatomic, assign) CGFloat blurRadius;
 
-- (void)updateAsynchronously:(BOOL)async completion:(void (^)())completion;
+//: + (void)setUpdatesEnabled;
++ (void)push;
 
+//: @end
 @end
 
 
+//: #pragma GCC diagnostic pop
 #pragma GCC diagnostic pop
-

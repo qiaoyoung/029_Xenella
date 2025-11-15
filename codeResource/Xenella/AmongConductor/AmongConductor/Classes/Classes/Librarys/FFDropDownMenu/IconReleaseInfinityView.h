@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  IconReleaseInfinityVC.h
 //  IconReleaseInfinityDemo
@@ -6,83 +8,110 @@
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import "IconReleaseInfinityBasedModel.h"
+#import "IconReleaseInfinityBasedModel.h"
+//: #import "IconReleaseInfinityModel.h"
+#import "IconReleaseInfinityModel.h"
+//: #import "IconReleaseInfinityBasedCell.h"
+#import "IconReleaseInfinityBasedCell.h"
+//: #import "IconReleaseInfinityCell.h"
+#import "IconReleaseInfinityCell.h"
 
+//: @class IconReleaseInfinityView;
 @class IconReleaseInfinityView;
 
 //model
-#import "IconReleaseInfinityBasedModel.h"
-#import "IconReleaseInfinityModel.h"
+
+
 
 //cell
-#import "IconReleaseInfinityBasedCell.h"
-#import "IconReleaseInfinityCell.h"
+
+
 
 
 //default value
-#define FFDefaultFloat -10.0
-#define FFDefaultCell @"IconReleaseInfinityCell"
-#define FFDefaultMenuScaleType IconReleaseInfinityViewAnimateType_ScaleBasedTopRight
+
+
+
 
 //rgb color  r-red 、  g-green  、  b-blue  、 a-alpha
-#define FFColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
 
 /**
  *  dropdownMenu animationType.
  *  菜单展现的动画类型
  */
+//: typedef NS_ENUM(NSInteger, IconReleaseInfinityViewAnimateType) {
 typedef NS_ENUM(NSInteger, IconReleaseInfinityViewAnimateType) {
     /**
      *  scale based the point of upper right corner.
      *  以右上角为基点进行伸缩
      */
+    //: IconReleaseInfinityViewAnimateType_ScaleBasedTopRight = 0, 
     IconReleaseInfinityViewAnimateType_ScaleBasedTopRight = 0, //default
     /**
      *  scale based the point of upper left corner.
      *  以左上角为基点进行伸缩
      */
+    //: IconReleaseInfinityViewAnimateType_ScaleBasedTopLeft,
     IconReleaseInfinityViewAnimateType_ScaleBasedTopLeft,
     /**
      *  scale based the middle point
      *  以中点为基点进行伸缩
      */
+    //: IconReleaseInfinityViewAnimateType_ScaleBasedMiddle,
     IconReleaseInfinityViewAnimateType_ScaleBasedMiddle,
     /**
      *  fade in fade out
      *  淡入淡出效果
      */
+    //: IconReleaseInfinityViewAnimateType_FadeInFadeOut,
     IconReleaseInfinityViewAnimateType_FadeInFadeOut,
     /**
      *  animate like RollerShutter
      *  卷帘效果
      */
+    //: IconReleaseInfinityViewAnimateType_RollerShutter,
     IconReleaseInfinityViewAnimateType_RollerShutter,
     /**
      *  fall from top
      *  从上往下落下
      */
+    //: IconReleaseInfinityViewAnimateType_FallFromTop,
     IconReleaseInfinityViewAnimateType_FallFromTop,
+//: };
 };
 
 
+//: @protocol IconReleaseInfinityViewDelegate <NSObject>
 @protocol IconReleaseInfinityViewDelegate <NSObject>
 
 
+//: @optional
 @optional
 
 /** 若是自定义cell样式的，可以在这个代理方法中稍微小修改cell的样式，比如是否需要下划线、字体的颜色等等*/
 /** you can modify menu cell style, Such as if should show underline */
-- (void)IconReleaseInfinityView:(IconReleaseInfinityView *)menuView WillAppearMenuCell:(IconReleaseInfinityBasedCell *)menuCell index:(NSInteger)index;
+//: - (void)IconReleaseInfinityView:(IconReleaseInfinityView *)menuView WillAppearMenuCell:(IconReleaseInfinityBasedCell *)menuCell index:(NSInteger)index;
+- (void)full:(IconReleaseInfinityView *)menuView cell:(IconReleaseInfinityBasedCell *)menuCell betwixt:(NSInteger)index;
 
-- (void)IconReleaseInfinityViewWillAppear;
+//: - (void)IconReleaseInfinityViewWillAppear;
+- (void)ownerListener;
 
-- (void)IconReleaseInfinityViewWDidAppear;
+//: - (void)IconReleaseInfinityViewWDidAppear;
+- (void)cartPolicy;
 
-- (void)IconReleaseInfinityViewWillDisappear;
+//: - (void)IconReleaseInfinityViewWillDisappear;
+- (void)protectMonitor;
 
-- (void)IconReleaseInfinityViewWDidDisappear;
+//: - (void)IconReleaseInfinityViewWDidDisappear;
+- (void)findWhile;
 
 
+//: @end
 @end
 
 
@@ -90,6 +119,7 @@ typedef NS_ENUM(NSInteger, IconReleaseInfinityViewAnimateType) {
  *  drop-down menu
  *  下拉菜单
  */
+//: @interface IconReleaseInfinityView : UIView
 @interface IconReleaseInfinityView : UIView
 
 
@@ -134,10 +164,138 @@ typedef NS_ENUM(NSInteger, IconReleaseInfinityViewAnimateType) {
  *
  *  @return An initialized drop-down menu
  */
-+ (instancetype)ff_DefaultStyleDropDownMenuWithMenuModelsArray:(NSArray *)menuModelsArray menuWidth:(CGFloat)menuWidth eachItemHeight:(CGFloat)eachItemHeight menuRightMargin:(CGFloat)menuRightMargin triangleRightMargin:(CGFloat)triangleRightMargin;
+/** 初始化(当所有属性调用完毕，一定要调用这个方法)
+ *  assign all properies complete must call this method
+ */
+//: - (void)setup;
+- (void)customPick;
 
 
 
+
+/** 14、动画效果时间(若不设置，默认为0.2) 
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     animate duration (if not assign, default value is 0.2)
+ */
+//: @property (nonatomic, assign) CGFloat animateDuration;
+@property (nonatomic, assign) CGFloat animateDuration;
+
+/** 10、三角形距离屏幕右边的间距(若不设置，默认为20.0)
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     triangle from the right margin  (if not assign, default value is 20.0)
+ */
+//: @property (nonatomic, assign) CGFloat triangleRightMargin;
+@property (nonatomic, assign) CGFloat triangleRightMargin;
+
+/** 7、菜单选项的背景颜色(若不设置，默认为白色、可以用FFColor(r, g, b, a) 设置带透明度的颜色) 
+ *     若是自定义cell,如果在自定义cell中设置了cell中子控件的颜色，这个属性将不起作用,您可以在自定义cell中自己设置颜色
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     drop-down menu item background color (if not assign, default color is white color.)
+ *            you can use FFColor(r, g, b, a) to set a color with alpha.
+ *     if you use custom cell and you set cell's background color or 
+ *            set cell's subview background color, this attribute will be affected
+ */
+
+//: @property (nonatomic, strong) UIColor *menuItemBackgroundColor;
+@property (nonatomic, strong) UIColor *menuItemBackgroundColor;
+
+/** 4、默认菜单样式 图片的左边距(默认左边距为10)
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     default menu style: iconLeftMargin (if not assign, default value is 10.0)
+ */
+//: @property (nonatomic, assign) CGFloat iconLeftMargin;
+@property (nonatomic, assign) CGFloat iconLeftMargin;
+
+/** 8、三角形颜色(若不设置，默认为白色、可以用FFColor(r, g, b, a) 设置带透明度的颜色) 
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     triangle color (if not assign, default color is white color) 
+ *                    you can use FFColor(r, g, b, a) to set a color with alpha)
+ */
+//: @property (nonatomic, strong) UIColor *triangleColor;
+@property (nonatomic, strong) UIColor *triangleColor;
+/** 9、三角形相对于keyWindow的y值,也就是相对于屏幕顶部的y值(若不设置，默认为64.0)
+ *          注意:整个下拉菜单距离屏幕顶部的距离是由triangleY来控制的
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     triangle's y relative screen's top  (if not assign, default value is 64.0)
+ *          note:The drop-down menu's distance to screen'top is controlled by triangleY.
+ */
+//: @property (nonatomic, assign) CGFloat triangleY;
+@property (nonatomic, assign) CGFloat triangleY;
+
+/** 6、菜单条离屏幕右边的间距(若不设置，默认为10.0)
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     drop-down menu from the right margin(if not assign, default value is 10.0)
+ */
+//: @property (nonatomic, assign) CGFloat menuRightMargin;
+@property (nonatomic, assign) CGFloat menuRightMargin;
+
+/** 5、每一个选项的高度(若不设置，默认为40.0)
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     each menu item height (if not assign, default value is 40.0)
+ */
+//: @property (nonatomic, assign) CGFloat eachMenuItemHeight;
+@property (nonatomic, assign) CGFloat eachMenuItemHeight;
+
+//==========================================================================
+//    public properties (effect on default menu style and custom menu style)
+//    公共属性的注释(不论是自定义样式，还是使用默认的下拉菜单样式都适用的属性)
+//==========================================================================
+
+
+
+/** 1、下拉菜单模型数组(数组里面存放 IconReleaseInfinityBasedModel的子类的对象) 
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     drop-down menu models array(Array storage IconReleaseInfinityModel instances or the IconReleaseInfinityModel's subclass instances )
+ */
+//: @property (nonatomic, strong) NSArray *menuModelsArray;
+@property (nonatomic, strong) NSArray *menuModelsArray;
+
+/** 11、三角形的size  size.width:代表三角形底部边长，size.height:代表三角形的高度
+ *      若不设置，默认为CGSizeMake(18, 10)
+ *      若不需要显示三角形，设置方式如下三种,具体使用哪种，取决于你的需求
+ *         <1>   CGSizeMake(0, 0)
+ *         <2>   CGSizeMake(宽度, 0)
+ *         <3>   CGSizeMake(0, 高度)
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     triangle size   size.width:triangle bottom width.   size.height:triangle height
+ *          (if not assign, default value is CGSizeMake(18, 10)   )
+ *     if you want to hidden triangle, there have three method
+ *         <1>   CGSizeMake(0, 0)
+ *         <2>   CGSizeMake(width, 0)
+ *         <3>   CGSizeMake(0, height)
+ */
+//: @property (nonatomic, assign) CGSize triangleSize;
+@property (nonatomic, assign) CGSize triangleSize;
+
+/** 16、菜单是否需要滚动（若不设置，默认为不可滚动）
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     menu if should scroll.(if not assign, default value NO)
+ *
+ */
+//: @property (nonatomic, assign) BOOL ifShouldScroll;
+@property (nonatomic, assign) BOOL ifShouldScroll;
 
 ///==================================================================
 ///                    创建下拉菜单方式2
@@ -180,31 +338,8 @@ typedef NS_ENUM(NSInteger, IconReleaseInfinityViewAnimateType) {
  *     -----------------------------------------------------------
  *     default menu style: titleColor (if not assign, default value is black color)
  */
+//: @property (nonatomic, assign) UIColor *titleColor;
 @property (nonatomic, assign) UIColor *titleColor;
-
-/** 2、默认菜单样式 的字体大小(默认尺寸为15)
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     default menu style: titleFontSize (if not assign, default value is 15)
- */
-@property (nonatomic, assign) NSInteger titleFontSize;
-
-/** 3、默认菜单样式 要显示的图片的size
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     default menu style: iconSize (if not assign, default value is CGSizeMake(30, 30))
- */
-@property (nonatomic, assign) CGSize iconSize;
-
-/** 4、默认菜单样式 图片的左边距(默认左边距为10)
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     default menu style: iconLeftMargin (if not assign, default value is 10.0)
- */
-@property (nonatomic, assign) CGFloat iconLeftMargin;
 
 /** 5、默认菜单样式 图片的右边距(也就是和标题之间的边距，默认为10)
  *     -----------------------------------------------------------
@@ -212,31 +347,35 @@ typedef NS_ENUM(NSInteger, IconReleaseInfinityViewAnimateType) {
  *     -----------------------------------------------------------
  *     default menu style: iconRightMargin (margin between icon and title)(if not assign, default value is 10.0)
  */
+//: @property (nonatomic, assign) CGFloat iconRightMargin;
 @property (nonatomic, assign) CGFloat iconRightMargin;
 
-
-
-
-
-
-
-
-
-
-//==========================================================================
-//    public properties (effect on default menu style and custom menu style)
-//    公共属性的注释(不论是自定义样式，还是使用默认的下拉菜单样式都适用的属性)
-//==========================================================================
-
-
-
-/** 1、下拉菜单模型数组(数组里面存放 IconReleaseInfinityBasedModel的子类的对象) 
+/** 3、菜单的宽度(若不设置，默认为 150.0)
  *     -----------------------------------------------------------
  *     English description:
  *     -----------------------------------------------------------
- *     drop-down menu models array(Array storage IconReleaseInfinityModel instances or the IconReleaseInfinityModel's subclass instances )
+ *     menu's width (if not assign, default value is 150.0)
  */
-@property (nonatomic, strong) NSArray *menuModelsArray;
+//: @property (nonatomic, assign) CGFloat menuWidth;
+@property (nonatomic, assign) CGFloat menuWidth;
+
+/** 2、默认菜单样式 的字体大小(默认尺寸为15)
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     default menu style: titleFontSize (if not assign, default value is 15)
+ */
+//: @property (nonatomic, assign) NSInteger titleFontSize;
+@property (nonatomic, assign) NSInteger titleFontSize;
+
+/** 4、菜单的圆角半径(若不设置，默认为5.0)
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     menu's cornerRadius (if not assign, default value is 5.0)
+ */
+//: @property (nonatomic, assign) CGFloat menuCornerRadius;
+@property (nonatomic, assign) CGFloat menuCornerRadius;
 
 /** 2、cell的类名, 必须是IconReleaseInfinityBasedCell的子类
  *               若用框架自带的cell,直接传@"IconReleaseInfinityCell"
@@ -257,97 +396,8 @@ typedef NS_ENUM(NSInteger, IconReleaseInfinityViewAnimateType) {
  *                              ----->cell is from code   pass @"YourCustomMenuCell"
  *                              ----->cell is from xib    pass @"YourCustomMenuCell.xib"
  */
+//: @property (nonatomic, copy) NSString *cellClassName;
 @property (nonatomic, copy) NSString *cellClassName;
-
-/** 3、菜单的宽度(若不设置，默认为 150.0)
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     menu's width (if not assign, default value is 150.0)
- */
-@property (nonatomic, assign) CGFloat menuWidth;
-
-/** 4、菜单的圆角半径(若不设置，默认为5.0)
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     menu's cornerRadius (if not assign, default value is 5.0)
- */
-@property (nonatomic, assign) CGFloat menuCornerRadius;
-
-/** 5、每一个选项的高度(若不设置，默认为40.0)
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     each menu item height (if not assign, default value is 40.0)
- */
-@property (nonatomic, assign) CGFloat eachMenuItemHeight;
-
-/** 6、菜单条离屏幕右边的间距(若不设置，默认为10.0)
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     drop-down menu from the right margin(if not assign, default value is 10.0)
- */
-@property (nonatomic, assign) CGFloat menuRightMargin;
-
-/** 7、菜单选项的背景颜色(若不设置，默认为白色、可以用FFColor(r, g, b, a) 设置带透明度的颜色) 
- *     若是自定义cell,如果在自定义cell中设置了cell中子控件的颜色，这个属性将不起作用,您可以在自定义cell中自己设置颜色
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     drop-down menu item background color (if not assign, default color is white color.)
- *            you can use FFColor(r, g, b, a) to set a color with alpha.
- *     if you use custom cell and you set cell's background color or 
- *            set cell's subview background color, this attribute will be affected
- */
-
-@property (nonatomic, strong) UIColor *menuItemBackgroundColor;
-
-/** 8、三角形颜色(若不设置，默认为白色、可以用FFColor(r, g, b, a) 设置带透明度的颜色) 
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     triangle color (if not assign, default color is white color) 
- *                    you can use FFColor(r, g, b, a) to set a color with alpha)
- */
-@property (nonatomic, strong) UIColor *triangleColor;
-
-/** 9、三角形相对于keyWindow的y值,也就是相对于屏幕顶部的y值(若不设置，默认为64.0)
- *          注意:整个下拉菜单距离屏幕顶部的距离是由triangleY来控制的
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     triangle's y relative screen's top  (if not assign, default value is 64.0)
- *          note:The drop-down menu's distance to screen'top is controlled by triangleY.
- */
-@property (nonatomic, assign) CGFloat triangleY;
-
-/** 10、三角形距离屏幕右边的间距(若不设置，默认为20.0)
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     triangle from the right margin  (if not assign, default value is 20.0)
- */
-@property (nonatomic, assign) CGFloat triangleRightMargin;
-
-/** 11、三角形的size  size.width:代表三角形底部边长，size.height:代表三角形的高度
- *      若不设置，默认为CGSizeMake(18, 10)
- *      若不需要显示三角形，设置方式如下三种,具体使用哪种，取决于你的需求
- *         <1>   CGSizeMake(0, 0)
- *         <2>   CGSizeMake(宽度, 0)
- *         <3>   CGSizeMake(0, 高度)
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     triangle size   size.width:triangle bottom width.   size.height:triangle height
- *          (if not assign, default value is CGSizeMake(18, 10)   )
- *     if you want to hidden triangle, there have three method
- *         <1>   CGSizeMake(0, 0)
- *         <2>   CGSizeMake(width, 0)
- *         <3>   CGSizeMake(0, height)
- */
-@property (nonatomic, assign) CGSize triangleSize;
 
 /** 12、背景颜色开始时的透明度(还没展示menu的透明度)(若不设置，默认为0.02) 
  *      背景颜色的透明度就是除去菜单外的灰色蒙板的透明度
@@ -357,7 +407,44 @@ typedef NS_ENUM(NSInteger, IconReleaseInfinityViewAnimateType) {
  *     mask begin color alpha .(Did not show the menu background clolor alpha)(color is black color)
  *          (if not assign, default value is 0.02)
  */
+//: @property (nonatomic, assign) CGFloat bgColorbeginAlpha;
 @property (nonatomic, assign) CGFloat bgColorbeginAlpha;
+
+/** 18、delegate
+ *
+ */
+//: @property (nonatomic, weak) id<IconReleaseInfinityViewDelegate> delegate;
+@property (nonatomic, weak) id<IconReleaseInfinityViewDelegate> delegate;
+
+/** 15、菜单的弹出的动画效果类型(若不设置，默认为IconReleaseInfinityViewAnimateType_ScaleBasedTopRight)
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     show drop-down menu animate type. (if not assign, default value is IconReleaseInfinityViewAnimateType_ScaleBasedTopRight)
+ */
+//: @property (nonatomic, assign) IconReleaseInfinityViewAnimateType menuAnimateType;
+@property (nonatomic, assign) IconReleaseInfinityViewAnimateType menuAnimateType;
+
+
+/** 17、菜单选项栏的高度（若不设置，默认显示全部菜单item的总高度）
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     Menu bar height.(if not assign, default value total item height)
+ *
+ */
+//: @property (nonatomic, assign) CGFloat menuBarHeight;
+@property (nonatomic, assign) CGFloat menuBarHeight;
+
+/** 3、默认菜单样式 要显示的图片的size
+ *     -----------------------------------------------------------
+ *     English description:
+ *     -----------------------------------------------------------
+ *     default menu style: iconSize (if not assign, default value is CGSizeMake(30, 30))
+ */
+//: @property (nonatomic, assign) CGSize iconSize;
+@property (nonatomic, assign) CGSize iconSize;
+
 
 /** 13、背景颜色结束的的透明度(menu完全展示的透明度)(若不设置，默认为0.2) 
  *      背景颜色的透明度就是除去菜单外的灰色蒙板的透明度
@@ -367,67 +454,14 @@ typedef NS_ENUM(NSInteger, IconReleaseInfinityViewAnimateType) {
  *     mask end color alpha .(already show the menu background color alpha)(color is black color)
  *          (if not assign, default value is 0.2)
  */
+//: @property (nonatomic, assign) CGFloat bgColorEndAlpha;
 @property (nonatomic, assign) CGFloat bgColorEndAlpha;
-
-/** 14、动画效果时间(若不设置，默认为0.2) 
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     animate duration (if not assign, default value is 0.2)
- */
-@property (nonatomic, assign) CGFloat animateDuration;
-
-/** 15、菜单的弹出的动画效果类型(若不设置，默认为IconReleaseInfinityViewAnimateType_ScaleBasedTopRight)
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     show drop-down menu animate type. (if not assign, default value is IconReleaseInfinityViewAnimateType_ScaleBasedTopRight)
- */
-@property (nonatomic, assign) IconReleaseInfinityViewAnimateType menuAnimateType;
-
-
-/** 16、菜单是否需要滚动（若不设置，默认为不可滚动）
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     menu if should scroll.(if not assign, default value NO)
- *
- */
-@property (nonatomic, assign) BOOL ifShouldScroll;
-
-/** 17、菜单选项栏的高度（若不设置，默认显示全部菜单item的总高度）
- *     -----------------------------------------------------------
- *     English description:
- *     -----------------------------------------------------------
- *     Menu bar height.(if not assign, default value total item height)
- *
- */
-@property (nonatomic, assign) CGFloat menuBarHeight;
-
-
-/** 18、delegate
- *
- */
-@property (nonatomic, weak) id<IconReleaseInfinityViewDelegate> delegate;
-
-
-
-
-
-
-
-
-
-
-
-
-
-/** 初始化(当所有属性调用完毕，一定要调用这个方法)
- *  assign all properies complete must call this method
- */
-- (void)setup;
+//: + (instancetype)ff_DefaultStyleDropDownMenuWithMenuModelsArray:(NSArray *)menuModelsArray menuWidth:(CGFloat)menuWidth eachItemHeight:(CGFloat)eachItemHeight menuRightMargin:(CGFloat)menuRightMargin triangleRightMargin:(CGFloat)triangleRightMargin;
++ (instancetype)menu:(NSArray *)menuModelsArray anBillOfFare:(CGFloat)menuWidth triangle:(CGFloat)eachItemHeight quantityelligenceInformation:(CGFloat)menuRightMargin belowText:(CGFloat)triangleRightMargin;
 
 /** 弹出菜单 */
-- (void)showMenu;
+//: - (void)showMenu;
+- (void)joyousness;
 
+//: @end
 @end

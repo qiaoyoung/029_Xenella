@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DynamicScrollViewAcceptCoordinator.h
 // TreatLayoutExotic
@@ -6,15 +8,21 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface DynamicScrollViewAcceptCoordinator : UIView
 @interface DynamicScrollViewAcceptCoordinator : UIView
 
 //@property (nonatomic, strong) UIColor *badgeBackgroundColor;
 
+//: @property (nonatomic, copy) NSString *badgeValue;
 @property (nonatomic, copy) NSString *badgeValue;
 
-+ (instancetype)viewWithBadgeTip:(NSString *)badgeValue;
+//: + (instancetype)viewWithBadgeTip:(NSString *)badgeValue;
++ (instancetype)borderTip:(NSString *)badgeValue;
 
 
+//: @end
 @end

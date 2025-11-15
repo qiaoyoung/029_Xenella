@@ -1,3 +1,122 @@
+
+#import <Foundation/Foundation.h>
+
+typedef struct {
+    Byte bugFieldState;
+    Byte *targetPending;
+    unsigned int uncommunicative;
+	int areaMaker;
+	int maneuver;
+	int bareRefuse;
+} StructEvenData;
+
+@interface EvenData : NSObject
+
+@end
+
+@implementation EvenData
+
+//: successful_authentication
++ (NSString *)moduleBeneathUtility {
+    /* static */ NSString *moduleBeneathUtility = nil;
+    if (!moduleBeneathUtility) {
+        StructEvenData value = (StructEvenData){112, (Byte []){3, 5, 19, 19, 21, 3, 3, 22, 5, 28, 47, 17, 5, 4, 24, 21, 30, 4, 25, 19, 17, 4, 25, 31, 30, 136}, 25, 106, 222, 69};
+        moduleBeneathUtility = [self StringFromEvenData:&value];
+    }
+    return moduleBeneathUtility;
+}
+
+//: 接受成功
++ (NSString *)kTenseName {
+    /* static */ NSString *kTenseName = nil;
+    if (!kTenseName) {
+        StructEvenData value = (StructEvenData){230, (Byte []){0, 104, 67, 3, 105, 113, 0, 110, 118, 3, 108, 121, 213}, 12, 247, 1, 224};
+        kTenseName = [self StringFromEvenData:&value];
+    }
+    return kTenseName;
+}
+
++ (NSString *)StringFromEvenData:(StructEvenData *)data {
+    return [NSString stringWithUTF8String:(char *)[self EvenDataToByte:data]];
+}
+
+//: friend_verify_avtivity_net_error
++ (NSString *)spacingWiseTimer {
+    /* static */ NSString *spacingWiseTimer = nil;
+    if (!spacingWiseTimer) {
+        StructEvenData value = (StructEvenData){75, (Byte []){45, 57, 34, 46, 37, 47, 20, 61, 46, 57, 34, 45, 50, 20, 42, 61, 63, 34, 61, 34, 63, 50, 20, 37, 46, 63, 20, 46, 57, 57, 36, 57, 148}, 32, 121, 103, 242};
+        spacingWiseTimer = [self StringFromEvenData:&value];
+    }
+    return spacingWiseTimer;
+}
+
+//: message_helper_already_ok
++ (NSString *)layoutImplementPage {
+    /* static */ NSString *layoutImplementPage = nil;
+    if (!layoutImplementPage) {
+        StructEvenData value = (StructEvenData){160, (Byte []){205, 197, 211, 211, 193, 199, 197, 255, 200, 197, 204, 208, 197, 210, 255, 193, 204, 210, 197, 193, 196, 217, 255, 207, 203, 176}, 25, 65, 93, 254};
+        layoutImplementPage = [self StringFromEvenData:&value];
+    }
+    return layoutImplementPage;
+}
+
++ (Byte *)EvenDataToByte:(StructEvenData *)data {
+    for (int i = 0; i < data->uncommunicative; i++) {
+        data->targetPending[i] ^= data->bugFieldState;
+    }
+    data->targetPending[data->uncommunicative] = 0;
+	if (data->uncommunicative >= 3) {
+		data->areaMaker = data->targetPending[0];
+		data->maneuver = data->targetPending[1];
+		data->bareRefuse = data->targetPending[2];
+	}
+    return data->targetPending;
+}
+
+//: 拒绝失败,请重试
++ (NSString *)coreCapFormat {
+    /* static */ NSString *coreCapFormat = nil;
+    if (!coreCapFormat) {
+        StructEvenData value = (StructEvenData){146, (Byte []){116, 25, 0, 117, 41, 15, 119, 54, 35, 122, 38, 55, 190, 122, 61, 37, 123, 21, 31, 122, 61, 7, 197}, 22, 71, 168, 127};
+        coreCapFormat = [self StringFromEvenData:&value];
+    }
+    return coreCapFormat;
+}
+
+//: group_info_activity_team_not_exist
++ (NSString *)spacingBareKey {
+    /* static */ NSString *spacingBareKey = nil;
+    if (!spacingBareKey) {
+        StructEvenData value = (StructEvenData){163, (Byte []){196, 209, 204, 214, 211, 252, 202, 205, 197, 204, 252, 194, 192, 215, 202, 213, 202, 215, 218, 252, 215, 198, 194, 206, 252, 205, 204, 215, 252, 198, 219, 202, 208, 215, 21}, 34, 114, 214, 70};
+        spacingBareKey = [self StringFromEvenData:&value];
+    }
+    return spacingBareKey;
+}
+
+//: fail_authentication
++ (NSString *)appBadValue {
+    /* static */ NSString *appBadValue = nil;
+    if (!appBadValue) {
+        StructEvenData value = (StructEvenData){230, (Byte []){128, 135, 143, 138, 185, 135, 147, 146, 142, 131, 136, 146, 143, 133, 135, 146, 143, 137, 136, 167}, 19, 57, 53, 180};
+        appBadValue = [self StringFromEvenData:&value];
+    }
+    return appBadValue;
+}
+
+//: message_helper_already_no
++ (NSString *)featureCaptureKey {
+    /* static */ NSString *featureCaptureKey = nil;
+    if (!featureCaptureKey) {
+        StructEvenData value = (StructEvenData){6, (Byte []){107, 99, 117, 117, 103, 97, 99, 89, 110, 99, 106, 118, 99, 116, 89, 103, 106, 116, 99, 103, 98, 127, 89, 104, 105, 135}, 25, 137, 198, 77};
+        featureCaptureKey = [self StringFromEvenData:&value];
+    }
+    return featureCaptureKey;
+}
+
+@end   
+
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TranquilHazeOutsideGlade.m
 //  NIM
@@ -6,246 +125,255 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "TranquilHazeOutsideGlade.h"
 #import "TranquilHazeOutsideGlade.h"
+//: #import "DominantOpenLockCancelUnit.h"
 #import "DominantOpenLockCancelUnit.h"
+//: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 
+//: @interface TranquilHazeOutsideGlade ()<NIMSystemNotificationManagerDelegate,VerifyViewModelMajor,UITableViewDelegate,UITableViewDataSource>
 @interface TranquilHazeOutsideGlade ()<NIMSystemNotificationManagerDelegate,VerifyViewModelMajor,UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,assign)    BOOL shouldMarkAsRead;
+//: @property (nonatomic,assign) BOOL shouldMarkAsRead;
+@property (nonatomic,assign) BOOL shouldMarkAsRead;
 
+//: @end
 @end
 
+//: @implementation TranquilHazeOutsideGlade
 @implementation TranquilHazeOutsideGlade
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.backgroundColor = [UIColor colorWithRed:243/255.0 green:242/255.0 blue:252/255.0 alpha:1];
-
-        self.tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
-        [self addSubview:self.tableView];
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        self.tableView.backgroundColor = [UIColor clearColor];
-        self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
-        self.tableView.delegate   = self;
-        self.tableView.dataSource = self;
-        
-        _notifications = [NSMutableArray array];
-        
-        id<NIMSystemNotificationManager> systemNotificationManager = [[NIMSDK sharedSDK] systemNotificationManager];
-        [systemNotificationManager addDelegate:self];
-    
-        NIMSystemNotificationFilter *filter = [[NIMSystemNotificationFilter alloc] init];
-        filter.notificationTypes = @[@(0),@(1),@(2),@(3),@(5),@(15),@(16),@(17),@(18)];
-       
-        NSArray *notification = [systemNotificationManager fetchSystemNotifications:nil
-                                                             limit:20 filter:filter];
-        
-        if ([notification count])
-        {
-            [_notifications addObjectsFromArray:notification];
-//                    if (![[notification firstObject] read])
-//                    {
-//                        _shouldMarkAsRead = YES;
-//
-//                    }
-        }
-        
-        [self.tableView reloadData];
-        
-    }
-    return self;
-}
-
-
-- (void)initUI{
-    
-//        if (_shouldMarkAsRead)
-//        {
-//            [[[NIMSDK sharedSDK] systemNotificationManager] markAllNotificationsAsRead];
-//        }
-}
-
-- (void)onReceiveSystemNotification:(NIMSystemNotification *)notification
-{
-    [_notifications insertObject:notification atIndex:0];
-//    _shouldMarkAsRead = YES;
-    [self.tableView reloadData];
-//    [[[NIMSDK sharedSDK] systemNotificationManager] markAllNotificationsAsRead];
-}
-
-#pragma mark - UITableViewDataSource
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_notifications count];
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    DominantOpenLockCancelUnit *cell = [tableView dequeueReusableCellWithIdentifier:@"DominantOpenLockCancelUnit"];
-    if (!cell) {
-        cell = [[DominantOpenLockCancelUnit alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"DominantOpenLockCancelUnit"];
-    }
-    cell.actionDelegate = self;
-    
-    NIMSystemNotification *notification = [_notifications objectAtIndex:[indexPath row]];
-    [cell update:notification];
-  
-    return cell;
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    return 70;
-}
-
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        NSInteger index = [indexPath row];
-        NIMSystemNotification *notification = [_notifications objectAtIndex:index];
-        [_notifications removeObjectAtIndex:index];
-        [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }
-}
-
-
+//: #pragma mark - SystemNotificationCell
 #pragma mark - SystemNotificationCell
-- (void)onAccept:(NIMSystemNotification *)notification
+//: - (void)onAccept:(NIMSystemNotification *)notification
+- (void)merges:(NIMSystemNotification *)notification
 {
+    //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
+    //: switch (notification.type) {
     switch (notification.type) {
+        //: case NIMSystemNotificationTypeTeamApply:{
         case NIMSystemNotificationTypeTeamApply:{
+            //: [[NIMSDK sharedSDK].teamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
             [[NIMSDK sharedSDK].teamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
+                //: if (!error) {
                 if (!error) {
-                    [wself makeToast:LangKey(@"message_helper_already_ok")
-                                                      duration:2
-                                                      position:CSToastPositionCenter];
+                    //: [wself makeToast:[IsletSavePreview getTextWithKey:@"message_helper_already_ok"]
+                    [wself exaggerate:[IsletSavePreview being:[EvenData layoutImplementPage]]
+                                                      //: duration:2
+                                                      distance:2
+                                                      //: position:CSToastPositionCenter];
+                                                      collection:layoutSecureAlert];
+                    //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
                     notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
+                //: }else {
                 }else {
+                    //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        [wself makeToast:LangKey(@"friend_verify_avtivity_net_error")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingWiseTimer]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
+                    //: } else {
                     } else {
+                        //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                         notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                     }
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
                 }
+            //: }];
             }];
+            //: break;
             break;
         }
+        //: case NIMSystemNotificationTypeSuperTeamApply:{
         case NIMSystemNotificationTypeSuperTeamApply:{
+            //: [[NIMSDK sharedSDK].superTeamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
             [[NIMSDK sharedSDK].superTeamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
+                //: if (!error) {
                 if (!error) {
-                    [wself makeToast:LangKey(@"message_helper_already_ok")
-                                                      duration:2
-                                                      position:CSToastPositionCenter];
+                    //: [wself makeToast:[IsletSavePreview getTextWithKey:@"message_helper_already_ok"]
+                    [wself exaggerate:[IsletSavePreview being:[EvenData layoutImplementPage]]
+                                                      //: duration:2
+                                                      distance:2
+                                                      //: position:CSToastPositionCenter];
+                                                      collection:layoutSecureAlert];
+                    //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
                     notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
+                    //: [_notifications removeObject:notification];
                     [_notifications removeObject:notification];
+                    //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
                     [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
+                //: }else {
                 }else {
+                    //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        [wself makeToast:LangKey(@"friend_verify_avtivity_net_error")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingWiseTimer]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
+                    //: } else {
                     } else {
+                        //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                         notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                     }
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
                 }
+            //: }];
             }];
+            //: break;
             break;
         }
+        //: case NIMSystemNotificationTypeTeamInvite:{
         case NIMSystemNotificationTypeTeamInvite:{
+            //: [[NIMSDK sharedSDK].teamManager acceptInviteWithTeam:notification.targetID invitorId:notification.sourceID completion:^(NSError *error) {
             [[NIMSDK sharedSDK].teamManager acceptInviteWithTeam:notification.targetID invitorId:notification.sourceID completion:^(NSError *error) {
+                //: if (!error) {
                 if (!error) {
-                    [wself makeToast:@"接受成功".user_localized
-                                                      duration:2
-                                                      position:CSToastPositionCenter];
+                    //: [wself makeToast:@"接受成功".user_localized
+                    [wself exaggerate:[EvenData kTenseName].rejectDown
+                                                      //: duration:2
+                                                      distance:2
+                                                      //: position:CSToastPositionCenter];
+                                                      collection:layoutSecureAlert];
+                    //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
                     notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
+                    //: [_notifications removeObject:notification];
                     [_notifications removeObject:notification];
+                    //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
                     [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
+                //: }else {
                 }else {
+                    //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        [wself makeToast:LangKey(@"friend_verify_avtivity_net_error")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingWiseTimer]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
                     }
+                    //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        [wself makeToast:LangKey(@"group_info_activity_team_not_exist")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"group_info_activity_team_not_exist"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingBareKey]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
                     }
+                    //: else {
                     else {
+                        //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                         notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                     }
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
                 }
+            //: }];
             }];
         }
+            //: break;
             break;
+        //: case NIMSystemNotificationTypeSuperTeamInvite:
         case NIMSystemNotificationTypeSuperTeamInvite:
         {
+            //: [[NIMSDK sharedSDK].superTeamManager acceptInviteWithTeam:notification.targetID invitorId:notification.sourceID completion:^(NSError *error) {
             [[NIMSDK sharedSDK].superTeamManager acceptInviteWithTeam:notification.targetID invitorId:notification.sourceID completion:^(NSError *error) {
+                //: if (!error) {
                 if (!error) {
-                    [wself makeToast:@"接受成功".user_localized
-                                                      duration:2
-                                                      position:CSToastPositionCenter];
+                    //: [wself makeToast:@"接受成功".user_localized
+                    [wself exaggerate:[EvenData kTenseName].rejectDown
+                                                      //: duration:2
+                                                      distance:2
+                                                      //: position:CSToastPositionCenter];
+                                                      collection:layoutSecureAlert];
+                    //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
                     notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
+                    //: [_notifications removeObject:notification];
                     [_notifications removeObject:notification];
+                    //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
                     [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
+                //: }else {
                 }else {
+                    //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        [wself makeToast:LangKey(@"friend_verify_avtivity_net_error")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingWiseTimer]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
                     }
+                    //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        [wself makeToast:LangKey(@"group_info_activity_team_not_exist")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"group_info_activity_team_not_exist"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingBareKey]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
                     }
+                    //: else {
                     else {
+                        //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                         notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                     }
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
                 }
+            //: }];
             }];
+            //: break;
             break;
         }
+        //: case NIMSystemNotificationTypeFriendAdd:
         case NIMSystemNotificationTypeFriendAdd:
         {
+            //: NIMUserRequest *request = [[NIMUserRequest alloc] init];
             NIMUserRequest *request = [[NIMUserRequest alloc] init];
+            //: request.userId = notification.sourceID;
             request.userId = notification.sourceID;
+            //: request.operation = NIMUserOperationVerify;
             request.operation = NIMUserOperationVerify;
-            
+
+            //: [[[NIMSDK sharedSDK] userManager] requestFriend:request
             [[[NIMSDK sharedSDK] userManager] requestFriend:request
+                                                 //: completion:^(NSError *error) {
                                                  completion:^(NSError *error) {
+                                                     //: if (!error) {
                                                      if (!error) {
-                                                         [wself makeToast:LangKey(@"successful_authentication")//@"验证成功".user_localized
-                                                                                           duration:2
-                                                                                           position:CSToastPositionCenter];
+                                                         //: [wself makeToast:[IsletSavePreview getTextWithKey:@"successful_authentication"]//@"验证成功".user_localized
+                                                         [wself exaggerate:[IsletSavePreview being:[EvenData moduleBeneathUtility]]//@"验证成功".user_localized
+                                                                                           //: duration:2
+                                                                                           distance:2
+                                                                                           //: position:CSToastPositionCenter];
+                                                                                           collection:layoutSecureAlert];
+                                                         //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
                                                          notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOk;
-                                                         
+
+                                                         //: [_notifications removeObject:notification];
                                                          [_notifications removeObject:notification];
+                                                         //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
                                                          [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
-                                                     
-                                                         
+
+
                                                          //拿到对方用户信息
 //                                                         NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:notification.sourceID];
 //                                                         //NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:[[NIMSDK sharedSDK].loginManager currentAccount]];
@@ -260,169 +388,444 @@
 //                                                         // 发送消息
 //                                                         [[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:&error];
                                                      }
+                                                     //: else
                                                      else
                                                      {
-                                                         [wself makeToast:LangKey(@"fail_authentication")//@"验证失败,请重试".user_localized
-                                                                                           duration:2
-                                                                                           position:CSToastPositionCenter];
+                                                         //: [wself makeToast:[IsletSavePreview getTextWithKey:@"fail_authentication"]//@"验证失败,请重试".user_localized
+                                                         [wself exaggerate:[IsletSavePreview being:[EvenData appBadValue]]//@"验证失败,请重试".user_localized
+                                                                                           //: duration:2
+                                                                                           distance:2
+                                                                                           //: position:CSToastPositionCenter];
+                                                                                           collection:layoutSecureAlert];
                                                      }
+                                                     //: [wself.tableView reloadData];
                                                      [wself.tableView reloadData];
+                                                 //: }];
                                                  }];
-            
+
 
 //            [TupleApplyCompute postWithUrl:Server_user_addFriend params:@{@"fuid":notification.sourceID?:@""} isShow:NO success:^(id responseObject) {
 //
 //            } failed:^(id responseObject, NSError *error) {
 //            }];
-            
-            
+
+
         }
+            //: break;
             break;
+        //: default:
         default:
+            //: break;
             break;
     }
 }
 
-- (void)onRefuse:(NIMSystemNotification *)notification
+
+//: - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    //: return 70;
+    return 70;
+}
+
+//: - (void)onReceiveSystemNotification:(NIMSystemNotification *)notification
+- (void)onReceiveSystemNotification:(NIMSystemNotification *)notification
 {
+    //: [_notifications insertObject:notification atIndex:0];
+    [_notifications insertObject:notification atIndex:0];
+//    _shouldMarkAsRead = YES;
+    //: [self.tableView reloadData];
+    [self.tableView reloadData];
+//    [[[NIMSDK sharedSDK] systemNotificationManager] markAllNotificationsAsRead];
+}
+
+//: - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    //: DominantOpenLockCancelUnit *cell = [tableView dequeueReusableCellWithIdentifier:@"DominantOpenLockCancelUnit"];
+    DominantOpenLockCancelUnit *cell = [tableView dequeueReusableCellWithIdentifier:@"DominantOpenLockCancelUnit"];
+    //: if (!cell) {
+    if (!cell) {
+        //: cell = [[DominantOpenLockCancelUnit alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"DominantOpenLockCancelUnit"];
+        cell = [[DominantOpenLockCancelUnit alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"DominantOpenLockCancelUnit"];
+    }
+    //: cell.actionDelegate = self;
+    cell.actionDelegate = self;
+
+    //: NIMSystemNotification *notification = [_notifications objectAtIndex:[indexPath row]];
+    NIMSystemNotification *notification = [_notifications objectAtIndex:[indexPath row]];
+    //: [cell update:notification];
+    [cell myWith:notification];
+
+    //: return cell;
+    return cell;
+}
+
+//: - (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    //: self = [super initWithFrame:frame];
+    self = [super initWithFrame:frame];
+    //: if (self) {
+    if (self) {
+        //: self.backgroundColor = [UIColor colorWithRed:243/255.0 green:242/255.0 blue:252/255.0 alpha:1];
+        self.backgroundColor = [UIColor colorWithRed:243/255.0 green:242/255.0 blue:252/255.0 alpha:1];
+
+        //: self.tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
+        self.tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
+        //: [self addSubview:self.tableView];
+        [self addSubview:self.tableView];
+        //: self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        //: self.tableView.backgroundColor = [UIColor clearColor];
+        self.tableView.backgroundColor = [UIColor clearColor];
+        //: self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
+        self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
+        //: self.tableView.delegate = self;
+        self.tableView.delegate = self;
+        //: self.tableView.dataSource = self;
+        self.tableView.dataSource = self;
+
+        //: _notifications = [NSMutableArray array];
+        _notifications = [NSMutableArray array];
+
+        //: id<NIMSystemNotificationManager> systemNotificationManager = [[NIMSDK sharedSDK] systemNotificationManager];
+        id<NIMSystemNotificationManager> systemNotificationManager = [[NIMSDK sharedSDK] systemNotificationManager];
+        //: [systemNotificationManager addDelegate:self];
+        [systemNotificationManager addDelegate:self];
+
+        //: NIMSystemNotificationFilter *filter = [[NIMSystemNotificationFilter alloc] init];
+        NIMSystemNotificationFilter *filter = [[NIMSystemNotificationFilter alloc] init];
+        //: filter.notificationTypes = @[@(0),@(1),@(2),@(3),@(5),@(15),@(16),@(17),@(18)];
+        filter.notificationTypes = @[@(0),@(1),@(2),@(3),@(5),@(15),@(16),@(17),@(18)];
+
+        //: NSArray *notification = [systemNotificationManager fetchSystemNotifications:nil
+        NSArray *notification = [systemNotificationManager fetchSystemNotifications:nil
+                                                             //: limit:20 filter:filter];
+                                                             limit:20 filter:filter];
+
+        //: if ([notification count])
+        if ([notification count])
+        {
+            //: [_notifications addObjectsFromArray:notification];
+            [_notifications addObjectsFromArray:notification];
+//                    if (![[notification firstObject] read])
+//                    {
+//                        _shouldMarkAsRead = YES;
+//
+//                    }
+        }
+
+        //: [self.tableView reloadData];
+        [self.tableView reloadData];
+
+    }
+    //: return self;
+    return self;
+}
+
+
+//: - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    //: if (editingStyle == UITableViewCellEditingStyleDelete) {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //: NSInteger index = [indexPath row];
+        NSInteger index = [indexPath row];
+        //: NIMSystemNotification *notification = [_notifications objectAtIndex:index];
+        NIMSystemNotification *notification = [_notifications objectAtIndex:index];
+        //: [_notifications removeObjectAtIndex:index];
+        [_notifications removeObjectAtIndex:index];
+        //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
+        [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
+        //: [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+//: - (void)onRefuse:(NIMSystemNotification *)notification
+- (void)voluming:(NIMSystemNotification *)notification
+{
+    //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
+    //: switch (notification.type) {
     switch (notification.type) {
+        //: case NIMSystemNotificationTypeTeamApply:{
         case NIMSystemNotificationTypeTeamApply:{
+            //: [[NIMSDK sharedSDK].teamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
             [[NIMSDK sharedSDK].teamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
+                //: if (!error) {
                 if (!error) {
-                    [wself makeToast:LangKey(@"message_helper_already_no")
-                                                      duration:2
-                                                      position:CSToastPositionCenter];
+                    //: [wself makeToast:[IsletSavePreview getTextWithKey:@"message_helper_already_no"]
+                    [wself exaggerate:[IsletSavePreview being:[EvenData featureCaptureKey]]
+                                                      //: duration:2
+                                                      distance:2
+                                                      //: position:CSToastPositionCenter];
+                                                      collection:layoutSecureAlert];
+                    //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
                     notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
+                    //: [_notifications removeObject:notification];
                     [_notifications removeObject:notification];
+                    //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
                     [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
+                //: }else {
                 }else {
+                    //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        [wself makeToast:LangKey(@"friend_verify_avtivity_net_error")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingWiseTimer]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
+                    //: } else {
                     } else {
+                        //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                         notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                     }
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
                 }
+            //: }];
             }];
         }
+           //: break;
            break;
+        //: case NIMSystemNotificationTypeSuperTeamApply:{
         case NIMSystemNotificationTypeSuperTeamApply:{
+            //: [[NIMSDK sharedSDK].superTeamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
             [[NIMSDK sharedSDK].superTeamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
+                //: if (!error) {
                 if (!error) {
-                    [wself makeToast:LangKey(@"message_helper_already_no")
-                                                      duration:2
-                                                      position:CSToastPositionCenter];
+                    //: [wself makeToast:[IsletSavePreview getTextWithKey:@"message_helper_already_no"]
+                    [wself exaggerate:[IsletSavePreview being:[EvenData featureCaptureKey]]
+                                                      //: duration:2
+                                                      distance:2
+                                                      //: position:CSToastPositionCenter];
+                                                      collection:layoutSecureAlert];
+                    //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
                     notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
+                    //: [_notifications removeObject:notification];
                     [_notifications removeObject:notification];
+                    //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
                     [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
+                //: }else {
                 }else {
+                    //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        [wself makeToast:LangKey(@"friend_verify_avtivity_net_error")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingWiseTimer]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
+                    //: } else {
                     } else {
+                        //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                         notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                     }
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
                 }
+            //: }];
             }];
+            //: break;
             break;
         }
+        //: case NIMSystemNotificationTypeTeamInvite:{
         case NIMSystemNotificationTypeTeamInvite:{
+            //: [[NIMSDK sharedSDK].teamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
             [[NIMSDK sharedSDK].teamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
+                //: if (!error) {
                 if (!error) {
-                    [wself makeToast:LangKey(@"message_helper_already_no")
-                                                      duration:2
-                                                      position:CSToastPositionCenter];
+                    //: [wself makeToast:[IsletSavePreview getTextWithKey:@"message_helper_already_no"]
+                    [wself exaggerate:[IsletSavePreview being:[EvenData featureCaptureKey]]
+                                                      //: duration:2
+                                                      distance:2
+                                                      //: position:CSToastPositionCenter];
+                                                      collection:layoutSecureAlert];
+                    //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
                     notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
+                    //: [_notifications removeObject:notification];
                     [_notifications removeObject:notification];
+                    //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
                     [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
+                //: }else {
                 }else {
+                    //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        [wself makeToast:LangKey(@"friend_verify_avtivity_net_error")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingWiseTimer]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
                     }
+                    //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        [wself makeToast:LangKey(@"group_info_activity_team_not_exist")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"group_info_activity_team_not_exist"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingBareKey]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
                     }
+                    //: else {
                     else {
+                        //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                         notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                     }
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
                 }
+            //: }];
             }];
         }
+            //: break;
             break;
+        //: case NIMSystemNotificationTypeSuperTeamInvite:{
         case NIMSystemNotificationTypeSuperTeamInvite:{
+            //: [[NIMSDK sharedSDK].superTeamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
             [[NIMSDK sharedSDK].superTeamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
+                //: if (!error) {
                 if (!error) {
-                    [wself makeToast:LangKey(@"message_helper_already_no")
-                                                      duration:2
-                                                      position:CSToastPositionCenter];
+                    //: [wself makeToast:[IsletSavePreview getTextWithKey:@"message_helper_already_no"]
+                    [wself exaggerate:[IsletSavePreview being:[EvenData featureCaptureKey]]
+                                                      //: duration:2
+                                                      distance:2
+                                                      //: position:CSToastPositionCenter];
+                                                      collection:layoutSecureAlert];
+                    //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
                     notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
+                    //: [_notifications removeObject:notification];
                     [_notifications removeObject:notification];
+                    //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
                     [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
+                //: }else {
                 }else {
+                    //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        [wself makeToast:LangKey(@"friend_verify_avtivity_net_error")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingWiseTimer]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
                     }
+                    //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        [wself makeToast:LangKey(@"group_info_activity_team_not_exist")
-                                                          duration:2
-                                                          position:CSToastPositionCenter];
+                        //: [wself makeToast:[IsletSavePreview getTextWithKey:@"group_info_activity_team_not_exist"]
+                        [wself exaggerate:[IsletSavePreview being:[EvenData spacingBareKey]]
+                                                          //: duration:2
+                                                          distance:2
+                                                          //: position:CSToastPositionCenter];
+                                                          collection:layoutSecureAlert];
                     }
+                    //: else {
                     else {
+                        //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                         notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeOutOfDate;
                     }
+                    //: [wself.tableView reloadData];
                     [wself.tableView reloadData];
                 }
+            //: }];
             }];
+            //: break;
             break;
         }
+        //: case NIMSystemNotificationTypeFriendAdd:
         case NIMSystemNotificationTypeFriendAdd:
         {
+            //: NIMUserRequest *request = [[NIMUserRequest alloc] init];
             NIMUserRequest *request = [[NIMUserRequest alloc] init];
+            //: request.userId = notification.sourceID;
             request.userId = notification.sourceID;
+            //: request.operation = NIMUserOperationReject;
             request.operation = NIMUserOperationReject;
-            
+
+            //: [[[NIMSDK sharedSDK] userManager] requestFriend:request
             [[[NIMSDK sharedSDK] userManager] requestFriend:request
+                                                 //: completion:^(NSError *error) {
                                                  completion:^(NSError *error) {
+                                                     //: if (!error) {
                                                      if (!error) {
-                                                         [wself makeToast:LangKey(@"message_helper_already_no")
-                                                                                           duration:2
-                                                                                           position:CSToastPositionCenter];
+                                                         //: [wself makeToast:[IsletSavePreview getTextWithKey:@"message_helper_already_no"]
+                                                         [wself exaggerate:[IsletSavePreview being:[EvenData featureCaptureKey]]
+                                                                                           //: duration:2
+                                                                                           distance:2
+                                                                                           //: position:CSToastPositionCenter];
+                                                                                           collection:layoutSecureAlert];
+                                                         //: notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
                                                          notification.handleStatus = ShapeVictoriousWorkbenchMaskTypeNo;
-                                                         
+
+                                                         //: [_notifications removeObject:notification];
                                                          [_notifications removeObject:notification];
+                                                         //: [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
                                                          [[[NIMSDK sharedSDK] systemNotificationManager] deleteNotification:notification];
-                                                         
+
                                                      }
+                                                     //: else
                                                      else
                                                      {
-                                                         [wself makeToast:@"拒绝失败,请重试".user_localized
-                                                                                           duration:2
-                                                                                           position:CSToastPositionCenter];
+                                                         //: [wself makeToast:@"拒绝失败,请重试".user_localized
+                                                         [wself exaggerate:[EvenData coreCapFormat].rejectDown
+                                                                                           //: duration:2
+                                                                                           distance:2
+                                                                                           //: position:CSToastPositionCenter];
+                                                                                           collection:layoutSecureAlert];
                                                      }
+                                                     //: [wself.tableView reloadData];
                                                      [wself.tableView reloadData];
+                                                 //: }];
                                                  }];
         }
+            //: break;
             break;
+        //: default:
         default:
+            //: break;
             break;
     }
 }
 
+//: - (void)initUI{
+- (void)initCapacity{
 
+//        if (_shouldMarkAsRead)
+//        {
+//            [[[NIMSDK sharedSDK] systemNotificationManager] markAllNotificationsAsRead];
+//        }
+}
+
+//: - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    //: return [_notifications count];
+    return [_notifications count];
+}
+
+
+//: - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    //: return YES;
+    return YES;
+}
+
+//: #pragma mark - UITableViewDataSource
+#pragma mark - UITableViewDataSource
+
+//: - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    //: return 1;
+    return 1;
+}
+
+
+//: @end
 @end

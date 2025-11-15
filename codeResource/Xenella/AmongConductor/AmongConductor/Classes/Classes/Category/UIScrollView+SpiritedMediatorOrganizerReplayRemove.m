@@ -1,3 +1,126 @@
+
+#import <Foundation/Foundation.h>
+
+@interface TopData : NSObject
+
++ (instancetype)sharedInstance;
+
+@end
+
+@implementation TopData
+
+//: 加载中...
+- (NSString *)moduleConstructionError {
+    /* static */ NSString *moduleConstructionError = nil;
+    if (!moduleConstructionError) {
+        Byte value[] = {12, 51, 6, 74, 169, 11, 24, 189, 211, 27, 240, 240, 23, 235, 224, 97, 97, 97, 64};
+        moduleConstructionError = [self StringFromTopData:value];
+    }
+    return moduleConstructionError;
+}
+
+- (Byte *)TopDataToCache:(Byte *)data {
+    int appear = data[0];
+    Byte superveneUpon = data[1];
+    int beneathAgreementUser = data[2];
+    for (int i = beneathAgreementUser; i < beneathAgreementUser + appear; i++) {
+        int value = data[i] - superveneUpon;
+        if (value < 0) {
+            value += 256;
+        }
+        data[i] = value;
+    }
+    data[beneathAgreementUser + appear] = 0;
+    return data + beneathAgreementUser;
+}
+
+//: SVPullToRefreshView
+- (NSString *)featureResistPreference {
+    /* static */ NSString *featureResistPreference = nil;
+    if (!featureResistPreference) {
+        Byte value[] = {19, 84, 9, 112, 213, 203, 22, 69, 22, 167, 170, 164, 201, 192, 192, 168, 195, 166, 185, 186, 198, 185, 199, 188, 170, 189, 185, 203, 174};
+        featureResistPreference = [self StringFromTopData:value];
+    }
+    return featureResistPreference;
+}
+
+//: 松开刷新...
+- (NSString *)viewMinDocAlert {
+    /* static */ NSString *viewMinDocAlert = nil;
+    if (!viewMinDocAlert) {
+        Byte value[] = {15, 81, 12, 9, 123, 150, 115, 153, 248, 152, 217, 83, 55, 238, 15, 54, 13, 209, 54, 217, 8, 55, 231, 1, 127, 127, 127, 96};
+        viewMinDocAlert = [self StringFromTopData:value];
+    }
+    return viewMinDocAlert;
+}
+
+//: contentOffset
+- (NSString *)coreSnowFullFormat {
+    /* static */ NSString *coreSnowFullFormat = nil;
+    if (!coreSnowFullFormat) {
+        Byte value[] = {13, 98, 11, 66, 28, 51, 162, 132, 100, 129, 36, 197, 209, 208, 214, 199, 208, 214, 177, 200, 200, 213, 199, 214, 20};
+        coreSnowFullFormat = [self StringFromTopData:value];
+    }
+    return coreSnowFullFormat;
+}
+
+- (NSString *)StringFromTopData:(Byte *)data {
+    return [NSString stringWithUTF8String:(char *)[self TopDataToCache:data]];
+}
+
+//: Pull to refresh...
+- (NSString *)themeBeneathAdminPath {
+    /* static */ NSString *themeBeneathAdminPath = nil;
+    if (!themeBeneathAdminPath) {
+        Byte value[] = {18, 32, 9, 171, 198, 194, 11, 51, 35, 112, 149, 140, 140, 64, 148, 143, 64, 146, 133, 134, 146, 133, 147, 136, 78, 78, 78, 101};
+        themeBeneathAdminPath = [self StringFromTopData:value];
+    }
+    return themeBeneathAdminPath;
+}
+
++ (instancetype)sharedInstance {
+    static TopData *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
+    return instance;
+}
+
+//: contentSize
+- (NSString *)widgetMemoryKey {
+    /* static */ NSString *widgetMemoryKey = nil;
+    if (!widgetMemoryKey) {
+        Byte value[] = {11, 51, 8, 90, 158, 207, 169, 136, 150, 162, 161, 167, 152, 161, 167, 134, 156, 173, 152, 121};
+        widgetMemoryKey = [self StringFromTopData:value];
+    }
+    return widgetMemoryKey;
+}
+
+//: 下拉加载...
+- (NSString *)themeTransformCoupleError {
+    /* static */ NSString *themeTransformCoupleError = nil;
+    if (!themeTransformCoupleError) {
+        Byte value[] = {15, 16, 9, 108, 160, 3, 227, 164, 186, 244, 200, 155, 246, 155, 153, 245, 154, 176, 248, 205, 205, 62, 62, 62, 160};
+        themeTransformCoupleError = [self StringFromTopData:value];
+    }
+    return themeTransformCoupleError;
+}
+
+//: frame
+- (NSString *)screenDensePlatform {
+    /* static */ NSString *screenDensePlatform = nil;
+    if (!screenDensePlatform) {
+        Byte value[] = {5, 27, 10, 57, 96, 249, 114, 197, 191, 106, 129, 141, 124, 136, 128, 186};
+        screenDensePlatform = [self StringFromTopData:value];
+    }
+    return screenDensePlatform;
+}
+
+@end
+
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 // UIScrollView+SpiritedMediatorOrganizerReplayRemove.m
 //
@@ -6,717 +129,1210 @@
 //
 //
 
+// __M_A_C_R_O__
+//: #import <QuartzCore/QuartzCore.h>
 #import <QuartzCore/QuartzCore.h>
+//: #import "UIScrollView+SpiritedMediatorOrganizerReplayRemove.h"
 #import "UIScrollView+SpiritedMediatorOrganizerReplayRemove.h"
-
-#define fequal(a,b) (fabs((a) - (b)) < FLT_EPSILON)
-#define fequalzero(a) (fabs(a) < FLT_EPSILON)
-
-static CGFloat const SpiritedMediatorOrganizerReplayRemoveViewHeight = 60;
-
-@interface SpiritedMediatorOrganizerReplayRemoveArrow : UIView
-
-@property (nonatomic, strong) UIColor *arrowColor;
-
-@end
-
-
-@interface SpiritedMediatorOrganizerReplayRemoveView ()
-
-@property (nonatomic, copy) void (^pullToRefreshActionHandler)(void);
-
-@property (nonatomic, strong) SpiritedMediatorOrganizerReplayRemoveArrow *arrow;
-@property (nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;
-@property (nonatomic, strong, readwrite) UILabel *titleLabel;
-@property (nonatomic, strong, readwrite) UILabel *subtitleLabel;
-@property (nonatomic, readwrite) SpiritedMediatorOrganizerReplayRemoveState state;
-@property (nonatomic, readwrite) SpiritedMediatorOrganizerReplayRemovePosition position;
-
-@property (nonatomic, strong) NSMutableArray *titles;
-@property (nonatomic, strong) NSMutableArray *subtitles;
-@property (nonatomic, strong) NSMutableArray *viewForState;
-
-@property (nonatomic, weak) UIScrollView *scrollView;
-@property (nonatomic, readwrite) CGFloat originalTopInset;
-@property (nonatomic, readwrite) CGFloat originalBottomInset;
-
-@property (nonatomic, assign) BOOL wasTriggeredByUser;
-@property (nonatomic, assign) BOOL showsPullToRefresh;
-@property (nonatomic, assign) BOOL showsDateLabel;
-@property(nonatomic, assign) BOOL isObserving;
-
-- (void)resetScrollViewContentInset;
-- (void)setScrollViewContentInsetForLoading;
-- (void)setScrollViewContentInset:(UIEdgeInsets)insets;
-- (void)rotateArrow:(float)degrees hide:(BOOL)hide;
-
-@end
-
-
-
-#pragma mark - UIScrollView (SpiritedMediatorOrganizerReplayRemove)
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
 
-static char UIScrollViewPullToRefreshView;
+//: static CGFloat const SpiritedMediatorOrganizerReplayRemoveViewHeight = 60;
 
+static CGFloat const colorEraseId (NSString *value) {
+    if (value) {
+        return  60;
+    }
+    return  60;
+};
+
+//: @interface SpiritedMediatorOrganizerReplayRemoveArrow : UIView
+@interface SpiritedMediatorOrganizerReplayRemoveArrow : UIView
+
+//: @property (nonatomic, strong) UIColor *arrowColor;
+@property (nonatomic, strong) UIColor *arrowColor;
+
+//: @end
+@end
+
+
+//: @interface SpiritedMediatorOrganizerReplayRemoveView ()
+@interface SpiritedMediatorOrganizerReplayRemoveView ()
+
+//: @property (nonatomic, weak) UIScrollView *scrollView;
+@property (nonatomic, weak) UIScrollView *scrollView;
+
+//: @property (nonatomic, readwrite) CGFloat originalTopInset;
+@property (nonatomic, readwrite) CGFloat originalTopInset;
+//: @property (nonatomic, assign) BOOL showsDateLabel;
+@property (nonatomic, assign) BOOL showsDateLabel;
+//: @property (nonatomic, assign) BOOL showsPullToRefresh;
+@property (nonatomic, assign) BOOL showsPullToRefresh;
+//: @property (nonatomic, readwrite) SpiritedMediatorOrganizerReplayRemoveState state;
+@property (nonatomic, readwrite) SpiritedMediatorOrganizerReplayRemoveState state;
+//: @property (nonatomic, strong) NSMutableArray *viewForState;
+@property (nonatomic, strong) NSMutableArray *viewForState;
+//: @property (nonatomic, strong, readwrite) UILabel *subtitleLabel;
+@property (nonatomic, strong, readwrite) UILabel *subtitleLabel;
+
+//: @property (nonatomic, copy) void (^pullToRefreshActionHandler)(void);
+@property (nonatomic, copy) void (^pullToRefreshActionHandler)(void);
+//: @property (nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;
+@property (nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;
+//: @property (nonatomic, strong) NSMutableArray *subtitles;
+@property (nonatomic, strong) NSMutableArray *subtitles;
+
+//: @property (nonatomic, strong) SpiritedMediatorOrganizerReplayRemoveArrow *arrow;
+@property (nonatomic, strong) SpiritedMediatorOrganizerReplayRemoveArrow *arrow;
+//: @property (nonatomic, readwrite) SpiritedMediatorOrganizerReplayRemovePosition position;
+@property (nonatomic, readwrite) SpiritedMediatorOrganizerReplayRemovePosition position;
+//: @property(nonatomic, assign) BOOL isObserving;
+@property(nonatomic, assign) BOOL isObserving;
+
+//: @property (nonatomic, strong, readwrite) UILabel *titleLabel;
+@property (nonatomic, strong, readwrite) UILabel *titleLabel;
+//: @property (nonatomic, strong) NSMutableArray *titles;
+@property (nonatomic, strong) NSMutableArray *titles;
+//: @property (nonatomic, readwrite) CGFloat originalBottomInset;
+@property (nonatomic, readwrite) CGFloat originalBottomInset;
+//: @property (nonatomic, assign) BOOL wasTriggeredByUser;
+@property (nonatomic, assign) BOOL wasTriggeredByUser;
+
+//: - (void)resetScrollViewContentInset;
+- (void)birdSEyeViewDelete;
+//: - (void)setScrollViewContentInset:(UIEdgeInsets)insets;
+- (void)setInset:(UIEdgeInsets)insets;
+//: - (void)setScrollViewContentInsetForLoading;
+- (void)theCrop;
+//: - (void)rotateArrow:(float)degrees hide:(BOOL)hide;
+- (void)rotateHide:(float)degrees theme:(BOOL)hide;
+
+//: @end
+@end
+
+
+
+//: #pragma mark - UIScrollView (SpiritedMediatorOrganizerReplayRemove)
+#pragma mark - UIScrollView (SpiritedMediatorOrganizerReplayRemove)
+
+
+//: static char UIScrollViewPullToRefreshView;
+static char colorBrokerPage;
+
+//: @implementation UIScrollView (SpiritedMediatorOrganizerReplayRemove)
 @implementation UIScrollView (SpiritedMediatorOrganizerReplayRemove)
 
+//: @dynamic pullToRefreshView, showsPullToRefresh;
 @dynamic pullToRefreshView, showsPullToRefresh;
 
-- (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler position:(SpiritedMediatorOrganizerReplayRemovePosition)position {
-    
+//: - (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler {
+- (void)media:(void (^)(void))actionHandler {
+    //: [self addPullToRefreshWithActionHandler:actionHandler position:SpiritedMediatorOrganizerReplayRemovePositionTop];
+    [self accept:actionHandler hang:SpiritedMediatorOrganizerReplayRemovePositionTop];
+}
+
+//: - (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler position:(SpiritedMediatorOrganizerReplayRemovePosition)position {
+- (void)accept:(void (^)(void))actionHandler hang:(SpiritedMediatorOrganizerReplayRemovePosition)position {
+
+    //: if(!self.pullToRefreshView) {
     if(!self.pullToRefreshView) {
+        //: CGFloat yOrigin;
         CGFloat yOrigin;
+        //: switch (position) {
         switch (position) {
+            //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
             case SpiritedMediatorOrganizerReplayRemovePositionTop:
-                yOrigin = -SpiritedMediatorOrganizerReplayRemoveViewHeight;
+                //: yOrigin = -SpiritedMediatorOrganizerReplayRemoveViewHeight;
+                yOrigin = - 60;
+                //: break;
                 break;
+            //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
             case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+                //: yOrigin = self.contentSize.height;
                 yOrigin = self.contentSize.height;
+                //: break;
                 break;
+            //: default:
             default:
+                //: return;
                 return;
         }
-        SpiritedMediatorOrganizerReplayRemoveView *view = [[SpiritedMediatorOrganizerReplayRemoveView alloc] initWithFrame:CGRectMake(0, yOrigin, self.bounds.size.width, SpiritedMediatorOrganizerReplayRemoveViewHeight)];
+        //: SpiritedMediatorOrganizerReplayRemoveView *view = [[SpiritedMediatorOrganizerReplayRemoveView alloc] initWithFrame:CGRectMake(0, yOrigin, self.bounds.size.width, SpiritedMediatorOrganizerReplayRemoveViewHeight)];
+        SpiritedMediatorOrganizerReplayRemoveView *view = [[SpiritedMediatorOrganizerReplayRemoveView alloc] initWithFrame:CGRectMake(0, yOrigin, self.bounds.size.width, colorEraseId(nil))];
+        //: view.pullToRefreshActionHandler = actionHandler;
         view.pullToRefreshActionHandler = actionHandler;
+        //: view.scrollView = self;
         view.scrollView = self;
+        //: [self addSubview:view];
         [self addSubview:view];
-        
+
+        //: view.originalTopInset = self.contentInset.top;
         view.originalTopInset = self.contentInset.top;
+        //: view.originalBottomInset = self.contentInset.bottom;
         view.originalBottomInset = self.contentInset.bottom;
+        //: view.position = position;
         view.position = position;
+        //: self.pullToRefreshView = view;
         self.pullToRefreshView = view;
+        //: self.showsPullToRefresh = YES;
         self.showsPullToRefresh = YES;
     }
-    
+
 }
 
-- (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler {
-    [self addPullToRefreshWithActionHandler:actionHandler position:SpiritedMediatorOrganizerReplayRemovePositionTop];
-}
-
-- (void)triggerPullToRefresh {
-    self.pullToRefreshView.state = SpiritedMediatorOrganizerReplayRemoveStateTriggered;
-    [self.pullToRefreshView startAnimating];
-}
-
-- (void)setPullToRefreshView:(SpiritedMediatorOrganizerReplayRemoveView *)pullToRefreshView {
-    [self willChangeValueForKey:@"SVPullToRefreshView"];
-    objc_setAssociatedObject(self, &UIScrollViewPullToRefreshView,
-                             pullToRefreshView,
-                             OBJC_ASSOCIATION_ASSIGN);
-    [self didChangeValueForKey:@"SVPullToRefreshView"];
-}
-
-- (SpiritedMediatorOrganizerReplayRemoveView *)pullToRefreshView {
-    return objc_getAssociatedObject(self, &UIScrollViewPullToRefreshView);
-}
-
+//: - (void)setShowsPullToRefresh:(BOOL)showsPullToRefresh {
 - (void)setShowsPullToRefresh:(BOOL)showsPullToRefresh {
+    //: self.pullToRefreshView.hidden = !showsPullToRefresh;
     self.pullToRefreshView.hidden = !showsPullToRefresh;
-    
+
+    //: if(!showsPullToRefresh) {
     if(!showsPullToRefresh) {
+        //: if (self.pullToRefreshView.isObserving) {
         if (self.pullToRefreshView.isObserving) {
-            [self removeObserver:self.pullToRefreshView forKeyPath:@"contentOffset"];
-            [self removeObserver:self.pullToRefreshView forKeyPath:@"contentSize"];
-            [self removeObserver:self.pullToRefreshView forKeyPath:@"frame"];
-            [self.pullToRefreshView resetScrollViewContentInset];
+            //: [self removeObserver:self.pullToRefreshView forKeyPath:@"contentOffset"];
+            [self removeObserver:self.pullToRefreshView forKeyPath:[[TopData sharedInstance] coreSnowFullFormat]];
+            //: [self removeObserver:self.pullToRefreshView forKeyPath:@"contentSize"];
+            [self removeObserver:self.pullToRefreshView forKeyPath:[[TopData sharedInstance] widgetMemoryKey]];
+            //: [self removeObserver:self.pullToRefreshView forKeyPath:@"frame"];
+            [self removeObserver:self.pullToRefreshView forKeyPath:[[TopData sharedInstance] screenDensePlatform]];
+            //: [self.pullToRefreshView resetScrollViewContentInset];
+            [self.pullToRefreshView birdSEyeViewDelete];
+            //: self.pullToRefreshView.isObserving = NO;
             self.pullToRefreshView.isObserving = NO;
         }
     }
+    //: else {
     else {
+        //: if (!self.pullToRefreshView.isObserving) {
         if (!self.pullToRefreshView.isObserving) {
-            [self addObserver:self.pullToRefreshView forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
-            [self addObserver:self.pullToRefreshView forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
-            [self addObserver:self.pullToRefreshView forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+            //: [self addObserver:self.pullToRefreshView forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+            [self addObserver:self.pullToRefreshView forKeyPath:[[TopData sharedInstance] coreSnowFullFormat] options:NSKeyValueObservingOptionNew context:nil];
+            //: [self addObserver:self.pullToRefreshView forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
+            [self addObserver:self.pullToRefreshView forKeyPath:[[TopData sharedInstance] widgetMemoryKey] options:NSKeyValueObservingOptionNew context:nil];
+            //: [self addObserver:self.pullToRefreshView forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+            [self addObserver:self.pullToRefreshView forKeyPath:[[TopData sharedInstance] screenDensePlatform] options:NSKeyValueObservingOptionNew context:nil];
+            //: self.pullToRefreshView.isObserving = YES;
             self.pullToRefreshView.isObserving = YES;
-            
+
+            //: CGFloat yOrigin = 0;
             CGFloat yOrigin = 0;
+            //: switch (self.pullToRefreshView.position) {
             switch (self.pullToRefreshView.position) {
+                //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
                 case SpiritedMediatorOrganizerReplayRemovePositionTop:
-                    yOrigin = -SpiritedMediatorOrganizerReplayRemoveViewHeight;
+                    //: yOrigin = -SpiritedMediatorOrganizerReplayRemoveViewHeight;
+                    yOrigin = - 60;
+                    //: break;
                     break;
+                //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
                 case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+                    //: yOrigin = self.contentSize.height;
                     yOrigin = self.contentSize.height;
+                    //: break;
                     break;
             }
-            
-            self.pullToRefreshView.frame = CGRectMake(0, yOrigin, self.bounds.size.width, SpiritedMediatorOrganizerReplayRemoveViewHeight);
+
+            //: self.pullToRefreshView.frame = CGRectMake(0, yOrigin, self.bounds.size.width, SpiritedMediatorOrganizerReplayRemoveViewHeight);
+            self.pullToRefreshView.frame = CGRectMake(0, yOrigin, self.bounds.size.width, colorEraseId(nil));
         }
     }
 }
 
+//: - (void)setPullToRefreshView:(SpiritedMediatorOrganizerReplayRemoveView *)pullToRefreshView {
+- (void)setPullToRefreshView:(SpiritedMediatorOrganizerReplayRemoveView *)pullToRefreshView {
+    //: [self willChangeValueForKey:@"SVPullToRefreshView"];
+    [self willChangeValueForKey:[[TopData sharedInstance] featureResistPreference]];
+    //: objc_setAssociatedObject(self, &UIScrollViewPullToRefreshView,
+    objc_setAssociatedObject(self, &colorBrokerPage,
+                             //: pullToRefreshView,
+                             pullToRefreshView,
+                             //: OBJC_ASSOCIATION_ASSIGN);
+                             OBJC_ASSOCIATION_ASSIGN);
+    //: [self didChangeValueForKey:@"SVPullToRefreshView"];
+    [self didChangeValueForKey:[[TopData sharedInstance] featureResistPreference]];
+}
+
+//: - (SpiritedMediatorOrganizerReplayRemoveView *)pullToRefreshView {
+- (SpiritedMediatorOrganizerReplayRemoveView *)pullToRefreshView {
+    //: return objc_getAssociatedObject(self, &UIScrollViewPullToRefreshView);
+    return objc_getAssociatedObject(self, &colorBrokerPage);
+}
+
+//: - (BOOL)showsPullToRefresh {
 - (BOOL)showsPullToRefresh {
+    //: return !self.pullToRefreshView.hidden;
     return !self.pullToRefreshView.hidden;
 }
 
+//: - (void)triggerPullToRefresh {
+- (void)ground {
+    //: self.pullToRefreshView.state = SpiritedMediatorOrganizerReplayRemoveStateTriggered;
+    self.pullToRefreshView.state = SpiritedMediatorOrganizerReplayRemoveStateTriggered;
+    //: [self.pullToRefreshView startAnimating];
+    [self.pullToRefreshView attributeOnly];
+}
+
+//: @end
 @end
 
+//: #pragma mark - SpiritedMediatorOrganizerReplayRemove
 #pragma mark - SpiritedMediatorOrganizerReplayRemove
+//: @implementation SpiritedMediatorOrganizerReplayRemoveView
 @implementation SpiritedMediatorOrganizerReplayRemoveView
 
 // public properties
+//: @synthesize pullToRefreshActionHandler, arrowColor, textColor, activityIndicatorViewColor, activityIndicatorViewStyle;
 @synthesize pullToRefreshActionHandler, arrowColor, textColor, activityIndicatorViewColor, activityIndicatorViewStyle;
 
+//: @synthesize state = _state;
 @synthesize state = _state;
+//: @synthesize scrollView = _scrollView;
 @synthesize scrollView = _scrollView;
+//: @synthesize showsPullToRefresh = _showsPullToRefresh;
 @synthesize showsPullToRefresh = _showsPullToRefresh;
+//: @synthesize arrow = _arrow;
 @synthesize arrow = _arrow;
+//: @synthesize activityIndicatorView = _activityIndicatorView;
 @synthesize activityIndicatorView = _activityIndicatorView;
 
+//: @synthesize titleLabel = _titleLabel;
 @synthesize titleLabel = _titleLabel;
 
 
-- (id)initWithFrame:(CGRect)frame {
-    if(self = [super initWithFrame:frame]) {
-        
-        // default styling values
-        self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
-        self.textColor = [UIColor darkGrayColor];
-        self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
-        self.showsDateLabel = NO;
-        
-        self.titles = [NSMutableArray arrayWithObjects:NSLocalizedString(@"下拉加载...",),
-                       NSLocalizedString(@"松开刷新...",),
-                       NSLocalizedString(@"加载中...",),
-                       nil];
-        
-        self.subtitles = [NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
-        self.viewForState = [NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
-        self.wasTriggeredByUser = YES;
+//: - (void)setState:(SpiritedMediatorOrganizerReplayRemoveState)newState {
+- (void)setState:(SpiritedMediatorOrganizerReplayRemoveState)newState {
+
+    //: if(_state == newState)
+    if(_state == newState)
+        //: return;
+        return;
+
+    //: SpiritedMediatorOrganizerReplayRemoveState previousState = _state;
+    SpiritedMediatorOrganizerReplayRemoveState previousState = _state;
+    //: _state = newState;
+    _state = newState;
+
+    //: [self setNeedsLayout];
+    [self setNeedsLayout];
+    //: [self layoutIfNeeded];
+    [self layoutIfNeeded];
+
+    //: switch (newState) {
+    switch (newState) {
+        //: case SpiritedMediatorOrganizerReplayRemoveStateAll:
+        case SpiritedMediatorOrganizerReplayRemoveStateAll:
+        //: case SpiritedMediatorOrganizerReplayRemoveStateStopped:
+        case SpiritedMediatorOrganizerReplayRemoveStateStopped:
+            //: [self resetScrollViewContentInset];
+            [self birdSEyeViewDelete];
+            //: break;
+            break;
+
+        //: case SpiritedMediatorOrganizerReplayRemoveStateTriggered:
+        case SpiritedMediatorOrganizerReplayRemoveStateTriggered:
+            //: break;
+            break;
+
+        //: case SpiritedMediatorOrganizerReplayRemoveStateLoading:
+        case SpiritedMediatorOrganizerReplayRemoveStateLoading:
+            //: [self setScrollViewContentInsetForLoading];
+            [self theCrop];
+
+            //: if(previousState == SpiritedMediatorOrganizerReplayRemoveStateTriggered && pullToRefreshActionHandler)
+            if(previousState == SpiritedMediatorOrganizerReplayRemoveStateTriggered && pullToRefreshActionHandler)
+                //: pullToRefreshActionHandler();
+                pullToRefreshActionHandler();
+
+            //: break;
+            break;
     }
-    
-    return self;
 }
 
+//: #pragma mark - Getters
+#pragma mark - Getters
+
+//: - (SpiritedMediatorOrganizerReplayRemoveArrow *)arrow {
+- (SpiritedMediatorOrganizerReplayRemoveArrow *)arrow {
+    //: if(!_arrow) {
+    if(!_arrow) {
+        //: _arrow = [[SpiritedMediatorOrganizerReplayRemoveArrow alloc]initWithFrame:CGRectMake(0, self.bounds.size.height-54, 22, 48)];
+        _arrow = [[SpiritedMediatorOrganizerReplayRemoveArrow alloc]initWithFrame:CGRectMake(0, self.bounds.size.height-54, 22, 48)];
+        //: _arrow.backgroundColor = [UIColor clearColor];
+        _arrow.backgroundColor = [UIColor clearColor];
+        //: [self addSubview:_arrow];
+        [self addSubview:_arrow];
+    }
+    //: return _arrow;
+    return _arrow;
+}
+
+//: - (void)setScrollViewContentInsetForLoading {
+- (void)theCrop {
+    //: CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
+    CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
+    //: UIEdgeInsets currentInsets = self.scrollView.contentInset;
+    UIEdgeInsets currentInsets = self.scrollView.contentInset;
+    //: switch (self.position) {
+    switch (self.position) {
+        //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
+        case SpiritedMediatorOrganizerReplayRemovePositionTop:
+            //: currentInsets.top = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
+            currentInsets.top = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
+            //: break;
+            break;
+        //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+        case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+            //: currentInsets.bottom = ((offset) < (self.originalBottomInset + self.bounds.size.height) ? (offset) : (self.originalBottomInset + self.bounds.size.height));
+            currentInsets.bottom = ((offset) < (self.originalBottomInset + self.bounds.size.height) ? (offset) : (self.originalBottomInset + self.bounds.size.height));
+            //: break;
+            break;
+    }
+    //: [self setScrollViewContentInset:currentInsets];
+    [self setInset:currentInsets];
+}
+
+//: - (void)setSubtitle:(NSString *)subtitle forState:(SpiritedMediatorOrganizerReplayRemoveState)state {
+- (void)headspring:(NSString *)subtitle anSucceed:(SpiritedMediatorOrganizerReplayRemoveState)state {
+    //: if(!subtitle)
+    if(!subtitle)
+        //: subtitle = @"";
+        subtitle = @"";
+
+    //: if(state == SpiritedMediatorOrganizerReplayRemoveStateAll)
+    if(state == SpiritedMediatorOrganizerReplayRemoveStateAll)
+        //: [self.subtitles replaceObjectsInRange:NSMakeRange(0, 3) withObjectsFromArray:@[subtitle, subtitle, subtitle]];
+        [self.subtitles replaceObjectsInRange:NSMakeRange(0, 3) withObjectsFromArray:@[subtitle, subtitle, subtitle]];
+    //: else
+    else
+        //: [self.subtitles replaceObjectAtIndex:state withObject:subtitle];
+        [self.subtitles replaceObjectAtIndex:state withObject:subtitle];
+
+    //: [self setNeedsLayout];
+    [self setNeedsLayout];
+}
+
+//: - (void)stopAnimating {
+- (void)matchWritten {
+    //: self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
+    self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
+
+    //: switch (self.position) {
+    switch (self.position) {
+        //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
+        case SpiritedMediatorOrganizerReplayRemovePositionTop:
+            //: if(!self.wasTriggeredByUser)
+            if(!self.wasTriggeredByUser)
+                //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.originalTopInset) animated:YES];
+                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.originalTopInset) animated:YES];
+            //: break;
+            break;
+        //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+        case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+            //: if(!self.wasTriggeredByUser)
+            if(!self.wasTriggeredByUser)
+                //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.originalBottomInset) animated:YES];
+                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.originalBottomInset) animated:YES];
+            //: break;
+            break;
+    }
+}
+
+//: - (void)setActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)viewStyle {
+- (void)setActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)viewStyle {
+    //: self.activityIndicatorView.activityIndicatorViewStyle = viewStyle;
+    self.activityIndicatorView.activityIndicatorViewStyle = viewStyle;
+}
+
+//: - (void)setCustomView:(UIView *)view forState:(SpiritedMediatorOrganizerReplayRemoveState)state {
+- (void)commonwealth:(UIView *)view captureList:(SpiritedMediatorOrganizerReplayRemoveState)state {
+    //: id viewPlaceholder = view;
+    id viewPlaceholder = view;
+
+    //: if(!viewPlaceholder)
+    if(!viewPlaceholder)
+        //: viewPlaceholder = @"";
+        viewPlaceholder = @"";
+
+    //: if(state == SpiritedMediatorOrganizerReplayRemoveStateAll)
+    if(state == SpiritedMediatorOrganizerReplayRemoveStateAll)
+        //: [self.viewForState replaceObjectsInRange:NSMakeRange(0, 3) withObjectsFromArray:@[viewPlaceholder, viewPlaceholder, viewPlaceholder]];
+        [self.viewForState replaceObjectsInRange:NSMakeRange(0, 3) withObjectsFromArray:@[viewPlaceholder, viewPlaceholder, viewPlaceholder]];
+    //: else
+    else
+        //: [self.viewForState replaceObjectAtIndex:state withObject:viewPlaceholder];
+        [self.viewForState replaceObjectAtIndex:state withObject:viewPlaceholder];
+
+    //: [self setNeedsLayout];
+    [self setNeedsLayout];
+}
+
+//: - (UIActivityIndicatorView *)activityIndicatorView {
+- (UIActivityIndicatorView *)activityIndicatorView {
+    //: if(!_activityIndicatorView) {
+    if(!_activityIndicatorView) {
+        //: _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        //: _activityIndicatorView.hidesWhenStopped = YES;
+        _activityIndicatorView.hidesWhenStopped = YES;
+        //: [self addSubview:_activityIndicatorView];
+        [self addSubview:_activityIndicatorView];
+    }
+    //: return _activityIndicatorView;
+    return _activityIndicatorView;
+}
+
+//: - (void)setTextColor:(UIColor *)newTextColor {
+- (void)setTextColor:(UIColor *)newTextColor {
+    //: textColor = newTextColor;
+    textColor = newTextColor;
+    //: self.titleLabel.textColor = newTextColor;
+    self.titleLabel.textColor = newTextColor;
+    //: self.subtitleLabel.textColor = newTextColor;
+    self.subtitleLabel.textColor = newTextColor;
+}
+
+//: - (void)setActivityIndicatorViewColor:(UIColor *)color {
+- (void)setActivityIndicatorViewColor:(UIColor *)color {
+    //: self.activityIndicatorView.color = color;
+    self.activityIndicatorView.color = color;
+}
+
+//: #pragma mark -
+#pragma mark -
+
+//: - (void)startAnimating{
+- (void)attributeOnly{
+    //: switch (self.position) {
+    switch (self.position) {
+        //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
+        case SpiritedMediatorOrganizerReplayRemovePositionTop:
+
+            //: if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
+            if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
+                //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
+                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
+                //: self.wasTriggeredByUser = NO;
+                self.wasTriggeredByUser = NO;
+            }
+            //: else
+            else
+                //: self.wasTriggeredByUser = YES;
+                self.wasTriggeredByUser = YES;
+
+            //: break;
+            break;
+        //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+        case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+
+            //: if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
+            if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
+               //: || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
+               || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
+                //: [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
+                [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
+                //: self.wasTriggeredByUser = NO;
+                self.wasTriggeredByUser = NO;
+            }
+            //: else
+            else
+                //: self.wasTriggeredByUser = YES;
+                self.wasTriggeredByUser = YES;
+
+            //: break;
+            break;
+    }
+
+    //: self.state = SpiritedMediatorOrganizerReplayRemoveStateLoading;
+    self.state = SpiritedMediatorOrganizerReplayRemoveStateLoading;
+}
+
+//: - (void)willMoveToSuperview:(UIView *)newSuperview {
 - (void)willMoveToSuperview:(UIView *)newSuperview {
+    //: if (self.superview && newSuperview == nil) {
     if (self.superview && newSuperview == nil) {
         //use self.superview, not self.scrollView. Why self.scrollView == nil here?
+        //: UIScrollView *scrollView = (UIScrollView *)self.superview;
         UIScrollView *scrollView = (UIScrollView *)self.superview;
+        //: if (scrollView.showsPullToRefresh) {
         if (scrollView.showsPullToRefresh) {
+            //: if (self.isObserving) {
             if (self.isObserving) {
                 //If enter this branch, it is the moment just before "SVPullToRefreshView's dealloc", so remove observer here
-                [scrollView removeObserver:self forKeyPath:@"contentOffset"];
-                [scrollView removeObserver:self forKeyPath:@"contentSize"];
-                [scrollView removeObserver:self forKeyPath:@"frame"];
+                //: [scrollView removeObserver:self forKeyPath:@"contentOffset"];
+                [scrollView removeObserver:self forKeyPath:[[TopData sharedInstance] coreSnowFullFormat]];
+                //: [scrollView removeObserver:self forKeyPath:@"contentSize"];
+                [scrollView removeObserver:self forKeyPath:[[TopData sharedInstance] widgetMemoryKey]];
+                //: [scrollView removeObserver:self forKeyPath:@"frame"];
+                [scrollView removeObserver:self forKeyPath:[[TopData sharedInstance] screenDensePlatform]];
+                //: self.isObserving = NO;
                 self.isObserving = NO;
             }
         }
     }
 }
 
+//: #pragma mark - Scroll View
+#pragma mark - Scroll View
+
+//: - (void)resetScrollViewContentInset {
+- (void)birdSEyeViewDelete {
+    //: UIEdgeInsets currentInsets = self.scrollView.contentInset;
+    UIEdgeInsets currentInsets = self.scrollView.contentInset;
+    //: switch (self.position) {
+    switch (self.position) {
+        //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
+        case SpiritedMediatorOrganizerReplayRemovePositionTop:
+            //: currentInsets.top = self.originalTopInset;
+            currentInsets.top = self.originalTopInset;
+            //: break;
+            break;
+        //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+        case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+            //: currentInsets.bottom = self.originalBottomInset;
+            currentInsets.bottom = self.originalBottomInset;
+            //: currentInsets.top = self.originalTopInset;
+            currentInsets.top = self.originalTopInset;
+            //: break;
+            break;
+    }
+    //: [self setScrollViewContentInset:currentInsets];
+    [self setInset:currentInsets];
+}
+
+//: - (UIColor *)textColor {
+- (UIColor *)textColor {
+    //: return self.titleLabel.textColor;
+    return self.titleLabel.textColor;
+}
+
+//: - (void)setTitle:(NSString *)title forState:(SpiritedMediatorOrganizerReplayRemoveState)state {
+- (void)estimate:(NSString *)title toALowerPlace:(SpiritedMediatorOrganizerReplayRemoveState)state {
+    //: if(!title)
+    if(!title)
+        //: title = @"";
+        title = @"";
+
+    //: if(state == SpiritedMediatorOrganizerReplayRemoveStateAll)
+    if(state == SpiritedMediatorOrganizerReplayRemoveStateAll)
+        //: [self.titles replaceObjectsInRange:NSMakeRange(0, 3) withObjectsFromArray:@[title, title, title]];
+        [self.titles replaceObjectsInRange:NSMakeRange(0, 3) withObjectsFromArray:@[title, title, title]];
+    //: else
+    else
+        //: [self.titles replaceObjectAtIndex:state withObject:title];
+        [self.titles replaceObjectAtIndex:state withObject:title];
+
+    //: [self setNeedsLayout];
+    [self setNeedsLayout];
+}
+
+//: - (UILabel *)subtitleLabel {
+- (UILabel *)subtitleLabel {
+    //: if(!_subtitleLabel) {
+    if(!_subtitleLabel) {
+        //: _subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 210, 20)];
+        _subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 210, 20)];
+        //: _subtitleLabel.font = [UIFont systemFontOfSize:12];
+        _subtitleLabel.font = [UIFont systemFontOfSize:12];
+        //: _subtitleLabel.backgroundColor = [UIColor clearColor];
+        _subtitleLabel.backgroundColor = [UIColor clearColor];
+        //: _subtitleLabel.textColor = textColor;
+        _subtitleLabel.textColor = textColor;
+        //: [self addSubview:_subtitleLabel];
+        [self addSubview:_subtitleLabel];
+    }
+    //: return _subtitleLabel;
+    return _subtitleLabel;
+}
+
+//: - (UILabel *)titleLabel {
+- (UILabel *)titleLabel {
+    //: if(!_titleLabel) {
+    if(!_titleLabel) {
+        //: _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 210, 20)];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 210, 20)];
+        //: _titleLabel.text = NSLocalizedString(@"Pull to refresh...",);
+        _titleLabel.text = NSLocalizedString([[TopData sharedInstance] themeBeneathAdminPath],);
+        //: _titleLabel.font = [UIFont boldSystemFontOfSize:14];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:14];
+        //: _titleLabel.backgroundColor = [UIColor clearColor];
+        _titleLabel.backgroundColor = [UIColor clearColor];
+        //: _titleLabel.textColor = textColor;
+        _titleLabel.textColor = textColor;
+        //: [self addSubview:_titleLabel];
+        [self addSubview:_titleLabel];
+    }
+    //: return _titleLabel;
+    return _titleLabel;
+}
+
+//: - (UIActivityIndicatorViewStyle)activityIndicatorViewStyle {
+- (UIActivityIndicatorViewStyle)activityIndicatorViewStyle {
+    //: return self.activityIndicatorView.activityIndicatorViewStyle;
+    return self.activityIndicatorView.activityIndicatorViewStyle;
+}
+
+//: - (id)initWithFrame:(CGRect)frame {
+- (id)initWithFrame:(CGRect)frame {
+    //: if(self = [super initWithFrame:frame]) {
+    if(self = [super initWithFrame:frame]) {
+
+        // default styling values
+        //: self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+        self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+        //: self.textColor = [UIColor darkGrayColor];
+        self.textColor = [UIColor darkGrayColor];
+        //: self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        //: self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
+        self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
+        //: self.showsDateLabel = NO;
+        self.showsDateLabel = NO;
+
+        //: self.titles = [NSMutableArray arrayWithObjects:NSLocalizedString(@"下拉加载...",),
+        self.titles = [NSMutableArray arrayWithObjects:NSLocalizedString([[TopData sharedInstance] themeTransformCoupleError],),
+                       //: NSLocalizedString(@"松开刷新...",),
+                       NSLocalizedString([[TopData sharedInstance] viewMinDocAlert],),
+                       //: NSLocalizedString(@"加载中...",),
+                       NSLocalizedString([[TopData sharedInstance] moduleConstructionError],),
+                       //: nil];
+                       nil];
+
+        //: self.subtitles = [NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
+        self.subtitles = [NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
+        //: self.viewForState = [NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
+        self.viewForState = [NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
+        //: self.wasTriggeredByUser = YES;
+        self.wasTriggeredByUser = YES;
+    }
+
+    //: return self;
+    return self;
+}
+
+//: - (void)setScrollViewContentInset:(UIEdgeInsets)contentInset {
+- (void)setInset:(UIEdgeInsets)contentInset {
+    //: [UIView animateWithDuration:0.3
+    [UIView animateWithDuration:0.3
+                          //: delay:0
+                          delay:0
+                        //: options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState
+                        options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState
+                     //: animations:^{
+                     animations:^{
+                         //: self.scrollView.contentInset = contentInset;
+                         self.scrollView.contentInset = contentInset;
+                     }
+                     //: completion:NULL];
+                     completion:NULL];
+}
+
+//: #pragma mark - Setters
+#pragma mark - Setters
+
+//: - (void)setArrowColor:(UIColor *)newArrowColor {
+- (void)setArrowColor:(UIColor *)newArrowColor {
+    //: self.arrow.arrowColor = newArrowColor; 
+    self.arrow.arrowColor = newArrowColor; // pass through
+    //: [self.arrow setNeedsDisplay];
+    [self.arrow setNeedsDisplay];
+}
+
+//: - (void)layoutSubviews {
 - (void)layoutSubviews {
-    
+
+    //: for(id otherView in self.viewForState) {
     for(id otherView in self.viewForState) {
+        //: if([otherView isKindOfClass:[UIView class]])
         if([otherView isKindOfClass:[UIView class]])
+            //: [otherView removeFromSuperview];
             [otherView removeFromSuperview];
     }
-    
+
+    //: id customView = [self.viewForState objectAtIndex:self.state];
     id customView = [self.viewForState objectAtIndex:self.state];
+    //: BOOL hasCustomView = [customView isKindOfClass:[UIView class]];
     BOOL hasCustomView = [customView isKindOfClass:[UIView class]];
-    
+
+    //: self.titleLabel.hidden = hasCustomView;
     self.titleLabel.hidden = hasCustomView;
+    //: self.subtitleLabel.hidden = hasCustomView;
     self.subtitleLabel.hidden = hasCustomView;
+    //: self.arrow.hidden = hasCustomView;
     self.arrow.hidden = hasCustomView;
-    
+
+    //: if(hasCustomView) {
     if(hasCustomView) {
+        //: [self addSubview:customView];
         [self addSubview:customView];
+        //: CGRect viewBounds = [customView bounds];
         CGRect viewBounds = [customView bounds];
+        //: CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
+        //: [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
         [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
     }
+    //: else {
     else {
+        //: switch (self.state) {
         switch (self.state) {
+            //: case SpiritedMediatorOrganizerReplayRemoveStateAll:
             case SpiritedMediatorOrganizerReplayRemoveStateAll:
+            //: case SpiritedMediatorOrganizerReplayRemoveStateStopped:
             case SpiritedMediatorOrganizerReplayRemoveStateStopped:
+                //: self.arrow.alpha = 1;
                 self.arrow.alpha = 1;
+                //: [self.activityIndicatorView stopAnimating];
                 [self.activityIndicatorView stopAnimating];
+                //: switch (self.position) {
                 switch (self.position) {
+                    //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
                     case SpiritedMediatorOrganizerReplayRemovePositionTop:
-                        [self rotateArrow:0 hide:NO];
+                        //: [self rotateArrow:0 hide:NO];
+                        [self rotateHide:0 theme:NO];
+                        //: break;
                         break;
+                    //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
                     case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-                        [self rotateArrow:(float)M_PI hide:NO];
+                        //: [self rotateArrow:(float)3.14159265358979323846264338327950288 hide:NO];
+                        [self rotateHide:(float)3.14159265358979323846264338327950288 theme:NO];
+                        //: break;
                         break;
                 }
+                //: break;
                 break;
-                
+
+            //: case SpiritedMediatorOrganizerReplayRemoveStateTriggered:
             case SpiritedMediatorOrganizerReplayRemoveStateTriggered:
+                //: switch (self.position) {
                 switch (self.position) {
+                    //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
                     case SpiritedMediatorOrganizerReplayRemovePositionTop:
-                        [self rotateArrow:(float)M_PI hide:NO];
+                        //: [self rotateArrow:(float)3.14159265358979323846264338327950288 hide:NO];
+                        [self rotateHide:(float)3.14159265358979323846264338327950288 theme:NO];
+                        //: break;
                         break;
+                    //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
                     case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-                        [self rotateArrow:0 hide:NO];
+                        //: [self rotateArrow:0 hide:NO];
+                        [self rotateHide:0 theme:NO];
+                        //: break;
                         break;
                 }
+                //: break;
                 break;
-                
+
+            //: case SpiritedMediatorOrganizerReplayRemoveStateLoading:
             case SpiritedMediatorOrganizerReplayRemoveStateLoading:
+                //: [self.activityIndicatorView startAnimating];
                 [self.activityIndicatorView startAnimating];
+                //: switch (self.position) {
                 switch (self.position) {
+                    //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
                     case SpiritedMediatorOrganizerReplayRemovePositionTop:
-                        [self rotateArrow:0 hide:YES];
+                        //: [self rotateArrow:0 hide:YES];
+                        [self rotateHide:0 theme:YES];
+                        //: break;
                         break;
+                    //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
                     case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-                        [self rotateArrow:(float)M_PI hide:YES];
+                        //: [self rotateArrow:(float)3.14159265358979323846264338327950288 hide:YES];
+                        [self rotateHide:(float)3.14159265358979323846264338327950288 theme:YES];
+                        //: break;
                         break;
                 }
+                //: break;
                 break;
         }
-        
-        CGFloat leftViewWidth = MAX(self.arrow.bounds.size.width,self.activityIndicatorView.bounds.size.width);
-        
+
+        //: CGFloat leftViewWidth = ((self.arrow.bounds.size.width) > (self.activityIndicatorView.bounds.size.width) ? (self.arrow.bounds.size.width) : (self.activityIndicatorView.bounds.size.width));
+        CGFloat leftViewWidth = ((self.arrow.bounds.size.width) > (self.activityIndicatorView.bounds.size.width) ? (self.arrow.bounds.size.width) : (self.activityIndicatorView.bounds.size.width));
+
+        //: CGFloat margin = 10;
         CGFloat margin = 10;
+        //: CGFloat marginY = 2;
         CGFloat marginY = 2;
+        //: CGFloat labelMaxWidth = self.bounds.size.width - margin - leftViewWidth;
         CGFloat labelMaxWidth = self.bounds.size.width - margin - leftViewWidth;
-        
+
+        //: self.titleLabel.text = [self.titles objectAtIndex:self.state];
         self.titleLabel.text = [self.titles objectAtIndex:self.state];
-        
+
+        //: NSString *subtitle = [self.subtitles objectAtIndex:self.state];
         NSString *subtitle = [self.subtitles objectAtIndex:self.state];
+        //: self.subtitleLabel.text = subtitle.length > 0 ? subtitle : nil;
         self.subtitleLabel.text = subtitle.length > 0 ? subtitle : nil;
-        
-        
+
+
+        //: CGSize titleSize = [self.titleLabel.text boundingRectWithSize:CGSizeMake(labelMaxWidth,self.titleLabel.font.lineHeight)
         CGSize titleSize = [self.titleLabel.text boundingRectWithSize:CGSizeMake(labelMaxWidth,self.titleLabel.font.lineHeight)
+                                          //: options:(NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesLineFragmentOrigin)
                                           options:(NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesLineFragmentOrigin)
+                                       //: attributes:@{NSFontAttributeName: self.titleLabel.font}
                                        attributes:@{NSFontAttributeName: self.titleLabel.font}
+                                          //: context:NULL].size;
                                           context:NULL].size;
-        
+
+        //: CGSize subtitleSize = [self.subtitleLabel.text boundingRectWithSize:CGSizeMake(labelMaxWidth,self.subtitleLabel.font.lineHeight)
         CGSize subtitleSize = [self.subtitleLabel.text boundingRectWithSize:CGSizeMake(labelMaxWidth,self.subtitleLabel.font.lineHeight)
+                                                              //: options:(NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesLineFragmentOrigin)
                                                               options:(NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesLineFragmentOrigin)
+                                                           //: attributes:@{NSFontAttributeName: self.subtitleLabel.font}
                                                            attributes:@{NSFontAttributeName: self.subtitleLabel.font}
+                                                              //: context:NULL].size;
                                                               context:NULL].size;
-        
-        CGFloat maxLabelWidth = MAX(titleSize.width,subtitleSize.width);
-        
+
+        //: CGFloat maxLabelWidth = ((titleSize.width) > (subtitleSize.width) ? (titleSize.width) : (subtitleSize.width));
+        CGFloat maxLabelWidth = ((titleSize.width) > (subtitleSize.width) ? (titleSize.width) : (subtitleSize.width));
+
+        //: CGFloat totalMaxWidth;
         CGFloat totalMaxWidth;
+        //: if (maxLabelWidth) {
         if (maxLabelWidth) {
+            //: totalMaxWidth = leftViewWidth + margin + maxLabelWidth;
             totalMaxWidth = leftViewWidth + margin + maxLabelWidth;
+        //: } else {
         } else {
+            //: totalMaxWidth = leftViewWidth + maxLabelWidth;
             totalMaxWidth = leftViewWidth + maxLabelWidth;
         }
-        
+
+        //: CGFloat labelX = (self.bounds.size.width / 2) - (totalMaxWidth / 2) + leftViewWidth + margin;
         CGFloat labelX = (self.bounds.size.width / 2) - (totalMaxWidth / 2) + leftViewWidth + margin;
-        
+
+        //: if(subtitleSize.height > 0){
         if(subtitleSize.height > 0){
+            //: CGFloat totalHeight = titleSize.height + subtitleSize.height + marginY;
             CGFloat totalHeight = titleSize.height + subtitleSize.height + marginY;
-            CGFloat minY = (self.bounds.size.height / 2)  - (totalHeight / 2);
-            
+            //: CGFloat minY = (self.bounds.size.height / 2) - (totalHeight / 2);
+            CGFloat minY = (self.bounds.size.height / 2) - (totalHeight / 2);
+
+            //: CGFloat titleY = minY;
             CGFloat titleY = minY;
+            //: self.titleLabel.frame = CGRectIntegral(CGRectMake(labelX, titleY, titleSize.width, titleSize.height));
             self.titleLabel.frame = CGRectIntegral(CGRectMake(labelX, titleY, titleSize.width, titleSize.height));
+            //: self.subtitleLabel.frame = CGRectIntegral(CGRectMake(labelX, titleY + titleSize.height + marginY, subtitleSize.width, subtitleSize.height));
             self.subtitleLabel.frame = CGRectIntegral(CGRectMake(labelX, titleY + titleSize.height + marginY, subtitleSize.width, subtitleSize.height));
+        //: }else{
         }else{
+            //: CGFloat totalHeight = titleSize.height;
             CGFloat totalHeight = titleSize.height;
-            CGFloat minY = (self.bounds.size.height / 2)  - (totalHeight / 2);
-            
+            //: CGFloat minY = (self.bounds.size.height / 2) - (totalHeight / 2);
+            CGFloat minY = (self.bounds.size.height / 2) - (totalHeight / 2);
+
+            //: CGFloat titleY = minY;
             CGFloat titleY = minY;
+            //: self.titleLabel.frame = CGRectIntegral(CGRectMake(labelX, titleY, titleSize.width, titleSize.height));
             self.titleLabel.frame = CGRectIntegral(CGRectMake(labelX, titleY, titleSize.width, titleSize.height));
+            //: self.subtitleLabel.frame = CGRectIntegral(CGRectMake(labelX, titleY + titleSize.height + marginY, subtitleSize.width, subtitleSize.height));
             self.subtitleLabel.frame = CGRectIntegral(CGRectMake(labelX, titleY + titleSize.height + marginY, subtitleSize.width, subtitleSize.height));
         }
-        
+
+        //: CGFloat arrowX = (self.bounds.size.width / 2) - (totalMaxWidth / 2) + (leftViewWidth - self.arrow.bounds.size.width) / 2;
         CGFloat arrowX = (self.bounds.size.width / 2) - (totalMaxWidth / 2) + (leftViewWidth - self.arrow.bounds.size.width) / 2;
+        //: self.arrow.frame = CGRectMake(arrowX,
         self.arrow.frame = CGRectMake(arrowX,
+                                      //: (self.bounds.size.height / 2) - (self.arrow.bounds.size.height / 2),
                                       (self.bounds.size.height / 2) - (self.arrow.bounds.size.height / 2),
+                                      //: self.arrow.bounds.size.width,
                                       self.arrow.bounds.size.width,
+                                      //: self.arrow.bounds.size.height);
                                       self.arrow.bounds.size.height);
+        //: self.activityIndicatorView.center = self.arrow.center;
         self.activityIndicatorView.center = self.arrow.center;
     }
 }
 
-#pragma mark - Scroll View
-
-- (void)resetScrollViewContentInset {
-    UIEdgeInsets currentInsets = self.scrollView.contentInset;
-    switch (self.position) {
-        case SpiritedMediatorOrganizerReplayRemovePositionTop:
-            currentInsets.top = self.originalTopInset;
-            break;
-        case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-            currentInsets.bottom = self.originalBottomInset;
-            currentInsets.top = self.originalTopInset;
-            break;
-    }
-    [self setScrollViewContentInset:currentInsets];
-}
-
-- (void)setScrollViewContentInsetForLoading {
-    CGFloat offset = MAX(self.scrollView.contentOffset.y * -1, 0);
-    UIEdgeInsets currentInsets = self.scrollView.contentInset;
-    switch (self.position) {
-        case SpiritedMediatorOrganizerReplayRemovePositionTop:
-            currentInsets.top = MIN(offset, self.originalTopInset + self.bounds.size.height);
-            break;
-        case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-            currentInsets.bottom = MIN(offset, self.originalBottomInset + self.bounds.size.height);
-            break;
-    }
-    [self setScrollViewContentInset:currentInsets];
-}
-
-- (void)setScrollViewContentInset:(UIEdgeInsets)contentInset {
-    [UIView animateWithDuration:0.3
-                          delay:0
-                        options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
-                         self.scrollView.contentInset = contentInset;
-                     }
-                     completion:NULL];
-}
-
-#pragma mark - Observing
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if([keyPath isEqualToString:@"contentOffset"])
-        [self scrollViewDidScroll:[[change valueForKey:NSKeyValueChangeNewKey] CGPointValue]];
-    else if([keyPath isEqualToString:@"contentSize"]) {
-        [self layoutSubviews];
-        
-        CGFloat yOrigin;
-        switch (self.position) {
-            case SpiritedMediatorOrganizerReplayRemovePositionTop:
-                yOrigin = -SpiritedMediatorOrganizerReplayRemoveViewHeight;
-                break;
-            case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-                yOrigin = MAX(self.scrollView.contentSize.height, self.scrollView.bounds.size.height);
-                break;
-        }
-        self.frame = CGRectMake(0, yOrigin, self.bounds.size.width, SpiritedMediatorOrganizerReplayRemoveViewHeight);
-    }
-    else if([keyPath isEqualToString:@"frame"])
-        [self layoutSubviews];
-    
-}
-
-- (void)scrollViewDidScroll:(CGPoint)contentOffset {
-    if(self.state != SpiritedMediatorOrganizerReplayRemoveStateLoading) {
-        CGFloat scrollOffsetThreshold = 0;
-        switch (self.position) {
-            case SpiritedMediatorOrganizerReplayRemovePositionTop:
-                scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
-                break;
-            case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-                scrollOffsetThreshold = MAX(self.scrollView.contentSize.height - self.scrollView.bounds.size.height, 0.0f) + self.bounds.size.height + self.originalBottomInset;
-                break;
-        }
-        
-        if(!self.scrollView.isDragging && self.state == SpiritedMediatorOrganizerReplayRemoveStateTriggered)
-            self.state = SpiritedMediatorOrganizerReplayRemoveStateLoading;
-        else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionTop)
-            self.state = SpiritedMediatorOrganizerReplayRemoveStateTriggered;
-        else if(contentOffset.y >= scrollOffsetThreshold && self.state != SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionTop)
-            self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
-        else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionBottom)
-            self.state = SpiritedMediatorOrganizerReplayRemoveStateTriggered;
-        else if(contentOffset.y <= scrollOffsetThreshold && self.state != SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionBottom)
-            self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
-    } else {
-        CGFloat offset;
-        UIEdgeInsets contentInset;
-        switch (self.position) {
-            case SpiritedMediatorOrganizerReplayRemovePositionTop:
-                offset = MAX(self.scrollView.contentOffset.y * -1, 0.0f);
-                offset = MIN(offset, self.originalTopInset + self.bounds.size.height);
-                contentInset = self.scrollView.contentInset;
-                self.scrollView.contentInset = UIEdgeInsetsMake(offset, contentInset.left, contentInset.bottom, contentInset.right);
-                break;
-            case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-                if (self.scrollView.contentSize.height >= self.scrollView.bounds.size.height) {
-                    offset = MAX(self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.bounds.size.height, 0.0f);
-                    offset = MIN(offset, self.originalBottomInset + self.bounds.size.height);
-                    contentInset = self.scrollView.contentInset;
-                    self.scrollView.contentInset = UIEdgeInsetsMake(contentInset.top, contentInset.left, offset, contentInset.right);
-                } else if (self.wasTriggeredByUser) {
-                    offset = MIN(self.bounds.size.height, self.originalBottomInset + self.bounds.size.height);
-                    contentInset = self.scrollView.contentInset;
-                    self.scrollView.contentInset = UIEdgeInsetsMake(-offset, contentInset.left, contentInset.bottom, contentInset.right);
-                }
-                break;
-        }
-    }
-}
-
-#pragma mark - Getters
-
-- (SpiritedMediatorOrganizerReplayRemoveArrow *)arrow {
-    if(!_arrow) {
-        _arrow = [[SpiritedMediatorOrganizerReplayRemoveArrow alloc]initWithFrame:CGRectMake(0, self.bounds.size.height-54, 22, 48)];
-        _arrow.backgroundColor = [UIColor clearColor];
-        [self addSubview:_arrow];
-    }
-    return _arrow;
-}
-
-- (UIActivityIndicatorView *)activityIndicatorView {
-    if(!_activityIndicatorView) {
-        _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-        _activityIndicatorView.hidesWhenStopped = YES;
-        [self addSubview:_activityIndicatorView];
-    }
-    return _activityIndicatorView;
-}
-
-- (UILabel *)titleLabel {
-    if(!_titleLabel) {
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 210, 20)];
-        _titleLabel.text = NSLocalizedString(@"Pull to refresh...",);
-        _titleLabel.font = [UIFont boldSystemFontOfSize:14];
-        _titleLabel.backgroundColor = [UIColor clearColor];
-        _titleLabel.textColor = textColor;
-        [self addSubview:_titleLabel];
-    }
-    return _titleLabel;
-}
-
-- (UILabel *)subtitleLabel {
-    if(!_subtitleLabel) {
-        _subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 210, 20)];
-        _subtitleLabel.font = [UIFont systemFontOfSize:12];
-        _subtitleLabel.backgroundColor = [UIColor clearColor];
-        _subtitleLabel.textColor = textColor;
-        [self addSubview:_subtitleLabel];
-    }
-    return _subtitleLabel;
-}
-
-- (UILabel *)dateLabel {
-    return self.showsDateLabel ? self.subtitleLabel : nil;
-}
-
-- (UIColor *)arrowColor {
-    return self.arrow.arrowColor; // pass through
-}
-
-- (UIColor *)textColor {
-    return self.titleLabel.textColor;
-}
-
-- (UIColor *)activityIndicatorViewColor {
-    return self.activityIndicatorView.color;
-}
-
-- (UIActivityIndicatorViewStyle)activityIndicatorViewStyle {
-    return self.activityIndicatorView.activityIndicatorViewStyle;
-}
-
-#pragma mark - Setters
-
-- (void)setArrowColor:(UIColor *)newArrowColor {
-    self.arrow.arrowColor = newArrowColor; // pass through
-    [self.arrow setNeedsDisplay];
-}
-
-- (void)setTitle:(NSString *)title forState:(SpiritedMediatorOrganizerReplayRemoveState)state {
-    if(!title)
-        title = @"";
-    
-    if(state == SpiritedMediatorOrganizerReplayRemoveStateAll)
-        [self.titles replaceObjectsInRange:NSMakeRange(0, 3) withObjectsFromArray:@[title, title, title]];
-    else
-        [self.titles replaceObjectAtIndex:state withObject:title];
-    
-    [self setNeedsLayout];
-}
-
-- (void)setSubtitle:(NSString *)subtitle forState:(SpiritedMediatorOrganizerReplayRemoveState)state {
-    if(!subtitle)
-        subtitle = @"";
-    
-    if(state == SpiritedMediatorOrganizerReplayRemoveStateAll)
-        [self.subtitles replaceObjectsInRange:NSMakeRange(0, 3) withObjectsFromArray:@[subtitle, subtitle, subtitle]];
-    else
-        [self.subtitles replaceObjectAtIndex:state withObject:subtitle];
-    
-    [self setNeedsLayout];
-}
-
-- (void)setCustomView:(UIView *)view forState:(SpiritedMediatorOrganizerReplayRemoveState)state {
-    id viewPlaceholder = view;
-    
-    if(!viewPlaceholder)
-        viewPlaceholder = @"";
-    
-    if(state == SpiritedMediatorOrganizerReplayRemoveStateAll)
-        [self.viewForState replaceObjectsInRange:NSMakeRange(0, 3) withObjectsFromArray:@[viewPlaceholder, viewPlaceholder, viewPlaceholder]];
-    else
-        [self.viewForState replaceObjectAtIndex:state withObject:viewPlaceholder];
-    
-    [self setNeedsLayout];
-}
-
-- (void)setTextColor:(UIColor *)newTextColor {
-    textColor = newTextColor;
-    self.titleLabel.textColor = newTextColor;
-    self.subtitleLabel.textColor = newTextColor;
-}
-
-- (void)setActivityIndicatorViewColor:(UIColor *)color {
-    self.activityIndicatorView.color = color;
-}
-
-- (void)setActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)viewStyle {
-    self.activityIndicatorView.activityIndicatorViewStyle = viewStyle;
-}
-
-
-
-#pragma mark -
-
-- (void)startAnimating{
-    switch (self.position) {
-        case SpiritedMediatorOrganizerReplayRemovePositionTop:
-            
-            if(fequalzero(self.scrollView.contentOffset.y)) {
-                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
-                self.wasTriggeredByUser = NO;
-            }
-            else
-                self.wasTriggeredByUser = YES;
-            
-            break;
-        case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-            
-            if((fequalzero(self.scrollView.contentOffset.y) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
-               || fequal(self.scrollView.contentOffset.y, self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) {
-                [self.scrollView setContentOffset:(CGPoint){.y = MAX(self.scrollView.contentSize.height - self.scrollView.bounds.size.height, 0.0f) + self.frame.size.height} animated:YES];
-                self.wasTriggeredByUser = NO;
-            }
-            else
-                self.wasTriggeredByUser = YES;
-            
-            break;
-    }
-    
-    self.state = SpiritedMediatorOrganizerReplayRemoveStateLoading;
-}
-
-- (void)stopAnimating {
-    self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
-    
-    switch (self.position) {
-        case SpiritedMediatorOrganizerReplayRemovePositionTop:
-            if(!self.wasTriggeredByUser)
-                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.originalTopInset) animated:YES];
-            break;
-        case SpiritedMediatorOrganizerReplayRemovePositionBottom:
-            if(!self.wasTriggeredByUser)
-                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.originalBottomInset) animated:YES];
-            break;
-    }
-}
-
-- (void)setState:(SpiritedMediatorOrganizerReplayRemoveState)newState {
-    
-    if(_state == newState)
-        return;
-    
-    SpiritedMediatorOrganizerReplayRemoveState previousState = _state;
-    _state = newState;
-    
-    [self setNeedsLayout];
-    [self layoutIfNeeded];
-    
-    switch (newState) {
-        case SpiritedMediatorOrganizerReplayRemoveStateAll:
-        case SpiritedMediatorOrganizerReplayRemoveStateStopped:
-            [self resetScrollViewContentInset];
-            break;
-            
-        case SpiritedMediatorOrganizerReplayRemoveStateTriggered:
-            break;
-            
-        case SpiritedMediatorOrganizerReplayRemoveStateLoading:
-            [self setScrollViewContentInsetForLoading];
-            
-            if(previousState == SpiritedMediatorOrganizerReplayRemoveStateTriggered && pullToRefreshActionHandler)
-                pullToRefreshActionHandler();
-            
-            break;
-    }
-}
-
-- (void)rotateArrow:(float)degrees hide:(BOOL)hide {
+//: - (void)rotateArrow:(float)degrees hide:(BOOL)hide {
+- (void)rotateHide:(float)degrees theme:(BOOL)hide {
+    //: [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
     [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        //: self.arrow.layer.transform = CATransform3DMakeRotation(degrees, 0, 0, 1);
         self.arrow.layer.transform = CATransform3DMakeRotation(degrees, 0, 0, 1);
+        //: self.arrow.layer.opacity = !hide;
         self.arrow.layer.opacity = !hide;
         //[self.arrow setNeedsDisplay];//ios 4
+    //: } completion:NULL];
     } completion:NULL];
 }
 
+//: #pragma mark - Observing
+#pragma mark - Observing
+
+//: - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    //: if([keyPath isEqualToString:@"contentOffset"])
+    if([keyPath isEqualToString:[[TopData sharedInstance] coreSnowFullFormat]])
+        //: [self scrollViewDidScroll:[[change valueForKey:NSKeyValueChangeNewKey] CGPointValue]];
+        [self exception:[[change valueForKey:NSKeyValueChangeNewKey] CGPointValue]];
+    //: else if([keyPath isEqualToString:@"contentSize"]) {
+    else if([keyPath isEqualToString:[[TopData sharedInstance] widgetMemoryKey]]) {
+        //: [self layoutSubviews];
+        [self layoutSubviews];
+
+        //: CGFloat yOrigin;
+        CGFloat yOrigin;
+        //: switch (self.position) {
+        switch (self.position) {
+            //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
+            case SpiritedMediatorOrganizerReplayRemovePositionTop:
+                //: yOrigin = -SpiritedMediatorOrganizerReplayRemoveViewHeight;
+                yOrigin = - 60;
+                //: break;
+                break;
+            //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+            case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+                //: yOrigin = ((self.scrollView.contentSize.height) > (self.scrollView.bounds.size.height) ? (self.scrollView.contentSize.height) : (self.scrollView.bounds.size.height));
+                yOrigin = ((self.scrollView.contentSize.height) > (self.scrollView.bounds.size.height) ? (self.scrollView.contentSize.height) : (self.scrollView.bounds.size.height));
+                //: break;
+                break;
+        }
+        //: self.frame = CGRectMake(0, yOrigin, self.bounds.size.width, SpiritedMediatorOrganizerReplayRemoveViewHeight);
+        self.frame = CGRectMake(0, yOrigin, self.bounds.size.width, colorEraseId(nil));
+    }
+    //: else if([keyPath isEqualToString:@"frame"])
+    else if([keyPath isEqualToString:[[TopData sharedInstance] screenDensePlatform]])
+        //: [self layoutSubviews];
+        [self layoutSubviews];
+
+}
+
+
+
+//: - (void)scrollViewDidScroll:(CGPoint)contentOffset {
+- (void)exception:(CGPoint)contentOffset {
+    //: if(self.state != SpiritedMediatorOrganizerReplayRemoveStateLoading) {
+    if(self.state != SpiritedMediatorOrganizerReplayRemoveStateLoading) {
+        //: CGFloat scrollOffsetThreshold = 0;
+        CGFloat scrollOffsetThreshold = 0;
+        //: switch (self.position) {
+        switch (self.position) {
+            //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
+            case SpiritedMediatorOrganizerReplayRemovePositionTop:
+                //: scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
+                scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
+                //: break;
+                break;
+            //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+            case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+                //: scrollOffsetThreshold = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.bounds.size.height + self.originalBottomInset;
+                scrollOffsetThreshold = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.bounds.size.height + self.originalBottomInset;
+                //: break;
+                break;
+        }
+
+        //: if(!self.scrollView.isDragging && self.state == SpiritedMediatorOrganizerReplayRemoveStateTriggered)
+        if(!self.scrollView.isDragging && self.state == SpiritedMediatorOrganizerReplayRemoveStateTriggered)
+            //: self.state = SpiritedMediatorOrganizerReplayRemoveStateLoading;
+            self.state = SpiritedMediatorOrganizerReplayRemoveStateLoading;
+        //: else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionTop)
+        else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionTop)
+            //: self.state = SpiritedMediatorOrganizerReplayRemoveStateTriggered;
+            self.state = SpiritedMediatorOrganizerReplayRemoveStateTriggered;
+        //: else if(contentOffset.y >= scrollOffsetThreshold && self.state != SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionTop)
+        else if(contentOffset.y >= scrollOffsetThreshold && self.state != SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionTop)
+            //: self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
+            self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
+        //: else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionBottom)
+        else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionBottom)
+            //: self.state = SpiritedMediatorOrganizerReplayRemoveStateTriggered;
+            self.state = SpiritedMediatorOrganizerReplayRemoveStateTriggered;
+        //: else if(contentOffset.y <= scrollOffsetThreshold && self.state != SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionBottom)
+        else if(contentOffset.y <= scrollOffsetThreshold && self.state != SpiritedMediatorOrganizerReplayRemoveStateStopped && self.position == SpiritedMediatorOrganizerReplayRemovePositionBottom)
+            //: self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
+            self.state = SpiritedMediatorOrganizerReplayRemoveStateStopped;
+    //: } else {
+    } else {
+        //: CGFloat offset;
+        CGFloat offset;
+        //: UIEdgeInsets contentInset;
+        UIEdgeInsets contentInset;
+        //: switch (self.position) {
+        switch (self.position) {
+            //: case SpiritedMediatorOrganizerReplayRemovePositionTop:
+            case SpiritedMediatorOrganizerReplayRemovePositionTop:
+                //: offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
+                offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
+                //: offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
+                offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
+                //: contentInset = self.scrollView.contentInset;
+                contentInset = self.scrollView.contentInset;
+                //: self.scrollView.contentInset = UIEdgeInsetsMake(offset, contentInset.left, contentInset.bottom, contentInset.right);
+                self.scrollView.contentInset = UIEdgeInsetsMake(offset, contentInset.left, contentInset.bottom, contentInset.right);
+                //: break;
+                break;
+            //: case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+            case SpiritedMediatorOrganizerReplayRemovePositionBottom:
+                //: if (self.scrollView.contentSize.height >= self.scrollView.bounds.size.height) {
+                if (self.scrollView.contentSize.height >= self.scrollView.bounds.size.height) {
+                    //: offset = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.bounds.size.height) : (0.0f));
+                    offset = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.bounds.size.height) : (0.0f));
+                    //: offset = ((offset) < (self.originalBottomInset + self.bounds.size.height) ? (offset) : (self.originalBottomInset + self.bounds.size.height));
+                    offset = ((offset) < (self.originalBottomInset + self.bounds.size.height) ? (offset) : (self.originalBottomInset + self.bounds.size.height));
+                    //: contentInset = self.scrollView.contentInset;
+                    contentInset = self.scrollView.contentInset;
+                    //: self.scrollView.contentInset = UIEdgeInsetsMake(contentInset.top, contentInset.left, offset, contentInset.right);
+                    self.scrollView.contentInset = UIEdgeInsetsMake(contentInset.top, contentInset.left, offset, contentInset.right);
+                //: } else if (self.wasTriggeredByUser) {
+                } else if (self.wasTriggeredByUser) {
+                    //: offset = ((self.bounds.size.height) < (self.originalBottomInset + self.bounds.size.height) ? (self.bounds.size.height) : (self.originalBottomInset + self.bounds.size.height));
+                    offset = ((self.bounds.size.height) < (self.originalBottomInset + self.bounds.size.height) ? (self.bounds.size.height) : (self.originalBottomInset + self.bounds.size.height));
+                    //: contentInset = self.scrollView.contentInset;
+                    contentInset = self.scrollView.contentInset;
+                    //: self.scrollView.contentInset = UIEdgeInsetsMake(-offset, contentInset.left, contentInset.bottom, contentInset.right);
+                    self.scrollView.contentInset = UIEdgeInsetsMake(-offset, contentInset.left, contentInset.bottom, contentInset.right);
+                }
+                //: break;
+                break;
+        }
+    }
+}
+
+//: - (UIColor *)activityIndicatorViewColor {
+- (UIColor *)activityIndicatorViewColor {
+    //: return self.activityIndicatorView.color;
+    return self.activityIndicatorView.color;
+}
+
+//: - (UILabel *)dateLabel {
+- (UILabel *)noticeLabel {
+    //: return self.showsDateLabel ? self.subtitleLabel : nil;
+    return self.showsDateLabel ? self.subtitleLabel : nil;
+}
+
+//: - (UIColor *)arrowColor {
+- (UIColor *)arrowColor {
+    //: return self.arrow.arrowColor; 
+    return self.arrow.arrowColor; // pass through
+}
+
+//: @end
 @end
 
 
+//: #pragma mark - SpiritedMediatorOrganizerReplayRemoveArrow
 #pragma mark - SpiritedMediatorOrganizerReplayRemoveArrow
 
+//: @implementation SpiritedMediatorOrganizerReplayRemoveArrow
 @implementation SpiritedMediatorOrganizerReplayRemoveArrow
+//: @synthesize arrowColor;
 @synthesize arrowColor;
 
-- (UIColor *)arrowColor {
-    if (arrowColor) return arrowColor;
-    return [UIColor grayColor]; // default Color
-}
-
+//: - (void)drawRect:(CGRect)rect {
 - (void)drawRect:(CGRect)rect {
+    //: CGContextRef c = UIGraphicsGetCurrentContext();
     CGContextRef c = UIGraphicsGetCurrentContext();
-    
+
     // the rects above the arrow
+    //: CGContextAddRect(c, CGRectMake(5, 0, 12, 4)); 
     CGContextAddRect(c, CGRectMake(5, 0, 12, 4)); // to-do: use dynamic points
+    //: CGContextAddRect(c, CGRectMake(5, 6, 12, 4)); 
     CGContextAddRect(c, CGRectMake(5, 6, 12, 4)); // currently fixed size: 22 x 48pt
+    //: CGContextAddRect(c, CGRectMake(5, 12, 12, 4));
     CGContextAddRect(c, CGRectMake(5, 12, 12, 4));
+    //: CGContextAddRect(c, CGRectMake(5, 18, 12, 4));
     CGContextAddRect(c, CGRectMake(5, 18, 12, 4));
+    //: CGContextAddRect(c, CGRectMake(5, 24, 12, 4));
     CGContextAddRect(c, CGRectMake(5, 24, 12, 4));
+    //: CGContextAddRect(c, CGRectMake(5, 30, 12, 4));
     CGContextAddRect(c, CGRectMake(5, 30, 12, 4));
-    
+
     // the arrow
+    //: CGContextMoveToPoint(c, 0, 34);
     CGContextMoveToPoint(c, 0, 34);
+    //: CGContextAddLineToPoint(c, 11, 48);
     CGContextAddLineToPoint(c, 11, 48);
+    //: CGContextAddLineToPoint(c, 22, 34);
     CGContextAddLineToPoint(c, 22, 34);
+    //: CGContextAddLineToPoint(c, 0, 34);
     CGContextAddLineToPoint(c, 0, 34);
+    //: CGContextClosePath(c);
     CGContextClosePath(c);
-    
+
+    //: CGContextSaveGState(c);
     CGContextSaveGState(c);
+    //: CGContextClip(c);
     CGContextClip(c);
-    
+
     // Gradient Declaration
+    //: CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    //: CGFloat alphaGradientLocations[] = {0, 0.8f};
     CGFloat alphaGradientLocations[] = {0, 0.8f};
-    
+
+    //: CGGradientRef alphaGradient = nil;
     CGGradientRef alphaGradient = nil;
+    //: if([[[UIDevice currentDevice] systemVersion]floatValue] >= 5){
     if([[[UIDevice currentDevice] systemVersion]floatValue] >= 5){
+        //: NSArray* alphaGradientColors = [NSArray arrayWithObjects:
         NSArray* alphaGradientColors = [NSArray arrayWithObjects:
+                                        //: (id)[self.arrowColor colorWithAlphaComponent:0].CGColor,
                                         (id)[self.arrowColor colorWithAlphaComponent:0].CGColor,
+                                        //: (id)[self.arrowColor colorWithAlphaComponent:1].CGColor,
                                         (id)[self.arrowColor colorWithAlphaComponent:1].CGColor,
+                                        //: nil];
                                         nil];
+        //: alphaGradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)alphaGradientColors, alphaGradientLocations);
         alphaGradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)alphaGradientColors, alphaGradientLocations);
+    //: }else{
     }else{
+        //: const CGFloat * components = CGColorGetComponents([self.arrowColor CGColor]);
         const CGFloat * components = CGColorGetComponents([self.arrowColor CGColor]);
+        //: size_t numComponents = CGColorGetNumberOfComponents([self.arrowColor CGColor]);
         size_t numComponents = CGColorGetNumberOfComponents([self.arrowColor CGColor]);
+        //: CGFloat colors[8];
         CGFloat colors[8];
+        //: switch(numComponents){
         switch(numComponents){
+            //: case 2:{
             case 2:{
+                //: colors[0] = colors[4] = components[0];
                 colors[0] = colors[4] = components[0];
+                //: colors[1] = colors[5] = components[0];
                 colors[1] = colors[5] = components[0];
+                //: colors[2] = colors[6] = components[0];
                 colors[2] = colors[6] = components[0];
+                //: break;
                 break;
             }
+            //: case 4:{
             case 4:{
+                //: colors[0] = colors[4] = components[0];
                 colors[0] = colors[4] = components[0];
+                //: colors[1] = colors[5] = components[1];
                 colors[1] = colors[5] = components[1];
+                //: colors[2] = colors[6] = components[2];
                 colors[2] = colors[6] = components[2];
+                //: break;
                 break;
             }
         }
+        //: colors[3] = 0;
         colors[3] = 0;
+        //: colors[7] = 1;
         colors[7] = 1;
+        //: alphaGradient = CGGradientCreateWithColorComponents(colorSpace,colors,alphaGradientLocations,2);
         alphaGradient = CGGradientCreateWithColorComponents(colorSpace,colors,alphaGradientLocations,2);
     }
-    
-    
+
+
+    //: CGContextDrawLinearGradient(c, alphaGradient, CGPointZero, CGPointMake(0, rect.size.height), 0);
     CGContextDrawLinearGradient(c, alphaGradient, CGPointZero, CGPointMake(0, rect.size.height), 0);
-    
+
+    //: CGContextRestoreGState(c);
     CGContextRestoreGState(c);
-    
+
+    //: CGGradientRelease(alphaGradient);
     CGGradientRelease(alphaGradient);
+    //: CGColorSpaceRelease(colorSpace);
     CGColorSpaceRelease(colorSpace);
 }
+
+//: - (UIColor *)arrowColor {
+- (UIColor *)arrowColor {
+    //: if (arrowColor) return arrowColor;
+    if (arrowColor) return arrowColor;
+    //: return [UIColor grayColor]; 
+    return [UIColor grayColor]; // default Color
+}
+//: @end
 @end

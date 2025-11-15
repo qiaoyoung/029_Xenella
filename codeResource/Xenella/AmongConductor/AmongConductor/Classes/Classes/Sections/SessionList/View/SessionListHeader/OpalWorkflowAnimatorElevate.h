@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  OpalWorkflowAnimatorElevate.h
 //  NIM
@@ -6,25 +8,38 @@
 //  Copyright © 2021 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface OpalWorkflowAnimatorElevate : UIView
 @interface OpalWorkflowAnimatorElevate : UIView
 
+//: @property (nonatomic ,weak) id delegate;
 @property (nonatomic ,weak) id delegate;
 
--(instancetype)initWithFrame:(CGRect)frame dictionary:(NSDictionary *)dictionary;
+//: - (void)dismissPicker;
+- (void)denounceCurrent;
 
-- (void)show;
+//: - (void)show;
+- (void)protection;
 
-- (void)dismissPicker;
+//: -(instancetype)initWithFrame:(CGRect)frame dictionary:(NSDictionary *)dictionary;
+-(instancetype)initWithInfo:(CGRect)frame factor:(NSDictionary *)dictionary;
+//: @end
 @end
 
+//: @protocol OpalWorkflowAnimatorElevateDelegate <NSObject>
 @protocol OpalWorkflowAnimatorElevateDelegate <NSObject>
 
--(void)signButtonClickDelegate;
+//: -(void)signButtonClickDelegate;
+-(void)taskEnd;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

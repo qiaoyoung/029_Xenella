@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  GlobeImprovedUpdater.h
 //  NIM
@@ -6,17 +8,25 @@
 //  Copyright © 2017年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
 
+//: @interface GlobeImprovedUpdater : NSObject
 @interface GlobeImprovedUpdater : NSObject
 
-+ (instancetype)sharedManager;
+//: - (void)start;
+- (void)protectionDown;
 
-- (void)start;
+//: + (instancetype)sharedManager;
++ (instancetype)signatureNeed;
 
-- (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+//: - (void)unsubscribeTempTransformBareNectarRoadmapState:(NSString *)userId;
+- (void)frame:(NSString *)userId;
 
-- (void)subscribeTempTransformBareNectarRoadmapState:(NSString *)userId;
+//: - (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+- (NSDictionary<NIMSubscribeEvent *, NSString *> *)contextCurve:(NSInteger)type;
 
-- (void)unsubscribeTempTransformBareNectarRoadmapState:(NSString *)userId;
+//: - (void)subscribeTempTransformBareNectarRoadmapState:(NSString *)userId;
+- (void)transfer:(NSString *)userId;
 
+//: @end
 @end

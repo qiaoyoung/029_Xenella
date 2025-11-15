@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  WindowStencilRefresh.h
 // TreatLayoutExotic
@@ -6,20 +8,30 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface WindowStencilRefresh : NSObject
 @interface WindowStencilRefresh : NSObject
 
-+ (NSString *)getAppDocumentPath;
+//: + (NSString *)getAppDocumentPath;
++ (NSString *)speed;
 
-+ (NSString *)getAppTempPath;
+//: + (NSString *)filepathForVideo:(NSString *)filename;
++ (NSString *)haveInMind:(NSString *)filename;
 
-+ (NSString *)userDirectory;
+//: + (NSString *)filepathForImage:(NSString *)filename;
++ (NSString *)publishImage:(NSString *)filename;
 
-+ (NSString *)genFilenameWithExt:(NSString *)ext;
+//: + (NSString *)userDirectory;
++ (NSString *)scene;
 
-+ (NSString *)filepathForVideo:(NSString *)filename;
+//: + (NSString *)genFilenameWithExt:(NSString *)ext;
++ (NSString *)filename:(NSString *)ext;
 
-+ (NSString *)filepathForImage:(NSString *)filename;
+//: + (NSString *)getAppTempPath;
++ (NSString *)adjust;
 
+//: @end
 @end

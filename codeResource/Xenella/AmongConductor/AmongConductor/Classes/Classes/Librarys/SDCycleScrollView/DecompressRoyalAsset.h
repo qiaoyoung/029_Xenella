@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DecompressRoyalAsset.h
 //  AudioCanvasHolistic
@@ -5,6 +7,10 @@
 //  Created by aier on 15-3-22.
 //  Copyright (c) 2015年 GSD. All rights reserved.
 //
+
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 
 /*
  
@@ -30,21 +36,31 @@
 
 
 
-#import <UIKit/UIKit.h>
 
+
+//: @interface DecompressRoyalAsset : UICollectionViewCell
 @interface DecompressRoyalAsset : UICollectionViewCell
 
+//: @property (weak, nonatomic) UIImageView *imageView;
 @property (weak, nonatomic) UIImageView *imageView;
-@property (copy, nonatomic) NSString *title;
-
-@property (nonatomic, strong) UIColor *titleLabelTextColor;
-@property (nonatomic, strong) UIFont *titleLabelTextFont;
+//: @property (nonatomic, strong) UIColor *titleLabelBackgroundColor;
 @property (nonatomic, strong) UIColor *titleLabelBackgroundColor;
+
+//: @property (nonatomic, strong) UIFont *titleLabelTextFont;
+@property (nonatomic, strong) UIFont *titleLabelTextFont;
+//: @property (nonatomic, assign) BOOL hasConfigured;
+@property (nonatomic, assign) BOOL hasConfigured;
+//: @property (nonatomic, assign) BOOL showGradient;
+@property (nonatomic, assign) BOOL showGradient;
+//: @property (nonatomic, assign) CGFloat titleLabelHeight;
 @property (nonatomic, assign) CGFloat titleLabelHeight;
 
-@property (nonatomic, assign) BOOL hasConfigured;
+//: @property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *title;
 
-@property (nonatomic, assign) BOOL showGradient;
+//: @property (nonatomic, strong) UIColor *titleLabelTextColor;
+@property (nonatomic, strong) UIColor *titleLabelTextColor;
 
 
+//: @end
 @end

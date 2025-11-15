@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SendTextureBuild.h
 //  NIM
@@ -15,29 +17,42 @@
 //     "message_count": 1234   //必填,最终写入文件中的消息数
 //   }
 
-
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface SendTextureBuild : NSObject
 @interface SendTextureBuild : NSObject
 
-@property (nonatomic, assign) NSInteger version;
-
-@property (nonatomic, assign) NIMLoginClientType clientType;
-
-@property (nonatomic, copy) NSString *sdkVersion;
-
-@property (nonatomic, copy) NSString *appVersion;
-
+//: @property (nonatomic, assign) NSInteger totalInfoCount;
 @property (nonatomic, assign) NSInteger totalInfoCount;
 
-+ (instancetype)initWithDefaultConfig;
+//: @property (nonatomic, assign) NIMLoginClientType clientType;
+@property (nonatomic, assign) NIMLoginClientType clientType;
 
-+ (nullable instancetype)initWithRawContent:(NSData *)data;
+//: @property (nonatomic, copy) NSString *appVersion;
+@property (nonatomic, copy) NSString *appVersion;
 
-- (nullable NSData *)toRawContent;
+//: @property (nonatomic, assign) NSInteger version;
+@property (nonatomic, assign) NSInteger version;
 
+//: @property (nonatomic, copy) NSString *sdkVersion;
+@property (nonatomic, copy) NSString *sdkVersion;
+
+//: - (nullable NSData *)toRawContent;
+- (nullable NSData *)menu;
+
+//: + (instancetype)initWithDefaultConfig;
++ (instancetype)initWithToday;
+
+//: + (nullable instancetype)initWithRawContent:(NSData *)data;
++ (nullable instancetype)initWithAddedEach:(NSData *)data;
+
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

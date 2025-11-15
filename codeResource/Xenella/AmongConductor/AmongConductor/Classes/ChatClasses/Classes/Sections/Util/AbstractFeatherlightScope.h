@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 // TreatLayoutExoticCommentUtil.h
 // TreatLayoutExotic
@@ -6,33 +8,52 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class NIMQuickComment;
 @class NIMQuickComment;
+//: @class FormatterElementPeakSchedule;
 @class FormatterElementPeakSchedule;
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface AbstractFeatherlightScope : NSObject
 @interface AbstractFeatherlightScope : NSObject
 
-+ (UIFont *)commentFont;
+//: + (FormatterElementPeakSchedule *)newCommentLabel;
++ (FormatterElementPeakSchedule *)houseMotion;
 
-+ (NSString *)commentContent:(NIMQuickComment *)comment;
+//: + (CGSize)containerSizeWithComments:(NSMapTable *)comments;
++ (CGSize)res:(NSMapTable *)comments;
 
-+ (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
+//: + (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
++ (CGSize)element:(NSArray<NIMQuickComment *> *)comments;
 
-+ (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
+//: + (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
++ (NSArray *)provider:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
 
-+ (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
+//: + (UIFont *)commentFont;
++ (UIFont *)active;
 
-+ (CGSize)containerSizeWithComments:(NSMapTable *)comments;
+//: + (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
++ (NSString *)security:(NSArray<NIMQuickComment *> *)comments;
 
-+ (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
-                                      keys:(NSArray *)keys
-                                  comments:(NSMapTable *)map;
+//: + (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
++ (CGSize)pause:(NIMQuickComment *)comment;
 
-+ (FormatterElementPeakSchedule *)newCommentLabel;
 
-+ (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
+//: + (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
++ (NIMQuickComment * _Nullable)impute:(NSInteger )keyIndex
+                                      //: keys:(NSArray *)keys
+                                      appropriate:(NSArray *)keys
+                                  //: comments:(NSMapTable *)map;
+                                  with:(NSMapTable *)map;
+//: + (NSString *)commentContent:(NIMQuickComment *)comment;
++ (NSString *)noExtra:(NIMQuickComment *)comment;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

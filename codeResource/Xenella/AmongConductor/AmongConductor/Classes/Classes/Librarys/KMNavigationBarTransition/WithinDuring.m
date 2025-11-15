@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  WithinDuring.m
 //
@@ -21,25 +23,39 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "WithinDuring.h"
 #import "WithinDuring.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
 
+//: @interface WithinDuring : NSObject
 @interface WithinDuring : NSObject
+//: @property (nonatomic, weak) id object;
 @property (nonatomic, weak) id object;
+//: @end
 @end
 
+//: @implementation WithinDuring
 @implementation WithinDuring
 
-void km_objc_setAssociatedWeakObject(id container, void *key, id value)
+//: void km_objc_setAssociatedWeakObject(id container, void *key, id value)
+void weakObject(id container, void *key, id value)
 {
+    //: WithinDuring *wrapper = [[WithinDuring alloc] init];
     WithinDuring *wrapper = [[WithinDuring alloc] init];
+    //: wrapper.object = value;
     wrapper.object = value;
+    //: objc_setAssociatedObject(container, key, wrapper, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(container, key, wrapper, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-id km_objc_getAssociatedWeakObject(id container, void *key)
+//: id km_objc_getAssociatedWeakObject(id container, void *key)
+id whiteAgent(id container, void *key)
 {
+    //: return [(WithinDuring *)objc_getAssociatedObject(container, key) object];
     return [(WithinDuring *)objc_getAssociatedObject(container, key) object];
 }
 
+//: @end
 @end

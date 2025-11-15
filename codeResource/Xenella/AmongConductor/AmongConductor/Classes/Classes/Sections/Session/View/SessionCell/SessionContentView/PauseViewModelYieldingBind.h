@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PauseViewModelYieldingBind.h
 //  NIM
@@ -6,10 +8,15 @@
 //  Copyright © 2016年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "SnapshotHighlightMergeSprite.h"
 #import "SnapshotHighlightMergeSprite.h"
 
+//: @interface PauseViewModelYieldingBind : OntoSurgeAccess
 @interface PauseViewModelYieldingBind : OntoSurgeAccess
 
+//: @property (nonatomic,strong) UILabel *label;
 @property (nonatomic,strong) UILabel *label;
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ImplementDarkArrayArmature.h
 //  NIM
@@ -6,27 +8,38 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 
+//: typedef void(^SpeiceBackBlock) (NSString *groupName);
 typedef void(^SpeiceBackBlock) (NSString *groupName);
 
+//: @interface ImplementDarkArrayArmature : UIView
 @interface ImplementDarkArrayArmature : UIView
 
+//: @property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;
 @property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;
 
 //@property (nonatomic, strong) NSString *nickname;
 
-- (void)reloadWithNickname:(NSString *)groupName;
+//: - (void)reloadWithNickname:(NSString *)groupName;
+- (void)protect:(NSString *)groupName;
 
 /** 动画显示 */
-- (void)animationShow;
+//: - (void)animationShow;
+- (void)capabilityShow;
 
 /** 动画关闭 */
-- (void)animationClose;
+//: - (void)animationClose;
+- (void)analogizeBuild;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

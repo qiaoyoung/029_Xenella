@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  BundleReadDirectory.h
 //  NIM
@@ -6,10 +8,16 @@
 //  Copyright (c) 2015 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @class PacificPineMap;
 @class PacificPineMap;
+//: @interface BundleReadDirectory : NSObject<PacificPineMap>
 @interface BundleReadDirectory : NSObject<PacificPineMap>
-@property (nonatomic,strong)    NIMSession *session;
+//: @property (nonatomic,strong) NIMSession *session;
+@property (nonatomic,strong) NIMSession *session;
 
+//: @end
 @end

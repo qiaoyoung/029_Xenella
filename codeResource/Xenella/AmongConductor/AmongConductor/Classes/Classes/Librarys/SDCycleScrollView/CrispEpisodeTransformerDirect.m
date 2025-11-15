@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CrispEpisodeTransformerDirect.m
 //  CatalogerViewportSchedule
@@ -6,83 +8,133 @@
 //  Copyright (c) 2015 Tanguy Aladenise. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "CrispEpisodeTransformerDirect.h"
 #import "CrispEpisodeTransformerDirect.h"
 
-static CGFloat const kAnimateDuration = 1;
+//: static CGFloat const kAnimateDuration = 1;
 
+static CGFloat const componentLargeSettings (NSString *value) {
+    if (value) {
+        return  1;
+    }
+    return  1;
+};
+
+//: @implementation CrispEpisodeTransformerDirect
 @implementation CrispEpisodeTransformerDirect
 
+//: - (void)animateToDeactiveState
+- (void)cameraIndependent
+{
+    //: [UIView animateWithDuration:kAnimateDuration delay:0 usingSpringWithDamping:.5 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
+    [UIView animateWithDuration:componentLargeSettings(nil) delay:0 usingSpringWithDamping:.5 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        //: self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor clearColor];
+        //: self.transform = CGAffineTransformIdentity;
+        self.transform = CGAffineTransformIdentity;
+    //: } completion:nil];
+    } completion:nil];
+}
+
+
+//: - (instancetype)init
 - (instancetype)init
 {
+    //: self = [super init];
     self = [super init];
+    //: if (self) {
     if (self) {
-        [self initialization];
+        //: [self initialization];
+        [self push];
     }
-    
+
+    //: return self;
     return self;
 }
 
 
-- (id)initWithFrame:(CGRect)frame
+//: - (void)initialization
+- (void)push
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self initialization];
-    }
-    return self;
+    //: _dotColor = [UIColor whiteColor];
+    _dotColor = [UIColor whiteColor];
+    //: self.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor clearColor];
+    //: self.layer.cornerRadius = CGRectGetWidth(self.frame) / 2;
+    self.layer.cornerRadius = CGRectGetWidth(self.frame) / 2;
+    //: self.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.layer.borderColor = [UIColor whiteColor].CGColor;
+    //: self.layer.borderWidth = 2;
+    self.layer.borderWidth = 2;
 }
 
-
+//: - (id)initWithCoder:(NSCoder *)aDecoder
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
+    //: self = [super initWithCoder:aDecoder];
     self = [super initWithCoder:aDecoder];
+    //: if (self) {
     if (self) {
-        [self initialization];
+        //: [self initialization];
+        [self push];
     }
-    
+
+    //: return self;
     return self;
 }
 
-- (void)setDotColor:(UIColor *)dotColor
+//: - (void)changeActivityState:(BOOL)active
+- (void)pushAppear:(BOOL)active
 {
-    _dotColor = dotColor;
-    self.layer.borderColor  = dotColor.CGColor;
-}
-
-- (void)initialization
-{
-    _dotColor = [UIColor whiteColor];
-    self.backgroundColor    = [UIColor clearColor];
-    self.layer.cornerRadius = CGRectGetWidth(self.frame) / 2;
-    self.layer.borderColor  = [UIColor whiteColor].CGColor;
-    self.layer.borderWidth  = 2;
-}
-
-
-- (void)changeActivityState:(BOOL)active
-{
+    //: if (active) {
     if (active) {
-        [self animateToActiveState];
+        //: [self animateToActiveState];
+        [self statePrepare];
+    //: } else {
     } else {
-        [self animateToDeactiveState];
+        //: [self animateToDeactiveState];
+        [self cameraIndependent];
     }
 }
 
 
-- (void)animateToActiveState
+//: - (void)setDotColor:(UIColor *)dotColor
+- (void)setDotColor:(UIColor *)dotColor
 {
-    [UIView animateWithDuration:kAnimateDuration delay:0 usingSpringWithDamping:.5 initialSpringVelocity:-20 options:UIViewAnimationOptionCurveLinear animations:^{
+    //: _dotColor = dotColor;
+    _dotColor = dotColor;
+    //: self.layer.borderColor = dotColor.CGColor;
+    self.layer.borderColor = dotColor.CGColor;
+}
+
+
+//: - (void)animateToActiveState
+- (void)statePrepare
+{
+    //: [UIView animateWithDuration:kAnimateDuration delay:0 usingSpringWithDamping:.5 initialSpringVelocity:-20 options:UIViewAnimationOptionCurveLinear animations:^{
+    [UIView animateWithDuration:componentLargeSettings(nil) delay:0 usingSpringWithDamping:.5 initialSpringVelocity:-20 options:UIViewAnimationOptionCurveLinear animations:^{
+        //: self.backgroundColor = _dotColor;
         self.backgroundColor = _dotColor;
+        //: self.transform = CGAffineTransformMakeScale(1.4, 1.4);
         self.transform = CGAffineTransformMakeScale(1.4, 1.4);
+    //: } completion:nil];
     } completion:nil];
 }
 
-- (void)animateToDeactiveState
+//: - (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame
 {
-    [UIView animateWithDuration:kAnimateDuration delay:0 usingSpringWithDamping:.5 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
-        self.backgroundColor = [UIColor clearColor];
-        self.transform = CGAffineTransformIdentity;
-    } completion:nil];
+    //: self = [super initWithFrame:frame];
+    self = [super initWithFrame:frame];
+    //: if (self) {
+    if (self) {
+        //: [self initialization];
+        [self push];
+    }
+    //: return self;
+    return self;
 }
 
+//: @end
 @end

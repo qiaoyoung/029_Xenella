@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  MergeHarmonicVoyageVia.h
 //  NIM
@@ -6,12 +8,18 @@
 //  Copyright © 2016年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface MergeHarmonicVoyageVia : NSObject<UINavigationControllerDelegate>
 @interface MergeHarmonicVoyageVia : NSObject<UINavigationControllerDelegate>
 
+//: @property (nonatomic,strong,readonly) UIPanGestureRecognizer *recognizer;
 @property (nonatomic,strong,readonly) UIPanGestureRecognizer *recognizer;
 
-- (instancetype)initWithNavigationController:(UINavigationController *)navigationController;
+//: - (instancetype)initWithNavigationController:(UINavigationController *)navigationController;
+- (instancetype)initWithSum1:(UINavigationController *)navigationController;
 
+//: @end
 @end

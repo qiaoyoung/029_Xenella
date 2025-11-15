@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  RegisterAccelerateHumbleAttach.h
 //
@@ -20,15 +22,20 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
 //! Project version number for RegisterAccelerateHumbleAttach.
+
+// __M_A_C_R_O__
+
+//: FOUNDATION_EXPORT double RegisterAccelerateHumbleAttachVersionNumber;
 FOUNDATION_EXPORT double RegisterAccelerateHumbleAttachVersionNumber;
 
 //! Project version string for RegisterAccelerateHumbleAttach.
+//: FOUNDATION_EXPORT const unsigned char RegisterAccelerateHumbleAttachVersionString[];
 FOUNDATION_EXPORT const unsigned char RegisterAccelerateHumbleAttachVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RegisterAccelerateHumbleAttach/PublicHeader.h>
 
+//: #import <RegisterAccelerateHumbleAttach/UINavigationController+RegisterAccelerateHumbleAttach.h>
 #import <RegisterAccelerateHumbleAttach/UINavigationController+RegisterAccelerateHumbleAttach.h>

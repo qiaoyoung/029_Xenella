@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  FindImportBelowDismiss.h
 //  NIM
@@ -6,15 +8,24 @@
 //  Copyright © 2021 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface FindImportBelowDismiss : NSObject
 @interface FindImportBelowDismiss : NSObject
 
-+ (FindImportBelowDismiss *)shareConfigManager;
-+ (void)refreshSecretQuestionConfig;
-+ (NSArray *)getSecretQuestionList;
+//: + (FindImportBelowDismiss *)shareConfigManager;
++ (FindImportBelowDismiss *)section;
+//: + (void)refreshSecretQuestionConfig;
++ (void)operation;
+//: + (NSArray *)getSecretQuestionList;
++ (NSArray *)connexion;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  IconReleaseInfinityModel.h
 //  IconReleaseInfinityDemo
@@ -6,18 +8,23 @@
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "IconReleaseInfinityBasedModel.h"
 #import "IconReleaseInfinityBasedModel.h"
 
 /**
  *  下拉菜单模型
  */
+//: @interface IconReleaseInfinityModel : IconReleaseInfinityBasedModel
 @interface IconReleaseInfinityModel : IconReleaseInfinityBasedModel
 
 
 /** 菜单选项标题 */
+//: @property (nonatomic, copy) NSString *menuItemTitle;
 @property (nonatomic, copy) NSString *menuItemTitle;
 
 /** 菜单选项图标名称 */
+//: @property (nonatomic, copy) NSString *menuItemIconName;
 @property (nonatomic, copy) NSString *menuItemIconName;
 
 
@@ -30,6 +37,8 @@
  *
  *  @return 实例化的菜单模型
  */
-+ (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock;
+//: + (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock;
++ (instancetype)prepare:(NSString *)menuItemTitle percentageGeneral:(NSString *)menuItemIconName unusual:(FFMenuBlock)menuBlock;
 
+//: @end
 @end

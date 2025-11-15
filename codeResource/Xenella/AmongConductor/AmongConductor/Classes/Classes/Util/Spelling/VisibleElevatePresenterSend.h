@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  VisibleElevatePresenterSend.h
 //  NIM
@@ -6,10 +8,16 @@
 //  Copyright (c) 2013 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface VisibleElevatePresenterSend : NSObject
 @interface VisibleElevatePresenterSend : NSObject
-+ (VisibleElevatePresenterSend *)sharedInstance;
+//: - (NSString *)toPinyin: (NSString *)source;
+- (NSString *)be: (NSString *)source;
 
-- (NSString *)toPinyin: (NSString *)source;
+//: + (VisibleElevatePresenterSend *)sharedInstance;
++ (VisibleElevatePresenterSend *)rootInstance;
+//: @end
 @end

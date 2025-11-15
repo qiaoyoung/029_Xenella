@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AcceptWealthySelectorFondController.h
 //  NIM
@@ -6,81 +8,107 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
-#ifndef NIM_AcceptWealthySelectorFondController_h
-#define NIM_AcceptWealthySelectorFondController_h
+// __M_A_C_R_O__
 
+//: @protocol LushPlazaRavenCollection <NSObject>
 @protocol LushPlazaRavenCollection <NSObject>
+//: @required
 @required
 //显示的title名
-- (NSString *)title;
+//: - (NSString *)title;
+- (NSString *)suspendContent;
 
 //返回集合里的成员
-- (NSArray *)members;
+//: - (NSArray *)members;
+- (NSArray *)capacity;
 
 //重用id
-- (NSString *)reuseId;
+//: - (NSString *)reuseId;
+- (NSString *)rational;
 
 //需要构造的cell类名
-- (NSString *)cellName;
+//: - (NSString *)cellName;
+- (NSString *)dismiss;
 
+//: @end
 @end
 
+//: @protocol LushPlazaRaven<NSObject>
 @protocol LushPlazaRaven<NSObject>
+//: @required
 @required
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
-- (NSString *)vcName;
+//: - (NSString *)vcName;
+- (NSString *)resourcePointText;
 
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
-- (NSString *)userId;
+//: - (NSString *)userId;
+- (NSString *)exceptionPull;
 
 //返回行高
-- (CGFloat)uiHeight;
+//: - (CGFloat)uiHeight;
+- (CGFloat)toTheHighestDegree;
 
 //重用id
-- (NSString *)reuseId;
+//: - (NSString *)reuseId;
+- (NSString *)icon;
 
 //需要构造的cell类名
-- (NSString *)cellName;
+//: - (NSString *)cellName;
+- (NSString *)automatically;
 
 //badge
-- (NSString *)badge;
+//: - (NSString *)badge;
+- (NSString *)head;
 
 //显示名
-- (NSString *)nick;
+//: - (NSString *)nick;
+- (NSString *)resAllow;
 
 //占位图
-- (UIImage *)icon;
+//: - (UIImage *)icon;
+- (UIImage *)ratioIcon;
 
 //头像url
-- (NSString *)avatarUrl;
+//: - (NSString *)avatarUrl;
+- (NSString *)family;
 
 //accessoryView
-- (BOOL)showAccessoryView;
+//: - (BOOL)showAccessoryView;
+- (BOOL)location;
 
+//: @optional
 @optional
-- (NSString *)selName;
+//: - (NSString *)selName;
+- (NSString *)informationAcross;
 
 
+//: @end
 @end
 
+//: @protocol USERContactCell <NSObject>
 @protocol USERContactCell <NSObject>
 
-- (void)refreshWithContactItem:(id<LushPlazaRaven>)item;
+//: - (void)refreshWithContactItem:(id<LushPlazaRaven>)item;
+- (void)resolution:(id<LushPlazaRaven>)item;
 
-- (void)addDelegate:(id)delegate;
+//: - (void)addDelegate:(id)delegate;
+- (void)model:(id)delegate;
 
+//: @end
 @end
 
-#endif
 
 
-#ifndef NIM_USERContactCellLayoutConstant_h
-#define NIM_USERContactCellLayoutConstant_h
 
-static const CGFloat   USERContactUtilRowHeight             = 57;//util类Cell行高
-static const CGFloat   USERContactDataRowHeight             = 50;//data类Cell行高
-static const NSInteger USERContactAvatarLeft                = 10;//没有选择框的时候，头像到左边的距离
-static const NSInteger USERContactAvatarAndAccessorySpacing = 10;//头像和选择框之间的距离
 
-#endif
 
+
+//: static const CGFloat USERContactUtilRowHeight = 57;
+static const CGFloat colorEntryValue = 57;//util类Cell行高
+//: static const CGFloat USERContactDataRowHeight = 50;
+static const CGFloat kGreatDevice = 50;//data类Cell行高
+//: static const NSInteger USERContactAvatarLeft = 10;
+static const NSInteger appEaseRejectValue = 10;//没有选择框的时候，头像到左边的距离
+//: static const NSInteger USERContactAvatarAndAccessorySpacing = 10;
+static const NSInteger appInfoAccelerateMessage = 10;//头像和选择框之间的距离
