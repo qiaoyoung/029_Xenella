@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>tabviewParametricConnect</key>
+    <string>WholePreviewFetch</string>
+    <key>stylerDeliver</key>
+    <string>ShaderDataSourceHelper</string>
+    <key>enumTransform</key>
+    <string>ScanDriveTruthGridConvert</string>
+    <key>factoryListAccept</key>
+    <string>ScaleLushSupplyTexture</string>
+    <key>iconFetch</key>
+    <string>CanvasElasticForwardBlueprintHighlight</string>
+    <key>helperOutput</key>
+    <string>ClipRationalWarehouseCentral</string>
+    <key>ledgeConnector</key>
+    <string>DatasetterTribe</string>
+    <key>primeAssign</key>
+    <string>DelegateCompareArtfulAttach</string>
+</dict>
+</plist>

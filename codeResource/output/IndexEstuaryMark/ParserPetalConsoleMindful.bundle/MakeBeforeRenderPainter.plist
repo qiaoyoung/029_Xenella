@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>schedulerSnappyPast</key>
+    <string>EnumMatrixDispatch</string>
+    <key>releaseWork</key>
+    <string>RenderGranularElite</string>
+    <key>shadowDropdownStencil</key>
+    <string>CheckDeriveAssignShader</string>
+    <key>sunMeritResolverClear</key>
+    <string>CleanRotateWreath</string>
+    <key>mapperInRadarReal</key>
+    <string>SuiteFactoryQuillGenerous</string>
+    <key>waryUpdateRelay</key>
+    <string>EventResetCheckDisplay</string>
+</dict>
+</plist>

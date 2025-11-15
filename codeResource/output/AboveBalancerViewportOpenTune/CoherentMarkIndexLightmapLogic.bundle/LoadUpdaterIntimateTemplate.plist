@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>granularLaunch</key>
+    <string>PastSelectorSaverZonal</string>
+    <key>receiveThreadedHandlerInstance</key>
+    <string>UprightParserNoble</string>
+    <key>validateFactory</key>
+    <string>TrailUtmostFormat</string>
+    <key>dualLocatorRoundCreator</key>
+    <string>TwistStopPromise</string>
+</dict>
+</plist>

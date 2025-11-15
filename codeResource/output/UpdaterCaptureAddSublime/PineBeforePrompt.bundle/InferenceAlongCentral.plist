@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>gridHoldPlannerEveryday</key>
+    <string>SchedulerEnableGenerateApply</string>
+    <key>enumAroundSecondary</key>
+    <string>ModularPackNear</string>
+    <key>controlTertiaryDisplayDataSource</key>
+    <string>WallTowardRendererParcel</string>
+    <key>lastingSnapshotter</key>
+    <string>ShaderTuple</string>
+</dict>
+</plist>

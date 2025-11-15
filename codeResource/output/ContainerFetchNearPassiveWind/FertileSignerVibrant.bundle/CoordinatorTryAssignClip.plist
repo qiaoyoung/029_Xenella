@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>energeticEstuaryMarkWorkbench</key>
+    <string>GrowingSchedulerPrimeDecorator</string>
+    <key>landYielding</key>
+    <string>AcceptSaverMediator</string>
+    <key>visualizeHeaderWarmStay</key>
+    <string>ThicketCoderMarshClass</string>
+    <key>decoratorBreakLucentFormat</key>
+    <string>StructureRefreshReceive</string>
+    <key>worldPeerlessResolverUnder</key>
+    <string>BuildFixPristineSaver</string>
+</dict>
+</plist>
