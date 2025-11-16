@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>releaseSelector</key>
+    <string>ReleaseAbundantPreloadRender</string>
+    <key>viewportRate</key>
+    <string>SternDispatchMatch</string>
+    <key>coordinatorBind</key>
+    <string>SpatialSearch</string>
+    <key>boldStairSaver</key>
+    <string>EnvelopeKeyPrint</string>
+    <key>themeWorkbench</key>
+    <string>AppendSplendidHandlePleasedMarker</string>
+    <key>navigationBarAccelerate</key>
+    <string>CleanMysticVerseExtract</string>
+    <key>centerJust</key>
+    <string>BonnyHubCanvas</string>
+    <key>collectorPreciousCompare</key>
+    <string>MacroLastingRidgeQuirk</string>
+    <key>transformHardyElement</key>
+    <string>RegionSigner</string>
+    <key>emitterSuiteOutside</key>
+    <string>NavigationBarNodeRefresh</string>
+</dict>
+</plist>

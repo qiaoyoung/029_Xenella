@@ -2,6 +2,12 @@
 #import <Flutter/Flutter.h>
 #import "GeneratedPluginRegistrant.h"
 #import "FolderThroughout.h"
+#import "BaselineAbleNear.h"
+#import "NodeBuilderSet.h"
+#import "LaneHandlerBasin.h"
+#import "InspectorBeneathSendStretch.h"
+#import "HandlerShadowNavigationBar.h"
+#import "FlagshipWillowDuring.h"
 
 @implementation AppDelegate
 
@@ -12,7 +18,13 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [GeneratedPluginRegistrant registerWithRegistry:self];
+    [BaselineAbleNear scrollBrilliantSchedulerDaleTexture];
+    [NodeBuilderSet indexOrganizer];
+    [LaneHandlerBasin intoTooltipNaturalParser];
+    [InspectorBeneathSendStretch continueAssemblerWorldMapper];
     [[FolderThroughout previous] initCycle:self.window];
+    [HandlerShadowNavigationBar sendFaithfulHoneyMaterial];
+    [FlagshipWillowDuring downViewModelSaver];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
