@@ -18,8 +18,6 @@ Pod::Spec.new do |s|
   }
   
   # 依赖库
-  s.dependency 'NIMSDK_LITE', '9.20.14'
-  s.dependency 'SSZipArchive'
   s.dependency 'TZImagePickerController'
   s.dependency 'SDWebImage'
   s.dependency 'SDWebImageFLPlugin'
@@ -29,13 +27,9 @@ Pod::Spec.new do |s|
   s.dependency 'YYModel'
   s.dependency 'Masonry'
   s.dependency 'FMDB'
+  s.dependency 'NIMSDK_LITE', '9.20.14'
+  s.dependency 'SSZipArchive'
   s.dependency 'Reachability'
-
-#  s.dependency 'AAAA_IQKeyboardManager_BBBB'
-#  s.dependency 'AAAA_SVProgressHUD_BBBB'
-#  s.dependency 'AAAA_KMNavigationBarTransition_BBBB'
-#  s.dependency 'Toast'
-
   # 新增库
   s.dependency 'MJRefresh'
   s.dependency 'SwiftyJSON'
