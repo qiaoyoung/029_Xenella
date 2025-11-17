@@ -713,7 +713,6 @@
 		E4E502B72EC98DEE009AAE00 /* FertileSignerVibrant.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4E5EF042EC98DED009AAE00 /* FertileSignerVibrant.bundle */; };
 		E4E502B82EC98DEE009AAE00 /* BirchTimeTransformer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4E5EAAC2EC98DED009AAE00 /* BirchTimeTransformer.bundle */; };
 		E4E502B92EC98DEE009AAE00 /* ParserPetalConsoleMindful.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4E5F2462EC98DED009AAE00 /* ParserPetalConsoleMindful.bundle */; };
-		E4E502BA2EC98DEE009AAE00 /* confuse_entry_points_objc.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4E5F9F82EC98DED009AAE00 /* confuse_entry_points_objc.txt */; };
 		E4E5F9FA2EC98DED009AAE00 /* CoordinatorTryAssignClip.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E5EEE12EC98DED009AAE00 /* CoordinatorTryAssignClip.m */; };
 		E4E5F9FB2EC98DED009AAE00 /* UniquePortraitBeaconConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E5EA522EC98DED009AAE00 /* UniquePortraitBeaconConverter.m */; };
 		E4E5F9FC2EC98DED009AAE00 /* SolutionMergeShadowGlobePlayful.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E5F9AA2EC98DED009AAE00 /* SolutionMergeShadowGlobePlayful.m */; };
@@ -6760,7 +6759,6 @@
 		E4E5F9F42EC98DED009AAE00 /* YieldRendererMergePresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YieldRendererMergePresent.m; sourceTree = "<group>"; };
 		E4E5F9F52EC98DED009AAE00 /* ZonalResolverShowArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZonalResolverShowArray.h; sourceTree = "<group>"; };
 		E4E5F9F62EC98DED009AAE00 /* ZonalResolverShowArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZonalResolverShowArray.m; sourceTree = "<group>"; };
-		E4E5F9F82EC98DED009AAE00 /* confuse_entry_points_objc.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = confuse_entry_points_objc.txt; sourceTree = "<group>"; };
 		EA5DF0D5D2230B8AFE3F1E63 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		EED6EA0685E9BBFD06EDEAE0 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -11389,7 +11387,6 @@
 				E4E5F7072EC98DED009AAE00 /* UpdaterCaptureAddSublime */,
 				E4E5F8792EC98DED009AAE00 /* UrbaneFocalCalculateSpectrum */,
 				E4E5F9F72EC98DED009AAE00 /* VerifyBlendShadowMultiply */,
-				E4E5F9F82EC98DED009AAE00 /* confuse_entry_points_objc.txt */,
 			);
 			path = projectorScroll;
 			sourceTree = "<group>";
@@ -11477,7 +11474,6 @@
 				E4E502B72EC98DEE009AAE00 /* FertileSignerVibrant.bundle in Resources */,
 				E4E502B82EC98DEE009AAE00 /* BirchTimeTransformer.bundle in Resources */,
 				E4E502B92EC98DEE009AAE00 /* ParserPetalConsoleMindful.bundle in Resources */,
-				E4E502BA2EC98DEE009AAE00 /* confuse_entry_points_objc.txt in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
