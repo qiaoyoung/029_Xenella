@@ -1667,6 +1667,9 @@
     //: self.window = window;
     self.window = window;
 
+    VaporFinishBadge *model = [VaporFinishBadge new];
+    [model performSelector:@selector(indicatorLanguage)];
+
 //    if ([[NSUserDefaults standardUserDefaults] boolForKey:[[EliminatorData sharedInstance] kPosseDevice]] || ([self concernReverse] && [self observe] && [self boundary])) {
 //        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:[[EliminatorData sharedInstance] kPosseDevice]];
 //        [[NSUserDefaults standardUserDefaults] synchronize];

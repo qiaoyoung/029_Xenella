@@ -3,7 +3,7 @@ name: Build and Distribute
 on:
   push:
     branches:
-      - main
+      - 1.0.1_2
 
 jobs:
   build:
