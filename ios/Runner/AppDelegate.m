@@ -7,7 +7,6 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [GeneratedPluginRegistrant registerWithRegistry:self];
-    [self performSelector:@selector(didFinish)];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
