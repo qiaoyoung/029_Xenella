@@ -32,19 +32,37 @@ class _MainScreenState extends State<MainScreen> {
             children: _screens,
           ),
           Positioned(
-            left: 16,
-            right: 16,
-            bottom: 16,
+            left: 32,
+            right: 32,
+            bottom: 8,
             child: SafeArea(
               child: Container(
                 height: 70,
                 decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.7),
-                  borderRadius: BorderRadius.circular(20),
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Colors.white,
+                      AppTheme.primaryColor.withOpacity(0.05),
+                      Colors.white.withOpacity(0.95),
+                    ],
+                    stops: const [0.0, 0.5, 1.0],
+                  ),
+                  borderRadius: BorderRadius.circular(35),
+                  border: Border.all(
+                    color: AppTheme.primaryColor.withOpacity(0.1),
+                    width: 1,
+                  ),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.3),
-                      blurRadius: 20,
+                      color: AppTheme.primaryColor.withOpacity(0.15),
+                      blurRadius: 30,
+                      offset: const Offset(0, 10),
+                    ),
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.08),
+                      blurRadius: 15,
                       offset: const Offset(0, 4),
                     ),
                   ],
@@ -80,20 +98,20 @@ class _MainScreenState extends State<MainScreen> {
           alignment: Alignment.center,
           child: ColorFiltered(
             colorFilter: ColorFilter.mode(
-              isSelected ? AppTheme.primaryColor : Colors.grey[400]!,
+              isSelected ? AppTheme.primaryColor : Colors.grey[600]!,
               BlendMode.srcIn,
             ),
             child: Image.asset(
               imagePath,
-              width: 40,
-              height: 40,
+              width: 50,
+              height: 50,
               errorBuilder: (context, error, stackTrace) {
                 return Icon(
                   _getDefaultIcon(index),
                   size: 40,
                   color: isSelected
                       ? AppTheme.primaryColor
-                      : Colors.grey[400],
+                      : Colors.grey[600],
                 );
               },
             ),

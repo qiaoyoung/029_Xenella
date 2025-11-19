@@ -1,7 +1,10 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import '../models/user_model.dart';
 import '../models/message_model.dart';
 import '../services/chat_service.dart';
+import '../services/user_profile_service.dart';
 import '../theme/app_theme.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -19,6 +22,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _messageController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
+  final ImagePicker _imagePicker = ImagePicker();
   List<MessageModel> _messages = [];
   bool _isLoading = true;
 
@@ -66,6 +70,7 @@ class _ChatScreenState extends State<ChatScreen> {
       content: text,
       timestamp: DateTime.now(),
       isSentByMe: true,
+      type: MessageType.text,
     );
 
     setState(() {
@@ -75,6 +80,51 @@ class _ChatScreenState extends State<ChatScreen> {
 
     await ChatService.addMessage(widget.user.userId, message);
     _scrollToBottom();
+  }
+
+  Future<void> _pickAndSendImage() async {
+    try {
+      final XFile? image = await _imagePicker.pickImage(
+        source: ImageSource.gallery,
+        maxWidth: 1024,
+        maxHeight: 1024,
+        imageQuality: 85,
+      );
+
+      if (image != null) {
+        // 保存图片到应用目录
+        final chatImageDir = await UserProfileService.getAvatarDirectory();
+        final fileName = 'chat_${DateTime.now().millisecondsSinceEpoch}.jpg';
+        final targetPath = '$chatImageDir/$fileName';
+        await File(image.path).copy(targetPath);
+
+        final message = MessageModel(
+          id: DateTime.now().millisecondsSinceEpoch.toString(),
+          senderId: 'me',
+          receiverId: widget.user.userId,
+          content: fileName,
+          timestamp: DateTime.now(),
+          isSentByMe: true,
+          type: MessageType.image,
+        );
+
+        setState(() {
+          _messages.add(message);
+        });
+
+        await ChatService.addMessage(widget.user.userId, message);
+        _scrollToBottom();
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to send image: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
   }
 
   @override
@@ -87,9 +137,22 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[50],
+      backgroundColor: const Color(0xFF0A0E27),
       appBar: AppBar(
-        elevation: 0,
+        backgroundColor: const Color(0xFF16213E),
+        elevation: 2,
+        shadowColor: Colors.black.withOpacity(0.3),
+        leading: Container(
+          margin: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.1),
+            shape: BoxShape.circle,
+          ),
+          child: IconButton(
+            icon: const Icon(Icons.arrow_back, color: Colors.white),
+            onPressed: () => Navigator.pop(context),
+          ),
+        ),
         title: Row(
           children: [
             Hero(
@@ -121,16 +184,17 @@ class _ChatScreenState extends State<ChatScreen> {
                           widget.user.fullName,
                           style: const TextStyle(
                             fontSize: 17,
-                            fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
                           ),
                           overflow: TextOverflow.ellipsis,
                         ),
                       ),
                       if (widget.user.verified) ...[
                         const SizedBox(width: 4),
-                        const Icon(
+                        Icon(
                           Icons.verified,
-                          color: Colors.white,
+                          color: AppTheme.primaryColor,
                           size: 16,
                         ),
                       ],
@@ -139,9 +203,9 @@ class _ChatScreenState extends State<ChatScreen> {
                   Text(
                     widget.user.profession,
                     style: TextStyle(
-                      fontSize: 13,
+                      fontSize: 12,
                       fontWeight: FontWeight.normal,
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withOpacity(0.7),
                     ),
                   ),
                 ],
@@ -150,9 +214,15 @@ class _ChatScreenState extends State<ChatScreen> {
           ],
         ),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.more_vert),
-            onPressed: () async {
+          Container(
+            margin: const EdgeInsets.only(right: 8),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.1),
+              shape: BoxShape.circle,
+            ),
+            child: IconButton(
+              icon: const Icon(Icons.more_vert, color: Colors.white),
+              onPressed: () async {
               final value = await showModalBottomSheet<String>(
                 context: context,
                 backgroundColor: Colors.transparent,
@@ -232,6 +302,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 }
               }
             },
+            ),
           ),
         ],
       ),
@@ -252,7 +323,12 @@ class _ChatScreenState extends State<ChatScreen> {
                             Container(
                               padding: const EdgeInsets.all(24),
                               decoration: BoxDecoration(
-                                color: AppTheme.primaryColor.withOpacity(0.1),
+                                gradient: RadialGradient(
+                                  colors: [
+                                    AppTheme.primaryColor.withOpacity(0.3),
+                                    AppTheme.primaryColor.withOpacity(0.1),
+                                  ],
+                                ),
                                 shape: BoxShape.circle,
                               ),
                               child: Icon(
@@ -262,11 +338,11 @@ class _ChatScreenState extends State<ChatScreen> {
                               ),
                             ),
                             const SizedBox(height: 24),
-                            Text(
+                            const Text(
                               'No messages yet',
                               style: TextStyle(
                                 fontSize: 20,
-                                color: Colors.grey[800],
+                                color: Colors.white,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -278,7 +354,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontSize: 15,
-                                  color: Colors.grey[600],
+                                  color: Colors.white.withOpacity(0.6),
                                 ),
                               ),
                             ),
@@ -311,67 +387,86 @@ class _ChatScreenState extends State<ChatScreen> {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           if (!isMe) ...[
-            CircleAvatar(
-              radius: 16,
-              backgroundImage: AssetImage(widget.user.media.profileImage),
-              onBackgroundImageError: (exception, stackTrace) {},
+            Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: AppTheme.primaryColor.withOpacity(0.3),
+                  width: 2,
+                ),
+              ),
+              child: CircleAvatar(
+                radius: 16,
+                backgroundImage: AssetImage(widget.user.media.profileImage),
+                onBackgroundImageError: (exception, stackTrace) {},
+              ),
             ),
             const SizedBox(width: 8),
           ],
           Flexible(
-            child: Container(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 14,
-                vertical: 10,
-              ),
-              decoration: BoxDecoration(
-                gradient: isMe
-                    ? LinearGradient(
-                        colors: [
-                          AppTheme.primaryColor,
-                          AppTheme.primaryColor.withOpacity(0.8),
-                        ],
-                      )
-                    : null,
-                color: isMe ? null : Colors.white,
-                borderRadius: BorderRadius.only(
-                  topLeft: const Radius.circular(18),
-                  topRight: const Radius.circular(18),
-                  bottomLeft: Radius.circular(isMe ? 18 : 4),
-                  bottomRight: Radius.circular(isMe ? 4 : 18),
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.05),
-                    blurRadius: 5,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    message.content,
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: isMe ? Colors.white : Colors.black87,
-                      height: 1.4,
+            child: message.type == MessageType.image
+                ? _buildImageMessage(message, isMe)
+                : Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 14,
+                      vertical: 10,
+                    ),
+                    decoration: BoxDecoration(
+                      gradient: isMe
+                          ? LinearGradient(
+                              colors: [
+                                AppTheme.primaryColor,
+                                AppTheme.primaryColor.withOpacity(0.8),
+                              ],
+                            )
+                          : LinearGradient(
+                              colors: [
+                                Colors.white.withOpacity(0.15),
+                                Colors.white.withOpacity(0.1),
+                              ],
+                            ),
+                      borderRadius: BorderRadius.only(
+                        topLeft: const Radius.circular(18),
+                        topRight: const Radius.circular(18),
+                        bottomLeft: Radius.circular(isMe ? 18 : 4),
+                        bottomRight: Radius.circular(isMe ? 4 : 18),
+                      ),
+                      border: Border.all(
+                        color: isMe
+                            ? AppTheme.primaryColor.withOpacity(0.3)
+                            : Colors.white.withOpacity(0.2),
+                        width: 1,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          blurRadius: 8,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          message.content,
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.white,
+                            height: 1.4,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          _formatTime(message.timestamp),
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: Colors.white.withOpacity(0.6),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  const SizedBox(height: 4),
-                  Text(
-                    _formatTime(message.timestamp),
-                    style: TextStyle(
-                      fontSize: 11,
-                      color: isMe
-                          ? Colors.white.withOpacity(0.8)
-                          : Colors.grey[500],
-                    ),
-                  ),
-                ],
-              ),
-            ),
           ),
           if (isMe) ...[
             const SizedBox(width: 8),
@@ -383,6 +478,10 @@ class _ChatScreenState extends State<ChatScreen> {
                     AppTheme.primaryColor,
                     AppTheme.primaryColor.withOpacity(0.8),
                   ],
+                ),
+                border: Border.all(
+                  color: Colors.white.withOpacity(0.3),
+                  width: 2,
                 ),
               ),
               child: const CircleAvatar(
@@ -401,14 +500,131 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
+  Widget _buildImageMessage(MessageModel message, bool isMe) {
+    return FutureBuilder<String?>(
+      future: UserProfileService.getAvatarPath(message.content),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return Container(
+            width: 200,
+            height: 200,
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: const Center(
+              child: CircularProgressIndicator(
+                color: AppTheme.primaryColor,
+              ),
+            ),
+          );
+        }
+
+        final imagePath = snapshot.data;
+        
+        return Container(
+          constraints: const BoxConstraints(
+            maxWidth: 250,
+            maxHeight: 300,
+          ),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: isMe
+                  ? AppTheme.primaryColor.withOpacity(0.5)
+                  : Colors.white.withOpacity(0.3),
+              width: 2,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.3),
+                blurRadius: 10,
+                offset: const Offset(0, 4),
+              ),
+            ],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ClipRRect(
+                borderRadius: const BorderRadius.vertical(
+                  top: Radius.circular(14),
+                ),
+                child: imagePath != null
+                    ? Image.file(
+                        File(imagePath),
+                        fit: BoxFit.cover,
+                      )
+                    : Container(
+                        width: 200,
+                        height: 200,
+                        color: Colors.grey[800],
+                        child: const Icon(
+                          Icons.image_not_supported,
+                          color: Colors.white54,
+                          size: 48,
+                        ),
+                      ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 8,
+                ),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: isMe
+                        ? [
+                            AppTheme.primaryColor.withOpacity(0.3),
+                            AppTheme.primaryColor.withOpacity(0.2),
+                          ]
+                        : [
+                            Colors.white.withOpacity(0.15),
+                            Colors.white.withOpacity(0.1),
+                          ],
+                  ),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(
+                      Icons.image,
+                      size: 12,
+                      color: Colors.white.withOpacity(0.7),
+                    ),
+                    const SizedBox(width: 4),
+                    Text(
+                      _formatTime(message.timestamp),
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: Colors.white.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   Widget _buildMessageInput() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: const Color(0xFF16213E),
+        border: Border(
+          top: BorderSide(
+            color: Colors.white.withOpacity(0.1),
+            width: 1,
+          ),
+        ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.08),
+            color: Colors.black.withOpacity(0.3),
             blurRadius: 10,
             offset: const Offset(0, -2),
           ),
@@ -418,19 +634,41 @@ class _ChatScreenState extends State<ChatScreen> {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
+            // 图片按钮
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.1),
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.white.withOpacity(0.2),
+                  width: 1,
+                ),
+              ),
+              child: IconButton(
+                icon: const Icon(Icons.image),
+                color: AppTheme.primaryColor,
+                onPressed: _pickAndSendImage,
+                iconSize: 24,
+              ),
+            ),
+            const SizedBox(width: 10),
             Expanded(
               child: Container(
                 constraints: const BoxConstraints(maxHeight: 120),
                 decoration: BoxDecoration(
-                  color: Colors.grey[100],
+                  color: Colors.white.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(25),
                   border: Border.all(
-                    color: Colors.grey[200]!,
+                    color: Colors.white.withOpacity(0.2),
                     width: 1,
                   ),
                 ),
                 child: TextField(
                   controller: _messageController,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 15,
+                  ),
                   decoration: InputDecoration(
                     hintText: 'Message...',
                     border: InputBorder.none,
@@ -439,7 +677,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       vertical: 12,
                     ),
                     hintStyle: TextStyle(
-                      color: Colors.grey[500],
+                      color: Colors.white.withOpacity(0.5),
                       fontSize: 15,
                     ),
                   ),
@@ -460,9 +698,9 @@ class _ChatScreenState extends State<ChatScreen> {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: AppTheme.primaryColor.withOpacity(0.3),
-                    blurRadius: 8,
-                    offset: const Offset(0, 2),
+                    color: AppTheme.primaryColor.withOpacity(0.5),
+                    blurRadius: 12,
+                    offset: const Offset(0, 4),
                   ),
                 ],
               ),

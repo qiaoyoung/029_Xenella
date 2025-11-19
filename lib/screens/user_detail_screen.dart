@@ -185,47 +185,74 @@ class UserDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF0A0E27),
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            expandedHeight: 300,
+            expandedHeight: 400,
             pinned: true,
-            backgroundColor: AppTheme.primaryColor,
+            backgroundColor: const Color(0xFF0A0E27),
+            leading: Container(
+              margin: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.3),
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.white.withOpacity(0.2),
+                  width: 1,
+                ),
+              ),
+              child: IconButton(
+                icon: const Icon(Icons.arrow_back, color: Colors.white),
+                onPressed: () => Navigator.pop(context),
+              ),
+            ),
             actions: [
-              PopupMenuButton<String>(
-                icon: const Icon(Icons.more_vert),
-                onSelected: (value) {
-                  if (value == 'block') {
-                    _showBlockDialog(context);
-                  } else if (value == 'report') {
-                    _showReportDialog(context);
-                  }
-                },
-                itemBuilder: (context) => [
-                  const PopupMenuItem(
-                    value: 'block',
-                    child: Row(
-                      children: [
-                        Icon(Icons.block, color: Colors.red, size: 20),
-                        SizedBox(width: 12),
-                        Text(
-                          'Block User',
-                          style: TextStyle(color: Colors.red),
-                        ),
-                      ],
-                    ),
+              Container(
+                margin: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.3),
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.2),
+                    width: 1,
                   ),
-                  const PopupMenuItem(
-                    value: 'report',
-                    child: Row(
-                      children: [
-                        Icon(Icons.flag, color: Colors.orange, size: 20),
-                        SizedBox(width: 12),
-                        Text('Report User'),
-                      ],
+                ),
+                child: PopupMenuButton<String>(
+                  icon: const Icon(Icons.more_vert, color: Colors.white),
+                  onSelected: (value) {
+                    if (value == 'block') {
+                      _showBlockDialog(context);
+                    } else if (value == 'report') {
+                      _showReportDialog(context);
+                    }
+                  },
+                  itemBuilder: (context) => [
+                    const PopupMenuItem(
+                      value: 'block',
+                      child: Row(
+                        children: [
+                          Icon(Icons.block, color: Colors.red, size: 20),
+                          SizedBox(width: 12),
+                          Text(
+                            'Block User',
+                            style: TextStyle(color: Colors.red),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                    const PopupMenuItem(
+                      value: 'report',
+                      child: Row(
+                        children: [
+                          Icon(Icons.flag, color: Colors.orange, size: 20),
+                          SizedBox(width: 12),
+                          Text('Report User'),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
             flexibleSpace: FlexibleSpaceBar(
@@ -237,11 +264,15 @@ class UserDetailScreen extends StatelessWidget {
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
-                        color: Colors.grey[300],
-                        child: const Icon(
-                          Icons.image_not_supported,
-                          size: 50,
-                          color: Colors.grey,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              const Color(0xFF1A1A2E),
+                              AppTheme.primaryColor.withOpacity(0.3),
+                            ],
+                          ),
                         ),
                       );
                     },
@@ -252,71 +283,110 @@ class UserDetailScreen extends StatelessWidget {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          Colors.transparent,
-                          Colors.black.withOpacity(0.7),
+                          Colors.black.withOpacity(0.3),
+                          const Color(0xFF0A0E27).withOpacity(0.9),
                         ],
                       ),
                     ),
                   ),
+                  // 用户信息居中显示
                   Positioned(
-                    bottom: 20,
-                    left: 20,
-                    right: 20,
-                    child: Row(
+                    bottom: 40,
+                    left: 0,
+                    right: 0,
+                    child: Column(
                       children: [
+                        // 头像
                         Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Colors.white,
-                              width: 3,
+                            gradient: LinearGradient(
+                              colors: [
+                                AppTheme.primaryColor,
+                                AppTheme.primaryColor.withOpacity(0.5),
+                              ],
                             ),
-                          ),
-                          child: CircleAvatar(
-                            radius: 40,
-                            backgroundImage: AssetImage(
-                              user.media.profileImage,
-                            ),
-                            onBackgroundImageError: (exception, stackTrace) {},
-                          ),
-                        ),
-                        const SizedBox(width: 16),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Flexible(
-                                    child: Text(
-                                      user.fullName,
-                                      style: const TextStyle(
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                                  if (user.verified) ...[
-                                    const SizedBox(width: 8),
-                                    const Icon(
-                                      Icons.verified,
-                                      color: Colors.white,
-                                      size: 24,
-                                    ),
-                                  ],
-                                ],
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                '${user.profession} • ${user.nationality}',
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.white,
-                                ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: AppTheme.primaryColor.withOpacity(0.5),
+                                blurRadius: 30,
+                                spreadRadius: 5,
                               ),
                             ],
                           ),
+                          padding: const EdgeInsets.all(4),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.white,
+                                width: 4,
+                              ),
+                            ),
+                            child: CircleAvatar(
+                              radius: 60,
+                              backgroundImage: AssetImage(
+                                user.media.profileImage,
+                              ),
+                              onBackgroundImageError: (exception, stackTrace) {},
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        // 用户名
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Flexible(
+                              child: Text(
+                                user.fullName,
+                                style: const TextStyle(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            if (user.verified) ...[
+                              const SizedBox(width: 8),
+                              Icon(
+                                Icons.verified,
+                                color: AppTheme.primaryColor,
+                                size: 28,
+                              ),
+                            ],
+                          ],
+                        ),
+                        const SizedBox(height: 8),
+                        // 职业
+                        Text(
+                          user.profession,
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.white.withOpacity(0.8),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        // 国家
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              size: 16,
+                              color: AppTheme.primaryColor,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              user.nationality,
+                              style: TextStyle(
+                                fontSize: 14,
+                                color: Colors.white.withOpacity(0.7),
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
@@ -331,68 +401,117 @@ class UserDetailScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  // 艺术风格卡片
                   Container(
                     width: double.infinity,
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: AppTheme.primaryColor.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.palette,
-                              color: AppTheme.primaryColor,
-                              size: 24,
-                            ),
-                            const SizedBox(width: 8),
-                            const Text(
-                              'Art Style',
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
+                      gradient: LinearGradient(
+                        colors: [
+                          AppTheme.primaryColor.withOpacity(0.2),
+                          AppTheme.primaryColor.withOpacity(0.1),
+                        ],
+                      ),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: AppTheme.primaryColor.withOpacity(0.3),
+                        width: 1.5,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppTheme.primaryColor.withOpacity(0.2),
+                          blurRadius: 15,
+                          offset: const Offset(0, 5),
                         ),
-                        const SizedBox(height: 8),
-                        Text(
-                          user.artStyle,
-                          style: TextStyle(
-                            fontSize: 18,
+                      ],
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: AppTheme.primaryColor.withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Icon(
+                            Icons.palette,
                             color: AppTheme.primaryColor,
-                            fontWeight: FontWeight.bold,
+                            size: 28,
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Art Style',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white.withOpacity(0.7),
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                user.artStyle,
+                                style: const TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
                     ),
                   ),
                   const SizedBox(height: 24),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      _buildStatColumn(
-                        Icons.palette,
-                        '${user.artworkCount}',
-                        'Artworks',
+                  // 统计数据卡片
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.05),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: Colors.white.withOpacity(0.1),
+                        width: 1,
                       ),
-                      _buildStatColumn(
-                        Icons.people,
-                        '${user.followers.toString().replaceAllMapped(
-                          RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'),
-                          (Match m) => '${m[1]},',
-                        )}',
-                        'Followers',
-                      ),
-                      _buildStatColumn(
-                        Icons.access_time,
-                        '${user.yearsOfExperience}',
-                        'Years',
-                      ),
-                    ],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        _buildStatColumn(
+                          Icons.palette,
+                          '${user.artworkCount}',
+                          'Artworks',
+                        ),
+                        Container(
+                          width: 1,
+                          height: 50,
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                        _buildStatColumn(
+                          Icons.people,
+                          '${user.followers.toString().replaceAllMapped(
+                            RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'),
+                            (Match m) => '${m[1]},',
+                          )}',
+                          'Followers',
+                        ),
+                        Container(
+                          width: 1,
+                          height: 50,
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                        _buildStatColumn(
+                          Icons.access_time,
+                          '${user.yearsOfExperience}',
+                          'Years',
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(height: 32),
                   const Text(
@@ -400,15 +519,27 @@ class UserDetailScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                   const SizedBox(height: 12),
-                  Text(
-                    user.bio,
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey[700],
-                      height: 1.6,
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.05),
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(
+                        color: Colors.white.withOpacity(0.1),
+                        width: 1,
+                      ),
+                    ),
+                    child: Text(
+                      user.bio,
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.white.withOpacity(0.85),
+                        height: 1.6,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 32),
@@ -417,6 +548,7 @@ class UserDetailScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -430,18 +562,23 @@ class UserDetailScreen extends StatelessWidget {
                           vertical: 10,
                         ),
                         decoration: BoxDecoration(
-                          color: AppTheme.primaryColor.withOpacity(0.1),
+                          gradient: LinearGradient(
+                            colors: [
+                              AppTheme.primaryColor.withOpacity(0.3),
+                              AppTheme.primaryColor.withOpacity(0.1),
+                            ],
+                          ),
                           borderRadius: BorderRadius.circular(20),
                           border: Border.all(
-                            color: AppTheme.primaryColor.withOpacity(0.3),
-                            width: 1,
+                            color: AppTheme.primaryColor.withOpacity(0.5),
+                            width: 1.5,
                           ),
                         ),
                         child: Text(
                           spec,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 14,
-                            color: AppTheme.primaryColor,
+                            color: Colors.white,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -454,6 +591,7 @@ class UserDetailScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                   const SizedBox(height: 16),
@@ -474,6 +612,7 @@ class UserDetailScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -487,14 +626,18 @@ class UserDetailScreen extends StatelessWidget {
                           vertical: 8,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.grey[200],
+                          color: Colors.white.withOpacity(0.1),
                           borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: Colors.white.withOpacity(0.2),
+                            width: 1,
+                          ),
                         ),
                         child: Text(
                           lang,
                           style: TextStyle(
                             fontSize: 14,
-                            color: Colors.grey[800],
+                            color: Colors.white.withOpacity(0.9),
                             fontWeight: FontWeight.w500,
                           ),
                         ),
@@ -502,40 +645,63 @@ class UserDetailScreen extends StatelessWidget {
                     }).toList(),
                   ),
                   const SizedBox(height: 40),
-                  SizedBox(
+                  Container(
                     width: double.infinity,
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => ChatScreen(user: user),
-                          ),
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppTheme.primaryColor,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          AppTheme.primaryColor,
+                          AppTheme.primaryColor.withOpacity(0.8),
+                        ],
+                      ),
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppTheme.primaryColor.withOpacity(0.5),
+                          blurRadius: 20,
+                          offset: const Offset(0, 8),
                         ),
-                        elevation: 2,
-                      ),
-                      icon: const Icon(
-                        Icons.chat_bubble,
-                        size: 22,
-                      ),
-                      label: const Text(
-                        'Start Chat',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                      ],
+                    ),
+                    child: Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(20),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ChatScreen(user: user),
+                            ),
+                          );
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 18),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Icon(
+                                Icons.chat_bubble,
+                                color: Colors.white,
+                                size: 24,
+                              ),
+                              SizedBox(width: 12),
+                              Text(
+                                'Start Chat',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 0.5,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 40),
+                  const SizedBox(height: 100),
                 ],
               ),
             ),
@@ -551,7 +717,7 @@ class UserDetailScreen extends StatelessWidget {
         Icon(
           icon,
           color: AppTheme.primaryColor,
-          size: 32,
+          size: 28,
         ),
         const SizedBox(height: 8),
         Text(
@@ -559,14 +725,15 @@ class UserDetailScreen extends StatelessWidget {
           style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
+            color: Colors.white,
           ),
         ),
         const SizedBox(height: 4),
         Text(
           label,
           style: TextStyle(
-            fontSize: 13,
-            color: Colors.grey[600],
+            fontSize: 12,
+            color: Colors.white.withOpacity(0.6),
           ),
         ),
       ],
@@ -577,16 +744,25 @@ class UserDetailScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.grey[100],
-        borderRadius: BorderRadius.circular(12),
+        color: Colors.white.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.1),
+          width: 1,
+        ),
       ),
       child: Row(
         children: [
           Container(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: AppTheme.primaryColor.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(10),
+              gradient: LinearGradient(
+                colors: [
+                  AppTheme.primaryColor.withOpacity(0.3),
+                  AppTheme.primaryColor.withOpacity(0.1),
+                ],
+              ),
+              borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(
               icon,
@@ -603,16 +779,17 @@ class UserDetailScreen extends StatelessWidget {
                   label,
                   style: TextStyle(
                     fontSize: 12,
-                    color: Colors.grey[600],
+                    color: Colors.white.withOpacity(0.6),
                     fontWeight: FontWeight.w500,
                   ),
                 ),
                 const SizedBox(height: 4),
                 Text(
                   value,
-                  style: const TextStyle(
-                    fontSize: 16,
+                  style: TextStyle(
+                    fontSize: 15,
                     fontWeight: FontWeight.w600,
+                    color: Colors.white.withOpacity(0.9),
                   ),
                 ),
               ],

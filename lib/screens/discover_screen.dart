@@ -40,16 +40,11 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-      appBar: AppBar(
-        title: const Text('Discover'),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
+      backgroundColor: const Color(0xFF0A0E27),
       body: _isLoading
           ? const Center(
               child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryColor),
               ),
             )
           : _users.isEmpty
@@ -57,28 +52,95 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
-                        Icons.explore_off,
-                        size: 80,
-                        color: Colors.grey[400],
+                      Container(
+                        padding: const EdgeInsets.all(24),
+                        decoration: BoxDecoration(
+                          gradient: RadialGradient(
+                            colors: [
+                              AppTheme.primaryColor.withOpacity(0.3),
+                              AppTheme.primaryColor.withOpacity(0.1),
+                            ],
+                          ),
+                          shape: BoxShape.circle,
+                        ),
+                        child: Icon(
+                          Icons.explore_off,
+                          size: 60,
+                          color: AppTheme.primaryColor,
+                        ),
                       ),
-                      const SizedBox(height: 16),
-                      Text(
+                      const SizedBox(height: 24),
+                      const Text(
                         'No posts available',
                         style: TextStyle(
                           fontSize: 18,
-                          color: Colors.grey[400],
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        'Check back later for new content',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.white.withOpacity(0.6),
                         ),
                       ),
                     ],
                   ),
                 )
-              : PageView.builder(
-                  itemCount: _users.length,
-                  scrollDirection: Axis.vertical,
-                  itemBuilder: (context, index) {
-                    return VideoPostCard(user: _users[index]);
-                  },
+              : SafeArea(
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 8),
+                      Expanded(
+                        child: PageView.builder(
+                          itemCount: _users.length,
+                          scrollDirection: Axis.horizontal,
+                          controller: PageController(
+                            viewportFraction: 0.9,
+                          ),
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 16,
+                              ),
+                              child: VideoPostCard(user: _users[index]),
+                            );
+                          },
+                        ),
+                      ),
+                      // Page indicator hint
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 100),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.arrow_back_ios,
+                              size: 16,
+                              color: Colors.white.withOpacity(0.4),
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              'Swipe to explore',
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: Colors.white.withOpacity(0.4),
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              size: 16,
+                              color: Colors.white.withOpacity(0.4),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
     );
   }
@@ -94,108 +156,158 @@ class VideoPostCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      fit: StackFit.expand,
-      children: [
-        // Cover image as background
-        GestureDetector(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => UserDetailScreen(user: user),
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.4),
+            blurRadius: 30,
+            offset: const Offset(0, 10),
+          ),
+          BoxShadow(
+            color: AppTheme.primaryColor.withOpacity(0.2),
+            blurRadius: 40,
+            spreadRadius: 5,
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(24),
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            // Cover image as background
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => UserDetailScreen(user: user),
+                  ),
+                );
+              },
+              child: Image.asset(
+                user.media.coverImage,
+                fit: BoxFit.cover,
+                errorBuilder: (context, error, stackTrace) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [
+                          const Color(0xFF1A1A2E),
+                          const Color(0xFF16213E),
+                        ],
+                      ),
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.image_not_supported,
+                        size: 48,
+                        color: Colors.white.withOpacity(0.3),
+                      ),
+                    ),
+                  );
+                },
               ),
-            );
-          },
-          child: Image.asset(
-            user.media.coverImage,
-            fit: BoxFit.cover,
-            errorBuilder: (context, error, stackTrace) {
-              return Container(
-                color: Colors.grey[900],
-                child: Center(
-                  child: Icon(
-                    Icons.image_not_supported,
-                    size: 48,
-                    color: Colors.grey[600],
-                  ),
-                ),
-              );
-            },
-          ),
-        ),
-        
-        // Gradient overlay for better text readability
-        Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                Colors.transparent,
-                Colors.black.withOpacity(0.2),
-                Colors.black.withOpacity(0.5),
-                Colors.black.withOpacity(0.8),
-              ],
-              stops: const [0.0, 0.4, 0.7, 1.0],
             ),
-          ),
-        ),
-        
-        // Play button overlay
-        Center(
-          child: GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => VideoPlayerScreen(user: user),
-                ),
-              );
-            },
-            child: Container(
+            
+            // Gradient overlay for better text readability
+            Container(
               decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.5),
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
-                    blurRadius: 20,
-                    spreadRadius: 5,
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.black.withOpacity(0.2),
+                    Colors.transparent,
+                    Colors.transparent,
+                    Colors.black.withOpacity(0.4),
+                    Colors.black.withOpacity(0.6),
+                  ],
+                  stops: const [0.0, 0.2, 0.5, 0.8, 1.0],
+                ),
+              ),
+            ),
+            
+            // Play button overlay
+            Center(
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VideoPlayerScreen(user: user),
+                    ),
+                  );
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        AppTheme.primaryColor.withOpacity(0.9),
+                        AppTheme.primaryColor.withOpacity(0.7),
+                      ],
+                    ),
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppTheme.primaryColor.withOpacity(0.5),
+                        blurRadius: 30,
+                        spreadRadius: 5,
+                      ),
+                    ],
                   ),
+                  padding: const EdgeInsets.all(24),
+                  child: const Icon(
+                    Icons.play_arrow,
+                    color: Colors.white,
+                    size: 48,
+                  ),
+                ),
+              ),
+            ),
+            
+            // User header and content overlay
+            SafeArea(
+              child: Column(
+                children: [
+                  // User header at top
+                  _buildUserHeader(context),
+                  
+                  const Spacer(),
+                  
+                  // Post content at bottom
+                  _buildPostContent(context),
                 ],
               ),
-              padding: const EdgeInsets.all(20),
-              child: Icon(
-                Icons.play_arrow,
-                color: Colors.white,
-                size: 56,
-              ),
             ),
-          ),
+          ],
         ),
-        
-        // User header and content overlay
-        SafeArea(
-          child: Column(
-            children: [
-              // User header at top
-              _buildUserHeader(context),
-              
-              const Spacer(),
-              
-              // Post content at bottom
-              _buildPostContent(context),
-            ],
-          ),
-        ),
-      ],
+      ),
     );
   }
 
   Widget _buildUserHeader(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+    return Container(
+      margin: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.black.withOpacity(0.25),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.3),
+          width: 1,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.2),
+            blurRadius: 10,
+          ),
+        ],
+      ),
       child: Row(
         children: [
           GestureDetector(
@@ -211,19 +323,19 @@ class VideoPostCard extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: Colors.white,
-                  width: 2,
+                  color: AppTheme.primaryColor,
+                  width: 2.5,
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
+                    color: AppTheme.primaryColor.withOpacity(0.5),
                     blurRadius: 8,
                     spreadRadius: 1,
                   ),
                 ],
               ),
               child: CircleAvatar(
-                radius: 24,
+                radius: 22,
                 backgroundImage: AssetImage(user.media.profileImage),
                 onBackgroundImageError: (exception, stackTrace) {},
               ),
@@ -250,7 +362,7 @@ class VideoPostCard extends StatelessWidget {
                           user.fullName,
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                            fontSize: 15,
                             color: Colors.white,
                             shadows: [
                               Shadow(
@@ -265,8 +377,8 @@ class VideoPostCard extends StatelessWidget {
                         const SizedBox(width: 6),
                         Icon(
                           Icons.verified,
-                          color: Colors.white,
-                          size: 18,
+                          color: AppTheme.primaryColor,
+                          size: 16,
                         ),
                       ],
                     ],
@@ -276,21 +388,24 @@ class VideoPostCard extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.location_on,
-                        size: 14,
-                        color: Colors.white.withOpacity(0.9),
+                        size: 12,
+                        color: Colors.white.withOpacity(0.8),
                       ),
                       const SizedBox(width: 4),
-                      Text(
-                        user.contact.location,
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: Colors.white.withOpacity(0.9),
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              blurRadius: 4,
-                            ),
-                          ],
+                      Flexible(
+                        child: Text(
+                          user.contact.location,
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.white.withOpacity(0.8),
+                            shadows: const [
+                              Shadow(
+                                color: Colors.black,
+                                blurRadius: 4,
+                              ),
+                            ],
+                          ),
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ),
                     ],
@@ -299,29 +414,39 @@ class VideoPostCard extends StatelessWidget {
               ),
             ),
           ),
-          PopupMenuButton<String>(
-            icon: const Icon(
-              Icons.more_vert,
-              color: Colors.white,
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.1),
+              shape: BoxShape.circle,
             ),
-            color: Colors.white,
-            onSelected: (value) {
-              if (value == 'report') {
-                _showReportDialog(context);
-              }
-            },
-            itemBuilder: (context) => [
-              const PopupMenuItem(
-                value: 'report',
-                child: Row(
-                  children: [
-                    Icon(Icons.flag, color: Colors.orange, size: 20),
-                    SizedBox(width: 12),
-                    Text('Report Post'),
-                  ],
-                ),
+            child: PopupMenuButton<String>(
+              icon: const Icon(
+                Icons.more_vert,
+                color: Colors.white,
+                size: 20,
               ),
-            ],
+              color: const Color(0xFF16213E),
+              onSelected: (value) {
+                if (value == 'report') {
+                  _showReportDialog(context);
+                }
+              },
+              itemBuilder: (context) => [
+                const PopupMenuItem(
+                  value: 'report',
+                  child: Row(
+                    children: [
+                      Icon(Icons.flag, color: Colors.orange, size: 20),
+                      SizedBox(width: 12),
+                      Text(
+                        'Report Post',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
@@ -329,14 +454,29 @@ class VideoPostCard extends StatelessWidget {
   }
 
   Widget _buildPostContent(BuildContext context) {
-    final bottomPadding = MediaQuery.of(context).padding.bottom;
-    
     return Container(
-      padding: EdgeInsets.fromLTRB(
-        16,
-        20,
-        16,
-        bottomPadding > 0 ? bottomPadding + 16 : 32,
+      margin: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Colors.black.withOpacity(0.4),
+            Colors.black.withOpacity(0.25),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.3),
+          width: 1,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.2),
+            blurRadius: 10,
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -345,13 +485,13 @@ class VideoPostCard extends StatelessWidget {
           RichText(
             text: TextSpan(
               style: const TextStyle(
-                fontSize: 15,
+                fontSize: 14,
                 color: Colors.white,
                 height: 1.5,
                 shadows: [
                   Shadow(
                     color: Colors.black,
-                    blurRadius: 8,
+                    blurRadius: 4,
                     offset: Offset(0, 1),
                   ),
                 ],
@@ -361,7 +501,7 @@ class VideoPostCard extends StatelessWidget {
                   text: '${user.fullName} ',
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 16,
+                    fontSize: 15,
                   ),
                 ),
                 TextSpan(
@@ -369,8 +509,10 @@ class VideoPostCard extends StatelessWidget {
                 ),
               ],
             ),
+            maxLines: 3,
+            overflow: TextOverflow.ellipsis,
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 12),
           Wrap(
             spacing: 8,
             runSpacing: 8,
@@ -381,16 +523,38 @@ class VideoPostCard extends StatelessWidget {
                   vertical: 6,
                 ),
                 decoration: BoxDecoration(
-                  color: AppTheme.primaryColor.withOpacity(0.9),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Text(
-                  user.artStyle,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                  gradient: LinearGradient(
+                    colors: [
+                      AppTheme.primaryColor,
+                      AppTheme.primaryColor.withOpacity(0.8),
+                    ],
                   ),
+                  borderRadius: BorderRadius.circular(16),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppTheme.primaryColor.withOpacity(0.3),
+                      blurRadius: 8,
+                    ),
+                  ],
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(
+                      Icons.palette,
+                      size: 14,
+                      color: Colors.white,
+                    ),
+                    const SizedBox(width: 6),
+                    Text(
+                      user.artStyle,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Container(
@@ -399,16 +563,31 @@ class VideoPostCard extends StatelessWidget {
                   vertical: 6,
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.25),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Text(
-                  '${user.artworkCount} artworks',
-                  style: const TextStyle(
-                    fontSize: 13,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.3),
+                    width: 1,
                   ),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(
+                      Icons.brush,
+                      size: 14,
+                      color: Colors.white,
+                    ),
+                    const SizedBox(width: 6),
+                    Text(
+                      '${user.artworkCount}',
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Container(
@@ -417,16 +596,31 @@ class VideoPostCard extends StatelessWidget {
                   vertical: 6,
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.25),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Text(
-                  '${user.followers} followers',
-                  style: const TextStyle(
-                    fontSize: 13,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.3),
+                    width: 1,
                   ),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(
+                      Icons.people,
+                      size: 14,
+                      color: Colors.white,
+                    ),
+                    const SizedBox(width: 6),
+                    Text(
+                      '${user.followers}',
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
@@ -442,9 +636,16 @@ class VideoPostCard extends StatelessWidget {
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
       builder: (context) => Container(
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.vertical(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              const Color(0xFF16213E),
+              const Color(0xFF0A0E27),
+            ],
+          ),
+          borderRadius: const BorderRadius.vertical(
             top: Radius.circular(20),
           ),
         ),
@@ -463,7 +664,7 @@ class VideoPostCard extends StatelessWidget {
                   width: 40,
                   height: 4,
                   decoration: BoxDecoration(
-                    color: Colors.grey[300],
+                    color: Colors.white.withOpacity(0.3),
                     borderRadius: BorderRadius.circular(2),
                   ),
                 ),
@@ -475,6 +676,7 @@ class VideoPostCard extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -521,13 +723,14 @@ class VideoPostCard extends StatelessWidget {
         title,
         style: const TextStyle(
           fontWeight: FontWeight.w500,
+          color: Colors.white,
         ),
       ),
       subtitle: Text(
         subtitle,
         style: TextStyle(
           fontSize: 13,
-          color: Colors.grey[600],
+          color: Colors.white.withOpacity(0.6),
         ),
       ),
       onTap: () {

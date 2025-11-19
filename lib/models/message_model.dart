@@ -1,3 +1,5 @@
+enum MessageType { text, image }
+
 class MessageModel {
   final String id;
   final String senderId;
@@ -5,6 +7,7 @@ class MessageModel {
   final String content;
   final DateTime timestamp;
   final bool isSentByMe;
+  final MessageType type;
 
   MessageModel({
     required this.id,
@@ -13,6 +16,7 @@ class MessageModel {
     required this.content,
     required this.timestamp,
     required this.isSentByMe,
+    this.type = MessageType.text,
   });
 
   Map<String, dynamic> toJson() {
@@ -23,6 +27,7 @@ class MessageModel {
       'content': content,
       'timestamp': timestamp.toIso8601String(),
       'isSentByMe': isSentByMe,
+      'type': type.name,
     };
   }
 
@@ -34,6 +39,10 @@ class MessageModel {
       content: json['content'] as String,
       timestamp: DateTime.parse(json['timestamp'] as String),
       isSentByMe: json['isSentByMe'] as bool,
+      type: MessageType.values.firstWhere(
+        (e) => e.name == (json['type'] as String? ?? 'text'),
+        orElse: () => MessageType.text,
+      ),
     );
   }
 }

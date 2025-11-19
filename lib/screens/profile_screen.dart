@@ -60,14 +60,30 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[50],
+      backgroundColor: const Color(0xFF0A0E27),
       appBar: AppBar(
-        title: const Text('Profile'),
+        backgroundColor: const Color(0xFF16213E),
+        elevation: 2,
+        shadowColor: Colors.black.withOpacity(0.3),
+        title: const Text(
+          'Profile',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         actions: [
           if (!_isLoading)
-            IconButton(
-              icon: const Icon(Icons.edit),
-              onPressed: _showEditDialog,
+            Container(
+              margin: const EdgeInsets.only(right: 8),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.1),
+                shape: BoxShape.circle,
+              ),
+              child: IconButton(
+                icon: const Icon(Icons.edit, color: Colors.white),
+                onPressed: _showEditDialog,
+              ),
             ),
         ],
       ),
@@ -100,27 +116,43 @@ class _ProfileScreenState extends State<ProfileScreen> {
         Container(
           decoration: BoxDecoration(
             shape: BoxShape.circle,
+            gradient: LinearGradient(
+              colors: [
+                AppTheme.primaryColor,
+                AppTheme.primaryColor.withOpacity(0.5),
+              ],
+            ),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.1),
-                blurRadius: 20,
+                color: AppTheme.primaryColor.withOpacity(0.5),
+                blurRadius: 30,
                 spreadRadius: 5,
               ),
             ],
           ),
-          child: CircleAvatar(
-            radius: 60,
-            backgroundColor: Colors.grey[200],
-            backgroundImage: _avatarPath != null
-                ? FileImage(File(_avatarPath!))
-                : null,
-            child: _avatarPath == null
-                ? Icon(
-                    Icons.person,
-                    size: 60,
-                    color: Colors.grey[400],
-                  )
-                : null,
+          padding: const EdgeInsets.all(4),
+          child: Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(
+                color: Colors.white,
+                width: 4,
+              ),
+            ),
+            child: CircleAvatar(
+              radius: 60,
+              backgroundColor: Colors.grey[800],
+              backgroundImage: _avatarPath != null
+                  ? FileImage(File(_avatarPath!))
+                  : null,
+              child: _avatarPath == null
+                  ? Icon(
+                      Icons.person,
+                      size: 60,
+                      color: Colors.white.withOpacity(0.5),
+                    )
+                  : null,
+            ),
           ),
         ),
         Positioned(
@@ -131,7 +163,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
             child: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: AppTheme.primaryColor,
+                gradient: LinearGradient(
+                  colors: [
+                    AppTheme.primaryColor,
+                    AppTheme.primaryColor.withOpacity(0.8),
+                  ],
+                ),
                 shape: BoxShape.circle,
                 border: Border.all(
                   color: Colors.white,
@@ -139,8 +176,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    blurRadius: 8,
+                    color: AppTheme.primaryColor.withOpacity(0.5),
+                    blurRadius: 15,
                   ),
                 ],
               ),
@@ -166,7 +203,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             style: const TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
-              color: Colors.black87,
+              color: Colors.white,
             ),
             textAlign: TextAlign.center,
           ),
@@ -177,8 +214,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
               vertical: 10,
             ),
             decoration: BoxDecoration(
-              color: AppTheme.primaryColor.withOpacity(0.1),
+              gradient: LinearGradient(
+                colors: [
+                  AppTheme.primaryColor.withOpacity(0.3),
+                  AppTheme.primaryColor.withOpacity(0.1),
+                ],
+              ),
               borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: AppTheme.primaryColor.withOpacity(0.5),
+                width: 1.5,
+              ),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
@@ -189,14 +235,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   color: AppTheme.primaryColor,
                 ),
                 const SizedBox(width: 8),
-                Text(
-                  _profile!.signature,
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: AppTheme.primaryColor,
-                    fontWeight: FontWeight.w600,
+                Flexible(
+                  child: Text(
+                    _profile!.signature,
+                    style: const TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    textAlign: TextAlign.center,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ],
             ),
@@ -211,13 +261,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
       margin: const EdgeInsets.symmetric(horizontal: 24),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
+        color: Colors.white.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.1),
+          width: 1,
+        ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
-            blurRadius: 10,
-            offset: const Offset(0, 2),
+            color: Colors.black.withOpacity(0.2),
+            blurRadius: 15,
+            offset: const Offset(0, 4),
           ),
         ],
       ),
@@ -227,14 +281,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
           _buildStatItem(Icons.brush, '0', 'Artworks'),
           Container(
             width: 1,
-            height: 40,
-            color: Colors.grey[300],
+            height: 50,
+            color: Colors.white.withOpacity(0.2),
           ),
           _buildStatItem(Icons.favorite, '0', 'Likes'),
           Container(
             width: 1,
-            height: 40,
-            color: Colors.grey[300],
+            height: 50,
+            color: Colors.white.withOpacity(0.2),
           ),
           _buildStatItem(Icons.people, '0', 'Following'),
         ],
@@ -256,15 +310,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
           style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
-            color: Colors.black87,
+            color: Colors.white,
           ),
         ),
         const SizedBox(height: 4),
         Text(
           label,
           style: TextStyle(
-            fontSize: 13,
-            color: Colors.grey[600],
+            fontSize: 12,
+            color: Colors.white.withOpacity(0.6),
           ),
         ),
       ],
@@ -276,13 +330,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
       margin: const EdgeInsets.symmetric(horizontal: 24),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
+        color: Colors.white.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.1),
+          width: 1,
+        ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
-            blurRadius: 10,
-            offset: const Offset(0, 2),
+            color: Colors.black.withOpacity(0.2),
+            blurRadius: 15,
+            offset: const Offset(0, 4),
           ),
         ],
       ),
@@ -303,7 +361,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Divider(
             height: 1,
             thickness: 1,
-            color: Colors.grey[200],
+            color: Colors.white.withOpacity(0.1),
           ),
           _buildMenuItem(
             icon: Icons.privacy_tip_outlined,
@@ -320,7 +378,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Divider(
             height: 1,
             thickness: 1,
-            color: Colors.grey[200],
+            color: Colors.white.withOpacity(0.1),
           ),
           _buildMenuItem(
             icon: Icons.description_outlined,
@@ -351,10 +409,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
         child: Row(
           children: [
-            Icon(
-              icon,
-              color: AppTheme.primaryColor,
-              size: 24,
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    AppTheme.primaryColor.withOpacity(0.3),
+                    AppTheme.primaryColor.withOpacity(0.1),
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Icon(
+                icon,
+                color: AppTheme.primaryColor,
+                size: 20,
+              ),
             ),
             const SizedBox(width: 16),
             Expanded(
@@ -363,13 +433,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
-                  color: Colors.black87,
+                  color: Colors.white,
                 ),
               ),
             ),
             Icon(
               Icons.chevron_right,
-              color: Colors.grey[400],
+              color: Colors.white.withOpacity(0.4),
               size: 24,
             ),
           ],
@@ -498,9 +568,16 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
       constraints: BoxConstraints(
         maxHeight: MediaQuery.of(context).size.height * 0.8,
       ),
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.vertical(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            const Color(0xFF16213E),
+            const Color(0xFF0A0E27),
+          ],
+        ),
+        borderRadius: const BorderRadius.vertical(
           top: Radius.circular(20),
         ),
       ),
@@ -515,7 +592,7 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
             width: 40,
             height: 4,
             decoration: BoxDecoration(
-              color: Colors.grey[300],
+              color: Colors.white.withOpacity(0.3),
               borderRadius: BorderRadius.circular(2),
             ),
           ),
@@ -532,7 +609,7 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
-                        color: Colors.black87,
+                        color: Colors.white,
                       ),
                     ),
                     const SizedBox(height: 32),
@@ -546,11 +623,29 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
                             Container(
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                border: Border.all(
-                                  color: AppTheme.primaryColor,
-                                  width: 3,
+                                gradient: LinearGradient(
+                                  colors: [
+                                    AppTheme.primaryColor,
+                                    AppTheme.primaryColor.withOpacity(0.5),
+                                  ],
                                 ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: AppTheme.primaryColor.withOpacity(0.5),
+                                    blurRadius: 20,
+                                    spreadRadius: 3,
+                                  ),
+                                ],
                               ),
+                              padding: const EdgeInsets.all(4),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 3,
+                                  ),
+                                ),
                               child: FutureBuilder<String?>(
                                 future: _newAvatarPath != null
                                     ? Future.value(_newAvatarPath)
@@ -559,7 +654,7 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
                                   final imagePath = snapshot.data;
                                   return CircleAvatar(
                                     radius: 60,
-                                    backgroundColor: Colors.grey[200],
+                                    backgroundColor: Colors.grey[800],
                                     backgroundImage: imagePath != null
                                         ? FileImage(File(imagePath))
                                         : null,
@@ -567,11 +662,12 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
                                         ? Icon(
                                             Icons.person,
                                             size: 60,
-                                            color: Colors.grey[400],
+                                            color: Colors.white.withOpacity(0.5),
                                           )
                                         : null,
                                   );
                                 },
+                              ),
                               ),
                             ),
                             Positioned(
@@ -580,12 +676,23 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
                               child: Container(
                                 padding: const EdgeInsets.all(10),
                                 decoration: BoxDecoration(
-                                  color: AppTheme.primaryColor,
+                                  gradient: LinearGradient(
+                                    colors: [
+                                      AppTheme.primaryColor,
+                                      AppTheme.primaryColor.withOpacity(0.8),
+                                    ],
+                                  ),
                                   shape: BoxShape.circle,
                                   border: Border.all(
                                     color: Colors.white,
                                     width: 3,
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: AppTheme.primaryColor.withOpacity(0.5),
+                                      blurRadius: 15,
+                                    ),
+                                  ],
                                 ),
                                 child: const Icon(
                                   Icons.camera_alt,
@@ -603,12 +710,26 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
                     // Name field
                     TextFormField(
                       controller: _nameController,
+                      style: const TextStyle(color: Colors.white),
                       decoration: InputDecoration(
                         labelText: 'Name',
+                        labelStyle: TextStyle(color: Colors.white.withOpacity(0.7)),
                         hintText: 'Enter your name',
-                        prefixIcon: const Icon(Icons.person),
+                        hintStyle: TextStyle(color: Colors.white.withOpacity(0.5)),
+                        prefixIcon: Icon(Icons.person, color: AppTheme.primaryColor),
+                        filled: true,
+                        fillColor: Colors.white.withOpacity(0.05),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(color: AppTheme.primaryColor, width: 2),
                         ),
                       ),
                       validator: (value) {
@@ -623,12 +744,26 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
                     // Signature field
                     TextFormField(
                       controller: _signatureController,
+                      style: const TextStyle(color: Colors.white),
                       decoration: InputDecoration(
                         labelText: 'Signature',
+                        labelStyle: TextStyle(color: Colors.white.withOpacity(0.7)),
                         hintText: 'Enter your signature',
-                        prefixIcon: const Icon(Icons.edit),
+                        hintStyle: TextStyle(color: Colors.white.withOpacity(0.5)),
+                        prefixIcon: Icon(Icons.edit, color: AppTheme.primaryColor),
+                        filled: true,
+                        fillColor: Colors.white.withOpacity(0.05),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(color: AppTheme.primaryColor, width: 2),
                         ),
                       ),
                       maxLines: 2,
@@ -644,22 +779,40 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
                     // Save button
                     SizedBox(
                       width: double.infinity,
-                      child: ElevatedButton(
-                        onPressed: _saveProfile,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: AppTheme.primaryColor,
-                          foregroundColor: Colors.white,
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [
+                              AppTheme.primaryColor,
+                              AppTheme.primaryColor.withOpacity(0.8),
+                            ],
                           ),
-                          elevation: 2,
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: AppTheme.primaryColor.withOpacity(0.5),
+                              blurRadius: 20,
+                              offset: const Offset(0, 8),
+                            ),
+                          ],
                         ),
-                        child: const Text(
-                          'Save Changes',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
+                        child: ElevatedButton(
+                          onPressed: _saveProfile,
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.transparent,
+                            foregroundColor: Colors.white,
+                            shadowColor: Colors.transparent,
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: const Text(
+                            'Save Changes',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
