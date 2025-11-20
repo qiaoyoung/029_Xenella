@@ -5,6 +5,14 @@ import '../theme/app_theme.dart';
 import 'user_detail_screen.dart';
 import 'video_player_screen.dart';
 
+// 检测是否为 iPad 设备
+bool _isIPad(BuildContext context) {
+  final size = MediaQuery.of(context).size;
+  final shortestSide = size.shortestSide;
+  // iPad 的最小宽度通常是 768pt，但为了更准确，我们使用 600pt 作为阈值
+  return shortestSide >= 600;
+}
+
 class DiscoverScreen extends StatefulWidget {
   const DiscoverScreen({super.key});
 
@@ -113,7 +121,11 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
                       ),
                       // Page indicator hint
                       Padding(
-                        padding: const EdgeInsets.only(bottom: 100),
+                        padding: EdgeInsets.only(
+                          bottom: _isIPad(context)
+                              ? MediaQuery.of(context).padding.bottom + 90
+                              : 100,
+                        ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [

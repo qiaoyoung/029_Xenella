@@ -3,6 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import '../theme/app_theme.dart';
 
+// 检测是否为 iPad 设备
+bool _isIPad(BuildContext context) {
+  final size = MediaQuery.of(context).size;
+  final shortestSide = size.shortestSide;
+  // iPad 的最小宽度通常是 768pt，但为了更准确，我们使用 600pt 作为阈值
+  return shortestSide >= 600;
+}
+
 class CreateScreen extends StatefulWidget {
   const CreateScreen({super.key});
 
@@ -341,7 +349,11 @@ class _CreateScreenState extends State<CreateScreen> {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(bottom: 80),
+                  padding: EdgeInsets.only(
+                    bottom: _isIPad(context)
+                        ? MediaQuery.of(context).padding.bottom + 90
+                        : 80,
+                  ),
                   child: SafeArea(
                     top: false,
                     bottom: false,

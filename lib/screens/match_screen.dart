@@ -5,6 +5,14 @@ import '../services/data_service.dart';
 import '../theme/app_theme.dart';
 import 'user_detail_screen.dart';
 
+// 检测是否为 iPad 设备
+bool _isIPad(BuildContext context) {
+  final size = MediaQuery.of(context).size;
+  final shortestSide = size.shortestSide;
+  // iPad 的最小宽度通常是 768pt，但为了更准确，我们使用 600pt 作为阈值
+  return shortestSide >= 600;
+}
+
 // 星星粒子效果画笔
 class StarsPainter extends CustomPainter {
   @override
@@ -602,208 +610,429 @@ class _MatchScreenState extends State<MatchScreen>
           ),
         ),
         child: SafeArea(
-          child: Column(
-            children: [
-              const Spacer(flex: 1),
-              
-              // 雷达区域
-              SizedBox(
-                width: radarSize,
-                height: radarSize,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    // 雷达圆圈背景
-                    Container(
-                      width: outerCircle,
-                      height: outerCircle,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: Colors.white.withOpacity(0.3),
-                          width: 2,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: middleCircle,
-                      height: middleCircle,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: Colors.white.withOpacity(0.2),
-                          width: 1.5,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: innerCircle,
-                      height: innerCircle,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: Colors.white.withOpacity(0.15),
-                          width: 1,
-                        ),
-                      ),
-                    ),
+          child: _isIPad(context)
+              ? LayoutBuilder(
+                  builder: (context, constraints) {
+                    final screenHeight = constraints.maxHeight;
+                    final tabbarHeight = 70.0;
+                    final tabbarBottomPadding = 8.0;
+                    final bottomSafeArea = MediaQuery.of(context).padding.bottom;
+                    final totalBottomSpace = tabbarHeight + tabbarBottomPadding + bottomSafeArea + 20;
                     
-                    // 旋转的雷达扫描线
-                    if (_isScanning)
-                      AnimatedBuilder(
-                        animation: _radarController,
-                        builder: (context, child) {
-                          return Transform.rotate(
-                            angle: _radarController.value * 2 * math.pi,
-                            child: Container(
-                              width: outerCircle,
-                              height: outerCircle,
-                              decoration: BoxDecoration(
-                                gradient: SweepGradient(
-                                  colors: [
-                                    AppTheme.primaryColor.withOpacity(0.8),
-                                    AppTheme.primaryColor.withOpacity(0.5),
-                                    AppTheme.primaryColor.withOpacity(0.2),
-                                    AppTheme.primaryColor.withOpacity(0.0),
-                                  ],
-                                  stops: const [0.0, 0.2, 0.4, 1.0],
-                                ),
-                                shape: BoxShape.circle,
+                    return SingleChildScrollView(
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          minHeight: screenHeight - totalBottomSpace,
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const SizedBox(height: 20),
+                            
+                            // 雷达区域
+                            SizedBox(
+                              width: radarSize,
+                              height: radarSize,
+                              child: Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  // 雷达圆圈背景
+                                  Container(
+                                    width: outerCircle,
+                                    height: outerCircle,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: Colors.white.withOpacity(0.3),
+                                        width: 2,
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    width: middleCircle,
+                                    height: middleCircle,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: Colors.white.withOpacity(0.2),
+                                        width: 1.5,
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    width: innerCircle,
+                                    height: innerCircle,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: Colors.white.withOpacity(0.15),
+                                        width: 1,
+                                      ),
+                                    ),
+                                  ),
+                                  
+                                  // 旋转的雷达扫描线
+                                  if (_isScanning)
+                                    AnimatedBuilder(
+                                      animation: _radarController,
+                                      builder: (context, child) {
+                                        return Transform.rotate(
+                                          angle: _radarController.value * 2 * math.pi,
+                                          child: Container(
+                                            width: outerCircle,
+                                            height: outerCircle,
+                                            decoration: BoxDecoration(
+                                              gradient: SweepGradient(
+                                                colors: [
+                                                  AppTheme.primaryColor.withOpacity(0.8),
+                                                  AppTheme.primaryColor.withOpacity(0.5),
+                                                  AppTheme.primaryColor.withOpacity(0.2),
+                                                  AppTheme.primaryColor.withOpacity(0.0),
+                                                ],
+                                                stops: const [0.0, 0.2, 0.4, 1.0],
+                                              ),
+                                              shape: BoxShape.circle,
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                    ),
+                                  
+                                  // 用户头像（在雷达上闪烁）
+                                  ..._buildRadarUsers(radarSize),
+                                  
+                                  // 中心图标
+                                  Container(
+                                    width: centerIconSize,
+                                    height: centerIconSize,
+                                    decoration: BoxDecoration(
+                                      color: AppTheme.primaryColor.withOpacity(0.2),
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: AppTheme.primaryColor,
+                                        width: 3,
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: AppTheme.primaryColor.withOpacity(0.5),
+                                          blurRadius: 30,
+                                          spreadRadius: 10,
+                                        ),
+                                      ],
+                                    ),
+                                    child: Icon(
+                                      _isScanning ? Icons.radar : Icons.explore,
+                                      size: centerIconSize * 0.5,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                          );
-                        },
-                      ),
-                    
-                    // 用户头像（在雷达上闪烁）
-                    ..._buildRadarUsers(radarSize),
-                    
-                    // 中心图标
-                    Container(
-                      width: centerIconSize,
-                      height: centerIconSize,
-                      decoration: BoxDecoration(
-                        color: AppTheme.primaryColor.withOpacity(0.2),
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: AppTheme.primaryColor,
-                          width: 3,
+                            
+                            const SizedBox(height: 20),
+                            
+                            // 标题和描述
+                            Text(
+                              _isScanning ? 'Scanning Stars...' : 'Find Your Stars',
+                              style: const TextStyle(
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                letterSpacing: 1,
+                                shadows: [
+                                  Shadow(
+                                    color: Colors.black54,
+                                    blurRadius: 10,
+                                    offset: Offset(0, 2),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            
+                            const SizedBox(height: 12),
+                            
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 48),
+                              child: Text(
+                                _isScanning 
+                                    ? 'Searching for talented artists in the universe...'
+                                    : 'Every artist is a shining star\nDiscover them now',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white.withOpacity(0.9),
+                                  height: 1.5,
+                                  shadows: const [
+                                    Shadow(
+                                      color: Colors.black45,
+                                      blurRadius: 8,
+                                      offset: Offset(0, 1),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            
+                            const SizedBox(height: 30),
+                            
+                            // 扫描按钮
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: AppTheme.primaryColor.withOpacity(0.4),
+                                    blurRadius: 20,
+                                    offset: const Offset(0, 10),
+                                  ),
+                                ],
+                              ),
+                              child: ElevatedButton(
+                                onPressed: _isScanning ? null : _startRadarScan,
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: AppTheme.primaryColor,
+                                  foregroundColor: Colors.white,
+                                  disabledBackgroundColor: Colors.grey,
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 56,
+                                    vertical: 18,
+                                  ),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30),
+                                  ),
+                                  elevation: 0,
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(
+                                      _isScanning ? Icons.hourglass_empty : Icons.radar,
+                                      size: 26,
+                                    ),
+                                    const SizedBox(width: 12),
+                                    Text(
+                                      _isScanning ? 'Scanning...' : 'Start Radar',
+                                      style: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 0.5,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            
+                            SizedBox(height: totalBottomSpace),
+                          ],
                         ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: AppTheme.primaryColor.withOpacity(0.5),
-                            blurRadius: 30,
-                            spreadRadius: 10,
+                      ),
+                    );
+                  },
+                )
+              : Column(
+                  children: [
+                    const Spacer(flex: 1),
+                    
+                    // 雷达区域
+                    SizedBox(
+                      width: radarSize,
+                      height: radarSize,
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          // 雷达圆圈背景
+                          Container(
+                            width: outerCircle,
+                            height: outerCircle,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.white.withOpacity(0.3),
+                                width: 2,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: middleCircle,
+                            height: middleCircle,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.white.withOpacity(0.2),
+                                width: 1.5,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: innerCircle,
+                            height: innerCircle,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.white.withOpacity(0.15),
+                                width: 1,
+                              ),
+                            ),
+                          ),
+                          
+                          // 旋转的雷达扫描线
+                          if (_isScanning)
+                            AnimatedBuilder(
+                              animation: _radarController,
+                              builder: (context, child) {
+                                return Transform.rotate(
+                                  angle: _radarController.value * 2 * math.pi,
+                                  child: Container(
+                                    width: outerCircle,
+                                    height: outerCircle,
+                                    decoration: BoxDecoration(
+                                      gradient: SweepGradient(
+                                        colors: [
+                                          AppTheme.primaryColor.withOpacity(0.8),
+                                          AppTheme.primaryColor.withOpacity(0.5),
+                                          AppTheme.primaryColor.withOpacity(0.2),
+                                          AppTheme.primaryColor.withOpacity(0.0),
+                                        ],
+                                        stops: const [0.0, 0.2, 0.4, 1.0],
+                                      ),
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                );
+                              },
+                            ),
+                          
+                          // 用户头像（在雷达上闪烁）
+                          ..._buildRadarUsers(radarSize),
+                          
+                          // 中心图标
+                          Container(
+                            width: centerIconSize,
+                            height: centerIconSize,
+                            decoration: BoxDecoration(
+                              color: AppTheme.primaryColor.withOpacity(0.2),
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: AppTheme.primaryColor,
+                                width: 3,
+                              ),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: AppTheme.primaryColor.withOpacity(0.5),
+                                  blurRadius: 30,
+                                  spreadRadius: 10,
+                                ),
+                              ],
+                            ),
+                            child: Icon(
+                              _isScanning ? Icons.radar : Icons.explore,
+                              size: centerIconSize * 0.5,
+                              color: Colors.white,
+                            ),
                           ),
                         ],
                       ),
-                      child: Icon(
-                        _isScanning ? Icons.radar : Icons.explore,
-                        size: centerIconSize * 0.5,
+                    ),
+                    
+                    const SizedBox(height: 20),
+                    
+                    // 标题和描述
+                    Text(
+                      _isScanning ? 'Scanning Stars...' : 'Find Your Stars',
+                      style: const TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
                         color: Colors.white,
+                        letterSpacing: 1,
+                        shadows: [
+                          Shadow(
+                            color: Colors.black54,
+                            blurRadius: 10,
+                            offset: Offset(0, 2),
+                          ),
+                        ],
                       ),
                     ),
-                  ],
-                ),
-              ),
-              
-              const SizedBox(height: 20),
-              
-              // 标题和描述
-              Text(
-                _isScanning ? 'Scanning Stars...' : 'Find Your Stars',
-                style: const TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  letterSpacing: 1,
-                  shadows: [
-                    Shadow(
-                      color: Colors.black54,
-                      blurRadius: 10,
-                      offset: Offset(0, 2),
-                    ),
-                  ],
-                ),
-              ),
-              
-              const SizedBox(height: 12),
-              
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 48),
-                child: Text(
-                  _isScanning 
-                      ? 'Searching for talented artists in the universe...'
-                      : 'Every artist is a shining star\nDiscover them now',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.white.withOpacity(0.9),
-                    height: 1.5,
-                    shadows: const [
-                      Shadow(
-                        color: Colors.black45,
-                        blurRadius: 8,
-                        offset: Offset(0, 1),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              
-              const SizedBox(height: 30),
-              
-              // 扫描按钮
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppTheme.primaryColor.withOpacity(0.4),
-                      blurRadius: 20,
-                      offset: const Offset(0, 10),
-                    ),
-                  ],
-                ),
-                child: ElevatedButton(
-                  onPressed: _isScanning ? null : _startRadarScan,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.primaryColor,
-                    foregroundColor: Colors.white,
-                    disabledBackgroundColor: Colors.grey,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 56,
-                      vertical: 18,
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    elevation: 0,
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(
-                        _isScanning ? Icons.hourglass_empty : Icons.radar,
-                        size: 26,
-                      ),
-                      const SizedBox(width: 12),
-                      Text(
-                        _isScanning ? 'Scanning...' : 'Start Radar',
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 0.5,
+                    
+                    const SizedBox(height: 12),
+                    
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 48),
+                      child: Text(
+                        _isScanning 
+                            ? 'Searching for talented artists in the universe...'
+                            : 'Every artist is a shining star\nDiscover them now',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white.withOpacity(0.9),
+                          height: 1.5,
+                          shadows: const [
+                            Shadow(
+                              color: Colors.black45,
+                              blurRadius: 8,
+                              offset: Offset(0, 1),
+                            ),
+                          ],
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                    
+                    const SizedBox(height: 30),
+                    
+                    // 扫描按钮
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        boxShadow: [
+                          BoxShadow(
+                            color: AppTheme.primaryColor.withOpacity(0.4),
+                            blurRadius: 20,
+                            offset: const Offset(0, 10),
+                          ),
+                        ],
+                      ),
+                      child: ElevatedButton(
+                        onPressed: _isScanning ? null : _startRadarScan,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppTheme.primaryColor,
+                          foregroundColor: Colors.white,
+                          disabledBackgroundColor: Colors.grey,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 56,
+                            vertical: 18,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                          elevation: 0,
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              _isScanning ? Icons.hourglass_empty : Icons.radar,
+                              size: 26,
+                            ),
+                            const SizedBox(width: 12),
+                            Text(
+                              _isScanning ? 'Scanning...' : 'Start Radar',
+                              style: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 0.5,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    
+                    const Spacer(flex: 1),
+                  ],
                 ),
-              ),
-              
-              const Spacer(flex: 1),
-            ],
-          ),
         ),
       ),
     );
