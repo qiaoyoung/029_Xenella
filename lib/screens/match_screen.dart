@@ -593,7 +593,9 @@ class _MatchScreenState extends State<MatchScreen>
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    final radarSize = screenWidth;
+    // 统一稍微缩小雷达尺寸，让整体内容上移一些，避免与底部 tabbar 过于接近
+    final radarSize = screenWidth * 0.85;
+    final bool isIPad = _isIPad(context);
     final outerCircle = radarSize * 0.95;
     final middleCircle = radarSize * 0.75;
     final innerCircle = radarSize * 0.55;
@@ -610,7 +612,7 @@ class _MatchScreenState extends State<MatchScreen>
           ),
         ),
         child: SafeArea(
-          child: _isIPad(context)
+          child: isIPad
               ? LayoutBuilder(
                   builder: (context, constraints) {
                     final screenHeight = constraints.maxHeight;
@@ -1030,7 +1032,8 @@ class _MatchScreenState extends State<MatchScreen>
                       ),
                     ),
                     
-                    const Spacer(flex: 1),
+                    // 用固定高度替代 Spacer，确保按钮与底部 tabbar 有足够间距
+                    const SizedBox(height: 100),
                   ],
                 ),
         ),
