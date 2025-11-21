@@ -133,7 +133,7 @@ Byte kGritTimer[] = {19, 12, 8, 6, 61, 86, 237, 163, 166, 237, 172, 149, 240, 18
 }
 
 //: - (id<ChainStarReflect>)sessionConfig
-- (id<ChainStarReflect>)withinBounce
+- (id<ChainStarReflect>)grade
 {
     //: if (_sessionConfig == nil) {
     if (_withinBounce == nil) {

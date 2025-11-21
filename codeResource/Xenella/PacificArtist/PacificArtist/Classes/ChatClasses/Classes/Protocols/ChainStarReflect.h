@@ -190,13 +190,13 @@
  *  @return 返回thread 父消息
  */
 //: - (NIMMessage *)threadMessage;
-- (NIMMessage *)linkSegment;
+- (NIMMessage *)mostMessages;
 
 /**
  *  设置 thread消息
  */
 //: - (void)setThreadMessage:(NIMMessage *)message;
-- (void)setLinkSegment:(NIMMessage *)message;
+- (void)setMostMessages:(NIMMessage *)message;
 /**
  *  清空 thread消息
  */

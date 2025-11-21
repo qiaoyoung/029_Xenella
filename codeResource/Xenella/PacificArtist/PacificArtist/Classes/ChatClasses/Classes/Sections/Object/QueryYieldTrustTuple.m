@@ -54,7 +54,7 @@ Byte appInstructionText[] = {68, 36, 70, 7, 96, 118, 190, 145, 171, 191, 168, 18
 @property (nonatomic,strong) NIMSession *joinSession;
 
 //: @property (nonatomic,weak) id<ThicketMerryRidgeIn> delegate;
-@property (nonatomic,weak) id<ThicketMerryRidgeIn> arrowOutlining;
+@property (nonatomic,weak) id<ThicketMerryRidgeIn> doShore;
 
 //: @end
 @end
@@ -194,10 +194,10 @@ Byte appInstructionText[] = {68, 36, 70, 7, 96, 118, 190, 145, 171, 191, 168, 18
 - (void)propulsionRereshing:(id)sender
 {
     //: if ([self.delegate respondsToSelector:@selector(onRefresh)])
-    if ([self.arrowOutlining respondsToSelector:@selector(episodeProfile)])
+    if ([self.doShore respondsToSelector:@selector(episodeProfile)])
     {
         //: [self.delegate onRefresh];
-        [self.arrowOutlining episodeProfile];
+        [self.doShore episodeProfile];
     }
 }
 

@@ -50,7 +50,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
  *  默认已经勾选的人或群组
  */
 //: - (NSArray *)alreadySelectedMemberId;
-- (NSArray *)signId;
+- (NSArray *)plannerAlongIding;
 
 /**
  *  需要过滤的人或群组id
@@ -86,7 +86,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 
 /// 是否显示头部的群头像 群名字headerview
 //: - (BOOL)showSelectHeaderview;
-- (BOOL)custom;
+- (BOOL)up;
 
 //: @end
 @end
@@ -146,7 +146,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,assign) LockObviousAddCollectorBanner societalCubageUnitGreenType;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL strokeOff;
+@property (nonatomic,assign) BOOL up;
 
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *netSession;
@@ -180,7 +180,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,copy) NSArray *receiverIdsed;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL operationHeaderview;
+@property (nonatomic,assign) BOOL up;
 
 //: @end
 @end

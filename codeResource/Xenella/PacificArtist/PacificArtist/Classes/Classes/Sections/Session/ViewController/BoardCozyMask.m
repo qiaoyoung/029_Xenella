@@ -623,7 +623,7 @@ MapConsumeCollectorElevatedNextDelegate>
 }
 
 //: - (void)onTapMenuItemReport:(OptimizeStencilForcefulPaintClose *)item
-- (void)attraction:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemReport:(OptimizeStencilForcefulPaintClose *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.viewTranslate];
@@ -703,7 +703,7 @@ MapConsumeCollectorElevatedNextDelegate>
 }
 
 //: - (void)onTapMenuItemDelete:(OptimizeStencilForcefulPaintClose *)item
-- (void)found:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemDelete:(OptimizeStencilForcefulPaintClose *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self but];
@@ -907,7 +907,7 @@ MapConsumeCollectorElevatedNextDelegate>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(OptimizeStencilForcefulPaintClose *)item
-- (void)transactionAlongBasic:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemReply:(OptimizeStencilForcefulPaintClose *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self but];
@@ -915,7 +915,7 @@ MapConsumeCollectorElevatedNextDelegate>
     if ([self.withinBounce respondsToSelector:@selector(setMostMessages:)])
     {
         //: [self.sessionConfig setThreadMessage:menuMessage];
-        [self.withinBounce setLinkSegment:menuMessage];
+        [self.withinBounce setMostMessages:menuMessage];
     }
 
     //: [self.sessionInputView refreshStatus:LocalizeOverlayImplementText];
@@ -970,7 +970,7 @@ MapConsumeCollectorElevatedNextDelegate>
 }
 
 //: - (void)onTapMenuItemRevoke:(OptimizeStencilForcefulPaintClose *)item
-- (void)openEnable:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemRevoke:(OptimizeStencilForcefulPaintClose *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self but];
@@ -1067,7 +1067,7 @@ MapConsumeCollectorElevatedNextDelegate>
 
 }
 //: - (void)onTapMenuItemAudio2Text:(OptimizeStencilForcefulPaintClose *)item
-- (void)invigorator:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemAudio2Text:(OptimizeStencilForcefulPaintClose *)item
 {
 
 }
@@ -1551,7 +1551,7 @@ MapConsumeCollectorElevatedNextDelegate>
 }
 
 //: - (void)onTapMenuItemMutiSelect:(OptimizeStencilForcefulPaintClose *)item
-- (void)fresh:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemMutiSelect:(OptimizeStencilForcefulPaintClose *)item
 {
     //: [self switchUIWithSessionState:StylerJunctionEngineSelect];
     [self quantityerestNo:StylerJunctionEngineSelect];
@@ -1565,7 +1565,7 @@ MapConsumeCollectorElevatedNextDelegate>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)nationalService:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 
@@ -1659,7 +1659,7 @@ MapConsumeCollectorElevatedNextDelegate>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)beginToEpisode:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -1846,7 +1846,7 @@ MapConsumeCollectorElevatedNextDelegate>
 
 
 //: - (void)onTapMenuItemMark:(OptimizeStencilForcefulPaintClose *)item
-- (void)fairMinded:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemMark:(OptimizeStencilForcefulPaintClose *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self but];
@@ -2273,7 +2273,7 @@ MapConsumeCollectorElevatedNextDelegate>
 
 
 //: - (void)onTapMenuItemUnpin:(OptimizeStencilForcefulPaintClose *)item
-- (void)seek:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemUnpin:(OptimizeStencilForcefulPaintClose *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self but];
@@ -2307,7 +2307,7 @@ MapConsumeCollectorElevatedNextDelegate>
 
 
 //: - (void)onTapMenuItemPin:(OptimizeStencilForcefulPaintClose *)item
-- (void)angiogenesis:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemPin:(OptimizeStencilForcefulPaintClose *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self but];
@@ -2354,7 +2354,7 @@ MapConsumeCollectorElevatedNextDelegate>
 }
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)given:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
@@ -2581,7 +2581,7 @@ MapConsumeCollectorElevatedNextDelegate>
 }
 
 //: - (void)onTapMenuItemTranslation:(OptimizeStencilForcefulPaintClose *)item
-- (void)agendaItemEnableMenuCutCaption:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemTranslation:(OptimizeStencilForcefulPaintClose *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self but];
@@ -2766,7 +2766,7 @@ MapConsumeCollectorElevatedNextDelegate>
 }
 
  //: - (void)onTapMenuItemForword:(OptimizeStencilForcefulPaintClose *)item
-- (void)isLanguage:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemForword:(OptimizeStencilForcefulPaintClose *)item
 {
     //: ResumeUpdaterMapper *vc = [[ResumeUpdaterMapper alloc]init];
     ResumeUpdaterMapper *vc = [[ResumeUpdaterMapper alloc]init];
@@ -2945,7 +2945,7 @@ MapConsumeCollectorElevatedNextDelegate>
 }
 
 //: - (id<ChainStarReflect>)sessionConfig
-- (id<ChainStarReflect>)withinBounce
+- (id<ChainStarReflect>)grade
 {
     //: if (_sessionConfig == nil) {
     if (_withinBounce == nil) {

@@ -413,7 +413,7 @@
     if ([self.steelPortalAgainst respondsToSelector:@selector(plannerAlongIding)])
     {
         //: _selectecContacts = [[self.config alreadySelectedMemberId] mutableCopy];
-        _domain = [[self.steelPortalAgainst signId] mutableCopy];
+        _domain = [[self.steelPortalAgainst plannerAlongIding] mutableCopy];
     }
 
     //: _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];
@@ -601,7 +601,7 @@
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.steelPortalAgainst.custom) {
+    if (self.steelPortalAgainst.up) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.selection];

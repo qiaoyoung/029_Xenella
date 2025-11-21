@@ -16,11 +16,11 @@
 @protocol ArtfulDrivePerform <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)name;
+- (NSString *)disk;
 //: - (NSString *)memberId;
-- (NSString *)safetyLayer;
+- (NSString *)dateTo;
 //: - (id)sortKey;
-- (id)temporary;
+- (id)rational;
 
 //: @end
 @end

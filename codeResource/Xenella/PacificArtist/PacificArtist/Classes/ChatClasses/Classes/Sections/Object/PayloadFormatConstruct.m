@@ -688,7 +688,7 @@
         //: HeightPureBonny *timeModel = [[HeightPureBonny alloc] init];
         HeightPureBonny *timeModel = [[HeightPureBonny alloc] init];
         //: timeModel.messageTime = model.messageTime;
-        timeModel.spoke = model.neatRedPost;
+        timeModel.neatRedPost = model.neatRedPost;
         //: [self.items insertObject:timeModel atIndex:0];
         [self.person insertObject:timeModel atIndex:0];
     }
@@ -831,7 +831,7 @@
             //: HeightPureBonny *timeModel = [[HeightPureBonny alloc] init];
             HeightPureBonny *timeModel = [[HeightPureBonny alloc] init];
             //: timeModel.messageTime = model.messageTime;
-            timeModel.spoke = model.neatRedPost;
+            timeModel.neatRedPost = model.neatRedPost;
             //: [self.items insertObject:timeModel atIndex:index];
             [self.person insertObject:timeModel atIndex:index];
             //: [inserts addObject:@(index)];

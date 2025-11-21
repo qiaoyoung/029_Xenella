@@ -420,7 +420,7 @@
     //: if (self.link == nil) {
     if (self.secret == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[GradientUpgradeHub weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.secret = [CADisplayLink displayLinkWithTarget:[GradientUpgradeHub simply:self] selector:@selector(updateUI)];
+        self.secret = [CADisplayLink displayLinkWithTarget:[GradientUpgradeHub simply:self] selector:@selector(tillConstraint)];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [self.secret addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }

@@ -141,7 +141,7 @@
         //: HeightPureBonny *model = (HeightPureBonny *)data;
         HeightPureBonny *model = (HeightPureBonny *)data;
         //: [_timeLabel setText:[DefiniteGraveMark showTime:model.messageTime showDetail:YES]];
-        [_during setText:[DefiniteGraveMark flow:model.spoke background:YES]];
+        [_during setText:[DefiniteGraveMark flow:model.neatRedPost background:YES]];
     }
 }
 

@@ -331,7 +331,7 @@
         [selectedAllRangeButtons addObject:model];
 
         //: if (item.selctor == @selector(onTapMenuItemCopy:)) {
-        if (item.anatomize == @selector(episodes:)) {
+        if (item.anatomize == @selector(onTapMenuItemCopy:)) {
             //: [selectedPartRangeButtons addObject:model];
             [selectedPartRangeButtons addObject:model];
         }

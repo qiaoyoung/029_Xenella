@@ -102,7 +102,7 @@
         //: for (id<ArtfulDrivePerform> member in members) {
         for (id<ArtfulDrivePerform> member in members) {
             //: if ([[member memberId] isEqualToString:uid]) {
-            if ([[member safetyLayer] isEqualToString:uid]) {
+            if ([[member dateTo] isEqualToString:uid]) {
                 //: return member;
                 return member;
             }
@@ -158,12 +158,12 @@
     //: for (id<ArtfulDrivePerform>member in members) {
     for (id<ArtfulDrivePerform>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member safetyLayer] isEqualToString:me]) {
+        if ([[member dateTo] isEqualToString:me]) {
             //: continue;
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member name];
+        NSString *groupTitle = [member disk];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {
@@ -243,7 +243,7 @@
 - (void)nailOddMember:(id<ArtfulDrivePerform>)member
 {
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member name];
+    NSString *groupTitle = [member disk];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_contact indexOfObject:groupTitle];
     //: ThinRevokeLedger *pair = [_groups objectAtIndex:groupIndex];
@@ -296,7 +296,7 @@
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<ArtfulDrivePerform> member1, id<ArtfulDrivePerform> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<ArtfulDrivePerform> member1, id<ArtfulDrivePerform> member2) {
             //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _sortComparator([member1 temporary], [member2 temporary]);
+            return _sortComparator([member1 rational], [member2 rational]);
         //: }];
         }];
     //: }];
@@ -328,7 +328,7 @@
 //: - (void)removeGroupMember:(id<ArtfulDrivePerform>)member{
 - (void)remain:(id<ArtfulDrivePerform>)member{
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member name];
+    NSString *groupTitle = [member disk];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_contact indexOfObject:groupTitle];
     //: ThinRevokeLedger *pair = [_groups objectAtIndex:groupIndex];

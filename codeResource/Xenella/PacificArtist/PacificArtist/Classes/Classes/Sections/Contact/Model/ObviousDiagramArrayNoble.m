@@ -64,7 +64,7 @@
 }
 
 //: - (NSString *)showName{
-- (NSString *)top{
+- (NSString *)detail{
     //: return self.info.showName;
     return self.modeData.reliefMapName;
 }
@@ -88,7 +88,7 @@
 }
 
 //: - (id)sortKey {
-- (id)reply {
+- (id)rational {
     //: return [[FreshSelectorDefineWatch sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[FreshSelectorDefineWatch table] frontTitle:self.modeData.reliefMapName].mildBar;
 }
@@ -111,7 +111,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)title {
+- (NSString *)disk {
     //: NSString *title = [[FreshSelectorDefineWatch sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[FreshSelectorDefineWatch table] young:self.modeData.reliefMapName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -134,7 +134,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)resolveEye{
+- (NSString *)dateTo{
     //: return self.info.infoId;
     return self.modeData.stateOfGrace;
 }
@@ -146,7 +146,7 @@
 }
 
 //: - (NSString *)userId{
-- (NSString *)nimId{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.modeData.stateOfGrace;
 }
@@ -154,7 +154,7 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)ting{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }

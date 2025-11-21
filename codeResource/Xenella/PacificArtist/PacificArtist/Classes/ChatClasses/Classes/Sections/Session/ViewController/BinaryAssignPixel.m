@@ -1709,7 +1709,7 @@
 
 
 //: - (void)onTapMenuItemCopy:(OptimizeStencilForcefulPaintClose *)item
-- (void)episodes:(OptimizeStencilForcefulPaintClose *)item
+- (void)onTapMenuItemCopy:(OptimizeStencilForcefulPaintClose *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self but];

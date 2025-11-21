@@ -189,7 +189,7 @@ dispatch_queue_t processConfirm()
 @property (nonatomic,strong) NIMSession *ringProcess;
 
 //: @property (nonatomic,strong) NIMMessage *referenceMessage;
-@property (nonatomic,strong) NIMMessage *outlaw;
+@property (nonatomic,strong) NIMMessage *symbol;
 
 //: @property (nonatomic,strong) NSMutableArray *pendingAudioMessages;
 @property (nonatomic,strong) NSMutableArray *focus;
@@ -278,7 +278,7 @@ dispatch_queue_t processConfirm()
              depth:(void(^)(NSError *error))completion
 {
     //: NIMMessage *message = self.referenceMessage;
-    NIMMessage *message = self.outlaw;
+    NIMMessage *message = self.symbol;
     //: if (message)
     if (message)
     {
@@ -298,7 +298,7 @@ dispatch_queue_t processConfirm()
         //: }];
         }];
         //: self.referenceMessage = nil;
-        self.outlaw = nil;
+        self.symbol = nil;
     }
 }
 
@@ -503,7 +503,7 @@ dispatch_queue_t processConfirm()
                                                   completion:^(NSError * _Nullable error)
     {
         //: weakSelf.referenceMessage = nil;
-        weakSelf.outlaw = nil;
+        weakSelf.symbol = nil;
         //: [weakSelf refreshQuickComments:message completion:nil];
         [weakSelf asNail:message overFail:nil];
         //: if (completion)
@@ -561,10 +561,10 @@ dispatch_queue_t processConfirm()
         }];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.pluralForm respondsToSelector:@selector(mostMessages)] && [self.pluralForm linkSegment])
+    else if ([self.pluralForm respondsToSelector:@selector(mostMessages)] && [self.pluralForm mostMessages])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.pluralForm linkSegment];
+        NIMMessage *threadMessage = [self.pluralForm mostMessages];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage
@@ -1745,10 +1745,10 @@ dispatch_queue_t processConfirm()
                                                 error:nil];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.pluralForm respondsToSelector:@selector(mostMessages)] && [self.pluralForm linkSegment])
+    else if ([self.pluralForm respondsToSelector:@selector(mostMessages)] && [self.pluralForm mostMessages])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.pluralForm linkSegment];
+        NIMMessage *threadMessage = [self.pluralForm mostMessages];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage
