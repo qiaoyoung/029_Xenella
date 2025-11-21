@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>removeSnappyTrigger</key>
+    <string>RotatePointGenerator</string>
+    <key>neutralOnCliffTimeline</key>
+    <string>RadarDeliverTriumph</string>
+    <key>primeConnectorTrailRead</key>
+    <string>BackupSynchronizerTextureRadiant</string>
+    <key>initializeDatasetter</key>
+    <string>BelowDurableStayDismiss</string>
+    <key>hiveHold</key>
+    <string>RecordEnumVerify</string>
+</dict>
+</plist>

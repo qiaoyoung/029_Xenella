@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>layoutShader</key>
+    <string>HostRadiantParser</string>
+    <key>bannerDark</key>
+    <string>InitializeScheduleScroll</string>
+    <key>spontaneousBackupCreatorResize</key>
+    <string>ResetVisitorCompress</string>
+    <key>converterImport</key>
+    <string>TimelessSummitLayer</string>
+</dict>
+</plist>
