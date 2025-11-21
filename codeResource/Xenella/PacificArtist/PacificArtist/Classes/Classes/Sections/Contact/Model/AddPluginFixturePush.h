@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AddPluginFixturePush.h
 //  NIM
@@ -6,39 +8,61 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @protocol ArtfulDrivePerform <NSObject>
 @protocol ArtfulDrivePerform <NSObject>
 
-- (NSString *)groupTitle;
-- (NSString *)memberId;
-- (id)sortKey;
+//: - (NSString *)groupTitle;
+- (NSString *)name;
+//: - (NSString *)memberId;
+- (NSString *)safetyLayer;
+//: - (id)sortKey;
+- (id)temporary;
 
+//: @end
 @end
 
+//: @interface AddPluginFixturePush : NSObject
 @interface AddPluginFixturePush : NSObject
 
-@property (nonatomic, strong) NSArray *members;
-@property (nonatomic, copy) NSComparator groupTitleComparator;
-@property (nonatomic, copy) NSComparator groupMemberComparator;
-@property (nonatomic, readonly) NSArray *sortedGroupTitles;
+//: @property (nonatomic, copy) NSComparator groupMemberComparator;
+@property (nonatomic, copy) NSComparator sortComparator;
+//: @property (nonatomic, copy) NSComparator groupTitleComparator;
+@property (nonatomic, copy) NSComparator groupComparator;
+//: @property (nonatomic, strong) NSArray *members;
+@property (nonatomic, strong) NSArray *parent;
+//: @property (nonatomic, readonly) NSArray *sortedGroupTitles;
+@property (nonatomic, readonly) NSArray *aggregation;
 
-- (void)addGroupMember:(id<ArtfulDrivePerform>)member;
+//: - (void)addGroupMember:(id<ArtfulDrivePerform>)member;
+- (void)nailOddMember:(id<ArtfulDrivePerform>)member;
 
-- (void)removeGroupMember:(id<ArtfulDrivePerform>)member;
+//: - (NSArray *)membersOfGroup:(NSInteger)groupIndex;
+- (NSArray *)nowSheet:(NSInteger)groupIndex;
 
-- (void)addGroupAboveWithTitle:(NSString *)title members:(NSArray *)members;
+//: - (void)removeGroupMember:(id<ArtfulDrivePerform>)member;
+- (void)remain:(id<ArtfulDrivePerform>)member;
 
-- (NSString *)titleOfGroup:(NSInteger)groupIndex;
+//: - (NSInteger)groupCount;
+- (NSInteger)brand;
 
-- (NSArray *)membersOfGroup:(NSInteger)groupIndex;
+//: - (id<ArtfulDrivePerform>)memberOfIndex:(NSIndexPath *)indexPath;
+- (id<ArtfulDrivePerform>)trustIndex:(NSIndexPath *)indexPath;
 
-- (id<ArtfulDrivePerform>)memberOfIndex:(NSIndexPath *)indexPath;
+//: - (NSInteger)memberCountOfGroup:(NSInteger)groupIndex;
+- (NSInteger)broadcast:(NSInteger)groupIndex;
 
-- (id<ArtfulDrivePerform>)memberOfId:(NSString *)uid;
+//: - (void)addGroupAboveWithTitle:(NSString *)title members:(NSArray *)members;
+- (void)creation:(NSString *)title betwixt:(NSArray *)members;
 
-- (NSInteger)groupCount;
+//: - (NSString *)titleOfGroup:(NSInteger)groupIndex;
+- (NSString *)safely:(NSInteger)groupIndex;
 
-- (NSInteger)memberCountOfGroup:(NSInteger)groupIndex;
+//: - (id<ArtfulDrivePerform>)memberOfId:(NSString *)uid;
+- (id<ArtfulDrivePerform>)planetSingle:(NSString *)uid;
 
+//: @end
 @end

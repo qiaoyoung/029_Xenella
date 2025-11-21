@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  InsertToastEarth.h
 //  fanxingxue
@@ -6,24 +8,38 @@
 //  Copyright © 2018年 caoyu. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface InsertToastEarth : NSObject
 @interface InsertToastEarth : NSObject
-+(BOOL)isLogin;
-+ (void)refrushNewData;
-+ (NSString *)getUserId;
+//: + (void)saveUserInfo:(id)responseObject;
++ (void)individual:(id)responseObject;
+//: + (NSString *)getUserId;
++ (NSString *)get;
+//: + (NSString *)getMobileNumber;
++ (NSString *)most;
 
-+ (NSString *)getHeaderImageUrl;
-+ (NSString *)getNickName;
-
-
-+ (void)callSevicePhoneNumber;
-+ (NSString *)getMobileNumber;
-
-+ (void)saveUserInfo:(id)responseObject;
-+ (void)logout;
+//: + (NSString *)getNickName;
++ (NSString *)nickAcrossTitle;
+//: + (NSString *)getHeaderImageUrl;
++ (NSString *)capitalStep;
 
 
-+ (NSString *)getLocaleString;
+//: + (NSString *)getLocaleString;
++ (NSString *)nameGetTitle;
+//: + (void)callSevicePhoneNumber;
++ (void)nail;
 
+//: + (void)refrushNewData;
++ (void)inquiry;
+//: +(BOOL)isLogin;
++(BOOL)transmission;
+
+
+//: + (void)logout;
++ (void)transit;
+
+//: @end
 @end

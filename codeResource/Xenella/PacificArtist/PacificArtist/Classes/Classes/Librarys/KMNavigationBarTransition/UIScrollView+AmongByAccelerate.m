@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIScrollView+AmongByAccelerate.m
 //
@@ -21,29 +23,44 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "UIScrollView+AmongByAccelerate.h"
 #import "UIScrollView+AmongByAccelerate.h"
+//: #import "UIScrollView+AmongByAccelerate_internal.h"
 #import "UIScrollView+AmongByAccelerate_internal.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
+//: #import "JourneyOutsideLevelStandPaint.h"
 #import "JourneyOutsideLevelStandPaint.h"
 
+//: @implementation UIScrollView (AmongByAccelerate)
 @implementation UIScrollView (AmongByAccelerate)
 
-#ifdef __IPHONE_11_0
-- (UIScrollViewContentInsetAdjustmentBehavior)km_originalContentInsetAdjustmentBehavior {
+
+//: - (void)setKm_shouldRestoreContentInsetAdjustmentBehavior:(BOOL)isShould {
+- (void)setHistoryOff:(BOOL)isShould {
+    //: objc_setAssociatedObject(self, @selector(km_shouldRestoreContentInsetAdjustmentBehavior), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(historyOff), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: - (UIScrollViewContentInsetAdjustmentBehavior)km_originalContentInsetAdjustmentBehavior {
+- (UIScrollViewContentInsetAdjustmentBehavior)modelCatch {
+    //: return [objc_getAssociatedObject(self, _cmd) integerValue];
     return [objc_getAssociatedObject(self, _cmd) integerValue];
 }
 
-- (void)setKm_originalContentInsetAdjustmentBehavior:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
-    objc_setAssociatedObject(self, @selector(km_originalContentInsetAdjustmentBehavior), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (BOOL)km_shouldRestoreContentInsetAdjustmentBehavior {
+//: - (BOOL)km_shouldRestoreContentInsetAdjustmentBehavior {
+- (BOOL)historyOff {
+    //: return [objc_getAssociatedObject(self, _cmd) boolValue];
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
-- (void)setKm_shouldRestoreContentInsetAdjustmentBehavior:(BOOL)isShould {
-    objc_setAssociatedObject(self, @selector(km_shouldRestoreContentInsetAdjustmentBehavior), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//: - (void)setKm_originalContentInsetAdjustmentBehavior:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
+- (void)setModelCatch:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
+    //: objc_setAssociatedObject(self, @selector(km_originalContentInsetAdjustmentBehavior), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(modelCatch), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-#endif
 
+
+//: @end
 @end

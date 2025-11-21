@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PassageAbundantBalancerBinary.h
 // StableProtectSymbolAbsoluteTransformable
@@ -6,10 +8,19 @@
 //  Copyright © 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+
+//: typedef NS_ENUM(NSInteger,SliceTerminalStripeConverter){
 typedef NS_ENUM(NSInteger,SliceTerminalStripeConverter){
-    SliceTerminalStripeConverterVoice,         //录音文本切换按钮
+    //: SliceTerminalStripeConverterVoice, 
+    SliceTerminalStripeConverterVoice, //录音文本切换按钮
+    //: SliceTerminalStripeConverterTextAndRecord, 
     SliceTerminalStripeConverterTextAndRecord, //文本输入框或录音按钮
-    SliceTerminalStripeConverterEmoticon,      //表情贴图
-    SliceTerminalStripeConverterMore,          //更多菜单
-    SliceTerminalStripeConverterSend,          //发送
+    //: SliceTerminalStripeConverterEmoticon, 
+    SliceTerminalStripeConverterEmoticon, //表情贴图
+    //: SliceTerminalStripeConverterMore, 
+    SliceTerminalStripeConverterMore, //更多菜单
+    //: SliceTerminalStripeConverterSend, 
+    SliceTerminalStripeConverterSend, //发送
+//: };
 };

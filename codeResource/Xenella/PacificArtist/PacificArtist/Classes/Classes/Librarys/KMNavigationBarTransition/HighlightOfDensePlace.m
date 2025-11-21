@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  HighlightOfDensePlace.m
 //
@@ -21,25 +23,39 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "HighlightOfDensePlace.h"
 #import "HighlightOfDensePlace.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
 
+//: @interface HighlightOfDensePlace : NSObject
 @interface HighlightOfDensePlace : NSObject
-@property (nonatomic, weak) id object;
+//: @property (nonatomic, weak) id object;
+@property (nonatomic, weak) id natural;
+//: @end
 @end
 
+//: @implementation HighlightOfDensePlace
 @implementation HighlightOfDensePlace
 
-void km_objc_setAssociatedWeakObject(id container, void *key, id value)
+//: void km_objc_setAssociatedWeakObject(id container, void *key, id value)
+void flowFeature(id container, void *key, id value)
 {
+    //: HighlightOfDensePlace *wrapper = [[HighlightOfDensePlace alloc] init];
     HighlightOfDensePlace *wrapper = [[HighlightOfDensePlace alloc] init];
-    wrapper.object = value;
+    //: wrapper.object = value;
+    wrapper.natural = value;
+    //: objc_setAssociatedObject(container, key, wrapper, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(container, key, wrapper, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-id km_objc_getAssociatedWeakObject(id container, void *key)
+//: id km_objc_getAssociatedWeakObject(id container, void *key)
+id noteUniform(id container, void *key)
 {
-    return [(HighlightOfDensePlace *)objc_getAssociatedObject(container, key) object];
+    //: return [(HighlightOfDensePlace *)objc_getAssociatedObject(container, key) object];
+    return [(HighlightOfDensePlace *)objc_getAssociatedObject(container, key) natural];
 }
 
+//: @end
 @end

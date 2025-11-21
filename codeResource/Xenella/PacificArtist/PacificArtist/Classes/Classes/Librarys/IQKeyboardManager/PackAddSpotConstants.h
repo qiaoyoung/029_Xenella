@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PackAddSpotConstants.h
 //  https://github.com/hackiftekhar/PackAddSpot
@@ -20,15 +22,13 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
-#ifndef PackAddSpotConstants_h
-#define PackAddSpotConstants_h
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
 ///-----------------------------------
 /// @name DeliverRuggedizedPastWordManageBehavior
 ///-----------------------------------
+
+// __M_A_C_R_O__
 
 /**
  `DeliverRuggedizedPastWordBySubviews`
@@ -40,10 +40,15 @@
  `DeliverRuggedizedPastWordByPosition`
  Creates Toolbar according to the y,x position of textField in it's superview coordinate.
  */
+//: typedef NS_ENUM(NSInteger, DeliverRuggedizedPastWordManageBehavior) {
 typedef NS_ENUM(NSInteger, DeliverRuggedizedPastWordManageBehavior) {
+    //: DeliverRuggedizedPastWordBySubviews,
     DeliverRuggedizedPastWordBySubviews,
+    //: DeliverRuggedizedPastWordByTag,
     DeliverRuggedizedPastWordByTag,
+    //: DeliverRuggedizedPastWordByPosition,
     DeliverRuggedizedPastWordByPosition,
+//: };
 };
 
 /**
@@ -56,10 +61,15 @@ typedef NS_ENUM(NSInteger, DeliverRuggedizedPastWordManageBehavior) {
  `ThroughSuiteBeginConstructAlwaysShow`
  Always show nextPrevious buttons, if there are more than 1 textField then both buttons will be visible but will be shown as disabled.
  */
+//: typedef NS_ENUM(NSUInteger, ThroughSuiteBeginConstruct) {
 typedef NS_ENUM(NSUInteger, ThroughSuiteBeginConstruct) {
+    //: ThroughSuiteBeginConstructDefault,
     ThroughSuiteBeginConstructDefault,
+    //: ThroughSuiteBeginConstructAlwaysHide,
     ThroughSuiteBeginConstructAlwaysHide,
+    //: ThroughSuiteBeginConstructAlwaysShow,
     ThroughSuiteBeginConstructAlwaysShow,
+//: };
 };
 
 /**
@@ -72,13 +82,18 @@ typedef NS_ENUM(NSUInteger, ThroughSuiteBeginConstruct) {
  `TuneLaneStructureDisabled`
  setting is disabled.
  */
+//: typedef NS_ENUM(NSUInteger, TuneLaneStructure) {
 typedef NS_ENUM(NSUInteger, TuneLaneStructure) {
+    //: TuneLaneStructureDefault,
     TuneLaneStructureDefault,
+    //: TuneLaneStructureEnabled,
     TuneLaneStructureEnabled,
+    //: TuneLaneStructureDisabled,
     TuneLaneStructureDisabled,
+//: };
 };
 
-#endif
+
 
 /*
  

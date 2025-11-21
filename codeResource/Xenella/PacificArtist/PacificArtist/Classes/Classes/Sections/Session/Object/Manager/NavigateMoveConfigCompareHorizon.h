@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NavigateMoveConfigCompareHorizon.h
 //  NIM
@@ -15,29 +17,42 @@
 //     "message_count": 1234   //必填,最终写入文件中的消息数
 //   }
 
-
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface NavigateMoveConfigCompareHorizon : NSObject
 @interface NavigateMoveConfigCompareHorizon : NSObject
 
-@property (nonatomic, assign) NSInteger version;
+//: @property (nonatomic, assign) NSInteger version;
+@property (nonatomic, assign) NSInteger fosterChild;
 
-@property (nonatomic, assign) NIMLoginClientType clientType;
+//: @property (nonatomic, assign) NSInteger totalInfoCount;
+@property (nonatomic, assign) NSInteger view;
 
-@property (nonatomic, copy) NSString *sdkVersion;
+//: @property (nonatomic, assign) NIMLoginClientType clientType;
+@property (nonatomic, assign) NIMLoginClientType client;
 
-@property (nonatomic, copy) NSString *appVersion;
+//: @property (nonatomic, copy) NSString *sdkVersion;
+@property (nonatomic, copy) NSString *appBuild;
 
-@property (nonatomic, assign) NSInteger totalInfoCount;
+//: @property (nonatomic, copy) NSString *appVersion;
+@property (nonatomic, copy) NSString *rain;
 
-+ (instancetype)initWithDefaultConfig;
+//: + (instancetype)initWithDefaultConfig;
++ (instancetype)initWithListenerTransport;
 
-+ (nullable instancetype)initWithRawContent:(NSData *)data;
+//: - (nullable NSData *)toRawContent;
+- (nullable NSData *)manageBy;
 
-- (nullable NSData *)toRawContent;
+//: + (nullable instancetype)initWithRawContent:(NSData *)data;
++ (nullable instancetype)initWithStreetwise:(NSData *)data;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

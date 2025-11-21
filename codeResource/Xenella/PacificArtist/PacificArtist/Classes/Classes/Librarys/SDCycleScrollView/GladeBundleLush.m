@@ -1,3 +1,57 @@
+
+#import <Foundation/Foundation.h>
+
+@interface TaOccasionData : NSObject
+
++ (instancetype)sharedInstance;
+
+//: bg-gradient
+@property (nonatomic, copy) NSString *spacingJumpPath;
+
+@end
+
+@implementation TaOccasionData
+
++ (instancetype)sharedInstance {
+    static TaOccasionData *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
+    return instance;
+}
+
+//: bg-gradient
+- (NSString *)spacingJumpPath {
+    if (!_spacingJumpPath) {
+        Byte value[] = {11, 2, 116, 110, 101, 105, 100, 97, 114, 103, 45, 103, 98, 254};
+        _spacingJumpPath = [self StringFromTaOccasionData:value];
+    }
+    return _spacingJumpPath;
+}
+
+- (Byte *)TaOccasionDataToCache:(Byte *)data {
+    int factNow = data[0];
+    int nailBoard = data[1];
+    for (int i = 0; i < factNow / 2; i++) {
+        int begin = nailBoard + i;
+        int end = nailBoard + factNow - i - 1;
+        Byte temp = data[begin];
+        data[begin] = data[end];
+        data[end] = temp;
+    }
+    data[nailBoard + factNow] = 0;
+    return data + nailBoard;
+}  
+
+- (NSString *)StringFromTaOccasionData:(Byte *)data {
+    return [NSString stringWithUTF8String:(char *)[self TaOccasionDataToCache:data]];
+}
+
+@end
+
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  GladeBundleLush.m
 //  MaterialDecoratorCard
@@ -6,6 +60,11 @@
 //  Copyright (c) 2015年 GSD. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "GladeBundleLush.h"
+#import "GladeBundleLush.h"
+//: #import "UIView+UnusualScaleDuringWorld.h"
+#import "UIView+UnusualScaleDuringWorld.h"
 
 /*
  
@@ -30,97 +89,145 @@
  */
 
 
-#import "GladeBundleLush.h"
-#import "UIView+UnusualScaleDuringWorld.h"
 
+
+
+//: @interface GladeBundleLush ()
 @interface GladeBundleLush ()
 
-@property (nonatomic, strong) UIImageView *gradientImageView;
+//: @property (nonatomic, strong) UIImageView *gradientImageView;
+@property (nonatomic, strong) UIImageView *image;
 
+//: @end
 @end
 
+//: @implementation GladeBundleLush
 @implementation GladeBundleLush
 {
+    //: __weak UILabel *_titleLabel;
     __weak UILabel *_titleLabel;
 }
 
 
-- (instancetype)initWithFrame:(CGRect)frame
+//: - (void)setShowGradient:(BOOL)showGradient
+- (void)setInduce:(BOOL)showGradient
 {
-    if (self = [super initWithFrame:frame]) {
-        [self setupImageView];
-        [self setupTitleLabel];
-    }
-    
-    return self;
+    //: _showGradient = showGradient;
+    _induce = showGradient;
+    //: self.gradientImageView.hidden = !showGradient;
+    self.image.hidden = !showGradient;
 }
 
-- (void)setTitleLabelBackgroundColor:(UIColor *)titleLabelBackgroundColor
+//: - (void)setTitleLabelTextColor:(UIColor *)titleLabelTextColor
+- (void)setProtectCircle:(UIColor *)titleLabelTextColor
 {
-    _titleLabelBackgroundColor = titleLabelBackgroundColor;
-    _titleLabel.backgroundColor = titleLabelBackgroundColor;
-}
-
-- (void)setTitleLabelTextColor:(UIColor *)titleLabelTextColor
-{
-    _titleLabelTextColor = titleLabelTextColor;
+    //: _titleLabelTextColor = titleLabelTextColor;
+    _protectCircle = titleLabelTextColor;
+    //: _titleLabel.textColor = titleLabelTextColor;
     _titleLabel.textColor = titleLabelTextColor;
 }
 
-- (void)setTitleLabelTextFont:(UIFont *)titleLabelTextFont
+//: - (void)setTitleLabelTextFont:(UIFont *)titleLabelTextFont
+- (void)setGraphName:(UIFont *)titleLabelTextFont
 {
-    _titleLabelTextFont = titleLabelTextFont;
+    //: _titleLabelTextFont = titleLabelTextFont;
+    _graphName = titleLabelTextFont;
+    //: _titleLabel.font = titleLabelTextFont;
     _titleLabel.font = titleLabelTextFont;
 }
 
-- (void)setupImageView
+//: - (void)setTitle:(NSString *)title
+- (void)setEnvelopeFactor:(NSString *)title
 {
-    UIImageView *imageView = [[UIImageView alloc] init];
-    _imageView = imageView;
-    [self.contentView addSubview:imageView];
-    
-    
-    self.gradientImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg-gradient"]];
-    self.gradientImageView.hidden = YES;
-    [self.contentView addSubview:self.gradientImageView];
-    
-}
-
-- (void)setShowGradient:(BOOL)showGradient
-{
-    _showGradient = showGradient;
-    self.gradientImageView.hidden = !showGradient;
-}
-
-- (void)setupTitleLabel
-{
-    UILabel *titleLabel = [[UILabel alloc] init];
-    _titleLabel = titleLabel;
-    _titleLabel.hidden = YES;
-    [self.contentView addSubview:titleLabel];
-}
-
-- (void)setTitle:(NSString *)title
-{
-    _title = [title copy];
+    //: _title = [title copy];
+    _envelopeFactor = [title copy];
+    //: _titleLabel.text = [NSString stringWithFormat:@"   %@", title];
     _titleLabel.text = [NSString stringWithFormat:@"   %@", title];
 }
 
-
+//: - (void)layoutSubviews
 - (void)layoutSubviews
 {
+    //: [super layoutSubviews];
     [super layoutSubviews];
-    
-    _imageView.frame = self.bounds;
-    
-    CGFloat titleLabelW = self.sd_width;
-    CGFloat titleLabelH = _titleLabelHeight;
+
+    //: _imageView.frame = self.bounds;
+    _primary.frame = self.bounds;
+
+    //: CGFloat titleLabelW = self.sd_width;
+    CGFloat titleLabelW = self.transaction;
+    //: CGFloat titleLabelH = _titleLabelHeight;
+    CGFloat titleLabelH = _strikeFloat;
+    //: CGFloat titleLabelX = 0;
     CGFloat titleLabelX = 0;
-    CGFloat titleLabelY = self.sd_height - titleLabelH;
+    //: CGFloat titleLabelY = self.sd_height - titleLabelH;
+    CGFloat titleLabelY = self.declineHeight - titleLabelH;
+    //: _titleLabel.frame = CGRectMake(titleLabelX, titleLabelY, titleLabelW, titleLabelH);
     _titleLabel.frame = CGRectMake(titleLabelX, titleLabelY, titleLabelW, titleLabelH);
+    //: _titleLabel.hidden = !_titleLabel.text;
     _titleLabel.hidden = !_titleLabel.text;
-    
-    self.gradientImageView.frame = CGRectMake(0, self.sd_height-90, self.sd_width, 90);
+
+    //: self.gradientImageView.frame = CGRectMake(0, self.sd_height-90, self.sd_width, 90);
+    self.image.frame = CGRectMake(0, self.declineHeight-90, self.transaction, 90);
 }
 
+//: - (void)setupImageView
+- (void)worth
+{
+    //: UIImageView *imageView = [[UIImageView alloc] init];
+    UIImageView *imageView = [[UIImageView alloc] init];
+    //: _imageView = imageView;
+    _primary = imageView;
+    //: [self.contentView addSubview:imageView];
+    [self.contentView addSubview:imageView];
+
+
+    //: self.gradientImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg-gradient"]];
+    self.image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[TaOccasionData sharedInstance].spacingJumpPath]];
+    //: self.gradientImageView.hidden = YES;
+    self.image.hidden = YES;
+    //: [self.contentView addSubview:self.gradientImageView];
+    [self.contentView addSubview:self.image];
+
+}
+
+//: - (void)setupTitleLabel
+- (void)instruction
+{
+    //: UILabel *titleLabel = [[UILabel alloc] init];
+    UILabel *titleLabel = [[UILabel alloc] init];
+    //: _titleLabel = titleLabel;
+    _titleLabel = titleLabel;
+    //: _titleLabel.hidden = YES;
+    _titleLabel.hidden = YES;
+    //: [self.contentView addSubview:titleLabel];
+    [self.contentView addSubview:titleLabel];
+}
+
+//: - (void)setTitleLabelBackgroundColor:(UIColor *)titleLabelBackgroundColor
+- (void)setLabelQuantity:(UIColor *)titleLabelBackgroundColor
+{
+    //: _titleLabelBackgroundColor = titleLabelBackgroundColor;
+    _labelQuantity = titleLabelBackgroundColor;
+    //: _titleLabel.backgroundColor = titleLabelBackgroundColor;
+    _titleLabel.backgroundColor = titleLabelBackgroundColor;
+}
+
+
+//: - (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    //: if (self = [super initWithFrame:frame]) {
+    if (self = [super initWithFrame:frame]) {
+        //: [self setupImageView];
+        [self worth];
+        //: [self setupTitleLabel];
+        [self instruction];
+    }
+
+    //: return self;
+    return self;
+}
+
+//: @end
 @end

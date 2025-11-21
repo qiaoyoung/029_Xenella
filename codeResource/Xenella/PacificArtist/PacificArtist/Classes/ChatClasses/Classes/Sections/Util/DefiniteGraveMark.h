@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMUtil.h
 // StableProtectSymbolAbsoluteTransformable
@@ -6,28 +8,43 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
+//: #import "PresenterTimelineRecordTerminal.h"
 #import "PresenterTimelineRecordTerminal.h"
 
+//: @interface DefiniteGraveMark : NSObject
 @interface DefiniteGraveMark : NSObject
 
-+ (NSString *)showNick:(NSString *)uid inMessage:(NIMMessage *)message;
+//: + (NSString *)showNick:(NSString *)uid inSession:(NIMSession *)session;
++ (NSString *)availableSession:(NSString *)uid draw:(NIMSession *)session;
 
-+ (NSString *)showNick:(NSString *)uid inSession:(NIMSession *)session;
+//: + (BOOL)canEditSuperTeamInfo:(NIMTeamMember *)member;
++ (BOOL)search:(NIMTeamMember *)member;
 
-+ (NSString *)showTime:(NSTimeInterval)msglastTime showDetail:(BOOL)showDetail;
+//: + (NSString *)messageTipContent:(NIMMessage *)message;
++ (NSString *)suiteKick:(NIMMessage *)message;
 
-+ (NSString *)messageTipContent:(NIMMessage *)message;
+//: + (BOOL)canInviteMemberToTeam:(NIMTeamMember *)member;
++ (BOOL)program:(NIMTeamMember *)member;
 
-+ (NSString *)durationTextWithSeconds:(NSTimeInterval)seconds;
+//: + (BOOL)canInviteMemberToSuperTeam:(NIMTeamMember *)member;
++ (BOOL)network:(NIMTeamMember *)member;
 
-+ (BOOL)canEditTeamInfo:(NIMTeamMember *)member;
+//: + (NSString *)showTime:(NSTimeInterval)msglastTime showDetail:(BOOL)showDetail;
++ (NSString *)flow:(NSTimeInterval)msglastTime background:(BOOL)showDetail;
 
-+ (BOOL)canInviteMemberToTeam:(NIMTeamMember *)member;
+//: + (BOOL)canEditTeamInfo:(NIMTeamMember *)member;
++ (BOOL)meat:(NIMTeamMember *)member;
 
-+ (BOOL)canEditSuperTeamInfo:(NIMTeamMember *)member;
+//: + (NSString *)showNick:(NSString *)uid inMessage:(NIMMessage *)message;
++ (NSString *)notice:(NSString *)uid receive:(NIMMessage *)message;
 
-+ (BOOL)canInviteMemberToSuperTeam:(NIMTeamMember *)member;
+//: + (NSString *)durationTextWithSeconds:(NSTimeInterval)seconds;
++ (NSString *)reserve:(NSTimeInterval)seconds;
 
+//: @end
 @end

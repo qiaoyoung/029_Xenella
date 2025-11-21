@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  WithCrestlinePresenter.h
 // StableProtectSymbolAbsoluteTransformable
@@ -6,20 +8,30 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface WithCrestlinePresenter : NSObject
 @interface WithCrestlinePresenter : NSObject
 
-+ (NSString *)getAppDocumentPath;
+//: + (NSString *)filepathForImage:(NSString *)filename;
++ (NSString *)intervalernalRepresentationForFilepath:(NSString *)filename;
 
-+ (NSString *)getAppTempPath;
+//: + (NSString *)userDirectory;
++ (NSString *)his;
 
-+ (NSString *)userDirectory;
+//: + (NSString *)getAppTempPath;
++ (NSString *)get;
 
-+ (NSString *)genFilenameWithExt:(NSString *)ext;
+//: + (NSString *)genFilenameWithExt:(NSString *)ext;
++ (NSString *)exclusiveExt:(NSString *)ext;
 
-+ (NSString *)filepathForVideo:(NSString *)filename;
+//: + (NSString *)getAppDocumentPath;
++ (NSString *)detail;
 
-+ (NSString *)filepathForImage:(NSString *)filename;
+//: + (NSString *)filepathForVideo:(NSString *)filename;
++ (NSString *)date:(NSString *)filename;
 
+//: @end
 @end

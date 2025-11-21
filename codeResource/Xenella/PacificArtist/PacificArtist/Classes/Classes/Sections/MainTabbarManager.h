@@ -1,24 +1,42 @@
-#import <Foundation/Foundation.h>
-#import <SSZipArchive/SSZipArchive.h>
-NS_ASSUME_NONNULL_BEGIN
-#define kPacificArtist @"PacificArtist"
+// __DEBUG__
+// __CLOSE_PRINT__
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
+//: #import <SSZipArchive/SSZipArchive.h>
+#import <SSZipArchive/SSZipArchive.h>
+
+//: NS_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_BEGIN
+
+
+//: @interface MainTabbarManager : NSObject
 @interface MainTabbarManager : NSObject
 
-+ (instancetype)sharedManager;
+//: - (NSString *)getXML_filePath;
+- (NSString *)directlyCircuit;
 
-- (NSString *)getHtml_filePath;
+//: - (NSString *)getEmojiPath;
+- (NSString *)capture;
 
-- (NSString *)getXML_filePath;
+//: - (NSString *)getHtml_filePath;
+- (NSString *)bePath;
 
-- (NSString *)getEmojiPath;
+//: - (NSString *)getLprojPath;
+- (NSString *)checkTrigger;
 
-- (NSString *)getLprojPath;
+//: - (UIImage *)zip_imageNamed:(NSString *)name;
+- (UIImage *)thoughtImageEqual:(NSString *)name;
 
-- (NSString *)getVoicePath;
+//: + (instancetype)sharedManager;
++ (instancetype)lopeModify;
 
-- (UIImage *)zip_imageNamed:(NSString *)name;
+//: - (NSString *)getVoicePath;
+- (NSString *)nurseLog;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ValueVerseFacade.h
 //  NIM
@@ -6,25 +8,36 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: typedef void(^SpeiceBackBlock) (NSString *groupName);
 typedef void(^SpeiceBackBlock) (NSString *groupName);
 
+//: @interface ValueVerseFacade : UIView
 @interface ValueVerseFacade : UIView
 
-@property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;
+//: @property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;
+@property (nonatomic, copy) SpeiceBackBlock sort;
 
-@property (nonatomic, strong) NSString *nickname;
+//: @property (nonatomic, strong) NSString *nickname;
+@property (nonatomic, strong) NSString *system;
 
 //- (void)reloadWithNickname:(NSString *)name;
 
 /** 动画显示 */
-- (void)animationShow;
+//: - (void)animationShow;
+- (void)important;
 
 /** 动画关闭 */
-- (void)animationClose;
+//: - (void)animationClose;
+- (void)animationWithImmediateEnable;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

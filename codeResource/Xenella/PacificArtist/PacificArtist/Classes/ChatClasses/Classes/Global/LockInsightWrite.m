@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LockInsightWrite.m
 // StableProtectSymbolAbsoluteTransformable
@@ -6,8 +8,12 @@
 //  Copyright © 2017年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "LockInsightWrite.h"
 #import "LockInsightWrite.h"
 
+//: @implementation LockInsightWrite
 @implementation LockInsightWrite
 
+//: @end
 @end

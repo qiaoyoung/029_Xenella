@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  WorkbenchMixerMeasure.h
 //  NIMDemo
@@ -6,13 +8,19 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface WorkbenchMixerMeasure : UIView
 @interface WorkbenchMixerMeasure : UIView
 
-@property (nonatomic, copy) NSString *badgeValue;
+//: @property (nonatomic, copy) NSString *badgeValue;
+@property (nonatomic, copy) NSString *insideText;
 
-+ (instancetype)viewWithBadgeTip:(NSString *)badgeValue;
+//: + (instancetype)viewWithBadgeTip:(NSString *)badgeValue;
++ (instancetype)with:(NSString *)badgeValue;
 
 
+//: @end
 @end

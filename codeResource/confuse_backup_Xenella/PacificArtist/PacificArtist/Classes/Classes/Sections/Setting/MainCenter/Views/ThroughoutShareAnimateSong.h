@@ -1,0 +1,32 @@
+//
+//  ThroughoutShareAnimateSong.h
+//  Xenella
+//
+//  Created by Yan Wang on 2025/2/5.
+//  Copyright © 2025 Xenella. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@protocol ThroughoutShareAnimateSongDelegate <NSObject>
+
+- (void)didTouchNextButton;
+- (void)didTouchProtocolButton;
+
+@end
+
+@interface ThroughoutShareAnimateSong : UIView
+
+@property (nonatomic,weak) id<ThroughoutShareAnimateSongDelegate> delegate;
+
+/** 动画显示 */
+- (void)animationShow;
+
+/** 动画关闭 */
+- (void)animationClose;
+
+@end
+
+NS_ASSUME_NONNULL_END

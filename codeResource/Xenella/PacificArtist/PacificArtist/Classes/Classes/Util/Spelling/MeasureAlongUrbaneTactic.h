@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  MeasureAlongUrbaneTactic.h
 //  NIM
@@ -6,10 +8,16 @@
 //  Copyright (c) 2013 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface MeasureAlongUrbaneTactic : NSObject
 @interface MeasureAlongUrbaneTactic : NSObject
-+ (MeasureAlongUrbaneTactic *)sharedInstance;
+//: - (NSString *)toPinyin: (NSString *)source;
+- (NSString *)basic: (NSString *)source;
 
-- (NSString *)toPinyin: (NSString *)source;
+//: + (MeasureAlongUrbaneTactic *)sharedInstance;
++ (MeasureAlongUrbaneTactic *)ovalAccount;
+//: @end
 @end

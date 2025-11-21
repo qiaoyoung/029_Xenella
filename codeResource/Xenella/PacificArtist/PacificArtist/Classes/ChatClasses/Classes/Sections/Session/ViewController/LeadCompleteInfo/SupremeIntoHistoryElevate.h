@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SupremeIntoHistoryElevate.h
 //  sohunews
@@ -6,22 +8,34 @@
 //  Copyright © 2020 Sohu.com. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface SupremeIntoHistoryElevate : NSObject
 @interface SupremeIntoHistoryElevate : NSObject
 
-dSINGLETON_FOR_CLASS_HEADER(SupremeIntoHistoryElevate);
+//: + (instancetype)sharedInstance;;
++ (instancetype)compoundProcess;;
+
+//: - (void)dismissLeadView;
+- (void)easy;
+
 
 /// 引导用户完善资料，显示提示框
-- (void)showLeadViewForCompletingUserInfoWithSuperView:(UIView *)superView
-                                           withMessage:(NSString *)msg
-                                           cancleBlock:(void (^)(void))callback;
-
-- (void)dismissLeadView;
-
+//: - (void)showLeadViewForCompletingUserInfoWithSuperView:(UIView *)superView
+- (void)cubicTextUnit:(UIView *)superView
+                                           //: withMessage:(NSString *)msg
+                                           underMonitor:(NSString *)msg
+                                           //: cancleBlock:(void (^)(void))callback;
+                                           keyRiver:(void (^)(void))callback;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

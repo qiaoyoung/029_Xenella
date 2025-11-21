@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  QuietAcceptLoad.h
 //  NIM
@@ -6,11 +8,14 @@
 //  Copyright © 2016年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import "StableProtectSymbolAbsoluteTransformable.h"
 #import "StableProtectSymbolAbsoluteTransformable.h"
 
-#define USERMessageRefusedTag  @"USERMessageRefusedTag"
-
+//: @interface QuietAcceptLoad : ModularUntilViewCrest<ModularUntilViewCrest>
 @interface QuietAcceptLoad : ModularUntilViewCrest<ModularUntilViewCrest>
 
+//: @end
 @end

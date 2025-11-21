@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UITextFieldView+EdgeMapWealthShader.h
 //  https://github.com/hackiftekhar/PackAddSpot
@@ -21,36 +23,46 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "PackAddSpotConstants.h"
 #import "PackAddSpotConstants.h"
+
 /**
  UIView category for managing UITextField/UITextView
  */
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface UIView (EdgeMapWealthShader)
 @interface UIView (EdgeMapWealthShader)
 
 /**
  To set customized distance from keyboard for textField/textView. Can't be less than zero
  */
-@property(nonatomic, assign) CGFloat keyboardDistanceFromTextField;
+//: @property(nonatomic, assign) CGFloat keyboardDistanceFromTextField;
+@property(nonatomic, assign) CGFloat putCollected;
 
 /**
  If shouldIgnoreSwitchingByNextPrevious is YES then library will ignore this textField/textView while moving to other textField/textView using keyboard toolbar next previous buttons. Default is NO
  */
-@property(nonatomic, assign) BOOL ignoreSwitchingByNextPrevious;
+//: @property(nonatomic, assign) BOOL ignoreSwitchingByNextPrevious;
+@property(nonatomic, assign) BOOL subYearred;
 
 ///**
 // Override Enable/disable managing distance between keyboard and textField behavior for this particular textField.
 // */
-@property(nonatomic, assign) TuneLaneStructure enableMode;
+//: @property(nonatomic, assign) TuneLaneStructure enableMode;
+@property(nonatomic, assign) TuneLaneStructure unusualBacks;
 
 /**
  Override resigns Keyboard on touching outside of UITextField/View behavior for this particular textField.
  */
-@property(nonatomic, assign) TuneLaneStructure shouldResignOnTouchOutsideMode;
+//: @property(nonatomic, assign) TuneLaneStructure shouldResignOnTouchOutsideMode;
+@property(nonatomic, assign) TuneLaneStructure orientationTiming;
 
+//: @end
 @end
 
 ///-------------------------------------------
@@ -60,4 +72,5 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 /**
  Uses default keyboard distance for textField.
  */
-extern CGFloat const kIQUseDefaultKeyboardDistance;
+//: extern CGFloat const kIQUseDefaultKeyboardDistance;
+extern CGFloat const colorExpressionDevice(NSString *value);

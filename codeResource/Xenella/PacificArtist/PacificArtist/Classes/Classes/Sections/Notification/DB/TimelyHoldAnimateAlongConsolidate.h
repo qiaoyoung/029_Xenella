@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TimelyHoldAnimateAlongConsolidate.h
 //  NIM
@@ -6,24 +8,37 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @class MeasuredLedgeWorld;
 @class MeasuredLedgeWorld;
+//: @interface TimelyHoldAnimateAlongConsolidate : NSObject
 @interface TimelyHoldAnimateAlongConsolidate : NSObject
 
-dSINGLETON_FOR_CLASS_HEADER(TimelyHoldAnimateAlongConsolidate);
+//: + (instancetype)sharedInstance;;
++ (instancetype)dataConverterCreate;;
 
-@property (nonatomic,assign) NSInteger unreadCount;
+//: @property (nonatomic,assign) NSInteger unreadCount;
+@property (nonatomic,assign) NSInteger character;
 
-- (NSArray *)fetchNotifications:(MeasuredLedgeWorld *)notification
-                          limit:(NSInteger)limit;
+//: - (void)markAllNotificationsAsRead;
+- (void)hold;
 
-- (BOOL)saveNotification:(MeasuredLedgeWorld *)notification;
 
-- (void)deleteNotification:(MeasuredLedgeWorld *)notification;
+//: - (void)deleteAllNotification;
+- (void)world;
 
-- (void)deleteAllNotification;
+//: - (NSArray *)fetchNotifications:(MeasuredLedgeWorld *)notification
+- (NSArray *)signature:(MeasuredLedgeWorld *)notification
+                          //: limit:(NSInteger)limit;
+                          manMagnitudeerruptTotal:(NSInteger)limit;
+//: - (void)deleteNotification:(MeasuredLedgeWorld *)notification;
+- (void)brandText:(MeasuredLedgeWorld *)notification;
 
-- (void)markAllNotificationsAsRead;
+//: - (BOOL)saveNotification:(MeasuredLedgeWorld *)notification;
+- (BOOL)enablelyFederal:(MeasuredLedgeWorld *)notification;
 
+//: @end
 @end

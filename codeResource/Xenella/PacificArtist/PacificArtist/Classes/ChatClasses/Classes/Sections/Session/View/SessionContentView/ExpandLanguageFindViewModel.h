@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ExpandLanguageFindViewModel.h
 // StableProtectSymbolAbsoluteTransformable
@@ -6,10 +8,15 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "VisualizePrintInteractor.h"
 #import "VisualizePrintInteractor.h"
 
+//: @interface ExpandLanguageFindViewModel : VisualizePrintInteractor
 @interface ExpandLanguageFindViewModel : VisualizePrintInteractor
 
-@property (strong, nonatomic) UILabel *label;
+//: @property (strong, nonatomic) UILabel *label;
+@property (strong, nonatomic) UILabel *boardQuit;
 
+//: @end
 @end

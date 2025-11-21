@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SignatureCoolAmongProjectorModel.m
 //  SignatureCoolAmongProjectorDemo
@@ -6,8 +8,11 @@
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "SignatureCoolAmongProjectorModel.h"
 #import "SignatureCoolAmongProjectorModel.h"
 
+//: @implementation SignatureCoolAmongProjectorModel
 @implementation SignatureCoolAmongProjectorModel
 
 /**
@@ -19,12 +24,19 @@
  *
  *  @return 实例化的菜单模型
  */
-+ (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock {
+//: + (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock {
++ (instancetype)trait:(NSString *)menuItemTitle outOfDoors:(NSString *)menuItemIconName appear:(FFMenuBlock)menuBlock {
+    //: SignatureCoolAmongProjectorModel *model = [SignatureCoolAmongProjectorModel new];
     SignatureCoolAmongProjectorModel *model = [SignatureCoolAmongProjectorModel new];
-    model.menuItemTitle = menuItemTitle;
-    model.menuItemIconName = menuItemIconName;
-    model.menuBlock = menuBlock;
+    //: model.menuItemTitle = menuItemTitle;
+    model.constraint = menuItemTitle;
+    //: model.menuItemIconName = menuItemIconName;
+    model.patronym = menuItemIconName;
+    //: model.menuBlock = menuBlock;
+    model.target = menuBlock;
+    //: return model;
     return model;
 }
 
+//: @end
 @end

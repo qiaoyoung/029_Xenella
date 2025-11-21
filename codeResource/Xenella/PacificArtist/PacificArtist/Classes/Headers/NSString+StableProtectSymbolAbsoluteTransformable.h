@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSString+NIM.h
 // StableProtectSymbolAbsoluteTransformable
@@ -6,28 +8,42 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface NSString (StableProtectSymbolAbsoluteTransformable)
 @interface NSString (StableProtectSymbolAbsoluteTransformable)
 
-- (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+//: - (UIColor *)nim_hexToColor;
+- (UIColor *)index;
 
-- (NSString *)nim_MD5String;
+//: - (NSRange)nim_rangeOfLastUnicode;
+- (NSRange)young;
 
-- (NSUInteger)nim_getBytesLength;
+//: - (BOOL)nim_fileIsExist;
+- (BOOL)event;
 
-- (NSString *)nim_stringByDeletingPictureResolution;
+//: - (NSString *)nim_MD5String;
+- (NSString *)successTitle;
 
-- (UIColor *)nim_hexToColor;
+//: - (NSString *)nim_localized;
+- (NSString *)flat;
 
-- (BOOL)nim_fileIsExist;
+//: - (NSString *)nim_localizedWithTable:(NSString *)table;
+- (NSString *)constituent:(NSString *)table;
 
 
-- (NSString *)nim_localized;
+//: - (NSString *)nim_stringByDeletingPictureResolution;
+- (NSString *)colour;
 
-- (NSString *)nim_localizedWithTable:(NSString *)table;
+//: - (BOOL)nim_containsEmoji;
+- (BOOL)dryLand;
 
-- (BOOL)nim_containsEmoji;
+//: - (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+- (CGSize)drawIn:(UIFont *)font;
 
-- (NSRange)nim_rangeOfLastUnicode;
+//: - (NSUInteger)nim_getBytesLength;
+- (NSUInteger)become;
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SignatureCoolAmongProjectorModel.h
 //  SignatureCoolAmongProjectorDemo
@@ -6,19 +8,24 @@
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "SignatureCoolAmongProjectorBasedModel.h"
 #import "SignatureCoolAmongProjectorBasedModel.h"
 
 /**
  *  下拉菜单模型
  */
+//: @interface SignatureCoolAmongProjectorModel : SignatureCoolAmongProjectorBasedModel
 @interface SignatureCoolAmongProjectorModel : SignatureCoolAmongProjectorBasedModel
 
 
 /** 菜单选项标题 */
-@property (nonatomic, copy) NSString *menuItemTitle;
-
 /** 菜单选项图标名称 */
-@property (nonatomic, copy) NSString *menuItemIconName;
+//: @property (nonatomic, copy) NSString *menuItemIconName;
+@property (nonatomic, copy) NSString *patronym;
+
+//: @property (nonatomic, copy) NSString *menuItemTitle;
+@property (nonatomic, copy) NSString *constraint;
 
 
 /**
@@ -30,6 +37,8 @@
  *
  *  @return 实例化的菜单模型
  */
-+ (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock;
+//: + (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock;
++ (instancetype)trait:(NSString *)menuItemTitle outOfDoors:(NSString *)menuItemIconName appear:(FFMenuBlock)menuBlock;
 
+//: @end
 @end

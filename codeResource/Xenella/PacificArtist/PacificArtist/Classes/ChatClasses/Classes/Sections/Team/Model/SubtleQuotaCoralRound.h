@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TeamCardRowItem.h
 //  NIM
@@ -6,39 +8,59 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import "AcrossAssignSuite.h"
 #import "AcrossAssignSuite.h"
 
+//: typedef void(^NIMTeamCardRowSelectedBlock)(id <AlongsideScaleInsideMeasured> item);
 typedef void(^NIMTeamCardRowSelectedBlock)(id <AlongsideScaleInsideMeasured> item);
 
+//: @interface SubtleQuotaCoralRound : NSObject
 @interface SubtleQuotaCoralRound : NSObject
 
-@property(nonatomic,copy) NSString *title;
+//: @property(nonatomic,assign) SEL action;
+@property(nonatomic,assign) SEL readingWaterred;
 
-@property(nonatomic,copy) NSString *subTitle;
+//: @property(nonatomic,assign) BOOL actionDisabled;
+@property(nonatomic,assign) BOOL transportPairs;
 
-@property(nonatomic,copy) UIImage *img;
+//: @property(nonatomic,strong) id value;
+@property(nonatomic,strong) id observe;
 
-@property(nonatomic,assign) CGFloat rowHeight;
+//: @property(nonatomic,copy) NSString *title;
+@property(nonatomic,copy) NSString *last;
 
-@property(nonatomic,assign) SEL action;
+//: @property(nonatomic,assign) NSInteger identify;
+@property(nonatomic,assign) NSInteger victory;
 
-@property(nonatomic,assign) BOOL actionDisabled;
+//: @property(nonatomic,strong) NSMutableArray <id <AlongsideScaleInsideMeasured>> *optionItems;
+@property(nonatomic,strong) NSMutableArray <id <AlongsideScaleInsideMeasured>> *besideItems;
 
-@property(nonatomic,assign) BOOL disableUserInteraction;
+//: @property(nonatomic,assign) BlockGeneratePresenter type;
+@property(nonatomic,assign) BlockGeneratePresenter readNovelResistance;
 
-@property(nonatomic,assign) BlockGeneratePresenter type;
+//: @property(nonatomic,assign) BOOL switchOn;
+@property(nonatomic,assign) BOOL flush;
 
-@property(nonatomic,assign) BOOL switchOn;
+//: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
+@property(nonatomic,strong) NIMTeamCardRowSelectedBlock array;
 
-@property(nonatomic,strong) id value;
+//: @property(nonatomic,assign) CGFloat rowHeight;
+@property(nonatomic,assign) CGFloat reply;
 
-@property(nonatomic,assign) NSInteger identify;
+//: @property(nonatomic,copy) UIImage *img;
+@property(nonatomic,copy) UIImage *worth;
 
-@property(nonatomic,strong) NSMutableArray <id <AlongsideScaleInsideMeasured>> *optionItems;
+//: @property(nonatomic,assign) BOOL disableUserInteraction;
+@property(nonatomic,assign) BOOL show;
 
-@property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
+//: @property(nonatomic,copy) NSString *subTitle;
+@property(nonatomic,copy) NSString *subProcess;
 
-@property(nonatomic,assign) BOOL selected;
+//: @property(nonatomic,assign) BOOL selected;
+@property(nonatomic,assign) BOOL album;
 
+//: @end
 @end

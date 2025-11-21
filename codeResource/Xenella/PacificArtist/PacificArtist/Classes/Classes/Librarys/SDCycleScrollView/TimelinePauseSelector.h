@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TimelinePauseSelector.h
 //  ScrollAssemblerReturnRevoke
@@ -6,9 +8,11 @@
 //  Copyright (c) 2015 Tanguy Aladenise. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-
+//: @interface TimelinePauseSelector : UIView
 @interface TimelinePauseSelector : UIView
 
 
@@ -17,8 +21,9 @@
  *
  *  @param active BOOL to tell if view is active or not
  */
-- (void)changeActivityState:(BOOL)active;
+//: - (void)changeActivityState:(BOOL)active;
+- (void)limitted:(BOOL)active;
 
 
+//: @end
 @end
-

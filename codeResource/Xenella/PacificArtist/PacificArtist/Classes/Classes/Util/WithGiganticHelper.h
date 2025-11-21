@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  WithGiganticHelper.h
 //  NIM
@@ -6,25 +8,33 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define ImageExt   (@"jpg")
-
-
+//: @interface WithGiganticHelper : NSObject
 @interface WithGiganticHelper : NSObject
 
-+ (NSString *)getAppDocumentPath;
+//: + (NSString *)filepathForVideo:(NSString *)filename;
++ (NSString *)recording:(NSString *)filename;
 
-+ (NSString *)getAppTempPath;
+//: + (NSString *)filepathForMergeForwardFile:(NSString *)filename;
++ (NSString *)meanwhile:(NSString *)filename;
 
-+ (NSString *)userDirectory;
+//: + (NSString *)getAppTempPath;
++ (NSString *)custom;
 
-+ (NSString *)genFilenameWithExt:(NSString *)ext;
+//: + (NSString *)userDirectory;
++ (NSString *)lick;
 
-+ (NSString *)filepathForVideo:(NSString *)filename;
+//: + (NSString *)filepathForImage:(NSString *)filename;
++ (NSString *)exceptSolutionImage:(NSString *)filename;
 
-+ (NSString *)filepathForImage:(NSString *)filename;
+//: + (NSString *)getAppDocumentPath;
++ (NSString *)createHouse;
 
-+ (NSString *)filepathForMergeForwardFile:(NSString *)filename;
+//: + (NSString *)genFilenameWithExt:(NSString *)ext;
++ (NSString *)drop:(NSString *)ext;
 
+//: @end
 @end

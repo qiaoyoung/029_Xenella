@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMRtcCallRecordCntentConfig.h
 // StableProtectSymbolAbsoluteTransformable
@@ -6,12 +8,18 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "NovelWorkflowAnimatorOrderAddReceive.h"
 #import "NovelWorkflowAnimatorOrderAddReceive.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface ImplementClassBasinCreator : NSObject<VictoriousSearchBefore>
 @interface ImplementClassBasinCreator : NSObject<VictoriousSearchBefore>
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

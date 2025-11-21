@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AmongByAccelerate.h
 //
@@ -20,15 +22,20 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
 //! Project version number for AmongByAccelerate.
+
+// __M_A_C_R_O__
+
+//: FOUNDATION_EXPORT double AmongByAccelerateVersionNumber;
 FOUNDATION_EXPORT double AmongByAccelerateVersionNumber;
 
 //! Project version string for AmongByAccelerate.
+//: FOUNDATION_EXPORT const unsigned char AmongByAccelerateVersionString[];
 FOUNDATION_EXPORT const unsigned char AmongByAccelerateVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AmongByAccelerate/PublicHeader.h>
 
+//: #import <AmongByAccelerate/UINavigationController+AmongByAccelerate.h>
 #import <AmongByAccelerate/UINavigationController+AmongByAccelerate.h>

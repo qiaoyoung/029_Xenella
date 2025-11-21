@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSObject+AmongByAccelerate.m
 //
@@ -21,42 +23,63 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "NSObject+AmongByAccelerate.h"
 #import "NSObject+AmongByAccelerate.h"
+//: #import "UINavigationController+AmongByAccelerate_internal.h"
 #import "UINavigationController+AmongByAccelerate_internal.h"
+//: #import "UINavigationBar+AmongByAccelerate_internal.h"
 #import "UINavigationBar+AmongByAccelerate_internal.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
+//: #import "JourneyOutsideLevelStandPaint.h"
 #import "JourneyOutsideLevelStandPaint.h"
 
+//: @implementation NSObject (AmongByAccelerate)
 @implementation NSObject (AmongByAccelerate)
 
+//: - (void)km_setHidden:(BOOL)hidden {
+- (void)recessed:(BOOL)hidden {
+    //: UIResponder *responder = (UIResponder *)self;
+    UIResponder *responder = (UIResponder *)self;
+    //: while (responder) {
+    while (responder) {
+        //: if ([responder isKindOfClass:[UINavigationBar class]] && ((UINavigationBar *)responder).km_isFakeBar) {
+        if ([responder isKindOfClass:[UINavigationBar class]] && ((UINavigationBar *)responder).displayOned) {
+            //: return;
+            return;
+        }
+        //: if ([responder isKindOfClass:[UINavigationController class]]) {
+        if ([responder isKindOfClass:[UINavigationController class]]) {
+            //: [self km_setHidden:((UINavigationController *)responder).km_backgroundViewHidden];
+            [self recessed:((UINavigationController *)responder).voiceDataed];
+            //: return;
+            return;
+        }
+        //: responder = responder.nextResponder;
+        responder = responder.nextResponder;
+    }
+    //: [self km_setHidden:hidden];
+    [self recessed:hidden];
+}
+
+//: + (void)load {
 + (void)load {
+    //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        JourneyOutsideLevelStandPaintMethod(objc_getClass("_UIBarBackground"),
+    //: _dispatch_once(&onceToken, ^{
+    _dispatch_once(&onceToken, ^{
+        //: JourneyOutsideLevelStandPaintMethod(objc_getClass("_UIBarBackground"),
+        originalRequired(objc_getClass("_UIBarBackground"),
+                        //: @selector(setHidden:),
                         @selector(setHidden:),
+                        //: [self class],
                         [self class],
-                        @selector(km_setHidden:));
+                        //: @selector(km_setHidden:));
+                        @selector(recessed:));
+    //: });
     });
 }
 
-- (void)km_setHidden:(BOOL)hidden {
-    UIResponder *responder = (UIResponder *)self;
-    while (responder) {
-        if ([responder isKindOfClass:[UINavigationBar class]] && ((UINavigationBar *)responder).km_isFakeBar) {
-            return;
-        }
-        if ([responder isKindOfClass:[UINavigationController class]]) {
-            [self km_setHidden:((UINavigationController *)responder).km_backgroundViewHidden];
-            return;
-        }
-        responder = responder.nextResponder;
-    }
-    [self km_setHidden:hidden];
-}
-
+//: @end
 @end
-
-
-
-
-

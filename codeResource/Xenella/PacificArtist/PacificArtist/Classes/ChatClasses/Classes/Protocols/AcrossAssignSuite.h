@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AcrossAssignSuite.h
 //  NIM
@@ -5,97 +7,152 @@
 //  Created by chris on 15/3/5.
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
+// __M_A_C_R_O__
+
+//: @protocol AlongsideScaleInsideMeasured;
 @protocol AlongsideScaleInsideMeasured;
 
+//: typedef void(^NIMTeamCardRowSelectedBlock)(id <AlongsideScaleInsideMeasured> item);
 typedef void(^NIMTeamCardRowSelectedBlock)(id <AlongsideScaleInsideMeasured> item);
 
+//: typedef NS_ENUM(NSInteger, ConverterFrameworkDevice){
 typedef NS_ENUM(NSInteger, ConverterFrameworkDevice){
-    ConverterFrameworkDeviceNone   = 0,
-    ConverterFrameworkDeviceAdd    = (1UL << 0),
+    //: ConverterFrameworkDeviceNone = 0,
+    ConverterFrameworkDeviceNone = 0,
+    //: ConverterFrameworkDeviceAdd = (1UL << 0),
+    ConverterFrameworkDeviceAdd = (1UL << 0),
+    //: ConverterFrameworkDeviceRemove = (1UL << 1),
     ConverterFrameworkDeviceRemove = (1UL << 1),
+//: };
 };
 
+//: typedef NS_ENUM(NSInteger, BlockGeneratePresenter) {
 typedef NS_ENUM(NSInteger, BlockGeneratePresenter) {
+    //: BlockGeneratePresenterCommon,
     BlockGeneratePresenterCommon,
+    //: BlockGeneratePresenterTeamMember,
     BlockGeneratePresenterTeamMember,
+    //: BlockGeneratePresenterRedButton,
     BlockGeneratePresenterRedButton,
+    //: BlockGeneratePresenterBlueButton,
     BlockGeneratePresenterBlueButton,
+    //: BlockGeneratePresenterSwitch,
     BlockGeneratePresenterSwitch,
+    //: BlockGeneratePresenterSelected,
     BlockGeneratePresenterSelected,
+//: };
 };
 
+//: @protocol LocalizeAccelerateFabricMakeReactive <NSObject>
 @protocol LocalizeAccelerateFabricMakeReactive <NSObject>
 
-- (NSString *)teamId;
+//: - (NSString *)teamId;
+- (NSString *)leaveValue;
 
-- (NSString *)userId;
+//: - (NSString *)userId;
+- (NSString *)subtle;
 
-- (NIMTeamMemberType)userType;
+//: - (NIMTeamMemberType)userType;
+- (NIMTeamMemberType)sort;
 
-- (void)setUserType:(NIMTeamMemberType)userType;
+//: - (void)setUserType:(NIMTeamMemberType)userType;
+- (void)setSort:(NIMTeamMemberType)userType;
 
-- (NIMTeamType)teamType;
+//: - (NIMTeamType)teamType;
+- (NIMTeamType)among;
 
-- (UIImage *)imageNormal;
+//: - (UIImage *)imageNormal;
+- (UIImage *)circle;
 
-- (NSString *)title;
+//: - (NSString *)title;
+- (NSString *)locationTitle;
 
-- (NSString *)imageUrl;
+//: - (NSString *)imageUrl;
+- (NSString *)powerClick;
 
-- (NSString *)inviterAccid;
+//: - (NSString *)inviterAccid;
+- (NSString *)silver;
 
-- (BOOL)isMuted;
+//: - (BOOL)isMuted;
+- (BOOL)guide;
 
-- (BOOL)isMyUserId;
+//: - (BOOL)isMyUserId;
+- (BOOL)program;
 
+//: @end
 @end
 
+//: @protocol AlongsideScaleInsideMeasured <NSObject>
 @protocol AlongsideScaleInsideMeasured <NSObject>
 
-- (id)value;
+//: - (id)value;
+- (id)graphicRecord;
 
-- (NSString *)title;
+//: - (NSString *)title;
+- (NSString *)aspect;
 
-- (NSString *)img;
+//: - (NSString *)img;
+- (NSString *)form;
 
-- (BOOL)selected;
+//: - (BOOL)selected;
+- (BOOL)hark;
 
-- (void)setSelected:(BOOL)selected;
+//: - (void)setSelected:(BOOL)selected;
+- (void)setHark:(BOOL)selected;
 
+//: @end
 @end
 
+//: @protocol HelperHelperBonnyBuilder <NSObject>
 @protocol HelperHelperBonnyBuilder <NSObject>
 
-- (NSString *)title;
+//: - (NSString *)title;
+- (NSString *)page;
 
-- (id)value;
+//: - (id)value;
+- (id)response;
 
-- (BlockGeneratePresenter)type;
+//: - (BlockGeneratePresenter)type;
+- (BlockGeneratePresenter)thinType;
 
-- (CGFloat)rowHeight;
+//: - (CGFloat)rowHeight;
+- (CGFloat)jungleConnect;
 
-- (NIMTeamCardRowSelectedBlock)selectedBlock;
+//: - (NIMTeamCardRowSelectedBlock)selectedBlock;
+- (NIMTeamCardRowSelectedBlock)near;
 
-- (NSMutableArray <id <AlongsideScaleInsideMeasured>> *)optionItems;
+//: - (NSMutableArray <id <AlongsideScaleInsideMeasured>> *)optionItems;
+- (NSMutableArray <id <AlongsideScaleInsideMeasured>> *)reason;
 
+//: @optional
 @optional
-- (NSString *)subTitle;
+//: - (NSString *)subTitle;
+- (NSString *)hearing;
 
-- (UIImage *)img;
+//: - (UIImage *)img;
+- (UIImage *)data;
 
-- (SEL)action;
+//: - (SEL)action;
+- (SEL)someone;
 
-- (BOOL)actionDisabled;
+//: - (BOOL)actionDisabled;
+- (BOOL)active;
 
-- (BOOL)switchOn;
+//: - (BOOL)switchOn;
+- (BOOL)gunfire;
 
-- (NSInteger)identify;
+//: - (NSInteger)identify;
+- (NSInteger)via;
 
-- (BOOL)disableUserInteraction;
+//: - (BOOL)disableUserInteraction;
+- (BOOL)communityBoard;
 
+//: @end
 @end

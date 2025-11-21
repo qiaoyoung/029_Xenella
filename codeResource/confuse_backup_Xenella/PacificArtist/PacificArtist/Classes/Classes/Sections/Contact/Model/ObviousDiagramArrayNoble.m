@@ -1,0 +1,82 @@
+//
+//  ObviousDiagramArrayNoble.m
+//  NIM
+//
+//  Created by chris on 15/9/21.
+//  Copyright © 2015年 Netease. All rights reserved.
+//
+
+#import "ObviousDiagramArrayNoble.h"
+#import "FreshSelectorDefineWatch.h"
+
+@implementation ObviousDiagramArrayNoble
+
+- (CGFloat)uiHeight{
+    return 60;
+}
+
+//userId和Vcname必有一个有值，根据有值的状态push进不同的页面
+
+- (NSString *)vcName{
+    return nil;
+}
+
+- (NSString *)reuseId{
+    return @"USERContactDataItem";
+}
+
+- (NSString *)cellName{
+    return @"MapDecodeAmongAbove";
+}
+
+- (NSString *)badge{
+    return @"";
+}
+
+- (NSString *)groupTitle {
+    NSString *title = [[FreshSelectorDefineWatch sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    unichar character = [title characterAtIndex:0];
+    if (character >= 'A' && character <= 'Z') {
+        return title;
+    }else{
+        return @"#";
+    }
+}
+
+- (NSString *)userId{
+    return self.info.infoId;
+}
+
+- (UIImage *)icon{
+    return self.info.avatarImage;
+}
+
+- (NSString *)avatarUrl{
+    return self.info.avatarUrlString;
+}
+
+- (NSString *)memberId{
+    return self.info.infoId;
+}
+
+- (NSString *)showName{
+    return self.info.showName;
+}
+
+- (BOOL)showAccessoryView{
+    return NO;
+}
+
+- (id)sortKey {
+    return [[FreshSelectorDefineWatch sharedCenter] spellingForString:self.info.showName].shortSpelling;
+}
+
+- (BOOL)isEqual:(id)object{
+    if (![object isKindOfClass:[self class]]) {
+        return NO;
+    }
+    return [self.info.infoId isEqualToString:[[object info] infoId]];
+}
+
+
+@end

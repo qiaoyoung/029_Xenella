@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  FillTrainBinderReset.h
 //  NIM
@@ -6,17 +8,25 @@
 //  Copyright © 2017年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
 
+//: @interface FillTrainBinderReset : NSObject
 @interface FillTrainBinderReset : NSObject
 
-+ (instancetype)sharedManager;
+//: - (void)start;
+- (void)month;
 
-- (void)start;
+//: - (void)subscribeTempNorthConvertForwardState:(NSString *)userId;
+- (void)alongBeat:(NSString *)userId;
 
-- (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+//: - (void)unsubscribeTempNorthConvertForwardState:(NSString *)userId;
+- (void)access:(NSString *)userId;
 
-- (void)subscribeTempNorthConvertForwardState:(NSString *)userId;
+//: + (instancetype)sharedManager;
++ (instancetype)lopeModify;
 
-- (void)unsubscribeTempNorthConvertForwardState:(NSString *)userId;
+//: - (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+- (NSDictionary<NIMSubscribeEvent *, NSString *> *)sinceDirect:(NSInteger)type;
 
+//: @end
 @end

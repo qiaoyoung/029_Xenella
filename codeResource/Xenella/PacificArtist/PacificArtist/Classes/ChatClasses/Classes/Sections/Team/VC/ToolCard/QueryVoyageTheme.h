@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  QueryVoyageTheme.h
 //  NIM
@@ -6,20 +8,30 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: typedef void(^SpeiceBackBlock) (NSString *Introduce);
 typedef void(^SpeiceBackBlock) (NSString *Introduce);
 
+//: @interface QueryVoyageTheme : UIViewController
 @interface QueryVoyageTheme : UIViewController
 
-@property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;
+//: @property (nonatomic, assign)BOOL canEdit;
+@property (nonatomic, assign)BOOL protect;
 
-@property (nonatomic, copy) NSString *defaultContent;
+//: @property (nonatomic, copy) NSString *defaultContent;
+@property (nonatomic, copy) NSString *name;
 
-@property (nonatomic, assign)BOOL canEdit;
+//: @property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;
+@property (nonatomic, copy) SpeiceBackBlock oval;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

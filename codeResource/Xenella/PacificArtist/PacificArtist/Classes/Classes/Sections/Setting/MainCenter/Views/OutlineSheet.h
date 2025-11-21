@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  OutlineSheet.h
 //  NIM
@@ -6,27 +8,39 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 
+//: @protocol OutlineSheetDelegate <NSObject>
 @protocol OutlineSheetDelegate <NSObject>
 
-- (void)didTouchTheBtnWith:(NSInteger )tag;
+//: - (void)didTouchTheBtnWith:(NSInteger )tag;
+- (void)smarts:(NSInteger )tag;
 
+//: @end
 @end
 
+//: @interface OutlineSheet : UIView
 @interface OutlineSheet : UIView
 
-@property (nonatomic,weak) id<OutlineSheetDelegate> delegate;
-
-/** 动画显示 */
-- (void)animationShow;
+//: @property (nonatomic,weak) id<OutlineSheetDelegate> delegate;
+@property (nonatomic,weak) id<OutlineSheetDelegate> arrowOutlining;
 
 /** 动画关闭 */
-- (void)animationClose;
+//: - (void)animationClose;
+- (void)animationWithImmediateEnable;
 
+/** 动画显示 */
+//: - (void)animationShow;
+- (void)clickDownShow;
+
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

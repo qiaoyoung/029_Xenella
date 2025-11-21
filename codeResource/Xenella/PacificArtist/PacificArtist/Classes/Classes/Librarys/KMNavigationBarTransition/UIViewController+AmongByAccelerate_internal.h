@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIViewController+AmongByAccelerate_internal.h
 //
@@ -20,13 +22,19 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+// __M_A_C_R_O__
+
+//: @interface UIViewController (AmongByAccelerate_internal)
 @interface UIViewController (AmongByAccelerate_internal)
 
-@property (nonatomic, strong) UINavigationBar *km_transitionNavigationBar;
+//: @property (nonatomic, strong) UINavigationBar *km_transitionNavigationBar;
+@property (nonatomic, strong) UINavigationBar *lowFill;
 
-- (void)km_addTransitionNavigationBarIfNeeded;
+//: - (void)km_addTransitionNavigationBarIfNeeded;
+- (void)ifNeeded;
 
+//: @end
 @end

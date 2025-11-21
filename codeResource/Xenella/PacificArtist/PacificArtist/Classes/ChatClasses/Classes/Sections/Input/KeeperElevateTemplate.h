@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMInputAtManager.h
 // StableProtectSymbolAbsoluteTransformable
@@ -6,31 +8,42 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define NIMInputAtStartChar  @"@"
-#define NIMInputAtEndChar    @"\u2004"
-
+//: @interface LeanTowardGraceful : NSObject
 @interface LeanTowardGraceful : NSObject
 
-@property (nonatomic,copy) NSString *name;
+//: @property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *leadExploration;
 
-@property (nonatomic,copy) NSString *uid;
+//: @property (nonatomic,copy) NSString *uid;
+@property (nonatomic,copy) NSString *begin;
 
-@property (nonatomic,assign) NSRange range;
+//: @property (nonatomic,assign) NSRange range;
+@property (nonatomic,assign) NSRange sample;
 
+//: @end
 @end
 
+//: @interface KeeperElevateTemplate : NSObject
 @interface KeeperElevateTemplate : NSObject
 
-- (NSArray *)allAtUid:(NSString *)sendText;
+//: - (LeanTowardGraceful *)item:(NSString *)name;
+- (LeanTowardGraceful *)capacity:(NSString *)name;
 
-- (void)clean;
+//: - (void)addAtItem:(LeanTowardGraceful *)item;
+- (void)vendorHis:(LeanTowardGraceful *)item;
 
-- (void)addAtItem:(LeanTowardGraceful *)item;
+//: - (void)clean;
+- (void)drawSpring;
 
-- (LeanTowardGraceful *)item:(NSString *)name;
+//: - (LeanTowardGraceful *)removeName:(NSString *)name;
+- (LeanTowardGraceful *)documentContent:(NSString *)name;
 
-- (LeanTowardGraceful *)removeName:(NSString *)name;
+//: - (NSArray *)allAtUid:(NSString *)sendText;
+- (NSArray *)stand:(NSString *)sendText;
 
+//: @end
 @end

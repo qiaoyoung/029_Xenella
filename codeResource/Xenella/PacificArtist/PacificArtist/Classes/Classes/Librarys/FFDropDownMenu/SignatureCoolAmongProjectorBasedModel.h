@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SignatureCoolAmongProjectorBasedModel.h
 //  SignatureCoolAmongProjectorDemo
@@ -5,9 +7,13 @@
 //  Created by mac on 16/8/6.
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
-
-#import <Foundation/Foundation.h>
 //定义一个菜单的block
+
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
+
+//: typedef void(^FFMenuBlock)();
 typedef void(^FFMenuBlock)();
 
 /**
@@ -15,9 +21,12 @@ typedef void(^FFMenuBlock)();
  *
  *  注意:若自定义一个继承于这个类的菜单模型，必须要自定义一个继承于SignatureCoolAmongProjectorBasedCell的菜单cell
  */
+//: @interface SignatureCoolAmongProjectorBasedModel : NSObject
 @interface SignatureCoolAmongProjectorBasedModel : NSObject
 
 /** 点击回调的block */
-@property (nonatomic, copy) FFMenuBlock menuBlock;
+//: @property (nonatomic, copy) FFMenuBlock menuBlock;
+@property (nonatomic, copy) FFMenuBlock target;
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // UIRefreshControl+AFNetworking.m
 //
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
@@ -20,94 +22,144 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "UIRefreshControl+AFNetworking.h"
 #import "UIRefreshControl+AFNetworking.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
-
-#if TARGET_OS_IOS
-
+//: #import "AFURLSessionManager.h"
 #import "AFURLSessionManager.h"
 
+//: @interface AFRefreshControlNotificationObserver : NSObject
 @interface AFRefreshControlNotificationObserver : NSObject
-@property (readonly, nonatomic, weak) UIRefreshControl *refreshControl;
-- (instancetype)initWithActivityRefreshControl:(UIRefreshControl *)refreshControl;
+//: @property (readonly, nonatomic, weak) UIRefreshControl *refreshControl;
+@property (readonly, nonatomic, weak) UIRefreshControl *beyond;
+//: - (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task;
+- (void)setRead:(NSURLSessionTask *)task;
 
-- (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task;
+//: - (instancetype)initWithActivityRefreshControl:(UIRefreshControl *)refreshControl;
+- (instancetype)initWithRecord:(UIRefreshControl *)refreshControl;
 
+//: @end
 @end
 
+//: @implementation UIRefreshControl (AFNetworking)
 @implementation UIRefreshControl (AFNetworking)
 
-- (AFRefreshControlNotificationObserver *)af_notificationObserver {
-    AFRefreshControlNotificationObserver *notificationObserver = objc_getAssociatedObject(self, @selector(af_notificationObserver));
+//: - (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task {
+- (void)setTitle:(NSURLSessionTask *)task {
+    //: [[self af_notificationObserver] setRefreshingWithStateOfTask:task];
+    [[self leaveConnect] setRead:task];
+}
+
+//: - (AFRefreshControlNotificationObserver *)af_notificationObserver {
+- (AFRefreshControlNotificationObserver *)leaveConnect {
+    //: AFRefreshControlNotificationObserver *notificationObserver = objc_getAssociatedObject(self, @selector(af_notificationObserver));
+    AFRefreshControlNotificationObserver *notificationObserver = objc_getAssociatedObject(self, @selector(leaveConnect));
+    //: if (notificationObserver == nil) {
     if (notificationObserver == nil) {
-        notificationObserver = [[AFRefreshControlNotificationObserver alloc] initWithActivityRefreshControl:self];
-        objc_setAssociatedObject(self, @selector(af_notificationObserver), notificationObserver, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        //: notificationObserver = [[AFRefreshControlNotificationObserver alloc] initWithActivityRefreshControl:self];
+        notificationObserver = [[AFRefreshControlNotificationObserver alloc] initWithRecord:self];
+        //: objc_setAssociatedObject(self, @selector(af_notificationObserver), notificationObserver, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, @selector(leaveConnect), notificationObserver, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
+    //: return notificationObserver;
     return notificationObserver;
 }
 
-- (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task {
-    [[self af_notificationObserver] setRefreshingWithStateOfTask:task];
-}
-
+//: @end
 @end
 
+//: @implementation AFRefreshControlNotificationObserver
 @implementation AFRefreshControlNotificationObserver
 
-- (instancetype)initWithActivityRefreshControl:(UIRefreshControl *)refreshControl
-{
-    self = [super init];
-    if (self) {
-        _refreshControl = refreshControl;
-    }
-    return self;
+//: #pragma mark -
+#pragma mark -
+
+//: - (void)af_beginRefreshing {
+- (void)surfSystem {
+    //: dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        //: [self.refreshControl beginRefreshing];
+        [self.beyond beginRefreshing];
+    //: });
+    });
 }
 
-- (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task {
+//: #pragma mark -
+#pragma mark -
+
+//: - (void)dealloc {
+- (void)dealloc {
+    //: NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
 
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidResumeNotification object:nil];
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidSuspendNotification object:nil];
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
+    [notificationCenter removeObserver:self name:kEditError(nil) object:nil];
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidResumeNotification object:nil];
+    [notificationCenter removeObserver:self name:themeAutomaticallyPath(nil) object:nil];
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidSuspendNotification object:nil];
+    [notificationCenter removeObserver:self name:spacingUnderUserPlatform(nil) object:nil];
+}
 
+//: - (void)af_endRefreshing {
+- (void)hiddenHappen {
+    //: dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        //: [self.refreshControl endRefreshing];
+        [self.beyond endRefreshing];
+    //: });
+    });
+}
+
+//: - (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task {
+- (void)setRead:(NSURLSessionTask *)task {
+    //: NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidResumeNotification object:nil];
+    [notificationCenter removeObserver:self name:themeAutomaticallyPath(nil) object:nil];
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidSuspendNotification object:nil];
+    [notificationCenter removeObserver:self name:spacingUnderUserPlatform(nil) object:nil];
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
+    [notificationCenter removeObserver:self name:kEditError(nil) object:nil];
+
+    //: if (task) {
     if (task) {
-        UIRefreshControl *refreshControl = self.refreshControl;
+        //: UIRefreshControl *refreshControl = self.refreshControl;
+        UIRefreshControl *refreshControl = self.beyond;
+        //: if (task.state == NSURLSessionTaskStateRunning) {
         if (task.state == NSURLSessionTaskStateRunning) {
+            //: [refreshControl beginRefreshing];
             [refreshControl beginRefreshing];
 
-            [notificationCenter addObserver:self selector:@selector(af_beginRefreshing) name:AFNetworkingTaskDidResumeNotification object:task];
-            [notificationCenter addObserver:self selector:@selector(af_endRefreshing) name:AFNetworkingTaskDidCompleteNotification object:task];
-            [notificationCenter addObserver:self selector:@selector(af_endRefreshing) name:AFNetworkingTaskDidSuspendNotification object:task];
+            //: [notificationCenter addObserver:self selector:@selector(af_beginRefreshing) name:AFNetworkingTaskDidResumeNotification object:task];
+            [notificationCenter addObserver:self selector:@selector(surfSystem) name:themeAutomaticallyPath(nil) object:task];
+            //: [notificationCenter addObserver:self selector:@selector(af_endRefreshing) name:AFNetworkingTaskDidCompleteNotification object:task];
+            [notificationCenter addObserver:self selector:@selector(hiddenHappen) name:kEditError(nil) object:task];
+            //: [notificationCenter addObserver:self selector:@selector(af_endRefreshing) name:AFNetworkingTaskDidSuspendNotification object:task];
+            [notificationCenter addObserver:self selector:@selector(hiddenHappen) name:spacingUnderUserPlatform(nil) object:task];
+        //: } else {
         } else {
+            //: [refreshControl endRefreshing];
             [refreshControl endRefreshing];
         }
     }
 }
 
-#pragma mark -
-
-- (void)af_beginRefreshing {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.refreshControl beginRefreshing];
-    });
+//: - (instancetype)initWithActivityRefreshControl:(UIRefreshControl *)refreshControl
+- (instancetype)initWithRecord:(UIRefreshControl *)refreshControl
+{
+    //: self = [super init];
+    self = [super init];
+    //: if (self) {
+    if (self) {
+        //: _refreshControl = refreshControl;
+        _beyond = refreshControl;
+    }
+    //: return self;
+    return self;
 }
 
-- (void)af_endRefreshing {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.refreshControl endRefreshing];
-    });
-}
-
-#pragma mark -
-
-- (void)dealloc {
-    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidResumeNotification object:nil];
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidSuspendNotification object:nil];
-}
-
+//: @end
 @end
-
-#endif

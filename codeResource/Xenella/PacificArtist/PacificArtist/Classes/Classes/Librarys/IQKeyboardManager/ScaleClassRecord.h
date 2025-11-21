@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ScaleClassRecord.h
 //  https://github.com/hackiftekhar/PackAddSpot
@@ -21,41 +23,49 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "ContinueGenerateHintedLotus.h"
 #import "ContinueGenerateHintedLotus.h"
-
 
 /**
  ScaleClassRecord for PackAddSpot.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface ScaleClassRecord : UIToolbar <UIInputViewAudioFeedback>
 @interface ScaleClassRecord : UIToolbar <UIInputViewAudioFeedback>
 
 /**
  Previous bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *previousBarButton;
-
-/**
- Next bar button of toolbar.
- */
-@property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *nextBarButton;
-
-/**
- Title bar button of toolbar.
- */
-@property(nonnull, nonatomic, strong, readonly) ContinueGenerateHintedLotus *titleBarButton;
-
 /**
  Done bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *doneBarButton;
+//: @property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *doneBarButton;
+@property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *done;
 
 /**
  Fixed space bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *fixedSpaceBarButton;
+//: @property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *fixedSpaceBarButton;
+@property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *attractionValleySplendid;
 
+/**
+ Title bar button of toolbar.
+ */
+//: @property(nonnull, nonatomic, strong, readonly) ContinueGenerateHintedLotus *titleBarButton;
+@property(nonnull, nonatomic, strong, readonly) ContinueGenerateHintedLotus *phone;
+
+//: @property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *previousBarButton;
+@property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *status;
+
+/**
+ Next bar button of toolbar.
+ */
+//: @property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *nextBarButton;
+@property(nonnull, nonatomic, strong) SignatureWisdomValleySplendid *bosom;
+
+//: @end
 @end
-
