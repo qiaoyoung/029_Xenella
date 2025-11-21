@@ -35,17 +35,17 @@
         _appKey = @"bb423e522c32002210fe5623f81a89ea";//本项目使用
 //        _apiURL = @"https://app.netease.im/api";
         //        _apnsCername = @"DEVELOPER";
-        _apnsCername = @"push_Riverla_release";
+        _apnsCername = @"push_Xenella_release";
         _pkCername = @"pushkit_voice_test";
         _allowAutoLogin = YES; //如果网上的host和本地的一致，允许自动登录
         
         _Gdic = [NSMutableDictionary dictionary];
         
         // 打包OSS-1
-        self.hostFrom = @"https://riverla.oss-cn-hongkong.aliyuncs.com/riv.txt";
+        self.hostFrom = @"https://xtar.blob.core.windows.net/tar/x.txt";
         
         // 打包OSS-2
-        self.hostFrom2 = @"https://riverla.s3.ap-southeast-1.amazonaws.com/riv.txt";
+        self.hostFrom2 = @"https://xylotar.s3.us-east-1.amazonaws.com/x.txt";
         
     }
     return self;

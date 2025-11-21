@@ -1,9 +1,9 @@
 //
 //  AAAA_Recommendfriend_BBBBTableViewCell.h
-//  Riverla
+//  Xenella
 //
 //  Created by mac on 2025/4/7.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Xenella. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
