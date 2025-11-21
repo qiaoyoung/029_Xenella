@@ -1,0 +1,13 @@
+//
+//  ReferenceAuroraWithStencilLabel.h
+// StableProtectSymbolAbsoluteTransformable
+//
+//  Created by chris on 2016/10/31.
+//  Copyright © 2016年 NetEase. All rights reserved.
+//
+
+#import "PersistCreateTerrainPassage.h"
+
+@interface ReferenceAuroraWithStencilLabel : NSObject<PersistCreateTerrainPassage>
+
+@end

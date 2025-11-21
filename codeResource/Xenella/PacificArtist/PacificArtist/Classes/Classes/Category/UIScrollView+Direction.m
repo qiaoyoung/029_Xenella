@@ -11,8 +11,8 @@
 
 
 @interface UIScrollView ()
-@property (assign, nonatomic) AAAA_USERScrollViewDirection_BBBB horizontalScrollingDirection;
-@property (assign, nonatomic) AAAA_USERScrollViewDirection_BBBB verticalScrollingDirection;
+@property (assign, nonatomic) MatchTrainBindScenario horizontalScrollingDirection;
+@property (assign, nonatomic) MatchTrainBindScenario verticalScrollingDirection;
 @end
 
 
@@ -40,39 +40,39 @@ static const char verticalScrollingDirectionKey;
     CGPoint oldContentOffset = [[change valueForKey:NSKeyValueChangeOldKey] CGPointValue];
     
     if (oldContentOffset.x < newContentOffset.x) {
-        self.horizontalScrollingDirection = AAAA_USERScrollViewDirection_BBBBRight;
+        self.horizontalScrollingDirection = MatchTrainBindScenarioRight;
     } else if (oldContentOffset.x > newContentOffset.x) {
-        self.horizontalScrollingDirection = AAAA_USERScrollViewDirection_BBBBLeft;
+        self.horizontalScrollingDirection = MatchTrainBindScenarioLeft;
     } else {
-        self.horizontalScrollingDirection = AAAA_USERScrollViewDirection_BBBBNone;
+        self.horizontalScrollingDirection = MatchTrainBindScenarioNone;
     }
     
     if (oldContentOffset.y < newContentOffset.y) {
-        self.verticalScrollingDirection = AAAA_USERScrollViewDirection_BBBBDown;
+        self.verticalScrollingDirection = MatchTrainBindScenarioDown;
     } else if (oldContentOffset.y > newContentOffset.y) {
-        self.verticalScrollingDirection = AAAA_USERScrollViewDirection_BBBBUp;
+        self.verticalScrollingDirection = MatchTrainBindScenarioUp;
     } else {
-        self.verticalScrollingDirection = AAAA_USERScrollViewDirection_BBBBNone;
+        self.verticalScrollingDirection = MatchTrainBindScenarioNone;
     }
 }
 
 #pragma mark - Properties
-- (AAAA_USERScrollViewDirection_BBBB)horizontalScrollingDirection
+- (MatchTrainBindScenario)horizontalScrollingDirection
 {
     return [objc_getAssociatedObject(self, (void *)&horizontalScrollingDirectionKey) intValue];
 }
 
-- (void)setHorizontalScrollingDirection:(AAAA_USERScrollViewDirection_BBBB)horizontalScrollingDirection
+- (void)setHorizontalScrollingDirection:(MatchTrainBindScenario)horizontalScrollingDirection
 {
     objc_setAssociatedObject(self, (void *)&horizontalScrollingDirectionKey, [NSNumber numberWithInt:horizontalScrollingDirection], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (AAAA_USERScrollViewDirection_BBBB)verticalScrollingDirection
+- (MatchTrainBindScenario)verticalScrollingDirection
 {
     return [objc_getAssociatedObject(self, (void *)&verticalScrollingDirectionKey) intValue];
 }
 
-- (void)setVerticalScrollingDirection:(AAAA_USERScrollViewDirection_BBBB)verticalScrollingDirection
+- (void)setVerticalScrollingDirection:(MatchTrainBindScenario)verticalScrollingDirection
 {
     objc_setAssociatedObject(self, (void *)&verticalScrollingDirectionKey, [NSNumber numberWithInt:verticalScrollingDirection], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
