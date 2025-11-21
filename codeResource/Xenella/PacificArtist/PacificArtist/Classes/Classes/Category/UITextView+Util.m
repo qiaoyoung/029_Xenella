@@ -316,8 +316,7 @@ static const void *componentPrepareValue = &componentPrepareValue;
     return self.arrayWriting;
 }
 
-//: - (void)setPlaceholder:(NSString *)placeholder
-- (void)setInstructionRecent:(NSString *)placeholder
+- (void)setPlaceholder:(NSString *)placeholder
 {
     // 为placeholder赋值
     //: [self placeholderView].text = placeholder;
@@ -458,7 +457,7 @@ static const void *componentPrepareValue = &componentPrepareValue;
 }
 
 //: - (NSString *)placeholder
-- (NSString *)instructionRecent
+- (NSString *)placeholder
 {
     // 如果有placeholder值才去调用，这步很重要
     //: if (self.placeholderExist) {

@@ -20,7 +20,7 @@ typedef void(^textViewHeightDidChangedBlock)(CGFloat currentTextViewHeight);
 
 /* 占位文字 */
 //: @property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, copy) NSString *instructionRecent;
+@property (nonatomic, copy) NSString *placeholder;
 /* 最大高度，如果需要随文字改变高度的时候使用 */
 //: @property (nonatomic, assign) CGFloat maxHeight;
 @property (nonatomic, assign) CGFloat crucibleSteel;

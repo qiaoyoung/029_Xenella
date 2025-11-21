@@ -386,7 +386,7 @@
     //: self.contentTextView.delegate = self;
     self.materialNameView.delegate = self;
     //: self.contentTextView.placeholder = [MatureDismissLotusComposite getTextWithKey:@"Please_enter_content"];
-    self.materialNameView.instructionRecent = [MatureDismissLotusComposite remove:[FactorData componentRemarkTitle]];
+    self.materialNameView.placeholder = [MatureDismissLotusComposite remove:[FactorData componentRemarkTitle]];
     //: self.contentTextView.text = self.defaultContent;
     self.materialNameView.text = self.area;
     //: [contentView addSubview:self.contentTextView];

@@ -20,7 +20,7 @@
 //: @property (nonatomic, strong) UILabel * placeholderLabel;
 @property (nonatomic, strong) UILabel * brandCollect;
 //: @property (nonatomic, strong) NSString* placeholder;
-@property (nonatomic, strong) NSString* instructionRecent;
+@property (nonatomic, strong) NSString* placeholder;
 
 //: @end
 @end

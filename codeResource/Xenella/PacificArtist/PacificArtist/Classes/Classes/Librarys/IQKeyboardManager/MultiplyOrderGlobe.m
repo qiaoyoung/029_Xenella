@@ -46,7 +46,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @implementation MultiplyOrderGlobe
 
 //: @synthesize placeholder = _placeholder;
-@synthesize instructionRecent = _renderGender;
+@synthesize placeholder = _renderGender;
 //: @synthesize placeholderLabel = _placeholderLabel;
 @synthesize brandCollect = _pull;
 //: @synthesize placeholderTextColor = _placeholderTextColor;
@@ -214,8 +214,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     return originalRect;
 }
 
-//: -(void)setPlaceholder:(NSString *)placeholder
--(void)setInstructionRecent:(NSString *)placeholder
+-(void)setPlaceholder:(NSString *)placeholder
 {
     //: _placeholder = placeholder;
     _renderGender = placeholder;

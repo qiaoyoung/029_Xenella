@@ -194,7 +194,7 @@ LogicQuitData spacingEnableensiveHelper = (LogicQuitData){183, (Byte []){213, 21
     //: self.contentTextView.delegate = self;
     self.per.delegate = self;
     //: self.contentTextView.placeholder = [MatureDismissLotusComposite getTextWithKey:@"Please_enter_content"];
-    self.per.instructionRecent = [MatureDismissLotusComposite remove:StringFromLogicQuitData(&colorExplainBoneUtility)];
+    self.per.placeholder = [MatureDismissLotusComposite remove:StringFromLogicQuitData(&colorExplainBoneUtility)];
     //: self.contentTextView.text = self.defaultContent;
     self.per.text = self.name;
     //: [contentView addSubview:self.contentTextView];

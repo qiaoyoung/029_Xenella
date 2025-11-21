@@ -335,7 +335,7 @@
     self.fade.untilTit.woman = nil;
 
     //: NSString *placeholder = [StableProtectSymbolAbsoluteTransformable sharedKit].config.placeholder;
-    NSString *placeholder = [StableProtectSymbolAbsoluteTransformable common].book.instructionRecent;
+    NSString *placeholder = [StableProtectSymbolAbsoluteTransformable common].book.placeholder;
     //: [_toolBar setPlaceHolder:placeholder];
     [_fade setPlace:placeholder];
 

@@ -751,7 +751,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
         return self.parePlaceholderred;
     }
     //: else if ([self respondsToSelector:@selector(placeholder)])
-    else if ([self respondsToSelector:@selector(instructionRecent)])
+    else if ([self respondsToSelector:@selector(placeholder)])
     {
         //: return [(UITextField*)self placeholder];
         return [(UITextField*)self placeholder];

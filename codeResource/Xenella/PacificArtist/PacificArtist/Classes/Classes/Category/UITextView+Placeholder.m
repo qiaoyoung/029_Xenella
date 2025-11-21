@@ -20,7 +20,7 @@
 
 
 //: @dynamic placeholder;
-@dynamic instructionRecent;
+@dynamic placeholder;
 //: @dynamic placeholderLabel;
 @dynamic brandCollect;
 //: @dynamic textValue;
@@ -75,8 +75,7 @@ NSString const *featureYearDepthId = @"kKeyLabel";
 
 //: NSString const *kKeyPlaceHolder = @"kKeyPlaceHolder";
 NSString const *widgetTopStreamDateConfig = @"kKeyPlaceHolder";
-//: -(void)setPlaceholder:(NSString *)_placeholder
--(void)setInstructionRecent:(NSString *)_placeholder
+-(void)setPlaceholder:(NSString *)_placeholder
 {
     //  Sets our "placeholder" text string, creates a new UILabel to contain it, and modifies our UITextView to cope with
     //  showing/hiding the UILabel when needed.
@@ -136,7 +135,7 @@ NSString const *widgetTopStreamDateConfig = @"kKeyPlaceHolder";
 }
 
 //: -(NSString*)placeholder
--(NSString*)instructionRecent
+-(NSString*)placeholder
 {
     //  Returns our "placeholder" text string
     //: return objc_getAssociatedObject(self, &kKeyPlaceHolder);

@@ -240,7 +240,7 @@
 @property (nonatomic, strong) NIMTeamMember *gestureHis;
 
 //: @property (nonatomic, strong) NIMSession *session;
-@property (nonatomic, strong) NIMSession *lessSession;
+@property (nonatomic, strong) NIMSession *stack;
 
 //: @property (nonatomic, strong) BindCrownThicket *myCard;
 @property (nonatomic, strong) BindCrownThicket *can;
@@ -1326,7 +1326,7 @@
         //: _team = team;
         _cistronTeam = team;
         //: _session = session;
-        _lessSession = session;
+        _stack = session;
         //: if (team.type == NIMTeamTypeSuper) {
         if (team.type == NIMTeamTypeSuper) {
             //: [[NIMSDK sharedSDK].superTeamManager addDelegate:self];

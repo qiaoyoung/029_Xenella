@@ -1070,7 +1070,7 @@
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     _awakeAlter = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     //: _textView.placeholder = [MatureDismissLotusComposite getTextWithKey:@"report_info"];
-    _awakeAlter.instructionRecent = [MatureDismissLotusComposite remove:[[FitData sharedInstance] featureNailEvent]];//@"请输入您的举报信息";
+    _awakeAlter.placeholder = [MatureDismissLotusComposite remove:[[FitData sharedInstance] featureNailEvent]];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _awakeAlter.backgroundColor = [UIColor whiteColor];
     //: _textView.delegate = self;
