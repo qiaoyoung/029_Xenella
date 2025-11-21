@@ -289,8 +289,8 @@
 #import "EasySendWidescreen.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 //: #import "DefiniteGraveMark.h"
 #import "DefiniteGraveMark.h"
 //: #import "StableProtectSymbolAbsoluteTransformable.h"

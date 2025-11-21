@@ -359,7 +359,7 @@
     //: AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager external];
     //: sessionManager.requestSerializer.timeoutInterval = 5.f;
-    sessionManager.duringCoverred.displayShotted = 5.f;
+    sessionManager.duringCoverred.timeoutInterval = 5.f;
     //: sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     sessionManager.moviePlayed.technologyForbids = [NSSet setWithObjects:[SkullData appQuitBuddyDevice], [SkullData styleOftenFormat], [SkullData moduleVisibleId], [SkullData featureFeministValue], [SkullData coreLegallyPortError], [SkullData styleReflectMessage], [SkullData componentJuiceMessage], nil];
     //: [sessionManager setResponseSerializer:[AFHTTPResponseSerializer serializer]];

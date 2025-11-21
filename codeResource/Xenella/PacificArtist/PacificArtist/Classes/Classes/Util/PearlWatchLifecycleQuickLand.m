@@ -271,7 +271,7 @@ static AFHTTPSessionManager *widgetForbidPath;
 //: + (void)setRequestTimeoutInterval:(NSTimeInterval)time {
 + (void)setPause:(NSTimeInterval)time {
     //: _sessionManager.requestSerializer.timeoutInterval = time;
-    widgetForbidPath.duringCoverred.displayShotted = time;
+    widgetForbidPath.duringCoverred.timeoutInterval = time;
 }
 
 //: #pragma mark - 上传单张图片
@@ -604,7 +604,7 @@ static AFHTTPSessionManager *widgetForbidPath;
     //: _sessionManager = [AFHTTPSessionManager manager];
     widgetForbidPath = [AFHTTPSessionManager external];
     //: _sessionManager.requestSerializer.timeoutInterval = 15.f;
-    widgetForbidPath.duringCoverred.displayShotted = 15.f;
+    widgetForbidPath.duringCoverred.timeoutInterval = 15.f;
     //: _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     widgetForbidPath.moviePlayed.technologyForbids = [NSSet setWithObjects:[SureData featureWhisperMessage], [SureData widgetMarginPieceLogger], [SureData widgetInspectUtility], [SureData screenBeyondHelper], [SureData viewNoteClusterValue], [SureData coreEditEvent], [SureData coreRemarkCountroUtility], nil];
     // 打开状态栏的等待菊花

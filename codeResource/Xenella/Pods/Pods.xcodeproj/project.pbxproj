@@ -1326,7 +1326,6 @@
 		E37506DBE7E8A7C557CE9056F82F5809 /* Then-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C94B40834FD44E76DCC3A7BEBB1F3A /* Then-dummy.m */; };
 		E3B84BFCAF7E6F61C77F6182B8E9C856 /* SupremeIntoHistoryElevate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04849E1D889F6A5DB3BCDD4FF60DA910 /* SupremeIntoHistoryElevate.m */; };
 		E41C24300F323B053206FF75AF9C881F /* UIColor+SDHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5908D08F0932419EABA21CC47564E008 /* UIColor+SDHexString.m */; };
-		E43B5DC3C7DF7792E30D3050540719D9 /* PresenterTimelineRecordTerminal.h in Headers */ = {isa = PBXBuildFile; fileRef = A606F3D8C26003BA91E7AB2BD9B44534 /* PresenterTimelineRecordTerminal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4CE62A24B7DD7D5C509BAFB5A705C7D /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D48EB0448C57A4F759BB263992205D2 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4DDF755F88E5B188A253C0511597DAB /* AcrossAssignSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = D49FA2D547783C57466CDC992577AD7A /* AcrossAssignSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E54B1D9D39185B93C570EE9F05C3B5C7 /* NSBundle+TZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF23716B219361451B6F3A206F10F17 /* NSBundle+TZImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2756,7 +2755,6 @@
 		A56B34705F786E7CF29BA5A9D5265472 /* BrokerSchedulerDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BrokerSchedulerDecoder.h; sourceTree = "<group>"; };
 		A56F75FB60E034CDE01D775216BD7EFE /* MultiplyOrderGlobe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MultiplyOrderGlobe.h; sourceTree = "<group>"; };
 		A5C4F50F05DBAD355C359E552A959D56 /* ContextSnapshotterAcross.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ContextSnapshotterAcross.h; sourceTree = "<group>"; };
-		A606F3D8C26003BA91E7AB2BD9B44534 /* PresenterTimelineRecordTerminal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PresenterTimelineRecordTerminal.h; sourceTree = "<group>"; };
 		A609920AC16A1EC73001800E05A0BF04 /* NavigatorPieceInterpreterWater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NavigatorPieceInterpreterWater.h; sourceTree = "<group>"; };
 		A6671D3866539A173C9B4F0C53E63892 /* FertileSuiteEnableCacheLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FertileSuiteEnableCacheLine.m; sourceTree = "<group>"; };
 		A6729EDE301FEAE08BD854378EE857EC /* LandscapeHarmlessBrokerMinimal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LandscapeHarmlessBrokerMinimal.h; sourceTree = "<group>"; };
@@ -5984,7 +5982,6 @@
 				7A22CE8CCCC221DA8DB0DC81B8B78CD7 /* LockInsightWrite.h */,
 				D5EA8D07268F18E019ED25AE5D3BC684 /* LockInsightWrite.m */,
 				43262BC72F6E479E16C1D5D94C33144C /* OceanHistoryDecorator.h */,
-				A606F3D8C26003BA91E7AB2BD9B44534 /* PresenterTimelineRecordTerminal.h */,
 				B609914CBDD571A89AD090EC6BDD5A12 /* ReferenceAuroraWithStencilLabel.h */,
 				F272763FB481F83D16B64A6F2E085F89 /* ReferenceAuroraWithStencilLabel.m */,
 				BF108CD179800DFC8DDEB11C0EDDE732 /* RichEntryCompress.h */,
@@ -7070,7 +7067,6 @@
 				DF10E962705F0D079863A48032A92F20 /* PortalAgainst.h in Headers */,
 				FE4EA2D8812CAC2E2604BB5E8859FA3E /* PreloadLayoutUnder.h in Headers */,
 				1A9B1989AA06B7CF56A7A33D2BAAB256 /* PresenterOasisAerialInterpreterChain.h in Headers */,
-				E43B5DC3C7DF7792E30D3050540719D9 /* PresenterTimelineRecordTerminal.h in Headers */,
 				D05F337426F55E1FCEA99A4B8FD7125F /* PrimeValidateWavyBalancer.h in Headers */,
 				EB3FE921BDCB22D27F23D8564B6DB576 /* PrudentPushWriteMerge.h in Headers */,
 				870305D81EDFE5863677937260E3C06A /* QueryVoyageTheme.h in Headers */,

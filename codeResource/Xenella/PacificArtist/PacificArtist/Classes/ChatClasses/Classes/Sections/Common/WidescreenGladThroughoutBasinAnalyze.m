@@ -48,8 +48,8 @@ VenaMetacarpusData componentNomeRemainSearchLogger = (VenaMetacarpusData){24, (B
 #import "WithCrestlinePresenter.h"
 //: #import "SensorAnchorTimer.h"
 #import "SensorAnchorTimer.h"
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 //:  
  
 //: #import "TZImageManager.h"

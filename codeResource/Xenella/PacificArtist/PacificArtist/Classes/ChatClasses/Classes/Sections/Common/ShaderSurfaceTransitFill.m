@@ -144,23 +144,23 @@
 //        [self addSubview:_activity];
 
         //: self.progressView = [[KnackTenderKeeperFragment alloc] initWithFrame:self.bounds];
-        self.spark = [[KnackTenderKeeperFragment alloc] initWithFrame:self.bounds];
+        self.progressView = [[KnackTenderKeeperFragment alloc] initWithFrame:self.bounds];
         //: self.progressView.backgroundColor = [UIColor clearColor];
-        self.spark.backgroundColor = [UIColor clearColor];
+        self.progressView.backgroundColor = [UIColor clearColor];
         //: self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
-        self.spark.translatesAutoresizingMaskIntoConstraints = NO;
+        self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
         //: self.progressView.showsText = YES;
-        self.spark.beside = YES;
+        self.progressView.beside = YES;
         //: self.progressView.tintColor = [UIColor colorWithHexString:@"#A148FF"];
-        self.spark.tintColor = [UIColor factory:[AcademicData sharedInstance].themeValleyMessage];
+        self.progressView.tintColor = [UIColor factory:[AcademicData sharedInstance].themeValleyMessage];
 //        self.progressView.tintColor = RGB_COLOR_String(kCommonBGColor_All);
 //        self.progressView.tintColor = [UIColor colorWithPatternImage:[FixNavigateHandle getLinearGradientImage:RGB_COLOR_String(kCommonBGColor_begin) and:RGB_COLOR_String(kCommonBGColor_end) directionType:FixNavigateHandleDirectionLevel]];
 
         //: [self addSubview:self.progressView];
-        [self addSubview:self.spark];
+        [self addSubview:self.progressView];
 
         //: NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
-        NSDictionary *views = NSDictionaryOfVariableBindings(_spark);
+        NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:[AcademicData sharedInstance].commonStomachAlert options:0 metrics:nil views:views]];
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];
@@ -189,7 +189,7 @@
 //        _progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(progress*100)];
 //        [_activity startAnimating];
         //: self.progressView.progress = progress;
-        self.spark.stickingPoint = progress;
+        self.progressView.stickingPoint = progress;
     }
 
     //: [self setNeedsLayout];

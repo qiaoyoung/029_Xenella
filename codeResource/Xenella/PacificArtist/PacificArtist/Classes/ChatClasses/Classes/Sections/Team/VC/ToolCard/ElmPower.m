@@ -38,8 +38,8 @@ CourtroomData screenObservationPath = (CourtroomData){31, (Byte []){60, 47, 91, 
 // __M_A_C_R_O__
 //: #import "ElmPower.h"
 #import "ElmPower.h"
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 //: #import "BuilderCounterGridContent.h"
 #import "BuilderCounterGridContent.h"
 

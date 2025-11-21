@@ -89,8 +89,8 @@ typedef struct {
 #import "OceanHistoryDecorator.h"
 //: #import "SkyRuggedizedVoiceClear.h"
 #import "SkyRuggedizedVoiceClear.h"
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 
 //: @interface GoodLabelStripe()
 @interface GoodLabelStripe()

@@ -86,8 +86,8 @@ Byte commonPadEvent[] = {3, 11, 71, 10, 229, 101, 20, 77, 91, 113, 52, 234, 234,
 // __M_A_C_R_O__
 //: #import "GloriousDomeBeside.h"
 #import "GloriousDomeBeside.h"
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 //: #import "OptimizeStencilForcefulPaintClose.h"
 #import "OptimizeStencilForcefulPaintClose.h"
 //: #import "UIImage+StableProtectSymbolAbsoluteTransformable.h"

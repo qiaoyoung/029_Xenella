@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "ConvertAmongCheckDataSourceCollector.h"
 #import "ConvertAmongCheckDataSourceCollector.h"
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 
 //: @interface ConvertAmongCheckDataSourceCollector ()
 @interface ConvertAmongCheckDataSourceCollector ()

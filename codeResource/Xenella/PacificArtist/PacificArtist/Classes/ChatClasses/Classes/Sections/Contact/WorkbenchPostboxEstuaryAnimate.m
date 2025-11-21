@@ -196,8 +196,8 @@
 #import "StableProtectSymbolAbsoluteTransformable.h"
 //:  
  
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 //: #import "ValueVerseFacade.h"
 #import "ValueVerseFacade.h"
 //: #import "BoardPreviewConstruct.h"

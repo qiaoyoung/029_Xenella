@@ -90,8 +90,8 @@
 #import "PortalAgainst.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 //: #import "LatticeWhisperOpen.h"
 #import "LatticeWhisperOpen.h"
 //: #import "StableProtectSymbolAbsoluteTransformable.h"

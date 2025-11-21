@@ -671,8 +671,8 @@ typedef struct {
 #import "AtResetModifyStart.h"
 //: #import <CoreTelephony/CTCellularData.h>
 #import <CoreTelephony/CTCellularData.h>
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 //: #import "SceneAssembleStorage.h"
 #import "SceneAssembleStorage.h"
 //: #import "LevelTrimGridlineIcon.h"

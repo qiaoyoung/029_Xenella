@@ -593,7 +593,7 @@ static NSArray * userStand() {
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
         //: _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(allowsCellularAccess)), NSStringFromSelector(@selector(cachePolicy)), NSStringFromSelector(@selector(HTTPShouldHandleCookies)), NSStringFromSelector(@selector(HTTPShouldUsePipelining)), NSStringFromSelector(@selector(networkServiceType)), NSStringFromSelector(@selector(timeoutInterval))];
-        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(holderAccelerates)), NSStringFromSelector(@selector(episodeMapsed)), NSStringFromSelector(@selector(leastPerformsed)), NSStringFromSelector(@selector(shouldDarkFairses)), NSStringFromSelector(@selector(equalMansed)), NSStringFromSelector(@selector(displayShotted))];
+        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(holderAccelerates)), NSStringFromSelector(@selector(episodeMapsed)), NSStringFromSelector(@selector(leastPerformsed)), NSStringFromSelector(@selector(shouldDarkFairses)), NSStringFromSelector(@selector(equalMansed)), NSStringFromSelector(@selector(timeoutInterval))];
     //: });
     });
 
@@ -1134,14 +1134,10 @@ static void *viewBackName = &viewBackName;
     });
 }
 
-//: - (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
-- (void)setDisplayShotted:(NSTimeInterval)timeoutInterval {
-    //: [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self willChangeValueForKey:NSStringFromSelector(@selector(displayShotted))];
-    //: _timeoutInterval = timeoutInterval;
-    _displayShotted = timeoutInterval;
-    //: [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self didChangeValueForKey:NSStringFromSelector(@selector(displayShotted))];
+- (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
+    [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
+    _timeoutInterval = timeoutInterval;
+    [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
 }
 
 //: - (NSMutableURLRequest *)multipartFormRequestWithMethod:(NSString *)method

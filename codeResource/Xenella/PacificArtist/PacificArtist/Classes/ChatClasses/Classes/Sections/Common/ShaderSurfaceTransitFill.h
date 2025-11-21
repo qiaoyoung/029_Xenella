@@ -29,7 +29,7 @@
 //: @property (nonatomic, assign)CGFloat maxProgress;
 @property (nonatomic, assign)CGFloat target;
 //: @property (nonatomic, strong) KnackTenderKeeperFragment *progressView;
-@property (nonatomic, strong) KnackTenderKeeperFragment *spark;
+@property (nonatomic, strong) KnackTenderKeeperFragment *progressView;
 
 //: - (void)setProgress:(CGFloat)progress;
 - (void)setAgent:(CGFloat)progress;

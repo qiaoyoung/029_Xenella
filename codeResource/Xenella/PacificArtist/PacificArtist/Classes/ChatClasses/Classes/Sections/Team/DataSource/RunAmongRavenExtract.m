@@ -228,8 +228,8 @@
 // __M_A_C_R_O__
 //: #import "RunAmongRavenExtract.h"
 #import "RunAmongRavenExtract.h"
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 //: #import "StableProtectSymbolAbsoluteTransformable.h"
 #import "StableProtectSymbolAbsoluteTransformable.h"
 

@@ -85,8 +85,8 @@ typedef struct {
 #import "TribeImageGlacierRun.h"
 //: #import "PastSystemInlet+StableProtectSymbolAbsoluteTransformable.h"
 #import "PastSystemInlet+StableProtectSymbolAbsoluteTransformable.h"
-//: #import "PresenterTimelineRecordTerminal.h"
-#import "PresenterTimelineRecordTerminal.h"
+//: #import "NSString+StableProtectSymbolAbsoluteTransformable.h"
+#import "NSString+StableProtectSymbolAbsoluteTransformable.h"
 
 //: @interface TribeImageGlacierRun()
 @interface TribeImageGlacierRun()
