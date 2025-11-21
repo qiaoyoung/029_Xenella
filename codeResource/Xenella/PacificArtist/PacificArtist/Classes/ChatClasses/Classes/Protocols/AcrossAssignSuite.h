@@ -93,13 +93,13 @@ typedef NS_ENUM(NSInteger, BlockGeneratePresenter) {
 @protocol AlongsideScaleInsideMeasured <NSObject>
 
 //: - (id)value;
-- (id)graphicRecord;
+- (id)response;
 
 //: - (NSString *)title;
-- (NSString *)aspect;
+- (NSString *)page;
 
 //: - (NSString *)img;
-- (NSString *)form;
+- (NSString *)data;
 
 //: - (BOOL)selected;
 - (BOOL)hark;

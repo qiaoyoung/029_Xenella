@@ -854,7 +854,7 @@
     //: id<HelperHelperBonnyBuilder> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<HelperHelperBonnyBuilder> bodyData = [self thin:indexPath];
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(transportPairs)] && bodyData.active) {
+    if ([bodyData respondsToSelector:@selector(active)] && bodyData.active) {
         //: return;
         return;
     }
@@ -878,7 +878,7 @@
     //: } else {
     } else {
         //: if ([bodyData respondsToSelector:@selector(action)]) {
-        if ([bodyData respondsToSelector:@selector(readingWaterred)]) {
+        if ([bodyData respondsToSelector:@selector(someone)]) {
             //: if (bodyData.action) {
             if (bodyData.someone) {
                 //: do {
@@ -929,7 +929,7 @@
 //    cell.imageView.image = bodyData.img;
 
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(transportPairs)] && bodyData.active) {
+    if ([bodyData respondsToSelector:@selector(active)] && bodyData.active) {
         //: cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
     //: }else{

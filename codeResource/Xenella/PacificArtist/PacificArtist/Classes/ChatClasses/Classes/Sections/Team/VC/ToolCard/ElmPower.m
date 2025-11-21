@@ -331,9 +331,9 @@ CourtroomData screenObservationPath = (CourtroomData){31, (Byte []){60, 47, 91, 
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
-    cell.shadiness.image = [UIImage imageNamed:bodyData.form];
+    cell.shadiness.image = [UIImage imageNamed:bodyData.data];
     //: cell.titleLabel.text = bodyData.title;
-    cell.unityLabel.text = bodyData.aspect;
+    cell.unityLabel.text = bodyData.page;
     //: cell.arrowsImageView.hidden = ![bodyData selected];
     cell.boneOfTitleion.hidden = ![bodyData hark];
 

@@ -635,13 +635,13 @@
         //: SubtleQuotaCoralRound *item = [[SubtleQuotaCoralRound alloc] init];
         SubtleQuotaCoralRound *item = [[SubtleQuotaCoralRound alloc] init];
         //: item.value = dic[[OutlinedVerifyPiece getTeamHelperValue]];
-        item.observe = dic[[OutlinedVerifyPiece track]];
+        item.response = dic[[OutlinedVerifyPiece track]];
         //: item.title = dic[[OutlinedVerifyPiece getTeamHelperText]];
-        item.last = dic[[OutlinedVerifyPiece nail]];
+        item.page = dic[[OutlinedVerifyPiece nail]];
         //: item.img = dic[[OutlinedVerifyPiece getTeamHelperImg]];
-        item.worth = dic[[OutlinedVerifyPiece space]];
+        item.data = dic[[OutlinedVerifyPiece space]];
         //: item.selected = (selectValue == [dic[[OutlinedVerifyPiece getTeamHelperValue]] integerValue]);
-        item.album = (selectValue == [dic[[OutlinedVerifyPiece track]] integerValue]);
+        item.hark = (selectValue == [dic[[OutlinedVerifyPiece track]] integerValue]);
         //: [items addObject:item];
         [items addObject:item];
     }

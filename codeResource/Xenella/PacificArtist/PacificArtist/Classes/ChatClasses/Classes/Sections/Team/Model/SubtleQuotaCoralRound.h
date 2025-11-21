@@ -21,46 +21,46 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <AlongsideScaleInsideMeasured> ite
 @interface SubtleQuotaCoralRound : NSObject
 
 //: @property(nonatomic,assign) SEL action;
-@property(nonatomic,assign) SEL readingWaterred;
+@property(nonatomic,assign) SEL someone;
 
 //: @property(nonatomic,assign) BOOL actionDisabled;
-@property(nonatomic,assign) BOOL transportPairs;
+@property(nonatomic,assign) BOOL active;
 
 //: @property(nonatomic,strong) id value;
-@property(nonatomic,strong) id observe;
+@property(nonatomic,strong) id response;
 
 //: @property(nonatomic,copy) NSString *title;
-@property(nonatomic,copy) NSString *last;
+@property(nonatomic,copy) NSString *page;
 
 //: @property(nonatomic,assign) NSInteger identify;
-@property(nonatomic,assign) NSInteger victory;
+@property(nonatomic,assign) NSInteger via;
 
 //: @property(nonatomic,strong) NSMutableArray <id <AlongsideScaleInsideMeasured>> *optionItems;
-@property(nonatomic,strong) NSMutableArray <id <AlongsideScaleInsideMeasured>> *besideItems;
+@property(nonatomic,strong) NSMutableArray <id <AlongsideScaleInsideMeasured>> *reason;
 
 //: @property(nonatomic,assign) BlockGeneratePresenter type;
-@property(nonatomic,assign) BlockGeneratePresenter readNovelResistance;
+@property(nonatomic,assign) BlockGeneratePresenter thinType;
 
 //: @property(nonatomic,assign) BOOL switchOn;
-@property(nonatomic,assign) BOOL flush;
+@property(nonatomic,assign) BOOL gunfire;
 
 //: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
-@property(nonatomic,strong) NIMTeamCardRowSelectedBlock array;
+@property(nonatomic,strong) NIMTeamCardRowSelectedBlock near;
 
 //: @property(nonatomic,assign) CGFloat rowHeight;
-@property(nonatomic,assign) CGFloat reply;
+@property(nonatomic,assign) CGFloat jungleConnect;
 
 //: @property(nonatomic,copy) UIImage *img;
-@property(nonatomic,copy) UIImage *worth;
+@property(nonatomic,copy) UIImage *data;
 
 //: @property(nonatomic,assign) BOOL disableUserInteraction;
-@property(nonatomic,assign) BOOL show;
+@property(nonatomic,assign) BOOL communityBoard;
 
 //: @property(nonatomic,copy) NSString *subTitle;
-@property(nonatomic,copy) NSString *subProcess;
+@property(nonatomic,copy) NSString *hearing;
 
 //: @property(nonatomic,assign) BOOL selected;
-@property(nonatomic,assign) BOOL album;
+@property(nonatomic,assign) BOOL hark;
 
 //: @end
 @end
