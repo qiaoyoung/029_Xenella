@@ -55,17 +55,17 @@ Byte themeEndlessLogger[] = {95, 7, 39, 5, 217, 252, 30, 30, 30, 30, 30, 30, 26}
     //: self.member = member;
     self.starting = member;
     //: self.labName.text = [PlayPixel showNick:member.info.infoId inSession:nil];
-    self.manDisplay.text = [PlayPixel bounceChannel:member.mode.stateOfGrace factor:nil];
+    self.manDisplay.text = [PlayPixel bounceChannel:member.modeData.stateOfGrace factor:nil];
 //    [self.textLabel sizeToFit];
     //: NSURL *url;
     NSURL *url;
     //: if (member.info.avatarUrlString.length) {
-    if (member.mode.steps.length) {
+    if (member.modeData.steps.length) {
         //: url = [NSURL URLWithString:member.info.avatarUrlString];
-        url = [NSURL URLWithString:member.mode.steps];
+        url = [NSURL URLWithString:member.modeData.steps];
     }
     //: [_avatarImageView sd_setImageWithURL:url placeholderImage:member.info.avatarImage];
-    [_back sd_setImageWithURL:url placeholderImage:member.mode.runningStarImage];
+    [_back sd_setImageWithURL:url placeholderImage:member.modeData.runningStarImage];
 }
 
 //: + (instancetype)cellWithTableView:(UITableView *)tableView

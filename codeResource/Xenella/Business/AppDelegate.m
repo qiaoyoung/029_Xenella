@@ -23,8 +23,8 @@
 
 //: - (void)applicationDidEnterBackground:(UIApplication *)application {
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    //: [[SceneAssembleStorage sharedInstance] applicationDidEnterBackground:application];
-    [[SceneAssembleStorage sharedInstance] applicationDidEnterBackground:application];
+    //: [[SceneAssembleStorage unitedLikeOccurrent] applicationDidEnterBackground:application];
+    [[SceneAssembleStorage unitedLikeOccurrent] realmRed:application];
 }
 
 //: #pragma mark - openURL
@@ -38,8 +38,8 @@
 //: - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
-    //: [[SceneAssembleStorage sharedInstance] initDelegateWithWindow:self.window];
-    [[SceneAssembleStorage sharedInstance] initDelegateWithWindow:self.window];
+    //: [[SceneAssembleStorage unitedLikeOccurrent] initDelegateWithWindow:self.window];
+    [[SceneAssembleStorage unitedLikeOccurrent] initTranslate:self.window];
     //: return YES;
     return YES;
 }
@@ -48,8 +48,8 @@
 #pragma mark - ApplicationDelegate
 //: - (void)applicationDidBecomeActive:(UIApplication *)application {
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    //: [[SceneAssembleStorage sharedInstance] applicationDidBecomeActive:application];
-    [[SceneAssembleStorage sharedInstance] applicationDidBecomeActive:application];
+    //: [[SceneAssembleStorage unitedLikeOccurrent] applicationDidBecomeActive:application];
+    [[SceneAssembleStorage unitedLikeOccurrent] tos:application];
 }
 
 //: - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
@@ -60,8 +60,8 @@
 
 //: - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    //: [[SceneAssembleStorage sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-    [[SceneAssembleStorage sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    //: [[SceneAssembleStorage unitedLikeOccurrent] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [[SceneAssembleStorage unitedLikeOccurrent] applicationReserve:app direct:deviceToken];
 }
 
 //: @end

@@ -310,7 +310,7 @@
     //: for (ObviousDiagramArrayNoble *member in self.data) {
     for (ObviousDiagramArrayNoble *member in self.kickQuit) {
         //: [users addObject:member.info.infoId];
-        [users addObject:member.mode.stateOfGrace];
+        [users addObject:member.modeData.stateOfGrace];
     }
     //: ShaderVoyageDocument *config = [[ShaderVoyageDocument alloc] init];
     ShaderVoyageDocument *config = [[ShaderVoyageDocument alloc] init];
@@ -406,7 +406,7 @@
         //: UntilBuilderIndex *info = [[StableProtectSymbolAbsoluteTransformable sharedKit] infoByUser:user.userId option:nil];
         UntilBuilderIndex *info = [[StableProtectSymbolAbsoluteTransformable common] user:user.userId instance:nil];
         //: member.info = info;
-        member.mode = info;
+        member.modeData = info;
         //: [list addObject:member];
         [list addObject:member];
     }
@@ -455,7 +455,7 @@
     //: [ShapeSurfTerminalSystematic show];
     [ShapeSurfTerminalSystematic comeBrilliant];
     //: [[NIMSDK sharedSDK].userManager removeFromBlackBlackList:dataMemeber.info.infoId completion:^(NSError *error) {
-    [[NIMSDK sharedSDK].userManager removeFromBlackBlackList:dataMemeber.mode.stateOfGrace completion:^(NSError *error) {
+    [[NIMSDK sharedSDK].userManager removeFromBlackBlackList:dataMemeber.modeData.stateOfGrace completion:^(NSError *error) {
         //: [ShapeSurfTerminalSystematic dismiss];
         [ShapeSurfTerminalSystematic clueExtent];
         //: if (!error) {
@@ -550,7 +550,7 @@
     ObviousDiagramArrayNoble *member = self.kickQuit[indexPath.section];
 
     //: ShadowedSlideMediator *vc = [[ShadowedSlideMediator alloc] initWithUserId:member.info.infoId];
-    ShadowedSlideMediator *vc = [[ShadowedSlideMediator alloc] initWithBeyondLedge:member.mode.stateOfGrace];
+    ShadowedSlideMediator *vc = [[ShadowedSlideMediator alloc] initWithBeyondLedge:member.modeData.stateOfGrace];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
 

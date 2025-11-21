@@ -16,7 +16,7 @@
 @interface NSArray (Safe)
 
 //: - (NSArray *)arrayByReplacingNullsWithBlanks;
-- (NSArray *)roleWhisper;
+- (NSArray *)arrayByReplacingNullsWithBlanks;
 
 //: @end
 @end

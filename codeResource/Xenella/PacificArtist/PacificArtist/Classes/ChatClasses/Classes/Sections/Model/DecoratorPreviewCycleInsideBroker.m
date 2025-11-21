@@ -53,7 +53,7 @@ BoneSuspectData k_badUtility = (BoneSuspectData){48, (Byte []){66, 85, 64, 92, 7
 //: @synthesize replyContentViewInsets = _replyContentViewInsets;
 @synthesize instance = _memorySumyInsets;
 //: @synthesize replyBubbleViewInsets = _replyBubbleViewInsets;
-@synthesize forefrontBounce = _green;
+@synthesize forefrontBounce = _forefrontBounce;
 //: @synthesize shouldShowAvatar = _shouldShowAvatar;
 @synthesize nail = _alter;
 //: @synthesize shouldShowNickName = _shouldShowNickName;
@@ -198,7 +198,7 @@ BoneSuspectData k_badUtility = (BoneSuspectData){48, (Byte []){66, 85, 64, 92, 7
     //: _replyContentViewInsets = UIEdgeInsetsZero;
     _memorySumyInsets = UIEdgeInsetsZero;
     //: _replyBubbleViewInsets = UIEdgeInsetsZero;
-    _green = UIEdgeInsetsZero;
+    _forefrontBounce = UIEdgeInsetsZero;
 }
 
 
@@ -312,15 +312,15 @@ BoneSuspectData k_badUtility = (BoneSuspectData){48, (Byte []){66, 85, 64, 92, 7
 //: - (UIEdgeInsets)replyBubbleViewInsets{
 - (UIEdgeInsets)forefrontBounce{
     //: if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
-    if (UIEdgeInsetsEqualToEdgeInsets(_green, UIEdgeInsetsZero))
+    if (UIEdgeInsetsEqualToEdgeInsets(_forefrontBounce, UIEdgeInsetsZero))
     {
         //: id<ModularUntilViewCrest> layoutConfig = [[StableProtectSymbolAbsoluteTransformable sharedKit] layoutConfig];
         id<ModularUntilViewCrest> layoutConfig = [[StableProtectSymbolAbsoluteTransformable common] create];
         //: _replyBubbleViewInsets = [layoutConfig replyCellInsets:self];
-        _green = [layoutConfig isLedge:self];
+        _forefrontBounce = [layoutConfig isLedge:self];
     }
     //: return _replyBubbleViewInsets;
-    return _green;
+    return _forefrontBounce;
 }
 
 //: @end

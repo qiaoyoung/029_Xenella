@@ -212,7 +212,7 @@
 //: - (void)leftButtonClicked:(id)sender{
 - (void)performs:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = shareClass(self.arrowOutlining);
+    Class currentClass = object_getClass(self.arrowOutlining);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == highlight) && [self.arrowOutlining respondsToSelector:@selector(placeActual)]) {
         //: [self.delegate dismissDataPickerView];
@@ -282,7 +282,7 @@
 //: - (void)rightButtonClicked:(id)sender{
 - (void)clicked:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = shareClass(self.arrowOutlining);
+    Class currentClass = object_getClass(self.arrowOutlining);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == highlight) && [self.arrowOutlining respondsToSelector:@selector(placeActual)]) {
         //: [self.delegate dismissDataPickerView];
@@ -467,7 +467,7 @@
     //: self.delegate = delegate;
     self.arrowOutlining = delegate;
     //: delegateClass = object_getClass(delegate);
-    highlight = shareClass(delegate);
+    highlight = object_getClass(delegate);
 }
 
 //: - (void)setNavigationBarView{

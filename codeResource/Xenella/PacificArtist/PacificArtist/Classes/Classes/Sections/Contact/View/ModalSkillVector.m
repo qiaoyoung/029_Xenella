@@ -73,18 +73,18 @@
     //: self.member = member;
     self.block = member;
     //: self.textLabel.text = [PlayPixel showNick:member.info.infoId inSession:nil];
-    self.textLabel.text = [PlayPixel bounceChannel:member.mode.stateOfGrace factor:nil];
+    self.textLabel.text = [PlayPixel bounceChannel:member.modeData.stateOfGrace factor:nil];
     //: [self.textLabel sizeToFit];
     [self.textLabel sizeToFit];
     //: NSURL *url;
     NSURL *url;
     //: if (member.info.avatarUrlString.length) {
-    if (member.mode.steps.length) {
+    if (member.modeData.steps.length) {
         //: url = [NSURL URLWithString:member.info.avatarUrlString];
-        url = [NSURL URLWithString:member.mode.steps];
+        url = [NSURL URLWithString:member.modeData.steps];
     }
     //: [_avatarImageView nim_setImageWithURL:url placeholderImage:member.info.avatarImage options:SDWebImageRetryFailed];
-    [_freshWinsomeDark monitor:url abstractOptions:member.mode.runningStarImage change:SDWebImageRetryFailed];
+    [_freshWinsomeDark monitor:url abstractOptions:member.modeData.runningStarImage change:SDWebImageRetryFailed];
 }
 
 
@@ -124,7 +124,7 @@
     //: if ([self.delegate respondsToSelector:@selector(didTouchUserListAvatar:)]) {
     if ([self.arrowOutlining respondsToSelector:@selector(inviting:)]) {
         //: [self.delegate didTouchUserListAvatar:self.member.info.infoId];
-        [self.arrowOutlining inviting:self.block.mode.stateOfGrace];
+        [self.arrowOutlining inviting:self.block.modeData.stateOfGrace];
     }
 }
 

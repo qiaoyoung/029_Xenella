@@ -212,9 +212,9 @@ CGFloat neverDimension(void) {
         //: CGRect frame = CGRectMake(0, 0, 30, 30);
         CGRect frame = CGRectMake(0, 0, 30, 30);
         //: frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
-        frame.access.protectionX = CGRectGetMaxX(self.bounds) - frame.green.attach;
+        frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
         //: frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
-        frame.access.uniqueFile = (self.bounds.green.serverWriting - frame.green.serverWriting) * 0.5;
+        frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
 
         //: _actionButton.frame = CGRectIntegral(frame);
         _currentDominant.frame = CGRectIntegral(frame);
@@ -250,7 +250,7 @@ CGFloat neverDimension(void) {
         self.userInteractionEnabled = YES;
         {
             //: self.leftwardMarqueeView = [[ParserShoreStreamDatasetter alloc] initWithFrame:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width- 54 - 30 - 10, 46) direction:EndUpdateCoreFilledScaleLeftward];
-            self.suggest = [[ParserShoreStreamDatasetter alloc] initWithElectrical:CGRectMake(54, 0, [UIScreen mainScreen].bounds.green.attach- 54 - 30 - 10, 46) whiteInit:EndUpdateCoreFilledScaleLeftward];
+            self.suggest = [[ParserShoreStreamDatasetter alloc] initWithElectrical:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width- 54 - 30 - 10, 46) whiteInit:EndUpdateCoreFilledScaleLeftward];
             //: _leftwardMarqueeView.delegate = self;
             _suggest.arrowOutlining = self;
             //: _leftwardMarqueeView.timeIntervalPerScroll = 3.0f;
@@ -324,7 +324,7 @@ CGFloat neverDimension(void) {
     //: CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     //: return contentFitSize.height + 20.0f;
-    return contentFitSize.serverWriting + 20.0f;
+    return contentFitSize.height + 20.0f;
 }
 
 //: + (instancetype)showTipViewForCompletingUserInfolWithDelay:(float)delay
@@ -343,13 +343,13 @@ CGFloat neverDimension(void) {
     //: GrandRoadmapDepotAroundRock *tipView = [[GrandRoadmapDepotAroundRock alloc] initWithFrame:(CGRect) {
     GrandRoadmapDepotAroundRock *tipView = [[GrandRoadmapDepotAroundRock alloc] initWithFrame:(CGRect) {
         //: .origin.x = 5,
-        .access.protectionX = 5,
+        .origin.x = 5,
         //: .origin.y = (44.0f + [UIDevice vg_statusBarHeight])+5,
-        .access.uniqueFile = (44.0f + [UIDevice barrelhouse])+5,
+        .origin.y = (44.0f + [UIDevice barrelhouse])+5,
         //: .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
-        .green.attach = UIScreen.mainScreen.bounds.green.attach-10.f,
+        .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
         //: .size.height = 46.f
-        .green.serverWriting = 46.f
+        .size.height = 46.f
     //: }];
     }];
 
@@ -437,7 +437,7 @@ CGFloat neverDimension(void) {
             //: CGRect frame = self.frame;
             CGRect frame = self.frame;
             //: frame.origin.y = SNStatusBarHeight();
-            frame.access.uniqueFile = leadingWhite();
+            frame.origin.y = leadingWhite();
             //: self.frame = frame;
             self.frame = frame;
         //: } completion:^(BOOL finished) {
@@ -476,7 +476,7 @@ CGFloat neverDimension(void) {
     //: content.text = self.title;
     content.text = self.bubbleAngle;
     //: return (5.0f + 5.0f) + content.intrinsicContentSize.width; 
-    return (5.0f + 5.0f) + content.intrinsicContentSize.attach; // icon width + label width (it's perfect to cache them all)
+    return (5.0f + 5.0f) + content.intrinsicContentSize.width; // icon width + label width (it's perfect to cache them all)
 }
 
 //: #pragma mark -
@@ -495,7 +495,7 @@ CGFloat neverDimension(void) {
         //: CGRect frame = self.frame;
         CGRect frame = self.frame;
         //: frame.origin.y = SNStatusBarHeight() + 44 + 5;
-        frame.access.uniqueFile = leadingWhite() + 44 + 5;
+        frame.origin.y = leadingWhite() + 44 + 5;
         //: self.frame = frame;
         self.frame = frame;
     //: } completion:nil];

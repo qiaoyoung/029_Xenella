@@ -537,7 +537,7 @@ typedef void (^AFURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
 //: @property (nonatomic, strong) NSProgress *uploadProgress;
 @property (nonatomic, strong) NSProgress *upload;
 //: @property (nonatomic, strong) NSURLSessionTaskMetrics *sessionTaskMetrics API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
-@property (nonatomic, strong) NSURLSessionTaskMetrics *prefer//: @property (nonatomic, strong) NSMutableData *mutableData;
+@property (nonatomic, strong) NSURLSessionTaskMetrics *prefer;//: @property (nonatomic, strong) NSMutableData *mutableData;
 @property (nonatomic, strong) NSMutableData *blue;
 //: @property (nonatomic, weak) AFURLSessionManager *manager;
 @property (nonatomic, weak) AFURLSessionManager *replace;
@@ -545,7 +545,7 @@ typedef void (^AFURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
 //: @property (nonatomic, copy) AFURLSessionTaskProgressBlock downloadProgressBlock;
 @property (nonatomic, copy) AFURLSessionTaskProgressBlock entityLaunch;
  //: @property (nonatomic, strong) NSProgress *downloadProgress;
-@property (nonatomic, strong) NSProgress *bodyDepth;
+@property (nonatomic, strong) NSProgress *bodyDepth
 API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
 
 //: @property (nonatomic, copy) AFURLSessionDownloadTaskDidFinishDownloadingBlock downloadTaskDidFinishDownloading;
@@ -1122,7 +1122,7 @@ API_UNAVAILABLE(macos);
 //: @property (readwrite, nonatomic, copy) AFURLSessionDownloadTaskDidWriteDataBlock downloadTaskDidWriteData;
 @property (readwrite, nonatomic, copy) AFURLSessionDownloadTaskDidWriteDataBlock extra;
 //: @property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock didFinishEventsForBackgroundURLSession API_UNAVAILABLE(macos);
-@property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock withScan//: @property (readwrite, nonatomic, copy) AFURLSessionTaskAuthenticationChallengeBlock authenticationChallengeHandler;
+@property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock withScan;//: @property (readwrite, nonatomic, copy) AFURLSessionTaskAuthenticationChallengeBlock authenticationChallengeHandler;
 @property (readwrite, nonatomic, copy) AFURLSessionTaskAuthenticationChallengeBlock primaryChallengeBlock;
 //: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidBecomeDownloadTaskBlock dataTaskDidBecomeDownloadTask;
 @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidBecomeDownloadTaskBlock improved;
@@ -1132,13 +1132,13 @@ API_UNAVAILABLE(macos);
  //: @property (readwrite, nonatomic, strong) NSURLSessionConfiguration *sessionConfiguration;
 @property (readwrite, nonatomic, strong) NSURLSessionConfiguration *deepIgnoreNative;
 //: @property (readwrite, nonatomic, copy) AFURLSessionDidBecomeInvalidBlock sessionDidBecomeInvalid;
-@property (readwrite, nonatomic, copy) AFURLSessionDidBecomeInvalidBlock composition;
+@property (readwrite, nonatomic, copy) AFURLSessionDidBecomeInvalidBlock composition
 API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
 
 //: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidReceiveResponseBlock dataTaskDidReceiveResponse;
 @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidReceiveResponseBlock captureEffect;
 //: @property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock taskDidFinishCollectingMetrics API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
-@property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock journeyMetricsBlock//: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskWillCacheResponseBlock dataTaskWillCacheResponse;
+@property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock journeyMetricsBlock;//: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskWillCacheResponseBlock dataTaskWillCacheResponse;
 @property (readwrite, nonatomic, copy) AFURLSessionDataTaskWillCacheResponseBlock faculty;
 //: @property (readwrite, nonatomic, strong) NSMutableDictionary *mutableTaskDelegatesKeyedByTaskIdentifier;
 @property (readwrite, nonatomic, strong) NSMutableDictionary *drawing;
