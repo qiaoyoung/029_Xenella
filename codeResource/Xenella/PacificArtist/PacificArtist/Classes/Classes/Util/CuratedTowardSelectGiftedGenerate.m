@@ -94,7 +94,7 @@ static void recordingSpecial(SystemSoundID soundID, void *data)
         //: SEL selector = NSSelectorFromString(@"vibrate");
         SEL selector = NSSelectorFromString([BelowVisibleData viewCommunicateWhichRemarkTitle]);
         //: SuppressPerformSelectorLeakWarning([(CuratedTowardSelectGiftedGenerate *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
-        SuppressPerformSelectorLeakWarning([(CuratedTowardSelectGiftedGenerate *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+        [(CuratedTowardSelectGiftedGenerate *)notifier performSelector:selector withObject:nil afterDelay:1.0];
     }
 }
 

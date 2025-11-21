@@ -98,11 +98,7 @@ typedef void (^ShapeSurfTerminalSystematicDismissCompletion)(void);
 
 //: #pragma mark - Customization
 #pragma mark - Customization
-
-/// Represents the default style for the HUD.
-/// @discussion Default: ShapeSurfTerminalSystematicStyleAutomatic.
-__attribute__((annotate("ui_appearance_selector")));
-
+ 
 /// Defines the animation type used when the HUD is displayed.
 /// @discussion Default: ShapeSurfTerminalSystematicAnimationTypeFlat.
 //: @property (assign, nonatomic) ShapeSurfTerminalSystematicAnimationType defaultAnimationType __attribute__((annotate("ui_appearance_selector")));
@@ -111,10 +107,10 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Thickness of the ring shown in the HUD.
 /// @discussion Default: 2 pt.
 //: @property (assign, nonatomic) CGFloat ringThickness __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGFloat putJewel /// The minimum amount of time in seconds the HUD will display.
+@property (assign, nonatomic) CGFloat putJewel; /// The minimum amount of time in seconds the HUD will display.
 /// @discussion Default: 5.0 seconds.
 //: @property (assign, nonatomic) NSTimeInterval minimumDismissTimeInterval;
-@property (assign, nonatomic) NSTimeInterval acceptDrag;
+@property (assign, nonatomic) NSTimeInterval acceptDrag
  __attribute__((annotate("ui_appearance_selector")));
 
 /// The image displayed when showing success messages.
@@ -172,7 +168,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Font used for text within the HUD.
 /// @discussion Default: [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline].
 //: @property (strong, nonatomic, nonnull) UIFont *font __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIFont *systemFont /// The minimum size for the HUD. Useful for maintaining a consistent size when the message might cause resizing.
+@property (strong, nonatomic, nonnull) UIFont *systemFont; /// The minimum size for the HUD. Useful for maintaining a consistent size when the message might cause resizing.
 /// @discussion Default: CGSizeZero.
 //: @property (assign, nonatomic) CGSize minimumSize __attribute__((annotate("ui_appearance_selector")));
 @property (assign, nonatomic) CGSize until __attribute__((annotate("ui_appearance_selector")));
@@ -185,7 +181,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// The maximum window level on which the HUD can be displayed.
 /// @discussion Default: UIWindowLevelNormal.
 //: @property (assign, nonatomic) UIWindowLevel maxSupportedWindowLevel;
-@property (assign, nonatomic) UIWindowLevel deep;
+@property (assign, nonatomic) UIWindowLevel deep
  __attribute__((annotate("ui_appearance_selector")));
 
 /// The image displayed when showing informational messages.
@@ -224,7 +220,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Corner radius of the HUD view.
 /// @discussion Default: 14 pt.
 //: @property (assign, nonatomic) CGFloat cornerRadius __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGFloat relative /// The maximum amount of time in seconds the HUD will display.
+@property (assign, nonatomic) CGFloat relative; /// The maximum amount of time in seconds the HUD will display.
 /// @discussion Default: CGFLOAT_MAX.
 //: @property (assign, nonatomic) NSTimeInterval maximumDismissTimeInterval;
 @property (assign, nonatomic) NSTimeInterval numbererval;

@@ -30,10 +30,8 @@
 //: @interface UIScrollView (AmongByAccelerate_internal)
 @interface UIScrollView (AmongByAccelerate_internal)
 
-
-
-
-
+@property (nonatomic, assign) UIScrollViewContentInsetAdjustmentBehavior modelCatch;
+@property (nonatomic, assign) BOOL historyOff;
 
 //: @end
 @end

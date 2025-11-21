@@ -705,7 +705,7 @@ static char viewEndTimer;
         case ExportOutputFlagshipSyncPositionTop:
 
             //: if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
-            if((fabs(self.viewLetter.contentOffset.bridgeY) < 1.19209290e-7F)) {
+            if((fabs(self.viewLetter.contentOffset.y) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
                 [self.viewLetter setContentOffset:CGPointMake(self.viewLetter.contentOffset.x, -self.frame.size.height) animated:YES];
                 //: self.wasTriggeredByUser = NO;
@@ -722,11 +722,11 @@ static char viewEndTimer;
         case ExportOutputFlagshipSyncPositionBottom:
 
             //: if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
-            if(((fabs(self.viewLetter.contentOffset.bridgeY) < 1.19209290e-7F) && self.viewLetter.contentSize.height < self.viewLetter.bounds.size.height)
+            if(((fabs(self.viewLetter.contentOffset.y) < 1.19209290e-7F) && self.viewLetter.contentSize.height < self.viewLetter.bounds.size.height)
                //: || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
-               || (fabs((self.viewLetter.contentOffset.bridgeY) - (self.viewLetter.contentSize.height - self.viewLetter.bounds.size.height)) < 1.19209290e-7F)) {
+               || (fabs((self.viewLetter.contentOffset.y) - (self.viewLetter.contentSize.height - self.viewLetter.bounds.size.height)) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
-                [self.scrollView setContentOffset:(CGPoint){.bridgeY = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
+                [self.viewLetter setContentOffset:(CGPoint){.y = ((self.viewLetter.contentSize.height - self.viewLetter.bounds.size.height) > (0.0f) ? (self.viewLetter.contentSize.height - self.viewLetter.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
                 //: self.wasTriggeredByUser = NO;
                 self.flexibleInsertWearer = NO;
             }
@@ -849,7 +849,7 @@ static char viewEndTimer;
         //: CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         //: [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
-        [customView setFrame:CGRectMake(origin.x, origin.bridgeY, viewBounds.size.width, viewBounds.size.height)];
+        [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
     }
     //: else {
     else {
@@ -1033,7 +1033,7 @@ static char viewEndTimer;
             //: case ExportOutputFlagshipSyncPositionTop:
             case ExportOutputFlagshipSyncPositionTop:
                 //: scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
-                scrollOffsetThreshold = self.frame.origin.bridgeY - self.no;
+                scrollOffsetThreshold = self.frame.origin.y - self.no;
                 //: break;
                 break;
             //: case ExportOutputFlagshipSyncPositionBottom:
@@ -1049,19 +1049,19 @@ static char viewEndTimer;
             //: self.state = ExportOutputFlagshipSyncStateLoading;
             self.produceCapacitying = ExportOutputFlagshipSyncStateLoading;
         //: else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == ExportOutputFlagshipSyncStateStopped && self.position == ExportOutputFlagshipSyncPositionTop)
-        else if(contentOffset.bridgeY < scrollOffsetThreshold && self.viewLetter.isDragging && self.produceCapacitying == ExportOutputFlagshipSyncStateStopped && self.secure == ExportOutputFlagshipSyncPositionTop)
+        else if(contentOffset.y < scrollOffsetThreshold && self.viewLetter.isDragging && self.produceCapacitying == ExportOutputFlagshipSyncStateStopped && self.secure == ExportOutputFlagshipSyncPositionTop)
             //: self.state = ExportOutputFlagshipSyncStateTriggered;
             self.produceCapacitying = ExportOutputFlagshipSyncStateTriggered;
         //: else if(contentOffset.y >= scrollOffsetThreshold && self.state != ExportOutputFlagshipSyncStateStopped && self.position == ExportOutputFlagshipSyncPositionTop)
-        else if(contentOffset.bridgeY >= scrollOffsetThreshold && self.produceCapacitying != ExportOutputFlagshipSyncStateStopped && self.secure == ExportOutputFlagshipSyncPositionTop)
+        else if(contentOffset.y >= scrollOffsetThreshold && self.produceCapacitying != ExportOutputFlagshipSyncStateStopped && self.secure == ExportOutputFlagshipSyncPositionTop)
             //: self.state = ExportOutputFlagshipSyncStateStopped;
             self.produceCapacitying = ExportOutputFlagshipSyncStateStopped;
         //: else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == ExportOutputFlagshipSyncStateStopped && self.position == ExportOutputFlagshipSyncPositionBottom)
-        else if(contentOffset.bridgeY > scrollOffsetThreshold && self.viewLetter.isDragging && self.produceCapacitying == ExportOutputFlagshipSyncStateStopped && self.secure == ExportOutputFlagshipSyncPositionBottom)
+        else if(contentOffset.y > scrollOffsetThreshold && self.viewLetter.isDragging && self.produceCapacitying == ExportOutputFlagshipSyncStateStopped && self.secure == ExportOutputFlagshipSyncPositionBottom)
             //: self.state = ExportOutputFlagshipSyncStateTriggered;
             self.produceCapacitying = ExportOutputFlagshipSyncStateTriggered;
         //: else if(contentOffset.y <= scrollOffsetThreshold && self.state != ExportOutputFlagshipSyncStateStopped && self.position == ExportOutputFlagshipSyncPositionBottom)
-        else if(contentOffset.bridgeY <= scrollOffsetThreshold && self.produceCapacitying != ExportOutputFlagshipSyncStateStopped && self.secure == ExportOutputFlagshipSyncPositionBottom)
+        else if(contentOffset.y <= scrollOffsetThreshold && self.produceCapacitying != ExportOutputFlagshipSyncStateStopped && self.secure == ExportOutputFlagshipSyncPositionBottom)
             //: self.state = ExportOutputFlagshipSyncStateStopped;
             self.produceCapacitying = ExportOutputFlagshipSyncStateStopped;
     //: } else {
@@ -1075,7 +1075,7 @@ static char viewEndTimer;
             //: case ExportOutputFlagshipSyncPositionTop:
             case ExportOutputFlagshipSyncPositionTop:
                 //: offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
-                offset = ((self.viewLetter.contentOffset.bridgeY * -1) > (0.0f) ? (self.viewLetter.contentOffset.bridgeY * -1) : (0.0f));
+                offset = ((self.viewLetter.contentOffset.y * -1) > (0.0f) ? (self.viewLetter.contentOffset.y * -1) : (0.0f));
                 //: offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
                 offset = ((offset) < (self.no + self.bounds.size.height) ? (offset) : (self.no + self.bounds.size.height));
                 //: contentInset = self.scrollView.contentInset;
@@ -1157,7 +1157,7 @@ static char viewEndTimer;
 //: - (void)setScrollViewContentInsetForLoading {
 - (void)formula {
     //: CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
-    CGFloat offset = ((self.viewLetter.contentOffset.bridgeY * -1) > (0) ? (self.viewLetter.contentOffset.bridgeY * -1) : (0));
+    CGFloat offset = ((self.viewLetter.contentOffset.y * -1) > (0) ? (self.viewLetter.contentOffset.y * -1) : (0));
     //: UIEdgeInsets currentInsets = self.scrollView.contentInset;
     UIEdgeInsets currentInsets = self.viewLetter.contentInset;
     //: switch (self.position) {

@@ -156,7 +156,7 @@
         //: CGRect rect = CGRectMake(0, 0, 1, 1);
         CGRect rect = CGRectMake(0, 0, 1, 1);
         //: UIGraphicsBeginImageContextWithOptions(rect.size, opaqueImage, [UIScreen mainScreen].scale);
-        UIGraphicsBeginImageContextWithOptions(rect.sector, opaqueImage, [UIScreen mainScreen].scale);
+        UIGraphicsBeginImageContextWithOptions(rect.size, opaqueImage, [UIScreen mainScreen].scale);
         //: [color setFill];
         [color setFill];
         //: UIRectFill(rect);

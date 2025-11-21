@@ -134,12 +134,9 @@ typedef struct {
 
 /** 重写setMenuModel---对控件进行赋值 */
 //: - (void)setMenuModel:(id)menuModel {
-- (void)setForce:(id)menuModel {
-    //: _menuModel = menuModel;
-    _menuModel = menuModel;
-
+- (void)setForce:(id)force {
     //: SignatureCoolAmongProjectorModel *realMenuModel = (SignatureCoolAmongProjectorModel *)menuModel;
-    SignatureCoolAmongProjectorModel *realMenuModel = (SignatureCoolAmongProjectorModel *)menuModel;
+    SignatureCoolAmongProjectorModel *realMenuModel = (SignatureCoolAmongProjectorModel *)force;
     //: self.customTitleLabel.text = realMenuModel.menuItemTitle;
     self.length.text = realMenuModel.constraint;
     //给imageView赋值

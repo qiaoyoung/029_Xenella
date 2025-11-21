@@ -66,13 +66,13 @@
 //: - (NSString *)showName{
 - (NSString *)top{
     //: return self.info.showName;
-    return self.mode.reliefMapName;
+    return self.modeData.reliefMapName;
 }
 
 //: - (UIImage *)icon{
 - (UIImage *)sure{
     //: return self.info.avatarImage;
-    return self.mode.runningStarImage;
+    return self.modeData.runningStarImage;
 }
 
 //: - (NSString *)reuseId{
@@ -84,13 +84,13 @@
 //: - (NSString *)avatarUrl{
 - (NSString *)multipleBy{
     //: return self.info.avatarUrlString;
-    return self.mode.steps;
+    return self.modeData.steps;
 }
 
 //: - (id)sortKey {
 - (id)reply {
     //: return [[FreshSelectorDefineWatch sharedCenter] spellingForString:self.info.showName].shortSpelling;
-    return [[FreshSelectorDefineWatch table] frontTitle:self.mode.reliefMapName].mildBar;
+    return [[FreshSelectorDefineWatch table] frontTitle:self.modeData.reliefMapName].mildBar;
 }
 
 //: - (BOOL)isEqual:(id)object{
@@ -101,7 +101,7 @@
         return NO;
     }
     //: return [self.info.infoId isEqualToString:[[object info] infoId]];
-    return [self.mode.stateOfGrace isEqualToString:[[object mode] stateOfGrace]];
+    return [self.modeData.stateOfGrace isEqualToString:[[object modeData] stateOfGrace]];
 }
 
 //: - (NSString *)cellName{
@@ -113,7 +113,7 @@
 //: - (NSString *)groupTitle {
 - (NSString *)title {
     //: NSString *title = [[FreshSelectorDefineWatch sharedCenter] firstLetter:self.info.showName].capitalizedString;
-    NSString *title = [[FreshSelectorDefineWatch table] young:self.mode.reliefMapName].capitalizedString;
+    NSString *title = [[FreshSelectorDefineWatch table] young:self.modeData.reliefMapName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
     //: if (character >= 'A' && character <= 'Z') {
@@ -136,7 +136,7 @@
 //: - (NSString *)memberId{
 - (NSString *)resolveEye{
     //: return self.info.infoId;
-    return self.mode.stateOfGrace;
+    return self.modeData.stateOfGrace;
 }
 
 //: - (CGFloat)uiHeight{
@@ -148,7 +148,7 @@
 //: - (NSString *)userId{
 - (NSString *)nimId{
     //: return self.info.infoId;
-    return self.mode.stateOfGrace;
+    return self.modeData.stateOfGrace;
 }
 
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面

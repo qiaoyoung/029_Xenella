@@ -16,7 +16,7 @@
 @interface ObviousDiagramArrayNoble : NSObject
 
 //: @property (nonatomic,strong) UntilBuilderIndex *info;
-@property (nonatomic,strong) UntilBuilderIndex *mode;
+@property (nonatomic,strong) UntilBuilderIndex *modeData;
 
 //: @end
 @end

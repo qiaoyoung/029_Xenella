@@ -166,7 +166,7 @@ Byte colorFormatKey[] = {63, 20, 10, 4, 92, 101, 104, 88, 95, 90, 63, 100, 106, 
     //: if ([vc respondsToSelector:sel]) {
     if ([vc respondsToSelector:sel]) {
         //: SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
+        use = (BOOL)[vc performSelector:sel];
     }
     //: return use;
     return use;
@@ -270,7 +270,7 @@ Byte colorFormatKey[] = {63, 20, 10, 4, 92, 101, 104, 88, 95, 90, 63, 100, 106, 
     //: if ([vc respondsToSelector:sel]) {
     if ([vc respondsToSelector:sel]) {
         //: SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
+        use = (BOOL)[vc performSelector:sel];
     }
     //: return use;
     return use;

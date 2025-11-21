@@ -160,7 +160,7 @@ CaneData layoutMeasurePunishTimer = (CaneData){182, (Byte []){233, 212, 215, 213
             //: [self.km_transitionNavigationBar removeFromSuperview];
             [self.lowFill removeFromSuperview];
             //: self.km_transitionNavigationBar = nil;
-            self.km_transitionNavigationBarsetLowFill = nil;
+            self.lowFill = nil;
         }
     }
     //: if ([transitionViewController isEqual:self]) {
@@ -236,11 +236,11 @@ CaneData layoutMeasurePunishTimer = (CaneData){182, (Byte []){233, 212, 215, 213
             //: if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
             if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
                 //: scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
-                scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
+                scrollView.modelCatch = contentInsetAdjustmentBehavior;
                 //: scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
                 scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
                 //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
-                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
+                scrollView.historyOff = YES;
             }
         }
     }
@@ -363,7 +363,7 @@ CaneData layoutMeasurePunishTimer = (CaneData){182, (Byte []){233, 212, 215, 213
     //: [self.km_transitionNavigationBar removeFromSuperview];
     [self.lowFill removeFromSuperview];
     //: self.km_transitionNavigationBar = bar;
-    self.km_transitionNavigationBarsetLowFill = bar;
+    self.lowFill = bar;
     //: [self km_resizeTransitionNavigationBarFrame];
     [self departure];
     //: if (!self.navigationController.navigationBarHidden && !self.navigationController.navigationBar.hidden) {
@@ -395,11 +395,11 @@ CaneData layoutMeasurePunishTimer = (CaneData){182, (Byte []){233, 212, 215, 213
         //: if (scrollView) {
         if (scrollView) {
             //: if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
-            if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
+            if (scrollView.historyOff) {
                 //: scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
-                scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
+                scrollView.contentInsetAdjustmentBehavior = scrollView.modelCatch;
                 //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
-                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
+                scrollView.historyOff = NO;
             }
         }
     }

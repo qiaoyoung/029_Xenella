@@ -470,8 +470,8 @@
 #import "StrikeRareOverlayBeyond.h"
 //: #import "IterativeBoldHillGlobalFair.h"
 #import "IterativeBoldHillGlobalFair.h"
-//: #import "DiscreteTransformDataSource.h"
-#import "DiscreteTransformDataSource.h"
+//:  
+ 
 //: #import "GetOfDefine.h"
 #import "GetOfDefine.h"
 //: #import "TameVerifyTemple.h"

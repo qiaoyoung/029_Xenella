@@ -70,7 +70,7 @@
         //: ObviousDiagramArrayNoble *contact = [[ObviousDiagramArrayNoble alloc] init];
         ObviousDiagramArrayNoble *contact = [[ObviousDiagramArrayNoble alloc] init];
         //: contact.info = info;
-        contact.mode = info;
+        contact.modeData = info;
         //: [contacts addObject:contact];
         [contacts addObject:contact];
     }

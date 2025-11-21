@@ -37,13 +37,13 @@ IB_DESIGNABLE
 //: @property (nonatomic, readonly) UILabel *textLabel; 
 @property (nonatomic, readonly) UILabel *labelSubtle;// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) UIBlurEffect *blurEffect NS_AVAILABLE_IOS(8_0); 
-@property (nonatomic) UIBlurEffect *reading//: @property (nonatomic) IBInspectable BOOL showsText; 
+@property (nonatomic) UIBlurEffect *reading;//: @property (nonatomic) IBInspectable BOOL showsText;
 @property (nonatomic) IBInspectable BOOL beside;// UI_APPEARANCE_SELECTOR;
 
 //: @property (nonatomic) IBInspectable CGFloat textSize; 
 @property (nonatomic) IBInspectable CGFloat scanFloat;// UI_APPEARANCE_SELECTOR;
  //: @property (nonatomic) IBInspectable UIColor *textColor; 
-@property (nonatomic) IBInspectable UIColor *necessary;// UI_APPEARANCE_SELECTOR;
+@property (nonatomic) IBInspectable UIColor *necessary// UI_APPEARANCE_SELECTOR;
 
 NS_AVAILABLE_IOS(8_0);// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) IBInspectable BOOL usesVibrancyEffect; 

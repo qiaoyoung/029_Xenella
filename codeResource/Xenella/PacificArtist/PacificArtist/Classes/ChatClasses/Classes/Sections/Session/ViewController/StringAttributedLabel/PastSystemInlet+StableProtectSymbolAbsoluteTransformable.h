@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "DiscreteTransformDataSource.h"
-#import "DiscreteTransformDataSource.h"
+//:  
+#import "PastSystemInlet.h"
 
 //: @interface PastSystemInlet (StableProtectSymbolAbsoluteTransformable)
 @interface PastSystemInlet (StableProtectSymbolAbsoluteTransformable)

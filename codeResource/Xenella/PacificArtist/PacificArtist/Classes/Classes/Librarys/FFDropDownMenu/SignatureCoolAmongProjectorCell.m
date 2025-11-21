@@ -130,12 +130,9 @@ typedef struct {
 #pragma mark - set方法
 
 //: - (void)setMenuModel:(id)menuModel {
-- (void)setForce:(id)menuModel {
-    //: _menuModel = menuModel;
-    _menuModel = menuModel;
-
+- (void)setForce:(id)force {
     //: SignatureCoolAmongProjectorModel *realMenuModel = (SignatureCoolAmongProjectorModel *)menuModel;
-    SignatureCoolAmongProjectorModel *realMenuModel = (SignatureCoolAmongProjectorModel *)menuModel;
+    SignatureCoolAmongProjectorModel *realMenuModel = (SignatureCoolAmongProjectorModel *)force;
     //: self.customTitleLabel.text = realMenuModel.menuItemTitle;
     self.customStartBrand.text = realMenuModel.constraint;
 
