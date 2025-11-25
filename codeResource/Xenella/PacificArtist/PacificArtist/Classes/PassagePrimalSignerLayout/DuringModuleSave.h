@@ -62,10 +62,6 @@ typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 //: @property (nonatomic,weak) id <NearBrokerWhite> delegate;
 @property (nonatomic,weak) id <NearBrokerWhite> arrowOutlining;
 
-// "canMemberInfo": 1,//0 不允许查看资料 1 是允许
-//: @property (nonatomic,assign) BOOL canMemberInfo;
-@property (nonatomic,assign) BOOL rotarianOpen;
-
 //数据源
 //: @property (nonatomic,strong) NSArray <NSArray <SubtleQuotaCoralRound *> *> *datas;
 @property (nonatomic,strong) NSArray <NSArray <SubtleQuotaCoralRound *> *> *extend;

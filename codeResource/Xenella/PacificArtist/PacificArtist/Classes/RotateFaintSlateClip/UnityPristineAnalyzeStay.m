@@ -691,6 +691,7 @@ typedef struct {
 #import "LibraryOutsideLogicDense.h"
 //: #import "MatureDismissLotusComposite.h"
 #import "MatureDismissLotusComposite.h"
+#import "FlowFactoryThorn.h"
 
 //: @interface UnityPristineAnalyzeStay ()<UITextFieldDelegate> {
 @interface UnityPristineAnalyzeStay ()<UITextFieldDelegate> {
@@ -790,7 +791,7 @@ typedef struct {
             //: vc.webTitle = [MatureDismissLotusComposite getTextWithKey:@"activity_comment_setting_ys"];
             vc.genderGiven = [MatureDismissLotusComposite remove:[[ConspiracyData sharedInstance] screenRadiationName]];
             //: vc.urlString = [FinishMoveRepaintFrame standardUserDefaults].yshref;
-            vc.succeedStatus = [FinishMoveRepaintFrame styleDefaults].through;
+            vc.succeedStatus = [[FlowFactoryThorn precocious] policyUrl];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
 //            @weakify(self);

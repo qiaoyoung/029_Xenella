@@ -325,7 +325,7 @@
 //: @property (nonatomic, strong) NSMutableArray *memberList;
 @property (nonatomic, strong) NSMutableArray *sole;
 //: @property (nonatomic, strong) NSDictionary *teamSettingConfig;
-@property (nonatomic, strong) NSDictionary *enableConfig;
+//@property (nonatomic, strong) NSDictionary *enableConfig;
 //: @property (nonatomic, strong) NIMTeamMember *owerInfo;
 @property (nonatomic, strong) NIMTeamMember *gladsomeInfo;
 //: @property (nonatomic,strong) UIImageView *roleImageView;
@@ -333,6 +333,7 @@
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
 @property (nonatomic,strong) UILabel *harsh;
+@property (nonatomic, assign) BOOL canAddFriend;
 
 //: @end
 @end
@@ -361,9 +362,9 @@
 
 
     //: NSString *canMemberInfo = [_teamSettingConfig newStringValueForKey:@"canAddFriend"];
-    NSString *canMemberInfo = [_enableConfig clueKey:[[EqualData sharedInstance] spacingFrameText]];
+//    NSString *canMemberInfo = [_enableConfig clueKey:[[EqualData sharedInstance] spacingFrameText]];
     //: if (canMemberInfo.integerValue > 0) {
-    if (canMemberInfo.integerValue > 0) {
+    if (_canAddFriend) {
 
         //: NIMTeamMember *member = self.memberList[indexPath.row];
         NIMTeamMember *member = self.sole[indexPath.row];
@@ -400,23 +401,32 @@
     //: dict[@"id"] = self.teamListManager.team.teamId?:@"";
     dict[@"id"] = self.firstTeamRavenExtract.cistronTeam.teamId?:@"";
     //: [FertileSuiteEnableCacheLine getWithUrl:[NSString stringWithFormat:@"/team/getTeamSetting"] params:dict isShow:NO success:^(id responseObject) {
-    [FertileSuiteEnableCacheLine exhibit:[NSString stringWithFormat:[[EqualData sharedInstance] spacingAbsoluteKey]] bring:dict params:NO deepFailed:^(id responseObject) {
-        //: NSDictionary *resultDict = (NSDictionary *)responseObject;
-        NSDictionary *resultDict = (NSDictionary *)responseObject;
-        //: NSString *code = [resultDict newStringValueForKey:@"code"];
-        NSString *code = [resultDict clueKey:[[EqualData sharedInstance] themeResponseTimer]];
-        //: if (code.integerValue <= 0) {
-        if (code.integerValue <= 0) {
-            //: NSDictionary *data = [resultDict valueObjectForKey:@"data"];
-            NSDictionary *data = [resultDict domeCloseHold:[[EqualData sharedInstance] styleResumeHelper]];
-            //: _teamSettingConfig = data;
-            _enableConfig = data;
-        }
-    //: } failed:^(id responseObject, NSError *error) {
-    } coordinator:^(id responseObject, NSError *error) {
-    //: }];
-    }];
+//    [FertileSuiteEnableCacheLine exhibit:[NSString stringWithFormat:[[EqualData sharedInstance] spacingAbsoluteKey]] bring:dict params:NO deepFailed:^(id responseObject) {
+//        //: NSDictionary *resultDict = (NSDictionary *)responseObject;
+//        NSDictionary *resultDict = (NSDictionary *)responseObject;
+//        //: NSString *code = [resultDict newStringValueForKey:@"code"];
+//        NSString *code = [resultDict clueKey:[[EqualData sharedInstance] themeResponseTimer]];
+//        //: if (code.integerValue <= 0) {
+//        if (code.integerValue <= 0) {
+//            //: NSDictionary *data = [resultDict valueObjectForKey:@"data"];
+//            NSDictionary *data = [resultDict domeCloseHold:[[EqualData sharedInstance] styleResumeHelper]];
+//            //: _teamSettingConfig = data;
+//            _enableConfig = data;
+//        }
+//    //: } failed:^(id responseObject, NSError *error) {
+//    } coordinator:^(id responseObject, NSError *error) {
+//    //: }];
+//    }];
 
+    [[NIMSDK sharedSDK].teamManager fetchTeamInfo:self.firstTeamRavenExtract.cistronTeam.teamId?:@"" completion:^(NSError * _Nullable error, NIMTeam * _Nullable team) {
+        NSDictionary *dict = [team.serverCustomInfo toDictionary];
+        if (dict) {
+            NSNumber *canAddFriend = dict[@"canAddFriend"];
+            self.canAddFriend = [canAddFriend.stringValue isEqualToString:@"1"];
+            
+        }
+    }];
+    
     //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(teamMemberUpdate:) name:@"TeamListDataTeamMembersChanged" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(freshes:) name:[[EqualData sharedInstance] featureOccasionText] object:nil];
 }

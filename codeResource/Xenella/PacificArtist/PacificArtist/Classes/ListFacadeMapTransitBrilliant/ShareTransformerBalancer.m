@@ -548,13 +548,13 @@ typedef struct {
                                         recognize_strong:[MatureDismissLotusComposite remove:@"撤回"]];
 
     //: OptimizeStencilForcefulPaintClose *delete = [OptimizeStencilForcefulPaintClose item:@"onTapMenuItemDelete:"
-    OptimizeStencilForcefulPaintClose *delete = [OptimizeStencilForcefulPaintClose sceneName:[[TwiceData sharedInstance] coreBuddyTumbleUtility]
-                                  //: normalImage:[UIImage imageNamed:@"menu_del"]
-                                  standardTitle:[UIImage imageNamed:[[TwiceData sharedInstance] screenHouseContent]]
-                                //: selectedImage:nil
-                                familiarisationTitle:nil
-                                        //: title:[MatureDismissLotusComposite getTextWithKey:@"删除"]];
-                                        recognize_strong:[MatureDismissLotusComposite remove:@"删除"]];
+//    OptimizeStencilForcefulPaintClose *delete = [OptimizeStencilForcefulPaintClose sceneName:[[TwiceData sharedInstance] coreBuddyTumbleUtility]
+//                                  //: normalImage:[UIImage imageNamed:@"menu_del"]
+//                                  standardTitle:[UIImage imageNamed:[[TwiceData sharedInstance] screenHouseContent]]
+//                                //: selectedImage:nil
+//                                familiarisationTitle:nil
+//                                        //: title:[MatureDismissLotusComposite getTextWithKey:@"删除"]];
+//                                        recognize_strong:[MatureDismissLotusComposite remove:@"删除"]];
 
 //    OptimizeStencilForcefulPaintClose *mutiSelect = [OptimizeStencilForcefulPaintClose item:@"onTapMenuItemMutiSelect:"
 //                                      normalImage:[UIImage imageNamed:@"menu_choose"]
@@ -588,7 +588,7 @@ typedef struct {
     //: if ([PlayPixel canMessageBeForwarded:message]) {
     if ([PlayPixel related:message]) {
         //: [items addObject:forword];
-        [items addObject:forword];
+//        [items addObject:forword];
     }
 //    if ([PlayPixel canMessageBeForwarded:message]) {
 //        [items addObject:mark];

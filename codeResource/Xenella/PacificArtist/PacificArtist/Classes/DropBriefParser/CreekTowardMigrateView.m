@@ -1,6 +1,6 @@
 
 #import <Foundation/Foundation.h>
-
+#import "FlowFactoryThorn.h"
 @interface EducatorData : NSObject
 
 + (instancetype)sharedInstance;
@@ -1089,7 +1089,7 @@
     //: vc.webTitle = [MatureDismissLotusComposite getTextWithKey:@"activity_comment_setting_ys"];
     vc.genderGiven = [MatureDismissLotusComposite remove:[[EducatorData sharedInstance] commonScopeSettings]];//@"隐私协议";
     //: vc.urlString = [FinishMoveRepaintFrame standardUserDefaults].yshref;
-    vc.succeedStatus = [FinishMoveRepaintFrame styleDefaults].through;
+    vc.succeedStatus = [[FlowFactoryThorn precocious] policyUrl];
 
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];

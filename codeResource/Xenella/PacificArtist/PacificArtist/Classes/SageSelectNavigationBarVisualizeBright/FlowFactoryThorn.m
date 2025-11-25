@@ -190,6 +190,7 @@ typedef struct {
         // 打包OSS-2
         //: self.hostFrom2 = @"https://xylotar.s3.us-east-1.amazonaws.com/x.txt";
         self.steelSecurity = [MaintenanceData kBoardValue];
+        _policyUrl = @"https://www.xylotar.com/privacy.html";
 
     }
     //: return self;

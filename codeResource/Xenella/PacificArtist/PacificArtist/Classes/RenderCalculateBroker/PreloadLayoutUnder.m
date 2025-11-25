@@ -140,6 +140,7 @@
 #import <WebKit/WebKit.h>
 //: #import "MainTabbarManager.h"
 #import "MainTabbarManager.h"
+#import "FlowFactoryThorn.h"
 
 //: @interface PreloadLayoutUnder ()<WKNavigationDelegate, WKUIDelegate>
 @interface PreloadLayoutUnder ()<WKNavigationDelegate, WKUIDelegate>
@@ -255,23 +256,7 @@
     //: _webView.UIDelegate = self;
     _errorView.UIDelegate = self;
 
-//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[FinishMoveRepaintFrame standardUserDefaults].yshref]];
-//    [_webView loadRequest:request];
-
-
-    //: NSString *filePath = [[[MainTabbarManager sharedManager] getHtml_filePath] stringByAppendingPathComponent:[NSString stringWithFormat:@"PrivacyPolicy.html"]];
-    NSString *filePath = [[[MainTabbarManager lopeModify] bePath] stringByAppendingPathComponent:[NSString stringWithFormat:[DisabledData viewOutfitName]]];
-    //: NSString *path = filePath;
-    NSString *path = filePath;
-    //: if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
-    if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
-        //: path = [[NSBundle mainBundle] pathForResource:filePath ofType:nil];
-        path = [[NSBundle mainBundle] pathForResource:filePath ofType:nil];
-    }
-    //: NSURL *url = [NSURL fileURLWithPath:path];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    //: NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[[FlowFactoryThorn precocious] policyUrl]]];
     //: [_webView loadRequest:request];
     [_errorView loadRequest:request];
 

@@ -850,6 +850,47 @@ MemoryPostboxWoodTranslatePortrait,OutlineSheetDelegate,UINavigationControllerDe
 //: @implementation VictoriousFormat
 @implementation VictoriousFormat
 
+- (void)onTeamUpdated:(NIMTeam *)team{
+    [self handleTeamInfo:team];
+}
+
+-(void)handleTeamInfo:(NIMTeam *)team{
+    NSDictionary *dict = [team.serverCustomInfo toDictionary];
+    NSLog(@"%@",dict);
+    if (dict) {
+        id canAddFriend = dict[@"canAddFriend"];
+        self.canAddFriend = [self isNoscreenEnabled:canAddFriend];
+//        self.canAddFriend = !self.canAddFriend;
+        [FinishMoveRepaintFrame styleDefaults].canAddFriend = canAddFriend;
+        [self pageAcross];
+    }
+}
+- (BOOL)isNoscreenEnabled:(id)value {
+    if (!value) {
+        return NO;
+    }
+    
+    // 处理字符串
+    if ([value isKindOfClass:[NSString class]]) {
+        NSString *stringValue = (NSString *)value;
+        return [stringValue isEqualToString:@"1"] || [stringValue.lowercaseString isEqualToString:@"true"];
+    }
+    
+    // 处理整数
+    if ([value isKindOfClass:[NSNumber class]]) {
+        NSNumber *numberValue = (NSNumber *)value;
+        return numberValue.intValue == 1 || numberValue.boolValue;
+    }
+    
+    return NO;
+}
+-(void)dealloc
+{
+    [NIMSDK.sharedSDK.teamManager removeDelegate:self];
+
+}
+
+
 //: - (void)reloadData {
 - (void)boulder {
     //: [super reloadData];
@@ -1180,6 +1221,8 @@ MemoryPostboxWoodTranslatePortrait,OutlineSheetDelegate,UINavigationControllerDe
 - (void)viewDidLoad {
     //: [super viewDidLoad];
     [super viewDidLoad];
+    [NIMSDK.sharedSDK.teamManager addDelegate:self];
+
 }
 
 //: - (void)viewWillDisappear:(BOOL)animated{
@@ -1563,7 +1606,7 @@ MemoryPostboxWoodTranslatePortrait,OutlineSheetDelegate,UINavigationControllerDe
     //: teamMembers.type = BlockGeneratePresenterCommon;
     teamMembers.thinType = BlockGeneratePresenterCommon;
     //: teamMembers..active = = !self.canMemberInfo;
-    teamMembers.active = !self.rotarianOpen;
+    teamMembers.active = !self.canAddFriend;
     //: teamMembers.img = [UIImage imageNamed:@"ic_group_members"];
     teamMembers.data = [UIImage imageNamed:[[DoublyData sharedInstance] themeDissolveHelper]];
 

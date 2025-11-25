@@ -27,7 +27,9 @@
 @property (nonatomic,copy) NSString *communityPropertyName;
 //: @property (nonatomic,copy) NSString *domainURL;
 @property (nonatomic,copy) NSString *external;//主域名url
-//: @property (assign) BOOL allowAutoLogin; 
+@property (nonatomic,copy)   NSString *policyUrl;
+
+//: @property (assign) BOOL allowAutoLogin;
 @property (assign) BOOL fragmentServer;//允许自动登录
 
 //: @property (nonatomic,copy) NSString *apnsCername;

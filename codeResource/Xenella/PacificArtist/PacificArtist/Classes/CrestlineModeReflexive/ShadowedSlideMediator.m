@@ -2020,20 +2020,7 @@ typedef struct {
 //加好友
 //: -(void)addFriend{
 -(void)yardSimultaneously{
-
-    //: if (_teamSetingConfig != nil) {
-    if (_aWrite != nil) {
-        //: NSString *canAddFriend = [_teamSetingConfig newStringValueForKey:@"canAddFriend"];
-        NSString *canAddFriend = [_aWrite clueKey:[NowData sharedInstance].componentHighlightLogger];
-        //: if (canAddFriend.integerValue <= 0) {
-        if (canAddFriend.integerValue <= 0) {
-            //: [ShapeSurfTerminalSystematic showMessage:[MatureDismissLotusComposite getTextWithKey:@"please_contact_your_administrator"]];
-            [ShapeSurfTerminalSystematic yieldJoin:[MatureDismissLotusComposite remove:[NowData sharedInstance].coreInformationFormat]];
-            //: return;
-            return;
-        }
-    }
-
+ 
     //: [self sendAddFriendRequest];
     [self masterSession];//添加好友
 

@@ -202,7 +202,15 @@ typedef struct {
         //: [_webView loadRequest:request];
         [_plume loadRequest:request];
         //: return;
-        return;
+    } else {
+        NSString *path = [[[MainTabbarManager lopeModify] bePath] stringByAppendingPathComponent:@"PrivacyPolicy.html"];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+            path = [[NSBundle mainBundle] pathForResource:@"PrivacyPolicy" ofType:@"html"];
+        }
+        NSString *html = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+        NSURL *url = [NSURL fileURLWithPath:[path stringByDeletingLastPathComponent] isDirectory:YES];
+        [_plume loadHTMLString:html baseURL:url];
+
     }
 
 //    }else{
@@ -215,23 +223,7 @@ typedef struct {
 //
 //
 //    }
-    //: NSString *filePath = [[[MainTabbarManager sharedManager] getHtml_filePath] stringByAppendingPathComponent:[NSString stringWithFormat:@"PrivacyPolicy.html"]];
-    NSString *filePath = [[[MainTabbarManager lopeModify] bePath] stringByAppendingPathComponent:[NSString stringWithFormat:[[RequestData sharedInstance] widgetNotePath]]];
-    //: NSString *path = filePath;
-    NSString *path = filePath;
-    //: if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
-    if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
-        //: path = [[NSBundle mainBundle] pathForResource:filePath ofType:nil];
-        path = [[NSBundle mainBundle] pathForResource:filePath ofType:nil];
-    }
-    //: NSURL *url = [NSURL fileURLWithPath:path];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    //: NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    //: [_webView loadRequest:request];
-    [_plume loadRequest:request];
-
-
+ 
 
 }
 

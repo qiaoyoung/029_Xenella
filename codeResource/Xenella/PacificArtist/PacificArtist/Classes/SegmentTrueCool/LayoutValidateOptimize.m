@@ -275,7 +275,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
 //@property (nonatomic, strong) UICollectionView *collectionView;
 //@property (nonatomic, weak) id <UpAtSaver> dataSource;
 //: @property (nonatomic, strong) NSDictionary *teamSettingConfig;
-@property (nonatomic, strong) NSDictionary *finish;
+//@property (nonatomic, strong) NSDictionary *finish;
 //: @property (nonatomic, strong) UIButton *lastBtn;
 @property (nonatomic, strong) UIButton *scheme;
 //: @property (nonatomic, assign) NSInteger totalPageCount;
@@ -371,22 +371,22 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
     //: dict[@"id"] = self.teamListManager.team.teamId?:@"";
     dict[@"id"] = self.resolutionEmpty.cistronTeam.teamId?:@"";
     //: [FertileSuiteEnableCacheLine getWithUrl:[NSString stringWithFormat:@"/team/getTeamSetting"] params:dict isShow:NO success:^(id responseObject) {
-    [FertileSuiteEnableCacheLine exhibit:[NSString stringWithFormat:[[OftenData sharedInstance] spacingJuiceData]] bring:dict params:NO deepFailed:^(id responseObject) {
-        //: NSDictionary *resultDict = (NSDictionary *)responseObject;
-        NSDictionary *resultDict = (NSDictionary *)responseObject;
-        //: NSString *code = [resultDict newStringValueForKey:@"code"];
-        NSString *code = [resultDict clueKey:[[OftenData sharedInstance] appClusterPreference]];
-        //: if (code.integerValue <= 0) {
-        if (code.integerValue <= 0) {
-            //: NSDictionary *data = [resultDict valueObjectForKey:@"data"];
-            NSDictionary *data = [resultDict domeCloseHold:[[OftenData sharedInstance] stylePieceText]];
-            //: _teamSettingConfig = data;
-            _finish = data;
-        }
-    //: } failed:^(id responseObject, NSError *error) {
-    } coordinator:^(id responseObject, NSError *error) {
-    //: }];
-    }];
+//    [FertileSuiteEnableCacheLine exhibit:[NSString stringWithFormat:[[OftenData sharedInstance] spacingJuiceData]] bring:dict params:NO deepFailed:^(id responseObject) {
+//        //: NSDictionary *resultDict = (NSDictionary *)responseObject;
+//        NSDictionary *resultDict = (NSDictionary *)responseObject;
+//        //: NSString *code = [resultDict newStringValueForKey:@"code"];
+//        NSString *code = [resultDict clueKey:[[OftenData sharedInstance] appClusterPreference]];
+//        //: if (code.integerValue <= 0) {
+//        if (code.integerValue <= 0) {
+//            //: NSDictionary *data = [resultDict valueObjectForKey:@"data"];
+//            NSDictionary *data = [resultDict domeCloseHold:[[OftenData sharedInstance] stylePieceText]];
+//            //: _teamSettingConfig = data;
+//            _finish = data;
+//        }
+//    //: } failed:^(id responseObject, NSError *error) {
+//    } coordinator:^(id responseObject, NSError *error) {
+//    //: }];
+//    }];
 }
 
 //: - (void)setupUI {
@@ -805,9 +805,9 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     //: NSString *canMemberInfo = [_teamSettingConfig newStringValueForKey:@"canAddFriend"];
-    NSString *canMemberInfo = [_finish clueKey:[[OftenData sharedInstance] moduleRecordingTitle]];
-    //: if (canMemberInfo.integerValue > 0) {
-    if (canMemberInfo.integerValue > 0) {
+//    NSString *canMemberInfo = [_finish clueKey:[[OftenData sharedInstance] moduleRecordingTitle]];
+//    //: if (canMemberInfo.integerValue > 0) {
+//    if (canMemberInfo.integerValue > 0) {
         //: NSString *uId = _teamListManager.memberIds[indexPath.section];
         NSString *uId = _resolutionEmpty.library[indexPath.section];
 //    IntoColorWatchGeneric *vc = [[IntoColorWatchGeneric alloc] init];
@@ -819,7 +819,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
         ShadowedSlideMediator *vc = [[ShadowedSlideMediator alloc] initWithBeyondLedge:uId];
         //: [self.navigationController pushViewController:vc animated:YES];
         [self.navigationController pushViewController:vc animated:YES];
-    }
+//    }
 
 }
 

@@ -104,6 +104,11 @@
 //: @property (nonatomic ,strong) NSString *autoLogin;
 @property (nonatomic ,strong) NSString *lightBasic;
 
+@property (nonatomic ,assign) BOOL canSendText;
+@property (nonatomic ,assign) BOOL canAddFriend;
+@property (nonatomic ,assign) BOOL noScreen;
+
+
 //: - (void)updateLanguageWith:(NSString *)lang;
 - (void)painter:(NSString *)lang;
 

@@ -40,9 +40,10 @@
 
 // "canMemberInfo": 1,//0 不允许查看资料 1 是允许
 //: @property (nonatomic,assign) BOOL canMemberInfo;
-@property (nonatomic,assign) BOOL getOver;
-//: @property (nonatomic, assign) BOOL canTapVoiceBtn; 
-@property (nonatomic, assign) BOOL vox;// 能够点击语音按钮
+//@property (nonatomic,assign) BOOL getOver;
+@property (nonatomic,assign) BOOL canAddFriend;
+@property (nonatomic,assign) BOOL canSendText;  // 能够点击语音按钮
+
 /**
  *  会话页主标题
  *
@@ -71,6 +72,9 @@
 //: @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITableView *calendar;
 
+- (BOOL)isNoscreenEnabled:(id)value;
+
+- (void)saveValueInDefault:(NSString *)key;
 
 //: #pragma mark - 录音接口
 #pragma mark - 录音接口

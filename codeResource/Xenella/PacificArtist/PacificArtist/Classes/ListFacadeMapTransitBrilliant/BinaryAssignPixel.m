@@ -504,7 +504,7 @@
 #import "FlowFactoryThorn.h"
 
 //: @interface BinaryAssignPixel ()<NIMMediaManagerDelegate,FlexibleUpbeatUntouched,NearBrokerWhite,NIMConversationManagerDelegate,CalibrateBinderControllerCatalog,UIGestureRecognizerDelegate>
-@interface BinaryAssignPixel ()<NIMMediaManagerDelegate,FlexibleUpbeatUntouched,NearBrokerWhite,NIMConversationManagerDelegate,CalibrateBinderControllerCatalog,UIGestureRecognizerDelegate>
+@interface BinaryAssignPixel ()<NIMMediaManagerDelegate,FlexibleUpbeatUntouched,NearBrokerWhite,NIMConversationManagerDelegate,CalibrateBinderControllerCatalog,UIGestureRecognizerDelegate,NIMUserManagerDelegate,NIMTeamManagerDelegate>
 
 //: @property (nonatomic,strong) UILabel *subtitle;
 @property (nonatomic,strong) UILabel *that;
@@ -549,12 +549,93 @@
 //: @property (nonatomic,readwrite) NIMMessage *messageForMenu;
 @property (nonatomic,readwrite) NIMMessage *but;
 
+@property (nonatomic, strong) UITextField *bgTextField;
+@property (nonatomic, strong) UIView *bottomview;
+
+@property (nonatomic, assign) BOOL noscreenValue;
+
 
 //: @end
 @end
 
 //: @implementation BinaryAssignPixel
 @implementation BinaryAssignPixel
+
+-(void)onUserInfoChanged:(NIMUser *)user{
+    [self handleUserInfo:user];
+}
+- (void)handleUserInfo:(NIMUser *)user {
+    NSString *serverExtensionString = user.userInfo.ext;
+    BOOL noScreen = NO;
+    NSLog(@"aaaaaaa%@",serverExtensionString);
+//    [self.view makeToast:serverExtensionString duration:2.0f position:CSToastPositionCenter];
+
+    if (serverExtensionString && serverExtensionString.length) {
+        NSData *jsonData = [serverExtensionString dataUsingEncoding:NSUTF8StringEncoding];
+        
+        if (!jsonData) {
+            NSLog(@"serverExtension 转换 Data 失败");
+            [self restoreOriginalView];
+            return;
+        }
+        NSError *error = nil;
+        id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+        if ([jsonObject isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *dictionary = (NSDictionary *)jsonObject;
+            id noscreenValue = dictionary[@"noscreen"];
+            _noscreenValue = [self isNoscreenEnabled:noscreenValue];
+            noScreen = _noscreenValue;
+        }
+    }
+    if (_noscreenValue) {
+        [self setupSecureBackground];
+    }else{
+        [self restoreOriginalView];
+    }
+    
+    [FinishMoveRepaintFrame styleDefaults].noScreen = noScreen;
+}
+- (void)onTeamUpdated:(NIMTeam *)team{
+    [self handleTeamInfo:team];
+}
+-(void)handleTeamInfo:(NIMTeam *)team{
+    NSDictionary *dict = [team.serverCustomInfo toDictionary];
+    NSLog(@"%@",dict);
+
+    if (dict) {
+        id canAddFriend = dict[@"canAddFriend"];
+        id canSendText = dict[@"canSendText"];
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [self.view makeToast:[NSString stringWithFormat:@"canAddFriend=%@canSendText=%@"] duration:2.0f position:CSToastPositionCenter];
+//
+//        });
+
+        self.canAddFriend = [self isCanAddFriend:canAddFriend];
+        self.canSendText = [self isCanAddFriend:canSendText];
+//        [MyUserDefaults standardUserDefaults].canSendText = canSendText;
+//        [MyUserDefaults standardUserDefaults].canAddFriend = canAddFriend;
+    }
+}
+- (BOOL)isCanAddFriend:(id)value {
+    if (!value) {
+        return NO;
+    }
+    
+    // 处理字符串
+    if ([value isKindOfClass:[NSString class]]) {
+        NSString *stringValue = (NSString *)value;
+        return [stringValue isEqualToString:@"1"] || [stringValue.lowercaseString isEqualToString:@"true"];
+    }
+    
+    // 处理整数
+    if ([value isKindOfClass:[NSNumber class]]) {
+        NSNumber *numberValue = (NSNumber *)value;
+        return numberValue.intValue == 1 || numberValue.boolValue;
+    }
+    
+    return NO;
+}
+
 
 //: - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
 - (void)scroll:(UIScrollView *)scrollView {
@@ -821,22 +902,9 @@
     [self.current.select.direction sendActionsForControlEvents:UIControlEventTouchUpInside];
     //: self.messageForMenu = nil;
     self.but = nil;
+    self.current.select.bound = nil;
 }
-//: - (void)handleAudioBtn
-- (void)yetStack
-{
-//    [self.sessionInputView refreshStatus:LocalizeOverlayImplementText];
-    //: self.sessionInputView.toolBar.showsKeyboard = NO;
-    self.current.fade.rootPer = NO;
-
-    //: [self.view addSubview:self.audioContent];
-    [self.view addSubview:self.nativeMid];
-    //: self.audioContent.actionDelegate = self;
-    self.nativeMid.play = self;
-    //: [self.audioContent animationShow];
-    [self.nativeMid botany];
-}
-
+ 
 //: - (BOOL)onLongPressCell:(NIMMessage *)message
 - (BOOL)growingCell:(NIMMessage *)message
 {
@@ -918,52 +986,6 @@
     [self.current endEditing:YES];
     //: self.photopicview.hidden = YES;
     self.delayView.hidden = YES;
-}
-
-//: - (void)setupTableView
-- (void)of
-{
-    //: CGFloat safeAreaInsetsBottom = [UIDevice vg_safeDistanceBottom];
-    CGFloat safeAreaInsetsBottom = [UIDevice light];
-    //: CGFloat containerSafeHeight = [UIScreen mainScreen].bounds.size.height - safeAreaInsetsBottom - (44.0f + [UIDevice vg_statusBarHeight]);
-    CGFloat containerSafeHeight = [UIScreen mainScreen].bounds.size.height - safeAreaInsetsBottom - (44.0f + [UIDevice barrelhouse]);
-
-    //: self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [UIScreen mainScreen].bounds.size.width, containerSafeHeight-51) style:UITableViewStylePlain];
-    self.calendar = [[UITableView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice barrelhouse]), [UIScreen mainScreen].bounds.size.width, containerSafeHeight-51) style:UITableViewStylePlain];
-//    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, SCREEN_TOP_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-SCREEN_TOP_HEIGHT-SCREEN_TABBAR_HEIGHT-SCREEN_BOTTOM_HEIGHT) style:UITableViewStylePlain];
-//    self.tableView.backgroundColor = NEEKIT_UIColorFromRGB(0xe4e7ec);
-    //: self.tableView.backgroundColor = [UIColor clearColor];
-    self.calendar.backgroundColor = [UIColor clearColor];
-    //: self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.calendar.separatorStyle = UITableViewCellSeparatorStyleNone;
-    //: self.tableView.estimatedRowHeight = 0;
-    self.calendar.estimatedRowHeight = 0;
-    //: self.tableView.estimatedSectionHeaderHeight = 0;
-    self.calendar.estimatedSectionHeaderHeight = 0;
-    //: self.tableView.estimatedSectionFooterHeight = 0;
-    self.calendar.estimatedSectionFooterHeight = 0;
-    //: self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    self.calendar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    //: self.tableViewTapGesture = [[UITapGestureRecognizer alloc] init];
-    self.backgroundCell = [[UITapGestureRecognizer alloc] init];
-    //: self.tableViewTapGesture.cancelsTouchesInView = NO;
-    self.backgroundCell.cancelsTouchesInView = NO;
-    //: [self.tableViewTapGesture addTarget:self action:@selector(onTapTableView:)];
-    [self.backgroundCell addTarget:self action:@selector(windows:)];
-    //: [self.tableView addGestureRecognizer:self.tableViewTapGesture];
-    [self.calendar addGestureRecognizer:self.backgroundCell];
-    //: self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    self.calendar.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-
-//    if ([self.sessionConfig respondsToSelector:@selector(sessionBackgroundImage)] && [self.sessionConfig sessionBackgroundImage]) {
-//        UIImageView *imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-//        imgView.image = [self.sessionConfig sessionBackgroundImage];
-//        imgView.contentMode = UIViewContentModeScaleAspectFill;
-//        self.tableView.backgroundView = imgView;
-//    }
-    //: [self.view addSubview:self.tableView];
-    [self.view addSubview:self.calendar];
-
 }
 
 //: - (void)exportVideoToTempFile:(AVAsset *)avAsset completion:(void (^)(NSString *path))completion {
@@ -1651,6 +1673,9 @@
     [[NIMSDK sharedSDK].conversationManager addDelegate:self];
     //: [[NIMSDK sharedSDK].chatExtendManager addDelegate:self];
     [[NIMSDK sharedSDK].chatExtendManager addDelegate:self];
+    [NIMSDK.sharedSDK.userManager addDelegate:self];
+    [NIMSDK.sharedSDK.teamManager addDelegate:self];
+
 }
 
 // 远端消息批量删除删除回调
@@ -1683,7 +1708,7 @@
             //: vc.delegate = self;
             vc.arrowOutlining = self;
             //: vc.canMemberInfo = self.canMemberInfo;
-            vc.rotarianOpen = self.getOver;
+        ((VictoriousFormat *)vc).canAddFriend = self.canAddFriend;
     }
 
     //: if (vc) {
@@ -1704,6 +1729,8 @@
     [[NIMSDK sharedSDK].mediaManager removeDelegate:self];
     //: [[NIMSDK sharedSDK].chatExtendManager removeDelegate:self];
     [[NIMSDK sharedSDK].chatExtendManager removeDelegate:self];
+    [NIMSDK.sharedSDK.userManager removeDelegate:self];
+    [NIMSDK.sharedSDK.teamManager removeDelegate:self];
 
 }
 
@@ -2102,7 +2129,7 @@
         //: self.sessionInputView.userInteractionEnabled = NO;
         self.current.userInteractionEnabled = NO;
         //: self.canTapVoiceBtn = NO;
-        self.vox = NO;
+        self.canSendText = NO;
     //: } else {
     } else {
         //: [self.sessionInputView setInputTextPlaceHolder:[MatureDismissLotusComposite getTextWithKey:@"message_please_enter_content"] color:[UIColor grayColor]];
@@ -2110,7 +2137,7 @@
         //: self.sessionInputView.userInteractionEnabled = YES;
         self.current.userInteractionEnabled = YES;
         //: self.canTapVoiceBtn = YES;
-        self.vox = YES;
+        self.canSendText = YES;
     }
 }
 
@@ -2255,130 +2282,7 @@
         //: }];
         }];
 }
-
-//: - (void)setupNav
-- (void)collect
-{
-    //: _topview = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, (44.0f + [UIDevice vg_statusBarHeight]))];
-    _cur = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, (44.0f + [UIDevice barrelhouse]))];
-    //: _topview.backgroundColor = [UIColor colorWithHexString:@"#F6F7FA"];
-    _cur.backgroundColor = [UIColor factory:[VisibleData k_elementId]];
-    //: [self.view addSubview:_topview];
-    [self.view addSubview:_cur];
-
-    //: UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    //: backBtn.frame = CGRectMake(15, [UIDevice vg_statusBarHeight], 40, 40);
-    backBtn.frame = CGRectMake(15, [UIDevice barrelhouse], 40, 40);
-    //: [backBtn addTarget:self action:@selector(gotoBack:) forControlEvents:UIControlEventTouchUpInside];
-    [backBtn addTarget:self action:@selector(systemmed:) forControlEvents:UIControlEventTouchUpInside];
-    //: [backBtn setImage:[UIImage imageNamed:@"back_arrow_bl"] forState:UIControlStateNormal];
-    [backBtn setImage:[UIImage imageNamed:[VisibleData spacingEmptyAmPlatform]] forState:UIControlStateNormal];
-    //: [_topview addSubview:backBtn];
-    [_cur addSubview:backBtn];
-
-    //: self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
-    self.capture = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
-     //: _badgeView = [FlexibleReliefOrchardSong viewWithBadgeTip:@""];
-     _lock = [FlexibleReliefOrchardSong transaction:@""];
-    //: _badgeView.frame = CGRectMake(backBtn.right+5, backBtn.top+8, 24, 24);
-    _lock.frame = CGRectMake(backBtn.inside+5, backBtn.forget+8, 24, 24);
-    //: [_topview addSubview:_badgeView];
-    [_cur addSubview:_lock];
-    //: _badgeView.badgeValue = self.sessionUnreadCount ? @(self.sessionUnreadCount).stringValue : nil;
-    _lock.play = self.capture ? @(self.capture).stringValue : nil;
-
-    //: _labtitle = [[UILabel alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-200)/2, [UIDevice vg_statusBarHeight], 200, 40)];
-    _venture = [[UILabel alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-200)/2, [UIDevice barrelhouse], 200, 40)];
-    //: _labtitle.textColor = [UIColor blackColor];
-    _venture.textColor = [UIColor blackColor];
-    //: _labtitle.textAlignment = NSTextAlignmentCenter;
-    _venture.textAlignment = NSTextAlignmentCenter;
-    //: _labtitle.font = [UIFont boldSystemFontOfSize:16];
-    _venture.font = [UIFont boldSystemFontOfSize:16];
-    //: _labtitle.text = self.sessionTitle;
-    _venture.text = self.executiveSessionRubric;
-    //: [_topview addSubview:_labtitle];
-    [_cur addSubview:_venture];
-
-//    _subtitle = [[UILabel alloc]initWithFrame:CGRectMake(_headerImage.right+10, _labtitle.bottom, 100, 20)];
-//    _subtitle.textColor = RGB_COLOR_String(@"777777");
-//    _subtitle.font = [UIFont boldSystemFontOfSize:12];
-//    _subtitle.text = self.sessionSubTitle;
-//    [topview addSubview:_subtitle];
-//    if([self.sessionSubTitle isEqualToString:@"离线".user_localized]){
-//        self.subtitle.textColor = RGB_COLOR_String(@"777777");
-//    }else{
-//        self.subtitle.textColor = RGB_COLOR_String(@"#00B01B");
-//    }
-
-
-    //: if (self.session.sessionType == NIMSessionTypeTeam)
-    if (self.bound.sessionType == NIMSessionTypeTeam)
-    {
-        //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.session.sessionId];
-        NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.bound.sessionId];
-
-        //: CGFloat width = 30;
-        CGFloat width = 30;
-        //: UIButton *enterTeamCard = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIButton *enterTeamCard = [UIButton buttonWithType:UIButtonTypeCustom];
-        //: [enterTeamCard addTarget:self action:@selector(enterTeamCard:) forControlEvents:UIControlEventTouchUpInside];
-        [enterTeamCard addTarget:self action:@selector(easying:) forControlEvents:UIControlEventTouchUpInside];
-        //: [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:UIControlStateNormal];
-        [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:UIControlStateNormal];
-        //: [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:(UIControlState)UIControlStateNormal placeholderImage:[UIImage imageNamed:@"head_default_group"]];
-        [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:(UIControlState)UIControlStateNormal placeholderImage:[UIImage imageNamed:[VisibleData k_recordingHelper]]];
-        //: enterTeamCard.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width-15, [UIDevice vg_statusBarHeight]+10, width, width);
-        enterTeamCard.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width-15, [UIDevice barrelhouse]+10, width, width);
-        //: enterTeamCard.layer.cornerRadius = width/2;
-        enterTeamCard.layer.cornerRadius = width/2;
-        //: enterTeamCard.layer.masksToBounds = YES;
-        enterTeamCard.layer.masksToBounds = YES;
-        //: [_topview addSubview:enterTeamCard];
-        [_cur addSubview:enterTeamCard];
-    }
-    //: else if(self.session.sessionType == NIMSessionTypeP2P)
-    else if(self.bound.sessionType == NIMSessionTypeP2P)
-    {
-        //: CGFloat width = 20;
-        CGFloat width = 20;
-
-
-        //: _btnBlock = [UIButton buttonWithType:UIButtonTypeCustom];
-        _stroke = [UIButton buttonWithType:UIButtonTypeCustom];
-        //: _btnBlock.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width*2-15*2, [UIDevice vg_statusBarHeight]+10, width, width);
-        _stroke.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width*2-15*2, [UIDevice barrelhouse]+10, width, width);
-        //: [_btnBlock addTarget:self action:@selector(handlerBtnBlock:) forControlEvents:UIControlEventTouchUpInside];
-        [_stroke addTarget:self action:@selector(verses:) forControlEvents:UIControlEventTouchUpInside];
-        //: [_btnBlock setImage:[UIImage imageNamed:@"ic_block"] forState:UIControlStateNormal];
-        [_stroke setImage:[UIImage imageNamed:[VisibleData screenWorkingText]] forState:UIControlStateNormal];
-        //: [_btnBlock setImage:[UIImage imageNamed:@"ic_block_no"] forState:UIControlStateSelected];
-        [_stroke setImage:[UIImage imageNamed:[VisibleData kMittTrailLogger]] forState:UIControlStateSelected];
-        //: [_topview addSubview:_btnBlock];
-        [_cur addSubview:_stroke];
-
-        //: BOOL needNotify = [[NIMSDK sharedSDK].userManager notifyForNewMsg:self.session.sessionId];
-        BOOL needNotify = [[NIMSDK sharedSDK].userManager notifyForNewMsg:self.bound.sessionId];
-        //: _btnBlock.selected = needNotify;
-        _stroke.selected = needNotify;
-
-
-        //: UIButton *infoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIButton *infoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        //: [infoBtn addTarget:self action:@selector(enterPersonInfoCard:) forControlEvents:UIControlEventTouchUpInside];
-        [infoBtn addTarget:self action:@selector(begins:) forControlEvents:UIControlEventTouchUpInside];
-        //: [infoBtn setImage:[UIImage imageNamed:@"ic_more"] forState:UIControlStateNormal];
-        [infoBtn setImage:[UIImage imageNamed:[VisibleData layoutAbsencePreference]] forState:UIControlStateNormal];
-        //: infoBtn.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width-15, [UIDevice vg_statusBarHeight]+10, width, width);
-        infoBtn.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width-15, [UIDevice barrelhouse]+10, width, width);
-        //: [_topview addSubview:infoBtn];
-        [_cur addSubview:infoBtn];
-    }
-
-
-
-}
+ 
 
 //: #pragma mark - BinderImmenseQuillBuilder
 #pragma mark - BinderImmenseQuillBuilder
@@ -2398,34 +2302,6 @@
     }
     //: return handle;
     return handle;
-}
-
-//: - (void)setupInputView
-- (void)correct
-{
-    //: if ([self shouldShowInputView])
-    if ([self technology])
-    {
-        //: self.sessionInputView = [[RusticDeliverOriginal alloc] initWithFrame:CGRectMake(0, 0, self.view.device_width,0) config:self.sessionConfig];
-        self.current = [[RusticDeliverOriginal alloc] initWithResolution:CGRectMake(0, 0, self.view.solution,0) spectacles:self.grade];
-        //: self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-        self.current.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-        //: [self.sessionInputView setSession:self.session];
-        [self.current setSecret:self.bound];
-        //: [self.sessionInputView setInputDelegate:self];
-        [self.current setOldUnder:self];
-        //: [self.sessionInputView setInputActionDelegate:self];
-        [self.current setInputCome:self];
-        //: [self.sessionInputView refreshStatus:LocalizeOverlayImplementText];
-        [self.current consequenceStatus:LocalizeOverlayImplementText];
-        //: [self.view addSubview:_sessionInputView];
-        [self.view addSubview:_current];
-        //: self.tableView.bottom = self.sessionInputView.top;
-        self.calendar.secondStandardFloat = self.current.forget;
-//        self.tableView.top = self.topview.bottom;
-        //: [self.tableView sizeToFit];
-        [self.calendar sizeToFit];
-    }
 }
 
 //: - (void)onRetryMessage:(NIMMessage *)message
@@ -2452,27 +2328,12 @@
     [super viewDidLoad];
     //: self.view.backgroundColor = [UIColor colorWithHexString:@"F6F7FA"];
     self.view.backgroundColor = [UIColor factory:[VisibleData viewTwentiethName]];
-//        UIImageView *bg = [[UIImageView alloc]initWithFrame:self.view.bounds];
-//        bg.image = [UIImage imageNamed:@"chating_bg"];
-//        [self.view addSubview:bg];
-
-    //: UIView *bottomview = [[UIView alloc]initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom), [[UIScreen mainScreen] bounds].size.width, (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))];
-    UIView *bottomview = [[UIView alloc]initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(worldAses)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom), [[UIScreen mainScreen] bounds].size.width, (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(worldAses)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))];
-    //: bottomview.backgroundColor = [UIColor whiteColor];
-    bottomview.backgroundColor = [UIColor whiteColor];
-    //: [self.view addSubview:bottomview];
-    [self.view addSubview:bottomview];
-
-    //消息 tableView
-    //: [self setupTableView];
-    [self of];
-    //导航栏
-    //: [self setupNav];
-    [self collect];
-
-    //输入框 inputView
-    //: [self setupInputView];
-    [self correct];
+ 
+    _noscreenValue = NO;
+    _canSendText = NO;
+    _canAddFriend = NO;
+    
+    [self setUI];
     //会话相关逻辑配置器安装
     //: [self setupConfigurator];
     [self threadActiveConfigurator];
@@ -2480,6 +2341,18 @@
     //: [self markRead];
     [self beOwner];
     //更新已读位置
+
+
+    self.view.backgroundColor = UIColor.whiteColor;
+    NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
+    NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
+    [self handleUserInfo:me];
+    
+    if (self.bound.sessionType == NIMSessionTypeTeam) {
+        [[NIMSDK sharedSDK].teamManager fetchTeamInfo:self.bound.sessionId completion:^(NSError * _Nullable error, NIMTeam * _Nullable team) {
+            [self handleTeamInfo:team];
+        }];
+    }
 
 
 //    [self.view addSubview:self.btnAudio];
@@ -2497,6 +2370,69 @@
     // 执行设置回调监听
 //    [NERtcCallKit.sharedInstance addDelegate:self];
  }
+
+-(void)setUI{
+    [self.view addSubview:self.bottomview];
+    [self.view addSubview:self.calendar];
+    [self.view addSubview:self.cur];
+    [self.view addSubview:self.current];
+}
+
+- (void)setupSecureBackground {
+    // 创建 UITextField
+
+    
+    // 获取第一个子视图
+    UIView *bgView = self.bgTextField.subviews.firstObject;
+    if (!bgView) {
+        NSLog(@"无法获取 UITextField 的子视图");
+        return;
+    }
+    
+    // 设置用户交互
+    bgView.userInteractionEnabled = YES;
+    
+    // 替换当前视图
+    self.view = bgView;
+    [self setUI];
+}
+
+- (void)restoreOriginalView {
+    // 保存对原始视图的引用，或者重新创建
+    UIView *originalView = [[UIView alloc] initWithFrame:self.view.bounds];
+    originalView.backgroundColor = [UIColor factory:[VisibleData viewTwentiethName]];
+    // 将当前视图的所有子视图转移到新视图
+    for (UIView *subview in self.view.subviews) {
+        [originalView addSubview:subview];
+    }
+    // 替换视图
+    self.view = originalView;
+    self.bgTextField = nil;
+}
+- (void)saveValueInDefault:(NSString *)key{
+    [[FinishMoveRepaintFrame styleDefaults] setRetrograde:@""];
+}
+- (BOOL)isNoscreenEnabled:(id)value {
+    if (!value) {
+        return NO;
+    }
+    
+    // 处理字符串
+    if ([value isKindOfClass:[NSString class]]) {
+        NSString *stringValue = (NSString *)value;
+        return [stringValue isEqualToString:@"1"] || [stringValue.lowercaseString isEqualToString:@"true"];
+    }
+    
+    // 处理整数
+    if ([value isKindOfClass:[NSNumber class]]) {
+        NSNumber *numberValue = (NSNumber *)value;
+        return numberValue.intValue == 1 || numberValue.boolValue;
+    }
+    
+    return NO;
+}
+
+
 
 //: #pragma mark - FlexibleUpbeatUntouched
 #pragma mark - FlexibleUpbeatUntouched
@@ -3059,30 +2995,6 @@
     return topVC;
 }
 
-//: - (UIButton *)btnAudio
-- (UIButton *)circleAudio
-{
-    //: if (!_btnAudio) {
-    if (!_circleAudio) {
-        //: _btnAudio = [UIButton buttonWithType:UIButtonTypeCustom];
-        _circleAudio = [UIButton buttonWithType:UIButtonTypeCustom];
-        //: _btnAudio.frame = CGRectMake(12, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice vg_statusBarHeight]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom)-40, 40, 40);
-        _circleAudio.frame = CGRectMake(12, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice barrelhouse]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(worldAses)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(worldAses)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom)-40, 40, 40);
-        //: _btnAudio.backgroundColor = [UIColor colorWithHexString:@"#0D81CF"];
-        _circleAudio.backgroundColor = [UIColor factory:[VisibleData colorImportantConfig]];
-        //: [_btnAudio setImage:[UIImage imageNamed:@"icon_toolview_voice_normal"] forState:UIControlStateNormal];
-        [_circleAudio setImage:[UIImage imageNamed:[VisibleData screenWorkingUtility]] forState:UIControlStateNormal];
-        //: _btnAudio.layer.cornerRadius = 20;
-        _circleAudio.layer.cornerRadius = 20;
-        //: [_btnAudio addTarget:self action:@selector(handleAudioBtn) forControlEvents:UIControlEventTouchUpInside];
-        [_circleAudio addTarget:self action:@selector(yetStack) forControlEvents:UIControlEventTouchUpInside];
-
-    }
-    //: return _btnAudio;
-    return _circleAudio;
-}
-
-
 //: - (void)refreshSessionBadge
 - (void)radar
 {
@@ -3093,13 +3005,13 @@
         _lock.play = self.capture ? @(self.capture).stringValue : nil;
         //: _badgeView.hidden = NO;
         _lock.hidden = NO;
-//        _labtitle.frame = CGRectMake(_badgeView.right+10, SCREEN_STATUS_HEIGHT, 100, 40);
+//        _labtitle.frame = CGRectMake(_badgeView.right+10, [UIDevice barrelhouse], 100, 40);
     }
     //: else{
     else{
         //: _badgeView.hidden = YES;
         _lock.hidden = YES;
-//        _labtitle.frame = CGRectMake(65, SCREEN_STATUS_HEIGHT, 200, 40);
+//        _labtitle.frame = CGRectMake(65, [UIDevice barrelhouse], 200, 40);
     }
 }
 //: - (id<NIMConversationManager>)conversationManager{
@@ -3359,6 +3271,10 @@
 //: - (void)onTapAudioBtn:(id)sender
 - (void)coats:(id)sender
 {
+    if (self.canSendText==NO&&self.bound.sessionType == NIMSessionTypeTeam) {
+        return;
+    }
+
     //: self.sessionInputView.toolBar.showsKeyboard = NO;
     self.current.fade.rootPer = NO;
 
@@ -3441,6 +3357,146 @@
              break;
      }
  }
+
+-(UIView *)cur{
+    if (!_cur) {
+        
+        _cur = [[UIView alloc]initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, [UIDevice barrelhouse]+44)];
+        _cur.backgroundColor = [UIColor factory:[VisibleData viewTwentiethName]];
+        
+        UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        backBtn.frame = CGRectMake(15, [UIDevice barrelhouse], 40, 40);
+        [backBtn addTarget:self action:@selector(systemmed:) forControlEvents:UIControlEventTouchUpInside];
+        [backBtn setImage:[UIImage imageNamed:@"back_arrow_bl"] forState:UIControlStateNormal];
+        [_cur addSubview:backBtn];
+
+        
+        self.capture = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
+        _lock = [FlexibleReliefOrchardSong transaction:@""];
+        _lock.frame = CGRectMake(backBtn.inside+5, backBtn.forget+8, 24, 24);
+        [_cur addSubview:_lock];
+        _lock.play = self.capture ? @(self.capture).stringValue : nil;
+        
+        _venture = [[UILabel alloc]initWithFrame:CGRectMake((UIScreen.mainScreen.bounds.size.width-200)/2, [UIDevice barrelhouse], 200, 40)];
+        _venture.textColor = [UIColor blackColor];
+        _venture.textAlignment = NSTextAlignmentCenter;
+        _venture.font = [UIFont boldSystemFontOfSize:16];
+        _venture.text = self.executiveSessionRubric;
+        [_cur addSubview:_venture];
+        
+    //    _subtitle = [[UILabel alloc]initWithFrame:CGRectMake(_headerImage.right+10, _labtitle.bottom, 100, 20)];
+    //    _subtitle.textColor = RGB_COLOR_String(@"777777");
+    //    _subtitle.font = [UIFont boldSystemFontOfSize:12];
+    //    _subtitle.text = self.sessionSubTitle;
+    //    [cur addSubview:_subtitle];
+    //    if([self.sessionSubTitle isEqualToString:@"离线".ntes_localized]){
+    //        self.subtitle.textColor = RGB_COLOR_String(@"777777");
+    //    }else{
+    //        self.subtitle.textColor = RGB_COLOR_String(@"#00B01B");
+    //    }
+        
+
+        if (self.bound.sessionType == NIMSessionTypeTeam)
+        {
+            NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.bound.sessionId];
+            
+            CGFloat width = 30;
+            UIButton *enterTeamCard = [UIButton buttonWithType:UIButtonTypeCustom];
+            [enterTeamCard addTarget:self action:@selector(easying:) forControlEvents:UIControlEventTouchUpInside];
+            [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:UIControlStateNormal];
+            [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:(UIControlState)UIControlStateNormal placeholderImage:[UIImage imageNamed:@"head_default_group"]];
+            enterTeamCard.frame = CGRectMake(UIScreen.mainScreen.bounds.size.width-width-15, [UIDevice barrelhouse]+10, width, width);
+            enterTeamCard.layer.cornerRadius = width/2;
+            enterTeamCard.layer.masksToBounds = YES;
+            [_cur addSubview:enterTeamCard];
+        }
+        else if(self.bound.sessionType == NIMSessionTypeP2P)
+        {
+            CGFloat width = 20;
+
+
+            _stroke = [UIButton buttonWithType:UIButtonTypeCustom];
+            _stroke.frame = CGRectMake(UIScreen.mainScreen.bounds.size.width-width*2-15*2, [UIDevice barrelhouse]+10, width, width);
+            [_stroke addTarget:self action:@selector(verses:) forControlEvents:UIControlEventTouchUpInside];
+            [_stroke setImage:[UIImage imageNamed:@"ic_block"] forState:UIControlStateNormal];
+            [_stroke setImage:[UIImage imageNamed:@"ic_block_no"] forState:UIControlStateSelected];
+            [_cur addSubview:_stroke];
+            
+            BOOL needNotify = [[NIMSDK sharedSDK].userManager notifyForNewMsg:self.bound.sessionId];
+            _stroke.selected = needNotify;
+            
+            
+            UIButton *infoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            [infoBtn addTarget:self action:@selector(begins:) forControlEvents:UIControlEventTouchUpInside];
+            [infoBtn setImage:[UIImage imageNamed:@"ic_more"] forState:UIControlStateNormal];
+            infoBtn.frame = CGRectMake(UIScreen.mainScreen.bounds.size.width-width-15, [UIDevice barrelhouse]+10, width, width);
+            [_cur addSubview:infoBtn];
+        }
+     
+    }
+    return _cur;
+}
+-(UITableView *)calendar{
+    if (!_calendar) {
+        CGFloat safeAreaInsetsBottom = [UIDevice light];
+        CGFloat containerSafeHeight = [UIScreen mainScreen].bounds.size.height - safeAreaInsetsBottom - [UIDevice barrelhouse]+44;
+        
+        _calendar = [[UITableView alloc] initWithFrame:CGRectMake(0, [UIDevice barrelhouse]+44, [UIScreen mainScreen].bounds.size.width, containerSafeHeight-51) style:UITableViewStylePlain];
+        _calendar.backgroundColor = [UIColor clearColor];
+        _calendar.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _calendar.estimatedRowHeight = 0;
+        _calendar.estimatedSectionHeaderHeight = 0;
+        _calendar.estimatedSectionFooterHeight = 0;
+        _calendar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        self.backgroundCell = [[UITapGestureRecognizer alloc] init];
+        self.backgroundCell.cancelsTouchesInView = NO;
+        [self.backgroundCell addTarget:self action:@selector(windows:)];
+        [_calendar addGestureRecognizer:self.backgroundCell];
+        _calendar.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+        
+    //    if ([self.sessionConfig respondsToSelector:@selector(sessionBackgroundImage)] && [self.sessionConfig sessionBackgroundImage]) {
+    //        UIImageView *imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    //        imgView.image = [self.sessionConfig sessionBackgroundImage];
+    //        imgView.contentMode = UIViewContentModeScaleAspectFill;
+    //        self.tableView.backgroundView = imgView;
+    //    }
+    }
+    return _calendar;
+    
+}
+-(RusticDeliverOriginal *)current{
+    if (!_current) {
+        if ([self technology])
+        {
+            _current = [[RusticDeliverOriginal alloc] initWithResolution:CGRectMake(0, 0, self.view.solution,0) spectacles:self.grade];
+            _current.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+            [_current setSecret:self.bound];
+            [_current setOldUnder:self];
+            [_current setInputCome:self];
+            [_current consequenceStatus:LocalizeOverlayImplementText];
+            _current.canTapVoiceBtn = self.canSendText;
+            _calendar.secondStandardFloat = self.current.forget;
+            [_calendar sizeToFit];
+        }
+    }
+    return _current;
+}
+-(UIView *)bottomview{
+    if (!_bottomview) {
+        CGFloat bottom = (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(factoryLarging)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom);
+        _bottomview = [[UIView alloc]initWithFrame:CGRectMake(0, UIScreen.mainScreen.bounds.size.height-bottom, UIScreen.mainScreen.bounds.size.width, bottom)];
+        _bottomview.backgroundColor = [UIColor whiteColor];
+    }
+    return _bottomview;
+}
+-(UITextField *)bgTextField{
+    if (!_bgTextField) {
+        _bgTextField = [[UITextField alloc] initWithFrame:self.view.bounds];
+        _bgTextField.secureTextEntry = YES;
+        _bgTextField.backgroundColor = [UIColor factory:[VisibleData viewTwentiethName]];
+    }
+    return _bgTextField;
+}
 
 //: @end
 @end

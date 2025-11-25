@@ -15,7 +15,7 @@
 //: @interface VictoriousFormat : SpiceLotusController
 @interface VictoriousFormat : SpiceLotusController
 
-
+@property (nonatomic,assign)    BOOL canAddFriend;
 
 //: - (void)updateTeamAnnouncement;
 - (void)crewCoat;

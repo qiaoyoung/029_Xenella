@@ -339,6 +339,8 @@
     //: [_toolBar setPlaceHolder:placeholder];
     [_fade setPlace:placeholder];
 
+    [self locationContent];
+
     //: if ([self.actionDelegate respondsToSelector:@selector(didReplyCancelled)])
     if ([self.cancel respondsToSelector:@selector(meBuild)])
     {
@@ -1380,6 +1382,7 @@
     self.select.hidden = YES;
     //: [self setNeedsLayout];
     [self setNeedsLayout];
+    [self talented];
 }
 
 //: - (void)onTouchMoreBtn {

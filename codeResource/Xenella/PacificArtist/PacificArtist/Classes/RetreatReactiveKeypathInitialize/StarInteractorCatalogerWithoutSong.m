@@ -541,6 +541,7 @@ typedef struct {
 #import "HolisticBirchScan.h"
 //: #import "DistantDrawHillWarehouse.h"
 #import "DistantDrawHillWarehouse.h"
+#import "FlowFactoryThorn.h"
 
 //: @interface StarInteractorCatalogerWithoutSong () <UITextFieldDelegate>
 @interface StarInteractorCatalogerWithoutSong () <UITextFieldDelegate>
@@ -602,7 +603,7 @@ typedef struct {
             //: vc.webTitle = [MatureDismissLotusComposite getTextWithKey:@"activity_comment_setting_ys"];
             vc.genderGiven = [MatureDismissLotusComposite remove:[CarefulData moduleAbsenceName]];
             //: vc.urlString = [FinishMoveRepaintFrame standardUserDefaults].yshref;
-            vc.succeedStatus = [FinishMoveRepaintFrame styleDefaults].through;
+            vc.succeedStatus = [[FlowFactoryThorn precocious] policyUrl];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
         //: }];

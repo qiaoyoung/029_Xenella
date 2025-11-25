@@ -70,6 +70,7 @@ typedef NS_ENUM(NSInteger, ClipCalibrateSendBuilderFix) {
 
 //: @property (assign, nonatomic, getter=isRecording) BOOL recording;
 @property (assign, nonatomic, getter=isRecording) BOOL announcementQueryion;
+@property (nonatomic,assign) BOOL canTapVoiceBtn;  // 能够点击语音按钮
 //: @property (nonatomic, strong) IterativeBoldHillGlobalFair *replyedContent;
 @property (nonatomic, strong) IterativeBoldHillGlobalFair *select;
 //: @property (nonatomic, strong) NIMSession *session;

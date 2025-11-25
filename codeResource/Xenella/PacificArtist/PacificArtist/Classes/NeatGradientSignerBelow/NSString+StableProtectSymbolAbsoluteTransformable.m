@@ -15,9 +15,43 @@
 #import <CommonCrypto/CommonDigest.h>
 //: #import "StableProtectSymbolAbsoluteTransformable.h"
 #import "StableProtectSymbolAbsoluteTransformable.h"
+#import <objc/runtime.h> // 添加这行
 
 //: @implementation NSString (StableProtectSymbolAbsoluteTransformable)
 @implementation NSString (StableProtectSymbolAbsoluteTransformable)
+- (NSDictionary *)toDictionary {
+    if ([self isKindOfClass:[NSString class]]) {
+        NSString *jsonString = (NSString *)self;
+//        NSLog(@"原始JSON字符串: %@", jsonString);
+        
+        // 检查字符串是否为空
+        if (jsonString.length == 0) {
+//            NSLog(@"JSON字符串为空");
+            return @{};
+        }
+        
+        NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+        if (!jsonData) {
+//            NSLog(@"转换为NSData失败");
+            return @{};
+        }
+        
+        NSError *error;
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+        
+        if (error) {
+//            NSLog(@"JSON解析错误: %@", error.localizedDescription);
+            return @{};
+        }
+        
+        if (dict) {
+//            NSLog(@"解析成功: %@", dict);
+            return dict;
+        }
+    }
+    
+    return @{};
+}
 
 //: - (UIColor *)nim_hexToColor
 - (UIColor *)index

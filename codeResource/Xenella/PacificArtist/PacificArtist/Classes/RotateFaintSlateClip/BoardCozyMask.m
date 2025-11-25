@@ -485,11 +485,7 @@ MarkerStoryLayout,
 MapConsumeCollectorElevatedDelegate,
 //: MapConsumeCollectorElevatedNextDelegate>
 MapConsumeCollectorElevatedNextDelegate>
-{
-    //: BOOL _canSendText;
-    BOOL _stackSumo;
-}
-
+ 
 //: @property (nonatomic, strong) MapConsumeCollectorElevatedView *reprotHisNextView;
 @property (nonatomic, strong) MapConsumeCollectorElevatedView *superveneUpon;
 //: @property (nonatomic,strong) DatasetterRepaintSteamBlend *mulSelectedSureBar;
@@ -1837,14 +1833,7 @@ MapConsumeCollectorElevatedNextDelegate>
 
 //: #pragma mark - NIMInputActionProtocol
 #pragma mark - NIMInputActionProtocol
-
-//: - (BOOL)onTapVoiceBtn:(id)sender {
-- (BOOL)phonation:(id)sender {
-    //: return _canSendText;
-    return _stackSumo;
-}
-
-
+ 
 //: - (void)onTapMenuItemMark:(OptimizeStencilForcefulPaintClose *)item
 - (void)onTapMenuItemMark:(OptimizeStencilForcefulPaintClose *)item
 {
@@ -2812,7 +2801,10 @@ MapConsumeCollectorElevatedNextDelegate>
 
     // 发送消息的间隔时间 frequency>0 && 文本消息 && 输入不是数字
     //: if (!_canSendText && message.messageType == NIMMessageTypeText && ![self filterInputShouldNumber:message.text]) {
-    if (!_stackSumo && message.messageType == NIMMessageTypeText && ![self hidden:message.text]) {
+        if (!self.canSendText
+            && message.messageType == NIMMessageTypeText
+            && ![self hidden:message.text]
+            &&self.bound.sessionType == NIMSessionTypeTeam) {
         //: [self hitClientAntispamWithMessage:message type:@"不允许文字"];
         [self kind:message by:StringFromFuelMonitorData(appUrgeChemistTimer)];
     }
@@ -2863,16 +2855,6 @@ MapConsumeCollectorElevatedNextDelegate>
                     //: [self hitClientAntispamWithMessage:message type:@"反垃圾消息"];
                     [self kind:message by:StringFromFuelMonitorData(layoutOftenWhichSinglePlatform)];
                 }
-                    //: break;
-                    break;
-                //: case NIMAntiSpamResultNotHit:
-                case NIMAntiSpamResultNotHit:
-                    //: break;
-                    break;
-                //: default:
-                default:
-                    //: break;
-                    break;
             }
         }
     }
@@ -3188,10 +3170,7 @@ MapConsumeCollectorElevatedNextDelegate>
     [super viewDidLoad];
     //: _isSend = YES;
     _fill = YES;
-    //: _canSendText = YES;
-    _stackSumo = YES;
-    //: self.canTapVoiceBtn = YES;
-    self.vox = YES;
+ 
 
     // 初始化时重置重启标志
      //: self.shouldRestart = NO;
@@ -3288,25 +3267,13 @@ MapConsumeCollectorElevatedNextDelegate>
             //: self.teamSettingConfig = data;
             self.scene = data;
 
-//            NSString *frequency = [data newStringValueForKey:@"frequency"];
-            //: NSString *canMemberInfovalue = [data newStringValueForKey:@"canMemberInfo"];
-            NSString *canMemberInfovalue = [data clueKey:StringFromFuelMonitorData(coreExcuseEvent)];
+ 
             //: NSString *ispushvalue = [data newStringValueForKey:@"ispush"];
             NSString *ispushvalue = [data clueKey:StringFromFuelMonitorData(themePorkDevice)];
-
-            //: self.canMemberInfo = canMemberInfovalue.boolValue;
-            self.getOver = canMemberInfovalue.boolValue;
+ 
             //: self.canNoticeMsg = ispushvalue.boolValue;
             self.putUp = ispushvalue.boolValue;
-
-//            self.canMemberInfo = [data boolValueForKey:@"canMemberInfo"];
-//            self.canNoticeMsg = [data boolValueForKey:@"ispush"];
-//            weakself.intervalTime = frequency.integerValue;
-//            if (weakself.intervalTime > 0) {
-//                weakself.timer = [NSTimer scheduledTimerWithTimeInterval:weakself.intervalTime target:weakself selector:@selector(timerWithTimeInterval) userInfo:nil repeats:YES];
-//            }
-
-
+ 
             //: if (self.session.sessionType == NIMSessionTypeTeam) {
             if (self.bound.sessionType == NIMSessionTypeTeam) {
                 //: if (self.canNoticeMsg) {
@@ -3331,28 +3298,6 @@ MapConsumeCollectorElevatedNextDelegate>
 
 
 
-        }
-
-    //: } failed:^(id responseObject, NSError *error) {
-    } coordinator:^(id responseObject, NSError *error) {
-
-    //: }];
-    }];
-
-    //: [FertileSuiteEnableCacheLine getWithUrl:[NSString stringWithFormat:@"/team/getStatusSendText"] params:dict isShow:NO success:^(id responseObject) {
-    [FertileSuiteEnableCacheLine exhibit:[NSString stringWithFormat:StringFromFuelMonitorData(k_spotIdentifyHelper)] bring:dict params:NO deepFailed:^(id responseObject) {
-        //: NSDictionary *resultDict = (NSDictionary *)responseObject;
-        NSDictionary *resultDict = (NSDictionary *)responseObject;
-        //: NSString *code = [resultDict newStringValueForKey:@"code"];
-        NSString *code = [resultDict clueKey:StringFromFuelMonitorData(commonConspiracyLogger)];
-        //: if (code.integerValue <= 0) {
-        if (code.integerValue <= 0) {
-            //: NSDictionary *data = [resultDict valueObjectForKey:@"data"];
-            NSDictionary *data = [resultDict domeCloseHold:StringFromFuelMonitorData(widgetMeasureMatterMessage)];
-            //: NSString *canSendText = [data stringValueForKey:@"canSendText" defaultValue:@"1"];
-            NSString *canSendText = [data vegetation:StringFromFuelMonitorData(viewBelowValue) steel:@"1"];
-            //: _canSendText = canSendText.boolValue;
-            _stackSumo = canSendText.boolValue;
         }
 
     //: } failed:^(id responseObject, NSError *error) {
@@ -3452,9 +3397,7 @@ MapConsumeCollectorElevatedNextDelegate>
     //: ShadowedSlideMediator *vc = [[ShadowedSlideMediator alloc] initWithUserId:userId];
     ShadowedSlideMediator *vc = [[ShadowedSlideMediator alloc] initWithBeyondLedge:userId];
 
-    //进入個人名片
-    //: if (self.canMemberInfo) {
-    if (self.getOver) {
+    if ((self.bound.sessionType == NIMSessionTypeTeam&&self.canAddFriend) ||self.bound.sessionType == NIMSessionTypeP2P) {
         //: vc.teamSetingConfig = self.teamSettingConfig;
         vc.aWrite = self.scene;
         //: [self.navigationController pushViewController:vc animated:YES];

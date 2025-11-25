@@ -17,6 +17,7 @@
 
 //: - (UIColor *)nim_hexToColor;
 - (UIColor *)index;
+- (NSDictionary *)toDictionary ;
 
 //: - (NSRange)nim_rangeOfLastUnicode;
 - (NSRange)young;
