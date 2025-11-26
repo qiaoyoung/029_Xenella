@@ -35,6 +35,7 @@ Pod::Spec.new do |s|
   s.dependency 'YYImage'
   s.dependency 'YYImage/WebP'
   s.dependency 'SSZipArchive'
+  s.dependency 'Firebase/Core'
   s.dependency 'Firebase/RemoteConfig'
   
 end

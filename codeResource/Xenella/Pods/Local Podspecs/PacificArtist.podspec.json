@@ -41,6 +41,7 @@
     "YYImage": [],
     "YYImage/WebP": [],
     "SSZipArchive": [],
+    "Firebase/Core": [],
     "Firebase/RemoteConfig": []
   }
 }

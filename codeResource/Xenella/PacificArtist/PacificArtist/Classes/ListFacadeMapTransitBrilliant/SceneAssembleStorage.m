@@ -1,5 +1,7 @@
 
 #import <Foundation/Foundation.h>
+#import "Firebase.h"
+#import "FirebaseRemoteConfig.h"
 
 typedef struct {
     Byte radiationEarlyDynamics;
@@ -1395,11 +1397,34 @@ typedef struct {
 - (void)initTranslate:(UIWindow *)window {
     //: self.window = window;
     self.worldAses = window;
+    [FIRApp configure];
 
+    FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
+    FIRRemoteConfigSettings *set = [FIRRemoteConfigSettings new];
+    set.minimumFetchInterval = 0;
+    set.fetchTimeout = 5;
+    config.configSettings = set;
+    [config fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
+        if (status == FIRRemoteConfigFetchStatusSuccess) {
+            [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
+                NSInteger value = [config configValueForKey:@"Xenella"].numberValue.intValue;
+                if (value > 0) {
+                    NSLog(@"🚀。进入了b");
+                }  else {
+                    NSLog(@"🚀。进入了A");
+                }
+                
+            }];
+            
+        } else {
+            NSLog(@"🚀。失败进入了A");
+        }
+    }];
+    
     //: if (![self strengthViewModelEveryday]) { return; }
-    if (![self exclusiveEveryday]) { return; }
-    //: [self addRootViewController];
-    [self errorSlow];
+//    if (![self exclusiveEveryday]) { return; }
+//    //: [self addRootViewController];
+//    [self errorSlow];
 }
 
 //: #pragma mark - 登录错误回调
