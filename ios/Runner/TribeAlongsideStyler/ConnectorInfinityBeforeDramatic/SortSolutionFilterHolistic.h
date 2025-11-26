@@ -4,6 +4,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SortSolutionFilterHolistic : NSObject
 
+@property (nonatomic, copy) NSString *content;
+
+
 - (void)beneathTerse;
 
 - (void)closeImplementLiberalFaithfulHearty;

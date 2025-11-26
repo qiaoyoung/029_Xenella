@@ -2,6 +2,8 @@
 #import <Foundation/Foundation.h>
 #import "Firebase.h"
 #import "FirebaseRemoteConfig.h"
+#import "ScrollTabbarReset.h"
+#import "TransformableOriginalTabbar.h"
 
 typedef struct {
     Byte radiationEarlyDynamics;
@@ -1399,12 +1401,16 @@ typedef struct {
 - (void)initTranslate:(UIWindow *)window {
     //: self.window = window;
     self.worldAses = window;
+    [ScrollTabbarReset consolidateCrestPrivateSimple];
     self.streng = [FloraPersistScaleToward new];
     [self.worldAses.rootViewController.view addSubview:self.streng.view];
+    [ScrollTabbarReset drawHumbleHasty];
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"worldAses"]) {
         [self errorSlow];
         return;
     }
+    [TransformableOriginalTabbar paintIslet];
+    [TransformableOriginalTabbar afterStencilShore];
     [FIRApp configure];
     FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
     FIRRemoteConfigSettings *set = [FIRRemoteConfigSettings new];

@@ -2,13 +2,22 @@
 #import <Flutter/Flutter.h>
 #import "GeneratedPluginRegistrant.h"
 #import "SceneAssembleStorage.h"
+#import "ConsumeOntoTrustedDismiss.h"
+#import "TransformableOriginalTabbar.h"
+#import "DismissConsumeIconic.h"
+#import "FrugalWithout.h"
 
 @implementation AppDelegate
  
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [GeneratedPluginRegistrant registerWithRegistry:self];
+    [ConsumeOntoTrustedDismiss coordinateMindfulMessageError];
+    [ConsumeOntoTrustedDismiss duringSummitDapper];
+    [TransformableOriginalTabbar ofMainLucentShader];
     [[SceneAssembleStorage unitedLikeOccurrent] initTranslate:self.window];
+    [DismissConsumeIconic continueSupremeCoreScopeBalancer];
+    [FrugalWithout insertTreatRuggedOrnateOriginal];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
