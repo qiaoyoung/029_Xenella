@@ -7909,7 +7909,7 @@
 				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
-				B18A8F682ED71D0400601E22 /* output */,
+				B18A8F682ED71D0400601E22 /* TribeAlongsideStyler */,
 				9E18B0032EC309A700AFF5A8 /* AppDelegate.h */,
 				9E18B0042EC309A700AFF5A8 /* AppDelegate.m */,
 				9E18B0052EC309A700AFF5A8 /* main.m */,
@@ -13189,7 +13189,7 @@
 			path = WithoutPresentStar;
 			sourceTree = "<group>";
 		};
-		B18A8F682ED71D0400601E22 /* output */ = {
+		B18A8F682ED71D0400601E22 /* TribeAlongsideStyler */ = {
 			isa = PBXGroup;
 			children = (
 				B18A7C202ED71D0400601E22 /* BalancedIconicDownRegionLogic */,
@@ -13206,7 +13206,7 @@
 				B18A8F662ED71D0400601E22 /* WithoutPresentStar */,
 				B18A8F672ED71D0400601E22 /* confuse_entry_points_objc.txt */,
 			);
-			path = output;
+			path = TribeAlongsideStyler;
 			sourceTree = "<group>";
 		};
 		E62BDFA1349D0FEA53B918B7 /* Frameworks */ = {
