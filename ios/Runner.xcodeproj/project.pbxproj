@@ -21,7 +21,6 @@
 		B18A8F6C2ED71D0400601E22 /* MistVesselMindDecent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B18A8D112ED71D0400601E22 /* MistVesselMindDecent.bundle */; };
 		B18A8F6D2ED71D0400601E22 /* OperatorScrollOutlinedHide.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B18A80DB2ED71D0400601E22 /* OperatorScrollOutlinedHide.bundle */; };
 		B18A8F6F2ED71D0400601E22 /* ReplaySubmitWind.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B18A7D7B2ED71D0400601E22 /* ReplaySubmitWind.bundle */; };
-		B18A8F712ED71D0400601E22 /* confuse_entry_points_objc.txt in Resources */ = {isa = PBXBuildFile; fileRef = B18A8F672ED71D0400601E22 /* confuse_entry_points_objc.txt */; };
 		B18A8F722ED71D0400601E22 /* ReceiveSetQuintessential.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B18A879B2ED71D0400601E22 /* ReceiveSetQuintessential.bundle */; };
 		B18A8F732ED71D0400601E22 /* CarefulSincereHistoryMapperOpen.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B18A7B352ED71D0400601E22 /* CarefulSincereHistoryMapperOpen.bundle */; };
 		B18A8F742ED71D0400601E22 /* UpdaterMaterialJubilantSave.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B18A7FE52ED71D0400601E22 /* UpdaterMaterialJubilantSave.bundle */; };
@@ -6167,7 +6166,6 @@
 		B18A8F632ED71D0400601E22 /* WorldImplementOrganizerHarnessUp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldImplementOrganizerHarnessUp.m; sourceTree = "<group>"; };
 		B18A8F642ED71D0400601E22 /* WriteLoyalBirchMind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriteLoyalBirchMind.h; sourceTree = "<group>"; };
 		B18A8F652ED71D0400601E22 /* WriteLoyalBirchMind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WriteLoyalBirchMind.m; sourceTree = "<group>"; };
-		B18A8F672ED71D0400601E22 /* confuse_entry_points_objc.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = confuse_entry_points_objc.txt; sourceTree = "<group>"; };
 		B18A99922ED71D2200601E22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA5DF0D5D2230B8AFE3F1E63 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		EED6EA0685E9BBFD06EDEAE0 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
@@ -10402,7 +10400,6 @@
 				B18A8C2E2ED71D0400601E22 /* RenderInitializeTransformOnto */,
 				B18A8DF62ED71D0400601E22 /* UpdaterInsightPathway */,
 				B18A8F662ED71D0400601E22 /* WithoutPresentStar */,
-				B18A8F672ED71D0400601E22 /* confuse_entry_points_objc.txt */,
 			);
 			path = TribeAlongsideStyler;
 			sourceTree = "<group>";
@@ -10488,7 +10485,6 @@
 				B18A8F6C2ED71D0400601E22 /* MistVesselMindDecent.bundle in Resources */,
 				B18A8F6D2ED71D0400601E22 /* OperatorScrollOutlinedHide.bundle in Resources */,
 				B18A8F6F2ED71D0400601E22 /* ReplaySubmitWind.bundle in Resources */,
-				B18A8F712ED71D0400601E22 /* confuse_entry_points_objc.txt in Resources */,
 				B18A99932ED71D2200601E22 /* GoogleService-Info.plist in Resources */,
 				B18A8F722ED71D0400601E22 /* ReceiveSetQuintessential.bundle in Resources */,
 				B18A8F732ED71D0400601E22 /* CarefulSincereHistoryMapperOpen.bundle in Resources */,
@@ -12715,21 +12711,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6VFR63B9QM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RWVU5H8JJT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ios.sweete.happy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RWVU5H8JJT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sweete_dev_20250507;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = comRWVU5H8JJT_profile;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -12859,21 +12855,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6VFR63B9QM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RWVU5H8JJT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ios.sweete.happy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RWVU5H8JJT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sweete_dev_20250507;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = comRWVU5H8JJT_profile;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -12893,21 +12889,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6VFR63B9QM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RWVU5H8JJT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ios.sweete.happy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RWVU5H8JJT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sweete_dev_20250507;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = comRWVU5H8JJT_profile;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
