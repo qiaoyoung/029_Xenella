@@ -2391,7 +2391,7 @@
     
     // 设置用户交互
     bgView.userInteractionEnabled = YES;
-    
+    bgView.backgroundColor = [UIColor factory:[VisibleData viewTwentiethName]];
     // 替换当前视图
     self.view = bgView;
     [self setUI];
