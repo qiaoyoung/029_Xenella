@@ -2616,6 +2616,7 @@
 		B18A998F2ED71D0400601E22 /* AbsoluteCollectorPack.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A81A62ED71D0400601E22 /* AbsoluteCollectorPack.m */; };
 		B18A99902ED71D0400601E22 /* RangeGroveEnableSolid.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A8D512ED71D0400601E22 /* RangeGroveEnableSolid.m */; };
 		B18A99912ED71D0400601E22 /* WaterWeightlessWithCandid.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A86412ED71D0400601E22 /* WaterWeightlessWithCandid.m */; };
+		B18A99932ED71D2200601E22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B18A99922ED71D2200601E22 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -7839,6 +7840,7 @@
 		B18A8F642ED71D0400601E22 /* WriteLoyalBirchMind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriteLoyalBirchMind.h; sourceTree = "<group>"; };
 		B18A8F652ED71D0400601E22 /* WriteLoyalBirchMind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WriteLoyalBirchMind.m; sourceTree = "<group>"; };
 		B18A8F672ED71D0400601E22 /* confuse_entry_points_objc.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = confuse_entry_points_objc.txt; sourceTree = "<group>"; };
+		B18A99922ED71D2200601E22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA5DF0D5D2230B8AFE3F1E63 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		EED6EA0685E9BBFD06EDEAE0 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -7901,6 +7903,7 @@
 				B11907952EC46BD200A32760 /* Runner.entitlements */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
+				B18A99922ED71D2200601E22 /* GoogleService-Info.plist */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
 				97C147021CF9000F007C117D /* Info.plist */,
 				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
@@ -13289,6 +13292,7 @@
 				B18A8F6F2ED71D0400601E22 /* ReplaySubmitWind.bundle in Resources */,
 				B18A8F702ED71D0400601E22 /* RenderNodeHide.bundle in Resources */,
 				B18A8F712ED71D0400601E22 /* confuse_entry_points_objc.txt in Resources */,
+				B18A99932ED71D2200601E22 /* GoogleService-Info.plist in Resources */,
 				B18A8F722ED71D0400601E22 /* ReceiveSetQuintessential.bundle in Resources */,
 				B18A8F732ED71D0400601E22 /* CarefulSincereHistoryMapperOpen.bundle in Resources */,
 				B18A8F742ED71D0400601E22 /* UpdaterMaterialJubilantSave.bundle in Resources */,
