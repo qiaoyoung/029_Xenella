@@ -1,0 +1,19 @@
+// __DEBUG__
+// __CLOSE_PRINT__
+//
+//  USERSDKConfig.h
+//  NIM
+//
+//  Created by amao on 5/9/16.
+//  Copyright © 2016 Netease. All rights reserved.
+//
+
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
+
+//: @interface DecodeAssembler : NSObject<NIMSDKConfigDelegate>
+@interface DecodeAssembler : NSObject<NIMSDKConfigDelegate>
+
+//: @end
+@end

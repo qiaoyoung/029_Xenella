@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>sereneTransformVisitorModule</key>
+    <string>CollectorShaderTransform</string>
+    <key>renderAppBarSuite</key>
+    <string>TrustyImplementWatchSigner</string>
+    <key>cupertinoFormatter</key>
+    <string>KeyGeneratorOperandEnum</string>
+    <key>vividCancelConnector</key>
+    <string>InformationRepaintProudConnector</string>
+    <key>addFreshRendererSupply</key>
+    <string>SupplyArrayThornTertiary</string>
+    <key>hubPast</key>
+    <string>BuildAtomicHazeRender</string>
+    <key>swirlAssemblerGracefulTrain</key>
+    <string>CreekStoreControl</string>
+</dict>
+</plist>

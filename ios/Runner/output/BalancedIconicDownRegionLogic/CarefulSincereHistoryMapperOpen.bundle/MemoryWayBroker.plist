@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>eventGet</key>
+    <string>ShowFleetInside</string>
+    <key>visitorMediaLucent</key>
+    <string>IndexTone</string>
+    <key>beginProtectInterpreter</key>
+    <string>ConsumeResolverTorch</string>
+    <key>stripeAtMobile</key>
+    <string>TopAudioErrorSilver</string>
+</dict>
+</plist>

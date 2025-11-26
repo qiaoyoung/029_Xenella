@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>loadDatasetUltimateDataSource</key>
+    <string>ScheduleFileModel</string>
+    <key>litheDatasetter</key>
+    <string>MixerSchedulerTransformable</string>
+    <key>consolidateRestMainConductor</key>
+    <string>LoyalMapperUpon</string>
+    <key>treePaginate</key>
+    <string>EnqueueCreativeContainer</string>
+</dict>
+</plist>
