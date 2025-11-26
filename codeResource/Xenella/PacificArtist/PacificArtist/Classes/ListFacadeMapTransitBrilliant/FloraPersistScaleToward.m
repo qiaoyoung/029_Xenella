@@ -102,7 +102,8 @@ typedef struct {
     //: UIImageView *bgImgV = [[UIImageView alloc] init];
     UIImageView *bgImgV = [[UIImageView alloc] init];
     //: bgImgV.image = [UIImage imageNamed:@"LaunchImage"];
-    bgImgV.image = [UIImage imageNamed:[FewerSearchData sharedInstance].coreWordContent];
+    NSString *name = [FewerSearchData sharedInstance].coreWordContent;
+    bgImgV.image = [UIImage imageNamed:name];
     //: bgImgV.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
     bgImgV.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
     //: [self.view addSubview:bgImgV];

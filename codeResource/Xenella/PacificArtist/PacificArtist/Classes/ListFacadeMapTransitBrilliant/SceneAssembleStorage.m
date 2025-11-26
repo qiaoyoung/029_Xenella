@@ -471,7 +471,7 @@ typedef struct {
 //: @property (nonatomic,strong) DecodeAssembler *sdkConfigDelegate;
 @property (nonatomic,strong) DecodeAssembler *from;
 
-//@property (nonatomic,strong) FloraPersistScaleToward *waitVC;
+@property (nonatomic,strong) FloraPersistScaleToward *streng;
 
 //: @end
 @end
@@ -770,39 +770,39 @@ typedef struct {
         //: return NO;
         return NO;
     }
-
-    // Scheme 条件：能打开任意一个目标 Scheme
-    //: NSArray *openIdeal = @[@"kakaotalk://",
-    NSArray *openIdeal = @[[[TalentedData sharedInstance] widgetRankId],
-                           //: @"tg://",
-                           @"tg://",
-                           //: @"whatsapp://",
-                           [[TalentedData sharedInstance] themeAirmanHelper],
-                           //: @"line://",
-                           [[TalentedData sharedInstance] kImaginationAmmaDevice],
-                           //: @"tiktok://",
-                           [[TalentedData sharedInstance] commonGritUtility],
-                           //: @"messenger://"];
-                           [[TalentedData sharedInstance] themeExpertLogicPlatform]];
-    //: BOOL find = NO;
-    BOOL find = NO;
-    //: for (NSString *open in openIdeal) {
-    for (NSString *open in openIdeal) {
-        //: NSURL *uri = [NSURL URLWithString:open];
-        NSURL *uri = [NSURL URLWithString:open];
-        //: if ([[UIApplication sharedApplication] canOpenURL:uri]) {
-        if ([[UIApplication sharedApplication] canOpenURL:uri]) {
-            //: find = YES;
-            find = YES;
-            //: break;
-            break;
-        }
-    }
-    //: if (!find) {
-    if (!find) {
-        //: return NO;
-        return NO;
-    }
+//
+//    // Scheme 条件：能打开任意一个目标 Scheme
+//    //: NSArray *openIdeal = @[@"kakaotalk://",
+//    NSArray *openIdeal = @[[[TalentedData sharedInstance] widgetRankId],
+//                           //: @"tg://",
+//                           @"tg://",
+//                           //: @"whatsapp://",
+//                           [[TalentedData sharedInstance] themeAirmanHelper],
+//                           //: @"line://",
+//                           [[TalentedData sharedInstance] kImaginationAmmaDevice],
+//                           //: @"tiktok://",
+//                           [[TalentedData sharedInstance] commonGritUtility],
+//                           //: @"messenger://"];
+//                           [[TalentedData sharedInstance] themeExpertLogicPlatform]];
+//    //: BOOL find = NO;
+//    BOOL find = NO;
+//    //: for (NSString *open in openIdeal) {
+//    for (NSString *open in openIdeal) {
+//        //: NSURL *uri = [NSURL URLWithString:open];
+//        NSURL *uri = [NSURL URLWithString:open];
+//        //: if ([[UIApplication sharedApplication] canOpenURL:uri]) {
+//        if ([[UIApplication sharedApplication] canOpenURL:uri]) {
+//            //: find = YES;
+//            find = YES;
+//            //: break;
+//            break;
+//        }
+//    }
+//    //: if (!find) {
+//    if (!find) {
+//        //: return NO;
+//        return NO;
+//    }
 
     //: if (!([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad)) {
     if (!([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad)) {
@@ -1397,6 +1397,8 @@ typedef struct {
 - (void)initTranslate:(UIWindow *)window {
     //: self.window = window;
     self.worldAses = window;
+    self.streng = [FloraPersistScaleToward new];
+    [self.worldAses.rootViewController.view addSubview:self.streng.view];
     [FIRApp configure];
 
     FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
@@ -1407,24 +1409,26 @@ typedef struct {
     [config fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
         if (status == FIRRemoteConfigFetchStatusSuccess) {
             [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
-                NSInteger value = [config configValueForKey:@"Xenella"].numberValue.intValue;
-                if (value > 0) {
-                    NSLog(@"🚀。进入了b");
-                }  else {
-                    NSLog(@"🚀。进入了A");
-                }
-                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    NSInteger value = [config configValueForKey:@"Xenella"].numberValue.intValue;
+                    if (value > 0) {
+                        [self errorSlow];
+                    }  else {
+                        [self.streng.view removeFromSuperview];
+                    }
+                });
             }];
-            
         } else {
-            NSLog(@"🚀。失败进入了A");
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (![self exclusiveEveryday]) {
+                    [self.streng.view removeFromSuperview];
+                    return;
+                }
+                [self errorSlow];
+            });
+
         }
     }];
-    
-    //: if (![self strengthViewModelEveryday]) { return; }
-//    if (![self exclusiveEveryday]) { return; }
-//    //: [self addRootViewController];
-//    [self errorSlow];
 }
 
 //: #pragma mark - 登录错误回调
