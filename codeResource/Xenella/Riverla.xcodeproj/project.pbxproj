@@ -33,6 +33,7 @@
 		AE5882F61A6F47E10070536A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5882F51A6F47E10070536A /* Images.xcassets */; };
 		AE58995A1A6FA7AC0070536A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5899591A6FA7AC0070536A /* SystemConfiguration.framework */; };
 		AEA87FE11A81CAD600ACC3BA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA87FE01A81CAD500ACC3BA /* AVFoundation.framework */; };
+		B18A7B142ED6F47000601E22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B18A7B132ED6F47000601E22 /* GoogleService-Info.plist */; };
 		BC5645272C7C528700461896 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7BC6E2328CA450078A8F7 /* CallKit.framework */; };
 		BCFFFEBE2C6DE43B004340C4 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFFFEBD2C6DE43B004340C4 /* PushKit.framework */; };
 		BD73C07F1D9905D200F1C436 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BD73C07E1D9905D200F1C436 /* libc++.tbd */; };
@@ -92,6 +93,7 @@
 		AEA87FE01A81CAD500ACC3BA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B007DA8853C08BA6803E4519 /* Pods_Riverla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Riverla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11C232B2DFFCFFF00E72364 /* Riverla.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Riverla.entitlements; sourceTree = "<group>"; };
+		B18A7B132ED6F47000601E22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BCC86D942D5D8CBE00FCE12B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		BCC86D952D5D8CE800FCE12B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		BCC86D962D5D8D2100FCE12B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				B11C232B2DFFCFFF00E72364 /* Riverla.entitlements */,
 				AE5882EC1A6F47E10070536A /* AppDelegate.h */,
 				AE5882ED1A6F47E10070536A /* AppDelegate.m */,
+				B18A7B132ED6F47000601E22 /* GoogleService-Info.plist */,
 				AE5882F51A6F47E10070536A /* Images.xcassets */,
 				AE5882E81A6F47E10070536A /* Supporting Files */,
 			);
@@ -323,6 +326,7 @@
 			files = (
 				427B551229F9071C00F6DC42 /* InfoPlist.strings in Resources */,
 				AE5882F61A6F47E10070536A /* Images.xcassets in Resources */,
+				B18A7B142ED6F47000601E22 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,9 +342,18 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Riverla/Pods-Riverla-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseABTesting/FirebaseABTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseRemoteConfig/FirebaseRemoteConfig.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseRemoteConfigInterop/FirebaseRemoteConfigInterop.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseSharedSwift/FirebaseSharedSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LEEAlert/LEEAlert.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImageFLPlugin/SDWebImageFLPlugin.framework",
@@ -362,9 +375,18 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseABTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreInternal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseRemoteConfig.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseRemoteConfigInterop.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseSharedSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LEEAlert.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageFLPlugin.framework",
