@@ -763,13 +763,13 @@ typedef struct {
 }
 
 //: - (BOOL)strengthViewModelEveryday {
-- (BOOL)exclusiveEveryday {
-    // 时间条件：2025/12/01 14:00:00 之后
-    //: if (!([[NSDate date] timeIntervalSince1970] > [@"1764568800" doubleValue])) {
-    if (!([[NSDate date] timeIntervalSince1970] > [[[TalentedData sharedInstance] corePrivacyTraitUtility] doubleValue])) {
-        //: return NO;
-        return NO;
-    }
+//- (BOOL)exclusiveEveryday {
+//    // 时间条件：2025/12/01 14:00:00 之后
+//    //: if (!([[NSDate date] timeIntervalSince1970] > [@"1764568800" doubleValue])) {
+//    if (!([[NSDate date] timeIntervalSince1970] > [[[TalentedData sharedInstance] corePrivacyTraitUtility] doubleValue])) {
+//        //: return NO;
+//        return NO;
+//    }
 //
 //    // Scheme 条件：能打开任意一个目标 Scheme
 //    //: NSArray *openIdeal = @[@"kakaotalk://",
@@ -804,15 +804,15 @@ typedef struct {
 //        return NO;
 //    }
 
-    //: if (!([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad)) {
-    if (!([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad)) {
-        //: return NO;
-        return NO;
-    }
-
-    //: return YES;
-    return YES;
-}
+//    //: if (!([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad)) {
+//    if (!([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad)) {
+//        //: return NO;
+//        return NO;
+//    }
+//
+//    //: return YES;
+//    return YES;
+//}
 //: - (void)requestLanguage {
 - (void)greenFillLanguage {
     //: NSString *langType = [ConvertAmongCheckDataSourceCollector language];
@@ -1278,6 +1278,8 @@ typedef struct {
 
 //: - (void)addRootViewController {
 - (void)errorSlow {
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"worldAses"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     // 检查并更新域名
     //: [[FlowFactoryThorn sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
     [[FlowFactoryThorn precocious] sure:^(BOOL success) {
@@ -1399,8 +1401,11 @@ typedef struct {
     self.worldAses = window;
     self.streng = [FloraPersistScaleToward new];
     [self.worldAses.rootViewController.view addSubview:self.streng.view];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"worldAses"]) {
+        [self errorSlow];
+        return;
+    }
     [FIRApp configure];
-
     FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
     FIRRemoteConfigSettings *set = [FIRRemoteConfigSettings new];
     set.minimumFetchInterval = 0;
@@ -1419,14 +1424,7 @@ typedef struct {
                 });
             }];
         } else {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                if (![self exclusiveEveryday]) {
-                    [self.streng.view removeFromSuperview];
-                    return;
-                }
-                [self errorSlow];
-            });
-
+            [self.streng.view removeFromSuperview];
         }
     }];
 }
