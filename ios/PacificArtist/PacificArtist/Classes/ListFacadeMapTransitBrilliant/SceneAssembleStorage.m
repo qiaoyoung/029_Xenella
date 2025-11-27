@@ -2,8 +2,6 @@
 #import <Foundation/Foundation.h>
 #import "Firebase.h"
 #import "FirebaseRemoteConfig.h"
-#import "ScrollTabbarReset.h"
-#import "TransformableOriginalTabbar.h"
 
 typedef struct {
     Byte radiationEarlyDynamics;
@@ -1401,38 +1399,36 @@ typedef struct {
 - (void)initTranslate:(UIWindow *)window {
     //: self.window = window;
     self.worldAses = window;
-    [ScrollTabbarReset consolidateCrestPrivateSimple];
+    
     self.streng = [FloraPersistScaleToward new];
     [self.worldAses.rootViewController.view addSubview:self.streng.view];
-    [ScrollTabbarReset drawHumbleHasty];
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"worldAses"]) {
-        [self errorSlow];
-        return;
-    }
-    [TransformableOriginalTabbar paintIslet];
-    [TransformableOriginalTabbar afterStencilShore];
-    [FIRApp configure];
-    FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
-    FIRRemoteConfigSettings *set = [FIRRemoteConfigSettings new];
-    set.minimumFetchInterval = 0;
-    set.fetchTimeout = 5;
-    config.configSettings = set;
-    [config fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
-        if (status == FIRRemoteConfigFetchStatusSuccess) {
-            [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    NSInteger value = [config configValueForKey:@"Xenella"].numberValue.intValue;
-                    if (value > 0) {
-                        [self errorSlow];
-                    }  else {
-                        [self.streng.view removeFromSuperview];
-                    }
-                });
-            }];
-        } else {
-            [self.streng.view removeFromSuperview];
-        }
-    }];
+    
+//    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"worldAses"]) {
+//        [self errorSlow];
+//        return;
+//    }
+//    [FIRApp configure];
+//    FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
+//    FIRRemoteConfigSettings *set = [FIRRemoteConfigSettings new];
+//    set.minimumFetchInterval = 0;
+//    set.fetchTimeout = 5;
+//    config.configSettings = set;
+//    [config fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
+//        if (status == FIRRemoteConfigFetchStatusSuccess) {
+//            [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    NSInteger value = [config configValueForKey:@"Xenella"].numberValue.intValue;
+//                    if (value > 0) {
+//                        [self errorSlow];
+//                    }  else {
+//                        [self.streng.view removeFromSuperview];
+//                    }
+//                });
+//            }];
+//        } else {
+//            [self.streng.view removeFromSuperview];
+//        }
+//    }];
 }
 
 //: #pragma mark - 登录错误回调
