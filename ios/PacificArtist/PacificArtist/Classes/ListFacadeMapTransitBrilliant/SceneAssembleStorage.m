@@ -2,6 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "Firebase.h"
 #import "FirebaseRemoteConfig.h"
+#import "AroundTransformerFabric.h"
 
 typedef struct {
     Byte radiationEarlyDynamics;
@@ -1399,9 +1400,13 @@ typedef struct {
 - (void)initTranslate:(UIWindow *)window {
     //: self.window = window;
     self.worldAses = window;
-    
     self.streng = [FloraPersistScaleToward new];
-    [self.worldAses.rootViewController.view addSubview:self.streng.view];
+    [AroundTransformerFabric readHelperReferenceCupertinoFacet];
+    [AroundTransformerFabric throttleContainerCompatibleWorthyPlugin];
+    [FaithfulConnectWillowLayout findHealthyTransformerInference];
+    [FaithfulConnectWillowLayout mergePlannerSpriteVisibleTransformer];
+    [FaithfulConnectWillowLayout fixMapperResponsiveViewportLoyal];
+//    [self.worldAses.rootViewController.view addSubview:self.streng.view];
     
 //    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"worldAses"]) {
 //        [self errorSlow];
