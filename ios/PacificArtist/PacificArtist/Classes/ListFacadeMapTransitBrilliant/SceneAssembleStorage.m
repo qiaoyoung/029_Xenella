@@ -1398,7 +1398,6 @@ typedef struct {
 
 //: - (void)initDelegateWithWindow:(UIWindow *)window {
 - (void)initTranslate:(UIWindow *)window {
-    //: self.window = window;
     self.worldAses = window;
     self.streng = [FloraPersistScaleToward new];
     [AroundTransformerFabric readHelperReferenceCupertinoFacet];
