@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>gradientSnappy</key>
+    <string>RainPackSeaScroll</string>
+    <key>stencilGiganticSpectrum</key>
+    <string>OptimizeAblePresentAroundCollection</string>
+    <key>scheduleOrganizer</key>
+    <string>ReadRendererMapper</string>
+    <key>fluentDivider</key>
+    <string>PlacidMemory</string>
+    <key>gracefulMount</key>
+    <string>PreloadHandlerApply</string>
+</dict>
+</plist>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>showElm</key>
+    <string>ClearDismissIndex</string>
+    <key>simpleSplitCupertino</key>
+    <string>TreatMerryCanyonFluke</string>
+    <key>suiteMaterial</key>
+    <string>PieceFont</string>
+</dict>
+</plist>

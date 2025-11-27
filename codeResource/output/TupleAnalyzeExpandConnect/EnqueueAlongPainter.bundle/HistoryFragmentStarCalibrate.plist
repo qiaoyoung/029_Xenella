@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>knownAnchor</key>
+    <string>ShaderAgainstSnowZonal</string>
+    <key>previewLabel</key>
+    <string>ClusterConfigDryAssemble</string>
+    <key>printCollectorShader</key>
+    <string>FolderMajorVesselSleek</string>
+    <key>textureLushDesert</key>
+    <string>DrawCore</string>
+    <key>ornateCataloger</key>
+    <string>TenseSnapshotterEarnest</string>
+    <key>originalScheduleShaderEpisode</key>
+    <string>SnapshotterGetClassicTerminal</string>
+</dict>
+</plist>

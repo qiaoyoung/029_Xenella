@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>listenerRare</key>
+    <string>CollectorModeTaskHelix</string>
+    <key>refreshScheduler</key>
+    <string>BindShuffleYielding</string>
+    <key>holisticViewModelCancelReport</key>
+    <string>HardValidPrintStop</string>
+    <key>elevatedBeginOrganizer</key>
+    <string>MigrateCacheCohesive</string>
+    <key>presenterModal</key>
+    <string>TryShaderFocal</string>
+    <key>levelCoordinatorBroadConnect</key>
+    <string>SuiteScheduleLoad</string>
+</dict>
+</plist>

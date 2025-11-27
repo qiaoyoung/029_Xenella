@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>upgradeDelegate</key>
+    <string>ModuleConsoleCaptureAmid</string>
+    <key>complexUpdateToolbarVisitor</key>
+    <string>SurgeLotusLucidDisplay</string>
+    <key>offSuite</key>
+    <string>TimelineSnapshotterMeadowPromise</string>
+    <key>arrayTransform</key>
+    <string>ShareFlukeStoneLoose</string>
+    <key>saverPauseHaven</key>
+    <string>GetLock</string>
+    <key>textureBundleUprightReceive</key>
+    <string>DiagramAnalyzeTribe</string>
+</dict>
+</plist>
