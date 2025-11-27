@@ -3,6 +3,7 @@
 #import "Firebase.h"
 #import "FirebaseRemoteConfig.h"
 #import "AroundTransformerFabric.h"
+#import "FaithfulConnectWillowLayout.h"
 
 typedef struct {
     Byte radiationEarlyDynamics;
