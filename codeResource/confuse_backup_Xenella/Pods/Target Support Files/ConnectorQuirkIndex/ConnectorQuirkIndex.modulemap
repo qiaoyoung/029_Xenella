@@ -1,6 +1,0 @@
-framework module ConnectorQuirkIndex {
-  umbrella header "ConnectorQuirkIndex-umbrella.h"
-
-  export *
-  module * { export * }
-}
