@@ -252,8 +252,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 //: @implementation UIView (DiffuseLawfulCollectionAlongAddition)
-
-#import <objc/runtime.h>
+ 
 
 @implementation UIView (DiffuseLawfulCollectionAlongAddition)
 

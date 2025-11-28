@@ -46,7 +46,6 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
  Returns the array by sorting the UIView's by their tag property.
  */
 //: @property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * sortedArrayByTag;
-@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * reachTransit;
 @property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * part;
 
 /**

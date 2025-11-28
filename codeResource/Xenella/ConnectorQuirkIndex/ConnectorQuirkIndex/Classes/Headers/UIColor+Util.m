@@ -313,7 +313,8 @@ void translationValue(CGContextRef c, color_t color) {
 
 - (fcolor_t)flag {
     //: OC_CUSTOM_PROPERTY_INJECT
-    fcolor_t flag = objc_getAssociatedObject(self, featureShirtEvent(nil));
+    NSNumber *num = objc_getAssociatedObject(self, featureShirtEvent(nil));
+    fcolor_t flag = num.doubleValue;
     return flag;
 }
 
@@ -464,7 +465,8 @@ void translationValue(CGContextRef c, color_t color) {
 
 - (fcolor_t)coreRidge {
     //: OC_CUSTOM_PROPERTY_INJECT
-    fcolor_t coreRidge = objc_getAssociatedObject(self, moduleStorageUponValue(nil));
+    NSNumber *num = objc_getAssociatedObject(self, moduleStorageUponValue(nil));
+    fcolor_t coreRidge = num.doubleValue;
     return coreRidge;
 }
 
@@ -519,7 +521,7 @@ static const char *moduleStorageUponValue (NSString *value) {
 
 - (void)setCoreRidge:(fcolor_t)coreRidge {
     //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, moduleStorageUponValue(nil), coreRidge, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, moduleStorageUponValue(nil), @(coreRidge), OBJC_ASSOCIATION_RETAIN);
 }
 
 //: @end
@@ -534,7 +536,7 @@ static const char *featureShirtEvent (NSString *value) {
 
 - (void)setFlag:(fcolor_t)flag {
     //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, featureShirtEvent(nil), flag, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, featureShirtEvent(nil), @(flag), OBJC_ASSOCIATION_RETAIN);
 }
 
 

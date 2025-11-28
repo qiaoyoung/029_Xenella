@@ -820,7 +820,7 @@
 @property (nonatomic,strong) NSMutableDictionary *systemSense;
 
 @property (nonatomic,assign) BOOL ribbon;
-;@property (nonatomic, strong) TriggerConsolidateArcView *channel
+;@property (nonatomic, strong) TriggerConsolidateArcView *channel;
 //: @property (nonatomic,assign) BOOL supportsForceTouch;
 @property (nonatomic,assign) BOOL voiceHoney;
 //: @property (nonatomic, strong) UIButton *mesBtn;

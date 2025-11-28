@@ -529,7 +529,7 @@ static char k_usValue;
             //: case AlongsideSaverCreatorPositionTop:
             case AlongsideSaverCreatorPositionTop:
                 //: scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
-                scrollOffsetThreshold = self.frame.origin.close - self.total;
+                scrollOffsetThreshold = self.frame.origin.y - self.total;
                 //: break;
                 break;
             //: case AlongsideSaverCreatorPositionBottom:
@@ -545,19 +545,19 @@ static char k_usValue;
             //: self.state = AlongsideSaverCreatorStateLoading;
             self.excludeSkipsing = AlongsideSaverCreatorStateLoading;
         //: else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == AlongsideSaverCreatorStateStopped && self.position == AlongsideSaverCreatorPositionTop)
-        else if(contentOffset.close < scrollOffsetThreshold && self.necessaryView.isDragging && self.excludeSkipsing == AlongsideSaverCreatorStateStopped && self.trigger == AlongsideSaverCreatorPositionTop)
+        else if(contentOffset.y < scrollOffsetThreshold && self.necessaryView.isDragging && self.excludeSkipsing == AlongsideSaverCreatorStateStopped && self.trigger == AlongsideSaverCreatorPositionTop)
             //: self.state = AlongsideSaverCreatorStateTriggered;
             self.excludeSkipsing = AlongsideSaverCreatorStateTriggered;
         //: else if(contentOffset.y >= scrollOffsetThreshold && self.state != AlongsideSaverCreatorStateStopped && self.position == AlongsideSaverCreatorPositionTop)
-        else if(contentOffset.close >= scrollOffsetThreshold && self.excludeSkipsing != AlongsideSaverCreatorStateStopped && self.trigger == AlongsideSaverCreatorPositionTop)
+        else if(contentOffset.y >= scrollOffsetThreshold && self.excludeSkipsing != AlongsideSaverCreatorStateStopped && self.trigger == AlongsideSaverCreatorPositionTop)
             //: self.state = AlongsideSaverCreatorStateStopped;
             self.excludeSkipsing = AlongsideSaverCreatorStateStopped;
         //: else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == AlongsideSaverCreatorStateStopped && self.position == AlongsideSaverCreatorPositionBottom)
-        else if(contentOffset.close > scrollOffsetThreshold && self.necessaryView.isDragging && self.excludeSkipsing == AlongsideSaverCreatorStateStopped && self.trigger == AlongsideSaverCreatorPositionBottom)
+        else if(contentOffset.y > scrollOffsetThreshold && self.necessaryView.isDragging && self.excludeSkipsing == AlongsideSaverCreatorStateStopped && self.trigger == AlongsideSaverCreatorPositionBottom)
             //: self.state = AlongsideSaverCreatorStateTriggered;
             self.excludeSkipsing = AlongsideSaverCreatorStateTriggered;
         //: else if(contentOffset.y <= scrollOffsetThreshold && self.state != AlongsideSaverCreatorStateStopped && self.position == AlongsideSaverCreatorPositionBottom)
-        else if(contentOffset.close <= scrollOffsetThreshold && self.excludeSkipsing != AlongsideSaverCreatorStateStopped && self.trigger == AlongsideSaverCreatorPositionBottom)
+        else if(contentOffset.y <= scrollOffsetThreshold && self.excludeSkipsing != AlongsideSaverCreatorStateStopped && self.trigger == AlongsideSaverCreatorPositionBottom)
             //: self.state = AlongsideSaverCreatorStateStopped;
             self.excludeSkipsing = AlongsideSaverCreatorStateStopped;
     //: } else {
@@ -571,7 +571,7 @@ static char k_usValue;
             //: case AlongsideSaverCreatorPositionTop:
             case AlongsideSaverCreatorPositionTop:
                 //: offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
-                offset = ((self.necessaryView.contentOffset.close * -1) > (0.0f) ? (self.necessaryView.contentOffset.close * -1) : (0.0f));
+                offset = ((self.necessaryView.contentOffset.y * -1) > (0.0f) ? (self.necessaryView.contentOffset.y * -1) : (0.0f));
                 //: offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
                 offset = ((offset) < (self.total + self.bounds.size.height) ? (offset) : (self.total + self.bounds.size.height));
                 //: contentInset = self.scrollView.contentInset;
@@ -682,7 +682,7 @@ static char k_usValue;
         //: CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         //: [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
-        [customView setFrame:CGRectMake(origin.x, origin.close, viewBounds.size.width, viewBounds.size.height)];
+        [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
     }
     //: else {
     else {
@@ -1069,7 +1069,7 @@ static char k_usValue;
         case AlongsideSaverCreatorPositionTop:
 
             //: if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
-            if((fabs(self.necessaryView.contentOffset.close) < 1.19209290e-7F)) {
+            if((fabs(self.necessaryView.contentOffset.y) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
                 [self.necessaryView setContentOffset:CGPointMake(self.necessaryView.contentOffset.x, -self.frame.size.height) animated:YES];
                 //: self.wasTriggeredByUser = NO;
@@ -1087,11 +1087,11 @@ static char k_usValue;
         case AlongsideSaverCreatorPositionBottom:
 
             //: if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
-            if(((fabs(self.necessaryView.contentOffset.close) < 1.19209290e-7F) && self.necessaryView.contentSize.height < self.necessaryView.bounds.size.height)
+            if(((fabs(self.necessaryView.contentOffset.y) < 1.19209290e-7F) && self.necessaryView.contentSize.height < self.necessaryView.bounds.size.height)
                //: || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
-               || (fabs((self.necessaryView.contentOffset.close) - (self.necessaryView.contentSize.height - self.necessaryView.bounds.size.height)) < 1.19209290e-7F)) {
+               || (fabs((self.necessaryView.contentOffset.y) - (self.necessaryView.contentSize.height - self.necessaryView.bounds.size.height)) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
-                [self.scrollView setContentOffset:(CGPoint){.close = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
+                [self.necessaryView setContentOffset:(CGPoint){.y = ((self.necessaryView.contentSize.height - self.necessaryView.bounds.size.height) > (0.0f) ? (self.necessaryView.contentSize.height - self.necessaryView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
                 //: self.wasTriggeredByUser = NO;
                 self.independency = NO;
             }
@@ -1290,7 +1290,7 @@ static char k_usValue;
 //: - (void)setScrollViewContentInsetForLoading {
 - (void)go {
     //: CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
-    CGFloat offset = ((self.necessaryView.contentOffset.close * -1) > (0) ? (self.necessaryView.contentOffset.close * -1) : (0));
+    CGFloat offset = ((self.necessaryView.contentOffset.y * -1) > (0) ? (self.necessaryView.contentOffset.y * -1) : (0));
     //: UIEdgeInsets currentInsets = self.scrollView.contentInset;
     UIEdgeInsets currentInsets = self.necessaryView.contentInset;
     //: switch (self.position) {

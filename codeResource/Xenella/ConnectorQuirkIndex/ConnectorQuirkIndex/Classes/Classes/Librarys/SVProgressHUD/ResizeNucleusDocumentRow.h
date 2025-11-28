@@ -98,21 +98,18 @@ typedef void (^ResizeNucleusDocumentRowDismissCompletion)(void);
 
 //: #pragma mark - Customization
 #pragma mark - Customization
-
-/// Represents the default style for the HUD.
-/// @discussion Default: ResizeNucleusDocumentRowStyleAutomatic.
-__attribute__((annotate("ui_appearance_selector")));
-
+ 
 /// Font used for text within the HUD.
 /// @discussion Default: [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline].
 //: @property (strong, nonatomic, nonnull) UIFont *font __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIFont *watchDerive @property (assign, nonatomic) NSTimeInterval replacementMinimum;
+@property (strong, nonatomic, nonnull) UIFont *watchDerive;
+@property (assign, nonatomic) NSTimeInterval replacementMinimum
  __attribute__((annotate("ui_appearance_selector")));
 
 /// The image displayed when showing error messages.
 /// @discussion Default: xmark from SF Symbols (iOS 13+) or the bundled error image provided by Freepik.
 //: @property (strong, nonatomic, nonnull) UIImage *errorImage __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIImage *dressUnder;
+@property (strong, nonatomic, nonnull) UIImage *dressUnder
  __attribute__((annotate("ui_appearance_selector")));
 
 /// Defines the animation type used when the HUD is displayed.
@@ -124,7 +121,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Radius of the ring shown in the HUD when there's associated text.
 /// @discussion Default: 18 pt.
 //: @property (assign, nonatomic) CGFloat ringRadius __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGFloat sound/// Offset from the center position, can be used to adjust the HUD position.
+@property (assign, nonatomic) CGFloat sound;/// Offset from the center position, can be used to adjust the HUD position.
 /// @discussion Default: 0, 0.
 //: @property (assign, nonatomic) UIOffset offsetFromCenter __attribute__((annotate("ui_appearance_selector")));
 @property (assign, nonatomic) UIOffset bubbleCenter __attribute__((annotate("ui_appearance_selector")));
@@ -132,26 +129,27 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Color for the background layer behind the HUD.
 /// @discussion Default: [UIColor colorWithWhite:0 alpha:0.4].
 //: @property (strong, nonatomic, nonnull) UIColor *backgroundLayerColor __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIColor *stroke;
+@property (strong, nonatomic, nonnull) UIColor *stroke
  __attribute__((annotate("ui_appearance_selector")));
 
 /// The interval in seconds to wait before displaying the HUD. If the HUD is displayed before this time elapses, this timer is reset.
 /// @discussion Default: 0 seconds.
 //: @property (assign, nonatomic) NSTimeInterval graceTimeInterval;
-@property (assign, nonatomic) NSTimeInterval mutualTimeTotalerval;
+@property (assign, nonatomic) NSTimeInterval mutualTimeTotalerval
  __attribute__((annotate("ui_appearance_selector")));
 
 /// The image displayed when showing informational messages.
 /// @discussion Default: info.circle from SF Symbols (iOS 13+) or the bundled info image provided by Freepik.
 //: @property (strong, nonatomic, nonnull) UIImage *infoImage __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIImage *loose;
+@property (strong, nonatomic, nonnull) UIImage *loose
  __attribute__((annotate("ui_appearance_selector")));
 
 /// The maximum window level on which the HUD can be displayed.
 /// @discussion Default: UIWindowLevelNormal.
 //: @property (assign, nonatomic) UIWindowLevel maxSupportedWindowLevel;
 @property (assign, nonatomic) UIWindowLevel global;
- @property (strong, nonatomic, nonnull) UIImage *array @property (assign, nonatomic) CGSize region __attribute__((annotate("ui_appearance_selector")));
+@property (strong, nonatomic, nonnull) UIImage *array;
+@property (assign, nonatomic) CGSize region __attribute__((annotate("ui_appearance_selector")));
 
 /// Foreground color used for content in the HUD.
 /// @discussion Default: [UIColor blackColor].
@@ -161,10 +159,10 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Thickness of the ring shown in the HUD.
 /// @discussion Default: 2 pt.
 //: @property (assign, nonatomic) CGFloat ringThickness __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGFloat chain /// The minimum size for the HUD. Useful for maintaining a consistent size when the message might cause resizing.
+@property (assign, nonatomic) CGFloat chain; /// The minimum size for the HUD. Useful for maintaining a consistent size when the message might cause resizing.
 /// @discussion Default: CGSizeZero.
 //: @property (assign, nonatomic) CGSize minimumSize __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGSize prepare;
+@property (assign, nonatomic) CGSize prepare
 __attribute__((annotate("ui_appearance_selector")));
 
 /// Indicates whether images within the HUD should be tinted.
@@ -175,7 +173,9 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Color for any foreground images in the HUD.
 /// @discussion Default: same as foregroundColor.
 //: @property (strong, nonatomic, nullable) UIColor *foregroundImageColor __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nullable) UIColor *cutEnable @property (strong, nonatomic, nonnull) UIImage *style @property (strong, nonatomic, nonnull) UIView *cornerReading__attribute__((annotate("ui_appearance_selector")));
+@property (strong, nonatomic, nullable) UIColor *cutEnable;
+@property (strong, nonatomic, nonnull) UIImage *style;
+@property (strong, nonatomic, nonnull) UIView *cornerReading __attribute__((annotate("ui_appearance_selector")));
 
 /// Represents the type of mask applied when the HUD is displayed.
 /// @discussion Default: ResizeNucleusDocumentRowMaskTypeNone.
@@ -185,35 +185,35 @@ __attribute__((annotate("ui_appearance_selector")));
 /// A specific view for extensions. This property is only used if #define SV_APP_EXTENSIONS is set.
 /// @discussion Default: nil.
 //: @property (strong, nonatomic, nonnull) UIView *viewForExtension __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIView *transport;
+@property (strong, nonatomic, nonnull) UIView *transport
  __attribute__((annotate("ui_appearance_selector")));
 
 /// Radius of the ring shown in the HUD when there's no associated text.
 /// @discussion Default: 24 pt.
 //: @property (assign, nonatomic) CGFloat ringNoTextRadius __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGFloat lipogram/// Indicates if haptic feedback should be used.
+@property (assign, nonatomic) CGFloat lipogram;/// Indicates if haptic feedback should be used.
 /// @discussion Default: NO.
 //: @property (assign, nonatomic) BOOL hapticsEnabled;
-@property (assign, nonatomic) BOOL local;
+@property (assign, nonatomic) BOOL local
  __attribute__((annotate("ui_appearance_selector")));
 
 /// Background color of the HUD.
 /// @discussion Default: [UIColor whiteColor].
 //: @property (strong, nonatomic, nonnull) UIColor *backgroundColor __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIColor *backgroundColor/// Indicates if motion effects should be applied to the HUD.
+@property (strong, nonatomic, nonnull) UIColor *backgroundColor;/// Indicates if motion effects should be applied to the HUD.
 /// @discussion Default: YES.
 //: @property (assign, nonatomic) BOOL motionEffectEnabled;
-@property (assign, nonatomic) BOOL fire;
+@property (assign, nonatomic) BOOL fire
  __attribute__((annotate("ui_appearance_selector")));
 
 /// Size of any images displayed within the HUD.
 /// @discussion Default: 28x28 pt.
 //: @property (assign, nonatomic) CGSize imageViewSize __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGSize methodDiamond
+@property (assign, nonatomic) CGSize methodDiamond;
 /// The minimum amount of time in seconds the HUD will display.
 /// @discussion Default: 5.0 seconds.
 //: @property (assign, nonatomic) NSTimeInterval minimumDismissTimeInterval;
-@property (assign, nonatomic) NSTimeInterval book;
+@property (assign, nonatomic) NSTimeInterval book
 __attribute__((annotate("ui_appearance_selector")));
 
 /// The image displayed when showing success messages.
@@ -224,17 +224,16 @@ __attribute__((annotate("ui_appearance_selector")));
 
 /// The container view used for displaying the HUD. If nil, the default window level is used.
 //: @property (strong, nonatomic, nullable) UIView *containerView;
-@property (strong, nonatomic, nullable) UIView *empty;
-
+@property (strong, nonatomic, nullable) UIView *empty
 __attribute__((annotate("ui_appearance_selector")));
 
 /// Duration of the fade-in animation when showing the HUD.
 /// @discussion Default: 0.15.
 //: @property (assign, nonatomic) NSTimeInterval fadeInAnimationDuration __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) NSTimeInterval timing /// The maximum amount of time in seconds the HUD will display.
+@property (assign, nonatomic) NSTimeInterval timing; /// The maximum amount of time in seconds the HUD will display.
 /// @discussion Default: CGFLOAT_MAX.
 //: @property (assign, nonatomic) NSTimeInterval maximumDismissTimeInterval;
-@property (assign, nonatomic) NSTimeInterval command;
+@property (assign, nonatomic) NSTimeInterval command
  __attribute__((annotate("ui_appearance_selector")));
 
 /// Corner radius of the HUD view.
@@ -245,10 +244,10 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Duration of the fade-out animation when hiding the HUD.
 /// @discussion Default: 0.15.
 //: @property (assign, nonatomic) NSTimeInterval fadeOutAnimationDuration __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) NSTimeInterval melt
-@property (strong, nonatomic, nonnull) UIColor *number
+@property (assign, nonatomic) NSTimeInterval melt;
+@property (strong, nonatomic, nonnull) UIColor *number;
 //: @property (assign, nonatomic) ResizeNucleusDocumentRowStyle defaultStyle __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) ResizeNucleusDocumentRowStyle bare
+@property (assign, nonatomic) ResizeNucleusDocumentRowStyle bare;
 /// Sets the minimum size for the HUD.
 /// @param minimumSize The minimum size for the HUD.
 //: + (void)setMinimumSize:(CGSize)minimumSize;

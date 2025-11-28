@@ -24,7 +24,7 @@ IB_DESIGNABLE
 //: @property (nonatomic, readonly) UILabel *textLabel; 
 @property (nonatomic, readonly) UILabel *single;
 //: @property (nonatomic) UIBlurEffect *blurEffect NS_AVAILABLE_IOS(8_0); 
-@property (nonatomic) UIBlurEffect *except
+@property (nonatomic) UIBlurEffect *except;
 //: @property (nonatomic) IBInspectable CGFloat textSize; 
 @property (nonatomic) IBInspectable CGFloat perimeterText;// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic, copy) void(^animationDidStopBlock)();

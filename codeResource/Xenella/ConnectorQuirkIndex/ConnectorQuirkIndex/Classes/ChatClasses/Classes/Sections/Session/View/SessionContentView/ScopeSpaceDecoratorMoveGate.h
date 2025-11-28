@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "AgainstLoopForceful.h"
 #import "AgainstLoopForceful.h"
-//: #import "DrawAssemblerMeasureLoose.h"
-#import "DrawAssemblerMeasureLoose.h"
+//:  
+ 
 
 //: @interface ScopeSpaceDecoratorMoveGate : AgainstLoopForceful
 @interface ScopeSpaceDecoratorMoveGate : AgainstLoopForceful

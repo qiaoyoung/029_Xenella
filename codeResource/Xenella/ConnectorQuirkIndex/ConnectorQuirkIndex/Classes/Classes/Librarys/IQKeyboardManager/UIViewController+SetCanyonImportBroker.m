@@ -34,8 +34,7 @@
 //: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 //: @implementation UIViewController (SetCanyonImportBroker)
-
-#import <objc/runtime.h>
+ 
 
 @implementation UIViewController (SetCanyonImportBroker)
 

@@ -96,7 +96,7 @@ typedef NS_OPTIONS(NSUInteger, GoodObviousFitFinishReason) {
 @interface GoodObviousFitController : NSObject
 
 //: @property(nonatomic, readonly) UIView *view;
-@property (readonly, nonatomic, strong) BindAggregatorAccelerate *count;
+@property (readonly, nonatomic, strong) UIView *count;
 
 //: - (void)pause;
 - (void)fabric;

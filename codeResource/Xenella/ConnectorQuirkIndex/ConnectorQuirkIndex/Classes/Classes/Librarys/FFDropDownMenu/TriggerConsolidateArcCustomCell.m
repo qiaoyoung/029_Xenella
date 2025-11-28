@@ -98,7 +98,7 @@ Byte colorPresentationConfig[] = {54, 7, 48, 10, 190, 189, 244, 212, 181, 162, 2
 //: - (void)setMenuModel:(id)menuModel {
 - (void)setConversation:(id)menuModel {
     //: _menuModel = menuModel;
-    _menuModel = menuModel;
+    menuModel = menuModel;
 
     //: TriggerConsolidateArcModel *realMenuModel = (TriggerConsolidateArcModel *)menuModel;
     TriggerConsolidateArcModel *realMenuModel = (TriggerConsolidateArcModel *)menuModel;

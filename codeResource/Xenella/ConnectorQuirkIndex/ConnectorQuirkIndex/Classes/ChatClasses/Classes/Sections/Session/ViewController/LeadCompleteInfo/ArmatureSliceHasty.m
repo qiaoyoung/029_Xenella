@@ -164,7 +164,7 @@ CGFloat formCart(void) {
     //: CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     //: return contentFitSize.height + 20.0f;
-    return contentFitSize.adjustment + 20.0f;
+    return contentFitSize.height + 20.0f;
 }
 
 //: - (void)p_updateInTransaction:(void (^)(ArmatureSliceHasty *tipView))transactionBlock
@@ -188,10 +188,10 @@ CGFloat formCart(void) {
         //: CGRect frame = CGRectMake(0, 0, 30, 30);
         CGRect frame = CGRectMake(0, 0, 30, 30);
         //: frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
-        frame.previous.child = CGRectGetMaxX(self.bounds) - frame.flagKind.sumo;
+        frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
 	[self setWater:_noticeImageview];
         //: frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
-        frame.previous.joinLink = (self.bounds.flagKind.adjustment - frame.flagKind.adjustment) * 0.5;
+        frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
 
         //: _actionButton.frame = CGRectIntegral(frame);
         [self realize:_actionButton].frame = CGRectIntegral(frame);
@@ -221,13 +221,13 @@ CGFloat formCart(void) {
     //: ArmatureSliceHasty *tipView = [[ArmatureSliceHasty alloc] initWithFrame:(CGRect) {
     ArmatureSliceHasty *tipView = [[ArmatureSliceHasty alloc] initWithFrame:(CGRect) {
         //: .origin.x = 5,
-        .previous.child = 5,
+        .origin.x = 5,
         //: .origin.y = (44.0f + [UIDevice vg_statusBarHeight])+5,
-        .previous.joinLink = (44.0f + [UIDevice chemical])+5,
+        .origin.y = (44.0f + [UIDevice chemical])+5,
         //: .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
-        .flagKind.sumo = UIScreen.mainScreen.bounds.flagKind.sumo-10.f,
+        .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
         //: .size.height = 46.f
-        .flagKind.adjustment = 46.f
+        .size.height = 46.f
     //: }];
     }];
 
@@ -309,7 +309,7 @@ CGFloat formCart(void) {
 	[self setWater:_noticeImageview];
         {
             //: self.leftwardMarqueeView = [[AssemblerAfterWatch alloc] initWithFrame:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width- 54 - 30 - 10, 46) direction:HelperSteelMakeImageLeftward];
-            self.leftwardMarqueeView = [[AssemblerAfterWatch alloc] initWithDirectionSum:CGRectMake(54, 0, [UIScreen mainScreen].bounds.flagKind.sumo- 54 - 30 - 10, 46) skip:HelperSteelMakeImageLeftward];
+            self.leftwardMarqueeView = [[AssemblerAfterWatch alloc] initWithDirectionSum:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width- 54 - 30 - 10, 46) skip:HelperSteelMakeImageLeftward];
 	[self setBelow:_actionButton];
             //: _leftwardMarqueeView.delegate = self;
             _leftwardMarqueeView.delegate = self;
@@ -407,7 +407,7 @@ CGFloat formCart(void) {
     content.text = self.title;
 	[self setWater:_noticeImageview];
     //: return (5.0f + 5.0f) + content.intrinsicContentSize.width; 
-    return (5.0f + 5.0f) + content.intrinsicContentSize.sumo; // icon width + label width (it's perfect to cache them all)
+    return (5.0f + 5.0f) + content.intrinsicContentSize.width; // icon width + label width (it's perfect to cache them all)
 }
 
 //: #pragma mark -
@@ -426,7 +426,7 @@ CGFloat formCart(void) {
         //: CGRect frame = self.frame;
         CGRect frame = self.frame;
         //: frame.origin.y = SNStatusBarHeight() + 44 + 5;
-        frame.previous.joinLink = dataFormattingUs() + 44 + 5;
+        frame.origin.y = dataFormattingUs() + 44 + 5;
         //: self.frame = frame;
         self.frame = frame;
     //: } completion:nil];
@@ -447,7 +447,7 @@ CGFloat formCart(void) {
             //: CGRect frame = self.frame;
             CGRect frame = self.frame;
             //: frame.origin.y = SNStatusBarHeight();
-            frame.previous.joinLink = dataFormattingUs();
+            frame.origin.y = dataFormattingUs();
             //: self.frame = frame;
             self.frame = frame;
         //: } completion:^(BOOL finished) {

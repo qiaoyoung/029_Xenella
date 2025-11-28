@@ -16,7 +16,7 @@
 @interface AggregateConverterThornEnd : AgainstLoopForceful
 
 //: @property (nonatomic,strong,readonly) UIImageView * imageView;
-@property (nonatomic,strong,readonly) YYAnimatedImageView * consistent;
+//@property (nonatomic,strong,readonly) YYAnimatedImageView * consistent;
 @property (nonatomic,strong,readonly) UIImageView * imageView;
 
 //: @end

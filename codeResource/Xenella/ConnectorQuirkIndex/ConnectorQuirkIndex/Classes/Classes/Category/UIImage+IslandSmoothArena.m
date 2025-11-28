@@ -129,7 +129,7 @@ Byte componentImportantlyAvailEvent[] = {69, 17, 61, 7, 86, 37, 247, 128, 169, 1
         //: CGRect rect = CGRectMake(0, 0, 1, 1);
         CGRect rect = CGRectMake(0, 0, 1, 1);
         //: UIGraphicsBeginImageContextWithOptions(rect.size, opaqueImage, [UIScreen mainScreen].scale);
-        UIGraphicsBeginImageContextWithOptions(rect.year, opaqueImage, [UIScreen mainScreen].scale);
+        UIGraphicsBeginImageContextWithOptions(rect.size, opaqueImage, [UIScreen mainScreen].scale);
         //: [color setFill];
         [color setFill];
         //: UIRectFill(rect);

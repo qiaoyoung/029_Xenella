@@ -169,7 +169,7 @@ typedef struct {
 //: - (void)setMenuModel:(id)menuModel {
 - (void)setConversation:(id)menuModel {
     //: _menuModel = menuModel;
-    _menuModel = menuModel;
+    menuModel = menuModel;
 
     //: TriggerConsolidateArcModel *realMenuModel = (TriggerConsolidateArcModel *)menuModel;
     TriggerConsolidateArcModel *realMenuModel = (TriggerConsolidateArcModel *)menuModel;

@@ -108,8 +108,8 @@ static void visualHighlight(SystemSoundID soundID, void *data)
     {
         //: SEL selector = NSSelectorFromString(@"vibrate");
         SEL selector = NSSelectorFromString([CrushData sharedInstance].widgetRantHelper);
-        //: SuppressPerformSelectorLeakWarning([(TransformableThreadReference *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
-        SuppressPerformSelectorLeakWarning([(TransformableThreadReference *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+        //:   ([(TransformableThreadReference *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+          ([(TransformableThreadReference *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
     }
 }
 

@@ -35,16 +35,9 @@
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 //: @implementation NSArray (ShadeStoneTerminalPast)
 
-#import <objc/runtime.h>
-
+ 
 @implementation NSArray (ShadeStoneTerminalPast)
-
-- (NSArray<__kindof UIView *> *)reachTransit {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    NSArray<__kindof UIView *> * reachTransit = objc_getAssociatedObject(self, appFeatherPreference(nil));
-    return reachTransit;
-}
-
+ 
 //: - (NSArray<UIView*>*)sortedArrayByPosition
 - (NSArray<UIView*>*)bind
 {
@@ -78,14 +71,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     //: }];
     }];
 }
-
-
-- (NSArray<__kindof UIView *> *)cantilever:(NSArray<__kindof UIView *> *)reachTransit {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    self.reachTransit = reachTransit;
-    return reachTransit;
-}
-
+ 
 //: - (NSArray<UIView*>*)sortedArrayByTag
 - (NSArray<UIView*>*)part
 {
@@ -121,11 +107,6 @@ static const char *appFeatherPreference (NSString *value) {
     }
     return  "reach_transit";
 };
-
-- (void)setReachTransit:(NSArray<__kindof UIView *> *)reachTransit {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, appFeatherPreference(nil), reachTransit, OBJC_ASSOCIATION_RETAIN);
-}
 
 
 @end

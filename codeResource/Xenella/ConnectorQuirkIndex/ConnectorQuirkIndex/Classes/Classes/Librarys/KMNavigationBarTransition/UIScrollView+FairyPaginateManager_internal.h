@@ -31,9 +31,9 @@
 @interface UIScrollView (FairyPaginateManager_internal)
 
 
+@property (nonatomic, assign) BOOL createCollection;
 
-
-
+@property (nonatomic, assign) UIScrollViewContentInsetAdjustmentBehavior brotherFind;
 
 //: @end
 @end

@@ -489,8 +489,8 @@ typedef struct {
 #import "ParseStretchHarness.h"
 //: #import "StylerCreekTableEqual.h"
 #import "StylerCreekTableEqual.h"
-//: #import "DrawAssemblerMeasureLoose.h"
-#import "DrawAssemblerMeasureLoose.h"
+//:  
+ 
 //: #import "FromMonitorForward.h"
 #import "FromMonitorForward.h"
 //: #import "DefineConfigureOrganizer.h"

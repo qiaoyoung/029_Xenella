@@ -26,8 +26,8 @@ Byte k_orientationId[] = {61, 25, 3, 4, 73, 73, 73, 78, 108, 119, 72, 121, 104, 
 #import "YieldPipelineGranularFancy.h"
 //: #import "AboveCompositeFixtureCore.h"
 #import "AboveCompositeFixtureCore.h"
-//: #import "DrawAssemblerMeasureLoose.h"
-#import "DrawAssemblerMeasureLoose.h"
+//:  
+ 
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "CompareTrainThroughSuite.h"
