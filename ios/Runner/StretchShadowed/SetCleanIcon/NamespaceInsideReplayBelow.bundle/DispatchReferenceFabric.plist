@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>insideBroker</key>
+    <string>OrderDataset</string>
+    <key>appendRegistry</key>
+    <string>VisualizeVisitorAmongSchedule</string>
+    <key>stylerForesightedSpoke</key>
+    <string>RelayWriteAt</string>
+    <key>facadeBar</key>
+    <string>CalculateProfileIn</string>
+</dict>
+</plist>

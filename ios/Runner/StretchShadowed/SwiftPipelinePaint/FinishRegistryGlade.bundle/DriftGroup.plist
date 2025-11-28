@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>beaconCollectionStop</key>
+    <string>IconDrawMatchHandler</string>
+    <key>initializeFaint</key>
+    <string>ReplaceRoadmap</string>
+    <key>stretchFragmentWavy</key>
+    <string>PreviewSegmentCentralRegistry</string>
+    <key>toolbarUnder</key>
+    <string>AbundantGuideBrookTransformer</string>
+    <key>collectionWarpRadiusGrowing</key>
+    <string>OffsetLimitInterpreterDistinctWorkbench</string>
+    <key>consistentHelperReleaseSpeak</key>
+    <string>SurfTribeScenario</string>
+    <key>mapIdleTowerStrategy</key>
+    <string>RealBesideQuality</string>
+    <key>facadeCompositeStopFont</key>
+    <string>AcrossAddDispatch</string>
+</dict>
+</plist>

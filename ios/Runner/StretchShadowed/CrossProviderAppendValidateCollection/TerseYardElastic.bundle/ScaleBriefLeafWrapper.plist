@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>removeRay</key>
+    <string>PatternedFrostPositioner</string>
+    <key>balanceFirmBlueprint</key>
+    <string>SleekRoundPinOver</string>
+    <key>infiniteParser</key>
+    <string>SteamHideSaver</string>
+    <key>heavenClearCoherentPlanner</key>
+    <string>ConductorMountInterpreter</string>
+    <key>parserThread</key>
+    <string>ApplySampleAttach</string>
+</dict>
+</plist>
