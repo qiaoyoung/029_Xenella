@@ -2,19 +2,26 @@
 #import <Flutter/Flutter.h>
 #import "GeneratedPluginRegistrant.h"
 #import "WorthyBracketThreaded.h"
+#import "ExpertBufferCheckClass.h"
+#import "DapperDatasetStream.h"
+#import "AssembleCompactPaint.h"
 
 @implementation AppDelegate
  
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [GeneratedPluginRegistrant registerWithRegistry:self];
+    [ExpertBufferCheckClass optimizeFitTopForesighted];
+    [ExpertBufferCheckClass dispatchTactful];
     [[WorthyBracketThreaded mutualInstance] initClean:self.window];
+    [DapperDatasetStream reorderMagic];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
 //: - (void)applicationDidEnterBackground:(UIApplication *)application {
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     //: [[SceneAssembleStorage unitedLikeOccurrent] applicationDidEnterBackground:application];
+    [AssembleCompactPaint dropFringe];
     [[WorthyBracketThreaded mutualInstance] numberTotal:application];
 }
 
