@@ -136,7 +136,7 @@
 - (void)glimpseFrame:(id<ClassPoplarRayWindow>)member
 {
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member bubbleBy];
+    NSString *groupTitle = [member emotion];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_request indexOfObject:groupTitle];
     //: TranslateAmid *pair = [_groups objectAtIndex:groupIndex];
@@ -199,7 +199,7 @@
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member bubbleBy];
+        NSString *groupTitle = [member emotion];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {
@@ -361,7 +361,7 @@
 //: - (void)removeGroupMember:(id<ClassPoplarRayWindow>)member{
 - (void)fellowMember:(id<ClassPoplarRayWindow>)member{
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member bubbleBy];
+    NSString *groupTitle = [member emotion];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_request indexOfObject:groupTitle];
     //: TranslateAmid *pair = [_groups objectAtIndex:groupIndex];

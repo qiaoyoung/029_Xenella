@@ -16,7 +16,7 @@
 @protocol ClassPoplarRayWindow <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)bubbleBy;
+- (NSString *)emotion;
 //: - (NSString *)memberId;
 - (NSString *)save;
 //: - (id)sortKey;

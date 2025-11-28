@@ -138,7 +138,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)master {
+- (NSString *)emotion {
     //: NSString *title = [[ScenarioAccessSortReorder sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[ScenarioAccessSortReorder adhere] automatic:[self loose:self.pastWriting].pressed].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
