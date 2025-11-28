@@ -7,27 +7,27 @@
 //
 
 #import "AppDelegate.h"
-#import "AAAA_AppDelegateManager_BBBB.h"
+#import "WorthyBracketThreaded.h"
  
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] initDelegateWithWindow:self.window];
+    [[WorthyBracketThreaded sharedInstance] initDelegateWithWindow:self.window];
     return YES;
 }
  
 #pragma mark - ApplicationDelegate
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] applicationDidBecomeActive:application];
+    [[WorthyBracketThreaded sharedInstance] applicationDidBecomeActive:application];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] applicationDidEnterBackground:application];
+    [[WorthyBracketThreaded sharedInstance] applicationDidEnterBackground:application];
 }
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [[WorthyBracketThreaded sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 }
  
 #pragma mark - openURL
