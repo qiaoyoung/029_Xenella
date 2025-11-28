@@ -1,4 +1,22 @@
 PODS:
+  - ConnectorQuirkIndex (1.0.0):
+    - Firebase/Core
+    - Firebase/RemoteConfig
+    - FMDB
+    - Kingfisher
+    - LEEAlert
+    - Masonry
+    - NIMSDK_LITE (= 9.20.14)
+    - Reachability
+    - SDWebImage
+    - SDWebImageFLPlugin
+    - SSZipArchive
+    - SwiftyJSON
+    - TZImagePickerController
+    - YYImage
+    - YYImage/WebP
+    - YYModel
+    - YYText
   - Firebase/Core (10.29.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (~> 10.29.0)
@@ -120,30 +138,9 @@ PODS:
     - YXArtemis_XCFramework
   - NIMSDK_LITE/NOS (9.20.14):
     - YXArtemis_XCFramework
-  - PacificArtist (1.0.0):
-    - Firebase/Core
-    - Firebase/RemoteConfig
-    - FMDB
-    - Kingfisher
-    - LEEAlert
-    - Masonry
-    - NIMSDK_LITE (= 9.20.14)
-    - pop
-    - Reachability
-    - SDWebImage
-    - SDWebImageFLPlugin
-    - SnapKit
-    - SSZipArchive
-    - Then
-    - TZImagePickerController
-    - YYImage
-    - YYImage/WebP
-    - YYModel
-    - YYText
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
-  - pop (1.0.12)
   - PromisesObjC (2.4.0)
   - Reachability (3.7.6)
   - SDWebImage (5.21.3):
@@ -155,9 +152,8 @@ PODS:
   - shared_preferences_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
-  - SnapKit (5.7.1)
   - SSZipArchive (2.4.3)
-  - Then (3.0.0)
+  - SwiftyJSON (5.0.2)
   - TZImagePickerController (3.8.9):
     - TZImagePickerController/Basic (= 3.8.9)
     - TZImagePickerController/Location (= 3.8.9)
@@ -176,9 +172,9 @@ PODS:
   - YYText (1.0.7)
 
 DEPENDENCIES:
+  - ConnectorQuirkIndex (from `ConnectorQuirkIndex`)
   - Flutter (from `Flutter`)
   - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
-  - PacificArtist (from `PacificArtist`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
   - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
   - video_player_avfoundation (from `.symlinks/plugins/video_player_avfoundation/darwin`)
@@ -203,14 +199,12 @@ SPEC REPOS:
     - Masonry
     - nanopb
     - NIMSDK_LITE
-    - pop
     - PromisesObjC
     - Reachability
     - SDWebImage
     - SDWebImageFLPlugin
-    - SnapKit
     - SSZipArchive
-    - Then
+    - SwiftyJSON
     - TZImagePickerController
     - YXArtemis_XCFramework
     - YYImage
@@ -218,12 +212,12 @@ SPEC REPOS:
     - YYText
 
 EXTERNAL SOURCES:
+  ConnectorQuirkIndex:
+    :path: ConnectorQuirkIndex
   Flutter:
     :path: Flutter
   image_picker_ios:
     :path: ".symlinks/plugins/image_picker_ios/ios"
-  PacificArtist:
-    :path: PacificArtist
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
   shared_preferences_foundation:
@@ -232,6 +226,7 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/video_player_avfoundation/darwin"
 
 SPEC CHECKSUMS:
+  ConnectorQuirkIndex: 5ad74037fa9ee646daab0fbd489ee0448c221ef8
   Firebase: cec914dab6fd7b1bd8ab56ea07ce4e03dd251c2d
   FirebaseABTesting: d87f56707159bae64e269757a6e963d490f2eebe
   FirebaseAnalytics: 23717de130b779aa506e757edb9713d24b6ffeda
@@ -252,17 +247,14 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   NIMSDK_LITE: 446480c6be86c43d71421b5564911a8e9a936a34
-  PacificArtist: 8027301e3200e556f2987cae6dc13e4d35a1da15
   path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
-  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   Reachability: fd0ecd23705e2599e4cceeb943222ae02296cbc6
   SDWebImage: 16309af6d214ba3f77a7c6f6fdda888cb313a50a
   SDWebImageFLPlugin: 72efd2cfbf565bc438421abb426f4bcf7b670754
   shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
-  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
-  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+  SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
   TZImagePickerController: 456f470b5dea97b37226ec7a694994a8663340b2
   video_player_avfoundation: 2cef49524dd1f16c5300b9cd6efd9611ce03639b
   YXArtemis_XCFramework: d9a8b9439d7a6c757ed00ada53a6d2dd9b13f9c7
@@ -270,6 +262,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 46e7768a83a45cdd7d491567e359b02b5077eaf9
+PODFILE CHECKSUM: 534f2501cdaf2f9f1beac7c863eb013a4675eb66
 
 COCOAPODS: 1.16.2
