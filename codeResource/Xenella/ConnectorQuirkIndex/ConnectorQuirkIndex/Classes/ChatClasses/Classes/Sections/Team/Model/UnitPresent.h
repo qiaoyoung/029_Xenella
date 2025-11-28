@@ -34,8 +34,6 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <YearShuffleWord> item);
 //: @property(nonatomic,assign) BOOL selected;
 @property(nonatomic,assign) BOOL skip;
 
-@property(nonatomic,copy) NSString *agree;
-
 //: @property(nonatomic,assign) BOOL switchOn;
 @property(nonatomic,assign) BOOL medium;
 
@@ -49,8 +47,6 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <YearShuffleWord> item);
 @property(nonatomic,copy) NSString *appropriate;
 //: @property(nonatomic,assign) NSInteger identify;
 @property(nonatomic,assign) NSInteger regularize;
-
-@property(nonatomic,assign) BOOL object;
 
 //: @property(nonatomic,assign) AcrossAroundSphere type;
 @property(nonatomic,assign) AcrossAroundSphere secure;

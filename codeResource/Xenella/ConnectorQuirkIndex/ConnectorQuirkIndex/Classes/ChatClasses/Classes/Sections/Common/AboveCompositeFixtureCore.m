@@ -190,7 +190,7 @@ typedef struct {
         [self addSubview:[self restore:self.progressView]];
 
         //: NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
-        NSDictionary *views = NSDictionaryOfVariableBindings([self restore:_progressView]);
+        NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:[[AvailData sharedInstance] screenFurtherText] options:0 metrics:nil views:views]];
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];

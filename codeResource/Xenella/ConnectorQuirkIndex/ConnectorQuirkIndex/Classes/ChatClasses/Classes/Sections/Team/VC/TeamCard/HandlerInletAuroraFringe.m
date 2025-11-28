@@ -337,9 +337,9 @@ typedef struct {
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.titleLabel.text = bodyData.title;
-    cell.titleLabel.text = bodyData.split;
+    cell.titleLabel.text = bodyData.primeMember;
     //: cell.iconImageView.image = bodyData.img;
-    cell.iconImageView.image = bodyData.veneerImg;
+    cell.iconImageView.image = bodyData.yield;
 //    cell.contentLabel.text = bodyData.subTitle;
 //    if ([bodyData respondsToSelector:@selector(subTitle)]) {
 //        cell.contentLabel.text = bodyData.subTitle ?: LangKey(@"未设置");
@@ -502,7 +502,7 @@ typedef struct {
     //: cell.button.style = EnergeticLocalMapStyleBlue;
     cell.classicConduitColumn.identify = EnergeticLocalMapStyleBlue;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.classicConduitColumn setTitle:bodyData.split forState:UIControlStateNormal];
+    [cell.classicConduitColumn setTitle:bodyData.primeMember forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -542,18 +542,18 @@ typedef struct {
     sep.hidden = (indexPath.row + 1 == [self.curveTotalro numberOfRowsInSection:indexPath.section]);
 
     //: cell.textLabel.text = bodyData.title;
-    cell.textLabel.text = bodyData.split;
+    cell.textLabel.text = bodyData.primeMember;
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor colorWithHexString:@"#2C3042"];
     cell.textLabel.textColor = [UIColor active:[[BeeData sharedInstance] styleAmbitEvent]];
     //: cell.imageView.image = bodyData.img;
-    cell.imageView.image = bodyData.veneerImg;
+    cell.imageView.image = bodyData.yield;
 
     //: cell.switcher.on = bodyData.switchOn;
-    cell.plannerCut.on = bodyData.volumeUnit;
+    cell.plannerCut.on = bodyData.medium;
     //: cell.identify = bodyData.identify;
-    cell.past = bodyData.above;
+    cell.past = bodyData.regularize;
 
     //: [self didBuildTeamSwitchCell:cell];
     [self sweet:cell];
@@ -569,22 +569,22 @@ typedef struct {
     //: id<RunComposeDeliver> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<RunComposeDeliver> bodyData = [self turnAround:indexPath];
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(volumeEnables)] && bodyData.passage) {
+    if ([bodyData respondsToSelector:@selector(volumeEnables)] && bodyData.volumeEnables) {
         //: return;
         return;
     }
     //: if (bodyData.type == AcrossAroundSphereSelected) {
-    if (bodyData.good == AcrossAroundSphereSelected) {
+    if (bodyData.secure == AcrossAroundSphereSelected) {
         //: FleetingJasperLatticeMountain *vc = [FleetingJasperLatticeMountain instanceWithTitle:bodyData.title
-        FleetingJasperLatticeMountain *vc = [FleetingJasperLatticeMountain relationResult:bodyData.split
+        FleetingJasperLatticeMountain *vc = [FleetingJasperLatticeMountain relationResult:bodyData.primeMember
                                                                                //: items:bodyData.optionItems
-                                                                               derive:bodyData.legItems
+                                                                               derive:bodyData.jockeyCap
                                                                               //: result:^(id<YearShuffleWord> _Nonnull item) {
                                                                               roundSound:^(id<YearShuffleWord> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
-              if (bodyData.save) {
+            if (bodyData.block) {
                   //: bodyData.selectedBlock(item);
-                  bodyData.save(item);
+                  bodyData.block(item);
               }
           //: }];
           }];
@@ -595,11 +595,11 @@ typedef struct {
         //: if ([bodyData respondsToSelector:@selector(action)]) {
         if ([bodyData respondsToSelector:@selector(prepareRoot)]) {
             //: if (bodyData.action) {
-            if (bodyData.preferFor) {
+            if (bodyData.prepareRoot) {
                 //: do {
                 do {
                 //: [self performSelector:bodyData.action];
-                [self performSelector:bodyData.preferFor];
+                [self performSelector:bodyData.prepareRoot];
                 //: } while (0);
                 } while (0);
             }
@@ -843,7 +843,7 @@ typedef struct {
     //: id<RunComposeDeliver> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<RunComposeDeliver> bodyData = [self turnAround:indexPath];
     //: return bodyData.rowHeight;
-    return bodyData.serration;
+    return bodyData.sequenceReject;
 }
 
 //: - (UITableViewCell*)builidTeamMemberCell:(id<RunComposeDeliver>) bodyData{
@@ -858,7 +858,7 @@ typedef struct {
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.split,bodyData.noneMin];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.primeMember,bodyData.appropriate];
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor blackColor];
@@ -867,7 +867,7 @@ typedef struct {
 //    cell.imageView.image = bodyData.img;
 
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(volumeEnables)] && bodyData.passage) {
+    if ([bodyData respondsToSelector:@selector(volumeEnables)] && bodyData.volumeEnables) {
         //: cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
     //: }else{
@@ -918,7 +918,7 @@ typedef struct {
     //: cell.button.style = EnergeticLocalMapStyleRed;
     cell.classicConduitColumn.identify = EnergeticLocalMapStyleRed;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.classicConduitColumn setTitle:bodyData.split forState:UIControlStateNormal];
+    [cell.classicConduitColumn setTitle:bodyData.primeMember forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -950,7 +950,7 @@ typedef struct {
     //: UITableViewCell * cell;
     UITableViewCell * cell;
     //: AcrossAroundSphere type = bodyData.type;
-    AcrossAroundSphere type = bodyData.good;
+    AcrossAroundSphere type = bodyData.secure;
     //: switch (type) {
     switch (type) {
         //: case AcrossAroundSphereCommon:

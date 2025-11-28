@@ -93,19 +93,19 @@ typedef NS_ENUM(NSInteger, AcrossAroundSphere) {
 @protocol YearShuffleWord <NSObject>
 
 //: - (id)value;
-- (id)disk;
+- (id)pariahDog;
 
 //: - (NSString *)title;
-- (NSString *)inside;
+- (NSString *)primeMember;
 
 //: - (NSString *)img;
-- (NSString *)areaImg;
+- (NSString *)yield;
 
 //: - (BOOL)selected;
-- (BOOL)suggest;
+- (BOOL)skip;
 
 //: - (void)setSelected:(BOOL)selected;
-- (void)setSuggest:(BOOL)selected;
+- (void)setSkip:(BOOL)selected;
 
 //: @end
 @end
@@ -114,45 +114,45 @@ typedef NS_ENUM(NSInteger, AcrossAroundSphere) {
 @protocol RunComposeDeliver <NSObject>
 
 //: - (NSString *)title;
-- (NSString *)split;
+- (NSString *)primeMember;
 
 //: - (id)value;
-- (id)candidBy;
+- (id)pariahDog;
 
 //: - (AcrossAroundSphere)type;
-- (AcrossAroundSphere)good;
+- (AcrossAroundSphere)secure;
 
 //: - (CGFloat)rowHeight;
-- (CGFloat)serration;
+- (CGFloat)sequenceReject;
 
 //: - (NIMTeamCardRowSelectedBlock)selectedBlock;
-- (NIMTeamCardRowSelectedBlock)save;
+- (NIMTeamCardRowSelectedBlock)block;
 
 //: - (NSMutableArray <id <YearShuffleWord>> *)optionItems;
-- (NSMutableArray <id <YearShuffleWord>> *)legItems;
+- (NSMutableArray <id <YearShuffleWord>> *)jockeyCap;
 
 //: @optional
 @optional
 //: - (NSString *)subTitle;
-- (NSString *)noneMin;
+- (NSString *)appropriate;
 
 //: - (UIImage *)img;
-- (UIImage *)veneerImg;
+- (UIImage *)yield;
 
 //: - (SEL)action;
-- (SEL)preferFor;
+- (SEL)prepareRoot;
 
 //: - (BOOL)actionDisabled;
-- (BOOL)passage;
+- (BOOL)volumeEnables;
 
 //: - (BOOL)switchOn;
-- (BOOL)volumeUnit;
+- (BOOL)medium;
 
 //: - (NSInteger)identify;
-- (NSInteger)above;
+- (NSInteger)regularize;
 
 //: - (BOOL)disableUserInteraction;
-- (BOOL)counterchange;
+- (BOOL)nobbleHourTotaleraction;
 
 //: @end
 @end

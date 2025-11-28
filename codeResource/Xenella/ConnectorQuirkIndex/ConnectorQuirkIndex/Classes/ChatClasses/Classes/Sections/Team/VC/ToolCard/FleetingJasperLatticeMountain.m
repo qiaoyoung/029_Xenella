@@ -172,7 +172,7 @@
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
-        [obj setSuggest:selected];
+        [obj setSkip:selected];
     //: }];
     }];
     //: [self.tableView reloadData];
@@ -456,7 +456,7 @@
         //: [items enumerateObjectsUsingBlock:^(id<YearShuffleWord> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items enumerateObjectsUsingBlock:^(id<YearShuffleWord> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
-            if (obj.suggest) {
+            if (obj.skip) {
                 //: weakSelf.selectedIndex = idx;
                 weakSelf.selectedIndex = idx;
             }
@@ -526,13 +526,13 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
-    cell.iconImageView.image = [UIImage imageNamed:bodyData.areaImg];
+    cell.iconImageView.image = [UIImage imageNamed:bodyData.yield];
 	[self setDrift:_selectedIndex];
     //: cell.titleLabel.text = bodyData.title;
-    cell.titleLabel.text = bodyData.inside;
+    cell.titleLabel.text = bodyData.primeMember;
 	[self setUnit:_titleString];
     //: cell.arrowsImageView.hidden = ![bodyData selected];
-    cell.arrowsImageView.hidden = ![bodyData suggest];
+    cell.arrowsImageView.hidden = ![bodyData skip];
 	[self setDrift:_selectedIndex];
 
     //: return cell;

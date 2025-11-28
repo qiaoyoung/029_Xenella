@@ -686,7 +686,7 @@
         //: item.value = dic[[CatalogStrategyYoung getTeamHelperValue]];
         item.pariahDog = dic[[CatalogStrategyYoung commitValue]];
         //: item.title = dic[[CatalogStrategyYoung getTeamHelperText]];
-        item.agree = dic[[CatalogStrategyYoung draftName]];
+        item.primeMember = dic[[CatalogStrategyYoung draftName]];
         //: item.img = dic[[CatalogStrategyYoung getTeamHelperImg]];
         item.yield = dic[[CatalogStrategyYoung throughRequest]];
         //: item.selected = (selectValue == [dic[[CatalogStrategyYoung getTeamHelperValue]] integerValue]);

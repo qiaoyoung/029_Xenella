@@ -983,7 +983,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
             //: dict[@"name"] = emptyString(groupName);
             dict[[MisjudgeData sharedInstance].screenErrTitle] = loopHalf(groupName);
             //: [LocalizeHelixAccept getWithUrl:[NSString stringWithFormat:@"/team/modifyname"] params:dict isShow:NO success:^(id responseObject) {
-            [LocalizeHelixAccept bar:[NSString stringWithFormat:[MisjudgeData sharedInstance].componentBetweenText] makerFailed:dict bringInEdgeSuccessPortionPresentWith:NO house:^(id responseObject) {
+            [LocalizeHelixAccept bar:[NSString stringWithFormat:@"%@", [MisjudgeData sharedInstance].componentBetweenText] makerFailed:dict bringInEdgeSuccessPortionPresentWith:NO house:^(id responseObject) {
                 //: [self reloadData];
                 [self collection];
                 //: self.accountNickname.text = groupName;
@@ -1195,7 +1195,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
             //: [self didDismissTeam];
             [self expected];
             //: [LocalizeHelixAccept getWithUrl:[NSString stringWithFormat:@"/team/destory"] params:@{@"id":self.teamListManager.team.teamId} isShow:NO success:^(id responseObject) {
-            [LocalizeHelixAccept bar:[NSString stringWithFormat:[MisjudgeData sharedInstance].kDisabilityPage] makerFailed:@{@"id":self.teamSuiteTry.ignore.teamId} bringInEdgeSuccessPortionPresentWith:NO house:^(id responseObject) {
+            [LocalizeHelixAccept bar:[NSString stringWithFormat:@"%@", [MisjudgeData sharedInstance].kDisabilityPage] makerFailed:@{@"id":self.teamSuiteTry.ignore.teamId} bringInEdgeSuccessPortionPresentWith:NO house:^(id responseObject) {
 
             //: } failed:^(id responseObject, NSError *error) {
             } single:^(id responseObject, NSError *error) {
@@ -1270,7 +1270,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamShareCart = [[UnitPresent alloc] init];
     UnitPresent *teamShareCart = [[UnitPresent alloc] init];
     //: teamShareCart.title = [ShortcutWavyMoment getTextWithKey:@"send_group_card"];
-    teamShareCart.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].componentPearTitle];
+    teamShareCart.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].componentPearTitle];
     //: teamShareCart.subTitle = self.teamListManager.team.teamName;
     teamShareCart.appropriate = self.teamSuiteTry.ignore.teamName;
 	[self setEngine:_exclude];
@@ -1290,7 +1290,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamMembers = [[UnitPresent alloc] init];
     UnitPresent *teamMembers = [[UnitPresent alloc] init];
     //: teamMembers.title = [ShortcutWavyMoment getTextWithKey:@"group_info_activity_team_member"];
-    teamMembers.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].screenProvideUtility];
+    teamMembers.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].screenProvideUtility];
 	[self setEngine:_exclude];
     //: teamMembers.subTitle = self.teamListManager.team.teamName;
     teamMembers.appropriate = self.teamSuiteTry.ignore.teamName;
@@ -1312,7 +1312,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamAnnoucement = [[UnitPresent alloc] init];
     UnitPresent *teamAnnoucement = [[UnitPresent alloc] init];
     //: teamAnnoucement.title = [ShortcutWavyMoment getTextWithKey:@"activity_group_info_group_toast"];
-    teamAnnoucement.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].kEnvironmentData];
+    teamAnnoucement.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].kEnvironmentData];
     //: teamAnnoucement.subTitle = self.teamListManager.team.teamName;
     teamAnnoucement.appropriate = self.teamSuiteTry.ignore.teamName;
 	[self setEngine:_exclude];
@@ -1331,7 +1331,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamName = [[UnitPresent alloc] init];
     UnitPresent *teamName = [[UnitPresent alloc] init];
     //: teamName.title = [ShortcutWavyMoment getTextWithKey:@"Group_name"];
-    teamName.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].k_momPatUtility];
+    teamName.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].k_momPatUtility];
 	[self setProtectRuleView:_range];
     //: teamName.subTitle = self.teamListManager.team.teamName;
     teamName.appropriate = self.teamSuiteTry.ignore.teamName;
@@ -1352,7 +1352,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamNick = [[UnitPresent alloc] init];
     UnitPresent *teamNick = [[UnitPresent alloc] init];
     //: teamNick.title = [ShortcutWavyMoment getTextWithKey:@"activity_group_info_group_nick"];
-    teamNick.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].colorProvideConfig];
+    teamNick.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].colorProvideConfig];
     //: teamNick.subTitle = self.teamListManager.myTeamInfo.nickname;
     teamNick.appropriate = self.teamSuiteTry.consistentTeamMember.nickname;
     //: teamNick.action = @selector(updateTeamNick);
@@ -1369,7 +1369,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamIntro = [[UnitPresent alloc] init];
     UnitPresent *teamIntro = [[UnitPresent alloc] init];
     //: teamIntro.title = [ShortcutWavyMoment getTextWithKey:@"team_info_set_activity_group_tip"];
-    teamIntro.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].widgetPoleMessage];
+    teamIntro.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].widgetPoleMessage];
     //: teamIntro.subTitle = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [ShortcutWavyMoment getTextWithKey:@"team_info_set_activity_default_group_tip"] : @"");
     teamIntro.appropriate = self.teamSuiteTry.ignore.intro.length ? self.teamSuiteTry.ignore.intro : (canEdit ? [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].screenNessName] : @"");
 	[self setEngine:_exclude];
@@ -1397,9 +1397,9 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamMute = [[UnitPresent alloc] init];
     UnitPresent *teamMute = [[UnitPresent alloc] init];
     //: teamMute.title = [ShortcutWavyMoment getTextWithKey:@"activity_group_info_group_mute"];
-    teamMute.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].coreExtraUnctionScanValue];
+    teamMute.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].coreExtraUnctionScanValue];
     //: teamMute.switchOn = inAllMuteMode;
-    teamMute.object = inAllMuteMode;
+    teamMute.medium = inAllMuteMode;
 //    teamMute.subTitle = [CatalogStrategyYoung teamMuteText:inAllMuteMode];
     //: teamMute.rowHeight = 50.f;
     teamMute.sequenceReject = 50.f;
@@ -1414,7 +1414,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: teamMute.selectedBlock = ^(id<YearShuffleWord> item) {
     teamMute.block = ^(id<YearShuffleWord> item) {
         //: [weakSelf didUpdateTeamMute:[item.value integerValue]];
-        [weakSelf beneath:[item.disk integerValue]];
+        [weakSelf beneath:[item.pariahDog integerValue]];
     //: };
     };
     //: teamMute.identify = LegacyTrackerDefineMute;
@@ -1426,7 +1426,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamMuteList = [[UnitPresent alloc] init];
     UnitPresent *teamMuteList = [[UnitPresent alloc] init];
     //: teamMuteList.title = [ShortcutWavyMoment getTextWithKey:@"group_mute_member_list_activity_title"];
-    teamMuteList.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].componentTaskMessage];
+    teamMuteList.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].componentTaskMessage];
     //: teamMuteList.rowHeight = 50.f;
     teamMuteList.sequenceReject = 50.f;
 	[self setProtectRuleView:_range];
@@ -1441,7 +1441,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamNotify = [[UnitPresent alloc] init];
     UnitPresent *teamNotify = [[UnitPresent alloc] init];
     //: teamNotify.title = [ShortcutWavyMoment getTextWithKey:@"message_info_activity_msg_notice"];
-    teamNotify.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].screenIceDevice];
+    teamNotify.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].screenIceDevice];
 	[self setProtectRuleView:_range];//@"消息提醒".nim_localized;
     //: teamNotify.subTitle = [CatalogStrategyYoung notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
     teamNotify.appropriate = [CatalogStrategyYoung dramatic:self.teamSuiteTry.ignore.notifyStateForNewMsg];
@@ -1456,7 +1456,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: teamNotify.selectedBlock = ^(id<YearShuffleWord> item) {
     teamNotify.block = ^(id<YearShuffleWord> item) {
         //: [weakSelf didUpdateNotifiyState:[item.value integerValue]];
-        [weakSelf smut:[item.disk integerValue]];
+        [weakSelf smut:[item.pariahDog integerValue]];
     //: };
     };
 	[self setProtectRuleView:_range];
@@ -1467,7 +1467,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *itemAuth = [[UnitPresent alloc] init];
     UnitPresent *itemAuth = [[UnitPresent alloc] init];
     //: itemAuth.title = [ShortcutWavyMoment getTextWithKey:@"authentication"];
-    itemAuth.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].coreSupPath];
+    itemAuth.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].coreSupPath];
     //: itemAuth.subTitle = [CatalogStrategyYoung jonModeText:self.teamListManager.team.joinMode];
     itemAuth.appropriate = [CatalogStrategyYoung quantityercalate:self.teamSuiteTry.ignore.joinMode];
     //: itemAuth.actionDisabled = !canEdit;
@@ -1484,7 +1484,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: itemAuth.selectedBlock = ^(id<YearShuffleWord> item) {
     itemAuth.block = ^(id<YearShuffleWord> item) {
         //: [weakSelf didupdateTeamJoinMode:[item.value integerValue]];
-        [weakSelf master:[item.disk integerValue]];
+        [weakSelf master:[item.pariahDog integerValue]];
     //: };
     };
     //: itemAuth.img = [UIImage imageNamed:@"ic_identity_authentication"];
@@ -1493,7 +1493,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *itemInvite = [[UnitPresent alloc] init];
     UnitPresent *itemInvite = [[UnitPresent alloc] init];
     //: itemInvite.title = [ShortcutWavyMoment getTextWithKey:@"activity_group_info_invite_permission"];
-    itemInvite.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].featureDoingBetweenHelper];
+    itemInvite.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].featureDoingBetweenHelper];
 	[self setEngine:_exclude];
     //: itemInvite.subTitle = [CatalogStrategyYoung InviteModeText:self.teamListManager.team.inviteMode];
     itemInvite.appropriate = [CatalogStrategyYoung fireExpandPublication:self.teamSuiteTry.ignore.inviteMode];
@@ -1509,7 +1509,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: itemInvite.selectedBlock = ^(id<YearShuffleWord> item) {
     itemInvite.block = ^(id<YearShuffleWord> item) {
         //: [weakSelf didUpdateTeamInviteMode:[item.value integerValue]];
-        [weakSelf aspect:[item.disk integerValue]];
+        [weakSelf aspect:[item.pariahDog integerValue]];
     //: };
     };
 	[self setProtectRuleView:_range];
@@ -1519,7 +1519,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *itemUpdateInfo = [[UnitPresent alloc] init];
     UnitPresent *itemUpdateInfo = [[UnitPresent alloc] init];
     //: itemUpdateInfo.title = [ShortcutWavyMoment getTextWithKey:@"activity_group_info_group_modify_permission"];
-    itemUpdateInfo.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].featureSplayTimer];
+    itemUpdateInfo.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].featureSplayTimer];
     //: itemUpdateInfo.subTitle = [CatalogStrategyYoung updateInfoModeText:self.teamListManager.team.updateInfoMode];
     itemUpdateInfo.appropriate = [CatalogStrategyYoung modeTitle:self.teamSuiteTry.ignore.updateInfoMode];
     //: itemUpdateInfo.actionDisabled = !canEdit;
@@ -1535,7 +1535,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: itemUpdateInfo.selectedBlock = ^(id<YearShuffleWord> item) {
     itemUpdateInfo.block = ^(id<YearShuffleWord> item) {
         //: [weakSelf didUpdateTeamInfoMode:[item.value integerValue]];
-        [weakSelf effect:[item.disk integerValue]];
+        [weakSelf effect:[item.pariahDog integerValue]];
     //: };
     };
     //: itemUpdateInfo.img = [UIImage imageNamed:@"ic_modify"];
@@ -1545,7 +1545,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *itemBeInvite = [[UnitPresent alloc] init];
     UnitPresent *itemBeInvite = [[UnitPresent alloc] init];
     //: itemBeInvite.title = [ShortcutWavyMoment getTextWithKey:@"activity_group_info_invite_verify"];
-    itemBeInvite.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].moduleSlideGrandPage];
+    itemBeInvite.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].moduleSlideGrandPage];
 	[self setProtectRuleView:_range];
     //: itemBeInvite.subTitle = [CatalogStrategyYoung beInviteModeText:self.teamListManager.team.beInviteMode];
     itemBeInvite.appropriate = [CatalogStrategyYoung get:self.teamSuiteTry.ignore.beInviteMode];
@@ -1565,7 +1565,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: itemBeInvite.selectedBlock = ^(id<YearShuffleWord> item) {
     itemBeInvite.block = ^(id<YearShuffleWord> item) {
         //: [weakSelf didUpdateTeamBeInviteMode:[item.value integerValue]];
-        [weakSelf isNameStack:[item.disk integerValue]];
+        [weakSelf isNameStack:[item.pariahDog integerValue]];
     //: };
     };
     //: itemBeInvite.img = [UIImage imageNamed:@"ic_invitee_verification"];
@@ -1575,9 +1575,9 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *itemTop = [[UnitPresent alloc] init];
     UnitPresent *itemTop = [[UnitPresent alloc] init];
     //: itemTop.title = [ShortcutWavyMoment getTextWithKey:@"Chat_settop"];
-    itemTop.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].styleFairValue];
+    itemTop.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].styleFairValue];
     //: itemTop.switchOn = self.option.isTop;
-    itemTop.object = self.strategy.crosswise;
+    itemTop.medium = self.strategy.crosswise;
 	[self setProtectRuleView:_range];
     //: itemTop.rowHeight = 50.f;
     itemTop.sequenceReject = 50.f;
@@ -1601,7 +1601,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
         //: UnitPresent *itemDismiss = [[UnitPresent alloc] init];
         UnitPresent *itemDismiss = [[UnitPresent alloc] init];
         //: itemDismiss.title = [ShortcutWavyMoment getTextWithKey:@"group_info_activity_jiesan"];
-        itemDismiss.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].layoutHiddenTitle];
+        itemDismiss.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].layoutHiddenTitle];
         //: itemDismiss.action = @selector(dismissTeam);
         itemDismiss.prepareRoot = @selector(earlinessMaximum);
 	[self setProtectRuleView:_range];
@@ -1617,7 +1617,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
     //: UnitPresent *teamChange = [[UnitPresent alloc] init];
     UnitPresent *teamChange = [[UnitPresent alloc] init];
     //: teamChange.title = [ShortcutWavyMoment getTextWithKey:@"Transfer_group_ownership"];
-    teamChange.agree = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].featurePositionEvent];
+    teamChange.primeMember = [ShortcutWavyMoment belowRepresentation:[MisjudgeData sharedInstance].featurePositionEvent];
 	[self setProtectRuleView:_range];
     //: teamChange.rowHeight = 50.f;
     teamChange.sequenceReject = 50.f;
@@ -2097,7 +2097,7 @@ PassagePresenterConfigLayer,BufferPainterShuffleDelegate,UINavigationControllerD
         //: dict[@"new_owner_id"] = newOwnerId;
         dict[[MisjudgeData sharedInstance].layoutReflectPlatform] = newOwnerId;
         //: [LocalizeHelixAccept getWithUrl:[NSString stringWithFormat:@"/team/modifyowner"] params:dict isShow:NO success:^(id responseObject) {
-        [LocalizeHelixAccept bar:[NSString stringWithFormat:[MisjudgeData sharedInstance].moduleAgainDemandTitle] makerFailed:dict bringInEdgeSuccessPortionPresentWith:NO house:^(id responseObject) {
+        [LocalizeHelixAccept bar:[NSString stringWithFormat:@"%@", [MisjudgeData sharedInstance].moduleAgainDemandTitle] makerFailed:dict bringInEdgeSuccessPortionPresentWith:NO house:^(id responseObject) {
             //: [wself reloadData];
             [wself collection];
         //: } failed:^(id responseObject, NSError *error) {
