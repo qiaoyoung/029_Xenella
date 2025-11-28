@@ -97,10 +97,10 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../PacificArtist/PacificArtist/Resources/PacificArtist.bundle"
+  install_resource "${PODS_ROOT}/../HolisticSaver/HolisticSaver/Resources/HolisticSaver.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../PacificArtist/PacificArtist/Resources/PacificArtist.bundle"
+  install_resource "${PODS_ROOT}/../HolisticSaver/HolisticSaver/Resources/HolisticSaver.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
