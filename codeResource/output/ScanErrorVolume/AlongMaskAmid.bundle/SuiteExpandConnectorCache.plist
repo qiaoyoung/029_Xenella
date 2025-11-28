@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>tertiaryAurora</key>
+    <string>FigureTryClipComposite</string>
+    <key>workbenchBulkyPast</key>
+    <string>VividBalancer</string>
+    <key>axisSupremePlay</key>
+    <string>AssemblerShadowAssembler</string>
+    <key>dataTranslateFactory</key>
+    <string>MonitorWritePushShow</string>
+    <key>preloadClassic</key>
+    <string>TrustyWaitFlagshipWorkbench</string>
+</dict>
+</plist>
