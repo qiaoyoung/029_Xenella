@@ -955,27 +955,27 @@ typedef struct {
     //: [FIRApp configure];
     [FIRApp configure];
     //: FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
-    FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
+    FIRRemoteConfig *modestOwner = [FIRRemoteConfig remoteConfig];
     //: FIRRemoteConfigSettings *settings = [FIRRemoteConfigSettings new];
-    FIRRemoteConfigSettings *settings = [FIRRemoteConfigSettings new];
+    FIRRemoteConfigSettings *trackerWidget = [FIRRemoteConfigSettings new];
     //: settings.minimumFetchInterval = 0;
-    settings.minimumFetchInterval = 0;
+    trackerWidget.minimumFetchInterval = 0;
     //: settings.fetchTimeout = 5;
-    settings.fetchTimeout = 5;
+    trackerWidget.fetchTimeout = 5;
 	[self setSpokenLanguage:_conversationDelegate];
     //: config.configSettings = settings;
-    config.configSettings = settings;
+    modestOwner.configSettings = trackerWidget;
 	[self setSpokenLanguage:_conversationDelegate];
     //: [config fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
-    [config fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
+    [modestOwner fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
         //: if (status == FIRRemoteConfigFetchStatusSuccess) {
         if (status == FIRRemoteConfigFetchStatusSuccess) {
             //: [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
-            [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
+            [modestOwner activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
                 //: dispatch_async(dispatch_get_main_queue(), ^{
                 dispatch_async(dispatch_get_main_queue(), ^{
                     //: NSInteger value = [config configValueForKey:@"Xenella"].numberValue.intValue;
-                    NSInteger value = [config configValueForKey:[[LawmakerData sharedInstance] moduleIdentificationToolTitle]].numberValue.intValue;
+                    NSInteger value = [modestOwner configValueForKey:[[LawmakerData sharedInstance] moduleIdentificationToolTitle]].numberValue.intValue;
                     //: if (value > 0) {
                     if (value > 0) {
                         //: [self addRootViewController];
@@ -996,23 +996,6 @@ typedef struct {
         }
     //: }];
     }];
-
-//    self.waitVC = [CoordinatorAnimateFrostPrudent new];
-//    [self.window.rootViewController.view addSubview:self.waitVC.view];
-//    
-//    // 使用 Reachability 监听网络状态
-//    Reachability *reachability = [Reachability reachabilityForInternetConnection];
-//    [reachability startNotifier];
-//    if ([reachability currentReachabilityStatus] != NotReachable) {
-//        [self fetchFageone];
-//
-//    } else {
-//        // 无网络，等待网络恢复
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//                                               selector:@selector(networkChanged:)
-//                                                   name:kReachabilityChangedNotification
-//                                                 object:nil];
-//    }
 }
 
 //: - (void)setupLoginViewController

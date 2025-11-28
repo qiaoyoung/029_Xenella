@@ -75,13 +75,13 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
 @property (nonatomic, strong) NSMutableArray <SilentSyncScatterThroughout *> *needMembers;
 
 //: @property (nonatomic, strong) NIMSession *session;
-@property (nonatomic, strong) NIMSession *member;
+@property (nonatomic, strong) NIMSession *fragment;
 //: @property (nonatomic, strong) NSMutableArray <SilentSyncScatterThroughout *> *members;
 @property (nonatomic, strong) NSMutableArray <SilentSyncScatterThroughout *> *external;
 
 @property (nonatomic, strong) SilentSyncScatterThroughout *nameClusterCap;
 
-@property (nonatomic, strong) NIMSession *playPick;
+//@property (nonatomic, strong) NIMSession *playPick;
 //: @property (nonatomic, strong) SilentSyncScatterThroughout *myCard;
 @property (nonatomic, strong) SilentSyncScatterThroughout *pair;
 
@@ -275,7 +275,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
     }else{
         //: msg = [ShortcutWavyMoment getTextWithKey:@"group_info_activity_op_failed"];
         msg = [ShortcutWavyMoment belowRepresentation:StringFromParticularlyData(styleChefSettings)];
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
     }
     //: if (completion) {
     if (completion) {
@@ -458,12 +458,6 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
         //: completion(error, msg);
         completion(error, msg);
     }
-}
-
-- (NIMSession *)member:(NIMSession *)member {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    _member = member;
-    return member;
 }
 
 - (void)setExternal:(NSMutableArray<SilentSyncScatterThroughout *> *)external {
@@ -698,7 +692,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
 	[self setExternal:_needMembers];
         //: msg = [ShortcutWavyMoment getTextWithKey:@"modify_activity_modify_success"];
         msg = [ShortcutWavyMoment belowRepresentation:StringFromParticularlyData(moduleGrapeMessage)];
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
     //: }else{
     }else{
         //: msg = [ShortcutWavyMoment getTextWithKey:@"group_info_activity_op_failed"];
@@ -919,7 +913,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
     if (error) {
         //: msg = [ShortcutWavyMoment getTextWithKey:@"group_info_activity_op_failed"];
         msg = [ShortcutWavyMoment belowRepresentation:StringFromParticularlyData(styleChefSettings)];
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
     }
     //: if (completion) {
     if (completion) {
@@ -985,7 +979,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
     if (!error) {
         //: items = [NSMutableArray array];
         items = [NSMutableArray array];
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
         //: for (NIMTeamMember *member in members) {
         for (NIMTeamMember *member in members) {
             //: SilentSyncScatterThroughout *item = [[SilentSyncScatterThroughout alloc] initWithMember:member
@@ -1075,7 +1069,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
     if (!error) {
         //: self.team.inviteMode = mode;
         self.ignore.inviteMode = mode;
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
         //: msg = [ShortcutWavyMoment getTextWithKey:@"modify_activity_modify_success"];
         msg = [ShortcutWavyMoment belowRepresentation:StringFromParticularlyData(moduleGrapeMessage)];
     //: } else {
@@ -1319,12 +1313,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
         completion(error, msg);
     }
 }
-
-- (void)setMember:(NIMSession *)member {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    _member = member;
-}
-
+ 
 //: - (void)transferOwnerWithUserId:(NSString *)userId
 - (void)moreCondition:(NSString *)userId
                           //: leave:(BOOL)leave
@@ -1548,7 +1537,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
     if (!error) {
         //: self.team.joinMode = mode;
         self.ignore.joinMode = mode;
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
         //: msg = [ShortcutWavyMoment getTextWithKey:@"modify_activity_modify_success"];
         msg = [ShortcutWavyMoment belowRepresentation:StringFromParticularlyData(moduleGrapeMessage)];
 	[self setChallengeDetail:self.cell];
@@ -1573,7 +1562,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
         _ignore = team;
 	[self setChallengeDetail:self.cell];
         //: _session = session;
-        _playPick = session;
+        _fragment = session;
         //: if (team.type == NIMTeamTypeSuper) {
         if (team.type == NIMTeamTypeSuper) {
             //: [[NIMSDK sharedSDK].superTeamManager addDelegate:self];
@@ -1720,7 +1709,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
     if (![self deviceMiddle:_needMembers]) {
         //: _members = [NSMutableArray array];
         _needMembers = [NSMutableArray array];
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
     }
 
     //: if (option.isRefresh) {
@@ -1785,7 +1774,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
     if (error) {
         //: msg = [ShortcutWavyMoment getTextWithKey:@"user_profile_avtivity_user_info_update_failed"];
         msg = [ShortcutWavyMoment belowRepresentation:StringFromParticularlyData(themeGoldCampaignUtility)];
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
     //: } else {
     } else {
         //: self.team.avatarUrl = urlString;
@@ -1905,14 +1894,14 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
     }
     //: _team = team;
     _ignore = team;
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
     //: CompressPreloadViaChord *option = [[CompressPreloadViaChord alloc] init];
     CompressPreloadViaChord *option = [[CompressPreloadViaChord alloc] init];
     //: option.count = _members.count + 50;
     option.press = [self deviceMiddle:_needMembers].count + 50;
     //: option.offset = 0;
     option.exception = 0;
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
     //: [self fetchTeamMembersWithOption:option completion:^(NSError * _Nullable error, NSString * _Nullable msg) {
     [self accessStand:option alongWeave:^(NSError * _Nullable error, NSString * _Nullable msg) {
         //: if (error) {
@@ -2031,7 +2020,7 @@ Byte widgetCollapsePath[] = {31, 26, 32, 5, 22, 52, 69, 65, 77, 44, 73, 83, 84, 
         sdkOption.offset = option.exception;
         //: sdkOption.count = option.count;
         sdkOption.count = option.press;
-	[self setMember:_playPick];
+//	[self setMember:_playPick];
         //: [[NIMSDK sharedSDK].superTeamManager fetchTeamMembers:teamId
         [[NIMSDK sharedSDK].superTeamManager fetchTeamMembers:teamId
                                                        //: option:sdkOption
