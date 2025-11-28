@@ -42,11 +42,11 @@
         _Gdic = [NSMutableDictionary dictionary];
         
         // 打包OSS-1
-        self.hostFrom = @"https://Xenella.oss-cn-hongkong.aliyuncs.com/riv.txt";
+        self.hostFrom = @"https://xtar.blob.core.windows.net/tar/x.txt";
         
         // 打包OSS-2
-        self.hostFrom2 = @"https://Xenella.s3.ap-southeast-1.amazonaws.com/riv.txt";
-        _policyUrl = @"https://www.moyazer.com/privacy.html";
+        self.hostFrom2 = @"https://xylotar.s3.us-east-1.amazonaws.com/x.txt";
+        _policyUrl = @"https://www.xylotar.com/privacy.html";
     }
     return self;
 }
