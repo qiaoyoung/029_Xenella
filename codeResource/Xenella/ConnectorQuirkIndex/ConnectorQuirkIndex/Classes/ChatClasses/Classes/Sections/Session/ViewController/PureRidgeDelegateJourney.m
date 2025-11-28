@@ -1851,7 +1851,7 @@ typedef struct {
 }
 
 //: - (void)onTapMenuItemCopy:(ZoneToolbarCompress *)item
-- (void)radarred:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemCopy:(ZoneToolbarCompress *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self bridgeMenu];

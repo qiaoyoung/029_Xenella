@@ -190,13 +190,13 @@
  *  @return 返回thread 父消息
  */
 //: - (NIMMessage *)threadMessage;
-- (NIMMessage *)becomeLength;
+- (NIMMessage *)displayGrouping;
 
 /**
  *  设置 thread消息
  */
 //: - (void)setThreadMessage:(NIMMessage *)message;
-- (void)setBecomeLength:(NIMMessage *)message;
+- (void)setDisplayGrouping:(NIMMessage *)message;
 /**
  *  清空 thread消息
  */

@@ -547,7 +547,7 @@ SoundUpNextDelegate>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)show:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 
@@ -716,7 +716,7 @@ SoundUpNextDelegate>
 }
 
 //: - (void)onTapMenuItemPin:(ZoneToolbarCompress *)item
-- (void)alongThroughImmobilize:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemPin:(ZoneToolbarCompress *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self bridgeMenu];
@@ -1054,7 +1054,7 @@ SoundUpNextDelegate>
 }
 
 //: - (void)onTapMenuItemAudio2Text:(ZoneToolbarCompress *)item
-- (void)immediate:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemAudio2Text:(ZoneToolbarCompress *)item
 {
 
 }
@@ -1069,7 +1069,7 @@ SoundUpNextDelegate>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(ZoneToolbarCompress *)item
-- (void)videoReply:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemReply:(ZoneToolbarCompress *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self bridgeMenu];
@@ -1077,7 +1077,7 @@ SoundUpNextDelegate>
     if ([self.compute respondsToSelector:@selector(setDisplayGrouping:)])
     {
         //: [self.sessionConfig setThreadMessage:menuMessage];
-        [self.compute setBecomeLength:menuMessage];
+        [self.compute setDisplayGrouping:menuMessage];
     }
 
     //: [self.sessionInputView refreshStatus:ThroughoutGatewayInsertCatalogerText];
@@ -1099,7 +1099,7 @@ SoundUpNextDelegate>
 }
 
 //: - (void)onTapMenuItemUnpin:(ZoneToolbarCompress *)item
-- (void)disperse:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemUnpin:(ZoneToolbarCompress *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self bridgeMenu];
@@ -1282,7 +1282,7 @@ SoundUpNextDelegate>
 }
 
 //: - (void)onTapMenuItemDelete:(ZoneToolbarCompress *)item
-- (void)mountainOf:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemDelete:(ZoneToolbarCompress *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self bridgeMenu];
@@ -1441,7 +1441,7 @@ SoundUpNextDelegate>
 }
 
 //: - (void)onTapMenuItemMutiSelect:(ZoneToolbarCompress *)item
-- (void)render:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemMutiSelect:(ZoneToolbarCompress *)item
 {
     //: [self switchUIWithSessionState:VentureJourneyGenerousSelect];
     [self slip:VentureJourneyGenerousSelect];
@@ -1457,7 +1457,7 @@ SoundUpNextDelegate>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)countoMake:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -2348,7 +2348,7 @@ SoundUpNextDelegate>
 
 
 //: - (void)onTapMenuItemMark:(ZoneToolbarCompress *)item
-- (void)trigger:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemMark:(ZoneToolbarCompress *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self bridgeMenu];
@@ -2451,7 +2451,7 @@ SoundUpNextDelegate>
 }
 
 //: - (void)onTapMenuItemForword:(ZoneToolbarCompress *)item
-- (void)now:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemForword:(ZoneToolbarCompress *)item
 {
     //: DividerJetConsume *vc = [[DividerJetConsume alloc]init];
     DividerJetConsume *vc = [[DividerJetConsume alloc]init];
@@ -2573,7 +2573,7 @@ SoundUpNextDelegate>
 }
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)logVideo:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
@@ -2916,7 +2916,7 @@ SoundUpNextDelegate>
 
 
 //: - (void)onTapMenuItemRevoke:(ZoneToolbarCompress *)item
-- (void)security:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemRevoke:(ZoneToolbarCompress *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self bridgeMenu];
@@ -2950,7 +2950,7 @@ SoundUpNextDelegate>
 }
 
 //: - (id<LocalizeReferenceMessageAttach>)sessionConfig
-- (id<LocalizeReferenceMessageAttach>)compute
+- (id<LocalizeReferenceMessageAttach>)disableVoice
 {
     //: if (_sessionConfig == nil) {
     if (_compute == nil) {
@@ -3248,7 +3248,7 @@ SoundUpNextDelegate>
     return NO;
 }
 //: - (void)onTapMenuItemTranslation:(ZoneToolbarCompress *)item
-- (void)picTranslation:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemTranslation:(ZoneToolbarCompress *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self bridgeMenu];
@@ -3561,7 +3561,7 @@ SoundUpNextDelegate>
 
 
 //: - (void)onTapMenuItemReport:(ZoneToolbarCompress *)item
-- (void)lineItem:(ZoneToolbarCompress *)item
+- (void)onTapMenuItemReport:(ZoneToolbarCompress *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.clickOpinion];

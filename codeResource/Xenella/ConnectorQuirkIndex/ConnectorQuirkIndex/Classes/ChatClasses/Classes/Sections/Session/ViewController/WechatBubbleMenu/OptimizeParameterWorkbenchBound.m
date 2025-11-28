@@ -210,7 +210,7 @@
         [selectedAllRangeButtons addObject:model];
 
         //: if (item.selctor == @selector(onTapMenuItemCopy:)) {
-        if (item.foothill == @selector(radarred:)) {
+        if (item.foothill == @selector(onTapMenuItemCopy:)) {
             //: [selectedPartRangeButtons addObject:model];
             [selectedPartRangeButtons addObject:model];
         }

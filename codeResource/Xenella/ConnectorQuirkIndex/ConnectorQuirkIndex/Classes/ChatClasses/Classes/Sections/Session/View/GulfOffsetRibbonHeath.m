@@ -116,7 +116,7 @@
         //: LocalizeMajorCoordinate *model = (LocalizeMajorCoordinate *)data;
         LocalizeMajorCoordinate *model = (LocalizeMajorCoordinate *)data;
         //: [_timeLabel setText:[AmongVisualizeHill showTime:model.messageTime showDetail:YES]];
-        [[self formatWorker:_timeLabel] setText:[AmongVisualizeHill surf:model.messageTime flavor:YES]];
+        [[self formatWorker:_timeLabel] setText:[AmongVisualizeHill surf:model.triggerAssign flavor:YES]];
     }
 }
 

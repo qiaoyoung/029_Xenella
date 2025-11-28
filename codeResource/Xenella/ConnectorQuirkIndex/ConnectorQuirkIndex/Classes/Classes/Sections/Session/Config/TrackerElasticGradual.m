@@ -22,7 +22,7 @@
 
 @property (nonatomic,strong) NIMMessage *displayGrouping;
 //: @property (nonatomic,strong) NIMMessage *threadMessage;
-@property (nonatomic,strong) NIMMessage *exposeOperaOld;
+//@property (nonatomic,strong) NIMMessage *displayGrouping;
 
 //: @end
 @end
@@ -30,18 +30,6 @@
 //: @implementation TrackerElasticGradual
 @implementation TrackerElasticGradual
 
-- (NIMMessage *)implementOld:(NIMMessage *)exposeOperaOld {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    _exposeOperaOld = exposeOperaOld;
-    return exposeOperaOld;
-}
-
-//: @end
-
-- (void)setExposeOperaOld:(NIMMessage *)exposeOperaOld {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    _exposeOperaOld = exposeOperaOld;
-}
 
 //: - (BOOL)needShowQuickComments
 - (BOOL)makeUp
@@ -62,10 +50,10 @@
         _displayGrouping = message;
         //: _provider = [[EndUnderMatrixWait alloc] init];
         _house = [[EndUnderMatrixWait alloc] init];
-	[self setExposeOperaOld:_displayGrouping];
+//	[self setExposeOperaOld:_displayGrouping];
         //: _provider.threadMessage = message;
         _house.displayGrouping = message;
-	[self setExposeOperaOld:_displayGrouping];
+//	[self setExposeOperaOld:_displayGrouping];
     }
     //: return self;
     return self;
@@ -97,14 +85,14 @@
 {
     //: _threadMessage = nil;
     _displayGrouping = nil;
-	[self setExposeOperaOld:_displayGrouping];
+//	[self setExposeOperaOld:_displayGrouping];
 }
 
 //: - (NIMMessage *)threadMessage
 - (NIMMessage *)displayGrouping
 {
-    //: return _threadMessage;
-    return [self implementOld:_displayGrouping];
+    return _displayGrouping;
+//    return [self implementOld:_displayGrouping];
 }
 
 //: - (BOOL)clearThreadMessageAfterSent

@@ -136,7 +136,7 @@ CordData featureAgainWaveMessage = (CordData){163, (Byte []){208, 198, 207, 198,
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.brush.dress) {
+    if (self.brush.enkindle) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.dictation];
@@ -652,7 +652,7 @@ CordData featureAgainWaveMessage = (CordData){163, (Byte []){208, 198, 207, 198,
     if ([self.brush respondsToSelector:@selector(darkSand)])
     {
         //: _selectecContacts = [[self.config alreadySelectedMemberId] mutableCopy];
-        _mapFoot = [[self.brush flat] mutableCopy];
+        _mapFoot = [[self.brush darkSand] mutableCopy];
 	[self setPan:_recentEvent];
     }
 

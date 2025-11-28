@@ -108,7 +108,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)slate{
+- (NSString *)pin{
     //: return self.info.infoId;
     return [self loose:self.pastWriting].messageCenter;
 }
@@ -132,7 +132,7 @@
 }
 
 //: - (NSString *)showName{
-- (NSString *)correct{
+- (NSString *)carrier{
     //: return self.info.showName;
     return [self loose:self.pastWriting].pressed;
 }
@@ -157,13 +157,13 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)footage{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }
 
 //: - (NSString *)userId{
-- (NSString *)become{
+- (NSString *)userId{
     //: return self.info.infoId;
     return [self loose:self.pastWriting].messageCenter;
 }
@@ -181,7 +181,7 @@
 }
 
 //: - (id)sortKey {
-- (id)board {
+- (id)request {
     //: return [[ScenarioAccessSortReorder sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[ScenarioAccessSortReorder adhere] phaseSize:[self loose:self.pastWriting].pressed].spelling;
 }

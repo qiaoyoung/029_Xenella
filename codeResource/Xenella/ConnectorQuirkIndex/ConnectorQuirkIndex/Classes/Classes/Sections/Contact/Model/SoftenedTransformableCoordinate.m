@@ -78,7 +78,7 @@
         //: for (id<ClassPoplarRayWindow> member in members) {
         for (id<ClassPoplarRayWindow> member in members) {
             //: if ([[member memberId] isEqualToString:uid]) {
-            if ([[member save] isEqualToString:uid]) {
+            if ([[member pin] isEqualToString:uid]) {
                 //: return member;
                 return member;
             }
@@ -194,7 +194,7 @@
     //: for (id<ClassPoplarRayWindow>member in members) {
     for (id<ClassPoplarRayWindow>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member save] isEqualToString:me]) {
+        if ([[member pin] isEqualToString:me]) {
             //: continue;
             continue;
         }
@@ -289,7 +289,7 @@
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<ClassPoplarRayWindow> member1, id<ClassPoplarRayWindow> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<ClassPoplarRayWindow> member1, id<ClassPoplarRayWindow> member2) {
             //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _comparatorBrotherMankind([member1 riseBlend], [member2 riseBlend]);
+            return _comparatorBrotherMankind([member1 request], [member2 request]);
         //: }];
         }];
     //: }];

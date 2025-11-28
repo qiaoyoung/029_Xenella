@@ -18,9 +18,9 @@
 //: - (NSString *)groupTitle;
 - (NSString *)emotion;
 //: - (NSString *)memberId;
-- (NSString *)save;
+- (NSString *)pin;
 //: - (id)sortKey;
-- (id)riseBlend;
+- (id)request;
 
 //: @end
 @end

@@ -137,7 +137,7 @@
 - (void)capability:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<RemoveCloseOutlineFill>)delegate;
-- (void)setPriceBlend:(id<RemoveCloseOutlineFill>)delegate;
+- (void)setDelegate:(id<RemoveCloseOutlineFill>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)scale;

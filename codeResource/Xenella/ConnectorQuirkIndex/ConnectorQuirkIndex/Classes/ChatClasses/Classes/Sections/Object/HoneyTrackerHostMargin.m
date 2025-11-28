@@ -103,7 +103,7 @@ dispatch_queue_t scanQueue()
 @property (nonatomic,assign) VentureJourneyGenerous sessionMessage;
 
 //: @property (nonatomic,strong) NIMMessage *referenceMessage;
-@property (nonatomic,strong) NIMMessage *referenceMessage;
+@property (nonatomic,strong) NIMMessage *screen;
 
 //: @property (nonatomic,strong) HarmonicDirectoryMixer *mediaFetcher;
 @property (nonatomic,strong) HarmonicDirectoryMixer *box;
@@ -186,7 +186,7 @@ dispatch_queue_t scanQueue()
                                                   completion:^(NSError * _Nullable error)
     {
         //: weakSelf.referenceMessage = nil;
-        weakSelf.referenceMessage = nil;
+        weakSelf.screen = nil;
         //: [weakSelf refreshQuickComments:message completion:nil];
         [weakSelf transition:message padCorrect:nil];
         //: if (completion)
@@ -246,10 +246,10 @@ dispatch_queue_t scanQueue()
                                                 error:nil];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.sessionConfig respondsToSelector:@selector(displayGrouping)] && [self.sessionConfig becomeLength])
+    else if ([self.sessionConfig respondsToSelector:@selector(displayGrouping)] && [self.sessionConfig displayGrouping])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.sessionConfig becomeLength];
+        NIMMessage *threadMessage = [self.sessionConfig displayGrouping];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage
@@ -393,7 +393,7 @@ dispatch_queue_t scanQueue()
              worker:(void(^)(NSError *error))completion
 {
     //: NIMMessage *message = self.referenceMessage;
-    NIMMessage *message = self.referenceMessage;
+    NIMMessage *message = self.screen;
     //: if (message)
     if (message)
     {
@@ -413,7 +413,7 @@ dispatch_queue_t scanQueue()
         //: }];
         }];
         //: self.referenceMessage = nil;
-        self.referenceMessage = nil;
+        self.screen = nil;
 	[self setSessionMessage:self.sessionState];
     }
 }
@@ -1583,10 +1583,10 @@ dispatch_queue_t scanQueue()
         }];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.sessionConfig respondsToSelector:@selector(displayGrouping)] && [self.sessionConfig becomeLength])
+    else if ([self.sessionConfig respondsToSelector:@selector(displayGrouping)] && [self.sessionConfig displayGrouping])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.sessionConfig becomeLength];
+        NIMMessage *threadMessage = [self.sessionConfig displayGrouping];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage

@@ -1362,17 +1362,17 @@ CreativeSmoothClipDelegate> {
               ([self performSelector:sel withObject:nil]);
         }
         //: else if (contactItem.vcName.length) {
-        else if (contactItem.tap.length) {
+        else if (contactItem.vcName.length) {
             //: Class clazz = NSClassFromString(contactItem.vcName);
-            Class clazz = NSClassFromString(contactItem.tap);
+            Class clazz = NSClassFromString(contactItem.vcName);
             //: UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
         //: }else if([contactItem respondsToSelector:@selector(userId)]){
-        }else if([contactItem respondsToSelector:@selector(etiolationStrokes)]){
+        }else if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.upId;
+            NSString * friendId = contactItem.userId;
             //: [self enterPersonalCard:friendId];
             [self begin:friendId];
         }
@@ -2112,9 +2112,9 @@ CreativeSmoothClipDelegate> {
         //: id<AccountFrugalAlpine> contactItem = (id<AccountFrugalAlpine>)[_contacts memberOfIndex:indexPath];
         id<AccountFrugalAlpine> contactItem = (id<AccountFrugalAlpine>)[_clientEntry safetyMargin:indexPath];
         //: if([contactItem respondsToSelector:@selector(userId)]){
-        if([contactItem respondsToSelector:@selector(etiolationStrokes)]){
+        if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.upId;
+            NSString * friendId = contactItem.userId;
             //: if ([ids containsObject:friendId]) {
             if ([ids containsObject:friendId]) {
                 //: [indexPaths addObject:indexPath];

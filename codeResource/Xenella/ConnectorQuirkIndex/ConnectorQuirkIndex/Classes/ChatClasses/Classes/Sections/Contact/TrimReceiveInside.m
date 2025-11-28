@@ -429,10 +429,10 @@
     }
 }
 
-- (void)setDirectionToe:(NSArray *)directionToe {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    _directionToe = directionToe;
-}
+//- (void)setDirectionToe:(NSArray *)directionToe {
+//    //: OC_CUSTOM_PROPERTY_INJECT
+//    _directionToe = directionToe;
+//}
 
 //: - (NSString *)title{
 - (NSString *)beginPauseTitle{
@@ -450,7 +450,7 @@
     if (teamType == WrapperZealousResizeWeightedSuiteNomal) {
         //: team_data = [[NIMSDK sharedSDK].teamManager.allMyTeams mutableCopy];
         team_data = [[NIMSDK sharedSDK].teamManager.allMyTeams mutableCopy];
-	[self setDirectionToe:_darkSand];
+//	[self setDirectionToe:_darkSand];
     //: } else if (teamType == WrapperZealousResizeWeightedSuiteSuper) {
     } else if (teamType == WrapperZealousResizeWeightedSuiteSuper) {
         //: team_data = [[NIMSDK sharedSDK].superTeamManager.allMyTeams mutableCopy];
@@ -476,11 +476,11 @@
     _simulcastContemporary = simulcastContemporary;
 }
 
-- (NSArray *)displayWindowToe:(NSArray *)directionToe {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    _directionToe = directionToe;
-    return directionToe;
-}
+//- (NSArray *)displayWindowToe:(NSArray *)directionToe {
+//    //: OC_CUSTOM_PROPERTY_INJECT
+//    _directionToe = directionToe;
+//    return directionToe;
+//}
 
 //: - (void)getContactData:(NIMContactDataProviderHandler)handler {
 - (void)loadOddData:(NIMContactDataProviderHandler)handler {

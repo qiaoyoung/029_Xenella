@@ -130,7 +130,7 @@
         //: LocalizeMajorCoordinate *timeModel = [[LocalizeMajorCoordinate alloc] init];
         LocalizeMajorCoordinate *timeModel = [[LocalizeMajorCoordinate alloc] init];
         //: timeModel.messageTime = model.messageTime;
-        timeModel.messageTime = model.triggerAssign;
+        timeModel.triggerAssign = model.triggerAssign;
         //: [self.items insertObject:timeModel atIndex:0];
         [[self outOfSight:self.items] insertObject:timeModel atIndex:0];
     }
@@ -962,7 +962,7 @@
             //: LocalizeMajorCoordinate *timeModel = [[LocalizeMajorCoordinate alloc] init];
             LocalizeMajorCoordinate *timeModel = [[LocalizeMajorCoordinate alloc] init];
             //: timeModel.messageTime = model.messageTime;
-            timeModel.messageTime = model.triggerAssign;
+            timeModel.triggerAssign = model.triggerAssign;
 	[self setBringCornerExpert:self.showTimeInterval];
             //: [self.items insertObject:timeModel atIndex:index];
             [[self outOfSight:self.items] insertObject:timeModel atIndex:index];

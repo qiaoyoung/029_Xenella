@@ -171,7 +171,7 @@
 }
 
 //: - (id<LocalizeReferenceMessageAttach>)sessionConfig
-- (id<LocalizeReferenceMessageAttach>)compute
+- (id<LocalizeReferenceMessageAttach>)disableVoice
 {
     //: if (_sessionConfig == nil) {
     if ([self foundLanguage:_compute] == nil) {

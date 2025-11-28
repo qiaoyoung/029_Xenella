@@ -490,7 +490,7 @@
     //: if (self.link == nil) {
     if ([self liberate:self.mark] == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[SeamlessAirflowTheory weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.mark = [CADisplayLink displayLinkWithTarget:[SeamlessAirflowTheory build:self] selector:@selector(updateUI)];
+        self.mark = [CADisplayLink displayLinkWithTarget:[SeamlessAirflowTheory build:self] selector:@selector(advancedHabit)];
 	[self setBump:self.examine];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [self.mark addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];

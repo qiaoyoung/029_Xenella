@@ -104,7 +104,7 @@
     _interactor.layout = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setPriceBlend:_interactor];
+    [layout setDelegate:_interactor];
 
     //: _tableAdapter = [[ClipAttachTriggerReplay alloc] init];
     _tableAdapter = [[ClipAttachTriggerReplay alloc] init];
