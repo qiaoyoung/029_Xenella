@@ -380,7 +380,7 @@
 //: - (void)leftButtonClicked:(id)sender{
 - (void)scanSingle:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = skyGiven(self.uponBehaviorEnrichAccelerates);
+    Class currentClass = object_getClass(self.uponBehaviorEnrichAccelerates);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == ringArray) && [self.uponBehaviorEnrichAccelerates respondsToSelector:@selector(determinateBig)]) {
         //: [self.delegate dismissDataPickerView];
@@ -412,7 +412,7 @@
     //: self.delegate = delegate;
     self.uponBehaviorEnrichAccelerates = delegate;
     //: delegateClass = object_getClass(delegate);
-    ringArray = skyGiven(delegate);
+    ringArray = object_getClass(delegate);
 	[self setLeanDrag:_drag];
 }
 
@@ -558,7 +558,7 @@
 //: - (void)rightButtonClicked:(id)sender{
 - (void)capitalised:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = skyGiven(self.uponBehaviorEnrichAccelerates);
+    Class currentClass = object_getClass(self.uponBehaviorEnrichAccelerates);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == ringArray) && [self.uponBehaviorEnrichAccelerates respondsToSelector:@selector(determinateBig)]) {
         //: [self.delegate dismissDataPickerView];

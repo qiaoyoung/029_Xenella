@@ -23,22 +23,22 @@
 
 //: - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    //: [[WorthyBracketThreaded sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-    [[WorthyBracketThreaded sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    //: [[WorthyBracketThreaded mutualInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [[WorthyBracketThreaded mutualInstance] sheet:app lineStep:deviceToken];
 }
 
 //: - (void)applicationDidEnterBackground:(UIApplication *)application {
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    //: [[WorthyBracketThreaded sharedInstance] applicationDidEnterBackground:application];
-    [[WorthyBracketThreaded sharedInstance] applicationDidEnterBackground:application];
+    //: [[WorthyBracketThreaded mutualInstance] applicationDidEnterBackground:application];
+    [[WorthyBracketThreaded mutualInstance] numberTotal:application];
 }
 
 //: #pragma mark - ApplicationDelegate
 #pragma mark - ApplicationDelegate
 //: - (void)applicationDidBecomeActive:(UIApplication *)application {
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    //: [[WorthyBracketThreaded sharedInstance] applicationDidBecomeActive:application];
-    [[WorthyBracketThreaded sharedInstance] applicationDidBecomeActive:application];
+    //: [[WorthyBracketThreaded mutualInstance] applicationDidBecomeActive:application];
+    [[WorthyBracketThreaded mutualInstance] forthwithActive:application];
 }
 
 //: #pragma mark - openURL
@@ -52,8 +52,8 @@
 //: - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
-    //: [[WorthyBracketThreaded sharedInstance] initDelegateWithWindow:self.window];
-    [[WorthyBracketThreaded sharedInstance] initDelegateWithWindow:self.window];
+    //: [[WorthyBracketThreaded mutualInstance] initDelegateWithWindow:self.window];
+    [[WorthyBracketThreaded mutualInstance] initClean:self.window];
     //: return YES;
     return YES;
 }
