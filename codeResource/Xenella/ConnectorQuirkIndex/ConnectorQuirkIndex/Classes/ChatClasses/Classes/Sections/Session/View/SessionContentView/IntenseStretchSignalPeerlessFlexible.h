@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  IntenseStretchSignalPeerlessFlexible.h
 // ParseByBreakPerform
@@ -6,8 +8,12 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "AgainstLoopForceful.h"
 #import "AgainstLoopForceful.h"
 
+//: @interface IntenseStretchSignalPeerlessFlexible : AgainstLoopForceful
 @interface IntenseStretchSignalPeerlessFlexible : AgainstLoopForceful
 
+//: @end
 @end

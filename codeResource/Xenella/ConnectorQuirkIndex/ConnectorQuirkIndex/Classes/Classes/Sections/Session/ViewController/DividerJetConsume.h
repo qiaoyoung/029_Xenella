@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DividerJetConsume.h
 //  Xenella
@@ -6,18 +8,27 @@
 //  Copyright © 2025 Xenella. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface DividerJetConsume : UIViewController
 @interface DividerJetConsume : UIViewController
 
-@property (nonatomic,strong) NIMMessage *message;
-@property (nonatomic,strong) NIMSession *session;
+//: @property (nonatomic,assign) BOOL isCard;
+@property (nonatomic,assign) BOOL amid;
+//: @property (nonatomic,strong) NIMMessage *message;
+@property (nonatomic,strong) NIMMessage *sommelier;
 
-@property (nonatomic,assign) BOOL isCard;
+//: @property (nonatomic,strong) NIMSession *session;
+@property (nonatomic,strong) NIMSession *remote;
 
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

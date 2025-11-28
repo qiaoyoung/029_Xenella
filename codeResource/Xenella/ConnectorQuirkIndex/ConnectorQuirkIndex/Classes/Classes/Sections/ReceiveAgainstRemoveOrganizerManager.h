@@ -1,24 +1,42 @@
-#import <Foundation/Foundation.h>
-#import <SSZipArchive/SSZipArchive.h>
-NS_ASSUME_NONNULL_BEGIN
-#define kConnectorQuirkIndex @"ConnectorQuirkIndex"
+// __DEBUG__
+// __CLOSE_PRINT__
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
+//: #import <SSZipArchive/SSZipArchive.h>
+#import <SSZipArchive/SSZipArchive.h>
+
+//: NS_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_BEGIN
+
+
+//: @interface ReceiveAgainstRemoveOrganizerManager : NSObject
 @interface ReceiveAgainstRemoveOrganizerManager : NSObject
 
-+ (instancetype)sharedManager;
+//: - (NSString *)getLprojPath;
+- (NSString *)photo;
 
-- (NSString *)getHtml_filePath;
+//: - (UIImage *)zip_imageNamed:(NSString *)name;
+- (UIImage *)betweenNamed:(NSString *)name;
 
-- (NSString *)getXML_filePath;
+//: - (NSString *)getHtml_filePath;
+- (NSString *)book;
 
-- (NSString *)getEmojiPath;
+//: - (NSString *)getVoicePath;
+- (NSString *)platyrrhine;
 
-- (NSString *)getLprojPath;
+//: + (instancetype)sharedManager;
++ (instancetype)passingShould;
 
-- (NSString *)getVoicePath;
+//: - (NSString *)getXML_filePath;
+- (NSString *)will;
 
-- (UIImage *)zip_imageNamed:(NSString *)name;
+//: - (NSString *)getEmojiPath;
+- (NSString *)timingPath;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

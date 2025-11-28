@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIColor+Util.h
 //  译同行
@@ -6,99 +8,103 @@
 //  Copyright © 2017年 caoyu. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-
-#define BLACK_COLOR_BASE     ff000000
-#define DARKGRAY_COLOR_BASE  ff000000
-#define LIGHTGRAY_COLOR_BASE ffaaaaaa
-#define WHITE_COLOR_BASE     ffffffff
-#define GRAY_COLOR_BASE      ff7f7f7f
-#define RED_COLOR_BASE       ffff0000
-#define GREEN_COLOR_BASE     ff00ff00
-#define BLUE_COLOR_BASE      ff0000ff
-#define CYAN_COLOR_BASE      ff00ffff
-#define YELLOW_COLOR_BASE    ff00ffff
-#define MAGENTA_COLOR_BASE   ffff00ff
-#define ORANGE_COLOR_BASE    ffff7f00
-#define PURPLE_COLOR_BASE    ff7f007f
-#define BROWN_COLOR_BASE     ff996633
-#define CLEAR_COLOR_BASE     00000000
-
-#define SK_INT_COLOR_CAT(prefix,color) prefix ##color
-#define SK_INT_COLOR(color_base) SK_INT_COLOR_CAT(0x, color_base)
-
-#define BLACK_COLOR_INT     SK_INT_COLOR(BLACK_COLOR_BASE)
-#define DARKGRAY_COLOR_INT  SK_INT_COLOR(DARKGRAY_COLOR_BASE)
-#define LIGHTGRAY_COLOR_INT SK_INT_COLOR(LIGHTGRAY_COLOR_BASE)
-#define WHITE_COLOR_INT     SK_INT_COLOR(WHITE_COLOR_BASE)
-#define GRAY_COLOR_INT      SK_INT_COLOR(GRAY_COLOR_BASE)
-#define RED_COLOR_INT       SK_INT_COLOR(RED_COLOR_BASE)
-#define GREEN_COLOR_INT     SK_INT_COLOR(GREEN_COLOR_BASE)
-#define BLUE_COLOR_INT      SK_INT_COLOR(BLUE_COLOR_BASE)
-#define CYAN_COLOR_INT      SK_INT_COLOR(CYAN_COLOR_BASE)
-#define YELLOW_COLOR_INT    SK_INT_COLOR(YELLOW_COLOR_BASE)
-#define MAGENTA_COLOR_INT   SK_INT_COLOR(MAGENTA_COLOR_BASE)
-#define ORANGE_COLOR_INT    SK_INT_COLOR(ORANGE_COLOR_BASE)
-#define PURPLE_COLOR_INT    SK_INT_COLOR(PURPLE_COLOR_BASE)
-#define BROWN_COLOR_INT     SK_INT_COLOR(BROWN_COLOR_BASE)
-#define CLEAR_COLOR_INT     SK_INT_COLOR(CLEAR_COLOR_BASE)
-
+//: typedef uint32_t color_t;
 typedef uint32_t color_t;
-typedef uint8_t  ecolor_t;
-typedef CGFloat  fcolor_t;
+//: typedef uint8_t ecolor_t;
+typedef uint8_t ecolor_t;
+//: typedef CGFloat fcolor_t;
+typedef CGFloat fcolor_t;
+//: typedef ecolor_t* dcolor_t;
 typedef ecolor_t* dcolor_t;
 
+//: typedef UIColor* UIColorRef;
 typedef UIColor* UIColorRef;
+//: typedef NSNumber* NSNumberRef;
 typedef NSNumber* NSNumberRef;
+//: typedef NSArray* NSArrayRef;
 typedef NSArray* NSArrayRef;
+//: typedef NSDictionary* NSDictionaryRef;
 typedef NSDictionary* NSDictionaryRef;
 
-void SKCGContextSetFillColor(CGContextRef c, color_t color);
-void SKCGContextSetStrokeColor(CGContextRef c, color_t color);
+//: void SKCGContextSetFillColor(CGContextRef c, color_t color);
+void projectGlimpse(CGContextRef c, color_t color);
+//: void SKCGContextSetStrokeColor(CGContextRef c, color_t color);
+void translationValue(CGContextRef c, color_t color);
 
-#define SKCGContextSetColor(gc, color)\
-{\
-SKCGContextSetFillColor(gc, color);\
-SKCGContextSetStrokeColor(gc, color);\
-}
 
+
+
+
+
+
+//: @interface UIColor (Util)
 @interface UIColor (Util)
 
-@property (nonatomic, assign, readonly) fcolor_t red;
-@property (nonatomic, assign, readonly) fcolor_t green;
-@property (nonatomic, assign, readonly) fcolor_t blue;
-@property (nonatomic, assign, readonly) fcolor_t alpha;
+//: @property (nonatomic, assign, readonly) fcolor_t green;
+@property (nonatomic, assign, readonly) fcolor_t scatter;
+//: @property (nonatomic, assign, readonly) ecolor_t intRed;
+@property (nonatomic, assign, readonly) ecolor_t anti;
+//: @property (nonatomic, assign, readonly) fcolor_t alpha;
+@property (nonatomic, assign, readonly) fcolor_t coreRidge;
+//: @property (nonatomic, assign, readonly) ecolor_t intAlpha;
+@property (nonatomic, assign, readonly) ecolor_t limit;
+//: @property (nonatomic, assign, readonly) ecolor_t intBlue;
+@property (nonatomic, assign, readonly) ecolor_t thorough;
+@property (nonatomic, assign, readonly) fcolor_t boundSymbol;
 
-@property (nonatomic, assign, readonly) ecolor_t intRed;
-@property (nonatomic, assign, readonly) ecolor_t intGreen;
-@property (nonatomic, assign, readonly) ecolor_t intBlue;
-@property (nonatomic, assign, readonly) ecolor_t intAlpha;
+//: @property (nonatomic, assign, readonly) fcolor_t red;
+@property (nonatomic, assign, readonly) fcolor_t flag;
+@property (nonatomic, assign, readonly) fcolor_t ridge;
+//: @property (nonatomic, assign, readonly) ecolor_t intGreen;
+@property (nonatomic, assign, readonly) ecolor_t vendorAccess;
+//: @property (nonatomic, assign, readonly) fcolor_t blue;
+@property (nonatomic, assign, readonly) fcolor_t prepare;
 
-+(instancetype) colorWithAlpha:(fcolor_t)alpha red:(fcolor_t)red green:(fcolor_t)green blue:(fcolor_t)blue;
+//: +(instancetype) randomColor;
++(instancetype) first;
 
-+(instancetype) colorWithIntRed:(ecolor_t)red green:(ecolor_t)green blue:(ecolor_t)blue alpha:(ecolor_t)alpha;
-+(instancetype) colorWithIntAlpha:(ecolor_t)alpha red:(ecolor_t)red green:(ecolor_t)green blue:(ecolor_t)blue;
+//: +(NSString*) intToString:(color_t)intValue;
++(NSString*) quietGuidanceTitle:(color_t)intValue;
+//: +(instancetype) colorWithFloatAlpha:(CGFloat)alpha red:(ecolor_t)red green:(ecolor_t)green blue:(ecolor_t)blue;
++(instancetype) creature:(CGFloat)alpha flavorEcolor_t:(ecolor_t)red lightGreenCaptureEcolor_t:(ecolor_t)green late:(ecolor_t)blue;
 
-+(instancetype) colorWithIntRed:(ecolor_t)red green:(ecolor_t)green blue:(ecolor_t)blue floatAlpha:(CGFloat)alpha;
-+(instancetype) colorWithFloatAlpha:(CGFloat)alpha red:(ecolor_t)red green:(ecolor_t)green blue:(ecolor_t)blue;
+//: +(instancetype) colorWithString:(NSString*)color floatAlpha:(CGFloat)alpha;
++(instancetype) old:(NSString*)color emptyPrimaryColorAlpha:(CGFloat)alpha;
+//: +(instancetype) colorWithIntRed:(ecolor_t)red green:(ecolor_t)green blue:(ecolor_t)blue alpha:(ecolor_t)alpha;
++(instancetype) space:(ecolor_t)red scatterBeneathThan:(ecolor_t)green turn:(ecolor_t)blue unique:(ecolor_t)alpha;
 
-+(instancetype) colorWithInt:(color_t)color;
-+(instancetype) colorWithString:(NSString*)color;
+//: +(instancetype) colorWithString:(NSString*)color;
++(instancetype) holder:(NSString*)color;
+//: -(NSString*) stringValue;
+-(NSString*) mediaApp;
 
-+(instancetype) colorWithInt:(color_t)color floatAlpha:(CGFloat)alpha;
-+(instancetype) colorWithString:(NSString*)color floatAlpha:(CGFloat)alpha;
+//: +(instancetype) colorWithIntRed:(ecolor_t)red green:(ecolor_t)green blue:(ecolor_t)blue floatAlpha:(CGFloat)alpha;
++(instancetype) observe:(ecolor_t)red sectionAlpha:(ecolor_t)green resolve:(ecolor_t)blue syntacticCategoryAlpha:(CGFloat)alpha;
+//: +(instancetype) colorWithIntAlpha:(ecolor_t)alpha red:(ecolor_t)red green:(ecolor_t)green blue:(ecolor_t)blue;
++(instancetype) sharedEngine:(ecolor_t)alpha proper:(ecolor_t)red steam:(ecolor_t)green withColourChromaticAlphaRedDarkGreenEcolor_t:(ecolor_t)blue;
 
-+(instancetype) randomColor;
-+(instancetype) randomColorWithAlpha;
+//: +(instancetype) colorWithAlpha:(fcolor_t)alpha red:(fcolor_t)red green:(fcolor_t)green blue:(fcolor_t)blue;
++(instancetype) arrow:(fcolor_t)alpha scanReject:(fcolor_t)red anti:(fcolor_t)green body:(fcolor_t)blue;
+//: +(instancetype) colorWithInt:(color_t)color;
++(instancetype) entity:(color_t)color;
 
-+(NSString*) intToString:(color_t)intValue;
-+(color_t) stringToInt:(NSString*)stringValue;
+//: -(color_t) intValue;
+-(color_t) grayOdd;
+//: +(color_t) stringToInt:(NSString*)stringValue;
++(color_t) toContent:(NSString*)stringValue;
 
--(color_t) intValue;
--(NSString*) stringValue;
-
-
+//: +(instancetype) randomColorWithAlpha;
++(instancetype) ergodic;
 //RGB:#F5F5F5
-+ (UIColor *) colorWithHexString: (NSString *) hexString ;
+//: + (UIColor *) colorWithHexString: (NSString *) hexString ;
++ (UIColor *) active: (NSString *) hexString ;
+
+
+//: +(instancetype) colorWithInt:(color_t)color floatAlpha:(CGFloat)alpha;
++(instancetype) beingSweet:(color_t)color getCapability:(CGFloat)alpha;
+//: @end
 @end

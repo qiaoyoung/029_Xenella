@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  USERSessionTipCell.h
 //  NIMDemo
@@ -6,16 +8,27 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import "OfApplyMove.h"
 #import "OfApplyMove.h"
+
+//: @class LocalizeMajorCoordinate;
 @class LocalizeMajorCoordinate;
 
+//: @interface GulfOffsetRibbonHeath : UITableViewCell
 @interface GulfOffsetRibbonHeath : UITableViewCell
-
-@property (strong, nonatomic) UIImageView *timeBGView;
 
 @property (strong, nonatomic) UILabel *timeLabel;
 
-- (void)refreshData:(LocalizeMajorCoordinate *)data;
+//: @property (strong, nonatomic) UIImageView *timeBGView;
+@property (strong, nonatomic) UIImageView *timeBGView;
+//: @property (strong, nonatomic) UILabel *timeLabel;
+@property (strong, nonatomic) UILabel *family;
 
+//: - (void)refreshData:(LocalizeMajorCoordinate *)data;
+- (void)refresh:(LocalizeMajorCoordinate *)data;
+
+//: @end
 @end

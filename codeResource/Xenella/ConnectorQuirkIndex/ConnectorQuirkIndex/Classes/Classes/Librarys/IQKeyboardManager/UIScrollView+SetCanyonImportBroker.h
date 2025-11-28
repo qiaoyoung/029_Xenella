@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIScrollView+SetCanyonImportBroker.h
 //  https://github.com/hackiftekhar/ContinueRunLight
@@ -21,42 +23,57 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface UIScrollView (SetCanyonImportBroker)
 @interface UIScrollView (SetCanyonImportBroker)
 
 /**
  If YES, then scrollview will ignore scrolling (simply not scroll it) for adjusting textfield position. Default is NO.
  */
-@property(nonatomic, assign) BOOL shouldIgnoreScrollingAdjustment;
+//: @property(nonatomic, assign) BOOL shouldIgnoreScrollingAdjustment;
+@property(nonatomic, assign) BOOL scrollingObvioussed;
 
 /**
  If YES, then scrollview will ignore content inset adjustment (simply not updating it) when keyboard is shown. Default is NO.
  */
-@property(nonatomic, assign) BOOL shouldIgnoreContentInsetAdjustment;
+//: @property(nonatomic, assign) BOOL shouldIgnoreContentInsetAdjustment;
+@property(nonatomic, assign) BOOL wearerOfs;
 
 /**
  Restore scrollViewContentOffset when resigning from scrollView. Default is NO.
  */
-@property(nonatomic, assign) BOOL shouldRestoreScrollViewContentOffset;
+//: @property(nonatomic, assign) BOOL shouldRestoreScrollViewContentOffset;
+@property(nonatomic, assign) BOOL marginUpons;
 
 
+//: @end
 @end
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface UITableView (FolderTrimHelix)
 @interface UITableView (FolderTrimHelix)
 
--(nullable NSIndexPath*)previousIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath;
+//: -(nullable NSIndexPath*)previousIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath;
+-(nullable NSIndexPath*)calendarMonth:(nonnull NSIndexPath*)indexPath;
 //-(nullable NSIndexPath*)nextIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath;
 
+//: @end
 @end
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface UICollectionView (FolderTrimHelix)
 @interface UICollectionView (FolderTrimHelix)
 
--(nullable NSIndexPath*)previousIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath;
+//: -(nullable NSIndexPath*)previousIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath;
+-(nullable NSIndexPath*)queryFor:(nonnull NSIndexPath*)indexPath;
 //-(nullable NSIndexPath*)nextIndexPathOfIndexPath:(nonnull NSIndexPath*)indexPath;
 
+//: @end
 @end

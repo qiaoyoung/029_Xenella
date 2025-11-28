@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LooseToastAppendScale.h
 //  NIM
@@ -6,19 +8,30 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface LooseToastAppendScale : UITableViewCell
 @interface LooseToastAppendScale : UITableViewCell
 
+//: @property (nonatomic ,strong) UIImageView *iconImageView;
 @property (nonatomic ,strong) UIImageView *iconImageView;
-@property (nonatomic ,strong) UILabel *titleLabel;
-@property (nonatomic ,strong) UILabel *contentLabel;
+//: @property (nonatomic ,strong) UIImageView *arrowsImageView;
 @property (nonatomic ,strong) UIImageView *arrowsImageView;
+//: @property (nonatomic ,strong) UILabel *contentLabel;
+@property (nonatomic ,strong) UILabel *contentLabel;
+//: @property (nonatomic ,strong) UILabel *titleLabel;
+@property (nonatomic ,strong) UILabel *titleLabel;
+//: @property (nonatomic ,strong) UIView *lineView;
 @property (nonatomic ,strong) UIView *lineView;
 
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

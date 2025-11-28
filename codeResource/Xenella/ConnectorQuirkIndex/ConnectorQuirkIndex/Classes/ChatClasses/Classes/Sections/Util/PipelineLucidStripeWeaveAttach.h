@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PipelineLucidStripeWeaveAttach.h
 //  NIM
@@ -6,20 +8,29 @@
 //  Copyright © 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface PipelineLucidStripeWeaveAttach : NSObject
 @interface PipelineLucidStripeWeaveAttach : NSObject
 
-+ (PipelineLucidStripeWeaveAttach *)currentDevice;
+//: + (PipelineLucidStripeWeaveAttach *)currentDevice;
++ (PipelineLucidStripeWeaveAttach *)resign;
+
+//: - (CGFloat)statusBarHeight;
+- (CGFloat)manageSpeakeasy;
 
 /// 语言
-+ (NSString *)language;
+//: + (NSString *)language;
++ (NSString *)refer;
 
 //图片/音频推荐参数
-- (CGFloat)suggestImagePixels;
+//: - (CGFloat)suggestImagePixels;
+- (CGFloat)graph;
 
-- (CGFloat)compressQuality;
+//: - (CGFloat)compressQuality;
+- (CGFloat)app;
 
-- (CGFloat)statusBarHeight;
-
+//: @end
 @end

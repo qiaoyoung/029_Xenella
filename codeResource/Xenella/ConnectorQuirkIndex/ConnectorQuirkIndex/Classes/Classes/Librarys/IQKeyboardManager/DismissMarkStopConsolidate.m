@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DismissMarkStopConsolidate.m
 //  https://github.com/hackiftekhar/ContinueRunLight
@@ -21,99 +23,145 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "DismissMarkStopConsolidate.h"
 #import "DismissMarkStopConsolidate.h"
+//: #import "ContinueRunLightConstantsInternal.h"
 #import "ContinueRunLightConstantsInternal.h"
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation DismissMarkStopConsolidate
 @implementation DismissMarkStopConsolidate
 
--(void)initialize
+//: -(void)dealloc
+-(void)dealloc
 {
-    NSArray <NSNumber*> *states = @[@(UIControlStateNormal),@(UIControlStateHighlighted),@(UIControlStateDisabled),@(UIControlStateFocused)];
-
-    for (NSNumber *state in states)
-    {
-        UIControlState controlState = [state unsignedIntegerValue];
-
-        [self setBackgroundImage:[UIImage new] forState:controlState barMetrics:UIBarMetricsDefault];
-        [self setBackgroundImage:[UIImage new] forState:controlState style:UIBarButtonItemStylePlain barMetrics:UIBarMetricsDefault];
-        [self setBackButtonBackgroundImage:[UIImage new] forState:controlState barMetrics:UIBarMetricsDefault];
-    }
-
-    [self setTitlePositionAdjustment:UIOffsetZero forBarMetrics:UIBarMetricsDefault];
-    [self setBackgroundVerticalPositionAdjustment:0 forBarMetrics:UIBarMetricsDefault];
-    [self setBackButtonBackgroundVerticalPositionAdjustment:0 forBarMetrics:UIBarMetricsDefault];
+    //: self.target = nil;
+    self.target = nil;
+    //: self.invocation = nil;
+    self.lessInvocation = nil;
 }
 
-- (instancetype)init
+//: -(void)setTarget:(nullable id)target action:(nullable SEL)action
+-(void)nearBottom:(nullable id)target transport:(nullable SEL)action
 {
-    self = [super init];
+    //: NSInvocation *invocation = nil;
+    NSInvocation *invocation = nil;
 
-    if (self)
+    //: if (target && action)
+    if (target && action)
     {
-        [self initialize];
+        //: invocation = [NSInvocation invocationWithMethodSignature:[target methodSignatureForSelector:action]];
+        invocation = [NSInvocation invocationWithMethodSignature:[target methodSignatureForSelector:action]];
+        //: invocation.target = target;
+        invocation.target = target;
+        //: invocation.selector = action;
+        invocation.selector = action;
     }
 
+    //: self.invocation = invocation;
+    self.lessInvocation = invocation;
+}
+
+//: - (instancetype)initWithBarButtonSystemItem:(UIBarButtonSystemItem)systemItem target:(nullable id)target action:(nullable SEL)action
+- (instancetype)initWithBarButtonSystemItem:(UIBarButtonSystemItem)systemItem target:(nullable id)target action:(nullable SEL)action
+{
+    //: self = [super initWithBarButtonSystemItem:systemItem target:target action:action];
+    self = [super initWithBarButtonSystemItem:systemItem target:target action:action];
+
+    //: if (self)
+    if (self)
+    {
+        //: _isSystemItem = YES;
+        _split = YES;
+    }
+
+    //: return self;
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder: coder];
-
-    if (self)
-    {
-        [self initialize];
-    }
-
-    return self;
-}
-
+//: -(void)setTintColor:(UIColor *)tintColor
 -(void)setTintColor:(UIColor *)tintColor
 {
+    //: [super setTintColor:tintColor];
     [super setTintColor:tintColor];
-    
+
     //titleTextAttributes tweak is to overcome an issue comes with iOS11 where appearanceProxy set for NSForegroundColorAttributeName and bar button texts start appearing in appearance proxy color
+    //: NSMutableDictionary *textAttributes = [[self titleTextAttributesForState:UIControlStateNormal] mutableCopy]?:[NSMutableDictionary new];
     NSMutableDictionary *textAttributes = [[self titleTextAttributesForState:UIControlStateNormal] mutableCopy]?:[NSMutableDictionary new];
-    
+
+    //: textAttributes[NSForegroundColorAttributeName] = tintColor;
     textAttributes[NSForegroundColorAttributeName] = tintColor;
-    
+
+    //: [self setTitleTextAttributes:textAttributes forState:UIControlStateNormal];
     [self setTitleTextAttributes:textAttributes forState:UIControlStateNormal];
 }
 
-- (instancetype)initWithBarButtonSystemItem:(UIBarButtonSystemItem)systemItem target:(nullable id)target action:(nullable SEL)action
+//: - (instancetype)initWithCoder:(NSCoder *)coder
+- (instancetype)initWithCoder:(NSCoder *)coder
 {
-    self = [super initWithBarButtonSystemItem:systemItem target:target action:action];
-    
+    //: self = [super initWithCoder: coder];
+    self = [super initWithCoder: coder];
+
+    //: if (self)
     if (self)
     {
-        _isSystemItem = YES;
+        //: [self initialize];
+        [self ventureLeave];
     }
-    
+
+    //: return self;
     return self;
 }
 
 
--(void)setTarget:(nullable id)target action:(nullable SEL)action
+//: - (instancetype)init
+- (instancetype)init
 {
-    NSInvocation *invocation = nil;
-    
-    if (target && action)
+    //: self = [super init];
+    self = [super init];
+
+    //: if (self)
+    if (self)
     {
-        invocation = [NSInvocation invocationWithMethodSignature:[target methodSignatureForSelector:action]];
-        invocation.target = target;
-        invocation.selector = action;
+        //: [self initialize];
+        [self ventureLeave];
     }
-    
-    self.invocation = invocation;
+
+    //: return self;
+    return self;
 }
 
--(void)dealloc
+//: -(void)initialize
+-(void)ventureLeave
 {
-    self.target = nil;
-    self.invocation = nil;
+    //: NSArray <NSNumber*> *states = @[@(UIControlStateNormal),@(UIControlStateHighlighted),@(UIControlStateDisabled),@(UIControlStateFocused)];
+    NSArray <NSNumber*> *states = @[@(UIControlStateNormal),@(UIControlStateHighlighted),@(UIControlStateDisabled),@(UIControlStateFocused)];
+
+    //: for (NSNumber *state in states)
+    for (NSNumber *state in states)
+    {
+        //: UIControlState controlState = [state unsignedIntegerValue];
+        UIControlState controlState = [state unsignedIntegerValue];
+
+        //: [self setBackgroundImage:[UIImage new] forState:controlState barMetrics:UIBarMetricsDefault];
+        [self setBackgroundImage:[UIImage new] forState:controlState barMetrics:UIBarMetricsDefault];
+        //: [self setBackgroundImage:[UIImage new] forState:controlState style:UIBarButtonItemStylePlain barMetrics:UIBarMetricsDefault];
+        [self setBackgroundImage:[UIImage new] forState:controlState style:UIBarButtonItemStylePlain barMetrics:UIBarMetricsDefault];
+        //: [self setBackButtonBackgroundImage:[UIImage new] forState:controlState barMetrics:UIBarMetricsDefault];
+        [self setBackButtonBackgroundImage:[UIImage new] forState:controlState barMetrics:UIBarMetricsDefault];
+    }
+
+    //: [self setTitlePositionAdjustment:UIOffsetZero forBarMetrics:UIBarMetricsDefault];
+    [self setTitlePositionAdjustment:UIOffsetZero forBarMetrics:UIBarMetricsDefault];
+    //: [self setBackgroundVerticalPositionAdjustment:0 forBarMetrics:UIBarMetricsDefault];
+    [self setBackgroundVerticalPositionAdjustment:0 forBarMetrics:UIBarMetricsDefault];
+    //: [self setBackButtonBackgroundVerticalPositionAdjustment:0 forBarMetrics:UIBarMetricsDefault];
+    [self setBackButtonBackgroundVerticalPositionAdjustment:0 forBarMetrics:UIBarMetricsDefault];
 }
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 // ParseByBreakPerformCommentUtil.h
 // ParseByBreakPerform
@@ -6,33 +8,52 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class NIMQuickComment;
 @class NIMQuickComment;
+//: @class FlameEnrichGorgeWarm;
 @class FlameEnrichGorgeWarm;
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface FromMonitorForward : NSObject
 @interface FromMonitorForward : NSObject
 
-+ (UIFont *)commentFont;
+//: + (NSString *)commentContent:(NIMQuickComment *)comment;
++ (NSString *)send:(NIMQuickComment *)comment;
 
-+ (NSString *)commentContent:(NIMQuickComment *)comment;
+//: + (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
++ (NIMQuickComment * _Nullable)safely:(NSInteger )keyIndex
+                                      //: keys:(NSArray *)keys
+                                      modeFrom:(NSArray *)keys
+                                  //: comments:(NSMapTable *)map;
+                                  be:(NSMapTable *)map;
+//: + (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
++ (CGSize)supply:(NIMQuickComment *)comment;
 
-+ (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
+//: + (FlameEnrichGorgeWarm *)newCommentLabel;
++ (FlameEnrichGorgeWarm *)snapshotBounce;
 
-+ (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
+//: + (CGSize)containerSizeWithComments:(NSMapTable *)comments;
++ (CGSize)parent:(NSMapTable *)comments;
 
-+ (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
+//: + (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
++ (CGSize)ultimateAcrossComments:(NSArray<NIMQuickComment *> *)comments;
 
-+ (CGSize)containerSizeWithComments:(NSMapTable *)comments;
+//: + (UIFont *)commentFont;
++ (UIFont *)character;
 
-+ (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
-                                      keys:(NSArray *)keys
-                                  comments:(NSMapTable *)map;
 
-+ (FlameEnrichGorgeWarm *)newCommentLabel;
+//: + (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
++ (NSString *)cancel:(NSArray<NIMQuickComment *> *)comments;
 
-+ (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
+//: + (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
++ (NSArray *)expand:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

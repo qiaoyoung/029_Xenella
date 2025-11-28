@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TeamCardRowItem.h
 //  NIM
@@ -6,39 +8,61 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import "OnEntryDecorateMask.h"
 #import "OnEntryDecorateMask.h"
 
+//: typedef void(^NIMTeamCardRowSelectedBlock)(id <YearShuffleWord> item);
 typedef void(^NIMTeamCardRowSelectedBlock)(id <YearShuffleWord> item);
 
+//: @interface UnitPresent : NSObject
 @interface UnitPresent : NSObject
 
-@property(nonatomic,copy) NSString *title;
+//: @property(nonatomic,assign) SEL action;
+@property(nonatomic,assign) SEL prepareRoot;
+//: @property(nonatomic,copy) NSString *title;
+@property(nonatomic,copy) NSString *primeMember;
 
-@property(nonatomic,copy) NSString *subTitle;
+//: @property(nonatomic,copy) UIImage *img;
+@property(nonatomic,copy) UIImage *yield;
 
-@property(nonatomic,copy) UIImage *img;
+//: @property(nonatomic,strong) id value;
+@property(nonatomic,strong) id pariahDog;
 
-@property(nonatomic,assign) CGFloat rowHeight;
+//: @property(nonatomic,assign) BOOL selected;
+@property(nonatomic,assign) BOOL skip;
 
-@property(nonatomic,assign) SEL action;
+@property(nonatomic,copy) NSString *agree;
 
-@property(nonatomic,assign) BOOL actionDisabled;
+//: @property(nonatomic,assign) BOOL switchOn;
+@property(nonatomic,assign) BOOL medium;
 
-@property(nonatomic,assign) BOOL disableUserInteraction;
+//: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
+@property(nonatomic,strong) NIMTeamCardRowSelectedBlock block;
 
-@property(nonatomic,assign) AcrossAroundSphere type;
+//: @property(nonatomic,assign) BOOL actionDisabled;
+@property(nonatomic,assign) BOOL volumeEnables;
 
-@property(nonatomic,assign) BOOL switchOn;
+//: @property(nonatomic,copy) NSString *subTitle;
+@property(nonatomic,copy) NSString *appropriate;
+//: @property(nonatomic,assign) NSInteger identify;
+@property(nonatomic,assign) NSInteger regularize;
 
-@property(nonatomic,strong) id value;
+@property(nonatomic,assign) BOOL object;
 
-@property(nonatomic,assign) NSInteger identify;
+//: @property(nonatomic,assign) AcrossAroundSphere type;
+@property(nonatomic,assign) AcrossAroundSphere secure;
 
-@property(nonatomic,strong) NSMutableArray <id <YearShuffleWord>> *optionItems;
+//: @property(nonatomic,strong) NSMutableArray <id <YearShuffleWord>> *optionItems;
+@property(nonatomic,strong) NSMutableArray <id <YearShuffleWord>> *jockeyCap;
 
-@property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
+//: @property(nonatomic,assign) CGFloat rowHeight;
+@property(nonatomic,assign) CGFloat sequenceReject;
 
-@property(nonatomic,assign) BOOL selected;
+//: @property(nonatomic,assign) BOOL disableUserInteraction;
+@property(nonatomic,assign) BOOL nobbleHourTotaleraction;
 
+//: @end
 @end

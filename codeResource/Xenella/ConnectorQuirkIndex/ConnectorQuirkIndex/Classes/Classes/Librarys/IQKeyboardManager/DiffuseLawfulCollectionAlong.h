@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DiffuseLawfulCollectionAlong.h
 //  https://github.com/hackiftekhar/ContinueRunLight
@@ -21,41 +23,50 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "InsideCrestMake.h"
 #import "InsideCrestMake.h"
-
 
 /**
  DiffuseLawfulCollectionAlong for ContinueRunLight.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface DiffuseLawfulCollectionAlong : UIToolbar <UIInputViewAudioFeedback>
 @interface DiffuseLawfulCollectionAlong : UIToolbar <UIInputViewAudioFeedback>
 
 /**
  Previous bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *previousBarButton;
+/**
+ Fixed space bar button of toolbar.
+ */
+//: @property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *fixedSpaceBarButton;
+@property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *eliminateButton;
+
+@property(nonnull, nonatomic, strong, readonly) InsideCrestMake *fastener;
 
 /**
  Next bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *nextBarButton;
-
-/**
- Title bar button of toolbar.
- */
-@property(nonnull, nonatomic, strong, readonly) InsideCrestMake *titleBarButton;
+//: @property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *nextBarButton;
+@property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *point;
+//: @property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *previousBarButton;
+@property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *receive;
 
 /**
  Done bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *doneBarButton;
+//: @property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *doneBarButton;
+@property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *condition;
 
 /**
- Fixed space bar button of toolbar.
+ Title bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) DismissMarkStopConsolidate *fixedSpaceBarButton;
+//: @property(nonnull, nonatomic, strong, readonly) InsideCrestMake *titleBarButton;
+@property(nonnull, nonatomic, strong, readonly) InsideCrestMake *fishingVesselFastener;
 
+//: @end
 @end
-

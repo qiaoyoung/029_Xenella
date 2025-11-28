@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  FairyPaginateManager.h
 //
@@ -20,15 +22,20 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
 //! Project version number for FairyPaginateManager.
+
+// __M_A_C_R_O__
+
+//: FOUNDATION_EXPORT double FairyPaginateManagerVersionNumber;
 FOUNDATION_EXPORT double FairyPaginateManagerVersionNumber;
 
 //! Project version string for FairyPaginateManager.
+//: FOUNDATION_EXPORT const unsigned char FairyPaginateManagerVersionString[];
 FOUNDATION_EXPORT const unsigned char FairyPaginateManagerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FairyPaginateManager/PublicHeader.h>
 
+//: #import <FairyPaginateManager/UINavigationController+FairyPaginateManager.h>
 #import <FairyPaginateManager/UINavigationController+FairyPaginateManager.h>

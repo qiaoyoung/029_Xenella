@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  USERSessionMsgHelper.h
 //  NIMDemo
@@ -6,53 +8,84 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class DownTexturedVisitor;
 @class DownTexturedVisitor;
+//: @class TacticFindTransformable;
 @class TacticFindTransformable;
+//: @class StorageAirflowBridge;
 @class StorageAirflowBridge;
+//: @class TooltipMultiplyPoint;
 @class TooltipMultiplyPoint;
+//: @class TactfulFormatLoadFabric;
 @class TactfulFormatLoadFabric;
+//: @class MirrorAccountContextCross;
 @class MirrorAccountContextCross;
+//: @class StairStartQuality;
 @class StairStartQuality;
 
+//: @interface MutualFacadeEnvelopeThickRiver : NSObject
 @interface MutualFacadeEnvelopeThickRiver : NSObject
 
-+ (NIMMessage *)msgWithText:(NSString *)text;
+//: + (NIMMessage *)msgWithJenKenPon:(DownTexturedVisitor *)attachment;
++ (NIMMessage *)loadSound:(DownTexturedVisitor *)attachment;
 
-+ (NIMMessage *)msgWithImage:(UIImage *)image;
+//: + (NIMMessage *)msgWithMultiRetweetAttachment:(MirrorAccountContextCross *)attachment;
++ (NIMMessage *)fragment:(MirrorAccountContextCross *)attachment;
 
-+ (NIMMessage *)msgWithImagePath:(NSString *)path;
+//: + (NIMMessage *)msgWithImage:(UIImage *)image;
++ (NIMMessage *)beneath:(UIImage *)image;
 
-+ (NIMMessage *)msgWithAudio:(NSString *)filePath;
+//: + (NIMMessage *)msgWithSnapchatAttachment:(TacticFindTransformable *)attachment;
++ (NIMMessage *)build:(TacticFindTransformable *)attachment;
 
-+ (NIMMessage *)msgWithVideo:(NSString *)filePath;
+//: + (NIMMessage *)msgWithVideo:(NSString *)filePath;
++ (NIMMessage *)board:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithJenKenPon:(DownTexturedVisitor *)attachment;
+//: + (NIMMessage *)msgWithFilePath:(NSString *)path;
++ (NIMMessage *)working:(NSString *)path;
 
-+ (NIMMessage *)msgWithSnapchatAttachment:(TacticFindTransformable *)attachment;
+//: + (NIMMessage *)msgWithFileData:(NSData *)data extension:(NSString *)extension;
++ (NIMMessage *)snapExtension:(NSData *)data picture:(NSString *)extension;
 
-+ (NIMMessage *)msgWithWhiteboardAttachment:(StorageAirflowBridge *)attachment;
+//: + (NIMMessage *)msgWithRedPacketTip:(TactfulFormatLoadFabric *)attachment;
++ (NIMMessage *)dark:(TactfulFormatLoadFabric *)attachment;
 
-+ (NIMMessage *)msgWithFilePath:(NSString *)path;
+//: + (NIMMessage *)msgWithWhiteboardAttachment:(StorageAirflowBridge *)attachment;
++ (NIMMessage *)withWhiteboardWire:(StorageAirflowBridge *)attachment;
 
-+ (NIMMessage *)msgWithFileData:(NSData *)data extension:(NSString *)extension;
+//: + (NIMMessage *)msgWithImagePath:(NSString *)path;
++ (NIMMessage *)positionCutawayDrawingPath:(NSString *)path;
 
-+ (NIMMessage *)msgWithTip:(NSString *)tip;
+//: + (NIMMessage *)msgWithShareCard:(StairStartQuality *)attachment;
++ (NIMMessage *)pick:(StairStartQuality *)attachment;
 
-+ (NIMMessage *)msgWithTip:(NSString *)tip
-              revokeAttach:(NSString *)revokeAttach
-         revokeCallbackExt:(NSString *)revokeCallbackExt;
+//: + (NIMMessage *)msgWithRevocationMessage:(NIMMessage *)revocationMessage;
++ (NIMMessage *)revocationWithMailMessage:(NIMMessage *)revocationMessage;
 
-+ (NIMMessage *)msgWithRedPacket:(TooltipMultiplyPoint *)attachment;
 
-+ (NIMMessage *)msgWithRedPacketTip:(TactfulFormatLoadFabric *)attachment;
+//: + (NIMMessage *)msgWithTip:(NSString *)tip
++ (NIMMessage *)grade:(NSString *)tip
+              //: revokeAttach:(NSString *)revokeAttach
+              representation_strong:(NSString *)revokeAttach
+         //: revokeCallbackExt:(NSString *)revokeCallbackExt;
+         waste:(NSString *)revokeCallbackExt;
+//: + (NIMMessage *)msgWithAudio:(NSString *)filePath;
++ (NIMMessage *)monthTransaction:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithMultiRetweetAttachment:(MirrorAccountContextCross *)attachment;
+//: + (NIMMessage *)msgWithTip:(NSString *)tip;
++ (NIMMessage *)back:(NSString *)tip;
 
-+ (NIMMessage *)msgWithRevocationMessage:(NIMMessage *)revocationMessage;
+//: + (NIMMessage *)msgWithRedPacket:(TooltipMultiplyPoint *)attachment;
++ (NIMMessage *)aPortion:(TooltipMultiplyPoint *)attachment;
 
-+ (NIMMessage *)msgWithShareCard:(StairStartQuality *)attachment;
+//: + (NIMMessage *)msgWithText:(NSString *)text;
++ (NIMMessage *)target:(NSString *)text;
 
+//: @end
 @end

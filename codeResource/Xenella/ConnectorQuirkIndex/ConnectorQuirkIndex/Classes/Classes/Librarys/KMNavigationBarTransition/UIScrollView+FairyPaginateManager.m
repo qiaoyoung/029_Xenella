@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIScrollView+FairyPaginateManager.m
 //
@@ -21,29 +23,44 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "UIScrollView+FairyPaginateManager.h"
 #import "UIScrollView+FairyPaginateManager.h"
+//: #import "UIScrollView+FairyPaginateManager_internal.h"
 #import "UIScrollView+FairyPaginateManager_internal.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
+//: #import "LushSignerVia.h"
 #import "LushSignerVia.h"
 
+//: @implementation UIScrollView (FairyPaginateManager)
 @implementation UIScrollView (FairyPaginateManager)
 
-#ifdef __IPHONE_11_0
-- (UIScrollViewContentInsetAdjustmentBehavior)km_originalContentInsetAdjustmentBehavior {
+
+//: - (void)setKm_originalContentInsetAdjustmentBehavior:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
+- (void)setBrotherFind:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
+    //: objc_setAssociatedObject(self, @selector(km_originalContentInsetAdjustmentBehavior), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(brotherFind), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: - (UIScrollViewContentInsetAdjustmentBehavior)km_originalContentInsetAdjustmentBehavior {
+- (UIScrollViewContentInsetAdjustmentBehavior)brotherFind {
+    //: return [objc_getAssociatedObject(self, _cmd) integerValue];
     return [objc_getAssociatedObject(self, _cmd) integerValue];
 }
 
-- (void)setKm_originalContentInsetAdjustmentBehavior:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
-    objc_setAssociatedObject(self, @selector(km_originalContentInsetAdjustmentBehavior), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (BOOL)km_shouldRestoreContentInsetAdjustmentBehavior {
+//: - (BOOL)km_shouldRestoreContentInsetAdjustmentBehavior {
+- (BOOL)createCollection {
+    //: return [objc_getAssociatedObject(self, _cmd) boolValue];
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
-- (void)setKm_shouldRestoreContentInsetAdjustmentBehavior:(BOOL)isShould {
-    objc_setAssociatedObject(self, @selector(km_shouldRestoreContentInsetAdjustmentBehavior), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//: - (void)setKm_shouldRestoreContentInsetAdjustmentBehavior:(BOOL)isShould {
+- (void)setCreateCollection:(BOOL)isShould {
+    //: objc_setAssociatedObject(self, @selector(km_shouldRestoreContentInsetAdjustmentBehavior), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(createCollection), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-#endif
 
+
+//: @end
 @end

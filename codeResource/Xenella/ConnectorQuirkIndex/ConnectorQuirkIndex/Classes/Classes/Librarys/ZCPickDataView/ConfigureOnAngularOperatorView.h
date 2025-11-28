@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AttendanceDatePickerView.h
 //  ProjectK
@@ -6,42 +8,69 @@
 //  Copyright (c) 2014年 Beartech. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-Class object_getClass(id object);
 
+//: Class object_getClass(id object);
+Class skyGiven(id object);
+
+//: @protocol ConfigureOnAngularOperatorViewDelegate;
 @protocol ConfigureOnAngularOperatorViewDelegate;
 
+//: @interface ConfigureOnAngularOperatorView : UIView{
 @interface ConfigureOnAngularOperatorView : UIView{
-    UIDatePicker *datePicker;
-    UIButton *_blackBackgroundButton;
-    
-    Class delegateClass;
+    //: UIDatePicker *datePicker;
+    UIDatePicker *birthday;
+    //: UIButton *_blackBackgroundButton;
+    UIButton *_prairieFire;
+
+    //: Class delegateClass;
+    Class ringArray;
+    //: __unsafe_unretained id<ConfigureOnAngularOperatorViewDelegate> _delegate;
     __unsafe_unretained id<ConfigureOnAngularOperatorViewDelegate> _delegate;
 }
 
-@property (nonatomic,assign) id<ConfigureOnAngularOperatorViewDelegate> delegate;
-@property (nonatomic,retain) UIDatePicker *datePicker;
-@property (nonatomic,retain) UIButton *blackBackgroundButton;
-@property (nonatomic, strong) UILabel *titleL;
-@property (nonatomic ,strong) NSString *titleString;
+//: @property (nonatomic,assign) id<ConfigureOnAngularOperatorViewDelegate> delegate;
+@property (nonatomic,assign) id<ConfigureOnAngularOperatorViewDelegate> uponBehaviorEnrichAccelerates;
+//: @property (nonatomic,retain) UIButton *blackBackgroundButton;
+@property (nonatomic,retain) UIButton *simultaneouslyButton;
+@property (nonatomic, strong) UILabel *drag;
+//: @property (nonatomic,retain) UIDatePicker *datePicker;
+@property (nonatomic,retain) UIDatePicker *view;
+//: @property (nonatomic, strong) UILabel *titleL;
+@property (nonatomic, strong) UILabel *leanDrag;
+//: @property (nonatomic ,strong) NSString *titleString;
+@property (nonatomic ,strong) NSString *chalkLineGiven;
 
-+ (void)showInView:(UIView*)view delegate:(id<ConfigureOnAngularOperatorViewDelegate>)delegate  minDate:(NSDate*)minDate maxDate:(NSDate*)maxDate showDate:(NSDate*)showDate;
+//: + (void)showInView:(UIView*)view delegate:(id<ConfigureOnAngularOperatorViewDelegate>)delegate minDate:(NSDate*)minDate maxDate:(NSDate*)maxDate showDate:(NSDate*)showDate;
++ (void)level:(UIView*)view inputScour:(id<ConfigureOnAngularOperatorViewDelegate>)delegate magnitudeerlinkingUnit:(NSDate*)minDate appropriate:(NSDate*)maxDate cling:(NSDate*)showDate;
 
-+ (id)showWithDelegate:(id<ConfigureOnAngularOperatorViewDelegate>)delegate minDate:(NSDate*)minDate maxDate:(NSDate*)maxDate showDate:(NSDate*)showDate;
+//: - (void)setDate:(NSDate*)date;
+- (void)setPostpose:(NSDate*)date;
 
-- (void)setDate:(NSDate*)date;
+//: - (void)changeDelegate:(id<ConfigureOnAngularOperatorViewDelegate>)delegate;
+- (void)liberateLeap:(id<ConfigureOnAngularOperatorViewDelegate>)delegate;
 
-- (void)show;
+//: + (id)showWithDelegate:(id<ConfigureOnAngularOperatorViewDelegate>)delegate minDate:(NSDate*)minDate maxDate:(NSDate*)maxDate showDate:(NSDate*)showDate;
++ (id)dateFlexible:(id<ConfigureOnAngularOperatorViewDelegate>)delegate output:(NSDate*)minDate trait:(NSDate*)maxDate maturityDate:(NSDate*)showDate;
 
-- (void)changeDelegate:(id<ConfigureOnAngularOperatorViewDelegate>)delegate;
+//: - (void)show;
+- (void)deviceAnnouncement;
 
+//: @end
 @end
 
 
+//: @protocol ConfigureOnAngularOperatorViewDelegate <NSObject>
 @protocol ConfigureOnAngularOperatorViewDelegate <NSObject>
+//: @optional
 @optional
 
-- (void)dismissDataPickerView;
-- (void)datePick:(ConfigureOnAngularOperatorView *)pickView doneWithDate:(NSDate *)date;
+//: - (void)dismissDataPickerView;
+- (void)determinateBig;
+//: - (void)datePick:(ConfigureOnAngularOperatorView *)pickView doneWithDate:(NSDate *)date;
+- (void)narrow:(ConfigureOnAngularOperatorView *)pickView linguisticUnit:(NSDate *)date;
 
+//: @end
 @end

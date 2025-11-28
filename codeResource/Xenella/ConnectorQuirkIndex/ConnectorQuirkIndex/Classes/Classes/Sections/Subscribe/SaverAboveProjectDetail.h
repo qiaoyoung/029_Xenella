@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SaverAboveProjectDetail.h
 //  NIM
@@ -6,17 +8,25 @@
 //  Copyright © 2017年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
 
+//: @interface SaverAboveProjectDetail : NSObject
 @interface SaverAboveProjectDetail : NSObject
 
-+ (instancetype)sharedManager;
+//: - (void)subscribeTempDecompressRealWriteState:(NSString *)userId;
+- (void)black:(NSString *)userId;
 
-- (void)start;
+//: - (void)start;
+- (void)analogDigitalConverterStart;
 
-- (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+//: + (instancetype)sharedManager;
++ (instancetype)passingShould;
 
-- (void)subscribeTempDecompressRealWriteState:(NSString *)userId;
+//: - (void)unsubscribeTempDecompressRealWriteState:(NSString *)userId;
+- (void)world:(NSString *)userId;
 
-- (void)unsubscribeTempDecompressRealWriteState:(NSString *)userId;
+//: - (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+- (NSDictionary<NIMSubscribeEvent *, NSString *> *)resourceMode:(NSInteger)type;
 
+//: @end
 @end

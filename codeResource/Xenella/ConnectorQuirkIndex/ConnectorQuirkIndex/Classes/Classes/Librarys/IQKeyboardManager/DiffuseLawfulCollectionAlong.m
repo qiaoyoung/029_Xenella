@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DiffuseLawfulCollectionAlong.m
 //  https://github.com/hackiftekhar/ContinueRunLight
@@ -21,138 +23,226 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "DiffuseLawfulCollectionAlong.h"
 #import "DiffuseLawfulCollectionAlong.h"
+//: #import "ContinueRunLightConstantsInternal.h"
 #import "ContinueRunLightConstantsInternal.h"
+//: #import "UIView+LawfulModuleArray.h"
 #import "UIView+LawfulModuleArray.h"
 
-
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation DiffuseLawfulCollectionAlong
 @implementation DiffuseLawfulCollectionAlong
-@synthesize previousBarButton = _previousBarButton;
-@synthesize nextBarButton = _nextBarButton;
-@synthesize titleBarButton = _titleBarButton;
-@synthesize doneBarButton = _doneBarButton;
-@synthesize fixedSpaceBarButton = _fixedSpaceBarButton;
+//: @synthesize previousBarButton = _previousBarButton;
+@synthesize receive = _listTranslate;
+//: @synthesize nextBarButton = _nextBarButton;
+@synthesize point = _barTitle;
+//: @synthesize titleBarButton = _titleBarButton;
+@synthesize fastener = _blue;
+//: @synthesize doneBarButton = _doneBarButton;
+@synthesize condition = _familyFill;
+//: @synthesize fixedSpaceBarButton = _fixedSpaceBarButton;
+@synthesize eliminateButton = _list;
 
--(void)initialize
+- (InsideCrestMake *)towardSecret:(InsideCrestMake *)fishingVesselFastener {
+    //: OC_CUSTOM_PROPERTY_INJECT
+    _fishingVesselFastener = fishingVesselFastener;
+    return fishingVesselFastener;
+}
+
+//: -(void)dealloc
+-(void)dealloc
 {
-    [self sizeToFit];
-    self.autoresizingMask = UIViewAutoresizingFlexibleWidth;// | UIViewAutoresizingFlexibleHeight;
-    self.translucent = YES;
-    self.barTintColor = nil;
+    //: self.items = nil;
+    self.items = nil;
+	[self setFishingVesselFastener:self.fastener];
+}
 
+//: - (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    //: self = [super initWithFrame:frame];
+    self = [super initWithFrame:frame];
+	[self setFishingVesselFastener:self.fastener];
+    //: if (self)
+    if (self)
+    {
+        //: [self initialize];
+        [self genitor];
+    }
+    //: return self;
+    return self;
+}
+
+//: -(DismissMarkStopConsolidate *)previousBarButton
+-(DismissMarkStopConsolidate *)receive
+{
+    //: if (_previousBarButton == nil)
+    if (_listTranslate == nil)
+    {
+        //: _previousBarButton = [[DismissMarkStopConsolidate alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
+        _listTranslate = [[DismissMarkStopConsolidate alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
+	[self setFishingVesselFastener:self.fastener];
+    }
+
+    //: return _previousBarButton;
+    return _listTranslate;
+}
+
+//: -(InsideCrestMake *)titleBarButton
+-(InsideCrestMake *)fastener
+{
+    //: if (_titleBarButton == nil)
+    if (_blue == nil)
+    {
+        //: _titleBarButton = [[InsideCrestMake alloc] initWithTitle:nil];
+        _blue = [[InsideCrestMake alloc] initWithSandName:nil];
+    }
+
+    //: return _titleBarButton;
+    return _blue;
+}
+
+//: -(DismissMarkStopConsolidate *)doneBarButton
+-(DismissMarkStopConsolidate *)condition
+{
+    //: if (_doneBarButton == nil)
+    if (_familyFill == nil)
+    {
+        //: _doneBarButton = [[DismissMarkStopConsolidate alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:nil action:nil];
+        _familyFill = [[DismissMarkStopConsolidate alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:nil action:nil];
+	[self setFishingVesselFastener:self.fastener];
+    }
+
+    //: return _doneBarButton;
+    return _familyFill;
+}
+
+//: - (instancetype)initWithCoder:(NSCoder *)coder
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    //: self = [super initWithCoder:coder];
+    self = [super initWithCoder:coder];
+	[self setFishingVesselFastener:self.fastener];
+    //: if (self)
+    if (self)
+    {
+        //: [self initialize];
+        [self genitor];
+    }
+    //: return self;
+    return self;
+}
+
+//: -(void)initialize
+-(void)genitor
+{
+    //: [self sizeToFit];
+    [self sizeToFit];
+    //: self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	[self setFishingVesselFastener:self.fastener];// | UIViewAutoresizingFlexibleHeight;
+    //: self.translucent = YES;
+    self.translucent = YES;
+    //: self.barTintColor = nil;
+    self.barTintColor = nil;
+	[self setFishingVesselFastener:self.fastener];
+
+    //: NSArray <NSNumber*> *positions = @[@(UIBarPositionAny),@(UIBarPositionBottom),@(UIBarPositionTop),@(UIBarPositionTopAttached)];
     NSArray <NSNumber*> *positions = @[@(UIBarPositionAny),@(UIBarPositionBottom),@(UIBarPositionTop),@(UIBarPositionTopAttached)];
 
+    //: for (NSNumber *position in positions)
     for (NSNumber *position in positions)
     {
-        UIToolbarPosition toolbarPosition = [position unsignedIntegerValue];
+        //: UIBarPosition toolbarPosition = [position unsignedIntegerValue];
+        UIBarPosition toolbarPosition = [position unsignedIntegerValue];
 
+        //: [self setBackgroundImage:nil forToolbarPosition:toolbarPosition barMetrics:UIBarMetricsDefault];
         [self setBackgroundImage:nil forToolbarPosition:toolbarPosition barMetrics:UIBarMetricsDefault];
+        //: [self setShadowImage:nil forToolbarPosition:toolbarPosition];
         [self setShadowImage:nil forToolbarPosition:toolbarPosition];
     }
 }
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self)
-    {
-        [self initialize];
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self)
-    {
-        [self initialize];
-    }
-    return self;
-}
-
--(void)dealloc
-{
-    self.items = nil;
-}
-
--(DismissMarkStopConsolidate *)previousBarButton
-{
-    if (_previousBarButton == nil)
-    {
-        _previousBarButton = [[DismissMarkStopConsolidate alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
-    }
-    
-    return _previousBarButton;
-}
-
--(DismissMarkStopConsolidate *)nextBarButton
-{
-    if (_nextBarButton == nil)
-    {
-        _nextBarButton = [[DismissMarkStopConsolidate alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
-    }
-    
-    return _nextBarButton;
-}
-
--(InsideCrestMake *)titleBarButton
-{
-    if (_titleBarButton == nil)
-    {
-        _titleBarButton = [[InsideCrestMake alloc] initWithTitle:nil];
-    }
-    
-    return _titleBarButton;
-}
-
--(DismissMarkStopConsolidate *)doneBarButton
-{
-    if (_doneBarButton == nil)
-    {
-        _doneBarButton = [[DismissMarkStopConsolidate alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:nil action:nil];
-    }
-    
-    return _doneBarButton;
-}
-
--(DismissMarkStopConsolidate *)fixedSpaceBarButton
-{
-    if (_fixedSpaceBarButton == nil)
-    {
-        _fixedSpaceBarButton = [[DismissMarkStopConsolidate alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        [_fixedSpaceBarButton setWidth:6];
-    }
-    
-    return _fixedSpaceBarButton;
-}
-
--(CGSize)sizeThatFits:(CGSize)size
-{
-    CGSize sizeThatFit = [super sizeThatFits:size];
-
-    sizeThatFit.height = 44;
-    
-    return sizeThatFit;
-}
-
+//: -(void)setTintColor:(UIColor *)tintColor
 -(void)setTintColor:(UIColor *)tintColor
 {
+    //: [super setTintColor:tintColor];
     [super setTintColor:tintColor];
 
+    //: for (UIBarButtonItem *item in self.items)
     for (UIBarButtonItem *item in self.items)
     {
+        //: [item setTintColor:tintColor];
         [item setTintColor:tintColor];
     }
 }
 
+//: @end
+
+- (void)setFishingVesselFastener:(InsideCrestMake *)fishingVesselFastener {
+    //: OC_CUSTOM_PROPERTY_INJECT
+    _fishingVesselFastener = fishingVesselFastener;
+}
+
+//: -(DismissMarkStopConsolidate *)fixedSpaceBarButton
+-(DismissMarkStopConsolidate *)eliminateButton
+{
+    //: if (_fixedSpaceBarButton == nil)
+    if (_list == nil)
+    {
+        //: _fixedSpaceBarButton = [[DismissMarkStopConsolidate alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        _list = [[DismissMarkStopConsolidate alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+	[self setFishingVesselFastener:self.fastener];
+        //: [_fixedSpaceBarButton setWidth:6];
+        [_list setWidth:6];
+    }
+
+    //: return _fixedSpaceBarButton;
+    return _list;
+}
+
+//: -(CGSize)sizeThatFits:(CGSize)size
+-(CGSize)sizeThatFits:(CGSize)size
+{
+    //: CGSize sizeThatFit = [super sizeThatFits:size];
+    CGSize sizeThatFit = [super sizeThatFits:size];
+
+    //: sizeThatFit.height = 44;
+    sizeThatFit.height = 44;
+	[self setFishingVesselFastener:self.fastener];
+
+    //: return sizeThatFit;
+    return sizeThatFit;
+}
+
+//: #pragma mark - UIInputViewAudioFeedback delegate
 #pragma mark - UIInputViewAudioFeedback delegate
+//: - (BOOL) enableInputClicksWhenVisible
 - (BOOL) enableInputClicksWhenVisible
 {
-	return YES;
+ //: return YES;
+ return YES;
 }
+
+//: -(DismissMarkStopConsolidate *)nextBarButton
+-(DismissMarkStopConsolidate *)point
+{
+    //: if (_nextBarButton == nil)
+    if (_barTitle == nil)
+    {
+        //: _nextBarButton = [[DismissMarkStopConsolidate alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
+        _barTitle = [[DismissMarkStopConsolidate alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
+	[self setFishingVesselFastener:self.fastener];
+    }
+
+    //: return _nextBarButton;
+    return _barTitle;
+}
+
 
 @end

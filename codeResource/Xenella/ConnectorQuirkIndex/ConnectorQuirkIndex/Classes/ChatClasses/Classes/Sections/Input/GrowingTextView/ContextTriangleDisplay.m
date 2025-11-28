@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ContextTriangleDisplay.m
 // ParseByBreakPerform
@@ -6,102 +8,169 @@
 //  Copyright © 2016年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "ContextTriangleDisplay.h"
 #import "ContextTriangleDisplay.h"
 
+//: @interface ContextTriangleDisplay()
 @interface ContextTriangleDisplay()
 
+//: @property (nonatomic,assign) BOOL displayPlaceholder;
 @property (nonatomic,assign) BOOL displayPlaceholder;
 
+//: @end
 @end
 
+//: @implementation ContextTriangleDisplay
 @implementation ContextTriangleDisplay
 
-- (instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer *)textContainer
-{
-    self = [super initWithFrame:frame textContainer:textContainer];
-    if (self) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChangeNotification:) name:UITextViewTextDidChangeNotification object:self];
-    }
-    return self;
-}
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (void)setText:(NSString *)text
-{
-    [super setText:text];
-    [self updatePlaceholder];
-}
-
-- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
-{
-    if(action ==@selector(copy:) ||
-       
-       action ==@selector(selectAll:)||
-       
-       action ==@selector(cut:)||
-       
-       action ==@selector(select:)||
-       
-       action ==@selector(paste:)) {
-        
-        return[super canPerformAction:action withSender:sender];
-    }
-    return NO;
-}
-
-- (void)setPlaceholderAttributedText:(NSAttributedString *)placeholderAttributedText
-{
-    _placeholderAttributedText = placeholderAttributedText;
-    [self setNeedsDisplay];
-}
-
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
-    [self setNeedsDisplay];
-}
-
-
-
+//: #pragma mark - Private
 #pragma mark - Private
 
+//: - (void)setDisplayPlaceholder:(BOOL)displayPlaceholder
 - (void)setDisplayPlaceholder:(BOOL)displayPlaceholder
 {
+    //: BOOL oldValue = _displayPlaceholder;
     BOOL oldValue = _displayPlaceholder;
+    //: _displayPlaceholder = displayPlaceholder;
     _displayPlaceholder = displayPlaceholder;
+	[self setTendencyAttributed:self.placeholderAttributedText];
+    //: if (oldValue != self.displayPlaceholder) {
     if (oldValue != self.displayPlaceholder) {
+        //: [self setNeedsDisplay];
         [self setNeedsDisplay];
     }
 }
 
-- (void)updatePlaceholder
+//: @end
+
+- (void)setTendencyAttributed:(NSAttributedString *)tendencyAttributed {
+    //: OC_CUSTOM_PROPERTY_INJECT
+    _tendencyAttributed = tendencyAttributed;
+}
+
+//: - (void)setPlaceholderAttributedText:(NSAttributedString *)placeholderAttributedText
+- (void)setPlaceholderAttributedText:(NSAttributedString *)placeholderAttributedText
 {
+    //: _placeholderAttributedText = placeholderAttributedText;
+    _placeholderAttributedText = placeholderAttributedText;
+	[self setTendencyAttributed:self.placeholderAttributedText];
+    //: [self setNeedsDisplay];
+    [self setNeedsDisplay];
+}
+
+//: - (void)setText:(NSString *)text
+- (void)setText:(NSString *)text
+{
+    //: [super setText:text];
+    [super setText:text];
+    //: [self updatePlaceholder];
+    [self resistance];
+}
+
+//: - (void)dealloc
+- (void)dealloc
+{
+    //: [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (NSAttributedString *)sinceCable:(NSAttributedString *)tendencyAttributed {
+    //: OC_CUSTOM_PROPERTY_INJECT
+    _tendencyAttributed = tendencyAttributed;
+    return tendencyAttributed;
+}
+
+
+
+//: - (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    //: if(action ==@selector(copy:) ||
+    if(action ==@selector(copy:) ||
+
+       //: action ==@selector(selectAll:)||
+       action ==@selector(selectAll:)||
+
+       //: action ==@selector(cut:)||
+       action ==@selector(cut:)||
+
+       //: action ==@selector(select:)||
+       action ==@selector(select:)||
+
+       //: action ==@selector(paste:)) {
+       action ==@selector(paste:)) {
+
+        //: return[super canPerformAction:action withSender:sender];
+        return[super canPerformAction:action withSender:sender];
+    }
+    //: return NO;
+    return NO;
+}
+
+//: - (void)layoutSubviews
+- (void)layoutSubviews
+{
+    //: [super layoutSubviews];
+    [super layoutSubviews];
+    //: [self setNeedsDisplay];
+    [self setNeedsDisplay];
+}
+
+//: - (void)updatePlaceholder
+- (void)resistance
+{
+    //: self.displayPlaceholder = self.text.length == 0;
     self.displayPlaceholder = self.text.length == 0;
+	[self setTendencyAttributed:self.placeholderAttributedText];
 }
 
-- (void)textDidChangeNotification:(NSNotification *)notification
+
+//: - (void)textDidChangeNotification:(NSNotification *)notification
+- (void)signs:(NSNotification *)notification
 {
-    [self updatePlaceholder];
+    //: [self updatePlaceholder];
+    [self resistance];
 }
 
 
+//: - (void)drawRect:(CGRect)rect
 - (void)drawRect:(CGRect)rect
 {
+    //: [super drawRect:rect];
     [super drawRect:rect];
+    //: if (!self.displayPlaceholder) {
     if (!self.displayPlaceholder) {
+        //: return;
         return;
     }
+    //: NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    //: paragraphStyle.alignment = self.textAlignment;
     paragraphStyle.alignment = self.textAlignment;
-    
+
+    //: CGRect targetRect = CGRectMake(5, 8 + self.contentInset.top, self.frame.size.width - self.contentInset.left, self.frame.size.height - self.contentInset.top);
     CGRect targetRect = CGRectMake(5, 8 + self.contentInset.top, self.frame.size.width - self.contentInset.left, self.frame.size.height - self.contentInset.top);
-    
-    NSAttributedString *attributedString = self.placeholderAttributedText;
+
+    //: NSAttributedString *attributedString = self.placeholderAttributedText;
+    NSAttributedString *attributedString = [self sinceCable:self.placeholderAttributedText];
+    //: [attributedString drawInRect:targetRect];
     [attributedString drawInRect:targetRect];
+}
+
+//: - (instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer *)textContainer
+- (instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer *)textContainer
+{
+    //: self = [super initWithFrame:frame textContainer:textContainer];
+    self = [super initWithFrame:frame textContainer:textContainer];
+	[self setTendencyAttributed:self.placeholderAttributedText];
+    //: if (self) {
+    if (self) {
+        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChangeNotification:) name:UITextViewTextDidChangeNotification object:self];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(signs:) name:UITextViewTextDidChangeNotification object:self];
+    }
+    //: return self;
+    return self;
 }
 
 

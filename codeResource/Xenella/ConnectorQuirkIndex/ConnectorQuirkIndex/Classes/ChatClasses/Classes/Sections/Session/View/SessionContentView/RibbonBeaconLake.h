@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMSessionAudioCententView.h
 // ParseByBreakPerform
@@ -6,22 +8,35 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "AgainstLoopForceful.h"
 #import "AgainstLoopForceful.h"
 
+//: @protocol ShaderOwnerMajorSprite <NSObject>
 @protocol ShaderOwnerMajorSprite <NSObject>
--(void)startPlayingAudioUI;  //点击一开始就要显示
+//: -(void)startPlayingAudioUI; 
+-(void)fishingStand; //点击一开始就要显示
+//: @optional
 @optional
-- (void)retryDownloadMsg; //重收消息
+//: - (void)retryDownloadMsg; 
+- (void)vine; //重收消息
+//: @end
 @end
 
+//: @interface RibbonBeaconLake : AgainstLoopForceful
 @interface RibbonBeaconLake : AgainstLoopForceful
 
-@property (nonatomic, strong) UILabel     *audioDurationLable; //语音时长
+//: @property (nonatomic, strong) UILabel *audioDurationLable; 
+@property (nonatomic, strong) UILabel *audioDurationLable;//语音时长
 
-@property (nonatomic, weak) id<ShaderOwnerMajorSprite> audioUIDelegate;
-
+//: @property (nonatomic, strong) UIView *audioBackgroundView;
 @property (nonatomic, strong) UIView *audioBackgroundView;
 
-- (void)setPlaying:(BOOL)isPlaying;
+//: @property (nonatomic, weak) id<ShaderOwnerMajorSprite> audioUIDelegate;
+@property (nonatomic, weak) id<ShaderOwnerMajorSprite> audioUIDelegate;
 
+//: - (void)setPlaying:(BOOL)isPlaying;
+- (void)setYoung:(BOOL)isPlaying;
+
+//: @end
 @end

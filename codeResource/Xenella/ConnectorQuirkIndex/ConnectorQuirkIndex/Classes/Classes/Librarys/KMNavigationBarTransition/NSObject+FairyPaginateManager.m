@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSObject+FairyPaginateManager.m
 //
@@ -21,42 +23,63 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "NSObject+FairyPaginateManager.h"
 #import "NSObject+FairyPaginateManager.h"
+//: #import "UINavigationController+FairyPaginateManager_internal.h"
 #import "UINavigationController+FairyPaginateManager_internal.h"
+//: #import "UINavigationBar+FairyPaginateManager_internal.h"
 #import "UINavigationBar+FairyPaginateManager_internal.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
+//: #import "LushSignerVia.h"
 #import "LushSignerVia.h"
 
+//: @implementation NSObject (FairyPaginateManager)
 @implementation NSObject (FairyPaginateManager)
 
+//: + (void)load {
 + (void)load {
+    //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        LushSignerViaMethod(objc_getClass("_UIBarBackground"),
+    //: _dispatch_once(&onceToken, ^{
+    _dispatch_once(&onceToken, ^{
+        //: LushSignerViaMethod(objc_getClass("_UIBarBackground"),
+        referCanvas(objc_getClass("_UIBarBackground"),
+                        //: @selector(setHidden:),
                         @selector(setHidden:),
+                        //: [self class],
                         [self class],
-                        @selector(km_setHidden:));
+                        //: @selector(km_setHidden:));
+                        @selector(translateIgnore:));
+    //: });
     });
 }
 
-- (void)km_setHidden:(BOOL)hidden {
+//: - (void)km_setHidden:(BOOL)hidden {
+- (void)translateIgnore:(BOOL)hidden {
+    //: UIResponder *responder = (UIResponder *)self;
     UIResponder *responder = (UIResponder *)self;
+    //: while (responder) {
     while (responder) {
-        if ([responder isKindOfClass:[UINavigationBar class]] && ((UINavigationBar *)responder).km_isFakeBar) {
+        //: if ([responder isKindOfClass:[UINavigationBar class]] && ((UINavigationBar *)responder).km_isFakeBar) {
+        if ([responder isKindOfClass:[UINavigationBar class]] && ((UINavigationBar *)responder).enableRoundBaring) {
+            //: return;
             return;
         }
+        //: if ([responder isKindOfClass:[UINavigationController class]]) {
         if ([responder isKindOfClass:[UINavigationController class]]) {
-            [self km_setHidden:((UINavigationController *)responder).km_backgroundViewHidden];
+            //: [self km_setHidden:((UINavigationController *)responder).km_backgroundViewHidden];
+            [self translateIgnore:((UINavigationController *)responder).textHiddenWhens];
+            //: return;
             return;
         }
+        //: responder = responder.nextResponder;
         responder = responder.nextResponder;
     }
-    [self km_setHidden:hidden];
+    //: [self km_setHidden:hidden];
+    [self translateIgnore:hidden];
 }
 
+//: @end
 @end
-
-
-
-
-

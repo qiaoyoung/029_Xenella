@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PerformAggregatorStandBeneath.h
 //  NIM
@@ -15,29 +17,43 @@
 //     "message_count": 1234   //必填,最终写入文件中的消息数
 //   }
 
-
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface PerformAggregatorStandBeneath : NSObject
 @interface PerformAggregatorStandBeneath : NSObject
 
-@property (nonatomic, assign) NSInteger version;
+//: @property (nonatomic, assign) NIMLoginClientType clientType;
+@property (nonatomic, assign) NIMLoginClientType assign;
 
-@property (nonatomic, assign) NIMLoginClientType clientType;
+//: @property (nonatomic, assign) NSInteger totalInfoCount;
+@property (nonatomic, assign) NSInteger rate;
 
-@property (nonatomic, copy) NSString *sdkVersion;
+//: @property (nonatomic, assign) NSInteger version;
+@property (nonatomic, assign) NSInteger angle;
 
-@property (nonatomic, copy) NSString *appVersion;
+//: @property (nonatomic, copy) NSString *sdkVersion;
+@property (nonatomic, copy) NSString *leafHeaven;
 
-@property (nonatomic, assign) NSInteger totalInfoCount;
+@property (nonatomic, assign) NSInteger iconTotal;
+//: @property (nonatomic, copy) NSString *appVersion;
+@property (nonatomic, copy) NSString *unique;
 
-+ (instancetype)initWithDefaultConfig;
+//: + (instancetype)initWithDefaultConfig;
++ (instancetype)initWithCamera;
 
-+ (nullable instancetype)initWithRawContent:(NSData *)data;
+//: - (nullable NSData *)toRawContent;
+- (nullable NSData *)againstContent;
 
-- (nullable NSData *)toRawContent;
+//: + (nullable instancetype)initWithRawContent:(NSData *)data;
++ (nullable instancetype)initWithContainer:(NSData *)data;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

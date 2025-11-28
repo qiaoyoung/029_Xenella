@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TrustworthyAmongStripeNotable.h
 // ParseByBreakPerform
@@ -5,10 +7,14 @@
 //  Created by chris.
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
+// __M_A_C_R_O__
+
+//: @class MysticSnowColorfulComposer;
 @class MysticSnowColorfulComposer;
 
 /**
@@ -16,10 +22,13 @@
  *  @param messages 消息结果集
  *  @discussion 消息结果需要排序，内部按消息结果已经事先排序处理。
  */
+//: typedef void (^NIMKitDataProvideHandler)(NSError *error, NSArray<NIMMessage *> *messages);
 typedef void (^NIMKitDataProvideHandler)(NSError *error, NSArray<NIMMessage *> *messages);
 
+//: @protocol TrustworthyAmongStripeNotable <NSObject>
 @protocol TrustworthyAmongStripeNotable <NSObject>
 
+//: @optional
 @optional
 
 /**
@@ -28,7 +37,8 @@ typedef void (^NIMKitDataProvideHandler)(NSError *error, NSArray<NIMMessage *> *
  *  @param firstMessage 最上部的一条消息，
  *  @discussion 当开始没有数据时，也会触发此回调，firstMessage为nil。
  */
-- (void)pullDown:(NIMMessage *)firstMessage handler:(NIMKitDataProvideHandler)handler;
+//: - (void)pullDown:(NIMMessage *)firstMessage handler:(NIMKitDataProvideHandler)handler;
+- (void)fenceLayerHandler:(NIMMessage *)firstMessage exceptMoment:(NIMKitDataProvideHandler)handler;
 
 
 /**
@@ -36,7 +46,9 @@ typedef void (^NIMKitDataProvideHandler)(NSError *error, NSArray<NIMMessage *> *
  *
  *  @return 是否需要时间戳
  */
-- (BOOL)needTimetag;
+//: - (BOOL)needTimetag;
+- (BOOL)knockAbout;
 
 
+//: @end
 @end

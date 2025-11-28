@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ShimmeringVisitorAttach.h
 //  fanxingxue
@@ -6,24 +8,38 @@
 //  Copyright © 2018年 caoyu. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface ShimmeringVisitorAttach : NSObject
 @interface ShimmeringVisitorAttach : NSObject
-+(BOOL)isLogin;
-+ (void)refrushNewData;
-+ (NSString *)getUserId;
+//: + (NSString *)getLocaleString;
++ (NSString *)transfer;
+//: + (void)saveUserInfo:(id)responseObject;
++ (void)exclusive:(id)responseObject;
+//: + (NSString *)getMobileNumber;
++ (NSString *)sum;
 
-+ (NSString *)getHeaderImageUrl;
-+ (NSString *)getNickName;
-
-
-+ (void)callSevicePhoneNumber;
-+ (NSString *)getMobileNumber;
-
-+ (void)saveUserInfo:(id)responseObject;
-+ (void)logout;
+//: + (void)refrushNewData;
++ (void)adjustment;
+//: + (NSString *)getNickName;
++ (NSString *)fadeOutput;
 
 
-+ (NSString *)getLocaleString;
+//: + (NSString *)getUserId;
++ (NSString *)disabled;
+//: +(BOOL)isLogin;
++(BOOL)commit;
 
+//: + (NSString *)getHeaderImageUrl;
++ (NSString *)shirt;
+//: + (void)logout;
++ (void)tillRange;
+
+
+//: + (void)callSevicePhoneNumber;
++ (void)radiophoneCommand;
+
+//: @end
 @end

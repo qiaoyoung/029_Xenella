@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  BirchRavenFrugalHold.h
 //  NIM
@@ -6,25 +8,33 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define ImageExt   (@"jpg")
-
-
+//: @interface BirchRavenFrugalHold : NSObject
 @interface BirchRavenFrugalHold : NSObject
 
-+ (NSString *)getAppDocumentPath;
+//: + (NSString *)filepathForImage:(NSString *)filename;
++ (NSString *)blink:(NSString *)filename;
 
-+ (NSString *)getAppTempPath;
+//: + (NSString *)userDirectory;
++ (NSString *)associate;
 
-+ (NSString *)userDirectory;
+//: + (NSString *)genFilenameWithExt:(NSString *)ext;
++ (NSString *)wander:(NSString *)ext;
 
-+ (NSString *)genFilenameWithExt:(NSString *)ext;
+//: + (NSString *)filepathForVideo:(NSString *)filename;
++ (NSString *)lowerScatterVideoElect:(NSString *)filename;
 
-+ (NSString *)filepathForVideo:(NSString *)filename;
+//: + (NSString *)filepathForMergeForwardFile:(NSString *)filename;
++ (NSString *)movie:(NSString *)filename;
 
-+ (NSString *)filepathForImage:(NSString *)filename;
+//: + (NSString *)getAppTempPath;
++ (NSString *)smallFade;
 
-+ (NSString *)filepathForMergeForwardFile:(NSString *)filename;
+//: + (NSString *)getAppDocumentPath;
++ (NSString *)flame;
 
+//: @end
 @end

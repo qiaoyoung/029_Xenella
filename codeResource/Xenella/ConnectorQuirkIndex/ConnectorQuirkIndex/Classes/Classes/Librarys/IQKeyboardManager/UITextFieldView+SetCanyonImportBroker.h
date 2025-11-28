@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UITextFieldView+SetCanyonImportBroker.h
 //  https://github.com/hackiftekhar/ContinueRunLight
@@ -21,36 +23,47 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "ContinueRunLightConstants.h"
 #import "ContinueRunLightConstants.h"
+
 /**
  UIView category for managing UITextField/UITextView
  */
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface UIView (SetCanyonImportBroker)
 @interface UIView (SetCanyonImportBroker)
 
 /**
  To set customized distance from keyboard for textField/textView. Can't be less than zero
  */
-@property(nonatomic, assign) CGFloat keyboardDistanceFromTextField;
-
 /**
- If shouldIgnoreSwitchingByNextPrevious is YES then library will ignore this textField/textView while moving to other textField/textView using keyboard toolbar next previous buttons. Default is NO
+ Override resigns Keyboard on touching outside of UITextField/View behavior for this particular textField.
  */
-@property(nonatomic, assign) BOOL ignoreSwitchingByNextPrevious;
+//: @property(nonatomic, assign) JewelMatchWoodInfinity shouldResignOnTouchOutsideMode;
+@property(nonatomic, assign) JewelMatchWoodInfinity attributeAdded;
+
+@property(nonatomic, assign) BOOL graceShorting;
+//: @property(nonatomic, assign) CGFloat keyboardDistanceFromTextField;
+@property(nonatomic, assign) CGFloat performTechnologying;
 
 ///**
 // Override Enable/disable managing distance between keyboard and textField behavior for this particular textField.
 // */
-@property(nonatomic, assign) JewelMatchWoodInfinity enableMode;
+//: @property(nonatomic, assign) JewelMatchWoodInfinity enableMode;
+@property(nonatomic, assign) JewelMatchWoodInfinity searchUniques;
 
 /**
- Override resigns Keyboard on touching outside of UITextField/View behavior for this particular textField.
+ If shouldIgnoreSwitchingByNextPrevious is YES then library will ignore this textField/textView while moving to other textField/textView using keyboard toolbar next previous buttons. Default is NO
  */
-@property(nonatomic, assign) JewelMatchWoodInfinity shouldResignOnTouchOutsideMode;
+//: @property(nonatomic, assign) BOOL ignoreSwitchingByNextPrevious;
+@property(nonatomic, assign) BOOL toeTrim;
 
+//: @end
 @end
 
 ///-------------------------------------------
@@ -60,4 +73,5 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 /**
  Uses default keyboard distance for textField.
  */
-extern CGFloat const kIQUseDefaultKeyboardDistance;
+//: extern CGFloat const kIQUseDefaultKeyboardDistance;
+extern CGFloat const k_turnFormat(NSString *value);

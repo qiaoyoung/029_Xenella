@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  KindRegistryWinterMoor.h
 //  NIM
@@ -6,16 +8,25 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface KindRegistryWinterMoor : UIView
 @interface KindRegistryWinterMoor : UIView
 
-@property(nonatomic, strong) UITableView *tableView;
+//: @property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) UITableView *item;
+//: @property (nonatomic,strong) NSMutableArray *notifications;
+@property (nonatomic,strong) NSMutableArray *findTransaction;
 
-@property (nonatomic,strong) NSMutableArray  *notifications;
+@property(nonatomic, strong) UITableView *resView;
 //@property (nonatomic,strong) NSArray  *notifications;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

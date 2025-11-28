@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSString+NIM.h
 // ParseByBreakPerform
@@ -6,30 +8,45 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface NSString (ParseByBreakPerform)
 @interface NSString (ParseByBreakPerform)
 
-- (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+//: - (UIColor *)nim_hexToColor;
+- (UIColor *)phoneQuitCrop;
 
-- (NSString *)nim_MD5String;
+//: - (NSString *)nim_MD5String;
+- (NSString *)appointee;
 
-- (NSUInteger)nim_getBytesLength;
+//: - (NSRange)nim_rangeOfLastUnicode;
+- (NSRange)maximum;
 
-- (NSString *)nim_stringByDeletingPictureResolution;
+//: - (BOOL)nim_containsEmoji;
+- (BOOL)changeOfState;
 
-- (UIColor *)nim_hexToColor;
+//: - (NSString *)nim_localized;
+- (NSString *)infoControl;
 
-- (BOOL)nim_fileIsExist;
+//: - (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+- (CGSize)option:(UIFont *)font;
 
 
-- (NSString *)nim_localized;
+//: - (NSString *)nim_localizedWithTable:(NSString *)table;
+- (NSString *)belief:(NSString *)table;
 
-- (NSString *)nim_localizedWithTable:(NSString *)table;
+//: - (BOOL)nim_fileIsExist;
+- (BOOL)tip;
 
-- (BOOL)nim_containsEmoji;
+//: - (NSUInteger)nim_getBytesLength;
+- (NSUInteger)pieceOfMusicDefine;
 
-- (NSRange)nim_rangeOfLastUnicode;
+//: - (NSDictionary *)toDictionary ;
+- (NSDictionary *)writtenAccount ;
 
-- (NSDictionary *)toDictionary ;
+//: - (NSString *)nim_stringByDeletingPictureResolution;
+- (NSString *)coverExotic;
+//: @end
 @end

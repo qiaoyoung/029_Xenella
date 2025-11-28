@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  HarborWealthyAggregator.h
 //  sohunews
@@ -7,10 +9,11 @@
 //
 //  modify by tengli on 2022.8.1 (V6.7.8)
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-
-
+//: @interface HarborWealthyAggregator : NSObject
 @interface HarborWealthyAggregator : NSObject
 
 
@@ -19,20 +22,13 @@
  IUUID 生成后保存至磁盘,卸载重装后重新生成
  IDFA & IDFV & MCI 变化,也会重新生成
  */
-+ (NSString *)deviceIUUID;
+/// 国家
+//: + (NSString *)countryCode;
++ (NSString *)chad;
 
-/**
- IDFA & IDFV & MCI 变化,重新生成
- */
-+ (void)updateDeviceIUUID;
-
-/*
- * @method uniqueDeviceIdentifier
- * @description use this method when you need a unique identifier in one app.
- * It generates a hash from the MAC-address in combination with the bundle identifier
- * of your app.
- */
-- (NSString *)uniqueDeviceIdentifier;
+/// 系统更新时间
+//: + (NSString *)sysFileTime;
++ (NSString *)amidTime;
 
 /*
  * @method uniqueGlobalDeviceIdentifier
@@ -41,33 +37,53 @@
  * from different apps.
  * It generates a hash from the MAC-address only.
  */
-- (NSString *)uniqueGlobalDeviceIdentifier;
+//: - (NSString *)uniqueGlobalDeviceIdentifier;
+- (NSString *)green;
+
+/*
+ * @method uniqueDeviceIdentifier
+ * @description use this method when you need a unique identifier in one app.
+ * It generates a hash from the MAC-address in combination with the bundle identifier
+ * of your app.
+ */
+//: - (NSString *)uniqueDeviceIdentifier;
+- (NSString *)outProject;
 
 
+/**
+ IDFA & IDFV & MCI 变化,重新生成
+ */
+//: + (void)updateDeviceIUUID;
++ (void)second;
+
+/// 语言
+//: + (NSString *)language;
++ (NSString *)entity;
+
+//: + (NSString *)deviceIUUID;
++ (NSString *)formation;
+
+
+//: #pragma mark - CAID
 #pragma mark - CAID
 
 /// 设备启动时间
-+ (NSString *)bootTimeInSec;
-
-/// 国家
-+ (NSString *)countryCode;
-
-/// 语言
-+ (NSString *)language;
-
+//: + (NSString *)bootTimeInSec;
++ (NSString *)fit;
 
 /// 运营商
-+(NSString* )carrierInfo;
+//: +(NSString* )carrierInfo;
++(NSString* )carrierOver;
 
-/// 系统更新时间
-+ (NSString *)sysFileTime;
-
-
-///时区
-+ (NSString *)timeZone;
 
 //get system uptime since last boot 获取系统当前运行了多长时间
-+ (NSTimeInterval)uptime;
+//: + (NSTimeInterval)uptime;
++ (NSTimeInterval)m;
+
+///时区
+//: + (NSString *)timeZone;
++ (NSString *)frame;
 
 
+//: @end
 @end

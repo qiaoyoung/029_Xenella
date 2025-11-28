@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TriggerConsolidateArcModel.h
 //  TriggerConsolidateArcDemo
@@ -6,19 +8,24 @@
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "TriggerConsolidateArcBasedModel.h"
 #import "TriggerConsolidateArcBasedModel.h"
 
 /**
  *  下拉菜单模型
  */
+//: @interface TriggerConsolidateArcModel : TriggerConsolidateArcBasedModel
 @interface TriggerConsolidateArcModel : TriggerConsolidateArcBasedModel
 
 
 /** 菜单选项标题 */
-@property (nonatomic, copy) NSString *menuItemTitle;
-
 /** 菜单选项图标名称 */
-@property (nonatomic, copy) NSString *menuItemIconName;
+//: @property (nonatomic, copy) NSString *menuItemIconName;
+@property (nonatomic, copy) NSString *smart;
+
+//: @property (nonatomic, copy) NSString *menuItemTitle;
+@property (nonatomic, copy) NSString *info;
 
 
 /**
@@ -30,6 +37,8 @@
  *
  *  @return 实例化的菜单模型
  */
-+ (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock;
+//: + (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock;
++ (instancetype)downBlock:(NSString *)menuItemTitle read:(NSString *)menuItemIconName with:(FFMenuBlock)menuBlock;
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ContinueRunLightConstants.h
 //  https://github.com/hackiftekhar/ContinueRunLight
@@ -20,15 +22,13 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
-#ifndef ContinueRunLightConstants_h
-#define ContinueRunLightConstants_h
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
 ///-----------------------------------
 /// @name LibraryPainterReturnManageBehavior
 ///-----------------------------------
+
+// __M_A_C_R_O__
 
 /**
  `LibraryPainterReturnBySubviews`
@@ -40,10 +40,15 @@
  `LibraryPainterReturnByPosition`
  Creates Toolbar according to the y,x position of textField in it's superview coordinate.
  */
+//: typedef NS_ENUM(NSInteger, LibraryPainterReturnManageBehavior) {
 typedef NS_ENUM(NSInteger, LibraryPainterReturnManageBehavior) {
+    //: LibraryPainterReturnBySubviews,
     LibraryPainterReturnBySubviews,
+    //: LibraryPainterReturnByTag,
     LibraryPainterReturnByTag,
+    //: LibraryPainterReturnByPosition,
     LibraryPainterReturnByPosition,
+//: };
 };
 
 /**
@@ -56,10 +61,15 @@ typedef NS_ENUM(NSInteger, LibraryPainterReturnManageBehavior) {
  `JunctionValidatorDeepIdealAlwaysShow`
  Always show nextPrevious buttons, if there are more than 1 textField then both buttons will be visible but will be shown as disabled.
  */
+//: typedef NS_ENUM(NSUInteger, JunctionValidatorDeepIdeal) {
 typedef NS_ENUM(NSUInteger, JunctionValidatorDeepIdeal) {
+    //: JunctionValidatorDeepIdealDefault,
     JunctionValidatorDeepIdealDefault,
+    //: JunctionValidatorDeepIdealAlwaysHide,
     JunctionValidatorDeepIdealAlwaysHide,
+    //: JunctionValidatorDeepIdealAlwaysShow,
     JunctionValidatorDeepIdealAlwaysShow,
+//: };
 };
 
 /**
@@ -72,13 +82,18 @@ typedef NS_ENUM(NSUInteger, JunctionValidatorDeepIdeal) {
  `JewelMatchWoodInfinityDisabled`
  setting is disabled.
  */
+//: typedef NS_ENUM(NSUInteger, JewelMatchWoodInfinity) {
 typedef NS_ENUM(NSUInteger, JewelMatchWoodInfinity) {
+    //: JewelMatchWoodInfinityDefault,
     JewelMatchWoodInfinityDefault,
+    //: JewelMatchWoodInfinityEnabled,
     JewelMatchWoodInfinityEnabled,
+    //: JewelMatchWoodInfinityDisabled,
     JewelMatchWoodInfinityDisabled,
+//: };
 };
 
-#endif
+
 
 /*
  

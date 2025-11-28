@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  USERGroupedUsrInfo.m
 //  NIM
@@ -6,168 +8,280 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "CollectorCollectionRefresh.h"
 #import "CollectorCollectionRefresh.h"
+//: #import "DeriveStackTuneBlooming.h"
 #import "DeriveStackTuneBlooming.h"
+//: #import "DelegateMountainAuthenticGatewayEnd.h"
 #import "DelegateMountainAuthenticGatewayEnd.h"
 
+//: @interface TheoryRunRidgeTrueEcho()
 @interface TheoryRunRidgeTrueEcho()
 
-@property (nonatomic,copy)   NSString *userId;
-@property (nonatomic,strong) ReadySurfaceUnusual *info;
+//: @property (nonatomic,copy) NSString *userId;
+@property (nonatomic,copy) NSString *etiolationStrokes;
+//: @property (nonatomic,strong) ReadySurfaceUnusual *info;
+@property (nonatomic,strong) ReadySurfaceUnusual *bearDownEnable;
 
+//: @end
 @end
 
+//: @implementation TheoryRunRidgeTrueEcho
 @implementation TheoryRunRidgeTrueEcho
 
-- (instancetype)initWithUserId:(NSString *)userId{
+//: - (instancetype)initWithUserId:(NSString *)userId{
+- (instancetype)initWithHint:(NSString *)userId{
+    //: self = [super init];
     self = [super init];
+    //: if (self) {
     if (self) {
-        _userId = userId;
-        _info = [[ParseByBreakPerform sharedKit] infoByUser:userId option:nil];
+        //: _userId = userId;
+        _etiolationStrokes = userId;
+        //: _info = [[ParseByBreakPerform sharedKit] infoByUser:userId option:nil];
+        _bearDownEnable = [[ParseByBreakPerform unit] counterval:userId mediaUtilizer:nil];
     }
+    //: return self;
     return self;
 }
 
-- (NSString *)groupTitle{
-    NSString *title = [[DeriveStackTuneBlooming sharedCenter] firstLetter:self.info.showName].capitalizedString;
+//: - (NSString *)avatarUrlString {
+- (NSString *)from {
+    //: return self.info.avatarUrlString;
+    return self.bearDownEnable.postChalkLineTotaleract;
+}
+
+//: - (NSString *)memberId{
+- (NSString *)pin{
+    //: return self.userId;
+    return self.etiolationStrokes;
+}
+
+//: - (NSString *)groupTitle{
+- (NSString *)emotion{
+    //: NSString *title = [[DeriveStackTuneBlooming sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    NSString *title = [[DeriveStackTuneBlooming spectatorStorage] pull:self.bearDownEnable.pressed].capitalizedString;
+    //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
+    //: if (character >= 'A' && character <= 'Z') {
     if (character >= 'A' && character <= 'Z') {
+        //: return title;
         return title;
+    //: }else{
     }else{
+        //: return @"#";
         return @"#";
     }
 }
 
-- (NSString *)showName{
-    return self.info.showName;
+//: - (UIImage *)avatarImage {
+- (UIImage *)primary {
+    //: return self.info.avatarImage;
+    return self.bearDownEnable.descriptionImage;
 }
 
-- (NSString *)memberId{
-    return self.userId;
-}
-
-- (id)sortKey{
-    return [[DeriveStackTuneBlooming sharedCenter] spellingForString:self.info.showName].shortSpelling;
-}
-
-- (UIImage *)avatarImage {
-    return self.info.avatarImage;
+//: - (id)sortKey{
+- (id)request{
+    //: return [[DeriveStackTuneBlooming sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    return [[DeriveStackTuneBlooming spectatorStorage] liberateCollapse:self.bearDownEnable.pressed].shortSpelling;
 }
 
 
-- (NSString *)avatarUrlString {
-    return self.info.avatarUrlString;
+//: - (NSString *)showName{
+- (NSString *)carrier{
+    //: return self.info.showName;
+    return self.bearDownEnable.pressed;
 }
 
 
+//: @end
 @end
 
+//: @interface HavenTrustedAssemble()
 @interface HavenTrustedAssemble()
 
-@property (nonatomic,copy) NSString *userId;
-@property (nonatomic,strong) ReadySurfaceUnusual *info;
+@property (nonatomic,strong) ReadySurfaceUnusual *withoutColumn;
+//: @property (nonatomic,strong) ReadySurfaceUnusual *info;
+@property (nonatomic,strong) ReadySurfaceUnusual *column;
+//: @property (nonatomic,copy) NSString *userId;
+@property (nonatomic,copy) NSString *etiolationStrokes;
 
+//: @end
 @end
 
+//: @implementation HavenTrustedAssemble
 @implementation HavenTrustedAssemble
 
-- (instancetype)initWithUserId:(NSString *)userId
-                       session:(NIMSession *)session {
+//: @end
+
+- (void)setColumn:(ReadySurfaceUnusual *)column {
+    //: OC_CUSTOM_PROPERTY_INJECT
+    _column = column;
+}
+
+//: - (NSString *)memberId{
+- (NSString *)pin{
+    //: return self.userId;
+    return self.etiolationStrokes;
+}
+
+- (ReadySurfaceUnusual *)vanilla:(ReadySurfaceUnusual *)column {
+    //: OC_CUSTOM_PROPERTY_INJECT
+    _column = column;
+    return column;
+}
+
+//: - (instancetype)initWithUserId:(NSString *)userId
+- (instancetype)initWithTrunk:(NSString *)userId
+                       //: session:(NIMSession *)session {
+                       prefer:(NIMSession *)session {
+    //: self = [super init];
     self = [super init];
+    //: if (self) {
     if (self) {
-        _userId = userId;
+        //: _userId = userId;
+        _etiolationStrokes = userId;
+	[self setColumn:_withoutColumn];
+        //: DelegateMountainAuthenticGatewayEnd *option = [[DelegateMountainAuthenticGatewayEnd alloc] init];
         DelegateMountainAuthenticGatewayEnd *option = [[DelegateMountainAuthenticGatewayEnd alloc] init];
-        option.session = session;
-        _info = [[ParseByBreakPerform sharedKit] infoByUser:userId option:option];
+        //: option.session = session;
+        option.arrayImproved = session;
+        //: _info = [[ParseByBreakPerform sharedKit] infoByUser:userId option:option];
+        _withoutColumn = [[ParseByBreakPerform unit] counterval:userId mediaUtilizer:option];
+	[self setColumn:_withoutColumn];
     }
+    //: return self;
     return self;
 }
 
-- (NSString *)groupTitle{
-    NSString *title = [[DeriveStackTuneBlooming sharedCenter] firstLetter:self.showName].capitalizedString;
+//: - (NSString *)avatarUrlString {
+- (NSString *)from {
+    //: return self.info.avatarUrlString;
+    return [self vanilla:self.withoutColumn].postChalkLineTotaleract;
+}
+
+//: - (NSString *)showName{
+- (NSString *)carrier{
+    //: return self.info.showName;
+    return [self vanilla:self.withoutColumn].pressed;
+}
+
+//: - (id)sortKey{
+- (id)request{
+    //: return [[DeriveStackTuneBlooming sharedCenter] spellingForString:self.showName].shortSpelling;
+    return [[DeriveStackTuneBlooming spectatorStorage] liberateCollapse:self.carrier].shortSpelling;
+}
+
+//: - (UIImage *)avatarImage {
+- (UIImage *)primary {
+    //: return self.info.avatarImage;
+    return [self vanilla:self.withoutColumn].descriptionImage;
+}
+
+//: - (NSString *)groupTitle{
+- (NSString *)emotion{
+    //: NSString *title = [[DeriveStackTuneBlooming sharedCenter] firstLetter:self.showName].capitalizedString;
+    NSString *title = [[DeriveStackTuneBlooming spectatorStorage] pull:self.carrier].capitalizedString;
+    //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
+    //: if (character >= 'A' && character <= 'Z') {
     if (character >= 'A' && character <= 'Z') {
+        //: return title;
         return title;
+    //: }else{
     }else{
+        //: return @"#";
         return @"#";
     }
 }
 
-- (id)sortKey{
-    return [[DeriveStackTuneBlooming sharedCenter] spellingForString:self.showName].shortSpelling;
-}
-
-- (NSString *)showName{
-    return self.info.showName;
-}
-
-- (NSString *)memberId{
-    return self.userId;
-}
-
-- (UIImage *)avatarImage {
-    return self.info.avatarImage;
-}
-
-- (NSString *)avatarUrlString {
-    return self.info.avatarUrlString;
-}
 
 @end
 
+//: @interface HandlerFillOrchestrator()
 @interface HandlerFillOrchestrator()
 
-@property (nonatomic,copy) NSString *teamId;
-@property (nonatomic,strong) ReadySurfaceUnusual *info;
+//: @property (nonatomic,strong) ReadySurfaceUnusual *info;
+@property (nonatomic,strong) ReadySurfaceUnusual *referInstance;
+//: @property (nonatomic,copy) NSString *teamId;
+@property (nonatomic,copy) NSString *sage;
 
+//: @end
 @end
 
+//: @implementation HandlerFillOrchestrator
 @implementation HandlerFillOrchestrator
 
-- (instancetype)initWithTeamId:(NSString *)teamId
-                      teamType:(WrapperZealousResizeWeightedSuite)teamType {
-    self = [super init];
-    if (self) {
-        _teamId = teamId;
-        if (teamType == WrapperZealousResizeWeightedSuiteNomal) {
-            _info = [[ParseByBreakPerform sharedKit] infoByTeam:teamId option:nil];
-        } else if (teamType == WrapperZealousResizeWeightedSuiteSuper) {
-            _info = [[ParseByBreakPerform sharedKit] infoBySuperTeam:teamId option:nil];
-        }
-    }
-    return self;
+//: - (NSString *)memberId{
+- (NSString *)pin{
+    //: return self.teamId;
+    return self.sage;
 }
 
-- (NSString *)groupTitle{
-    NSString *title = [[DeriveStackTuneBlooming sharedCenter] firstLetter:self.showName].capitalizedString;
+//: - (NSString *)groupTitle{
+- (NSString *)emotion{
+    //: NSString *title = [[DeriveStackTuneBlooming sharedCenter] firstLetter:self.showName].capitalizedString;
+    NSString *title = [[DeriveStackTuneBlooming spectatorStorage] pull:self.carrier].capitalizedString;
+    //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
+    //: if (character >= 'A' && character <= 'Z') {
     if (character >= 'A' && character <= 'Z') {
+        //: return title;
         return title;
+    //: }else{
     }else{
+        //: return @"#";
         return @"#";
     }
 }
 
-- (id)sortKey{
-    return [[DeriveStackTuneBlooming sharedCenter] spellingForString:[self showName]].shortSpelling;
+//: - (id)sortKey{
+- (id)request{
+    //: return [[DeriveStackTuneBlooming sharedCenter] spellingForString:[self showName]].shortSpelling;
+    return [[DeriveStackTuneBlooming spectatorStorage] liberateCollapse:[self carrier]].shortSpelling;
 }
 
-- (NSString *)showName{
-    return self.info.showName;
+//: - (NSString *)avatarUrlString {
+- (NSString *)from {
+    //: return self.info.avatarUrlString;
+    return self.referInstance.postChalkLineTotaleract;
 }
 
-- (NSString *)memberId{
-    return self.teamId;
+//: - (UIImage *)avatarImage {
+- (UIImage *)primary {
+    //: return self.info.avatarImage;
+    return self.referInstance.descriptionImage;
 }
 
-- (UIImage *)avatarImage {
-    return self.info.avatarImage;
+//: - (NSString *)showName{
+- (NSString *)carrier{
+    //: return self.info.showName;
+    return self.referInstance.pressed;
 }
 
-- (NSString *)avatarUrlString {
-    return self.info.avatarUrlString;
+//: - (instancetype)initWithTeamId:(NSString *)teamId
+- (instancetype)initWithTheBiologyHouse:(NSString *)teamId
+                      //: teamType:(WrapperZealousResizeWeightedSuite)teamType {
+                      stock:(WrapperZealousResizeWeightedSuite)teamType {
+    //: self = [super init];
+    self = [super init];
+    //: if (self) {
+    if (self) {
+        //: _teamId = teamId;
+        _sage = teamId;
+        //: if (teamType == WrapperZealousResizeWeightedSuiteNomal) {
+        if (teamType == WrapperZealousResizeWeightedSuiteNomal) {
+            //: _info = [[ParseByBreakPerform sharedKit] infoByTeam:teamId option:nil];
+            _referInstance = [[ParseByBreakPerform unit] harmony:teamId sense:nil];
+        //: } else if (teamType == WrapperZealousResizeWeightedSuiteSuper) {
+        } else if (teamType == WrapperZealousResizeWeightedSuiteSuper) {
+            //: _info = [[ParseByBreakPerform sharedKit] infoBySuperTeam:teamId option:nil];
+            _referInstance = [[ParseByBreakPerform unit] complete:teamId enableicerArmyUnit:nil];
+        }
+    }
+    //: return self;
+    return self;
 }
 
+//: @end
 @end
-
-

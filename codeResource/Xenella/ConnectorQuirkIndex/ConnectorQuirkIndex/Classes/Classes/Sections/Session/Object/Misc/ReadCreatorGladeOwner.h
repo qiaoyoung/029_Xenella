@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ReadCreatorGladeOwner.h
 //  NIM
@@ -5,86 +7,73 @@
 //  Created by amao on 7/2/15.
 //  Copyright (c) 2015 Netease. All rights reserved.
 //
-
-#ifndef NIM_USERCustomAttachmentTypes_h
-#define NIM_USERCustomAttachmentTypes_h
-
 //@class NIMKitBubbleStyleObject;
 
+// __M_A_C_R_O__
+
+//: typedef NS_ENUM(NSInteger,ReadCreatorGladeOwnerType){
 typedef NS_ENUM(NSInteger,ReadCreatorGladeOwnerType){
-    ReadCreatorGladeOwnerTypeJanKenPon  = 1, //剪子石头布
-    ReadCreatorGladeOwnerTypeSnapchat   = 2, //阅后即焚
-    ReadCreatorGladeOwnerTypeChartlet   = 3, //贴图表情
+    //: ReadCreatorGladeOwnerTypeJanKenPon = 1, 
+    ReadCreatorGladeOwnerTypeJanKenPon = 1, //剪子石头布
+    //: ReadCreatorGladeOwnerTypeSnapchat = 2, 
+    ReadCreatorGladeOwnerTypeSnapchat = 2, //阅后即焚
+    //: ReadCreatorGladeOwnerTypeChartlet = 3, 
+    ReadCreatorGladeOwnerTypeChartlet = 3, //贴图表情
+    //: ReadCreatorGladeOwnerTypeWhiteboard = 4, 
     ReadCreatorGladeOwnerTypeWhiteboard = 4, //白板会话
-    ReadCreatorGladeOwnerTypeRedPacket  = 5, //红包消息
+    //: ReadCreatorGladeOwnerTypeRedPacket = 5, 
+    ReadCreatorGladeOwnerTypeRedPacket = 5, //红包消息
+    //: ReadCreatorGladeOwnerTypeRedPacketTip = 6, 
     ReadCreatorGladeOwnerTypeRedPacketTip = 6, //红包提示消息
+    //: ReadCreatorGladeOwnerTypeMultiRetweet = 15,
     ReadCreatorGladeOwnerTypeMultiRetweet = 15,//多条消息合并转发
-    
+
+    //: ReadCreatorGladeOwnerTypeCard = 105,
     ReadCreatorGladeOwnerTypeCard = 105,
+//: };
 };
-
-
-#define CMType             @"type"
-#define CMData             @"data"
-#define CMValue            @"value"
-#define CMFlag             @"flag"
-#define CMURL              @"url"
-#define CMMD5              @"md5"
-#define CMFileName         @"fileName"
-#define CMFIRE             @"fired"        //阅后即焚消息是否被焚毁
-#define CMCatalog          @"catalog"      //贴图类别
-#define CMChartlet         @"chartlet"     //贴图表情ID
 //红包
-#define CMRedPacketTitle   @"title"
-#define CMRedPacketContent @"content"
-#define CMPersonCardId     @"personCardId"
-#define CMPersonCardtype   @"type"
-
-
-
-#define CMRedPacketId      @"redPacketId"  //红包ID
-#define CMRedPacketSendID  @"redPacketSendID" //发送者
-
 //红包详情
-#define CMRedPacketSendId     @"sendPacketId"
-#define CMRedPacketOpenId     @"openPacketId"
-#define CMRedPacketDone       @"isGetDone"
+
+
+
 
 //合并转发
-#define CMCompressed       @"compressed" //合并转发文件是否压缩
-#define CMEncrypted        @"encrypted"  //合并转发文件是否加密
-#define CMPassword         @"password"   //合并转发文件解密密钥
-#define CMMessageAbstract  @"messageAbstract" //合并转发消息
-#define CMMessageAbstractSender   @"sender" //合并转发消息-发送者
-#define CMMessageAbstractContent  @"message" //合并转发消息-信息
-#define CMSessionName   @"sessionName" //会话名称
-#define CMSessionId   @"sessionId" //会话名称
-
-#endif
-
-
+//: @protocol ReadCreatorGladeOwner <NSObject>
 @protocol ReadCreatorGladeOwner <NSObject>
 
+//: @optional
 @optional
 
-- (NSString *)cellContent:(NIMMessage *)message;
+//: - (NSString *)cellContent:(NIMMessage *)message;
+- (NSString *)collection:(NIMMessage *)message;
 
-- (CGSize)contentSize:(NIMMessage *)message cellWidth:(CGFloat)width;
+//: - (CGSize)contentSize:(NIMMessage *)message cellWidth:(CGFloat)width;
+- (CGSize)compartment:(NIMMessage *)message space:(CGFloat)width;
 
-- (UIEdgeInsets)contentViewInsets:(NIMMessage *)message;
+//: - (UIEdgeInsets)contentViewInsets:(NIMMessage *)message;
+- (UIEdgeInsets)visualPercept:(NIMMessage *)message;
 
-- (NSString *)formatedMessage;
+//: - (NSString *)formatedMessage;
+- (NSString *)fromMessage;
 
-- (UIImage *)showCoverImage;
+//: - (UIImage *)showCoverImage;
+- (UIImage *)quit;
 
-- (BOOL)shouldShowAvatar;
+//: - (BOOL)shouldShowAvatar;
+- (BOOL)untilMoment;
 
-- (void)setShowCoverImage:(UIImage *)image;
+//: - (void)setShowCoverImage:(UIImage *)image;
+- (void)setQuit:(UIImage *)image;
 
-- (BOOL)canBeRevoked;
+//: - (BOOL)canBeRevoked;
+- (BOOL)admin;
 
-- (BOOL)canBeForwarded;
+//: - (BOOL)canBeForwarded;
+- (BOOL)videoForwarded;
 
-- (BOOL)canDisplayBubbleBackground:(NIMMessage *)message;
+//: - (BOOL)canDisplayBubbleBackground:(NIMMessage *)message;
+- (BOOL)receiveFor:(NIMMessage *)message;
 
+//: @end
 @end

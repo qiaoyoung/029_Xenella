@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIViewController+SetCanyonImportBroker.m
 //  https://github.com/hackiftekhar/ContinueRunLight
@@ -21,18 +23,28 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
-
+//: #import "UIViewController+SetCanyonImportBroker.h"
 #import "UIViewController+SetCanyonImportBroker.h"
 
-
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation UIViewController (SetCanyonImportBroker)
+
+#import <objc/runtime.h>
+
 @implementation UIViewController (SetCanyonImportBroker)
 
--(nullable UIViewController*)parentIQContainerViewController
+//: -(nullable UIViewController*)parentIQContainerViewController
+-(nullable UIViewController*)connection
 {
+    //: return self;
     return self;
 }
 
+//: @end
 @end

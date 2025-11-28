@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UntilPrintDraw.h
 //  NIM
@@ -6,12 +8,18 @@
 //  Copyright © 2021 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "LocalizeCompressFinishStormRestore.h"
 #import "LocalizeCompressFinishStormRestore.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface UntilPrintDraw : LocalizeCompressFinishStormRestore
 @interface UntilPrintDraw : LocalizeCompressFinishStormRestore
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

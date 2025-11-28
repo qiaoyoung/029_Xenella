@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DismissMarkStopConsolidate.h
 //  https://github.com/hackiftekhar/ContinueRunLight
@@ -21,20 +23,29 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class NSInvocation;
 @class NSInvocation;
 
 /**
  DismissMarkStopConsolidate used for DiffuseLawfulCollectionAlong.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface DismissMarkStopConsolidate : UIBarButtonItem
 @interface DismissMarkStopConsolidate : UIBarButtonItem
 
 /**
  Boolean to know if it's a system item or custom item
  */
-@property (nonatomic, readonly) BOOL isSystemItem;
+/**
+ Customized Invocation to be called when button is pressed. invocation is internally created using setTarget:action: method.
+ */
+//: @property (nullable, strong, nonatomic) NSInvocation *invocation;
+@property (nullable, strong, nonatomic) NSInvocation *lessInvocation;
 
 /**
  Additional target & action to do get callback action. Note that setting custom target & selector doesn't affect native functionality, this is just an additional target to get a callback.
@@ -42,11 +53,11 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
  @param target Target object.
  @param action Target Selector.
  */
--(void)setTarget:(nullable id)target action:(nullable SEL)action;
+//: -(void)setTarget:(nullable id)target action:(nullable SEL)action;
+-(void)nearBottom:(nullable id)target transport:(nullable SEL)action;
 
-/**
- Customized Invocation to be called when button is pressed. invocation is internally created using setTarget:action: method.
- */
-@property (nullable, strong, nonatomic) NSInvocation *invocation;
+//: @property (nonatomic, readonly) BOOL isSystemItem;
+@property (nonatomic, readonly) BOOL split;
 
+//: @end
 @end

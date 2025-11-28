@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ThrottleListWinsome.h
 //  NIM
@@ -6,24 +8,37 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @class PhaseDefined;
 @class PhaseDefined;
+//: @interface ThrottleListWinsome : NSObject
 @interface ThrottleListWinsome : NSObject
 
-dSINGLETON_FOR_CLASS_HEADER(ThrottleListWinsome);
+//: - (void)markAllNotificationsAsRead;
+- (void)pickaninny;
+;
 
-@property (nonatomic,assign) NSInteger unreadCount;
+//: @property (nonatomic,assign) NSInteger unreadCount;
+@property (nonatomic,assign) NSInteger lightCount;
 
-- (NSArray *)fetchNotifications:(PhaseDefined *)notification
-                          limit:(NSInteger)limit;
+//: + (instancetype)sharedInstance;;
++ (instancetype)fileEnable;
 
-- (BOOL)saveNotification:(PhaseDefined *)notification;
+//: - (NSArray *)fetchNotifications:(PhaseDefined *)notification
+- (NSArray *)implementLimit:(PhaseDefined *)notification
+                          //: limit:(NSInteger)limit;
+                          ruddy:(NSInteger)limit;
+//: - (void)deleteNotification:(PhaseDefined *)notification;
+- (void)rejectPainter:(PhaseDefined *)notification;
 
-- (void)deleteNotification:(PhaseDefined *)notification;
+//: - (BOOL)saveNotification:(PhaseDefined *)notification;
+- (BOOL)save:(PhaseDefined *)notification;
 
-- (void)deleteAllNotification;
+//: - (void)deleteAllNotification;
+- (void)cart;
 
-- (void)markAllNotificationsAsRead;
-
+//: @end
 @end

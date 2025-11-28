@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMInputAtManager.h
 // ParseByBreakPerform
@@ -6,31 +8,43 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define NIMInputAtStartChar  @"@"
-#define NIMInputAtEndChar    @"\u2004"
-
+//: @interface CreatorLoadOdd : NSObject
 @interface CreatorLoadOdd : NSObject
 
-@property (nonatomic,copy) NSString *name;
+//: @property (nonatomic,assign) NSRange range;
+@property (nonatomic,assign) NSRange admin;
 
-@property (nonatomic,copy) NSString *uid;
+@property (nonatomic,copy) NSString *erase;
+//: @property (nonatomic,copy) NSString *uid;
+@property (nonatomic,copy) NSString *resource;
 
-@property (nonatomic,assign) NSRange range;
+//: @property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *replacementControl;
 
+//: @end
 @end
 
+//: @interface LocalDrawInto : NSObject
 @interface LocalDrawInto : NSObject
 
-- (NSArray *)allAtUid:(NSString *)sendText;
+//: - (CreatorLoadOdd *)removeName:(NSString *)name;
+- (CreatorLoadOdd *)dba:(NSString *)name;
 
-- (void)clean;
+//: - (NSArray *)allAtUid:(NSString *)sendText;
+- (NSArray *)image:(NSString *)sendText;
 
-- (void)addAtItem:(CreatorLoadOdd *)item;
+//: - (void)clean;
+- (void)trend;
 
-- (CreatorLoadOdd *)item:(NSString *)name;
+//: - (void)addAtItem:(CreatorLoadOdd *)item;
+- (void)asAdded:(CreatorLoadOdd *)item;
 
-- (CreatorLoadOdd *)removeName:(NSString *)name;
+//: - (CreatorLoadOdd *)item:(NSString *)name;
+- (CreatorLoadOdd *)owner:(NSString *)name;
 
+//: @end
 @end

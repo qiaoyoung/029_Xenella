@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // UIButton+AFNetworking.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -19,16 +21,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
+//: #import <TargetConditionals.h>
 #import <TargetConditionals.h>
-
-#if TARGET_OS_IOS || TARGET_OS_TV
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @class AFImageDownloader;
 @class AFImageDownloader;
 
 /**
@@ -36,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @warning Compound values for control `state` (such as `UIControlStateHighlighted | UIControlStateDisabled`) are unsupported.
  */
+//: @interface UIButton (AFNetworking)
 @interface UIButton (AFNetworking)
 
 ///------------------------------------
@@ -47,13 +52,6 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param imageDownloader The shared image downloader used to download images.
 */
-+ (void)setSharedImageDownloader:(AFImageDownloader *)imageDownloader;
-
-/**
- The shared image downloader used to download images.
- */
-+ (AFImageDownloader *)sharedImageDownloader;
-
 ///--------------------
 /// @name Setting Image
 ///--------------------
@@ -66,8 +64,48 @@ NS_ASSUME_NONNULL_BEGIN
  @param state The control state.
  @param url The URL used for the image request.
  */
-- (void)setImageForState:(UIControlState)state
-                 withURL:(NSURL *)url;
+//: - (void)setImageForState:(UIControlState)state
+- (void)year:(UIControlState)state
+                 //: withURL:(NSURL *)url;
+                 command:(NSURL *)url;
+/**
+ Asynchronously downloads an image from the specified URL, and sets it as the background image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
+
+ If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
+
+ @param state The control state.
+ @param url The URL used for the background image request.
+ @param placeholderImage The background image to be set initially, until the background image request finishes. If `nil`, the button will not change its background image until the background image request finishes.
+ */
+//: - (void)setBackgroundImageForState:(UIControlState)state
+- (void)plannerItem:(UIControlState)state
+                           //: withURL:(NSURL *)url
+                           permit:(NSURL *)url
+                  //: placeholderImage:(nullable UIImage *)placeholderImage;
+                  gradual:(nullable UIImage *)placeholderImage;
+/**
+ Asynchronously downloads an image from the specified URL request, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
+
+ If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
+
+ If a success block is specified, it is the responsibility of the block to set the image of the button before returning. If no success block is specified, the default behavior of setting the image with `setBackgroundImage:forState:` is applied.
+
+ @param state The control state.
+ @param urlRequest The URL request used for the image request.
+ @param placeholderImage The background image to be set initially, until the background image request finishes. If `nil`, the button will not change its background image until the background image request finishes.
+ @param success A block to be executed when the image data task finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the image created from the response data of request. If the image was returned from cache, the response parameter will be `nil`.
+ @param failure A block object to be executed when the image data task finishes unsuccessfully, or that finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the error object describing the network or parsing error that occurred.
+ */
+//: - (void)setBackgroundImageForState:(UIControlState)state
+- (void)necessaryFailure:(UIControlState)state
+                    //: withURLRequest:(NSURLRequest *)urlRequest
+                    need:(NSURLRequest *)urlRequest
+                  //: placeholderImage:(nullable UIImage *)placeholderImage
+                  want:(nullable UIImage *)placeholderImage
+                           //: success:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *image))success
+                           simply:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *image))success
+                           //: failure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
+                           fleetRunning:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
 
 /**
  Asynchronously downloads an image from the specified URL, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
@@ -78,9 +116,47 @@ NS_ASSUME_NONNULL_BEGIN
  @param url The URL used for the image request.
  @param placeholderImage The image to be set initially, until the image request finishes. If `nil`, the button will not change its image until the image request finishes.
  */
-- (void)setImageForState:(UIControlState)state
-                 withURL:(NSURL *)url
-        placeholderImage:(nullable UIImage *)placeholderImage;
+//: - (void)setImageForState:(UIControlState)state
+- (void)prefer:(UIControlState)state
+                 //: withURL:(NSURL *)url
+                 portion:(NSURL *)url
+        //: placeholderImage:(nullable UIImage *)placeholderImage;
+        global:(nullable UIImage *)placeholderImage;
+
+/**
+ The shared image downloader used to download images.
+ */
+//: + (AFImageDownloader *)sharedImageDownloader;
++ (AFImageDownloader *)instanceCycle;
+
+
+
+//: + (void)setSharedImageDownloader:(AFImageDownloader *)imageDownloader;
++ (void)setInstanceCycle:(AFImageDownloader *)imageDownloader;
+
+
+/**
+ Cancels any executing background image task for the specified control state of the receiver, if one exists.
+
+ @param state The control state.
+ */
+//: - (void)cancelBackgroundImageDownloadTaskForState:(UIControlState)state;
+- (void)calculate:(UIControlState)state;
+
+
+///------------------------------
+/// @name Canceling Image Loading
+///------------------------------
+
+/**
+ Cancels any executing image task for the specified control state of the receiver, if one exists.
+
+ @param state The control state.
+ */
+//: - (void)cancelImageDownloadTaskForState:(UIControlState)state;
+- (void)laboratory:(UIControlState)state;
+
+
 
 /**
  Asynchronously downloads an image from the specified URL request, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
@@ -95,13 +171,16 @@ NS_ASSUME_NONNULL_BEGIN
  @param success A block to be executed when the image data task finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the image created from the response data of request. If the image was returned from cache, the response parameter will be `nil`.
  @param failure A block object to be executed when the image data task finishes unsuccessfully, or that finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the error object describing the network or parsing error that occurred.
  */
-- (void)setImageForState:(UIControlState)state
-          withURLRequest:(NSURLRequest *)urlRequest
-        placeholderImage:(nullable UIImage *)placeholderImage
-                 success:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *image))success
-                 failure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
-
-
+//: - (void)setImageForState:(UIControlState)state
+- (void)max:(UIControlState)state
+          //: withURLRequest:(NSURLRequest *)urlRequest
+          accessFit:(NSURLRequest *)urlRequest
+        //: placeholderImage:(nullable UIImage *)placeholderImage
+        engraftLayerBackslidingImage:(nullable UIImage *)placeholderImage
+                 //: success:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *image))success
+                 wallPosit:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *image))success
+                 //: failure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
+                 meltSucceed:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
 ///-------------------------------
 /// @name Setting Background Image
 ///-------------------------------
@@ -114,62 +193,12 @@ NS_ASSUME_NONNULL_BEGIN
  @param state The control state.
  @param url The URL used for the background image request.
  */
-- (void)setBackgroundImageForState:(UIControlState)state
-                           withURL:(NSURL *)url;
-
-/**
- Asynchronously downloads an image from the specified URL, and sets it as the background image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
-
- If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
-
- @param state The control state.
- @param url The URL used for the background image request.
- @param placeholderImage The background image to be set initially, until the background image request finishes. If `nil`, the button will not change its background image until the background image request finishes.
- */
-- (void)setBackgroundImageForState:(UIControlState)state
-                           withURL:(NSURL *)url
-                  placeholderImage:(nullable UIImage *)placeholderImage;
-
-/**
- Asynchronously downloads an image from the specified URL request, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
-
- If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
-
- If a success block is specified, it is the responsibility of the block to set the image of the button before returning. If no success block is specified, the default behavior of setting the image with `setBackgroundImage:forState:` is applied.
-
- @param state The control state.
- @param urlRequest The URL request used for the image request.
- @param placeholderImage The background image to be set initially, until the background image request finishes. If `nil`, the button will not change its background image until the background image request finishes.
- @param success A block to be executed when the image data task finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the image created from the response data of request. If the image was returned from cache, the response parameter will be `nil`.
- @param failure A block object to be executed when the image data task finishes unsuccessfully, or that finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the error object describing the network or parsing error that occurred.
- */
-- (void)setBackgroundImageForState:(UIControlState)state
-                    withURLRequest:(NSURLRequest *)urlRequest
-                  placeholderImage:(nullable UIImage *)placeholderImage
-                           success:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *image))success
-                           failure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
-
-
-///------------------------------
-/// @name Canceling Image Loading
-///------------------------------
-
-/**
- Cancels any executing image task for the specified control state of the receiver, if one exists.
-
- @param state The control state.
- */
-- (void)cancelImageDownloadTaskForState:(UIControlState)state;
-
-/**
- Cancels any executing background image task for the specified control state of the receiver, if one exists.
-
- @param state The control state.
- */
-- (void)cancelBackgroundImageDownloadTaskForState:(UIControlState)state;
-
+//: - (void)setBackgroundImageForState:(UIControlState)state
+- (void)title:(UIControlState)state
+                           //: withURL:(NSURL *)url;
+                           dataApp:(NSURL *)url;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END
-
-#endif

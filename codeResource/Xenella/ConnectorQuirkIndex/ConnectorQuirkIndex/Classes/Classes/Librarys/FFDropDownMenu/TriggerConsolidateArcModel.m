@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TriggerConsolidateArcModel.m
 //  TriggerConsolidateArcDemo
@@ -6,8 +8,11 @@
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "TriggerConsolidateArcModel.h"
 #import "TriggerConsolidateArcModel.h"
 
+//: @implementation TriggerConsolidateArcModel
 @implementation TriggerConsolidateArcModel
 
 /**
@@ -19,12 +24,19 @@
  *
  *  @return 实例化的菜单模型
  */
-+ (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock {
+//: + (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock {
++ (instancetype)downBlock:(NSString *)menuItemTitle read:(NSString *)menuItemIconName with:(FFMenuBlock)menuBlock {
+    //: TriggerConsolidateArcModel *model = [TriggerConsolidateArcModel new];
     TriggerConsolidateArcModel *model = [TriggerConsolidateArcModel new];
-    model.menuItemTitle = menuItemTitle;
-    model.menuItemIconName = menuItemIconName;
-    model.menuBlock = menuBlock;
+    //: model.menuItemTitle = menuItemTitle;
+    model.info = menuItemTitle;
+    //: model.menuItemIconName = menuItemIconName;
+    model.smart = menuItemIconName;
+    //: model.menuBlock = menuBlock;
+    model.letter = menuBlock;
+    //: return model;
     return model;
 }
 
+//: @end
 @end

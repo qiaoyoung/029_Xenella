@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMUtil.h
 // ParseByBreakPerform
@@ -6,28 +8,43 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
+//: #import "EntryLayoutDefineConductor.h"
 #import "EntryLayoutDefineConductor.h"
 
+//: @interface AmongVisualizeHill : NSObject
 @interface AmongVisualizeHill : NSObject
 
-+ (NSString *)showNick:(NSString *)uid inMessage:(NIMMessage *)message;
+//: + (BOOL)canInviteMemberToTeam:(NIMTeamMember *)member;
++ (BOOL)television:(NIMTeamMember *)member;
 
-+ (NSString *)showNick:(NSString *)uid inSession:(NIMSession *)session;
+//: + (BOOL)canEditSuperTeamInfo:(NIMTeamMember *)member;
++ (BOOL)kind:(NIMTeamMember *)member;
 
-+ (NSString *)showTime:(NSTimeInterval)msglastTime showDetail:(BOOL)showDetail;
+//: + (NSString *)durationTextWithSeconds:(NSTimeInterval)seconds;
++ (NSString *)anPromiseSeconds:(NSTimeInterval)seconds;
 
-+ (NSString *)messageTipContent:(NIMMessage *)message;
+//: + (NSString *)messageTipContent:(NIMMessage *)message;
++ (NSString *)arc:(NIMMessage *)message;
 
-+ (NSString *)durationTextWithSeconds:(NSTimeInterval)seconds;
+//: + (NSString *)showNick:(NSString *)uid inMessage:(NIMMessage *)message;
++ (NSString *)chockful:(NSString *)uid outsideMessage:(NIMMessage *)message;
 
-+ (BOOL)canEditTeamInfo:(NIMTeamMember *)member;
+//: + (BOOL)canInviteMemberToSuperTeam:(NIMTeamMember *)member;
++ (BOOL)island:(NIMTeamMember *)member;
 
-+ (BOOL)canInviteMemberToTeam:(NIMTeamMember *)member;
+//: + (NSString *)showTime:(NSTimeInterval)msglastTime showDetail:(BOOL)showDetail;
++ (NSString *)surf:(NSTimeInterval)msglastTime flavor:(BOOL)showDetail;
 
-+ (BOOL)canEditSuperTeamInfo:(NIMTeamMember *)member;
+//: + (NSString *)showNick:(NSString *)uid inSession:(NIMSession *)session;
++ (NSString *)likelySession:(NSString *)uid hidden:(NIMSession *)session;
 
-+ (BOOL)canInviteMemberToSuperTeam:(NIMTeamMember *)member;
+//: + (BOOL)canEditTeamInfo:(NIMTeamMember *)member;
++ (BOOL)conversationGuidance:(NIMTeamMember *)member;
 
+//: @end
 @end

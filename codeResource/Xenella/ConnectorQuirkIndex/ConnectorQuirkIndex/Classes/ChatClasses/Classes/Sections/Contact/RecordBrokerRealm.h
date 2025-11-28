@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  RecordBrokerRealm.h
 // ParseByBreakPerform
@@ -6,13 +8,21 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+
+//: @class TrainClassScenario;
 @class TrainClassScenario;
 
+//: @interface RecordBrokerRealm : UIView
 @interface RecordBrokerRealm : UIView
 
+//: @property (nonatomic,strong) TrainClassScenario *pickedView;
 @property (nonatomic,strong) TrainClassScenario *pickedView;
 
+//: @property (nonatomic,strong) UIButton *doneButton;
 @property (nonatomic,strong) UIButton *doneButton;
 
+//: @end
 @end

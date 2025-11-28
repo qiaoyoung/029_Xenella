@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSDictionary+JasperConduitPixel.h
 //  Kitalker
@@ -6,25 +8,38 @@
 //  Copyright (c) 2012年 ibm. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface NSDictionary (JasperConduitPixel)
 @interface NSDictionary (JasperConduitPixel)
 
-- (NSString *)jsonString;
+//: - (NSString *)newStringValueForKey:(id)key;
+- (NSString *)enable:(id)key;
 
-- (BOOL)boolValueForKey:(id)key;
+//: - (NSArray *)arrayValueForKey:(id)aKey;
+- (NSArray *)related:(id)aKey;
 
-- (int)intValueForKey:(id)key;
+//: - (float)floatValueForKey:(id)key;
+- (float)throughWith:(id)key;
 
-- (NSInteger)integerValueForKey:(id)key;
+//: - (NSString *)jsonString;
+- (NSString *)anti;
 
-- (float)floatValueForKey:(id)key;
+//: - (int)intValueForKey:(id)key;
+- (int)formProperty:(id)key;
 
-- (double)doubleValueForKey:(id)key;
+//: - (NSInteger)integerValueForKey:(id)key;
+- (NSInteger)parent:(id)key;
 
-- (NSString *)newStringValueForKey:(id)key;
+//: - (BOOL)boolValueForKey:(id)key;
+- (BOOL)key:(id)key;
 
-- (id)valueObjectForKey:(id)aKey;
+//: - (id)valueObjectForKey:(id)aKey;
+- (id)resource:(id)aKey;
 
-- (NSArray *)arrayValueForKey:(id)aKey;
+//: - (double)doubleValueForKey:(id)key;
+- (double)chain:(id)key;
+//: @end
 @end

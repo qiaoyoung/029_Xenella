@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIImage+ParseByBreakPerform.h
 // ParseByBreakPerform
@@ -6,23 +8,35 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface UIImage (ParseByBreakPerform)
 @interface UIImage (ParseByBreakPerform)
 
-+ (UIImage *)nim_fetchChartlet:(NSString *)imageName chartletId:(NSString *)chartletId;
+//: - (UIImage *)nim_imageForAvatarUpload;
+- (UIImage *)safelyUpload;
 
-+ (CGSize)device_sizeWithImageOriginSize:(CGSize)originSize
-                              minSize:(CGSize)imageMinSize
-                              maxSize:(CGSize)imageMaxSiz;
+//: - (UIImage *)nim_fixOrientation;
+- (UIImage *)standard;
 
 
-+ (UIImage *)nim_emoticonInKit:(NSString *)imageName;
 
-- (UIImage *)nim_imageForAvatarUpload;
+//: + (CGSize)device_sizeWithImageOriginSize:(CGSize)originSize
++ (CGSize)opinionSize:(CGSize)originSize
+                              //: minSize:(CGSize)imageMinSize
+                              name:(CGSize)imageMinSize
+                              //: maxSize:(CGSize)imageMaxSiz;
+                              grade:(CGSize)imageMaxSiz;
+//: - (UIImage *)nim_cropedImageWithSize:(CGSize)size;
+- (UIImage *)untilSize:(CGSize)size;
 
-- (UIImage *)nim_fixOrientation;
+//: + (UIImage *)nim_fetchChartlet:(NSString *)imageName chartletId:(NSString *)chartletId;
++ (UIImage *)exit:(NSString *)imageName receive:(NSString *)chartletId;
 
-- (UIImage *)nim_cropedImageWithSize:(CGSize)size;
+//: + (UIImage *)nim_emoticonInKit:(NSString *)imageName;
++ (UIImage *)since:(NSString *)imageName;
 
+//: @end
 @end

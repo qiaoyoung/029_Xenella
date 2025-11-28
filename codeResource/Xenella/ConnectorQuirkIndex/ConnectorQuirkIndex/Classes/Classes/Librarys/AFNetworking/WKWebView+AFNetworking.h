@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // WkWebView+AFNetworking.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -19,24 +21,29 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
+//: #import <TargetConditionals.h>
 #import <TargetConditionals.h>
-
-#if TARGET_OS_IOS
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <WebKit/WebKit.h>
 #import <WebKit/WebKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @class AFHTTPSessionManager;
 @class AFHTTPSessionManager;
 
+//: @interface WKWebView (AFNetworking)
 @interface WKWebView (AFNetworking)
 
 /**
  The session manager used to download all request
  */
+//: @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
 @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
 
 /**
@@ -48,10 +55,15 @@ NS_ASSUME_NONNULL_BEGIN
  @param success A block object to be executed when the request finishes loading successfully. This block returns the HTML string to be loaded by the web view, and takes two arguments: the response, and the response string.
  @param failure A block object to be executed when the data task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a single argument: the error that occurred.
  */
-- (void)loadRequest:(NSURLRequest *)request
-         navigation:(WKNavigation * _Nonnull)navigation
-           progress:(NSProgress * _Nullable __autoreleasing * _Nullable)progress
-            success:(nullable NSString * (^)(NSHTTPURLResponse *response, NSString *HTML))success
+//: - (void)loadRequest:(NSURLRequest *)request
+- (void)policeman:(NSURLRequest *)request
+         //: navigation:(WKNavigation * _Nonnull)navigation
+         middleMisplay:(WKNavigation * _Nonnull)navigation
+           //: progress:(NSProgress * _Nullable __autoreleasing * _Nullable)progress
+           gateOf:(NSProgress * _Nullable __autoreleasing * _Nullable)progress
+            //: success:(nullable NSString * (^)(NSHTTPURLResponse *response, NSString *HTML))success
+            successLab:(nullable NSString * (^)(NSHTTPURLResponse *response, NSString *HTML))success
+            //: failure:(nullable void (^)(NSError *error))failure;
             failure:(nullable void (^)(NSError *error))failure;
 
 /**
@@ -65,16 +77,23 @@ NS_ASSUME_NONNULL_BEGIN
  @param success A block object to be executed when the request finishes loading successfully. This block returns the data to be loaded by the web view and takes two arguments: the response, and the downloaded data.
  @param failure A block object to be executed when the data task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a single argument: the error that occurred.
  */
-- (void)loadRequest:(NSURLRequest *)request
-         navigation:(WKNavigation * _Nonnull)navigation
-           MIMEType:(nullable NSString *)MIMEType
-   textEncodingName:(nullable NSString *)textEncodingName
-           progress:(NSProgress * _Nullable __autoreleasing * _Nullable)progress
-            success:(nullable NSData * (^)(NSHTTPURLResponse *response, NSData *data))success
-            failure:(nullable void (^)(NSError *error))failure;
+//: - (void)loadRequest:(NSURLRequest *)request
+- (void)ability:(NSURLRequest *)request
+         //: navigation:(WKNavigation * _Nonnull)navigation
+         windowNavigation:(WKNavigation * _Nonnull)navigation
+           //: MIMEType:(nullable NSString *)MIMEType
+           option:(nullable NSString *)MIMEType
+   //: textEncodingName:(nullable NSString *)textEncodingName
+   delivery:(nullable NSString *)textEncodingName
+           //: progress:(NSProgress * _Nullable __autoreleasing * _Nullable)progress
+           wanderExtend:(NSProgress * _Nullable __autoreleasing * _Nullable)progress
+            //: success:(nullable NSData * (^)(NSHTTPURLResponse *response, NSData *data))success
+            contextFailure:(nullable NSData * (^)(NSHTTPURLResponse *response, NSData *data))success
+            //: failure:(nullable void (^)(NSError *error))failure;
+            system:(nullable void (^)(NSError *error))failure;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END
-
-#endif
