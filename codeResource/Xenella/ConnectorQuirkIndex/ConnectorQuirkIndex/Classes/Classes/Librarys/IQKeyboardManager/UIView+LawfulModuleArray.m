@@ -63,7 +63,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
         {
             //: navController = navController.navigationController;
             navController = navController.navigationController;
-	[self setScatter:self.gesture];
+//	[self setScatter:self.gesture];
         }
 
         //: UIViewController *parentController = navController;
@@ -85,7 +85,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
             parentController = parentParentController;
             //: parentParentController = parentController.parentViewController;
             parentParentController = parentController.parentViewController;
-	[self setScatter:self.gesture];
+//	[self setScatter:self.gesture];
         }
 
         //: if (navController == parentController)
@@ -136,7 +136,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
         {
             //: matchController = matchParentController;
             matchController = matchParentController;
-	[self setScatter:self.gesture];
+//	[self setScatter:self.gesture];
             //: matchParentController = matchController.parentViewController;
             matchParentController = matchController.parentViewController;
         }
@@ -316,7 +316,7 @@ static const char *styleIncludePraisePreference (NSString *value) {
     {
         //: _IQCanBecomeFirstResponder = ([self isUserInteractionEnabled] && ![self isHidden] && [self alpha]!=0.0 && ![self isAlertViewTextField] && !self.textFieldSearchBar);
         _IQCanBecomeFirstResponder = ([self isUserInteractionEnabled] && ![self isHidden] && [self alpha]!=0.0 && ![self isAlertViewTextField] && !self.name);
-	[self setScatter:self.gesture];
+//	[self setScatter:self.gesture];
     }
 
     //: return _IQCanBecomeFirstResponder;
@@ -363,7 +363,7 @@ static const char *styleIncludePraisePreference (NSString *value) {
     {
         //: depth = [[self superview] depth] + 1;
         depth = [[self superview] sureDepth] + 1;
-	[self setScatter:self.gesture];
+//	[self setScatter:self.gesture];
     }
 
     //: return depth;
@@ -459,7 +459,7 @@ static const char *styleIncludePraisePreference (NSString *value) {
 
 - (NSArray<__kindof UIView *> *)maker:(NSArray<__kindof UIView *> *)scatter {
     //: OC_CUSTOM_PROPERTY_INJECT
-    self.scatter = scatter;
+//    self.scatter = scatter;
     return scatter;
 }
 
@@ -582,7 +582,7 @@ static const char *styleIncludePraisePreference (NSString *value) {
     {
         //: nextResponder = [nextResponder nextResponder];
         nextResponder = [nextResponder nextResponder];
-	[self setScatter:self.gesture];
+//	[self setScatter:self.gesture];
 
         //: if ([nextResponder isKindOfClass:[UIViewController class]])
         if ([nextResponder isKindOfClass:[UIViewController class]])
@@ -614,12 +614,7 @@ static const char *moduleOpinionAlert (NSString *value) {
     }
     return  "scatter";
 };
-
-- (void)setScatter:(NSArray<__kindof UIView *> *)scatter {
-    //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, moduleOpinionAlert(nil), scatter, OBJC_ASSOCIATION_RETAIN);
-}
-
+ 
 //: -(nullable __kindof UIView*)superviewOfClassType:(nonnull Class)classType belowView:(nullable UIView*)belowView
 -(nullable __kindof UIView*)pull:(nonnull Class)classType a:(nullable UIView*)belowView
 {
@@ -669,7 +664,7 @@ static const char *moduleOpinionAlert (NSString *value) {
 
         //: superview = superview.superview;
         superview = superview.superview;
-	[self setScatter:self.gesture];
+//	[self setScatter:self.gesture];
     }
 
     //: return nil;

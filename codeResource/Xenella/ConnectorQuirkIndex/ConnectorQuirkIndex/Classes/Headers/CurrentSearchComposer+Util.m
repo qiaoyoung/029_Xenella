@@ -296,7 +296,7 @@ static const char *appLimitedKey (NSString *value) {
 - (NSString *)mTiming:(NSString *)key {
     //: key = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] uppercaseString]];
     key = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] uppercaseString]];
-	[self setOpinion:self.earthAround];
+//	[self setOpinion:self.earthAround];
     //: return [NSString stringWithFormat:@"NSUserDefault%@", key];
     return [NSString stringWithFormat:[NoData coreTableAgainDevice], key];
 }

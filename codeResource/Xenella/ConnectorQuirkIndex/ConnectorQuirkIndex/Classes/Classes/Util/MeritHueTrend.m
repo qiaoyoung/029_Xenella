@@ -368,8 +368,7 @@ typedef struct {
 static BOOL screenRelativePlatform; // 是否已开启日志打印
 //: static NSMutableArray *_allSessionTask;
 static NSMutableArray *coreAdvancedError;
-//: static AFHTTPSessionManager *_sessionManager;
-static AFHTTPSessionManager *viewHoneyTimer;
+static AFHTTPSessionManager *_sessionManager;
 
 //: #pragma mark - 开始监听网络
 #pragma mark - 开始监听网络
@@ -380,14 +379,14 @@ static AFHTTPSessionManager *viewHoneyTimer;
 //: + (void)initialize {
 + (void)initialize {
     //: _sessionManager = [AFHTTPSessionManager manager];
-    viewHoneyTimer = [AFHTTPSessionManager windowDown];
+    _sessionManager = [AFHTTPSessionManager manager];
     //: _sessionManager.requestSerializer.timeoutInterval = 15.f;
-    viewHoneyTimer.translationHandles.delayReceiverred = 15.f;
+    _sessionManager.requestSerializer.timeoutInterval = 15.f;
     //: _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
-    viewHoneyTimer.magnitudeyFloatsing.dayResignsed = [NSSet setWithObjects:[BurnData sharedInstance].moduleRulingTimer, [BurnData sharedInstance].styleTeemId, [BurnData sharedInstance].moduleCavePreference, [BurnData sharedInstance].featureMomPath, [BurnData sharedInstance].coreKidStingPage, [BurnData sharedInstance].featureReflectTeemFormat, [BurnData sharedInstance].componentTableSegmentSettings, nil];
+    _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:[BurnData sharedInstance].moduleRulingTimer, [BurnData sharedInstance].styleTeemId, [BurnData sharedInstance].moduleCavePreference, [BurnData sharedInstance].featureMomPath, [BurnData sharedInstance].coreKidStingPage, [BurnData sharedInstance].featureReflectTeemFormat, [BurnData sharedInstance].componentTableSegmentSettings, nil];
     // 打开状态栏的等待菊花
     //: [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
-    [AFNetworkActivityIndicatorManager passingShould].weave = YES;
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
 }
 
 //: + (void)cancelAllRequest {
@@ -422,11 +421,10 @@ static AFHTTPSessionManager *viewHoneyTimer;
     //: [self setResponseSerializer:(MeritHueTrendResponseSerializerJSON)];
     [self setHostessPost:(MeritHueTrendResponseSerializerJSON)];
 
-    //: NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
-    NSURLSessionTask *sessionTask = [viewHoneyTimer monthFailure:URL scale:parameters stride:nil drop:^(NSProgress * _Nonnull uploadProgress) {
+    NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
 
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } betweenReversion:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"responseObject = %@",responseObject] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].appWithdrawPlatform,responseObject] UTF8String]);}
@@ -436,7 +434,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         success ? success(responseObject) : nil;
 
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } flagListener:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"error = %@",error] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].spacingSlopeMessage,error] UTF8String]);}
@@ -469,29 +467,28 @@ static AFHTTPSessionManager *viewHoneyTimer;
                                          actualityFailure:(YLHttpRequestSuccess)success
                                          //: failure:(YLHttpRequestFailed)failure {
                                          telecastingA:(YLHttpRequestFailed)failure {
-    //: NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionTask *sessionTask = [viewHoneyTimer slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
+    
 
         //: NSError *error = nil;
         NSError *error = nil;
-        //: [formData appendPartWithFileURL:[NSURL fileURLWithPath:videoPath isDirectory:NO] name:@"video" error:&error];
-        [formData among:[NSURL fileURLWithPath:videoPath isDirectory:NO] soundError:[BurnData sharedInstance].featureEntryPlatform pan:&error];
+        [formData appendPartWithFileURL:[NSURL fileURLWithPath:videoPath isDirectory:NO] name:@"video" error:&error];
         //: (failure && error) ? failure(error) : nil;
         (failure && error) ? failure(error) : nil;
 
         //: NSData *thumbData = UIImageJPEGRepresentation(thumb, 1.f);
         NSData *thumbData = UIImageJPEGRepresentation(thumb, 1.f);
         //: [formData appendPartWithFileData:thumbData
-        [formData stopPart:thumbData
+        [formData appendPartWithFileData:thumbData
                                     //: name:@"thumb"
-                                    go:[BurnData sharedInstance].appMomTitle
+                                    name:[BurnData sharedInstance].appMomTitle
                                 //: fileName:@"thumb.jpg"
-                                paperExotic:[BurnData sharedInstance].k_quicklyPlatform
+                                fileName:[BurnData sharedInstance].k_quicklyPlatform
                                 //: mimeType:[NSString stringWithFormat:@"image/jpg"]];
-                                data:[NSString stringWithFormat:[BurnData sharedInstance].viewTowerSettings]];
+                                mimeType:[NSString stringWithFormat:[BurnData sharedInstance].viewTowerSettings]];
 
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //上传进度
         //: dispatch_sync(dispatch_get_main_queue(), ^{
         dispatch_sync(dispatch_get_main_queue(), ^{
@@ -500,7 +497,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         //: });
         });
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"responseObject = %@",responseObject] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].appWithdrawPlatform,responseObject] UTF8String]);}
@@ -510,7 +507,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         success ? success(responseObject) : nil;
 
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"error = %@",error] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].spacingSlopeMessage,error] UTF8String]);}
@@ -551,8 +548,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
                                   uploadForOutRequestSuccess:(YLHttpRequestSuccess)success
                                   //: failure:(YLHttpRequestFailed)failure {
                                   state:(YLHttpRequestFailed)failure {
-    //: NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionTask *sessionTask = [viewHoneyTimer slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
 
         //: for (NSUInteger i = 0; i < images.count; i++) {
         for (NSUInteger i = 0; i < images.count; i++) {
@@ -571,17 +567,17 @@ static AFHTTPSessionManager *viewHoneyTimer;
             NSString *imageFileName = [NSString stringWithFormat:@"%@%ld.%@",str,i,imageType?:[BurnData sharedInstance].themeStudyConfig];
 
             //: [formData appendPartWithFileData:imageData
-            [formData stopPart:imageData
+            [formData appendPartWithFileData:imageData
                                         //: name:[NSString stringWithFormat:@"%@%ld", name, i]
-                                        go:[NSString stringWithFormat:@"%@%ld", name, i]
+                                        name:[NSString stringWithFormat:@"%@%ld", name, i]
                                     //: fileName:fileNames ? [NSString stringWithFormat:@"%@.%@",fileNames[i],imageType?:@"jpg"] : imageFileName
-                                    paperExotic:fileNames ? [NSString stringWithFormat:@"%@.%@",fileNames[i],imageType?:[BurnData sharedInstance].themeStudyConfig] : imageFileName
+                                    fileName:fileNames ? [NSString stringWithFormat:@"%@.%@",fileNames[i],imageType?:[BurnData sharedInstance].themeStudyConfig] : imageFileName
                                     //: mimeType:[NSString stringWithFormat:@"image/%@",imageType ?: @"jpg"]];
-                                    data:[NSString stringWithFormat:[BurnData sharedInstance].colorDistinctionKey,imageType ?: [BurnData sharedInstance].themeStudyConfig]];
+                                    mimeType:[NSString stringWithFormat:[BurnData sharedInstance].colorDistinctionKey,imageType ?: [BurnData sharedInstance].themeStudyConfig]];
         }
 
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //上传进度
         //: dispatch_sync(dispatch_get_main_queue(), ^{
         dispatch_sync(dispatch_get_main_queue(), ^{
@@ -590,7 +586,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         //: });
         });
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"responseObject = %@",responseObject] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].appWithdrawPlatform,responseObject] UTF8String]);}
@@ -600,7 +596,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         success ? success(responseObject) : nil;
 
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"error = %@",error] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].spacingSlopeMessage,error] UTF8String]);}
@@ -655,15 +651,13 @@ static AFHTTPSessionManager *viewHoneyTimer;
 
 //: + (void)openNetworkActivityIndicator:(BOOL)open {
 + (void)indicatorTask:(BOOL)open {
-    //: [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:open];
-    [[AFNetworkActivityIndicatorManager passingShould] setWeave:open];
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:open];
 }
 
 //: + (void)networkStatusWithBlock:(MeritHueTrendStatus)networkStatus {
 + (void)theCreation:(MeritHueTrendStatus)networkStatus {
 
-    //: [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-    [[AFNetworkReachabilityManager passingShould] setSeekBlock:^(AFNetworkReachabilityStatus status) {
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         //: switch (status) {
         switch (status) {
             //: case AFNetworkReachabilityStatusUnknown:
@@ -718,8 +712,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
                               mountain:(YLHttpRequestFailed)failure {
     //: NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:URL]];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:URL]];
-    //: __block NSURLSessionDownloadTask *downloadTask = [_sessionManager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
-    __block NSURLSessionDownloadTask *downloadTask = [viewHoneyTimer application:request destinationHandler:^(NSProgress * _Nonnull downloadProgress) {
+    __block NSURLSessionDownloadTask *downloadTask = [_sessionManager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
         //下载进度
         //: dispatch_sync(dispatch_get_main_queue(), ^{
         dispatch_sync(dispatch_get_main_queue(), ^{
@@ -728,7 +721,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         //: });
         });
     //: } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-    } insideSomeone:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         //拼接缓存目录
         //: NSString *downloadDir = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:fileDir ? fileDir : @"Download"];
         NSString *downloadDir = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:fileDir ? fileDir : [BurnData sharedInstance].widgetCoupCoolKey];
@@ -746,7 +739,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         return [NSURL fileURLWithPath:filePath];
 
     //: } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-    } downloadBy:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
 
         //: [[self allSessionTask] removeObject:downloadTask];
         [[self session] removeObject:downloadTask];
@@ -787,8 +780,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
 
 //: + (void)setAFHTTPSessionManagerProperty:(void (^)(AFHTTPSessionManager *))sessionManager {
 + (void)setSession:(void (^)(AFHTTPSessionManager *))sessionManager {
-    //: sessionManager ? sessionManager(_sessionManager) : nil;
-    sessionManager ? sessionManager(viewHoneyTimer) : nil;
+    sessionManager ? sessionManager(_sessionManager) : nil;
 }
 
 /**
@@ -815,8 +807,8 @@ static AFHTTPSessionManager *viewHoneyTimer;
                                           forwarding:(YLHttpRequestSuccess)success
                                           //: failure:(YLHttpRequestFailed)failure {
                                           exclude:(YLHttpRequestFailed)failure {
-    //: NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionTask *sessionTask = [viewHoneyTimer slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
+    
         //: NSError *error = nil;
         NSError *error = nil;
 
@@ -824,8 +816,8 @@ static AFHTTPSessionManager *viewHoneyTimer;
         for (NSString * key in files) {
             //: NSString * value = [files objectForKey:key];
             NSString * value = [files objectForKey:key];
-            //: [formData appendPartWithFileURL:[NSURL URLWithString:value] name:key error:&error];
-            [formData among:[NSURL URLWithString:value] soundError:key pan:&error];
+             [formData appendPartWithFileURL:[NSURL URLWithString:value] name:key error:&error];
+            
 
             //: if (error) {
             if (error) {
@@ -837,7 +829,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         //: (failure && error) ? failure(error) : nil;
         (failure && error) ? failure(error) : nil;
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //上传进度
         //: dispatch_sync(dispatch_get_main_queue(), ^{
         dispatch_sync(dispatch_get_main_queue(), ^{
@@ -846,7 +838,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         //: });
         });
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"responseObject = %@",responseObject] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].appWithdrawPlatform,responseObject] UTF8String]);}
@@ -856,7 +848,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         success ? success(responseObject) : nil;
 
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"error = %@",error] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].spacingSlopeMessage,error] UTF8String]);}
@@ -892,16 +884,15 @@ static AFHTTPSessionManager *viewHoneyTimer;
                                 //: failure:(YLHttpRequestFailed)failure {
                                 supplySong:(YLHttpRequestFailed)failure {
 
-    //: NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionTask *sessionTask = [viewHoneyTimer slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
+    
         //: NSError *error = nil;
         NSError *error = nil;
-        //: [formData appendPartWithFileURL:[NSURL URLWithString:filePath] name:name error:&error];
-        [formData among:[NSURL URLWithString:filePath] soundError:name pan:&error];
+        [formData appendPartWithFileURL:[NSURL URLWithString:filePath] name:name error:&error];
         //: (failure && error) ? failure(error) : nil;
         (failure && error) ? failure(error) : nil;
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //上传进度
         //: dispatch_sync(dispatch_get_main_queue(), ^{
         dispatch_sync(dispatch_get_main_queue(), ^{
@@ -910,7 +901,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         //: });
         });
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"responseObject = %@",responseObject] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].appWithdrawPlatform,responseObject] UTF8String]);}
@@ -920,7 +911,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         success ? success(responseObject) : nil;
 
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"error = %@",error] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].spacingSlopeMessage,error] UTF8String]);}
@@ -943,8 +934,8 @@ static AFHTTPSessionManager *viewHoneyTimer;
 
 //: + (void)setRequestTimeoutInterval:(NSTimeInterval)time {
 + (void)setFleet:(NSTimeInterval)time {
-    //: _sessionManager.requestSerializer.timeoutInterval = time;
-    viewHoneyTimer.translationHandles.delayReceiverred = time;
+    _sessionManager.requestSerializer.timeoutInterval = time;
+    
 }
 
 
@@ -955,20 +946,19 @@ static AFHTTPSessionManager *viewHoneyTimer;
  */
 //: + (void)load {
 + (void)load {
-    //: [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    [[AFNetworkReachabilityManager passingShould] extended];
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
 }
 
 //: + (BOOL)isWWANNetwork {
 + (BOOL)reading {
-    //: return [AFNetworkReachabilityManager sharedManager].reachableViaWWAN;
-    return [AFNetworkReachabilityManager passingShould].hisUnder;
+    return [AFNetworkReachabilityManager sharedManager].reachableViaWWAN;
+    
 }
 
 //: + (void)setRequestSerializer:(MeritHueTrendRequestSerializer)requestSerializer {
 + (void)setRadarBy:(MeritHueTrendRequestSerializer)requestSerializer {
-    //: _sessionManager.requestSerializer = requestSerializer==MeritHueTrendRequestSerializerHTTP ? [AFHTTPRequestSerializer serializer] : [AFJSONRequestSerializer serializer];
-    viewHoneyTimer.translationHandles = requestSerializer==MeritHueTrendRequestSerializerHTTP ? [AFHTTPRequestSerializer little] : [AFJSONRequestSerializer little];
+    _sessionManager.requestSerializer = requestSerializer==MeritHueTrendRequestSerializerHTTP ? [AFHTTPRequestSerializer serializer] : [AFJSONRequestSerializer serializer];
 }
 
 //: #pragma mark - 上传单张图片
@@ -976,8 +966,8 @@ static AFHTTPSessionManager *viewHoneyTimer;
 //: + (NSURLSessionTask *)uploadImageWithURL:(NSString *)URL parameters:(id)parameters name:(NSString *)name data:(NSData *)data fileName:(NSString *)fileName imageType:(NSString *)imageType progress:(YLHttpProgress)progress success:(YLHttpRequestSuccess)success failure:(YLHttpRequestFailed)failure
 + (NSURLSessionTask *)stairStart:(NSString *)URL unmixed:(id)parameters leap:(NSString *)name text:(NSData *)data definite:(NSString *)fileName research:(NSString *)imageType lengthBoard:(YLHttpProgress)progress orientationSelect:(YLHttpRequestSuccess)success signalInsightNaught:(YLHttpRequestFailed)failure
 {
-    //: NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionTask *sessionTask = [viewHoneyTimer slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
+    
 
         // 默认图片的文件名, 若fileNames为nil就使用
 
@@ -991,16 +981,16 @@ static AFHTTPSessionManager *viewHoneyTimer;
         NSString *imageFileName = [NSString stringWithFormat:@"%@.%@",str,imageType?:[BurnData sharedInstance].themeStudyConfig];
 
         //: [formData appendPartWithFileData:data
-        [formData stopPart:data
+        [formData appendPartWithFileData:data
                                     //: name:name
-                                    go:name
+                                    name:name
                                 //: fileName:fileName ? [NSString stringWithFormat:@"%@.%@",fileName,imageType?:@"jpg"] : imageFileName
-                                paperExotic:fileName ? [NSString stringWithFormat:@"%@.%@",fileName,imageType?:[BurnData sharedInstance].themeStudyConfig] : imageFileName
+                                fileName:fileName ? [NSString stringWithFormat:@"%@.%@",fileName,imageType?:[BurnData sharedInstance].themeStudyConfig] : imageFileName
                                 //: mimeType:[NSString stringWithFormat:@"image/%@",imageType ?: @"jpg"]];
-                                data:[NSString stringWithFormat:[BurnData sharedInstance].colorDistinctionKey,imageType ?: [BurnData sharedInstance].themeStudyConfig]];
+                                mimeType:[NSString stringWithFormat:[BurnData sharedInstance].colorDistinctionKey,imageType ?: [BurnData sharedInstance].themeStudyConfig]];
 
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //上传进度
         //: dispatch_sync(dispatch_get_main_queue(), ^{
         dispatch_sync(dispatch_get_main_queue(), ^{
@@ -1009,7 +999,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         //: });
         });
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"responseObject = %@",responseObject] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].appWithdrawPlatform,responseObject] UTF8String]);}
@@ -1019,7 +1009,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         success ? success(responseObject) : nil;
 
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"error = %@",error] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].spacingSlopeMessage,error] UTF8String]);}
@@ -1067,11 +1057,11 @@ static AFHTTPSessionManager *viewHoneyTimer;
     //: [self setResponseSerializer:(MeritHueTrendResponseSerializerHTTP)];
     [self setHostessPost:(MeritHueTrendResponseSerializerHTTP)];
 
-    //: NSURLSessionTask *sessionTask = [_sessionManager GET:URL parameters:parameters headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
-    NSURLSessionTask *sessionTask = [viewHoneyTimer need:URL relation:parameters thick:nil translateSilent:^(NSProgress * _Nonnull uploadProgress) {
+    NSURLSessionTask *sessionTask = [_sessionManager GET:URL parameters:parameters headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+    
 
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } fabricGetBack:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"responseObject = %@",responseObject] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].appWithdrawPlatform,responseObject] UTF8String]);}
@@ -1081,7 +1071,7 @@ static AFHTTPSessionManager *viewHoneyTimer;
         success ? success(responseObject) : nil;
 
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } presentation:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         //: if (_isOpenLog) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:@"error = %@",error] UTF8String]);}
         if (screenRelativePlatform) {printf("[%s] %s [第%d行]: %s\n", "12:25:47" ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:[BurnData sharedInstance].spacingSlopeMessage,error] UTF8String]);}
@@ -1102,20 +1092,17 @@ static AFHTTPSessionManager *viewHoneyTimer;
 
 //: + (void)setResponseSerializer:(MeritHueTrendResponseSerializer)responseSerializer {
 + (void)setHostessPost:(MeritHueTrendResponseSerializer)responseSerializer {
-    //: _sessionManager.responseSerializer = responseSerializer==MeritHueTrendResponseSerializerHTTP ? [AFHTTPResponseSerializer serializer] : [AFJSONResponseSerializer serializer];
-    viewHoneyTimer.magnitudeyFloatsing = responseSerializer==MeritHueTrendResponseSerializerHTTP ? [AFHTTPResponseSerializer flash] : [AFJSONResponseSerializer flash];
+    _sessionManager.responseSerializer = responseSerializer==MeritHueTrendResponseSerializerHTTP ? [AFHTTPResponseSerializer serializer] : [AFJSONResponseSerializer serializer];
 }
 
 //: + (BOOL)isWiFiNetwork {
 + (BOOL)flushBy {
-    //: return [AFNetworkReachabilityManager sharedManager].reachableViaWiFi;
-    return [AFNetworkReachabilityManager passingShould].readingFi;
+    return [AFNetworkReachabilityManager sharedManager].reachableViaWiFi;
 }
 
 //: + (BOOL)isNetwork {
 + (BOOL)reply {
-    //: return [AFNetworkReachabilityManager sharedManager].reachable;
-    return [AFNetworkReachabilityManager passingShould].client;
+    return [AFNetworkReachabilityManager sharedManager].reachable;
 }
 
 //: #pragma mark - POST请求无缓存
@@ -1137,25 +1124,19 @@ static AFHTTPSessionManager *viewHoneyTimer;
     //: NSData *cerData = [NSData dataWithContentsOfFile:cerPath];
     NSData *cerData = [NSData dataWithContentsOfFile:cerPath];
     // 使用证书验证模式
-    //: AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
-    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy underWith:AFSSLPinningModeCertificate];
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
     // 如果需要验证自建证书(无效证书)，需要设置为YES
-    //: securityPolicy.allowInvalidCertificates = YES;
-    securityPolicy.statePublished = YES;
+    securityPolicy.allowInvalidCertificates = YES;
     // 是否需要验证域名，默认为YES;
-    //: securityPolicy.validatesDomainName = validatesDomainName;
-    securityPolicy.simultaneouslyHiddenned = validatesDomainName;
-    //: securityPolicy.pinnedCertificates = [[NSSet alloc] initWithObjects:cerData, nil];
-    securityPolicy.refuseDisplayed = [[NSSet alloc] initWithObjects:cerData, nil];
+    securityPolicy.validatesDomainName = validatesDomainName;
+    securityPolicy.pinnedCertificates = [[NSSet alloc] initWithObjects:cerData, nil];
 
-    //: [_sessionManager setSecurityPolicy:securityPolicy];
-    [viewHoneyTimer setPickFinds:securityPolicy];
+    [_sessionManager setSecurityPolicy:securityPolicy];
 }
 
 //: + (void)setValue:(NSString *)value forHTTPHeaderField:(NSString *)field {
 + (void)blend:(NSString *)value semiautomatic:(NSString *)field {
-    //: [_sessionManager.requestSerializer setValue:value forHTTPHeaderField:field];
-    [viewHoneyTimer.translationHandles crop:value vitalUnwished:field];
+    [_sessionManager.requestSerializer setValue:value forHTTPHeaderField:field];
 }
 
 //: @end

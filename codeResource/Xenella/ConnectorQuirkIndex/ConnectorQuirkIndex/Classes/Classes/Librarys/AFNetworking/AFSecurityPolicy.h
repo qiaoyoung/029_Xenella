@@ -1,5 +1,3 @@
-// __DEBUG__
-// __CLOSE_PRINT__
 // AFSecurityPolicy.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -21,21 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-// __M_A_C_R_O__
-//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import <Security/Security.h>
 #import <Security/Security.h>
 
-//: typedef NS_ENUM(NSUInteger, AFSSLPinningMode) {
 typedef NS_ENUM(NSUInteger, AFSSLPinningMode) {
-    //: AFSSLPinningModeNone,
     AFSSLPinningModeNone,
-    //: AFSSLPinningModePublicKey,
     AFSSLPinningModePublicKey,
-    //: AFSSLPinningModeCertificate,
     AFSSLPinningModeCertificate,
-//: };
 };
 
 /**
@@ -44,29 +34,14 @@ typedef NS_ENUM(NSUInteger, AFSSLPinningMode) {
  Adding pinned SSL certificates to your app helps prevent man-in-the-middle attacks and other vulnerabilities. Applications dealing with sensitive customer data or financial information are strongly encouraged to route all communication over an HTTPS connection with SSL pinning configured and enabled.
  */
 
-//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface AFSecurityPolicy : NSObject <NSSecureCoding, NSCopying>
 @interface AFSecurityPolicy : NSObject <NSSecureCoding, NSCopying>
 
 /**
  The criteria by which server trust should be evaluated against the pinned SSL certificates. Defaults to `AFSSLPinningModeNone`.
  */
-/**
- Whether or not to trust servers with an invalid or expired SSL certificates. Defaults to `NO`.
- */
-//: @property (nonatomic, assign) BOOL allowInvalidCertificates;
-@property (nonatomic, assign) BOOL statePublished;
-
-//: @property (readonly, nonatomic, assign) AFSSLPinningMode SSLPinningMode;
-@property (readonly, nonatomic, assign) AFSSLPinningMode userPinningModes;
-
-/**
- Whether or not to validate the domain name in the certificate's CN field. Defaults to `YES`.
- */
-//: @property (nonatomic, assign) BOOL validatesDomainName;
-@property (nonatomic, assign) BOOL simultaneouslyHiddenned;
+@property (readonly, nonatomic, assign) AFSSLPinningMode SSLPinningMode;
 
 /**
  The certificates used to evaluate server trust according to the SSL pinning mode. 
@@ -75,41 +50,18 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see policyWithPinningMode:withPinnedCertificates:
  */
-//: @property (nonatomic, strong, nullable) NSSet <NSData *> *pinnedCertificates;
-@property (nonatomic, strong, nullable) NSSet <NSData *> *refuseDisplayed;
+@property (nonatomic, strong, nullable) NSSet <NSData *> *pinnedCertificates;
 
 /**
- Creates and returns a security policy with the specified pinning mode.
-
- @param pinningMode The SSL pinning mode.
- @param pinnedCertificates The certificates to pin against.
-
- @return A new security policy.
-
- @see +certificatesInBundle:
- @see -pinnedCertificates
-*/
-//: + (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode withPinnedCertificates:(NSSet <NSData *> *)pinnedCertificates;
-+ (instancetype)streetSmartCertificates:(AFSSLPinningMode)pinningMode can:(NSSet <NSData *> *)pinnedCertificates;
-
-///------------------------------
-/// @name Evaluating Server Trust
-///------------------------------
-
-/**
- Whether or not the specified server trust should be accepted, based on the security policy.
-
- This method should be used when responding to an authentication challenge from a server.
-
- @param serverTrust The X.509 certificate trust of the server.
- @param domain The domain of serverTrust. If `nil`, the domain will not be validated.
-
- @return Whether or not to trust the server.
+ Whether or not to trust servers with an invalid or expired SSL certificates. Defaults to `NO`.
  */
-//: - (BOOL)evaluateServerTrust:(SecTrustRef)serverTrust
-- (BOOL)dog:(SecTrustRef)serverTrust
-                  //: forDomain:(nullable NSString *)domain;
-                  boundary:(nullable NSString *)domain;
+@property (nonatomic, assign) BOOL allowInvalidCertificates;
+
+/**
+ Whether or not to validate the domain name in the certificate's CN field. Defaults to `YES`.
+ */
+@property (nonatomic, assign) BOOL validatesDomainName;
+
 ///-----------------------------------------
 /// @name Getting Certificates from the Bundle
 ///-----------------------------------------
@@ -119,8 +71,18 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return The certificates included in the given bundle.
  */
-//: + (NSSet <NSData *> *)certificatesInBundle:(NSBundle *)bundle;
-+ (NSSet <NSData *> *)fishing:(NSBundle *)bundle;
++ (NSSet <NSData *> *)certificatesInBundle:(NSBundle *)bundle;
+
+///-----------------------------------------
+/// @name Getting Specific Security Policies
+///-----------------------------------------
+
+/**
+ Returns the shared default security policy, which does not allow invalid certificates, validates domain name, and does not validate against pinned certificates or public keys.
+
+ @return The default security policy.
+ */
++ (instancetype)defaultPolicy;
 
 ///---------------------
 /// @name Initialization
@@ -137,26 +99,40 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see -policyWithPinningMode:withPinnedCertificates:
  */
-//: + (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode;
-+ (instancetype)underWith:(AFSSLPinningMode)pinningMode;
-
-///-----------------------------------------
-/// @name Getting Specific Security Policies
-///-----------------------------------------
++ (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode;
 
 /**
- Returns the shared default security policy, which does not allow invalid certificates, validates domain name, and does not validate against pinned certificates or public keys.
+ Creates and returns a security policy with the specified pinning mode.
 
- @return The default security policy.
+ @param pinningMode The SSL pinning mode.
+ @param pinnedCertificates The certificates to pin against.
+
+ @return A new security policy.
+
+ @see +certificatesInBundle:
+ @see -pinnedCertificates
+*/
++ (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode withPinnedCertificates:(NSSet <NSData *> *)pinnedCertificates;
+
+///------------------------------
+/// @name Evaluating Server Trust
+///------------------------------
+
+/**
+ Whether or not the specified server trust should be accepted, based on the security policy.
+
+ This method should be used when responding to an authentication challenge from a server.
+
+ @param serverTrust The X.509 certificate trust of the server.
+ @param domain The domain of serverTrust. If `nil`, the domain will not be validated.
+
+ @return Whether or not to trust the server.
  */
-//: + (instancetype)defaultPolicy;
-+ (instancetype)cellPolicy;
+- (BOOL)evaluateServerTrust:(SecTrustRef)serverTrust
+                  forDomain:(nullable NSString *)domain;
 
-
-//: @end
 @end
 
-//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END
 
 ///----------------

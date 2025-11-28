@@ -902,18 +902,18 @@
 
 
     //: AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager windowDown];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 
-    //: AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
-    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy underWith:AFSSLPinningModeNone];
-    //: [securityPolicy setValidatesDomainName:NO];
-    [securityPolicy setSimultaneouslyHiddenned:NO];
-    //: securityPolicy.allowInvalidCertificates = YES;
-    securityPolicy.statePublished = YES;
-    //: manager.securityPolicy = securityPolicy;
-    manager.pickFinds = securityPolicy;
-    //: manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", nil];
-    manager.magnitudeyFloatsing.dayResignsed = [NSSet setWithObjects:[AttachBurbData sharedInstance].screenPotentialAlert, nil];
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+//    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy underWith:AFSSLPinningModeNone];
+    [securityPolicy setValidatesDomainName:NO];
+//    [securityPolicy setSimultaneouslyHiddenned:NO];
+    securityPolicy.allowInvalidCertificates = YES;
+//    securityPolicy.statePublished = YES;
+    manager.securityPolicy = securityPolicy;
+//    manager.pickFinds = securityPolicy;
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", nil];
+//    manager.magnitudeyFloatsing.dayResignsed = [NSSet setWithObjects:[AttachBurbData sharedInstance].screenPotentialAlert, nil];
 
     //: NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:urls] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:urls] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30];
@@ -936,14 +936,14 @@
 
 
 
-    //: NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
-    NSURLSessionDataTask *dataTask = [manager administratorHandler:request disable:^(NSProgress * _Nonnull uploadProgress) {
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
+//    NSURLSessionDataTask *dataTask = [manager administratorHandler:request disable:^(NSProgress * _Nonnull uploadProgress) {
 
     //: } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
-    } conversationHandler:^(NSProgress * _Nonnull downloadProgress) {
+    } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
 
     //: } completionHandler:^(NSURLResponse * _Nonnull response, id _Nullable responseObject, NSError * _Nullable error) {
-    } beHandler:^(NSURLResponse * _Nonnull response, id _Nullable responseObject, NSError * _Nullable error) {
+    } completionHandler:^(NSURLResponse * _Nonnull response, id _Nullable responseObject, NSError * _Nullable error) {
 
         //: NSMutableDictionary *mutDic = [NSMutableDictionary dictionaryWithDictionary:responseObject];
         NSMutableDictionary *mutDic = [NSMutableDictionary dictionaryWithDictionary:responseObject];

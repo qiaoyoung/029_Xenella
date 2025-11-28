@@ -1,5 +1,3 @@
-// __DEBUG__
-// __CLOSE_PRINT__
 // AFNetworking.h
 //
 // Copyright (c) 2013 AFNetworking (http://afnetworking.com/)
@@ -21,28 +19,23 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-//: #import <Foundation/Foundation.h>
+
 #import <Foundation/Foundation.h>
-//: #import <Availability.h>
 #import <Availability.h>
-//: #import <TargetConditionals.h>
 #import <TargetConditionals.h>
 
-// __M_A_C_R_O__
+#ifndef _AFNETWORKING_
+    #define _AFNETWORKING_
 
-    //: #import "AFURLRequestSerialization.h"
     #import "AFURLRequestSerialization.h"
-    //: #import "AFURLResponseSerialization.h"
     #import "AFURLResponseSerialization.h"
-    //: #import "AFSecurityPolicy.h"
     #import "AFSecurityPolicy.h"
 
-
-    //: #import "AFNetworkReachabilityManager.h"
+#if !TARGET_OS_WATCH
     #import "AFNetworkReachabilityManager.h"
+#endif
 
-
-    //: #import "AFURLSessionManager.h"
     #import "AFURLSessionManager.h"
-    //: #import "AFHTTPSessionManager.h"
     #import "AFHTTPSessionManager.h"
+
+#endif /* _AFNETWORKING_ */

@@ -316,20 +316,20 @@ Byte k_instantlyPath[] = {21, 7, 85, 5, 129, 20, 24, 12, 18, 16, 218, 213, 151};
 
 
     //: AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
-    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager windowDown];
+    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     //: sessionManager.requestSerializer.timeoutInterval = 5.f;
-    sessionManager.translationHandles.delayReceiverred = 5.f;
+    sessionManager.requestSerializer.timeoutInterval = 5.f;
     //: sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
-    sessionManager.magnitudeyFloatsing.dayResignsed = [NSSet setWithObjects:StringFromFactoryFarmData(widgetSpeciallyEvent), StringFromFactoryFarmData(themeWhereverUtility), StringFromFactoryFarmData(corePoleBurstId), StringFromFactoryFarmData(appChannelMmError), StringFromFactoryFarmData(componentPublishJokeId), StringFromFactoryFarmData(coreRocketChefValue), StringFromFactoryFarmData(k_instantlyPath), nil];
-    //: [sessionManager setResponseSerializer:[AFHTTPResponseSerializer serializer]];
-    [sessionManager setMagnitudeyFloatsing:[AFHTTPResponseSerializer flash]];
+    sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:StringFromFactoryFarmData(widgetSpeciallyEvent), StringFromFactoryFarmData(themeWhereverUtility), StringFromFactoryFarmData(corePoleBurstId), StringFromFactoryFarmData(appChannelMmError), StringFromFactoryFarmData(componentPublishJokeId), StringFromFactoryFarmData(coreRocketChefValue), StringFromFactoryFarmData(k_instantlyPath), nil];
+    [sessionManager setResponseSerializer:[AFHTTPResponseSerializer serializer]];
+//    [sessionManager setMagnitudeyFloatsing:[AFHTTPResponseSerializer flash]];
 
 
-    //: NSURLSessionTask *sessionTask = [sessionManager GET:url parameters:@{} headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
-    NSURLSessionTask *sessionTask = [sessionManager need:url relation:@{} thick:nil translateSilent:^(NSProgress * _Nonnull uploadProgress) {
+    NSURLSessionTask *sessionTask = [sessionManager GET:url parameters:@{} headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+//    NSURLSessionTask *sessionTask = [sessionManager need:url relation:@{} thick:nil translateSilent:^(NSProgress * _Nonnull uploadProgress) {
 
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } fabricGetBack:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: if ([responseObject isKindOfClass:[NSData class]]){
         if ([responseObject isKindOfClass:[NSData class]]){
@@ -344,7 +344,7 @@ Byte k_instantlyPath[] = {21, 7, 85, 5, 129, 20, 24, 12, 18, 16, 218, 213, 151};
         }
 
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } presentation:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         //: fail(-1, @"网络错误");
         fail(-1, StringFromFactoryFarmData(kVacationPreference));

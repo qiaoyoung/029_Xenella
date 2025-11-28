@@ -120,7 +120,7 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
 @interface LocalizeHelixAccept ()
 
 //: @property (nonatomic,strong) AFHTTPSessionManager *manager;
-@property (nonatomic,strong) AFHTTPSessionManager *voiceMinute;
+@property (nonatomic,strong) AFHTTPSessionManager *manager;
 
 //: @end
 @end
@@ -212,26 +212,26 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
             [ResizeNucleusDocumentRow assembleTide];
         }
     //: AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
-    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].voiceMinute;
+    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].manager;
     //添加请求头
     //: NSString *loginToken = [CurrentSearchComposer standardUserDefaults].loginToken;
     NSString *loginToken = [CurrentSearchComposer dot].markerDisabled;
     //: NSString *lang = emptyString([CurrentSearchComposer standardUserDefaults].language);
     NSString *lang = loopHalf([CurrentSearchComposer dot].bottom);
-    //: [manager.requestSerializer setValue:lang forHTTPHeaderField:@"lang"];
-    [manager.translationHandles crop:lang vitalUnwished:StringFromAdviceData(kAlreadyGrandMessage)];
+    [manager.requestSerializer setValue:lang forHTTPHeaderField:@"lang"];
+    
 
     //: if ([CurrentSearchComposer standardUserDefaults].loginToken.length > 0) {
     if ([CurrentSearchComposer dot].markerDisabled.length > 0) {
 
-        //: [manager.requestSerializer setValue:loginToken forHTTPHeaderField:@"token"];
-        [manager.translationHandles crop:loginToken vitalUnwished:StringFromAdviceData(coreHugePooTitle)];
+        [manager.requestSerializer setValue:loginToken forHTTPHeaderField:@"token"];
+        
     }
-    //: NSURLSessionDataTask *task = [manager GET:urlStr parameters:params headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-    NSURLSessionDataTask *task = [manager need:urlStr relation:params thick:nil translateSilent:^(NSProgress * _Nonnull downloadProgress) {
+    NSURLSessionDataTask *task = [manager GET:urlStr parameters:params headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    
 
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } fabricGetBack:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: if (![urlStr containsString:@"systemSetting"] && ![urlStr containsString:@"loginip"] && ![urlStr containsString:@"appSetting"] && ![urlStr containsString:@"ismustmobile"]) {
         if (![urlStr containsString:StringFromAdviceData(moduleAmendmentText)] && ![urlStr containsString:StringFromAdviceData(coreBurbConfig)] && ![urlStr containsString:StringFromAdviceData(appEelId)] && ![urlStr containsString:StringFromAdviceData(themePaintPath)]) {
@@ -244,7 +244,7 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
         //: success(responseObject);
         success(responseObject);
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } presentation:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //: if (isShow) {
         if (isShow) {
             //: [ResizeNucleusDocumentRow dismissWithDelay:0.25];
@@ -293,9 +293,8 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
     }
 
     //: AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
-    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].voiceMinute;
-    //: NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionDataTask *t = [manager slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].manager;
+    NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
 
         //: NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]];
         NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]];
@@ -303,24 +302,23 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
         NSString *fileName = [NSString stringWithFormat:StringFromAdviceData(themeEweComputerPath),timeSp];
         //: NSString *mimeType = @"video/mp4";
         NSString *mimeType = StringFromAdviceData(colorTaskTimer);
-        //: [formData appendPartWithFileData:videoData name:@"video" fileName:fileName mimeType:mimeType];
-        [formData stopPart:videoData go:StringFromAdviceData(featureAngerData) paperExotic:fileName data:mimeType];
+        [formData appendPartWithFileData:videoData name:@"video" fileName:fileName mimeType:mimeType];
         //: [formData appendPartWithFileData:coverData name:@"picture" fileName:[NSString stringWithFormat:@"%@.jpg",timeSp] mimeType:@"image/jpg"];
-        [formData stopPart:coverData go:StringFromAdviceData(spacingDetailMessSettings) paperExotic:[NSString stringWithFormat:StringFromAdviceData(k_slideMessage),timeSp] data:StringFromAdviceData(widgetTrickReplyTimer)];
+        [formData appendPartWithFileData:coverData name:StringFromAdviceData(spacingDetailMessSettings) fileName:[NSString stringWithFormat:StringFromAdviceData(k_slideMessage),timeSp] mimeType:StringFromAdviceData(widgetTrickReplyTimer)];
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //: if (progress) {
         if (progress) {
             //: progress(uploadProgress);
             progress(uploadProgress);
         }
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: success ? success(responseObject) : nil;
         success ? success(responseObject) : nil;
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //: failed ? failed(nil ,error) : nil;
         failed ? failed(nil ,error) : nil;
     //: }];
@@ -353,18 +351,17 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
     }
 
     //: AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
-    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].voiceMinute;
+    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].manager;
 
-    //: NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionDataTask *t = [manager slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
+    
         //: NSError *error = nil;
         NSError *error = nil;
-        //: [formData appendPartWithFileURL:filePath name:name error:&error];
-        [formData among:filePath soundError:name pan:&error];
+        [formData appendPartWithFileURL:filePath name:name error:&error];
         //: (failed && error) ? failed(nil ,error) : nil;
         (failed && error) ? failed(nil ,error) : nil;
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //: dispatch_sync(dispatch_get_main_queue(), ^{
         dispatch_sync(dispatch_get_main_queue(), ^{//上传进度
             //: progress ? progress(uploadProgress) : nil;
@@ -372,12 +369,12 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
         //: });
         });
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
         //: success ? success(responseObject) : nil;
         success ? success(responseObject) : nil;
 
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //: failed ? failed(nil ,error) : nil;
         failed ? failed(nil ,error) : nil;
     //: }];
@@ -392,12 +389,10 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
     if (self = [super init]) {
         //: AFSecurityPolicy *securityPolicy = [LocalizeHelixAccept defaultSecurityPolicy];
         AFSecurityPolicy *securityPolicy = [LocalizeHelixAccept sign];
-        //: _manager = [AFHTTPSessionManager manager];
-        _voiceMinute = [AFHTTPSessionManager windowDown];
-        //: _manager.securityPolicy = securityPolicy;
-        _voiceMinute.pickFinds = securityPolicy;
+        _manager = [AFHTTPSessionManager manager];
+        _manager.securityPolicy = securityPolicy;
         //: _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/plain",@"text/html", nil];
-        _voiceMinute.magnitudeyFloatsing.dayResignsed = [NSSet setWithObjects:StringFromAdviceData(kMortgageInnError), StringFromAdviceData(appSemenUtility), StringFromAdviceData(commonExposeUtility),StringFromAdviceData(commonPooMessage),StringFromAdviceData(styleEasingDiscoAlert), nil];
+        _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:StringFromAdviceData(kMortgageInnError), StringFromAdviceData(appSemenUtility), StringFromAdviceData(commonExposeUtility),StringFromAdviceData(commonPooMessage),StringFromAdviceData(styleEasingDiscoAlert), nil];
         //_dbQueue = [[HMDBManager shareManager] dbQueue];
 
     }
@@ -432,7 +427,7 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
              //: failed: (ResponseFailed)failed{
              crosswaysAdmin: (ResponseFailed)failed{
     //: AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
-    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].voiceMinute;
+    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].manager;
 //    manager.requestSerializer = [AFJSONRequestSerializer serializer];
 
     //添加请求头
@@ -440,25 +435,22 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
     NSString *loginToken = [CurrentSearchComposer dot].markerDisabled;
     //: NSString *lang = emptyString([CurrentSearchComposer standardUserDefaults].language);
     NSString *lang = loopHalf([CurrentSearchComposer dot].bottom);
-    //: [manager.requestSerializer setValue:lang forHTTPHeaderField:@"lang"];
-    [manager.translationHandles crop:lang vitalUnwished:StringFromAdviceData(kAlreadyGrandMessage)];
+    [manager.requestSerializer setValue:lang forHTTPHeaderField:@"lang"];
 
      //: if ([CurrentSearchComposer standardUserDefaults].loginToken.length > 0) {
      if ([CurrentSearchComposer dot].markerDisabled.length > 0) {
 
-        //: [manager.requestSerializer setValue:loginToken forHTTPHeaderField:@"token"];
-        [manager.translationHandles crop:loginToken vitalUnwished:StringFromAdviceData(coreHugePooTitle)];
+        [manager.requestSerializer setValue:loginToken forHTTPHeaderField:@"token"];
     }
 
-    //: NSURLSessionDataTask *task = [manager POST:urlStr parameters:params headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
-    NSURLSessionDataTask *task = [manager monthFailure:urlStr scale:params stride:nil drop:^(NSProgress * _Nonnull uploadProgress) {
+    NSURLSessionDataTask *task = [manager POST:urlStr parameters:params headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
 
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } betweenReversion:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
          //: success(responseObject);
          success(responseObject);
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } flagListener:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //: failed(nil ,error);
         failed(nil ,error);
     //: }];
@@ -478,22 +470,18 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
     //: NSData *certData = [NSData dataWithContentsOfFile:cerPath];
     NSData *certData = [NSData dataWithContentsOfFile:cerPath];
     // AFSSLPinningModeCertificate 使用证书验证模式
-    //: AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey];
-    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy underWith:AFSSLPinningModePublicKey];
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey];
 
     // allowInvalidCertificates 是否允许无效证书（也就是自建的证书），默认为NO
     // 如果是需要验证自建证书，需要设置为YES
-    //: securityPolicy.allowInvalidCertificates = NO;
-    securityPolicy.statePublished = NO;
+    securityPolicy.allowInvalidCertificates = NO;
 
     //validatesDomainName 是否需要验证域名，默认为YES；
     //假如证书的域名与你请求的域名不一致，需把该项设置为NO；如设成NO的话，即服务器使用其他可信任机构颁发的证书，也可以建立连接，这个非常危险，建议打开。
     //置为NO，主要用于这种情况：客户端请求的是子域名，而证书上的是另外一个域名。因为SSL证书上的域名是独立的，假如证书上注册的域名是www.google.com，那么mail.google.com是无法验证通过的；当然，有钱可以注册通配符的域名*.google.com，但这个还是比较贵的。
     //如置为NO，建议自己添加对应域名的校验逻辑。
-    //: securityPolicy.validatesDomainName = YES;
-    securityPolicy.simultaneouslyHiddenned = YES;
-    //: securityPolicy.pinnedCertificates = [NSSet setWithArray:@[certData]];
-    securityPolicy.refuseDisplayed = [NSSet setWithArray:@[certData]];
+    securityPolicy.validatesDomainName = YES;
+    securityPolicy.pinnedCertificates = [NSSet setWithArray:@[certData]];
     //: return securityPolicy;
     return securityPolicy;
 }
@@ -549,34 +537,30 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
              //: failed: (ResponseFailed)failed
              cur: (ResponseFailed)failed
 {
-    //: AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
-    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].voiceMinute;
+    //AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
+    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].manager;
 
     //添加请求头
     //: NSString *appKey = [[IntuitivePlayfulHeightHue sharedConfig] appKey];
     NSString *appKey = [[IntuitivePlayfulHeightHue alter] permission];
-    //: [manager.requestSerializer setValue:appKey forHTTPHeaderField:@"AppKey"];
-    [manager.translationHandles crop:appKey vitalUnwished:StringFromAdviceData(k_requestRevolutionAlert)];
+    [manager.requestSerializer setValue:appKey forHTTPHeaderField:@"AppKey"];
 //    NSString *nonce = [NSString stringWithFormat:@"%d",arc4random() % 100 ];
-    //: [manager.requestSerializer setValue:nonce forHTTPHeaderField:@"Nonce"];
-    [manager.translationHandles crop:nonce vitalUnwished:StringFromAdviceData(colorTutEvent)];
+    [manager.requestSerializer setValue:nonce forHTTPHeaderField:@"Nonce"];
 //    NSString *time = [self getNowTimeTimestamp];
-    //: [manager.requestSerializer setValue:CurTime forHTTPHeaderField:@"CurTime"];
-    [manager.translationHandles crop:CurTime vitalUnwished:StringFromAdviceData(viewCommandSoakMessage)];
+    [manager.requestSerializer setValue:CurTime forHTTPHeaderField:@"CurTime"];
 //    NSString *CheckSums = [self sha1:[NSString stringWithFormat:@"%@%@%@",appKey,nonce,time]];
-    //: [manager.requestSerializer setValue:checksum forHTTPHeaderField:@"CheckSum"];
-    [manager.translationHandles crop:checksum vitalUnwished:StringFromAdviceData(componentEelMmPath)];
+    [manager.requestSerializer setValue:checksum forHTTPHeaderField:@"CheckSum"];
 
 
-    //: NSURLSessionDataTask *task = [manager POST:urlStr parameters:params headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
-    NSURLSessionDataTask *task = [manager monthFailure:urlStr scale:params stride:nil drop:^(NSProgress * _Nonnull uploadProgress) {
+    NSURLSessionDataTask *task = [manager POST:urlStr parameters:params headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+    
 
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } betweenReversion:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
         //: success(responseObject);
         success(responseObject);
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } flagListener:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //: failed(nil ,error);
         failed(nil ,error);
     //: }];
@@ -590,12 +574,12 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
  */
 //: + (AFSecurityPolicy *)defaultSecurityPolicy{
 + (AFSecurityPolicy *)sign{
-    //: AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
-    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy underWith:AFSSLPinningModeNone];
-    //: securityPolicy.allowInvalidCertificates = YES;
-    securityPolicy.statePublished = YES;
-    //: securityPolicy.validatesDomainName = NO;
-    securityPolicy.simultaneouslyHiddenned = NO;
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+    
+    securityPolicy.allowInvalidCertificates = YES;
+    //securityPolicy.statePublished = YES;
+    securityPolicy.validatesDomainName = NO;
+//    securityPolicy.simultaneouslyHiddenned = NO;
     //: return securityPolicy;
     return securityPolicy;
 }
@@ -637,14 +621,12 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
     }
 
     //: AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
-    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].voiceMinute;
+    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].manager;
     //: NSString *lang = emptyString([CurrentSearchComposer standardUserDefaults].language);
     NSString *lang = loopHalf([CurrentSearchComposer dot].bottom);
-    //: [manager.requestSerializer setValue:lang forHTTPHeaderField:@"lang"];
-    [manager.translationHandles crop:lang vitalUnwished:StringFromAdviceData(kAlreadyGrandMessage)];
+    [manager.requestSerializer setValue:lang forHTTPHeaderField:@"lang"];
 
-    //: NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionDataTask *t = [manager slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
         //: for (NSUInteger i = 0; i < images.count; i++) {
         for (NSUInteger i = 0; i < images.count; i++) {
             //NSData *imageData = UIImageJPEGRepresentation(images[i], 0.5);// 图片经过等比压缩后得到的二进制文件
@@ -688,23 +670,23 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
             //: NSString *mimeType = [NSString stringWithFormat:@"image/%@",imageTypeSuffix];
             NSString *mimeType = [NSString stringWithFormat:StringFromAdviceData(styleCollapseSettings),imageTypeSuffix];
 //            NSString *mimeType = @"video/mp4";
-            //: [formData appendPartWithFileData:imageData name:@"image" fileName:fileName mimeType:mimeType];
-            [formData stopPart:imageData go:StringFromAdviceData(styleComputerGrandError) paperExotic:fileName data:mimeType];
+            [formData appendPartWithFileData:imageData name:@"image" fileName:fileName mimeType:mimeType];
+//            [formData stopPart:imageData go:StringFromAdviceData(styleComputerGrandError) paperExotic:fileName data:mimeType];
         }
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //: if (progress) {
         if (progress) {
             //: progress(uploadProgress);
             progress(uploadProgress);
         }
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: success ? success(responseObject) : nil;
         success ? success(responseObject) : nil;
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //: failed ? failed(nil ,error) : nil;
         failed ? failed(nil ,error) : nil;
     //: }];
@@ -755,9 +737,9 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
     }
 
     //: AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
-    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].voiceMinute;
-    //: NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionDataTask *t = [manager slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].manager;
+    NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
+//    NSURLSessionDataTask *t = [manager slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
         //: for (NSUInteger i = 0; i < images.count; i++) {
         for (NSUInteger i = 0; i < images.count; i++) {
             //NSData *imageData = UIImageJPEGRepresentation(images[i], 0.5);// 图片经过等比压缩后得到的二进制文件
@@ -804,23 +786,23 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
 
             //: NSString *name = [imageNames objectAtIndex:i] ? :@"image";
             NSString *name = [imageNames objectAtIndex:i] ? :StringFromAdviceData(styleComputerGrandError);
-            //: [formData appendPartWithFileData:imageData name:name fileName:fileName mimeType:mimeType];
-            [formData stopPart:imageData go:name paperExotic:fileName data:mimeType];
+            [formData appendPartWithFileData:imageData name:name fileName:fileName mimeType:mimeType];
+//            [formData stopPart:imageData go:name paperExotic:fileName data:mimeType];
         }
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //: if (progress) {
         if (progress) {
             //: progress(uploadProgress);
             progress(uploadProgress);
         }
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
 
         //: success ? success(responseObject) : nil;
         success ? success(responseObject) : nil;
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //: failed ? failed(nil ,error) : nil;
         failed ? failed(nil ,error) : nil;
     //: }];
@@ -873,9 +855,9 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
                      part:(ResponseFailed)failed{
 
     //: AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
-    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].voiceMinute;
-    //: NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-    NSURLSessionDataTask *t = [manager slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
+    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].manager;
+    NSURLSessionDataTask *t = [manager POST:URL parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
+//    NSURLSessionDataTask *t = [manager slippy:URL document:parameters visibleWith:nil clear:^(id<AFMultipartFormData> _Nonnull formData) {
 
         //: for (NSUInteger i = 0; i < images.count; i++) {
         for (NSUInteger i = 0; i < images.count; i++) {
@@ -894,22 +876,22 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
             NSString *fileName = fileNames ? [NSString stringWithFormat:@"%@.%@",fileNames[i],imageType?:StringFromAdviceData(themeEchoVendorFormat)] : imageFileName;
             //: NSString *mimeType = [NSString stringWithFormat:@"image/%@",imageType ?: @"jpg"];
             NSString *mimeType = [NSString stringWithFormat:StringFromAdviceData(styleCollapseSettings),imageType ?: StringFromAdviceData(themeEchoVendorFormat)];
-            //: [formData appendPartWithFileData:imageData name:name fileName:fileName mimeType:mimeType];
-            [formData stopPart:imageData go:name paperExotic:fileName data:mimeType];
+            [formData appendPartWithFileData:imageData name:name fileName:fileName mimeType:mimeType];
+//            [formData stopPart:imageData go:name paperExotic:fileName data:mimeType];
         }
     //: } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } chock:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
         //: if (progress) {
         if (progress) {
             //: progress(uploadProgress);
             progress(uploadProgress);
         }
     //: } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-    } mount:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
         //: success ? success(responseObject) : nil;
         success ? success(responseObject) : nil;
     //: } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    } headers:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //: failed ? failed(nil ,error) : nil;
         failed ? failed(nil ,error) : nil;
     //: }];
@@ -940,16 +922,16 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
     //: NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:URL]];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:URL]];
     //: AFHTTPSessionManager *manager = [LocalizeHelixAccept sharedManager].manager;
-    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].voiceMinute;
-    //: NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
-    NSURLSessionDownloadTask *downloadTask = [manager application:request destinationHandler:^(NSProgress * _Nonnull downloadProgress) {
+    AFHTTPSessionManager *manager = [LocalizeHelixAccept passingShould].manager;
+    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+//    NSURLSessionDownloadTask *downloadTask = [manager application:request destinationHandler:^(NSProgress * _Nonnull downloadProgress) {
         //: if (progress) {
         if (progress) {
             //: progress(downloadProgress);
             progress(downloadProgress);
         }
     //: } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-    } insideSomeone:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         //拼接缓存目录
         //: NSString *downloadDir = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:fileDir ? fileDir : @"Download"];
         NSString *downloadDir = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:fileDir ? fileDir : StringFromAdviceData(screenAlreadyRegardless)];
@@ -966,7 +948,7 @@ Byte themePaintPath[] = {3, 12, 30, 12, 98, 37, 186, 153, 194, 164, 149, 196, 75
         //: return [NSURL fileURLWithPath:filePath];
         return [NSURL fileURLWithPath:filePath];
     //: } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-    } downloadBy:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         //: if(failed && error) {failed(nil ,error) ; return ;};
         if(failed && error) {failed(nil ,error) ; return ;};
         //: success ? success(filePath.absoluteString /|** NSURL->NSString*|/) : nil;

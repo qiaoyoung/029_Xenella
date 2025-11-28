@@ -943,11 +943,11 @@
  */
 //: - (void)addReachabilityManager {
 - (void)paintTheLilyKindDevelopmentManagingDirector {
-    //: AFNetworkReachabilityManager *afNetworkReachabilityManager = [AFNetworkReachabilityManager sharedManager];
-    AFNetworkReachabilityManager *afNetworkReachabilityManager = [AFNetworkReachabilityManager passingShould];
+    AFNetworkReachabilityManager *afNetworkReachabilityManager = [AFNetworkReachabilityManager sharedManager];
+//    AFNetworkReachabilityManager *afNetworkReachabilityManager = [AFNetworkReachabilityManager passingShould];
 
-    //: [afNetworkReachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-    [afNetworkReachabilityManager setSeekBlock:^(AFNetworkReachabilityStatus status) {
+    [afNetworkReachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+//    [afNetworkReachabilityManager setSeekBlock:^(AFNetworkReachabilityStatus status) {
         //: switch (status) {
         switch (status) {
             //: case AFNetworkReachabilityStatusNotReachable:{
@@ -988,8 +988,8 @@
     //: }];
     }];
 
-    //: [afNetworkReachabilityManager startMonitoring]; 
-    [afNetworkReachabilityManager extended]; //开启网络监视器；
+    [afNetworkReachabilityManager startMonitoring];
+//    [afNetworkReachabilityManager extended]; //开启网络监视器；
 }
 
 //: - (BOOL)isVPNConnected
