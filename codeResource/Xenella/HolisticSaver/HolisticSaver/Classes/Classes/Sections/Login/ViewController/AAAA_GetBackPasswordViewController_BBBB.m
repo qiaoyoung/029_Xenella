@@ -1,9 +1,9 @@
 //
 //  AAAA_GetBackPasswordViewController_BBBB.m
-//  Riverla
+//  Xenella
 //
 //  Created by mac on 2025/4/9.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Xenella. All rights reserved.
 //
 
 #import "AAAA_GetBackPasswordViewController_BBBB.h"

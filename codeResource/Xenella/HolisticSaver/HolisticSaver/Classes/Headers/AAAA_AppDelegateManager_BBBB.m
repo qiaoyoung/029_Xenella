@@ -86,7 +86,7 @@
         if (status == FIRRemoteConfigFetchStatusSuccess) {
             [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    NSInteger value = [config configValueForKey:@"Riverla"].numberValue.intValue;
+                    NSInteger value = [config configValueForKey:@"Xenella"].numberValue.intValue;
                     if (value > 0) {
                         [self addRootViewController];
                     }  else {

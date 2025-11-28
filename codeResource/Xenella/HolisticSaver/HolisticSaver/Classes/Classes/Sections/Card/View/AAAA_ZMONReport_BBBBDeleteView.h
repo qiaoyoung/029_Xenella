@@ -1,9 +1,9 @@
 //
 //  AAAA_ZMONReport_BBBBDeleteView.h
-//  Riverla
+//  Xenella
 //
 //  Created by Yan Wang on 2025/2/17.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Xenella. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
