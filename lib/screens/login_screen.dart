@@ -26,25 +26,19 @@ class _LoginScreenState extends State<LoginScreen> {
     }
 
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (context) => const MainScreen(),
-      ),
+      MaterialPageRoute(builder: (context) => const MainScreen()),
     );
   }
 
   void _showTerms() {
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => const TermsOfServiceScreen(),
-      ),
+      MaterialPageRoute(builder: (context) => const TermsOfServiceScreen()),
     );
   }
 
   void _showPrivacyPolicy() {
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => const PrivacyPolicyScreen(),
-      ),
+      MaterialPageRoute(builder: (context) => const PrivacyPolicyScreen()),
     );
   }
 
@@ -58,9 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
               'assets/DecodeMediumResource/get.webp',
               fit: BoxFit.cover,
               errorBuilder: (context, error, stackTrace) {
-                return Container(
-                  color: AppTheme.primaryColor,
-                );
+                return Container(color: AppTheme.primaryColor);
               },
             ),
           ),
@@ -122,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         height: 56,
                         alignment: Alignment.center,
                         child: const Text(
-                          'Log in',
+                          'Enter App',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -149,23 +141,26 @@ class _LoginScreenState extends State<LoginScreen> {
                           height: 20,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: _agreeToTerms
-                                ? AppTheme.primaryColor
-                                : Colors.transparent,
+                            color:
+                                _agreeToTerms
+                                    ? AppTheme.primaryColor
+                                    : Colors.transparent,
                             border: Border.all(
-                              color: _agreeToTerms
-                                  ? AppTheme.primaryColor
-                                  : Colors.white,
+                              color:
+                                  _agreeToTerms
+                                      ? AppTheme.primaryColor
+                                      : Colors.white,
                               width: 2,
                             ),
                           ),
-                          child: _agreeToTerms
-                              ? const Icon(
-                                  Icons.check,
-                                  color: Colors.white,
-                                  size: 16,
-                                )
-                              : null,
+                          child:
+                              _agreeToTerms
+                                  ? const Icon(
+                                    Icons.check,
+                                    color: Colors.white,
+                                    size: 16,
+                                  )
+                                  : null,
                         ),
                       ),
                       const SizedBox(width: 12),
@@ -222,4 +217,3 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
-

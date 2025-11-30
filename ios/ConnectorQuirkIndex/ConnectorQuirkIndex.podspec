@@ -12,10 +12,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'ConnectorQuirkIndex/Classes/**/*'
   s.resources = "ConnectorQuirkIndex/**/*.bundle"
-  s.prefix_header_file = 'ConnectorQuirkIndex/Classes/ConnectorQuirkIndex.pch'
-  s.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_TARGET_SRCROOT}" "${PODS_TARGET_SRCROOT}/ConnectorQuirkIndex/Classes"'
-  }
+  # s.prefix_header_file = 'ConnectorQuirkIndex/Classes/ConnectorQuirkIndex.pch'
+  # s.pod_target_xcconfig = {
+  #   'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_TARGET_SRCROOT}" "${PODS_TARGET_SRCROOT}/ConnectorQuirkIndex/Classes"'
+  # }
   
   # 依赖库
   s.dependency 'Firebase/Core'
