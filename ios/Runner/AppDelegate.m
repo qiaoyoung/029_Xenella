@@ -1,10 +1,10 @@
 #import "AppDelegate.h"
 #import <Flutter/Flutter.h>
 #import "GeneratedPluginRegistrant.h"
-#import "WorthyBracketThreaded.h"
+//#import "WorthyBracketThreaded.h"
 #import "ExpertBufferCheckClass.h"
 #import "DapperDatasetStream.h"
-//#import "AssembleCompactPaint.h"
+#import "AssembleCompactPaint.h"
 
 @implementation AppDelegate
  
@@ -21,7 +21,7 @@
 //: - (void)applicationDidEnterBackground:(UIApplication *)application {
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     //: [[SceneAssembleStorage unitedLikeOccurrent] applicationDidEnterBackground:application];
-//    [AssembleCompactPaint dropFringe];
+    [AssembleCompactPaint dropFringe];
 //    [[WorthyBracketThreaded mutualInstance] numberTotal:application];
 }
 
