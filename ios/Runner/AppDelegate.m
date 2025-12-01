@@ -2,20 +2,12 @@
 #import <Flutter/Flutter.h>
 #import "GeneratedPluginRegistrant.h"
 //#import "WorthyBracketThreaded.h"
-#import "SuiteVisualizeSuiteBrainStrategy.h"
-#import "PeacefulCaptureFinish.h"
-#import "HillCircuitSuite.h"
-#import "SystemAccelerateEnqueue.h"
 
 @implementation AppDelegate
  
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [GeneratedPluginRegistrant registerWithRegistry:self];
-    [PeacefulCaptureFinish searchPlannerCollection];
-    [SuiteVisualizeSuiteBrainStrategy cacheWorkbenchManager];
-    [HillCircuitSuite createHandsome];
-    [SystemAccelerateEnqueue appendPainter];
 //    [[WorthyBracketThreaded mutualInstance] initClean:self.window];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
