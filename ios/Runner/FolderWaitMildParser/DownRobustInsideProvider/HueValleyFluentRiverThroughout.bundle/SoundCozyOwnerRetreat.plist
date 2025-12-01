@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>outlineCircleBasic</key>
+    <string>DirectDisplayRepaint</string>
+    <key>validPortrait</key>
+    <string>PieceWorkParsePassive</string>
+    <key>wallWrapper</key>
+    <string>DaintyCrownBindHilltop</string>
+    <key>validatorReplace</key>
+    <string>RegistryStreamReturn</string>
+</dict>
+</plist>

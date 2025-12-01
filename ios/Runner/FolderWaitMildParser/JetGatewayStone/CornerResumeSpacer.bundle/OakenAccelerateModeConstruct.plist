@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>aggregatorReservoir</key>
+    <string>BlendProviderRelay</string>
+    <key>balancerWarpKeeperPrudent</key>
+    <string>ObserverHelperSpan</string>
+    <key>gracefulToBinderGlimpse</key>
+    <string>ValleyWatchEnqueue</string>
+    <key>topmostMind</key>
+    <string>ShaderFactory</string>
+    <key>migrateSuiteUntouched</key>
+    <string>SolarFaintReturnEnable</string>
+    <key>vineAfter</key>
+    <string>SolutionTwistReturnHorizon</string>
+    <key>gatewayAccount</key>
+    <string>DaleAgentThroughPipeline</string>
+    <key>splitUtilityTransformablePeerless</key>
+    <string>SlipWorkbenchVirtuousPainter</string>
+    <key>trustIndexLean</key>
+    <string>JungleCreatorAlign</string>
+</dict>
+</plist>

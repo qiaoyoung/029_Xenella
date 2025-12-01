@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>managerDecodePearl</key>
+    <string>ComposerMatch</string>
+    <key>validatorManagePauseFertile</key>
+    <string>ElevateSkillBasic</string>
+    <key>workbenchAppend</key>
+    <string>FetchModeQuirkPreview</string>
+    <key>diffuseEclectic</key>
+    <string>CardTrackerTriumphTribe</string>
+    <key>optimizeStyle</key>
+    <string>CableEqual</string>
+    <key>spiritedFleetThroughoutWorkbench</key>
+    <string>ExpandGatewayBeyond</string>
+    <key>taskPlannerByStrong</key>
+    <string>GetIdealOffset</string>
+    <key>tenderScroll</key>
+    <string>AmidPackageColorExpand</string>
+    <key>spiceBroker</key>
+    <string>LastingFormatHappy</string>
+</dict>
+</plist>

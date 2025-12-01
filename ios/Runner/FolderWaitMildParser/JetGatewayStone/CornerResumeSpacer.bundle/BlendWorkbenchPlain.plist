@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>fluentRecord</key>
+    <string>CompressWhiteSlope</string>
+    <key>plannerOverBrisk</key>
+    <string>ConsumeBreakConfigure</string>
+    <key>detectVirtuousStrategyContainer</key>
+    <string>ModeSliceWatch</string>
+    <key>snapMarker</key>
+    <string>MarkMergeBreakSync</string>
+    <key>segmentRouter</key>
+    <string>ConverterSmoothDuneAt</string>
+    <key>referenceAlongsideGrid</key>
+    <string>FrameworkAtPlannerImport</string>
+</dict>
+</plist>

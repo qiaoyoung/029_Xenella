@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>connectorDeltaConsolidateCurated</key>
+    <string>ConsolidateWalkTriangleBelowObserver</string>
+    <key>connectorDispatch</key>
+    <string>PoolDropTulipEnrich</string>
+    <key>connectorLoadFrameworkUpward</key>
+    <string>ReorderEnvelopePaginate</string>
+    <key>collectionLedgerIncrementalReset</key>
+    <string>InfiniteCreatorHaze</string>
+    <key>blitheFixCollectionHelix</key>
+    <string>RealmFancyMotionPlugin</string>
+    <key>snapAbsoluteFacade</key>
+    <string>OwnerTransformLabelLanguage</string>
+    <key>terminalBalancedAppendPainter</key>
+    <string>BoundVaporConsolidate</string>
+    <key>compactifiedLandSuitePush</key>
+    <string>PlayfulSchedulerMethod</string>
+</dict>
+</plist>
