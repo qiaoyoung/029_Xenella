@@ -1,0 +1,34 @@
+{
+  "userId": "artist11",
+  "fullName": "Lucas Van Der Meer",
+  "nationality": "Dutch",
+  "country": "Netherlands",
+  "profession": "Painter",
+  "artStyle": "Post-Impressionism & Still Life",
+  "bio": "Lucas Van Der Meer is a post-impressionist painter from Amsterdam, renowned for his still life compositions and vibrant use of color. Drawing inspiration from Van Gogh and the Dutch masters, he creates works that celebrate everyday objects with extraordinary beauty.",
+  "specialization": [
+    "Post-Impressionism",
+    "Still Life",
+    "Flower Painting"
+  ],
+  "yearsOfExperience": 19,
+  "media": {
+    "coverImage": "assets/DecodeMediumResource/artist11/Cover.jpg",
+    "profileImage": "assets/DecodeMediumResource/artist11/user.jpg",
+    "backgroundImage": "assets/DecodeMediumResource/artist11/userBG.jpg",
+    "video": "assets/DecodeMediumResource/artist11/video.mp4",
+    "videoPost": "Arranging flowers for a still life in my Amsterdam studio. Post-impressionist colors bring everyday objects to life. Van Gogh's spirit lives on as I paint with passion and vibrant hues. Finding beauty in the ordinary. #PostImpressionism #StillLife #AmsterdamArtist"
+  },
+  "contact": {
+    "email": "lucas@xenellal.com",
+    "location": "Amsterdam, Netherlands"
+  },
+  "artworkCount": 140,
+  "followers": 480,
+  "verified": true,
+  "languages": [
+    "Dutch",
+    "English",
+    "French"
+  ]
+}

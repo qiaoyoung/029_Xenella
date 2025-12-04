@@ -1,4 +1,4 @@
-class UserModel {
+class ArtistProfile {
   final String userId;
   final String fullName;
   final String nationality;
@@ -15,7 +15,7 @@ class UserModel {
   final bool verified;
   final List<String> languages;
 
-  UserModel({
+  ArtistProfile({
     required this.userId,
     required this.fullName,
     required this.nationality,
@@ -33,8 +33,8 @@ class UserModel {
     required this.languages,
   });
 
-  factory UserModel.fromJson(Map<String, dynamic> json) {
-    return UserModel(
+  factory ArtistProfile.fromJson(Map<String, dynamic> json) {
+    return ArtistProfile(
       userId: json['userId'] as String,
       fullName: json['fullName'] as String,
       nationality: json['nationality'] as String,

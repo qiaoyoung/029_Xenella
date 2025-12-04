@@ -1,0 +1,34 @@
+{
+  "userId": "artist06",
+  "fullName": "François Van Der Berg",
+  "nationality": "Belgian",
+  "country": "Belgium",
+  "profession": "Painter",
+  "artStyle": "Surrealism & Fantasy Art",
+  "bio": "François Van Der Berg is a surrealist painter from Brussels, creating dreamlike worlds that blur the line between reality and imagination. His intricate compositions and meticulous detail work have earned him recognition in the contemporary surrealist movement.",
+  "specialization": [
+    "Surrealism",
+    "Fantasy Art",
+    "Digital Painting"
+  ],
+  "yearsOfExperience": 11,
+  "media": {
+    "coverImage": "assets/DecodeMediumResource/artist06/Cover.jpg",
+    "profileImage": "assets/DecodeMediumResource/artist06/user.jpg",
+    "backgroundImage": "assets/DecodeMediumResource/artist06/userBG.jpg",
+    "video": "assets/DecodeMediumResource/artist06/video.mp4",
+    "videoPost": "Creating surreal worlds in my Brussels atelier. Every detail matters when building dreamlike compositions. The line between reality and imagination becomes blurred as I paint. Surrealism allows me to explore the depths of the subconscious. #Surrealism #FantasyArt #BrusselsArtist"
+  },
+  "contact": {
+    "email": "francois@xenellaf.com",
+    "location": "Brussels, Belgium"
+  },
+  "artworkCount": 75,
+  "followers": 290,
+  "verified": true,
+  "languages": [
+    "French",
+    "Dutch",
+    "English"
+  ]
+}

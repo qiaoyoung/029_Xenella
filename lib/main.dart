@@ -9,11 +9,11 @@ void main() {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
-  runApp(const XenellaApp());
+  runApp(const ArtCommunityApp());
 }
 
-class XenellaApp extends StatelessWidget {
-  const XenellaApp({super.key});
+class ArtCommunityApp extends StatelessWidget {
+  const ArtCommunityApp({super.key});
 
   @override
   Widget build(BuildContext context) {

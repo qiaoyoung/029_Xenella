@@ -12,7 +12,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List<UserModel> _users = [];
+  List<ArtistProfile> _users = [];
   bool _isLoading = true;
   String? _errorMessage;
 
@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
         _errorMessage = null;
       });
 
-      final users = await DataService.loadAllUsers();
+      final users = await ArtistDataStore.loadAllArtists();
       
       setState(() {
         _users = users;
@@ -129,10 +129,10 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: const EdgeInsets.symmetric(vertical: 8),
         itemCount: _users.length,
         itemBuilder: (context, index) {
-          return UserCard(
+          return ArtistCardTile(
             user: _users[index],
             onTap: () {
-              _showUserDetails(_users[index]);
+              _openArtistDetailsSheet(_users[index]);
             },
           );
         },
@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  void _showUserDetails(UserModel user) {
+  void _openArtistDetailsSheet(ArtistProfile artist) {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -177,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12),
                           child: Image.asset(
-                            user.media.backgroundImage,
+                            artist.media.backgroundImage,
                             width: double.infinity,
                             height: 200,
                             fit: BoxFit.cover,
@@ -209,7 +209,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: CircleAvatar(
                               radius: 37,
                               backgroundImage: AssetImage(
-                                user.media.profileImage,
+                                artist.media.profileImage,
                               ),
                               onBackgroundImageError: (exception, stackTrace) {},
                             ),
@@ -228,14 +228,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   Flexible(
                                     child: Text(
-                                      user.fullName,
+                                      artist.fullName,
                                       style: const TextStyle(
                                         fontSize: 24,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ),
-                                  if (user.verified) ...[
+                                  if (artist.verified) ...[
                                     const SizedBox(width: 8),
                                     Icon(
                                       Icons.verified,
@@ -247,7 +247,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               const SizedBox(height: 4),
                               Text(
-                                '${user.profession} • ${user.nationality}',
+                                '${artist.profession} • ${artist.nationality}',
                                 style: TextStyle(
                                   fontSize: 16,
                                   color: Colors.grey[600],
@@ -266,7 +266,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Text(
-                        user.artStyle,
+                        artist.artStyle,
                         style: TextStyle(
                           fontSize: 16,
                           color: AppTheme.primaryColor,
@@ -281,7 +281,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      user.bio,
+                      artist.bio,
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.grey[700],
@@ -297,7 +297,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Wrap(
                       spacing: 8,
                       runSpacing: 8,
-                      children: user.specialization.map((spec) {
+                      children: artist.specialization.map((spec) {
                         return Container(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 12,
@@ -323,13 +323,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         _buildStatItem(
                           Icons.palette,
-                          '${user.artworkCount}',
+                          '${artist.artworkCount}',
                           'Artworks',
                         ),
                         const SizedBox(width: 24),
                         _buildStatItem(
                           Icons.people,
-                          '${user.followers.toString().replaceAllMapped(
+                          '${artist.followers.toString().replaceAllMapped(
                             RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'),
                             (Match m) => '${m[1]},',
                           )}',
@@ -338,7 +338,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         const SizedBox(width: 24),
                         _buildStatItem(
                           Icons.access_time,
-                          '${user.yearsOfExperience}',
+                          '${artist.yearsOfExperience}',
                           'Years',
                         ),
                       ],
@@ -358,7 +358,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         const SizedBox(width: 8),
                         Text(
-                          user.contact.email,
+                          artist.contact.email,
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.grey[700],
@@ -376,7 +376,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         const SizedBox(width: 8),
                         Text(
-                          user.contact.location,
+                          artist.contact.location,
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.grey[700],
@@ -393,7 +393,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Wrap(
                       spacing: 8,
                       runSpacing: 8,
-                      children: user.languages.map((lang) {
+                      children: artist.languages.map((lang) {
                         return Container(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 12,

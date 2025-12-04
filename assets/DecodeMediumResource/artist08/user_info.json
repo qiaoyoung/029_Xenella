@@ -1,0 +1,34 @@
+{
+  "userId": "artist08",
+  "fullName": "Henrik Andersson",
+  "nationality": "Swedish",
+  "country": "Sweden",
+  "profession": "Painter",
+  "artStyle": "Minimalism & Scandinavian Design",
+  "bio": "Henrik Andersson is a minimalist painter from Stockholm, known for his clean lines, subtle color palettes, and focus on negative space. His work embodies Scandinavian design principles, creating serene and contemplative compositions that reflect Nordic aesthetics.",
+  "specialization": [
+    "Minimalism",
+    "Scandinavian Design",
+    "Watercolor"
+  ],
+  "yearsOfExperience": 13,
+  "media": {
+    "coverImage": "assets/DecodeMediumResource/artist08/Cover.jpg",
+    "profileImage": "assets/DecodeMediumResource/artist08/user.jpg",
+    "backgroundImage": "assets/DecodeMediumResource/artist08/userBG.jpg",
+    "video": "assets/DecodeMediumResource/artist08/video.mp4",
+    "videoPost": "Morning meditation through minimalism in my Stockholm studio. Less is more. Every line, every color choice is intentional. The beauty lies in the negative space, in what we choose not to paint. Scandinavian simplicity at its finest. #Minimalism #ScandinavianDesign #StockholmArtist"
+  },
+  "contact": {
+    "email": "henrik@xenellah.com",
+    "location": "Stockholm, Sweden"
+  },
+  "artworkCount": 90,
+  "followers": 350,
+  "verified": true,
+  "languages": [
+    "Swedish",
+    "English",
+    "Norwegian"
+  ]
+}

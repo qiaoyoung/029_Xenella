@@ -123,7 +123,7 @@ class _CreateScreenState extends State<CreateScreen> {
         height: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/xenella_aibg_nor.webp'),
+            image: AssetImage('assets/background_ai.webp'),
             fit: BoxFit.cover,
           ),
         ),

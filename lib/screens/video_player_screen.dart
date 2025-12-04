@@ -4,19 +4,19 @@ import 'package:video_player/video_player.dart';
 import '../models/user_model.dart';
 import '../theme/app_theme.dart';
 
-class VideoPlayerScreen extends StatefulWidget {
-  final UserModel user;
+class FullScreenVideoPage extends StatefulWidget {
+  final ArtistProfile user;
 
-  const VideoPlayerScreen({
+  const FullScreenVideoPage({
     super.key,
     required this.user,
   });
 
   @override
-  State<VideoPlayerScreen> createState() => _VideoPlayerScreenState();
+  State<FullScreenVideoPage> createState() => _FullScreenVideoPageState();
 }
 
-class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
+class _FullScreenVideoPageState extends State<FullScreenVideoPage> {
   VideoPlayerController? _controller;
   bool _isInitialized = false;
   bool _hasError = false;

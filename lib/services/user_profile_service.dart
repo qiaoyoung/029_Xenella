@@ -5,7 +5,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import '../models/user_profile_model.dart';
 
-class UserProfileService {
+class LocalProfileStorage {
   static const String _key = 'user_profile';
   static const String _avatarFolder = 'avatars';
 
@@ -55,12 +55,12 @@ class UserProfileService {
     }
   }
 
-  static Future<UserProfileModel> loadProfile() async {
+  static Future<LocalProfile> loadProfile() async {
     final prefs = await SharedPreferences.getInstance();
     final jsonString = prefs.getString(_key);
     
     if (jsonString == null || jsonString.isEmpty) {
-      return UserProfileModel(
+      return LocalProfile(
         avatarFileName: '',
         name: 'Artist',
         signature: 'Share your art with the world',
@@ -68,10 +68,10 @@ class UserProfileService {
     }
 
     final Map<String, dynamic> jsonData = json.decode(jsonString);
-    return UserProfileModel.fromJson(jsonData);
+    return LocalProfile.fromJson(jsonData);
   }
 
-  static Future<void> saveProfile(UserProfileModel profile) async {
+  static Future<void> saveProfile(LocalProfile profile) async {
     final prefs = await SharedPreferences.getInstance();
     final jsonString = json.encode(profile.toJson());
     await prefs.setString(_key, jsonString);

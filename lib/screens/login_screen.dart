@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           Positioned.fill(
             child: Image.asset(
-              'assets/DecodeMediumResource/get.webp',
+              'assets/DecodeMediumResource/background_login.webp',
               fit: BoxFit.cover,
               errorBuilder: (context, error, stackTrace) {
                 return Container(color: AppTheme.primaryColor);
@@ -142,7 +142,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color:
-                                _agreeToTerms
+                            _agreeToTerms
                                     ? AppTheme.primaryColor
                                     : Colors.transparent,
                             border: Border.all(

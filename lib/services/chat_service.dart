@@ -2,10 +2,10 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/message_model.dart';
 
-class ChatService {
+class ChatStorageService {
   static const String _chatPrefix = 'chat_';
 
-  static Future<List<MessageModel>> loadMessages(String userId) async {
+  static Future<List<StoredMessage>> loadMessages(String userId) async {
     final prefs = await SharedPreferences.getInstance();
     final key = '$_chatPrefix$userId';
     final String? messagesJson = prefs.getString(key);
@@ -15,12 +15,12 @@ class ChatService {
     }
 
     final List<dynamic> decoded = json.decode(messagesJson);
-    return decoded.map((item) => MessageModel.fromJson(item)).toList();
+    return decoded.map((item) => StoredMessage.fromJson(item)).toList();
   }
 
   static Future<bool> saveMessages(
     String userId,
-    List<MessageModel> messages,
+    List<StoredMessage> messages,
   ) async {
     final prefs = await SharedPreferences.getInstance();
     final key = '$_chatPrefix$userId';
@@ -33,7 +33,7 @@ class ChatService {
 
   static Future<bool> addMessage(
     String userId,
-    MessageModel message,
+    StoredMessage message,
   ) async {
     final messages = await loadMessages(userId);
     messages.add(message);

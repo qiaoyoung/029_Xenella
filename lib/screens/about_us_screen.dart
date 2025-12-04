@@ -41,7 +41,7 @@ class AboutUsScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/xenella_aboutus.png',
+                        'assets/about_cover.png',
                         fit: BoxFit.cover,
                       ),
                     ),

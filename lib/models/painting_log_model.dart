@@ -1,4 +1,4 @@
-class PaintingLogModel {
+class PaintingDiaryEntry {
   final String id;
   final String title;
   final String description;
@@ -7,7 +7,7 @@ class PaintingLogModel {
   final String mood;
   final List<String> imagePaths;
 
-  PaintingLogModel({
+  PaintingDiaryEntry({
     required this.id,
     required this.title,
     required this.description,
@@ -17,8 +17,8 @@ class PaintingLogModel {
     this.imagePaths = const [],
   });
 
-  factory PaintingLogModel.fromJson(Map<String, dynamic> json) {
-    return PaintingLogModel(
+  factory PaintingDiaryEntry.fromJson(Map<String, dynamic> json) {
+    return PaintingDiaryEntry(
       id: json['id'] as String,
       title: json['title'] as String,
       description: json['description'] as String,

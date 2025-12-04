@@ -49,7 +49,7 @@ class _MatchScreenState extends State<MatchScreen>
   late AnimationController _radarController;
   late AnimationController _blinkController;
   bool _isScanning = false;
-  List<UserModel> _radarUsers = [];
+  List<ArtistProfile> _radarArtists = [];
   List<Map<String, double>> _userPositions = [];
 
   @override
@@ -76,27 +76,27 @@ class _MatchScreenState extends State<MatchScreen>
   }
 
   Future<void> _loadRadarUsers() async {
-    final allUsers = await DataService.loadAllUsers();
-    if (allUsers.isEmpty) return;
+    final allArtists = await ArtistDataStore.loadAllArtists();
+    if (allArtists.isEmpty) return;
     
-    // 随机选择4-5个用户
+    // 随机选择4-5个艺术家
     final random = math.Random();
-    final count = 4 + random.nextInt(2); // 4-5个用户
-    final selectedUsers = <UserModel>[];
+    final count = 4 + random.nextInt(2); // 4-5个艺术家
+    final selectedArtists = <ArtistProfile>[];
     final usedIndices = <int>{};
     
-    while (selectedUsers.length < count && selectedUsers.length < allUsers.length) {
-      final index = random.nextInt(allUsers.length);
+    while (selectedArtists.length < count && selectedArtists.length < allArtists.length) {
+      final index = random.nextInt(allArtists.length);
       if (!usedIndices.contains(index)) {
         usedIndices.add(index);
-        selectedUsers.add(allUsers[index]);
+        selectedArtists.add(allArtists[index]);
       }
     }
     
-    // 为每个用户生成随机位置（在圆周上，更分散）
+    // 为每个艺术家生成随机位置（在圆周上，更分散）
     final positions = <Map<String, double>>[];
-    for (int i = 0; i < selectedUsers.length; i++) {
-      final angle = (2 * math.pi / selectedUsers.length) * i + random.nextDouble() * 0.5;
+    for (int i = 0; i < selectedArtists.length; i++) {
+      final angle = (2 * math.pi / selectedArtists.length) * i + random.nextDouble() * 0.5;
       final radius = 0.70 + random.nextDouble() * 0.15; // 60%-75% 的雷达半径，更靠外圈
       positions.add({
         'angle': angle,
@@ -106,13 +106,13 @@ class _MatchScreenState extends State<MatchScreen>
     
     if (mounted) {
       setState(() {
-        _radarUsers = selectedUsers;
+        _radarArtists = selectedArtists;
         _userPositions = positions;
       });
     }
   }
 
-  Future<void> _startRadarScan() async {
+  Future<void> _startDiscoveryScan() async {
     if (_isScanning) return;
 
     setState(() {
@@ -127,17 +127,17 @@ class _MatchScreenState extends State<MatchScreen>
     _radarController.stop();
 
     // 随机选择一个用户
-    final users = await DataService.loadAllUsers();
-    if (users.isNotEmpty && mounted) {
-      final randomUser = users[DateTime.now().millisecondsSinceEpoch % users.length];
+    final artists = await ArtistDataStore.loadAllArtists();
+    if (artists.isNotEmpty && mounted) {
+      final randomArtist = artists[DateTime.now().millisecondsSinceEpoch % artists.length];
       setState(() {
         _isScanning = false;
       });
-      _showUserCard(randomUser);
+      _showArtistCard(randomArtist);
     }
   }
 
-  void _showUserCard(UserModel user) {
+  void _showArtistCard(ArtistProfile artist) {
     showDialog(
       context: context,
       barrierDismissible: true,
@@ -149,7 +149,7 @@ class _MatchScreenState extends State<MatchScreen>
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => UserDetailScreen(user: user),
+                builder: (context) => ArtistProfilePage(artist: artist),
               ),
             );
           },
@@ -279,7 +279,7 @@ class _MatchScreenState extends State<MatchScreen>
                           child: CircleAvatar(
                             radius: 60,
                             backgroundImage: AssetImage(
-                              user.media.profileImage,
+                              artist.media.profileImage,
                             ),
                             onBackgroundImageError: (exception, stackTrace) {},
                           ),
@@ -298,7 +298,7 @@ class _MatchScreenState extends State<MatchScreen>
                               children: [
                                 Flexible(
                                   child: Text(
-                                    user.fullName,
+                                    artist.fullName,
                                     style: const TextStyle(
                                       fontSize: 24,
                                       fontWeight: FontWeight.bold,
@@ -307,7 +307,7 @@ class _MatchScreenState extends State<MatchScreen>
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
-                                if (user.verified) ...[
+                                if (artist.verified) ...[
                                   const SizedBox(width: 8),
                                   Icon(
                                     Icons.verified,
@@ -321,7 +321,7 @@ class _MatchScreenState extends State<MatchScreen>
                             const SizedBox(height: 8),
                             
                             Text(
-                              user.profession,
+                              artist.profession,
                               style: TextStyle(
                                 fontSize: 16,
                                 color: Colors.white.withOpacity(0.8),
@@ -341,13 +341,13 @@ class _MatchScreenState extends State<MatchScreen>
                                   color: AppTheme.primaryColor,
                                 ),
                                 const SizedBox(width: 4),
-                                Text(
-                                  user.country,
-                                  style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.white.withOpacity(0.7),
+                                  Text(
+                                    artist.country,
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.white.withOpacity(0.7),
+                                    ),
                                   ),
-                                ),
                               ],
                             ),
                             
@@ -378,7 +378,7 @@ class _MatchScreenState extends State<MatchScreen>
                                   const SizedBox(width: 8),
                                   Flexible(
                                     child: Text(
-                                      user.artStyle,
+                                      artist.artStyle,
                                       style: TextStyle(
                                         fontSize: 14,
                                         color: Colors.white,
@@ -427,7 +427,7 @@ class _MatchScreenState extends State<MatchScreen>
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => UserDetailScreen(user: user),
+                                    builder: (context) => ArtistProfilePage(artist: artist),
                                   ),
                                 );
                               },
@@ -472,13 +472,13 @@ class _MatchScreenState extends State<MatchScreen>
   }
 
   List<Widget> _buildRadarUsers(double radarSize) {
-    if (_radarUsers.isEmpty) return [];
+    if (_radarArtists.isEmpty) return [];
     
     final avatarSize = radarSize * 0.10; // 头像大小为雷达的12%
     final widgets = <Widget>[];
     
-    for (int i = 0; i < _radarUsers.length; i++) {
-      final user = _radarUsers[i];
+    for (int i = 0; i < _radarArtists.length; i++) {
+      final artist = _radarArtists[i];
       final position = _userPositions[i];
       final angle = position['angle']!;
       final radius = position['radius']!;
@@ -495,7 +495,7 @@ class _MatchScreenState extends State<MatchScreen>
             animation: _blinkController,
             builder: (context, child) {
               // 每个头像在不同时间闪烁
-              final delay = i / _radarUsers.length;
+              final delay = i / _radarArtists.length;
               final animValue = (_blinkController.value + delay) % 1.0;
               
               // 创建脉冲效果：0.8 -> 1.0 -> 0.8
@@ -518,7 +518,7 @@ class _MatchScreenState extends State<MatchScreen>
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => UserDetailScreen(user: user),
+                          builder: (context) => ArtistProfilePage(artist: artist),
                         ),
                       );
                     },
@@ -548,7 +548,7 @@ class _MatchScreenState extends State<MatchScreen>
                         child: Stack(
                           children: [
                             Image.asset(
-                              user.media.profileImage,
+                              artist.media.profileImage,
                               width: avatarSize,
                               height: avatarSize,
                               fit: BoxFit.cover,
@@ -607,7 +607,7 @@ class _MatchScreenState extends State<MatchScreen>
         height: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/xenella_stars.jpeg'),
+            image: AssetImage('assets/background_stars.jpeg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -791,7 +791,7 @@ class _MatchScreenState extends State<MatchScreen>
                                 ],
                               ),
                               child: ElevatedButton(
-                                onPressed: _isScanning ? null : _startRadarScan,
+                                onPressed: _isScanning ? null : _startDiscoveryScan,
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: AppTheme.primaryColor,
                                   foregroundColor: Colors.white,
@@ -997,7 +997,7 @@ class _MatchScreenState extends State<MatchScreen>
                         ],
                       ),
                       child: ElevatedButton(
-                        onPressed: _isScanning ? null : _startRadarScan,
+                        onPressed: _isScanning ? null : _startDiscoveryScan,
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppTheme.primaryColor,
                           foregroundColor: Colors.white,

@@ -19,7 +19,7 @@ class _MainScreenState extends State<MainScreen> {
     const MatchScreen(),
     const DiscoverScreen(),
     const CreateScreen(),
-    const ProfileScreen(),
+    const ProfileCenterPage(),
   ];
 
   @override
@@ -83,7 +83,22 @@ class _MainScreenState extends State<MainScreen> {
 
   Widget _buildTabItem(int index) {
     final bool isSelected = _currentIndex == index;
-    final String imagePath = 'assets/tab/xenella_tab_${index + 1}.png';
+    String imagePath;
+    switch (index) {
+      case 0:
+        imagePath = 'assets/tab/tab_icon_match.png';
+        break;
+      case 1:
+        imagePath = 'assets/tab/tab_icon_discover.png';
+        break;
+      case 2:
+        imagePath = 'assets/tab/tab_icon_assistant.png';
+        break;
+      case 3:
+      default:
+        imagePath = 'assets/tab/tab_icon_profile.png';
+        break;
+    }
 
     return Expanded(
       child: GestureDetector(
@@ -96,11 +111,11 @@ class _MainScreenState extends State<MainScreen> {
         child: Container(
           height: 70,
           alignment: Alignment.center,
-          child: ColorFiltered(
-            colorFilter: ColorFilter.mode(
-              isSelected ? AppTheme.primaryColor : Colors.grey[600]!,
-              BlendMode.srcIn,
-            ),
+            child: ColorFiltered(
+              colorFilter: ColorFilter.mode(
+                isSelected ? AppTheme.primaryColor : Colors.grey[600]!,
+                BlendMode.srcIn,
+              ),
             child: Image.asset(
               imagePath,
               width: 50,

@@ -7,47 +7,47 @@ import '../services/chat_service.dart';
 import '../services/user_profile_service.dart';
 import '../theme/app_theme.dart';
 
-class ChatScreen extends StatefulWidget {
-  final UserModel user;
+class ArtistChatPage extends StatefulWidget {
+  final ArtistProfile user;
 
-  const ChatScreen({
+  const ArtistChatPage({
     super.key,
     required this.user,
   });
 
   @override
-  State<ChatScreen> createState() => _ChatScreenState();
+  State<ArtistChatPage> createState() => _ArtistChatPageState();
 }
 
-class _ChatScreenState extends State<ChatScreen> {
+class _ArtistChatPageState extends State<ArtistChatPage> {
   final TextEditingController _messageController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
   final ImagePicker _imagePicker = ImagePicker();
-  List<MessageModel> _messages = [];
+  List<StoredMessage> _messages = [];
   bool _isLoading = true;
 
   @override
   void initState() {
     super.initState();
-    _loadMessages();
+    _loadConversationHistory();
   }
 
-  Future<void> _loadMessages() async {
+  Future<void> _loadConversationHistory() async {
     setState(() {
       _isLoading = true;
     });
 
-    final messages = await ChatService.loadMessages(widget.user.userId);
+    final messages = await ChatStorageService.loadMessages(widget.user.userId);
     
     setState(() {
       _messages = messages;
       _isLoading = false;
     });
 
-    _scrollToBottom();
+    _scrollChatToEnd();
   }
 
-  void _scrollToBottom() {
+  void _scrollChatToEnd() {
     if (_scrollController.hasClients) {
       Future.delayed(const Duration(milliseconds: 100), () {
         _scrollController.animateTo(
@@ -59,11 +59,11 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  Future<void> _sendMessage() async {
+  Future<void> _handleSendChatMessage() async {
     final text = _messageController.text.trim();
     if (text.isEmpty) return;
 
-    final message = MessageModel(
+    final message = StoredMessage(
       id: DateTime.now().millisecondsSinceEpoch.toString(),
       senderId: 'me',
       receiverId: widget.user.userId,
@@ -78,11 +78,11 @@ class _ChatScreenState extends State<ChatScreen> {
       _messageController.clear();
     });
 
-    await ChatService.addMessage(widget.user.userId, message);
-    _scrollToBottom();
+    await ChatStorageService.addMessage(widget.user.userId, message);
+    _scrollChatToEnd();
   }
 
-  Future<void> _pickAndSendImage() async {
+  Future<void> _handlePickAndSendImage() async {
     try {
       final XFile? image = await _imagePicker.pickImage(
         source: ImageSource.gallery,
@@ -93,12 +93,12 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (image != null) {
         // 保存图片到应用目录
-        final chatImageDir = await UserProfileService.getAvatarDirectory();
+        final chatImageDir = await LocalProfileStorage.getAvatarDirectory();
         final fileName = 'chat_${DateTime.now().millisecondsSinceEpoch}.jpg';
         final targetPath = '$chatImageDir/$fileName';
         await File(image.path).copy(targetPath);
 
-        final message = MessageModel(
+        final message = StoredMessage(
           id: DateTime.now().millisecondsSinceEpoch.toString(),
           senderId: 'me',
           receiverId: widget.user.userId,
@@ -112,8 +112,8 @@ class _ChatScreenState extends State<ChatScreen> {
           _messages.add(message);
         });
 
-        await ChatService.addMessage(widget.user.userId, message);
-        _scrollToBottom();
+        await ChatStorageService.addMessage(widget.user.userId, message);
+        _scrollChatToEnd();
       }
     } catch (e) {
       if (mounted) {
@@ -295,7 +295,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 );
 
                 if (confirm == true && mounted) {
-                  await ChatService.clearMessages(widget.user.userId);
+                  await ChatStorageService.clearMessages(widget.user.userId);
                   setState(() {
                     _messages.clear();
                   });
@@ -311,7 +311,7 @@ class _ChatScreenState extends State<ChatScreen> {
           Expanded(
             child: _isLoading
                 ? const Center(
-                    child: CircularProgressIndicator(
+                      child: CircularProgressIndicator(
                       color: AppTheme.primaryColor,
                     ),
                   )
@@ -376,7 +376,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  Widget _buildMessageBubble(MessageModel message) {
+  Widget _buildMessageBubble(StoredMessage message) {
     final isMe = message.isSentByMe;
     
     return Padding(
@@ -500,9 +500,9 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  Widget _buildImageMessage(MessageModel message, bool isMe) {
+  Widget _buildImageMessage(StoredMessage message, bool isMe) {
     return FutureBuilder<String?>(
-      future: UserProfileService.getAvatarPath(message.content),
+      future: LocalProfileStorage.getAvatarPath(message.content),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Container(
@@ -647,7 +647,7 @@ class _ChatScreenState extends State<ChatScreen> {
               child: IconButton(
                 icon: const Icon(Icons.image),
                 color: AppTheme.primaryColor,
-                onPressed: _pickAndSendImage,
+                onPressed: _handlePickAndSendImage,
                 iconSize: 24,
               ),
             ),
@@ -707,7 +707,7 @@ class _ChatScreenState extends State<ChatScreen> {
               child: IconButton(
                 icon: const Icon(Icons.send_rounded),
                 color: Colors.white,
-                onPressed: _sendMessage,
+                onPressed: _handleSendChatMessage,
                 iconSize: 22,
               ),
             ),

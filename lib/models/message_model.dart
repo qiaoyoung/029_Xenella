@@ -1,6 +1,6 @@
 enum MessageType { text, image }
 
-class MessageModel {
+class StoredMessage {
   final String id;
   final String senderId;
   final String receiverId;
@@ -9,7 +9,7 @@ class MessageModel {
   final bool isSentByMe;
   final MessageType type;
 
-  MessageModel({
+  StoredMessage({
     required this.id,
     required this.senderId,
     required this.receiverId,
@@ -31,8 +31,8 @@ class MessageModel {
     };
   }
 
-  factory MessageModel.fromJson(Map<String, dynamic> json) {
-    return MessageModel(
+  factory StoredMessage.fromJson(Map<String, dynamic> json) {
+    return StoredMessage(
       id: json['id'] as String,
       senderId: json['senderId'] as String,
       receiverId: json['receiverId'] as String,

@@ -3,12 +3,12 @@ import '../models/user_model.dart';
 import '../theme/app_theme.dart';
 import 'chat_screen.dart';
 
-class UserDetailScreen extends StatelessWidget {
-  final UserModel user;
+class ArtistProfilePage extends StatelessWidget {
+  final ArtistProfile artist;
 
-  const UserDetailScreen({
+  const ArtistProfilePage({
     super.key,
-    required this.user,
+    required this.artist,
   });
 
   void _showBlockDialog(BuildContext context) {
@@ -20,7 +20,7 @@ class UserDetailScreen extends StatelessWidget {
         ),
         title: const Text('Block User'),
         content: Text(
-          'Are you sure you want to block ${user.fullName}? You will no longer see their content.',
+          'Are you sure you want to block ${artist.fullName}? You will no longer see their content.',
         ),
         actions: [
           TextButton(
@@ -51,7 +51,7 @@ class UserDetailScreen extends StatelessWidget {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('${user.fullName} has been blocked'),
+            content: Text('${artist.fullName} has been blocked'),
             backgroundColor: Colors.red[700],
             behavior: SnackBarBehavior.floating,
             duration: const Duration(seconds: 3),
@@ -260,7 +260,7 @@ class UserDetailScreen extends StatelessWidget {
                 fit: StackFit.expand,
                 children: [
                   Image.asset(
-                    user.media.backgroundImage,
+                    artist.media.backgroundImage,
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
@@ -326,7 +326,7 @@ class UserDetailScreen extends StatelessWidget {
                             child: CircleAvatar(
                               radius: 60,
                               backgroundImage: AssetImage(
-                                user.media.profileImage,
+                                artist.media.profileImage,
                               ),
                               onBackgroundImageError: (exception, stackTrace) {},
                             ),
@@ -339,7 +339,7 @@ class UserDetailScreen extends StatelessWidget {
                           children: [
                             Flexible(
                               child: Text(
-                                user.fullName,
+                                artist.fullName,
                                 style: const TextStyle(
                                   fontSize: 28,
                                   fontWeight: FontWeight.bold,
@@ -348,7 +348,7 @@ class UserDetailScreen extends StatelessWidget {
                                 textAlign: TextAlign.center,
                               ),
                             ),
-                            if (user.verified) ...[
+                            if (artist.verified) ...[
                               const SizedBox(width: 8),
                               Icon(
                                 Icons.verified,
@@ -361,7 +361,7 @@ class UserDetailScreen extends StatelessWidget {
                         const SizedBox(height: 8),
                         // 职业
                         Text(
-                          user.profession,
+                          artist.profession,
                           style: TextStyle(
                             fontSize: 16,
                             color: Colors.white.withOpacity(0.8),
@@ -380,7 +380,7 @@ class UserDetailScreen extends StatelessWidget {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              user.nationality,
+                              artist.nationality,
                               style: TextStyle(
                                 fontSize: 14,
                                 color: Colors.white.withOpacity(0.7),
@@ -454,7 +454,7 @@ class UserDetailScreen extends StatelessWidget {
                               ),
                               const SizedBox(height: 4),
                               Text(
-                                user.artStyle,
+                                artist.artStyle,
                                 style: const TextStyle(
                                   fontSize: 18,
                                   color: Colors.white,
@@ -484,7 +484,7 @@ class UserDetailScreen extends StatelessWidget {
                       children: [
                         _buildStatColumn(
                           Icons.palette,
-                          '${user.artworkCount}',
+                          '${artist.artworkCount}',
                           'Artworks',
                         ),
                         Container(
@@ -494,7 +494,7 @@ class UserDetailScreen extends StatelessWidget {
                         ),
                         _buildStatColumn(
                           Icons.people,
-                          '${user.followers.toString().replaceAllMapped(
+                          '${artist.followers.toString().replaceAllMapped(
                             RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'),
                             (Match m) => '${m[1]},',
                           )}',
@@ -507,7 +507,7 @@ class UserDetailScreen extends StatelessWidget {
                         ),
                         _buildStatColumn(
                           Icons.access_time,
-                          '${user.yearsOfExperience}',
+                          '${artist.yearsOfExperience}',
                           'Years',
                         ),
                       ],
@@ -534,7 +534,7 @@ class UserDetailScreen extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      user.bio,
+                      artist.bio,
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white.withOpacity(0.85),
@@ -555,7 +555,7 @@ class UserDetailScreen extends StatelessWidget {
                   Wrap(
                     spacing: 10,
                     runSpacing: 10,
-                    children: user.specialization.map((spec) {
+                    children: artist.specialization.map((spec) {
                       return Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16,
@@ -598,13 +598,13 @@ class UserDetailScreen extends StatelessWidget {
                   _buildContactItem(
                     Icons.email,
                     'Email',
-                    user.contact.email,
+                    artist.contact.email,
                   ),
                   const SizedBox(height: 12),
                   _buildContactItem(
                     Icons.location_on,
                     'Location',
-                    user.contact.location,
+                    artist.contact.location,
                   ),
                   const SizedBox(height: 32),
                   const Text(
@@ -619,7 +619,7 @@ class UserDetailScreen extends StatelessWidget {
                   Wrap(
                     spacing: 10,
                     runSpacing: 10,
-                    children: user.languages.map((lang) {
+                    children: artist.languages.map((lang) {
                       return Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16,
@@ -671,7 +671,7 @@ class UserDetailScreen extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => ChatScreen(user: user),
+                              builder: (context) => ArtistChatPage(user: artist),
                             ),
                           );
                         },

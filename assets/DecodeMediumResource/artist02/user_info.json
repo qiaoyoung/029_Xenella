@@ -1,0 +1,33 @@
+{
+  "userId": "artist02",
+  "fullName": "Benjamin Morrison",
+  "nationality": "American",
+  "country": "United States",
+  "profession": "Painter",
+  "artStyle": "Realism & Portraiture",
+  "bio": "Benjamin Morrison is an accomplished realist painter specializing in portraiture and figurative art. Based in New York City, his work captures the human condition with remarkable detail and emotional depth. His portraits have been featured in prestigious collections worldwide.",
+  "specialization": [
+    "Portraiture",
+    "Realism",
+    "Figurative Art"
+  ],
+  "yearsOfExperience": 12,
+  "media": {
+    "coverImage": "assets/DecodeMediumResource/artist02/Cover.jpg",
+    "profileImage": "assets/DecodeMediumResource/artist02/user.jpg",
+    "backgroundImage": "assets/DecodeMediumResource/artist02/userBG.jpg",
+    "video": "assets/DecodeMediumResource/artist02/video.mp4",
+    "videoPost": "Working on a new portrait commission in my New York studio. Capturing the subtle expressions and emotions that make each face unique. The process of building layers and refining details is always meditative. #PortraitPainting #Realism #NYCArtist"
+  },
+  "contact": {
+    "email": "benjamin@xenellab.com",
+    "location": "New York, USA"
+  },
+  "artworkCount": 85,
+  "followers": 320,
+  "verified": true,
+  "languages": [
+    "English",
+    "French"
+  ]
+}

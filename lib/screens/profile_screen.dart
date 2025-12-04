@@ -8,15 +8,15 @@ import 'about_us_screen.dart';
 import 'privacy_policy_screen.dart';
 import 'terms_of_service_screen.dart';
 
-class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({super.key});
+class ProfileCenterPage extends StatefulWidget {
+  const ProfileCenterPage({super.key});
 
   @override
-  State<ProfileScreen> createState() => _ProfileScreenState();
+  State<ProfileCenterPage> createState() => _ProfileCenterPageState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
-  UserProfileModel? _profile;
+class _ProfileCenterPageState extends State<ProfileCenterPage> {
+  LocalProfile? _profile;
   String? _avatarPath;
   bool _isLoading = true;
 
@@ -31,8 +31,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
       _isLoading = true;
     });
 
-    final profile = await UserProfileService.loadProfile();
-    final avatarPath = await UserProfileService.getAvatarPath(profile.avatarFileName);
+    final profile = await LocalProfileStorage.loadProfile();
+    final avatarPath = await LocalProfileStorage.getAvatarPath(profile.avatarFileName);
     
     if (mounted) {
       setState(() {
@@ -43,7 +43,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
   }
 
-  void _showEditDialog() {
+  void _showEditProfileSheet() {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -82,7 +82,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               child: IconButton(
                 icon: const Icon(Icons.edit, color: Colors.white),
-                onPressed: _showEditDialog,
+                onPressed: _showEditProfileSheet,
               ),
             ),
         ],
@@ -159,7 +159,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           bottom: 0,
           right: 0,
           child: GestureDetector(
-            onTap: _showEditDialog,
+            onTap: _showEditProfileSheet,
             child: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
@@ -450,7 +450,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 }
 
 class EditProfileSheet extends StatefulWidget {
-  final UserProfileModel profile;
+  final LocalProfile profile;
   final VoidCallback onSaved;
 
   const EditProfileSheet({
@@ -518,15 +518,15 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
       String finalAvatarFileName = _avatarFileName;
       
       // 如果选择了新头像，保存到沙盒目录
-      if (_newAvatarPath != null) {
+          if (_newAvatarPath != null) {
         try {
           // 删除旧头像
           if (_avatarFileName.isNotEmpty) {
-            await UserProfileService.deleteOldAvatar(_avatarFileName);
+            await LocalProfileStorage.deleteOldAvatar(_avatarFileName);
           }
           
           // 保存新头像
-          finalAvatarFileName = await UserProfileService.saveAvatarImage(_newAvatarPath!);
+          finalAvatarFileName = await LocalProfileStorage.saveAvatarImage(_newAvatarPath!);
         } catch (e) {
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
@@ -540,13 +540,13 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
         }
       }
       
-      final profile = UserProfileModel(
+      final profile = LocalProfile(
         avatarFileName: finalAvatarFileName,
         name: _nameController.text.trim(),
         signature: _signatureController.text.trim(),
       );
 
-      await UserProfileService.saveProfile(profile);
+      await LocalProfileStorage.saveProfile(profile);
       
       if (mounted) {
         Navigator.pop(context);
@@ -649,7 +649,7 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
                               child: FutureBuilder<String?>(
                                 future: _newAvatarPath != null
                                     ? Future.value(_newAvatarPath)
-                                    : UserProfileService.getAvatarPath(_avatarFileName),
+                                    : LocalProfileStorage.getAvatarPath(_avatarFileName),
                                 builder: (context, snapshot) {
                                   final imagePath = snapshot.data;
                                   return CircleAvatar(

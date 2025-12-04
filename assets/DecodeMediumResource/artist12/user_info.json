@@ -1,0 +1,34 @@
+{
+  "userId": "artist12",
+  "fullName": "Maria Papadopoulos",
+  "nationality": "Greek",
+  "country": "Greece",
+  "profession": "Painter",
+  "artStyle": "Byzantine Revival & Iconography",
+  "bio": "Maria Papadopoulos is a painter from Athens, specializing in Byzantine-inspired art and contemporary iconography. Her work bridges ancient traditions with modern sensibilities, creating spiritual and visually striking compositions that honor Greek artistic heritage.",
+  "specialization": [
+    "Byzantine Art",
+    "Iconography",
+    "Religious Art"
+  ],
+  "yearsOfExperience": 22,
+  "media": {
+    "coverImage": "assets/DecodeMediumResource/artist12/Cover.jpg",
+    "profileImage": "assets/DecodeMediumResource/artist12/user.jpg",
+    "backgroundImage": "assets/DecodeMediumResource/artist12/userBG.jpg",
+    "video": "assets/DecodeMediumResource/artist12/video.mp4",
+    "videoPost": "Creating contemporary icons in my Athens studio, bridging ancient Byzantine traditions with modern sensibilities. Gold leaf and traditional pigments meet contemporary themes. Honoring the spiritual art of my ancestors while speaking to today's world. #ByzantineArt #Iconography #AthensArtist"
+  },
+  "contact": {
+    "email": "maria@xenellam.com",
+    "location": "Athens, Greece"
+  },
+  "artworkCount": 160,
+  "followers": 520,
+  "verified": true,
+  "languages": [
+    "Greek",
+    "English",
+    "Italian"
+  ]
+}

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import '../models/user_model.dart';
 import '../theme/app_theme.dart';
 
-class UserCard extends StatelessWidget {
-  final UserModel user;
+class ArtistCardTile extends StatelessWidget {
+  final ArtistProfile user;
   final VoidCallback? onTap;
 
-  const UserCard({
+  const ArtistCardTile({
     super.key,
     required this.user,
     this.onTap,
@@ -160,24 +160,24 @@ class UserCard extends StatelessWidget {
                           spacing: 6,
                           runSpacing: 6,
                           children: user.specialization.take(3).map((spec) {
-                            return Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 8,
-                                vertical: 4,
-                              ),
-                              decoration: BoxDecoration(
-                                color: AppTheme.primaryColor.withOpacity(0.1),
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              child: Text(
-                                spec,
-                                style: TextStyle(
-                                  fontSize: 11,
-                                  color: AppTheme.primaryColor,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            );
+                        return Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
+                          ),
+                          decoration: BoxDecoration(
+                            color: AppTheme.primaryColor.withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Text(
+                            spec,
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: AppTheme.primaryColor,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        );
                           }).toList(),
                         ),
                       ],

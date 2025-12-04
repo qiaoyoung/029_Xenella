@@ -1,0 +1,34 @@
+{
+  "userId": "artist10",
+  "fullName": "Klaus Wagner",
+  "nationality": "Austrian",
+  "country": "Austria",
+  "profession": "Painter",
+  "artStyle": "Art Nouveau & Decorative Arts",
+  "bio": "Klaus Wagner is a painter from Vienna, specializing in Art Nouveau and decorative arts. His work features flowing lines, organic forms, and intricate patterns inspired by the Secession movement. He creates both large-scale paintings and decorative panels.",
+  "specialization": [
+    "Art Nouveau",
+    "Decorative Arts",
+    "Ornamental Design"
+  ],
+  "yearsOfExperience": 17,
+  "media": {
+    "coverImage": "assets/DecodeMediumResource/artist10/Cover.jpg",
+    "profileImage": "assets/DecodeMediumResource/artist10/user.jpg",
+    "backgroundImage": "assets/DecodeMediumResource/artist10/userBG.jpg",
+    "video": "assets/DecodeMediumResource/artist10/video.mp4",
+    "videoPost": "Working on decorative panels in my Vienna studio, inspired by the Secession movement. Art Nouveau flows through my brush - organic forms, flowing lines, intricate patterns. Each piece tells a story of beauty and elegance. #ArtNouveau #DecorativeArts #ViennaArtist"
+  },
+  "contact": {
+    "email": "klaus@xenellak.com",
+    "location": "Vienna, Austria"
+  },
+  "artworkCount": 105,
+  "followers": 330,
+  "verified": true,
+  "languages": [
+    "German",
+    "English",
+    "French"
+  ]
+}

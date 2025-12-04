@@ -2,23 +2,36 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import '../models/user_model.dart';
 
-class DataService {
-  static Future<List<UserModel>> loadAllUsers() async {
-    final List<UserModel> users = [];
+class ArtistDataStore {
+  static Future<List<ArtistProfile>> loadAllArtists() async {
+    final List<ArtistProfile> users = [];
     
-    final List<String> userFolders = [
-      'Xenellaa', 'Xenellab', 'Xenellac', 'Xenellad', 'Xenellae',
-      'Xenellaf', 'Xenellag', 'Xenellah', 'Xenellai', 'Xenellak',
-      'Xenellal', 'Xenellam', 'Xenellan', 'Xenellao', 'Xenellap', 'Xenellaq'
+    final List<String> artistFolders = [
+      'artist01',
+      'artist02',
+      'artist03',
+      'artist04',
+      'artist05',
+      'artist06',
+      'artist07',
+      'artist08',
+      'artist09',
+      'artist10',
+      'artist11',
+      'artist12',
+      'artist13',
+      'artist14',
+      'artist15',
+      'artist16',
     ];
 
-    for (final folder in userFolders) {
+    for (final folder in artistFolders) {
       try {
         final String jsonString = await rootBundle.loadString(
           'assets/DecodeMediumResource/$folder/user_info.json',
         );
         final Map<String, dynamic> jsonData = json.decode(jsonString);
-        users.add(UserModel.fromJson(jsonData));
+        users.add(ArtistProfile.fromJson(jsonData));
       } catch (e) {
         continue;
       }
@@ -27,13 +40,13 @@ class DataService {
     return users;
   }
 
-  static Future<UserModel?> loadUser(String userId) async {
+  static Future<ArtistProfile?> loadArtistById(String artistId) async {
     try {
       final String jsonString = await rootBundle.loadString(
-        'assets/DecodeMediumResource/$userId/user_info.json',
+        'assets/DecodeMediumResource/$artistId/user_info.json',
       );
       final Map<String, dynamic> jsonData = json.decode(jsonString);
-      return UserModel.fromJson(jsonData);
+      return ArtistProfile.fromJson(jsonData);
     } catch (e) {
       return null;
     }

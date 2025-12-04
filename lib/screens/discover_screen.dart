@@ -21,7 +21,7 @@ class DiscoverScreen extends StatefulWidget {
 }
 
 class _DiscoverScreenState extends State<DiscoverScreen> {
-  List<UserModel> _users = [];
+  List<ArtistProfile> _users = [];
   bool _isLoading = true;
 
   @override
@@ -35,7 +35,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
       _isLoading = true;
     });
 
-    final users = await DataService.loadAllUsers();
+    final users = await ArtistDataStore.loadAllArtists();
     
     if (mounted) {
       setState(() {
@@ -159,7 +159,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
 }
 
 class VideoPostCard extends StatelessWidget {
-  final UserModel user;
+  final ArtistProfile user;
 
   const VideoPostCard({
     super.key,
@@ -195,7 +195,7 @@ class VideoPostCard extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => UserDetailScreen(user: user),
+                          builder: (context) => ArtistProfilePage(artist: user),
                   ),
                 );
               },
@@ -251,7 +251,7 @@ class VideoPostCard extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => VideoPlayerScreen(user: user),
+                      builder: (context) => FullScreenVideoPage(user: user),
                     ),
                   );
                 },
@@ -327,7 +327,7 @@ class VideoPostCard extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => UserDetailScreen(user: user),
+                  builder: (context) => ArtistProfilePage(artist: user),
                 ),
               );
             },
@@ -360,7 +360,7 @@ class VideoPostCard extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => UserDetailScreen(user: user),
+                    builder: (context) => ArtistProfilePage(artist: user),
                   ),
                 );
               },
